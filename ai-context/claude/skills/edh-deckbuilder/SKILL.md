@@ -1,6 +1,6 @@
 ---
 name: "edh-deckbuilder"
-description: "Claude adapter for the MTG Commander Brain project. Use for Commander EDH deck analysis, deckbuilding, bracket estimation, gameplan generation, and project aware deck work."
+description: "Claude adapter for the MTG Commander Brain project."
 ---
 
 # EDH Deckbuilder Skill – MTG Commander Brain Adapter
@@ -111,22 +111,59 @@ Use collection data only when the task actually requires ownership checks, colle
 
 ### Deck Data
 
-Preferred structure:
+Primary decklist location:
 
-`data/decks/<deck-slug>/`
+```text
+data/decks/decklists/
+```
 
-Typical files:
+The user should only need to add simple `.txt` decklists.
 
-- `decklist.txt`
-- `analysis.md`
-- `gameplan.md`
-- `bracket.md`
-- `notes.md`
-- `variants/`
+The default decklist format is the ManaBox export format.
 
-If deck files are stored differently, adapt to the current project structure and do not invent missing files.
+Example:
 
----
+```txt
+// COMMANDER
+1 Vivi Ornitier
+
+1 Alania, Divergent Storm
+1 Ancestors' Aid
+1 Arcane Signet
+1 As Foretold
+1 Blaze
+```
+
+Parsing rules:
+
+- Lines with `// COMMANDER` mark the commander section.
+- The first card line after `// COMMANDER` is the commander.
+- Card lines usually follow the format `[quantity] [card name]`.
+- Empty lines should be ignored.
+- Comment lines starting with `//` should not be treated as cards.
+- The remaining card lines after the commander are the decklist.
+- If additional ManaBox sections exist, use them as context but do not require them.
+- ManaBox decklists are the primary decklist input format.
+
+Saved AI-generated results should be stored only after user confirmation.
+
+Preferred saved-output location:
+
+```text
+data/decks/saved/[deck-slug]/
+```
+
+Preferred saved-output files:
+
+```text
+data/decks/saved/[deck-slug]/
+├─ analysis.md
+├─ bracket.md
+├─ gameplan.md
+└─ variants/
+```
+
+Do not require the user to manually create this structure. The user primarily maintains only decklists in `data/decks/decklists/`.
 
 ## Task Routing
 
