@@ -1,0 +1,28 @@
+{
+  "name": "mtg-commander-deckbuilder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "import:collection": "tsx scripts/import-manabox.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shocci/mtg-commander-deckbuilder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shocci/mtg-commander-deckbuilder/issues"
+  },
+  "homepage": "https://github.com/shocci/mtg-commander-deckbuilder#readme",
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.11",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.2"
+  }
+}
