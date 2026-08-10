@@ -307,6 +307,20 @@ ${version.content.trim()}`,
 ${versionSections}`;
 }
 
+function renderAccordionSection(
+    id: string,
+    title: string,
+    content: string,
+    open = false,
+    ): string {
+    return `<details id="${id}" class="accordion-card"${open ? " open" : ""} markdown="1">
+<summary>${title}</summary>
+
+${content}
+
+</details>`;
+}
+
 function renderDeckPage(deck: DeckDoc): string {
     const analysisBlock = deck.analysis
         ? deck.analysis.trim()
@@ -329,7 +343,7 @@ function renderDeckPage(deck: DeckDoc): string {
 
     return `${renderStylesheetLink("../assets/style.css")}
 
-<div class="page-shell">
+<div class="page-shell" markdown="1">
 
 <nav class="breadcrumb">
   <a href="../index.html">← Deckübersicht</a>
@@ -353,81 +367,53 @@ function renderDeckPage(deck: DeckDoc): string {
 <section class="profile-card">
   <h2>Kurzprofil</h2>
 
-  <table>
-    <tr>
-      <th>Feld</th>
-      <th>Wert</th>
-    </tr>
-    <tr>
-      <td>Slug</td>
-      <td><code>${deck.slug}</code></td>
-    </tr>
-    <tr>
-      <td>Commander</td>
-      <td>${deck.commander ?? "offen"}</td>
-    </tr>
-    <tr>
-      <td>Analyse</td>
-      <td>${deck.analysis ? '<a href="#analyse">Ja</a>' : "Nein"}</td>
-    </tr>
-    <tr>
-      <td>Bracket</td>
-      <td>${deck.bracket ? '<a href="#bracket">Ja</a>' : "Nein"}</td>
-    </tr>
-    <tr>
-      <td>Gameplan</td>
-      <td>${deck.gameplan ? '<a href="#gameplan">Ja</a>' : "Nein"}</td>
-    </tr>
-    <tr>
-      <td>Deckliste</td>
-      <td>${deck.decklist ? '<a href="#deckliste">Ja</a>' : "Nein"}</td>
-    </tr>
-    <tr>
-      <td>Varianten</td>
-      <td>${deck.variants.length > 0 ? `<a href="#varianten">${deck.variants.length}</a>` : "0"}</td>
-    </tr>
-    <tr>
-      <td>Versionen</td>
-      <td>${deck.versions.length > 0 ? `<a href="#versionen">${deck.versions.length}</a>` : "0"}</td>
-    </tr>
-  </table>
+  <div class="profile-grid">
+    <div>
+      <span>Slug</span>
+      <strong><code>${deck.slug}</code></strong>
+    </div>
+    <div>
+      <span>Commander</span>
+      <strong>${deck.commander ?? "offen"}</strong>
+    </div>
+    <div>
+      <span>Analyse</span>
+      <strong>${deck.analysis ? '<a href="#analyse">Ja</a>' : "Nein"}</strong>
+    </div>
+    <div>
+      <span>Bracket</span>
+      <strong>${deck.bracket ? '<a href="#bracket">Ja</a>' : "Nein"}</strong>
+    </div>
+    <div>
+      <span>Gameplan</span>
+      <strong>${deck.gameplan ? '<a href="#gameplan">Ja</a>' : "Nein"}</strong>
+    </div>
+    <div>
+      <span>Deckliste</span>
+      <strong>${deck.decklist ? '<a href="#deckliste">Ja</a>' : "Nein"}</strong>
+    </div>
+    <div>
+      <span>Varianten</span>
+      <strong>${deck.variants.length > 0 ? `<a href="#varianten">${deck.variants.length}</a>` : "0"}</strong>
+    </div>
+    <div>
+      <span>Versionen</span>
+      <strong>${deck.versions.length > 0 ? `<a href="#versionen">${deck.versions.length}</a>` : "0"}</strong>
+    </div>
+  </div>
 </section>
 
-<section id="analyse" class="content-card">
-  <h2>Analyse</h2>
+${renderAccordionSection("analyse", "Analyse", analysisBlock, true)}
 
-${analysisBlock}
-</section>
+${renderAccordionSection("bracket", "Bracket", bracketBlock)}
 
-<section id="bracket" class="content-card">
-  <h2>Bracket</h2>
+${renderAccordionSection("gameplan", "Gameplan", gameplanBlock)}
 
-${bracketBlock}
-</section>
+${renderAccordionSection("deckliste", "Deckliste", decklistBlock)}
 
-<section id="gameplan" class="content-card">
-  <h2>Gameplan</h2>
+${renderAccordionSection("varianten", "Varianten", variantsBlock)}
 
-${gameplanBlock}
-</section>
-
-<section id="deckliste" class="content-card">
-  <h2>Deckliste</h2>
-
-${decklistBlock}
-</section>
-
-<section id="varianten" class="content-card">
-  <h2>Varianten</h2>
-
-${variantsBlock}
-</section>
-
-<section id="versionen" class="content-card">
-  <h2>Versionen</h2>
-
-${versionsBlock}
-</section>
+${renderAccordionSection("versionen", "Versionen", versionsBlock)}
 
 </div>
 `;

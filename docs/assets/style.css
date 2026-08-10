@@ -1,22 +1,30 @@
 :root {
-    --bg: #101014;
+    --bg: #0f0f14;
     --panel: #181820;
     --panel-soft: #20202a;
-    --text: #f2f2f4;
-    --muted: #b8b8c4;
-    --line: #333342;
+    --panel-hover: #252532;
+    --text: #f4f4f6;
+    --muted: #b9b9c6;
+    --line: #343445;
     --accent: #d6a84f;
-    --accent-soft: rgba(214, 168, 79, 0.16);
-    --code-bg: #0b0b0f;
+    --accent-soft: rgba(214, 168, 79, 0.14);
+    --code-bg: #0a0a0e;
 }
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    background: radial-gradient(circle at top, #242432 0, #101014 45%);
+    background:
+            radial-gradient(circle at top left, rgba(214, 168, 79, 0.12), transparent 32rem),
+            radial-gradient(circle at top right, rgba(100, 100, 180, 0.12), transparent 28rem),
+            var(--bg);
     color: var(--text);
     font-family:
             system-ui,
@@ -24,7 +32,7 @@ body {
             BlinkMacSystemFont,
             "Segoe UI",
             sans-serif;
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 a {
@@ -51,33 +59,43 @@ a:hover {
     margin: 0 0 8px;
     color: var(--accent);
     text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.78rem;
-    font-weight: 700;
+    letter-spacing: 0.14em;
+    font-size: 0.76rem;
+    font-weight: 800;
 }
 
 h1 {
     margin: 0;
-    font-size: clamp(2.1rem, 5vw, 4rem);
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
     line-height: 1;
 }
 
+h2,
+h3 {
+    color: var(--accent);
+}
+
 .subtitle {
-    max-width: 720px;
+    max-width: 760px;
     color: var(--muted);
     font-size: 1.1rem;
+}
+
+.breadcrumb {
+    margin-bottom: 24px;
 }
 
 .info-box,
 .profile-card,
 .content-card,
-.data-source {
+.data-source,
+.accordion-card {
     background: linear-gradient(180deg, var(--panel), var(--panel-soft));
     border: 1px solid var(--line);
     border-radius: 18px;
     padding: 22px;
     margin: 22px 0;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.32);
 }
 
 .deck-grid {
@@ -105,7 +123,7 @@ h1 {
     transform: translateY(-3px);
     border-color: var(--accent);
     text-decoration: none;
-    background: linear-gradient(180deg, #222230, #181820);
+    background: linear-gradient(180deg, var(--panel-hover), var(--panel));
 }
 
 .deck-card h2 {
@@ -148,37 +166,120 @@ h1 {
     text-decoration: none;
 }
 
-.breadcrumb {
-    margin-bottom: 24px;
+.profile-card h2 {
+    margin-top: 0;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+}
+
+.profile-grid div {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 14px;
+}
+
+.profile-grid span {
+    display: block;
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin-bottom: 4px;
+}
+
+.profile-grid strong {
+    display: block;
+    color: var(--text);
+    overflow-wrap: anywhere;
+}
+
+.accordion-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.accordion-card summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 20px 22px;
+    color: var(--accent);
+    font-size: 1.45rem;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    user-select: none;
+}
+
+.accordion-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-card summary::after {
+    content: "+";
+    float: right;
+    color: var(--muted);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.accordion-card[open] summary {
+    border-bottom-color: var(--line);
+}
+
+.accordion-card[open] summary::after {
+    content: "–";
+}
+
+.accordion-card > *:not(summary) {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.accordion-card > :last-child {
+    margin-bottom: 22px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    overflow: hidden;
+    margin: 18px 0;
+    background: transparent !important;
+}
+
+thead,
+tbody,
+tr,
+th,
+td {
+    background: transparent !important;
 }
 
 th,
 td {
-    border-bottom: 1px solid var(--line);
-    padding: 10px 8px;
+    border: 1px solid var(--line) !important;
+    padding: 10px 12px;
     text-align: left;
     vertical-align: top;
+    color: var(--text) !important;
 }
 
 th {
-    color: var(--accent);
+    color: var(--accent) !important;
     font-weight: 700;
 }
 
-tr:last-child td {
-    border-bottom: 0;
+tr:nth-child(even),
+tr:nth-child(odd) {
+    background: transparent !important;
 }
 
 code {
     background: var(--code-bg);
     border: 1px solid var(--line);
     border-radius: 6px;
+    color: var(--text);
     padding: 0.1em 0.35em;
 }
 
@@ -195,17 +296,19 @@ pre code {
     padding: 0;
 }
 
-.content-card h2,
-.profile-card h2,
-.data-source h2 {
-    margin-top: 0;
-    color: var(--accent);
-}
-
 hr {
     border: 0;
     border-top: 1px solid var(--line);
     margin: 28px 0;
+}
+
+ul,
+ol {
+    padding-left: 1.4rem;
+}
+
+li {
+    margin: 0.25rem 0;
 }
 
 @media (max-width: 640px) {
@@ -223,19 +326,17 @@ hr {
         padding: 16px;
     }
 
-    th,
-    td {
-        display: block;
-        width: 100%;
+    .accordion-card summary {
+        padding: 16px;
+        font-size: 1.25rem;
     }
 
-    th {
-        display: none;
+    .accordion-card > *:not(summary) {
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
-    td:first-child {
-        color: var(--accent);
-        font-weight: 700;
-        padding-bottom: 0;
+    .profile-grid {
+        grid-template-columns: 1fr;
     }
 }

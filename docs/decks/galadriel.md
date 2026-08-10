@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../assets/style.css">
 
-<div class="page-shell">
+<div class="page-shell" markdown="1">
 
 <nav class="breadcrumb">
   <a href="../index.html">← Deckübersicht</a>
@@ -24,48 +24,44 @@
 <section class="profile-card">
   <h2>Kurzprofil</h2>
 
-  <table>
-    <tr>
-      <th>Feld</th>
-      <th>Wert</th>
-    </tr>
-    <tr>
-      <td>Slug</td>
-      <td><code>galadriel</code></td>
-    </tr>
-    <tr>
-      <td>Commander</td>
-      <td>Galadriel, Light of Valinor (LTC) 498 *F*</td>
-    </tr>
-    <tr>
-      <td>Analyse</td>
-      <td><a href="#analyse">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Bracket</td>
-      <td><a href="#bracket">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Gameplan</td>
-      <td><a href="#gameplan">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Deckliste</td>
-      <td><a href="#deckliste">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Varianten</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Versionen</td>
-      <td><a href="#versionen">4</a></td>
-    </tr>
-  </table>
+  <div class="profile-grid">
+    <div>
+      <span>Slug</span>
+      <strong><code>galadriel</code></strong>
+    </div>
+    <div>
+      <span>Commander</span>
+      <strong>Galadriel, Light of Valinor (LTC) 498 *F*</strong>
+    </div>
+    <div>
+      <span>Analyse</span>
+      <strong><a href="#analyse">Ja</a></strong>
+    </div>
+    <div>
+      <span>Bracket</span>
+      <strong><a href="#bracket">Ja</a></strong>
+    </div>
+    <div>
+      <span>Gameplan</span>
+      <strong><a href="#gameplan">Ja</a></strong>
+    </div>
+    <div>
+      <span>Deckliste</span>
+      <strong><a href="#deckliste">Ja</a></strong>
+    </div>
+    <div>
+      <span>Varianten</span>
+      <strong>0</strong>
+    </div>
+    <div>
+      <span>Versionen</span>
+      <strong><a href="#versionen">4</a></strong>
+    </div>
+  </div>
 </section>
 
-<section id="analyse" class="content-card">
-  <h2>Analyse</h2>
+<details id="analyse" class="accordion-card" open markdown="1">
+<summary>Analyse</summary>
 
 # Deckanalyse: Galadriel
 
@@ -382,10 +378,11 @@ Realistische Geschwindigkeit:
 - Commander Brackets Beta Update vom 9. Februar 2026
 - Offizielle Release Notes zu Avatar: The Last Airbender, Lorwyn Eclipsed, Secrets of Strixhaven, Teenage Mutant Ninja Turtles und FINAL FANTASY
 - Deckliste: `data/decks/decklists/galadriel.txt`
-</section>
 
-<section id="bracket" class="content-card">
-  <h2>Bracket</h2>
+</details>
+
+<details id="bracket" class="accordion-card" markdown="1">
+<summary>Bracket</summary>
 
 # Bracket Einschätzung: Galadriel
 
@@ -536,10 +533,11 @@ Empfohlener Pregame-Hinweis:
 - Commander Brackets Beta Update vom 9. Februar 2026
 - `brains/bracket/templates.md`
 - Deckliste: `data/decks/decklists/galadriel.txt`
-</section>
 
-<section id="gameplan" class="content-card">
-  <h2>Gameplan</h2>
+</details>
+
+<details id="gameplan" class="accordion-card" markdown="1">
+<summary>Gameplan</summary>
 
 # Gameplan: Galadriel
 
@@ -793,10 +791,11 @@ Zurücklegen sollte man insbesondere:
 Vor der Partie sollte transparent genannt werden:
 
 > Das Deck ist oberes Bracket 3 ohne Game Changer. Es enthält Intruder Alarm, Imperious Perfect und mehrere Mana-Dorks als Drei-Karten-Endlosschleife für beliebig viele Elf-Token; mit perfekter Hand ist sie ab Zug 3 möglich. Badgermole Cub, Enduring Vitality sowie mehrere Token- und Kartenziehengines können sehr explosive Züge erzeugen.
-</section>
 
-<section id="deckliste" class="content-card">
-  <h2>Deckliste</h2>
+</details>
+
+<details id="deckliste" class="accordion-card" markdown="1">
+<summary>Deckliste</summary>
 
 ```txt
 // COMMANDER
@@ -893,16 +892,18 @@ Vor der Partie sollte transparent genannt werden:
 1 Windswift Slice (LTC) 45
 1 Yavimaya Coast (BLC) 355
 ```
-</section>
 
-<section id="varianten" class="content-card">
-  <h2>Varianten</h2>
+</details>
+
+<details id="varianten" class="accordion-card" markdown="1">
+<summary>Varianten</summary>
 
 _Keine gespeicherten Varianten vorhanden._
-</section>
 
-<section id="versionen" class="content-card">
-  <h2>Versionen</h2>
+</details>
+
+<details id="versionen" class="accordion-card" markdown="1">
+<summary>Versionen</summary>
 
 - [V001](#version-v001)
 - [V002](#version-v002)
@@ -1795,6 +1796,7 @@ Archivierte Hauptversion.
 1 Unclaimed Territory
 1 Wilt-Leaf Liege
 ```
-</section>
+
+</details>
 
 </div>

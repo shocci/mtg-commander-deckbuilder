@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../assets/style.css">
 
-<div class="page-shell">
+<div class="page-shell" markdown="1">
 
 <nav class="breadcrumb">
   <a href="../index.html">← Deckübersicht</a>
@@ -24,48 +24,44 @@
 <section class="profile-card">
   <h2>Kurzprofil</h2>
 
-  <table>
-    <tr>
-      <th>Feld</th>
-      <th>Wert</th>
-    </tr>
-    <tr>
-      <td>Slug</td>
-      <td><code>ashling-247</code></td>
-    </tr>
-    <tr>
-      <td>Commander</td>
-      <td>Ashling, Rekindled // Ashling, Rimebound</td>
-    </tr>
-    <tr>
-      <td>Analyse</td>
-      <td><a href="#analyse">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Bracket</td>
-      <td><a href="#bracket">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Gameplan</td>
-      <td><a href="#gameplan">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Deckliste</td>
-      <td><a href="#deckliste">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Varianten</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Versionen</td>
-      <td><a href="#versionen">1</a></td>
-    </tr>
-  </table>
+  <div class="profile-grid">
+    <div>
+      <span>Slug</span>
+      <strong><code>ashling-247</code></strong>
+    </div>
+    <div>
+      <span>Commander</span>
+      <strong>Ashling, Rekindled // Ashling, Rimebound</strong>
+    </div>
+    <div>
+      <span>Analyse</span>
+      <strong><a href="#analyse">Ja</a></strong>
+    </div>
+    <div>
+      <span>Bracket</span>
+      <strong><a href="#bracket">Ja</a></strong>
+    </div>
+    <div>
+      <span>Gameplan</span>
+      <strong><a href="#gameplan">Ja</a></strong>
+    </div>
+    <div>
+      <span>Deckliste</span>
+      <strong><a href="#deckliste">Ja</a></strong>
+    </div>
+    <div>
+      <span>Varianten</span>
+      <strong>0</strong>
+    </div>
+    <div>
+      <span>Versionen</span>
+      <strong><a href="#versionen">1</a></strong>
+    </div>
+  </div>
 </section>
 
-<section id="analyse" class="content-card">
-  <h2>Analyse</h2>
+<details id="analyse" class="accordion-card" open markdown="1">
+<summary>Analyse</summary>
 
 # Deckanalyse: Ashling 2-4-7 – 20-Euro-Upgrade
 
@@ -339,10 +335,11 @@ Die Liste ist nun ein sehr fokussiertes oberes Bracket-3-Deck und liegt durch de
 - `brains/bracket/templates.md`
 - Deckliste: `data/decks/decklists/ashling-247.txt`
 - Ausgangsversion: `data/decks/saved/ashling-247/versions/v001.md`
-</section>
 
-<section id="bracket" class="content-card">
-  <h2>Bracket</h2>
+</details>
+
+<details id="bracket" class="accordion-card" markdown="1">
+<summary>Bracket</summary>
 
 # Bracket-Einschätzung: Ashling 2-4-7 – 20-Euro-Upgrade
 
@@ -537,10 +534,11 @@ Wenn die Spielgruppe bereits einzelne geplante Turn-3-Big-Spells als Bracket 4 b
 - Commander Brackets Beta Update, Stand 10. August 2026
 - `brains/bracket/templates.md`
 - Deckliste: `data/decks/decklists/ashling-247.txt`
-</section>
 
-<section id="gameplan" class="content-card">
-  <h2>Gameplan</h2>
+</details>
+
+<details id="gameplan" class="accordion-card" markdown="1">
+<summary>Gameplan</summary>
 
 # Gameplan: Ashling 2-4-7 – 20-Euro-Upgrade
 
@@ -767,10 +765,11 @@ Bevorzugte kostenlose Ziele:
 Vor der Partie sollte transparent genannt werden:
 
 > Oberes Bracket 3 mit drei Game Changern: Gamble, Jeska's Will und Mystical Tutor. Der Normalplan ist Ashling in Zug 2, eine Vier-Mana-Brücke in Zug 3 und ein großer Spruch in Zug 4. Mystical Tutor kann Irencrag Feat finden und dadurch schon in Zug 3 einen roten oder farblosen Big Spell ermöglichen. Das Deck spielt freie Interaktion und Rise of the Eldrazi als einzelnen selbst-exilierenden Extra-Turn-Spruch, aber keine Endlosschleife oder unmittelbare Siegkombination.
-</section>
 
-<section id="deckliste" class="content-card">
-  <h2>Deckliste</h2>
+</details>
+
+<details id="deckliste" class="accordion-card" markdown="1">
+<summary>Deckliste</summary>
 
 ```txt
 // COMMANDER
@@ -867,16 +866,18 @@ Vor der Partie sollte transparent genannt werden:
 1 One with the Multiverse
 1 Apex of Power
 ```
-</section>
 
-<section id="varianten" class="content-card">
-  <h2>Varianten</h2>
+</details>
+
+<details id="varianten" class="accordion-card" markdown="1">
+<summary>Varianten</summary>
 
 _Keine gespeicherten Varianten vorhanden._
-</section>
 
-<section id="versionen" class="content-card">
-  <h2>Versionen</h2>
+</details>
+
+<details id="versionen" class="accordion-card" markdown="1">
+<summary>Versionen</summary>
 
 - [V001](#version-v001)
 
@@ -1081,6 +1082,7 @@ Die Liste kann in Zug 4 einen sehr starken Big Spell wirken, gewinnt dadurch abe
 1 Rise of the Eldrazi
 1 Blasphemous Act
 ```
-</section>
+
+</details>
 
 </div>

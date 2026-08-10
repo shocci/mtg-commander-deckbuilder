@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../assets/style.css">
 
-<div class="page-shell">
+<div class="page-shell" markdown="1">
 
 <nav class="breadcrumb">
   <a href="../index.html">← Deckübersicht</a>
@@ -24,48 +24,44 @@
 <section class="profile-card">
   <h2>Kurzprofil</h2>
 
-  <table>
-    <tr>
-      <th>Feld</th>
-      <th>Wert</th>
-    </tr>
-    <tr>
-      <td>Slug</td>
-      <td><code>yshtola-nights-blessed</code></td>
-    </tr>
-    <tr>
-      <td>Commander</td>
-      <td>Y'shtola, Night's Blessed</td>
-    </tr>
-    <tr>
-      <td>Analyse</td>
-      <td><a href="#analyse">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Bracket</td>
-      <td><a href="#bracket">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Gameplan</td>
-      <td><a href="#gameplan">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Deckliste</td>
-      <td><a href="#deckliste">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Varianten</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Versionen</td>
-      <td>0</td>
-    </tr>
-  </table>
+  <div class="profile-grid">
+    <div>
+      <span>Slug</span>
+      <strong><code>yshtola-nights-blessed</code></strong>
+    </div>
+    <div>
+      <span>Commander</span>
+      <strong>Y'shtola, Night's Blessed</strong>
+    </div>
+    <div>
+      <span>Analyse</span>
+      <strong><a href="#analyse">Ja</a></strong>
+    </div>
+    <div>
+      <span>Bracket</span>
+      <strong><a href="#bracket">Ja</a></strong>
+    </div>
+    <div>
+      <span>Gameplan</span>
+      <strong><a href="#gameplan">Ja</a></strong>
+    </div>
+    <div>
+      <span>Deckliste</span>
+      <strong><a href="#deckliste">Ja</a></strong>
+    </div>
+    <div>
+      <span>Varianten</span>
+      <strong>0</strong>
+    </div>
+    <div>
+      <span>Versionen</span>
+      <strong>0</strong>
+    </div>
+  </div>
 </section>
 
-<section id="analyse" class="content-card">
-  <h2>Analyse</h2>
+<details id="analyse" class="accordion-card" open markdown="1">
+<summary>Analyse</summary>
 
 # Deckanalyse: Y'shtola, Night's Blessed
 
@@ -345,10 +341,11 @@ Realistische Geschwindigkeit:
 - Commander Brackets Beta Update vom 9. Februar 2026
 - Offizielle Magic: The Gathering—FINAL FANTASY Release Notes
 - Deckliste: `data/decks/decklists/yshtola-nights-blessed.txt`
-</section>
 
-<section id="bracket" class="content-card">
-  <h2>Bracket</h2>
+</details>
+
+<details id="bracket" class="accordion-card" markdown="1">
+<summary>Bracket</summary>
 
 # Bracket Einschätzung: Y'shtola, Night's Blessed
 
@@ -539,10 +536,11 @@ Falls es für ein höheres Bracket optimiert werden soll:
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026
 - Commander Brackets Beta Update vom 9. Februar 2026
 - Deckliste: `data/decks/decklists/yshtola-nights-blessed.txt`
-</section>
 
-<section id="gameplan" class="content-card">
-  <h2>Gameplan</h2>
+</details>
+
+<details id="gameplan" class="accordion-card" markdown="1">
+<summary>Gameplan</summary>
 
 # Gameplan: Y'shtola, Night's Blessed
 
@@ -757,10 +755,11 @@ Kartennutzung:
 Vor der Partie sollte transparent genannt werden:
 
 > Oberes Bracket 3 mit Smothering Tithe, Bolas's Citadel und Farewell als drei Game Changern. Keine Endloskombos, aber Y'shtola kann mit Curiosity, Ophidian Eye oder Helm of the Ghastlord pro Auslöser drei Karten ziehen; Helm lässt zusätzlich jeden Gegner abwerfen. Das Deck spielt viel Countermagic sowie bedingt kostenlose Interaktion.
-</section>
 
-<section id="deckliste" class="content-card">
-  <h2>Deckliste</h2>
+</details>
+
+<details id="deckliste" class="accordion-card" markdown="1">
+<summary>Deckliste</summary>
 
 ```txt
 // COMMANDER
@@ -867,18 +866,21 @@ Vor der Partie sollte transparent genannt werden:
 4 Plains
 3 Swamp
 ```
-</section>
 
-<section id="varianten" class="content-card">
-  <h2>Varianten</h2>
+</details>
+
+<details id="varianten" class="accordion-card" markdown="1">
+<summary>Varianten</summary>
 
 _Keine gespeicherten Varianten vorhanden._
-</section>
 
-<section id="versionen" class="content-card">
-  <h2>Versionen</h2>
+</details>
+
+<details id="versionen" class="accordion-card" markdown="1">
+<summary>Versionen</summary>
 
 _Keine archivierten Versionen vorhanden._
-</section>
+
+</details>
 
 </div>

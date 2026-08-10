@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../assets/style.css">
 
-<div class="page-shell">
+<div class="page-shell" markdown="1">
 
 <nav class="breadcrumb">
   <a href="../index.html">← Deckübersicht</a>
@@ -24,48 +24,44 @@
 <section class="profile-card">
   <h2>Kurzprofil</h2>
 
-  <table>
-    <tr>
-      <th>Feld</th>
-      <th>Wert</th>
-    </tr>
-    <tr>
-      <td>Slug</td>
-      <td><code>vi-oh-no</code></td>
-    </tr>
-    <tr>
-      <td>Commander</td>
-      <td>Vivi Ornitier</td>
-    </tr>
-    <tr>
-      <td>Analyse</td>
-      <td><a href="#analyse">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Bracket</td>
-      <td><a href="#bracket">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Gameplan</td>
-      <td><a href="#gameplan">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Deckliste</td>
-      <td><a href="#deckliste">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Varianten</td>
-      <td><a href="#varianten">1</a></td>
-    </tr>
-    <tr>
-      <td>Versionen</td>
-      <td><a href="#versionen">1</a></td>
-    </tr>
-  </table>
+  <div class="profile-grid">
+    <div>
+      <span>Slug</span>
+      <strong><code>vi-oh-no</code></strong>
+    </div>
+    <div>
+      <span>Commander</span>
+      <strong>Vivi Ornitier</strong>
+    </div>
+    <div>
+      <span>Analyse</span>
+      <strong><a href="#analyse">Ja</a></strong>
+    </div>
+    <div>
+      <span>Bracket</span>
+      <strong><a href="#bracket">Ja</a></strong>
+    </div>
+    <div>
+      <span>Gameplan</span>
+      <strong><a href="#gameplan">Ja</a></strong>
+    </div>
+    <div>
+      <span>Deckliste</span>
+      <strong><a href="#deckliste">Ja</a></strong>
+    </div>
+    <div>
+      <span>Varianten</span>
+      <strong><a href="#varianten">1</a></strong>
+    </div>
+    <div>
+      <span>Versionen</span>
+      <strong><a href="#versionen">1</a></strong>
+    </div>
+  </div>
 </section>
 
-<section id="analyse" class="content-card">
-  <h2>Analyse</h2>
+<details id="analyse" class="accordion-card" open markdown="1">
+<summary>Analyse</summary>
 
 # Deckanalyse: Vi oh no
 
@@ -214,10 +210,11 @@ Cavern of Souls, Exotic Orchard und Riverpyre Verge verbessern die Farbversorgun
 - `brains/bracket/templates.md`
 - Offizielle Commander-Bracket- und Game-Changer-Regeln, zuletzt geprüft am 10. August 2026
 - Deckliste: `data/decks/decklists/vi-oh-no.txt`
-</section>
 
-<section id="bracket" class="content-card">
-  <h2>Bracket</h2>
+</details>
+
+<details id="bracket" class="accordion-card" markdown="1">
+<summary>Bracket</summary>
 
 # Bracket Einschätzung: Vi oh no
 
@@ -356,10 +353,11 @@ Falls es für Bracket 4 optimiert werden soll:
 - https://magic.wizards.com/en/news/announcements/commander-banned-and-restricted-february-9-2026
 - Offizielle Commander-Bracket- und Game-Changer-Regeln, zuletzt geprüft am 10. August 2026
 - Deckliste: `data/decks/decklists/vi-oh-no.txt`
-</section>
 
-<section id="gameplan" class="content-card">
-  <h2>Gameplan</h2>
+</details>
+
+<details id="gameplan" class="accordion-card" markdown="1">
+<summary>Gameplan</summary>
 
 # Gameplan: Vi oh no
 
@@ -474,10 +472,11 @@ Je kleiner die Hand, desto größer ist das Risiko, die gesuchte Karte direkt wi
 7. Starfall-Schaden des transformierten Emperors, situativ mit Relentless Assault.
 
 Der fokussierte Storm-Plan, die zwei Game Changers und die Niv-Curiosity-Linie sollten im Pregame-Gespräch genannt werden.
-</section>
 
-<section id="deckliste" class="content-card">
-  <h2>Deckliste</h2>
+</details>
+
+<details id="deckliste" class="accordion-card" markdown="1">
+<summary>Deckliste</summary>
 
 ```txt
 // COMMANDER
@@ -561,10 +560,11 @@ Der fokussierte Storm-Plan, die zwei Game Changers und die Niv-Curiosity-Linie s
 1 Thundering Falls
 1 Witch's Mark
 ```
-</section>
 
-<section id="varianten" class="content-card">
-  <h2>Varianten</h2>
+</details>
+
+<details id="varianten" class="accordion-card" markdown="1">
+<summary>Varianten</summary>
 
 - [Everything Burns](#variant-everything-burns)
 
@@ -794,10 +794,11 @@ Die Variante ist als Bracket 3 einzuordnen:
 - keine Extra-Turn-Schleife
 - explosive, aber von sichtbaren und entfernbaren Permanents abhängige Finisher-Turns
 - realistischer relevanter Sieg- oder Dominanzbereich ab ungefähr Zug 6
-</section>
 
-<section id="versionen" class="content-card">
-  <h2>Versionen</h2>
+</details>
+
+<details id="versionen" class="accordion-card" markdown="1">
+<summary>Versionen</summary>
 
 - [V001](#version-v001)
 
@@ -989,6 +990,7 @@ Aus der archivierten Version entfernt:
 - Swiftwater Cliffs
 - Teach by Example
 - Think Twice
-</section>
+
+</details>
 
 </div>

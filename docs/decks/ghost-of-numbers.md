@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../assets/style.css">
 
-<div class="page-shell">
+<div class="page-shell" markdown="1">
 
 <nav class="breadcrumb">
   <a href="../index.html">← Deckübersicht</a>
@@ -24,48 +24,44 @@
 <section class="profile-card">
   <h2>Kurzprofil</h2>
 
-  <table>
-    <tr>
-      <th>Feld</th>
-      <th>Wert</th>
-    </tr>
-    <tr>
-      <td>Slug</td>
-      <td><code>ghost-of-numbers</code></td>
-    </tr>
-    <tr>
-      <td>Commander</td>
-      <td>Jin Sakai, Ghost of Tsushima</td>
-    </tr>
-    <tr>
-      <td>Analyse</td>
-      <td><a href="#analyse">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Bracket</td>
-      <td><a href="#bracket">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Gameplan</td>
-      <td><a href="#gameplan">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Deckliste</td>
-      <td><a href="#deckliste">Ja</a></td>
-    </tr>
-    <tr>
-      <td>Varianten</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Versionen</td>
-      <td>0</td>
-    </tr>
-  </table>
+  <div class="profile-grid">
+    <div>
+      <span>Slug</span>
+      <strong><code>ghost-of-numbers</code></strong>
+    </div>
+    <div>
+      <span>Commander</span>
+      <strong>Jin Sakai, Ghost of Tsushima</strong>
+    </div>
+    <div>
+      <span>Analyse</span>
+      <strong><a href="#analyse">Ja</a></strong>
+    </div>
+    <div>
+      <span>Bracket</span>
+      <strong><a href="#bracket">Ja</a></strong>
+    </div>
+    <div>
+      <span>Gameplan</span>
+      <strong><a href="#gameplan">Ja</a></strong>
+    </div>
+    <div>
+      <span>Deckliste</span>
+      <strong><a href="#deckliste">Ja</a></strong>
+    </div>
+    <div>
+      <span>Varianten</span>
+      <strong>0</strong>
+    </div>
+    <div>
+      <span>Versionen</span>
+      <strong>0</strong>
+    </div>
+  </div>
 </section>
 
-<section id="analyse" class="content-card">
-  <h2>Analyse</h2>
+<details id="analyse" class="accordion-card" open markdown="1">
+<summary>Analyse</summary>
 
 # Deckanalyse: Ghost of Numbers
 
@@ -226,10 +222,11 @@ Die dreifarbige Manabasis ist funktional, hat aber mehrere getappt kommende oder
 - `brains/bracket/templates.md`
 - Offizielle Commander- und Bracket-Regeln, geprüft am 9. August 2026
 - Deckliste: `data/decks/decklists/Ghost of Numbers.txt`
-</section>
 
-<section id="bracket" class="content-card">
-  <h2>Bracket</h2>
+</details>
+
+<details id="bracket" class="accordion-card" markdown="1">
+<summary>Bracket</summary>
 
 # Bracket Einschätzung: Ghost of Numbers
 
@@ -348,10 +345,11 @@ Falls es für ein höheres Bracket optimiert werden soll:
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 9. August 2026
 - Deckliste: `data/decks/decklists/Ghost of Numbers.txt`
-</section>
 
-<section id="gameplan" class="content-card">
-  <h2>Gameplan</h2>
+</details>
+
+<details id="gameplan" class="accordion-card" markdown="1">
+<summary>Gameplan</summary>
 
 # Gameplan: Ghost of Numbers
 
@@ -429,10 +427,11 @@ Zurücklegen sollte man insbesondere:
 4. Toxrill als kontrollierender Late-Game-Payoff.
 
 Das Deck enthält keine geplante Endloskombination. Sein Hauptplan bleibt sichtbarer, interaktiver Kampfschaden.
-</section>
 
-<section id="deckliste" class="content-card">
-  <h2>Deckliste</h2>
+</details>
+
+<details id="deckliste" class="accordion-card" markdown="1">
+<summary>Deckliste</summary>
 
 ```txt
 // COMMANDER
@@ -531,18 +530,21 @@ Das Deck enthält keine geplante Endloskombination. Sein Hauptplan bleibt sichtb
 1 Withering Torment
 1 Yuriko, the Tiger's Shadow
 ```
-</section>
 
-<section id="varianten" class="content-card">
-  <h2>Varianten</h2>
+</details>
+
+<details id="varianten" class="accordion-card" markdown="1">
+<summary>Varianten</summary>
 
 _Keine gespeicherten Varianten vorhanden._
-</section>
 
-<section id="versionen" class="content-card">
-  <h2>Versionen</h2>
+</details>
+
+<details id="versionen" class="accordion-card" markdown="1">
+<summary>Versionen</summary>
 
 _Keine archivierten Versionen vorhanden._
-</section>
+
+</details>
 
 </div>
