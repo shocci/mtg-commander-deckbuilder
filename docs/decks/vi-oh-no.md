@@ -9,11 +9,11 @@
 |---|---|
 | Slug | `vi-oh-no` |
 | Commander | Vivi Ornitier |
-| Deckliste | Ja |
-| Analyse | Ja |
-| Bracket | Ja |
-| Gameplan | Ja |
-| Varianten | 1 |
+| Deckliste | [Ja](#deckliste) |
+| Analyse | [Ja](#analyse) |
+| Bracket | [Ja](#bracket) |
+| Gameplan | [Ja](#gameplan) |
+| Varianten | [1](#varianten) |
 
 ---
 

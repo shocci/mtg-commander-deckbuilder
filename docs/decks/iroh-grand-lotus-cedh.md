@@ -9,10 +9,10 @@
 |---|---|
 | Slug | `iroh-grand-lotus-cedh` |
 | Commander | Iroh, Grand Lotus |
-| Deckliste | Ja |
-| Analyse | Ja |
-| Bracket | Ja |
-| Gameplan | Ja |
+| Deckliste | [Ja](#deckliste) |
+| Analyse | [Ja](#analyse) |
+| Bracket | [Ja](#bracket) |
+| Gameplan | [Ja](#gameplan) |
 | Varianten | 0 |
 
 ---

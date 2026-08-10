@@ -9,10 +9,10 @@
 |---|---|
 | Slug | `ghost-of-numbers` |
 | Commander | Jin Sakai, Ghost of Tsushima |
-| Deckliste | Ja |
-| Analyse | Ja |
-| Bracket | Ja |
-| Gameplan | Ja |
+| Deckliste | [Ja](#deckliste) |
+| Analyse | [Ja](#analyse) |
+| Bracket | [Ja](#bracket) |
+| Gameplan | [Ja](#gameplan) |
 | Varianten | 0 |
 
 ---

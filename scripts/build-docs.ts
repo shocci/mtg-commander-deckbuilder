@@ -231,11 +231,11 @@ ${variant.content.trim()}`,
 |---|---|
 | Slug | \`${deck.slug}\` |
 | Commander | ${deck.commander ?? "offen"} |
-| Deckliste | ${deck.decklist ? "Ja" : "Nein"} |
-| Analyse | ${deck.analysis ? "Ja" : "Nein"} |
-| Bracket | ${deck.bracket ? "Ja" : "Nein"} |
-| Gameplan | ${deck.gameplan ? "Ja" : "Nein"} |
-| Varianten | ${deck.variants.length} |
+| Deckliste | ${deck.decklist ? "[Ja](#deckliste)" : "Nein"} |
+| Analyse | ${deck.analysis ? "[Ja](#analyse)" : "Nein"} |
+| Bracket | ${deck.bracket ? "[Ja](#bracket)" : "Nein"} |
+| Gameplan | ${deck.gameplan ? "[Ja](#gameplan)" : "Nein"} |
+| Varianten | ${deck.variants.length > 0 ? `[${deck.variants.length}](#varianten)` : "0"} |
 
 ---
 

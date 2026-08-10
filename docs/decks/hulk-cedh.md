@@ -9,10 +9,10 @@
 |---|---|
 | Slug | `hulk-cedh` |
 | Commander | Bruce Banner // The Incredible Hulk |
-| Deckliste | Ja |
-| Analyse | Ja |
-| Bracket | Ja |
-| Gameplan | Ja |
+| Deckliste | [Ja](#deckliste) |
+| Analyse | [Ja](#analyse) |
+| Bracket | [Ja](#bracket) |
+| Gameplan | [Ja](#gameplan) |
 | Varianten | 0 |
 
 ---
