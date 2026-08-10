@@ -13,6 +13,7 @@
 | Analyse | Ja |
 | Bracket | Ja |
 | Gameplan | Ja |
+| Varianten | 0 |
 
 ---
 
@@ -414,6 +415,12 @@ Wichtige Opfer-Payoffs:
 Vor der Partie sollte transparent genannt werden:
 
 > Das Deck ist oberes Bracket 3, enthält Bolas’s Citadel und Necropotence als zwei Game Changer sowie die tutorbare Endlosschleife Exquisite Blood plus Sanguine Bond.
+
+---
+
+## Varianten
+
+_Keine gespeicherten Varianten vorhanden._
 
 ---
 

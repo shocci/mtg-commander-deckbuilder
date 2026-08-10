@@ -13,6 +13,7 @@
 | Analyse | Ja |
 | Bracket | Ja |
 | Gameplan | Ja |
+| Varianten | 0 |
 
 ---
 
@@ -581,6 +582,12 @@ Das Deck besitzt kein Boardwipe und wenig endgültiges Kreaturenremoval. Ein geb
 5. Exhibition Tidecaller und Brain Freeze als Millplan, falls die primären Schleifen nicht vollständig verfügbar sind.
 
 Im Pregame-Gespräch sollte das Deck eindeutig als Bracket-5-cEDH-Liste mit 14 Game Changers, Turn-1-Potenzial, frühen Kombos, umfangreichem Fast Mana und kostenloser Interaktion kommuniziert werden.
+
+---
+
+## Varianten
+
+_Keine gespeicherten Varianten vorhanden._
 
 ---
 

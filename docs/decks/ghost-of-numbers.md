@@ -13,6 +13,7 @@
 | Analyse | Ja |
 | Bracket | Ja |
 | Gameplan | Ja |
+| Varianten | 0 |
 
 ---
 
@@ -380,6 +381,12 @@ Zurücklegen sollte man insbesondere:
 4. Toxrill als kontrollierender Late-Game-Payoff.
 
 Das Deck enthält keine geplante Endloskombination. Sein Hauptplan bleibt sichtbarer, interaktiver Kampfschaden.
+
+---
+
+## Varianten
+
+_Keine gespeicherten Varianten vorhanden._
 
 ---
 

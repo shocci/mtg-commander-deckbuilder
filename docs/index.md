@@ -5,14 +5,14 @@
 
 ## Decks
 
-| Deck | Commander | Analyse | Bracket | Gameplan |
-|---|---|---:|---:|---:|
-| [Ghost Of Numbers](decks/ghost-of-numbers.md) | Jin Sakai, Ghost of Tsushima | Ja | Ja | Ja |
-| [Gwen Nom](decks/gwen-nom.md) | Gwenom, Remorseless | Ja | Ja | Ja |
-| [Hulk Cedh](decks/hulk-cedh.md) | Bruce Banner // The Incredible Hulk | Ja | Ja | Ja |
-| [Iroh Grand Lotus Cedh](decks/iroh-grand-lotus-cedh.md) | Iroh, Grand Lotus | Ja | Ja | Ja |
-| [Noctis Cedh](decks/noctis-cedh.md) | Noctis, Prince of Lucis | Ja | Ja | Ja |
-| [Vi Oh No](decks/vi-oh-no.md) | Vivi Ornitier | Ja | Ja | Ja |
+| Deck | Commander | Analyse | Bracket | Gameplan | Varianten |
+|---|---|---:|---:|---:|---:|
+| [Ghost Of Numbers](decks/ghost-of-numbers.md) | Jin Sakai, Ghost of Tsushima | Ja | Ja | Ja | 0 |
+| [Gwen Nom](decks/gwen-nom.md) | Gwenom, Remorseless | Ja | Ja | Ja | 0 |
+| [Hulk Cedh](decks/hulk-cedh.md) | Bruce Banner // The Incredible Hulk | Ja | Ja | Ja | 0 |
+| [Iroh Grand Lotus Cedh](decks/iroh-grand-lotus-cedh.md) | Iroh, Grand Lotus | Ja | Ja | Ja | 0 |
+| [Noctis Cedh](decks/noctis-cedh.md) | Noctis, Prince of Lucis | Ja | Ja | Ja | 0 |
+| [Vi Oh No](decks/vi-oh-no.md) | Vivi Ornitier | Ja | Ja | Ja | 1 |
 
 ## Datenquellen
 

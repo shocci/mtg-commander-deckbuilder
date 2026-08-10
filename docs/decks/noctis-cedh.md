@@ -13,6 +13,7 @@
 | Analyse | Ja |
 | Bracket | Ja |
 | Gameplan | Ja |
+| Varianten | 0 |
 
 ---
 
@@ -544,6 +545,12 @@ Zurücklegen sollte man insbesondere:
 7. Noctis + Vexing Bauble + Null-Mana-Artefakt + Aetherflux Reservoir.
 
 Im Pregame-Gespräch sollte das Deck eindeutig als cEDH-Liste mit 18 Game Changers, frühen Sofortsiegen, umfangreichem Fast Mana und kostenloser Interaktion kommuniziert werden.
+
+---
+
+## Varianten
+
+_Keine gespeicherten Varianten vorhanden._
 
 ---
 

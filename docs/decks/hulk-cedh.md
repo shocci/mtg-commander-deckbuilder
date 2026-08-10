@@ -13,6 +13,7 @@
 | Analyse | Ja |
 | Bracket | Ja |
 | Gameplan | Ja |
+| Varianten | 0 |
 
 ---
 
@@ -540,6 +541,12 @@ Zurücklegen sollte man insbesondere:
 5. The Incredible Hulk + Caltrops für beliebig viele Kampfphasen.
 
 Im Pregame-Gespräch sollte das Deck eindeutig als cEDH-Liste mit frühen Kombos, umfangreichem Fast Mana und kostenloser Interaktion kommuniziert werden.
+
+---
+
+## Varianten
+
+_Keine gespeicherten Varianten vorhanden._
 
 ---
 

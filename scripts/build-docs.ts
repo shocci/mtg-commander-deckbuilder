@@ -1,4 +1,4 @@
-import { mkdir, readdir, readFile, writeFile, rm } from "node:fs/promises";
+import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const ROOT_DIR = process.cwd();
@@ -9,6 +9,12 @@ const SAVED_DIR = path.join(ROOT_DIR, "data", "decks", "saved");
 const DOCS_DIR = path.join(ROOT_DIR, "docs");
 const DOCS_DECKS_DIR = path.join(DOCS_DIR, "decks");
 
+type DeckVariant = {
+    slug: string;
+    title: string;
+    content: string;
+};
+
 type DeckDoc = {
     slug: string;
     title: string;
@@ -17,6 +23,7 @@ type DeckDoc = {
     analysis: string | null;
     bracket: string | null;
     gameplan: string | null;
+    variants: DeckVariant[];
 };
 
 async function pathExists(filePath: string): Promise<boolean> {
@@ -67,6 +74,35 @@ function extractCommander(decklist: string | null): string | null {
     return null;
 }
 
+async function readVariants(savedDeckDir: string): Promise<DeckVariant[]> {
+    const variantsDir = path.join(savedDeckDir, "variants");
+
+    try {
+        const files = await readdir(variantsDir);
+
+        const variantFiles = files
+            .filter((file) => file.endsWith(".md"))
+            .sort((a, b) => a.localeCompare(b));
+
+        const variants: DeckVariant[] = [];
+
+        for (const file of variantFiles) {
+            const slug = file.replace(/\.md$/, "");
+            const content = await readFile(path.join(variantsDir, file), "utf8");
+
+            variants.push({
+                slug,
+                title: titleFromSlug(slug),
+                content,
+            });
+        }
+
+        return variants;
+    } catch {
+        return [];
+    }
+}
+
 async function getDeckSlugs(): Promise<string[]> {
     const slugs = new Set<string>();
 
@@ -105,6 +141,7 @@ async function loadDeck(slug: string): Promise<DeckDoc> {
     const analysis = await readIfExists(path.join(savedDeckDir, "analysis.md"));
     const bracket = await readIfExists(path.join(savedDeckDir, "bracket.md"));
     const gameplan = await readIfExists(path.join(savedDeckDir, "gameplan.md"));
+    const variants = await readVariants(savedDeckDir);
 
     return {
         slug,
@@ -114,6 +151,7 @@ async function loadDeck(slug: string): Promise<DeckDoc> {
         analysis,
         bracket,
         gameplan,
+        variants,
     };
 }
 
@@ -124,8 +162,9 @@ function renderIndex(decks: DeckDoc[]): string {
             const analysis = deck.analysis ? "Ja" : "Nein";
             const bracket = deck.bracket ? "Ja" : "Nein";
             const gameplan = deck.gameplan ? "Ja" : "Nein";
+            const variants = deck.variants.length;
 
-            return `| [${deck.title}](decks/${deck.slug}.md) | ${commander} | ${analysis} | ${bracket} | ${gameplan} |`;
+            return `| [${deck.title}](decks/${deck.slug}.md) | ${commander} | ${analysis} | ${bracket} | ${gameplan} | ${variants} |`;
         })
         .join("\n");
 
@@ -136,9 +175,9 @@ function renderIndex(decks: DeckDoc[]): string {
 
 ## Decks
 
-| Deck | Commander | Analyse | Bracket | Gameplan |
-|---|---|---:|---:|---:|
-${rows || "| Keine Decks gefunden | - | - | - | - |"}
+| Deck | Commander | Analyse | Bracket | Gameplan | Varianten |
+|---|---|---:|---:|---:|---:|
+${rows || "| Keine Decks gefunden | - | - | - | - | - |"}
 
 ## Datenquellen
 
@@ -166,6 +205,17 @@ function renderDeckPage(deck: DeckDoc): string {
         ? deck.gameplan.trim()
         : "_Kein gespeicherter Gameplan vorhanden._";
 
+    const variantsBlock =
+        deck.variants.length > 0
+            ? deck.variants
+                .map(
+                    (variant) => `### ${variant.title}
+
+${variant.content.trim()}`,
+                )
+                .join("\n\n---\n\n")
+            : "_Keine gespeicherten Varianten vorhanden._";
+
     const decklistBlock = deck.decklist
         ? `\`\`\`txt\n${deck.decklist.trim()}\n\`\`\``
         : "_Keine Deckliste vorhanden._";
@@ -185,6 +235,7 @@ function renderDeckPage(deck: DeckDoc): string {
 | Analyse | ${deck.analysis ? "Ja" : "Nein"} |
 | Bracket | ${deck.bracket ? "Ja" : "Nein"} |
 | Gameplan | ${deck.gameplan ? "Ja" : "Nein"} |
+| Varianten | ${deck.variants.length} |
 
 ---
 
@@ -203,6 +254,12 @@ ${bracketBlock}
 ## Gameplan
 
 ${gameplanBlock}
+
+---
+
+## Varianten
+
+${variantsBlock}
 
 ---
 
