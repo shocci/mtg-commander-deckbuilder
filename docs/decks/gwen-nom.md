@@ -9,10 +9,10 @@
 |---|---|
 | Slug | `gwen-nom` |
 | Commander | Gwenom, Remorseless |
-| Deckliste | [Ja](#deckliste) |
 | Analyse | [Ja](#analyse) |
 | Bracket | [Ja](#bracket) |
 | Gameplan | [Ja](#gameplan) |
+| Deckliste | [Ja](#deckliste) |
 | Varianten | 0 |
 
 ---
@@ -418,12 +418,6 @@ Vor der Partie sollte transparent genannt werden:
 
 ---
 
-## Varianten
-
-_Keine gespeicherten Varianten vorhanden._
-
----
-
 ## Deckliste
 
 ```txt
@@ -504,3 +498,9 @@ _Keine gespeicherten Varianten vorhanden._
 // MAYBEBOARD
 1 Ancient Cellarspawn
 ```
+
+---
+
+## Varianten
+
+_Keine gespeicherten Varianten vorhanden._

@@ -192,6 +192,32 @@ Diese \`docs/\`-Dateien sind nur die lesbare Anzeige für GitHub Pages.
 `;
 }
 
+function renderVariantsBlock(deck: DeckDoc): string {
+    if (deck.variants.length === 0) {
+        return "_Keine gespeicherten Varianten vorhanden._";
+    }
+
+    const variantLinks = deck.variants
+        .map((variant) => `- [${variant.title}](#variant-${variant.slug})`)
+        .join("\n");
+
+    const variantSections = deck.variants
+        .map(
+            (variant) => `<a id="variant-${variant.slug}"></a>
+
+### ${variant.title}
+
+${variant.content.trim()}`,
+        )
+        .join("\n\n---\n\n");
+
+    return `${variantLinks}
+
+---
+
+${variantSections}`;
+}
+
 function renderDeckPage(deck: DeckDoc): string {
     const analysisBlock = deck.analysis
         ? deck.analysis.trim()
@@ -205,20 +231,11 @@ function renderDeckPage(deck: DeckDoc): string {
         ? deck.gameplan.trim()
         : "_Kein gespeicherter Gameplan vorhanden._";
 
-    const variantsBlock =
-        deck.variants.length > 0
-            ? deck.variants
-                .map(
-                    (variant) => `### ${variant.title}
-
-${variant.content.trim()}`,
-                )
-                .join("\n\n---\n\n")
-            : "_Keine gespeicherten Varianten vorhanden._";
-
     const decklistBlock = deck.decklist
         ? `\`\`\`txt\n${deck.decklist.trim()}\n\`\`\``
         : "_Keine Deckliste vorhanden._";
+
+    const variantsBlock = renderVariantsBlock(deck);
 
     return `# ${deck.title}
 
@@ -231,10 +248,10 @@ ${variant.content.trim()}`,
 |---|---|
 | Slug | \`${deck.slug}\` |
 | Commander | ${deck.commander ?? "offen"} |
-| Deckliste | ${deck.decklist ? "[Ja](#deckliste)" : "Nein"} |
 | Analyse | ${deck.analysis ? "[Ja](#analyse)" : "Nein"} |
 | Bracket | ${deck.bracket ? "[Ja](#bracket)" : "Nein"} |
 | Gameplan | ${deck.gameplan ? "[Ja](#gameplan)" : "Nein"} |
+| Deckliste | ${deck.decklist ? "[Ja](#deckliste)" : "Nein"} |
 | Varianten | ${deck.variants.length > 0 ? `[${deck.variants.length}](#varianten)` : "0"} |
 
 ---
@@ -257,15 +274,15 @@ ${gameplanBlock}
 
 ---
 
-## Varianten
-
-${variantsBlock}
-
----
-
 ## Deckliste
 
 ${decklistBlock}
+
+---
+
+## Varianten
+
+${variantsBlock}
 `;
 }
 

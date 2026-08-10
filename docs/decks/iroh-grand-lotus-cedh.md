@@ -9,10 +9,10 @@
 |---|---|
 | Slug | `iroh-grand-lotus-cedh` |
 | Commander | Iroh, Grand Lotus |
-| Deckliste | [Ja](#deckliste) |
 | Analyse | [Ja](#analyse) |
 | Bracket | [Ja](#bracket) |
 | Gameplan | [Ja](#gameplan) |
+| Deckliste | [Ja](#deckliste) |
 | Varianten | 0 |
 
 ---
@@ -585,12 +585,6 @@ Im Pregame-Gespräch sollte das Deck eindeutig als Bracket-5-cEDH-Liste mit 14 G
 
 ---
 
-## Varianten
-
-_Keine gespeicherten Varianten vorhanden._
-
----
-
 ## Deckliste
 
 ```txt
@@ -697,3 +691,9 @@ _Keine gespeicherten Varianten vorhanden._
 1 Wooded Foothills
 1 Worldly Tutor
 ```
+
+---
+
+## Varianten
+
+_Keine gespeicherten Varianten vorhanden._

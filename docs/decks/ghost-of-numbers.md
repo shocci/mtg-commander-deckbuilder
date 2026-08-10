@@ -9,10 +9,10 @@
 |---|---|
 | Slug | `ghost-of-numbers` |
 | Commander | Jin Sakai, Ghost of Tsushima |
-| Deckliste | [Ja](#deckliste) |
 | Analyse | [Ja](#analyse) |
 | Bracket | [Ja](#bracket) |
 | Gameplan | [Ja](#gameplan) |
+| Deckliste | [Ja](#deckliste) |
 | Varianten | 0 |
 
 ---
@@ -384,12 +384,6 @@ Das Deck enthält keine geplante Endloskombination. Sein Hauptplan bleibt sichtb
 
 ---
 
-## Varianten
-
-_Keine gespeicherten Varianten vorhanden._
-
----
-
 ## Deckliste
 
 ```txt
@@ -489,3 +483,9 @@ _Keine gespeicherten Varianten vorhanden._
 1 Withering Torment
 1 Yuriko, the Tiger's Shadow
 ```
+
+---
+
+## Varianten
+
+_Keine gespeicherten Varianten vorhanden._

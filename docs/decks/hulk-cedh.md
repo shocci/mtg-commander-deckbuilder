@@ -9,10 +9,10 @@
 |---|---|
 | Slug | `hulk-cedh` |
 | Commander | Bruce Banner // The Incredible Hulk |
-| Deckliste | [Ja](#deckliste) |
 | Analyse | [Ja](#analyse) |
 | Bracket | [Ja](#bracket) |
 | Gameplan | [Ja](#gameplan) |
+| Deckliste | [Ja](#deckliste) |
 | Varianten | 0 |
 
 ---
@@ -544,12 +544,6 @@ Im Pregame-Gespräch sollte das Deck eindeutig als cEDH-Liste mit frühen Kombos
 
 ---
 
-## Varianten
-
-_Keine gespeicherten Varianten vorhanden._
-
----
-
 ## Deckliste
 
 ```txt
@@ -656,3 +650,9 @@ _Keine gespeicherten Varianten vorhanden._
 1 Wooded Foothills
 1 Worldly Tutor
 ```
+
+---
+
+## Varianten
+
+_Keine gespeicherten Varianten vorhanden._

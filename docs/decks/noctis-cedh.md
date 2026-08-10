@@ -9,10 +9,10 @@
 |---|---|
 | Slug | `noctis-cedh` |
 | Commander | Noctis, Prince of Lucis |
-| Deckliste | [Ja](#deckliste) |
 | Analyse | [Ja](#analyse) |
 | Bracket | [Ja](#bracket) |
 | Gameplan | [Ja](#gameplan) |
+| Deckliste | [Ja](#deckliste) |
 | Varianten | 0 |
 
 ---
@@ -548,12 +548,6 @@ Im Pregame-Gespräch sollte das Deck eindeutig als cEDH-Liste mit 18 Game Change
 
 ---
 
-## Varianten
-
-_Keine gespeicherten Varianten vorhanden._
-
----
-
 ## Deckliste
 
 ```txt
@@ -660,3 +654,9 @@ _Keine gespeicherten Varianten vorhanden._
 1 Windfall
 1 Wishclaw Talisman
 ```
+
+---
+
+## Varianten
+
+_Keine gespeicherten Varianten vorhanden._
