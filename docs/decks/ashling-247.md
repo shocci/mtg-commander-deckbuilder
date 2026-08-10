@@ -1,24 +1,71 @@
-# Ashling 247
+<link rel="stylesheet" href="../assets/style.css">
 
-> Diese Datei wurde automatisch aus `data/` erzeugt.  
-> Manuelle Änderungen können beim nächsten Build überschrieben werden.
+<div class="page-shell">
 
-## Kurzprofil
+<nav class="breadcrumb">
+  <a href="../index.html">← Deckübersicht</a>
+</nav>
 
-| Feld | Wert |
-|---|---|
-| Slug | `ashling-247` |
-| Commander | Ashling, Rekindled // Ashling, Rimebound |
-| Analyse | [Ja](#analyse) |
-| Bracket | [Ja](#bracket) |
-| Gameplan | [Ja](#gameplan) |
-| Deckliste | [Ja](#deckliste) |
-| Varianten | 0 |
-| Versionen | [1](#versionen) |
+<header class="deck-header">
+  <p class="eyebrow">Deck</p>
+  <h1>Ashling 247</h1>
+  <p class="subtitle">Commander: Ashling, Rekindled // Ashling, Rimebound</p>
+</header>
 
----
+<section class="quick-nav">
+  <a href="#analyse">Analyse</a>
+  <a href="#bracket">Bracket</a>
+  <a href="#gameplan">Gameplan</a>
+  <a href="#deckliste">Deckliste</a>
+  <a href="#varianten">Varianten</a>
+  <a href="#versionen">Versionen</a>
+</section>
 
-## Analyse
+<section class="profile-card">
+  <h2>Kurzprofil</h2>
+
+  <table>
+    <tr>
+      <th>Feld</th>
+      <th>Wert</th>
+    </tr>
+    <tr>
+      <td>Slug</td>
+      <td><code>ashling-247</code></td>
+    </tr>
+    <tr>
+      <td>Commander</td>
+      <td>Ashling, Rekindled // Ashling, Rimebound</td>
+    </tr>
+    <tr>
+      <td>Analyse</td>
+      <td><a href="#analyse">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Bracket</td>
+      <td><a href="#bracket">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Gameplan</td>
+      <td><a href="#gameplan">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Deckliste</td>
+      <td><a href="#deckliste">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Varianten</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Versionen</td>
+      <td><a href="#versionen">1</a></td>
+    </tr>
+  </table>
+</section>
+
+<section id="analyse" class="content-card">
+  <h2>Analyse</h2>
 
 # Deckanalyse: Ashling 2-4-7 – 20-Euro-Upgrade
 
@@ -292,10 +339,10 @@ Die Liste ist nun ein sehr fokussiertes oberes Bracket-3-Deck und liegt durch de
 - `brains/bracket/templates.md`
 - Deckliste: `data/decks/decklists/ashling-247.txt`
 - Ausgangsversion: `data/decks/saved/ashling-247/versions/v001.md`
+</section>
 
----
-
-## Bracket
+<section id="bracket" class="content-card">
+  <h2>Bracket</h2>
 
 # Bracket-Einschätzung: Ashling 2-4-7 – 20-Euro-Upgrade
 
@@ -490,10 +537,10 @@ Wenn die Spielgruppe bereits einzelne geplante Turn-3-Big-Spells als Bracket 4 b
 - Commander Brackets Beta Update, Stand 10. August 2026
 - `brains/bracket/templates.md`
 - Deckliste: `data/decks/decklists/ashling-247.txt`
+</section>
 
----
-
-## Gameplan
+<section id="gameplan" class="content-card">
+  <h2>Gameplan</h2>
 
 # Gameplan: Ashling 2-4-7 – 20-Euro-Upgrade
 
@@ -720,10 +767,10 @@ Bevorzugte kostenlose Ziele:
 Vor der Partie sollte transparent genannt werden:
 
 > Oberes Bracket 3 mit drei Game Changern: Gamble, Jeska's Will und Mystical Tutor. Der Normalplan ist Ashling in Zug 2, eine Vier-Mana-Brücke in Zug 3 und ein großer Spruch in Zug 4. Mystical Tutor kann Irencrag Feat finden und dadurch schon in Zug 3 einen roten oder farblosen Big Spell ermöglichen. Das Deck spielt freie Interaktion und Rise of the Eldrazi als einzelnen selbst-exilierenden Extra-Turn-Spruch, aber keine Endlosschleife oder unmittelbare Siegkombination.
+</section>
 
----
-
-## Deckliste
+<section id="deckliste" class="content-card">
+  <h2>Deckliste</h2>
 
 ```txt
 // COMMANDER
@@ -820,10 +867,16 @@ Vor der Partie sollte transparent genannt werden:
 1 One with the Multiverse
 1 Apex of Power
 ```
+</section>
 
----
+<section id="varianten" class="content-card">
+  <h2>Varianten</h2>
 
-## Versionen
+_Keine gespeicherten Varianten vorhanden._
+</section>
+
+<section id="versionen" class="content-card">
+  <h2>Versionen</h2>
 
 - [V001](#version-v001)
 
@@ -1028,9 +1081,6 @@ Die Liste kann in Zug 4 einen sehr starken Big Spell wirken, gewinnt dadurch abe
 1 Rise of the Eldrazi
 1 Blasphemous Act
 ```
+</section>
 
----
-
-## Varianten
-
-_Keine gespeicherten Varianten vorhanden._
+</div>

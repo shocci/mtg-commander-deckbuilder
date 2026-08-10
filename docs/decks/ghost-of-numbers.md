@@ -1,24 +1,71 @@
-# Ghost Of Numbers
+<link rel="stylesheet" href="../assets/style.css">
 
-> Diese Datei wurde automatisch aus `data/` erzeugt.  
-> Manuelle Änderungen können beim nächsten Build überschrieben werden.
+<div class="page-shell">
 
-## Kurzprofil
+<nav class="breadcrumb">
+  <a href="../index.html">← Deckübersicht</a>
+</nav>
 
-| Feld | Wert |
-|---|---|
-| Slug | `ghost-of-numbers` |
-| Commander | Jin Sakai, Ghost of Tsushima |
-| Analyse | [Ja](#analyse) |
-| Bracket | [Ja](#bracket) |
-| Gameplan | [Ja](#gameplan) |
-| Deckliste | [Ja](#deckliste) |
-| Varianten | 0 |
-| Versionen | 0 |
+<header class="deck-header">
+  <p class="eyebrow">Deck</p>
+  <h1>Ghost Of Numbers</h1>
+  <p class="subtitle">Commander: Jin Sakai, Ghost of Tsushima</p>
+</header>
 
----
+<section class="quick-nav">
+  <a href="#analyse">Analyse</a>
+  <a href="#bracket">Bracket</a>
+  <a href="#gameplan">Gameplan</a>
+  <a href="#deckliste">Deckliste</a>
+  <a href="#varianten">Varianten</a>
+  <a href="#versionen">Versionen</a>
+</section>
 
-## Analyse
+<section class="profile-card">
+  <h2>Kurzprofil</h2>
+
+  <table>
+    <tr>
+      <th>Feld</th>
+      <th>Wert</th>
+    </tr>
+    <tr>
+      <td>Slug</td>
+      <td><code>ghost-of-numbers</code></td>
+    </tr>
+    <tr>
+      <td>Commander</td>
+      <td>Jin Sakai, Ghost of Tsushima</td>
+    </tr>
+    <tr>
+      <td>Analyse</td>
+      <td><a href="#analyse">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Bracket</td>
+      <td><a href="#bracket">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Gameplan</td>
+      <td><a href="#gameplan">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Deckliste</td>
+      <td><a href="#deckliste">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Varianten</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Versionen</td>
+      <td>0</td>
+    </tr>
+  </table>
+</section>
+
+<section id="analyse" class="content-card">
+  <h2>Analyse</h2>
 
 # Deckanalyse: Ghost of Numbers
 
@@ -179,10 +226,10 @@ Die dreifarbige Manabasis ist funktional, hat aber mehrere getappt kommende oder
 - `brains/bracket/templates.md`
 - Offizielle Commander- und Bracket-Regeln, geprüft am 9. August 2026
 - Deckliste: `data/decks/decklists/Ghost of Numbers.txt`
+</section>
 
----
-
-## Bracket
+<section id="bracket" class="content-card">
+  <h2>Bracket</h2>
 
 # Bracket Einschätzung: Ghost of Numbers
 
@@ -301,10 +348,10 @@ Falls es für ein höheres Bracket optimiert werden soll:
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 9. August 2026
 - Deckliste: `data/decks/decklists/Ghost of Numbers.txt`
+</section>
 
----
-
-## Gameplan
+<section id="gameplan" class="content-card">
+  <h2>Gameplan</h2>
 
 # Gameplan: Ghost of Numbers
 
@@ -382,10 +429,10 @@ Zurücklegen sollte man insbesondere:
 4. Toxrill als kontrollierender Late-Game-Payoff.
 
 Das Deck enthält keine geplante Endloskombination. Sein Hauptplan bleibt sichtbarer, interaktiver Kampfschaden.
+</section>
 
----
-
-## Deckliste
+<section id="deckliste" class="content-card">
+  <h2>Deckliste</h2>
 
 ```txt
 // COMMANDER
@@ -484,15 +531,18 @@ Das Deck enthält keine geplante Endloskombination. Sein Hauptplan bleibt sichtb
 1 Withering Torment
 1 Yuriko, the Tiger's Shadow
 ```
+</section>
 
----
-
-## Versionen
-
-_Keine archivierten Versionen vorhanden._
-
----
-
-## Varianten
+<section id="varianten" class="content-card">
+  <h2>Varianten</h2>
 
 _Keine gespeicherten Varianten vorhanden._
+</section>
+
+<section id="versionen" class="content-card">
+  <h2>Versionen</h2>
+
+_Keine archivierten Versionen vorhanden._
+</section>
+
+</div>

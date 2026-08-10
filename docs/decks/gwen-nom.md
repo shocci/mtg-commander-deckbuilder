@@ -1,24 +1,71 @@
-# Gwen Nom
+<link rel="stylesheet" href="../assets/style.css">
 
-> Diese Datei wurde automatisch aus `data/` erzeugt.  
-> Manuelle Änderungen können beim nächsten Build überschrieben werden.
+<div class="page-shell">
 
-## Kurzprofil
+<nav class="breadcrumb">
+  <a href="../index.html">← Deckübersicht</a>
+</nav>
 
-| Feld | Wert |
-|---|---|
-| Slug | `gwen-nom` |
-| Commander | Gwenom, Remorseless |
-| Analyse | [Ja](#analyse) |
-| Bracket | [Ja](#bracket) |
-| Gameplan | [Ja](#gameplan) |
-| Deckliste | [Ja](#deckliste) |
-| Varianten | 0 |
-| Versionen | 0 |
+<header class="deck-header">
+  <p class="eyebrow">Deck</p>
+  <h1>Gwen Nom</h1>
+  <p class="subtitle">Commander: Gwenom, Remorseless</p>
+</header>
 
----
+<section class="quick-nav">
+  <a href="#analyse">Analyse</a>
+  <a href="#bracket">Bracket</a>
+  <a href="#gameplan">Gameplan</a>
+  <a href="#deckliste">Deckliste</a>
+  <a href="#varianten">Varianten</a>
+  <a href="#versionen">Versionen</a>
+</section>
 
-## Analyse
+<section class="profile-card">
+  <h2>Kurzprofil</h2>
+
+  <table>
+    <tr>
+      <th>Feld</th>
+      <th>Wert</th>
+    </tr>
+    <tr>
+      <td>Slug</td>
+      <td><code>gwen-nom</code></td>
+    </tr>
+    <tr>
+      <td>Commander</td>
+      <td>Gwenom, Remorseless</td>
+    </tr>
+    <tr>
+      <td>Analyse</td>
+      <td><a href="#analyse">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Bracket</td>
+      <td><a href="#bracket">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Gameplan</td>
+      <td><a href="#gameplan">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Deckliste</td>
+      <td><a href="#deckliste">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Varianten</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Versionen</td>
+      <td>0</td>
+    </tr>
+  </table>
+</section>
+
+<section id="analyse" class="content-card">
+  <h2>Analyse</h2>
 
 # Deckanalyse: GwenNom
 
@@ -189,10 +236,10 @@ Mehrere Rampkarten kosten zwei oder mehr Mana, und der Commander kostet fünf Ma
 - `brains/bracket/templates.md`
 - Offizielle Commander- und Bracket-Regeln, geprüft am 9. August 2026
 - Deckliste: `data/decks/decklists/GwenNom.txt`
+</section>
 
----
-
-## Bracket
+<section id="bracket" class="content-card">
+  <h2>Bracket</h2>
 
 # Bracket Einschätzung: GwenNom
 
@@ -310,10 +357,10 @@ Falls es für Bracket 4 optimiert werden soll:
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 9. August 2026
 - Deckliste: `data/decks/decklists/GwenNom.txt`
+</section>
 
----
-
-## Gameplan
+<section id="gameplan" class="content-card">
+  <h2>Gameplan</h2>
 
 # Gameplan: GwenNom
 
@@ -416,10 +463,10 @@ Wichtige Opfer-Payoffs:
 Vor der Partie sollte transparent genannt werden:
 
 > Das Deck ist oberes Bracket 3, enthält Bolas’s Citadel und Necropotence als zwei Game Changer sowie die tutorbare Endlosschleife Exquisite Blood plus Sanguine Bond.
+</section>
 
----
-
-## Deckliste
+<section id="deckliste" class="content-card">
+  <h2>Deckliste</h2>
 
 ```txt
 // COMMANDER
@@ -499,15 +546,18 @@ Vor der Partie sollte transparent genannt werden:
 // MAYBEBOARD
 1 Ancient Cellarspawn
 ```
+</section>
 
----
-
-## Versionen
-
-_Keine archivierten Versionen vorhanden._
-
----
-
-## Varianten
+<section id="varianten" class="content-card">
+  <h2>Varianten</h2>
 
 _Keine gespeicherten Varianten vorhanden._
+</section>
+
+<section id="versionen" class="content-card">
+  <h2>Versionen</h2>
+
+_Keine archivierten Versionen vorhanden._
+</section>
+
+</div>

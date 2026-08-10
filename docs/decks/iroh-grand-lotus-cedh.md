@@ -1,24 +1,71 @@
-# Iroh Grand Lotus Cedh
+<link rel="stylesheet" href="../assets/style.css">
 
-> Diese Datei wurde automatisch aus `data/` erzeugt.  
-> Manuelle Änderungen können beim nächsten Build überschrieben werden.
+<div class="page-shell">
 
-## Kurzprofil
+<nav class="breadcrumb">
+  <a href="../index.html">← Deckübersicht</a>
+</nav>
 
-| Feld | Wert |
-|---|---|
-| Slug | `iroh-grand-lotus-cedh` |
-| Commander | Iroh, Grand Lotus |
-| Analyse | [Ja](#analyse) |
-| Bracket | [Ja](#bracket) |
-| Gameplan | [Ja](#gameplan) |
-| Deckliste | [Ja](#deckliste) |
-| Varianten | 0 |
-| Versionen | 0 |
+<header class="deck-header">
+  <p class="eyebrow">Deck</p>
+  <h1>Iroh Grand Lotus Cedh</h1>
+  <p class="subtitle">Commander: Iroh, Grand Lotus</p>
+</header>
 
----
+<section class="quick-nav">
+  <a href="#analyse">Analyse</a>
+  <a href="#bracket">Bracket</a>
+  <a href="#gameplan">Gameplan</a>
+  <a href="#deckliste">Deckliste</a>
+  <a href="#varianten">Varianten</a>
+  <a href="#versionen">Versionen</a>
+</section>
 
-## Analyse
+<section class="profile-card">
+  <h2>Kurzprofil</h2>
+
+  <table>
+    <tr>
+      <th>Feld</th>
+      <th>Wert</th>
+    </tr>
+    <tr>
+      <td>Slug</td>
+      <td><code>iroh-grand-lotus-cedh</code></td>
+    </tr>
+    <tr>
+      <td>Commander</td>
+      <td>Iroh, Grand Lotus</td>
+    </tr>
+    <tr>
+      <td>Analyse</td>
+      <td><a href="#analyse">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Bracket</td>
+      <td><a href="#bracket">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Gameplan</td>
+      <td><a href="#gameplan">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Deckliste</td>
+      <td><a href="#deckliste">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Varianten</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Versionen</td>
+      <td>0</td>
+    </tr>
+  </table>
+</section>
+
+<section id="analyse" class="content-card">
+  <h2>Analyse</h2>
 
 # Deckanalyse: Iroh, Grand Lotus cEDH
 
@@ -235,10 +282,10 @@ Fetchlands, originale Duals, Shocklands und Rainbow-Länder liefern eine ausgeze
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026
 - Aktuelle Oracle-Kartendaten, geprüft am 10. August 2026
 - Deckliste: `data/decks/decklists/iroh-grand-lotus-cedh.txt`
+</section>
 
----
-
-## Bracket
+<section id="bracket" class="content-card">
+  <h2>Bracket</h2>
 
 # Bracket Einschätzung: Iroh, Grand Lotus cEDH
 
@@ -370,10 +417,10 @@ Falls es innerhalb von Bracket 5 weiter optimiert werden soll:
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026
 - Deckliste: `data/decks/decklists/iroh-grand-lotus-cedh.txt`
+</section>
 
----
-
-## Gameplan
+<section id="gameplan" class="content-card">
+  <h2>Gameplan</h2>
 
 # Gameplan: Iroh, Grand Lotus cEDH
 
@@ -583,10 +630,10 @@ Das Deck besitzt kein Boardwipe und wenig endgültiges Kreaturenremoval. Ein geb
 5. Exhibition Tidecaller und Brain Freeze als Millplan, falls die primären Schleifen nicht vollständig verfügbar sind.
 
 Im Pregame-Gespräch sollte das Deck eindeutig als Bracket-5-cEDH-Liste mit 14 Game Changers, Turn-1-Potenzial, frühen Kombos, umfangreichem Fast Mana und kostenloser Interaktion kommuniziert werden.
+</section>
 
----
-
-## Deckliste
+<section id="deckliste" class="content-card">
+  <h2>Deckliste</h2>
 
 ```txt
 // COMMANDER
@@ -692,15 +739,18 @@ Im Pregame-Gespräch sollte das Deck eindeutig als Bracket-5-cEDH-Liste mit 14 G
 1 Wooded Foothills
 1 Worldly Tutor
 ```
+</section>
 
----
-
-## Versionen
-
-_Keine archivierten Versionen vorhanden._
-
----
-
-## Varianten
+<section id="varianten" class="content-card">
+  <h2>Varianten</h2>
 
 _Keine gespeicherten Varianten vorhanden._
+</section>
+
+<section id="versionen" class="content-card">
+  <h2>Versionen</h2>
+
+_Keine archivierten Versionen vorhanden._
+</section>
+
+</div>

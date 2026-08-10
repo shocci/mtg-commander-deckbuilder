@@ -1,24 +1,71 @@
-# Yshtola Nights Blessed
+<link rel="stylesheet" href="../assets/style.css">
 
-> Diese Datei wurde automatisch aus `data/` erzeugt.  
-> Manuelle Änderungen können beim nächsten Build überschrieben werden.
+<div class="page-shell">
 
-## Kurzprofil
+<nav class="breadcrumb">
+  <a href="../index.html">← Deckübersicht</a>
+</nav>
 
-| Feld | Wert |
-|---|---|
-| Slug | `yshtola-nights-blessed` |
-| Commander | Y'shtola, Night's Blessed |
-| Analyse | [Ja](#analyse) |
-| Bracket | [Ja](#bracket) |
-| Gameplan | [Ja](#gameplan) |
-| Deckliste | [Ja](#deckliste) |
-| Varianten | 0 |
-| Versionen | 0 |
+<header class="deck-header">
+  <p class="eyebrow">Deck</p>
+  <h1>Yshtola Nights Blessed</h1>
+  <p class="subtitle">Commander: Y'shtola, Night's Blessed</p>
+</header>
 
----
+<section class="quick-nav">
+  <a href="#analyse">Analyse</a>
+  <a href="#bracket">Bracket</a>
+  <a href="#gameplan">Gameplan</a>
+  <a href="#deckliste">Deckliste</a>
+  <a href="#varianten">Varianten</a>
+  <a href="#versionen">Versionen</a>
+</section>
 
-## Analyse
+<section class="profile-card">
+  <h2>Kurzprofil</h2>
+
+  <table>
+    <tr>
+      <th>Feld</th>
+      <th>Wert</th>
+    </tr>
+    <tr>
+      <td>Slug</td>
+      <td><code>yshtola-nights-blessed</code></td>
+    </tr>
+    <tr>
+      <td>Commander</td>
+      <td>Y'shtola, Night's Blessed</td>
+    </tr>
+    <tr>
+      <td>Analyse</td>
+      <td><a href="#analyse">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Bracket</td>
+      <td><a href="#bracket">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Gameplan</td>
+      <td><a href="#gameplan">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Deckliste</td>
+      <td><a href="#deckliste">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Varianten</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Versionen</td>
+      <td>0</td>
+    </tr>
+  </table>
+</section>
+
+<section id="analyse" class="content-card">
+  <h2>Analyse</h2>
 
 # Deckanalyse: Y'shtola, Night's Blessed
 
@@ -298,10 +345,10 @@ Realistische Geschwindigkeit:
 - Commander Brackets Beta Update vom 9. Februar 2026
 - Offizielle Magic: The Gathering—FINAL FANTASY Release Notes
 - Deckliste: `data/decks/decklists/yshtola-nights-blessed.txt`
+</section>
 
----
-
-## Bracket
+<section id="bracket" class="content-card">
+  <h2>Bracket</h2>
 
 # Bracket Einschätzung: Y'shtola, Night's Blessed
 
@@ -492,10 +539,10 @@ Falls es für ein höheres Bracket optimiert werden soll:
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026
 - Commander Brackets Beta Update vom 9. Februar 2026
 - Deckliste: `data/decks/decklists/yshtola-nights-blessed.txt`
+</section>
 
----
-
-## Gameplan
+<section id="gameplan" class="content-card">
+  <h2>Gameplan</h2>
 
 # Gameplan: Y'shtola, Night's Blessed
 
@@ -710,10 +757,10 @@ Kartennutzung:
 Vor der Partie sollte transparent genannt werden:
 
 > Oberes Bracket 3 mit Smothering Tithe, Bolas's Citadel und Farewell als drei Game Changern. Keine Endloskombos, aber Y'shtola kann mit Curiosity, Ophidian Eye oder Helm of the Ghastlord pro Auslöser drei Karten ziehen; Helm lässt zusätzlich jeden Gegner abwerfen. Das Deck spielt viel Countermagic sowie bedingt kostenlose Interaktion.
+</section>
 
----
-
-## Deckliste
+<section id="deckliste" class="content-card">
+  <h2>Deckliste</h2>
 
 ```txt
 // COMMANDER
@@ -820,15 +867,18 @@ Vor der Partie sollte transparent genannt werden:
 4 Plains
 3 Swamp
 ```
+</section>
 
----
-
-## Versionen
-
-_Keine archivierten Versionen vorhanden._
-
----
-
-## Varianten
+<section id="varianten" class="content-card">
+  <h2>Varianten</h2>
 
 _Keine gespeicherten Varianten vorhanden._
+</section>
+
+<section id="versionen" class="content-card">
+  <h2>Versionen</h2>
+
+_Keine archivierten Versionen vorhanden._
+</section>
+
+</div>

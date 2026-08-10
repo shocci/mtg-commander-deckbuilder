@@ -1,24 +1,71 @@
-# Vi Oh No
+<link rel="stylesheet" href="../assets/style.css">
 
-> Diese Datei wurde automatisch aus `data/` erzeugt.  
-> Manuelle Änderungen können beim nächsten Build überschrieben werden.
+<div class="page-shell">
 
-## Kurzprofil
+<nav class="breadcrumb">
+  <a href="../index.html">← Deckübersicht</a>
+</nav>
 
-| Feld | Wert |
-|---|---|
-| Slug | `vi-oh-no` |
-| Commander | Vivi Ornitier |
-| Analyse | [Ja](#analyse) |
-| Bracket | [Ja](#bracket) |
-| Gameplan | [Ja](#gameplan) |
-| Deckliste | [Ja](#deckliste) |
-| Varianten | [1](#varianten) |
-| Versionen | [1](#versionen) |
+<header class="deck-header">
+  <p class="eyebrow">Deck</p>
+  <h1>Vi Oh No</h1>
+  <p class="subtitle">Commander: Vivi Ornitier</p>
+</header>
 
----
+<section class="quick-nav">
+  <a href="#analyse">Analyse</a>
+  <a href="#bracket">Bracket</a>
+  <a href="#gameplan">Gameplan</a>
+  <a href="#deckliste">Deckliste</a>
+  <a href="#varianten">Varianten</a>
+  <a href="#versionen">Versionen</a>
+</section>
 
-## Analyse
+<section class="profile-card">
+  <h2>Kurzprofil</h2>
+
+  <table>
+    <tr>
+      <th>Feld</th>
+      <th>Wert</th>
+    </tr>
+    <tr>
+      <td>Slug</td>
+      <td><code>vi-oh-no</code></td>
+    </tr>
+    <tr>
+      <td>Commander</td>
+      <td>Vivi Ornitier</td>
+    </tr>
+    <tr>
+      <td>Analyse</td>
+      <td><a href="#analyse">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Bracket</td>
+      <td><a href="#bracket">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Gameplan</td>
+      <td><a href="#gameplan">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Deckliste</td>
+      <td><a href="#deckliste">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Varianten</td>
+      <td><a href="#varianten">1</a></td>
+    </tr>
+    <tr>
+      <td>Versionen</td>
+      <td><a href="#versionen">1</a></td>
+    </tr>
+  </table>
+</section>
+
+<section id="analyse" class="content-card">
+  <h2>Analyse</h2>
 
 # Deckanalyse: Vi oh no
 
@@ -167,10 +214,10 @@ Cavern of Souls, Exotic Orchard und Riverpyre Verge verbessern die Farbversorgun
 - `brains/bracket/templates.md`
 - Offizielle Commander-Bracket- und Game-Changer-Regeln, zuletzt geprüft am 10. August 2026
 - Deckliste: `data/decks/decklists/vi-oh-no.txt`
+</section>
 
----
-
-## Bracket
+<section id="bracket" class="content-card">
+  <h2>Bracket</h2>
 
 # Bracket Einschätzung: Vi oh no
 
@@ -309,10 +356,10 @@ Falls es für Bracket 4 optimiert werden soll:
 - https://magic.wizards.com/en/news/announcements/commander-banned-and-restricted-february-9-2026
 - Offizielle Commander-Bracket- und Game-Changer-Regeln, zuletzt geprüft am 10. August 2026
 - Deckliste: `data/decks/decklists/vi-oh-no.txt`
+</section>
 
----
-
-## Gameplan
+<section id="gameplan" class="content-card">
+  <h2>Gameplan</h2>
 
 # Gameplan: Vi oh no
 
@@ -427,10 +474,10 @@ Je kleiner die Hand, desto größer ist das Risiko, die gesuchte Karte direkt wi
 7. Starfall-Schaden des transformierten Emperors, situativ mit Relentless Assault.
 
 Der fokussierte Storm-Plan, die zwei Game Changers und die Niv-Curiosity-Linie sollten im Pregame-Gespräch genannt werden.
+</section>
 
----
-
-## Deckliste
+<section id="deckliste" class="content-card">
+  <h2>Deckliste</h2>
 
 ```txt
 // COMMANDER
@@ -514,205 +561,10 @@ Der fokussierte Storm-Plan, die zwei Game Changers und die Niv-Curiosity-Linie s
 1 Thundering Falls
 1 Witch's Mark
 ```
+</section>
 
----
-
-## Versionen
-
-- [V001](#version-v001)
-
----
-
-<a id="version-v001"></a>
-
-### V001
-
-# Vi oh no – Version v001
-
-## Versionsdaten
-
-- Commander: Vivi Ornitier
-- Farbidentität: Blau-Rot (Izzet)
-- Archiviert am: 10. August 2026
-- Status: Ehemalige Hauptversion
-- Nachfolger: `data/decks/decklists/vivi-storm.txt`
-
-## Archivierte Deckliste
-
-```text
-// COMMANDER
-1 Vivi Ornitier
-
-1 Alania, Divergent Storm
-1 Ancestors' Aid
-1 Arcane Signet
-1 As Foretold
-1 Blaze
-1 Brainstorm
-1 Capital City
-1 Chaos Warp
-1 Chart a Course
-1 Combat Tutorial
-1 Command Tower
-1 Consuming Tide
-1 Coruscation Mage
-1 Counterspell
-1 Crash Through
-1 Curiosity
-1 Daze
-1 Deflecting Swat
-1 Demolition Field
-1 Dive Down
-1 Echoing Deeps
-1 Electrodominance
-1 Ertai's Scorn
-1 Essence Capture
-1 Felonious Rage
-1 Finale of Revelation
-1 Fire Magic
-1 Frantic Search
-1 Goblin Electromancer
-1 Guttersnipe
-1 Haste Magic
-1 Hithlain Knots
-1 Hraesvelgr of the First Brood
-1 Inspiration from Beyond
-12 Island
-1 Jeska's Will
-1 Kindlespark Duo
-1 Laboratory Maniac
-1 Lightning Bolt
-1 Lindblum, Industrial Regency
-1 Louisoix's Sacrifice
-1 Magic Damper
-1 Mana Geyser
-1 Mary Read and Anne Bonny
-1 Mental Modulation
-1 Mizzix's Mastery
-1 Monstrous Rage
-12 Mountain
-1 Muddle the Mixture
-1 Niv-Mizzet, Parun
-1 Niv-Mizzet, Visionary
-1 Opera Love Song
-1 Opt
-1 Preordain
-1 Propaganda
-1 Quicken
-1 Rabid Gnaw
-1 Ral, Crackling Wit
-1 Ravenform
-1 Restless Spire
-1 Rogue's Passage
-1 Run Away Together
-1 Sazacap's Brew
-1 Seize the Spoils
-1 Self-Destruct
-1 Sleight of Hand
-1 Slick Sequence
-1 Sol Ring
-1 Starting Town
-1 Steam Vents
-1 Swiftfoot Boots
-1 Swiftwater Cliffs
-1 Teach by Example
-1 Temple of the False God
-1 Think Twice
-1 Thundering Falls
-1 Witch's Mark
-```
-
-## Kompakte Analyse
-
-Die archivierte Hauptversion ist ein Izzet-Spellslinger-/Burn-Deck mit 100 Karten und 36 Ländern. Vivi Ornitier ist gleichzeitig Schadens-Payoff, skalierende Manaquelle und möglicher Commander-Damage-Finisher. Günstige Cantrips und Pumpzauber bauen Vivi auf; Guttersnipe, Coruscation Mage, Kindlespark Duo, die beiden Niv-Mizzets und Ral verstärken die Zauberkette.
-
-Zentrale Engines und Abschlüsse:
-
-- Vivi Ornitier mit günstigen Nichtkreaturzaubern und Pumpzaubern
-- Curiosity auf Vivi als Kartenvorteils-Engine
-- Niv-Mizzet, Parun mit Curiosity als spielbeendende Kartenzieh-Schadensschleife
-- Laboratory Maniac als alternativer Sieg nach Bibliotheksleerung
-- überladenes Mizzix's Mastery und große X-Zauber als explosive Finisher
-
-Hauptschwächen sind die hohe Commander-Abhängigkeit, wenige permanente Rampquellen, eine nur durchschnittliche Manaqualität für Niv-Mizzet, Parun und wenige Antworten auf problematische Verzauberungen.
-
-## Kompakte Bracket-Einschätzung
-
-- Geschätztes Bracket: 3 – Upgraded, oberer Bereich
-- Sicherheit: mittel bis hoch
-- Game Changer: 1 (`Jeska's Will`)
-- Realistischer Sieg: ungefähr Züge 7–9; Ausnahmehand möglicherweise Zug 6
-- Bracket-erhöhend: Niv-Mizzet, Parun + Curiosity, Deflecting Swat, Mizzix's Mastery und Vivis Mana-Engine
-- Bracket-senkend: keine Fast-Mana-Suite, keine effizienten universellen Tutoren, langsame farbintensive Kombolinie und keine cEDH-Ausrichtung
-
-Empfohlene Pregame-Kommunikation:
-
-> Oberes Bracket 3 mit einem Game Changer und einer langsamen Niv-Mizzet-/Curiosity-Kombination.
-
-## Kompakter Gameplan
-
-1. In den Zügen 1–3 beide Farben sichern, mit Cantrips vorbereiten und Vivi möglichst geschützt ausspielen.
-2. Vivi mit günstigen Zaubern wachsen lassen und seine Manafähigkeit erst nach Pump- und Setup-Zaubern aktivieren.
-3. Zusätzliche Burn- oder Draw-Payoffs etablieren und das erzeugte Mana in weitere Zauber investieren.
-4. Über wiederholten Spellslinger-Burn, einen großen X-Zauber oder ein überladenes Mizzix's Mastery abschließen.
-5. Alternativ Niv-Mizzet, Parun mit Curiosity verbinden oder Laboratory Maniac nach kontrollierter Bibliotheksleerung nutzen.
-6. Einen stark gewachsenen Vivi über Rogue's Passage als Commander-Damage-Nebenplan einsetzen.
-
-## Wichtigste Änderungen zur Nachfolgeversion
-
-Die Nachfolgeversion verschiebt das Deck von allgemeinem Spellslinger-Burn zu einem fokussierteren Storm-Plan. Sie erhöht die Manabeschleunigung, fügt mit Grapeshot einen echten Storm-Finisher hinzu und verbessert Commander-Schutz, Manabasis und Friedhofskontrolle. Dafür entfallen mehrere Cantrips, Counter- und Bounce-Effekte sowie Laboratory Maniac und Niv-Mizzet, Visionary.
-
-Neu in der Nachfolgeversion:
-
-- Blasphemous Act
-- Brass's Tunnel-Grinder
-- Cavern of Souls
-- Commander's Plate
-- Diary of Dreams
-- Disrupt Decorum
-- Exotic Orchard
-- Gamble
-- Grapeshot
-- Mana Sculpt
-- Pensive Professor
-- Pyretic Ritual
-- Relentless Assault
-- Reliquary Tower
-- Resonating Lute
-- Riverpyre Verge
-- Scavenger Grounds
-- Snap
-- Tablet of Discovery
-- The Emperor of Palamecia
-- Thought Vessel
-
-Aus der archivierten Version entfernt:
-
-- Capital City
-- Chart a Course
-- Echoing Deeps
-- Ertai's Scorn
-- Hithlain Knots
-- Hraesvelgr of the First Brood
-- Laboratory Maniac
-- Louisoix's Sacrifice
-- Mary Read and Anne Bonny
-- Muddle the Mixture
-- Niv-Mizzet, Visionary
-- Quicken
-- Ravenform
-- Restless Spire
-- Run Away Together
-- Self-Destruct
-- Sleight of Hand
-- Slick Sequence
-- Swiftwater Cliffs
-- Teach by Example
-- Think Twice
-
----
-
-## Varianten
+<section id="varianten" class="content-card">
+  <h2>Varianten</h2>
 
 - [Everything Burns](#variant-everything-burns)
 
@@ -942,3 +794,201 @@ Die Variante ist als Bracket 3 einzuordnen:
 - keine Extra-Turn-Schleife
 - explosive, aber von sichtbaren und entfernbaren Permanents abhängige Finisher-Turns
 - realistischer relevanter Sieg- oder Dominanzbereich ab ungefähr Zug 6
+</section>
+
+<section id="versionen" class="content-card">
+  <h2>Versionen</h2>
+
+- [V001](#version-v001)
+
+---
+
+<a id="version-v001"></a>
+
+### V001
+
+# Vi oh no – Version v001
+
+## Versionsdaten
+
+- Commander: Vivi Ornitier
+- Farbidentität: Blau-Rot (Izzet)
+- Archiviert am: 10. August 2026
+- Status: Ehemalige Hauptversion
+- Nachfolger: `data/decks/decklists/vivi-storm.txt`
+
+## Archivierte Deckliste
+
+```text
+// COMMANDER
+1 Vivi Ornitier
+
+1 Alania, Divergent Storm
+1 Ancestors' Aid
+1 Arcane Signet
+1 As Foretold
+1 Blaze
+1 Brainstorm
+1 Capital City
+1 Chaos Warp
+1 Chart a Course
+1 Combat Tutorial
+1 Command Tower
+1 Consuming Tide
+1 Coruscation Mage
+1 Counterspell
+1 Crash Through
+1 Curiosity
+1 Daze
+1 Deflecting Swat
+1 Demolition Field
+1 Dive Down
+1 Echoing Deeps
+1 Electrodominance
+1 Ertai's Scorn
+1 Essence Capture
+1 Felonious Rage
+1 Finale of Revelation
+1 Fire Magic
+1 Frantic Search
+1 Goblin Electromancer
+1 Guttersnipe
+1 Haste Magic
+1 Hithlain Knots
+1 Hraesvelgr of the First Brood
+1 Inspiration from Beyond
+12 Island
+1 Jeska's Will
+1 Kindlespark Duo
+1 Laboratory Maniac
+1 Lightning Bolt
+1 Lindblum, Industrial Regency
+1 Louisoix's Sacrifice
+1 Magic Damper
+1 Mana Geyser
+1 Mary Read and Anne Bonny
+1 Mental Modulation
+1 Mizzix's Mastery
+1 Monstrous Rage
+12 Mountain
+1 Muddle the Mixture
+1 Niv-Mizzet, Parun
+1 Niv-Mizzet, Visionary
+1 Opera Love Song
+1 Opt
+1 Preordain
+1 Propaganda
+1 Quicken
+1 Rabid Gnaw
+1 Ral, Crackling Wit
+1 Ravenform
+1 Restless Spire
+1 Rogue's Passage
+1 Run Away Together
+1 Sazacap's Brew
+1 Seize the Spoils
+1 Self-Destruct
+1 Sleight of Hand
+1 Slick Sequence
+1 Sol Ring
+1 Starting Town
+1 Steam Vents
+1 Swiftfoot Boots
+1 Swiftwater Cliffs
+1 Teach by Example
+1 Temple of the False God
+1 Think Twice
+1 Thundering Falls
+1 Witch's Mark
+```
+
+## Kompakte Analyse
+
+Die archivierte Hauptversion ist ein Izzet-Spellslinger-/Burn-Deck mit 100 Karten und 36 Ländern. Vivi Ornitier ist gleichzeitig Schadens-Payoff, skalierende Manaquelle und möglicher Commander-Damage-Finisher. Günstige Cantrips und Pumpzauber bauen Vivi auf; Guttersnipe, Coruscation Mage, Kindlespark Duo, die beiden Niv-Mizzets und Ral verstärken die Zauberkette.
+
+Zentrale Engines und Abschlüsse:
+
+- Vivi Ornitier mit günstigen Nichtkreaturzaubern und Pumpzaubern
+- Curiosity auf Vivi als Kartenvorteils-Engine
+- Niv-Mizzet, Parun mit Curiosity als spielbeendende Kartenzieh-Schadensschleife
+- Laboratory Maniac als alternativer Sieg nach Bibliotheksleerung
+- überladenes Mizzix's Mastery und große X-Zauber als explosive Finisher
+
+Hauptschwächen sind die hohe Commander-Abhängigkeit, wenige permanente Rampquellen, eine nur durchschnittliche Manaqualität für Niv-Mizzet, Parun und wenige Antworten auf problematische Verzauberungen.
+
+## Kompakte Bracket-Einschätzung
+
+- Geschätztes Bracket: 3 – Upgraded, oberer Bereich
+- Sicherheit: mittel bis hoch
+- Game Changer: 1 (`Jeska's Will`)
+- Realistischer Sieg: ungefähr Züge 7–9; Ausnahmehand möglicherweise Zug 6
+- Bracket-erhöhend: Niv-Mizzet, Parun + Curiosity, Deflecting Swat, Mizzix's Mastery und Vivis Mana-Engine
+- Bracket-senkend: keine Fast-Mana-Suite, keine effizienten universellen Tutoren, langsame farbintensive Kombolinie und keine cEDH-Ausrichtung
+
+Empfohlene Pregame-Kommunikation:
+
+> Oberes Bracket 3 mit einem Game Changer und einer langsamen Niv-Mizzet-/Curiosity-Kombination.
+
+## Kompakter Gameplan
+
+1. In den Zügen 1–3 beide Farben sichern, mit Cantrips vorbereiten und Vivi möglichst geschützt ausspielen.
+2. Vivi mit günstigen Zaubern wachsen lassen und seine Manafähigkeit erst nach Pump- und Setup-Zaubern aktivieren.
+3. Zusätzliche Burn- oder Draw-Payoffs etablieren und das erzeugte Mana in weitere Zauber investieren.
+4. Über wiederholten Spellslinger-Burn, einen großen X-Zauber oder ein überladenes Mizzix's Mastery abschließen.
+5. Alternativ Niv-Mizzet, Parun mit Curiosity verbinden oder Laboratory Maniac nach kontrollierter Bibliotheksleerung nutzen.
+6. Einen stark gewachsenen Vivi über Rogue's Passage als Commander-Damage-Nebenplan einsetzen.
+
+## Wichtigste Änderungen zur Nachfolgeversion
+
+Die Nachfolgeversion verschiebt das Deck von allgemeinem Spellslinger-Burn zu einem fokussierteren Storm-Plan. Sie erhöht die Manabeschleunigung, fügt mit Grapeshot einen echten Storm-Finisher hinzu und verbessert Commander-Schutz, Manabasis und Friedhofskontrolle. Dafür entfallen mehrere Cantrips, Counter- und Bounce-Effekte sowie Laboratory Maniac und Niv-Mizzet, Visionary.
+
+Neu in der Nachfolgeversion:
+
+- Blasphemous Act
+- Brass's Tunnel-Grinder
+- Cavern of Souls
+- Commander's Plate
+- Diary of Dreams
+- Disrupt Decorum
+- Exotic Orchard
+- Gamble
+- Grapeshot
+- Mana Sculpt
+- Pensive Professor
+- Pyretic Ritual
+- Relentless Assault
+- Reliquary Tower
+- Resonating Lute
+- Riverpyre Verge
+- Scavenger Grounds
+- Snap
+- Tablet of Discovery
+- The Emperor of Palamecia
+- Thought Vessel
+
+Aus der archivierten Version entfernt:
+
+- Capital City
+- Chart a Course
+- Echoing Deeps
+- Ertai's Scorn
+- Hithlain Knots
+- Hraesvelgr of the First Brood
+- Laboratory Maniac
+- Louisoix's Sacrifice
+- Mary Read and Anne Bonny
+- Muddle the Mixture
+- Niv-Mizzet, Visionary
+- Quicken
+- Ravenform
+- Restless Spire
+- Run Away Together
+- Self-Destruct
+- Sleight of Hand
+- Slick Sequence
+- Swiftwater Cliffs
+- Teach by Example
+- Think Twice
+</section>
+
+</div>

@@ -1,24 +1,71 @@
-# Galadriel
+<link rel="stylesheet" href="../assets/style.css">
 
-> Diese Datei wurde automatisch aus `data/` erzeugt.  
-> Manuelle Änderungen können beim nächsten Build überschrieben werden.
+<div class="page-shell">
 
-## Kurzprofil
+<nav class="breadcrumb">
+  <a href="../index.html">← Deckübersicht</a>
+</nav>
 
-| Feld | Wert |
-|---|---|
-| Slug | `galadriel` |
-| Commander | Galadriel, Light of Valinor (LTC) 498 *F* |
-| Analyse | [Ja](#analyse) |
-| Bracket | [Ja](#bracket) |
-| Gameplan | [Ja](#gameplan) |
-| Deckliste | [Ja](#deckliste) |
-| Varianten | 0 |
-| Versionen | [4](#versionen) |
+<header class="deck-header">
+  <p class="eyebrow">Deck</p>
+  <h1>Galadriel</h1>
+  <p class="subtitle">Commander: Galadriel, Light of Valinor (LTC) 498 *F*</p>
+</header>
 
----
+<section class="quick-nav">
+  <a href="#analyse">Analyse</a>
+  <a href="#bracket">Bracket</a>
+  <a href="#gameplan">Gameplan</a>
+  <a href="#deckliste">Deckliste</a>
+  <a href="#varianten">Varianten</a>
+  <a href="#versionen">Versionen</a>
+</section>
 
-## Analyse
+<section class="profile-card">
+  <h2>Kurzprofil</h2>
+
+  <table>
+    <tr>
+      <th>Feld</th>
+      <th>Wert</th>
+    </tr>
+    <tr>
+      <td>Slug</td>
+      <td><code>galadriel</code></td>
+    </tr>
+    <tr>
+      <td>Commander</td>
+      <td>Galadriel, Light of Valinor (LTC) 498 *F*</td>
+    </tr>
+    <tr>
+      <td>Analyse</td>
+      <td><a href="#analyse">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Bracket</td>
+      <td><a href="#bracket">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Gameplan</td>
+      <td><a href="#gameplan">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Deckliste</td>
+      <td><a href="#deckliste">Ja</a></td>
+    </tr>
+    <tr>
+      <td>Varianten</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Versionen</td>
+      <td><a href="#versionen">4</a></td>
+    </tr>
+  </table>
+</section>
+
+<section id="analyse" class="content-card">
+  <h2>Analyse</h2>
 
 # Deckanalyse: Galadriel
 
@@ -335,10 +382,10 @@ Realistische Geschwindigkeit:
 - Commander Brackets Beta Update vom 9. Februar 2026
 - Offizielle Release Notes zu Avatar: The Last Airbender, Lorwyn Eclipsed, Secrets of Strixhaven, Teenage Mutant Ninja Turtles und FINAL FANTASY
 - Deckliste: `data/decks/decklists/galadriel.txt`
+</section>
 
----
-
-## Bracket
+<section id="bracket" class="content-card">
+  <h2>Bracket</h2>
 
 # Bracket Einschätzung: Galadriel
 
@@ -489,10 +536,10 @@ Empfohlener Pregame-Hinweis:
 - Commander Brackets Beta Update vom 9. Februar 2026
 - `brains/bracket/templates.md`
 - Deckliste: `data/decks/decklists/galadriel.txt`
+</section>
 
----
-
-## Gameplan
+<section id="gameplan" class="content-card">
+  <h2>Gameplan</h2>
 
 # Gameplan: Galadriel
 
@@ -746,10 +793,10 @@ Zurücklegen sollte man insbesondere:
 Vor der Partie sollte transparent genannt werden:
 
 > Das Deck ist oberes Bracket 3 ohne Game Changer. Es enthält Intruder Alarm, Imperious Perfect und mehrere Mana-Dorks als Drei-Karten-Endlosschleife für beliebig viele Elf-Token; mit perfekter Hand ist sie ab Zug 3 möglich. Badgermole Cub, Enduring Vitality sowie mehrere Token- und Kartenziehengines können sehr explosive Züge erzeugen.
+</section>
 
----
-
-## Deckliste
+<section id="deckliste" class="content-card">
+  <h2>Deckliste</h2>
 
 ```txt
 // COMMANDER
@@ -846,10 +893,16 @@ Vor der Partie sollte transparent genannt werden:
 1 Windswift Slice (LTC) 45
 1 Yavimaya Coast (BLC) 355
 ```
+</section>
 
----
+<section id="varianten" class="content-card">
+  <h2>Varianten</h2>
 
-## Versionen
+_Keine gespeicherten Varianten vorhanden._
+</section>
+
+<section id="versionen" class="content-card">
+  <h2>Versionen</h2>
 
 - [V001](#version-v001)
 - [V002](#version-v002)
@@ -1742,9 +1795,6 @@ Archivierte Hauptversion.
 1 Unclaimed Territory
 1 Wilt-Leaf Liege
 ```
+</section>
 
----
-
-## Varianten
-
-_Keine gespeicherten Varianten vorhanden._
+</div>

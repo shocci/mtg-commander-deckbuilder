@@ -58,6 +58,10 @@ function titleFromSlug(slug: string): string {
         .join(" ");
 }
 
+function renderStylesheetLink(relativePath: string): string {
+    return `<link rel="stylesheet" href="${relativePath}">`;
+}
+
 function extractCommander(decklist: string | null): string | null {
     if (!decklist) return null;
 
@@ -194,40 +198,60 @@ async function loadDeck(slug: string): Promise<DeckDoc> {
 }
 
 function renderIndex(decks: DeckDoc[]): string {
-    const rows = decks
+    const deckCards = decks
         .map((deck) => {
             const commander = deck.commander ?? "offen";
-            const analysis = deck.analysis ? "Ja" : "Nein";
-            const bracket = deck.bracket ? "Ja" : "Nein";
-            const gameplan = deck.gameplan ? "Ja" : "Nein";
-            const variants = deck.variants.length;
-            const versions = deck.versions.length;
+            const analysis = deck.analysis ? "Analyse" : "Keine Analyse";
+            const bracket = deck.bracket ? "Bracket" : "Kein Bracket";
+            const gameplan = deck.gameplan ? "Gameplan" : "Kein Gameplan";
+            const variants = `${deck.variants.length} Varianten`;
+            const versions = `${deck.versions.length} Versionen`;
 
-            return `| [${deck.title}](decks/${deck.slug}.md) | ${commander} | ${analysis} | ${bracket} | ${gameplan} | ${variants} | ${versions} |`;
+            return `<a class="deck-card" href="decks/${deck.slug}.html">
+  <h2>${deck.title}</h2>
+  <p><strong>Commander:</strong> ${commander}</p>
+  <div class="tag-row">
+    <span>${analysis}</span>
+    <span>${bracket}</span>
+    <span>${gameplan}</span>
+    <span>${variants}</span>
+    <span>${versions}</span>
+  </div>
+</a>`;
         })
-        .join("\n");
+        .join("\n\n");
 
-    return `# MTG Commander Brain – Deckübersicht
+    return `${renderStylesheetLink("assets/style.css")}
 
-> Diese Datei wurde automatisch aus \`data/\` erzeugt.  
-> Manuelle Änderungen können beim nächsten Build überschrieben werden.
+<div class="page-shell">
 
-## Decks
+<header class="site-header">
+  <p class="eyebrow">MTG Commander Brain</p>
+  <h1>Deckübersicht</h1>
+  <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
+</header>
 
-| Deck | Commander | Analyse | Bracket | Gameplan | Varianten | Versionen |
-|---|---|---:|---:|---:|---:|---:|
-${rows || "| Keine Decks gefunden | - | - | - | - | - | - |"}
+<section class="info-box">
+  <strong>Hinweis:</strong> Diese Seite wurde automatisch aus <code>data/</code> erzeugt.
+  Manuelle Änderungen können beim nächsten Build überschrieben werden.
+</section>
 
-## Datenquellen
+<section class="deck-grid">
+${deckCards || "<p>Keine Decks gefunden.</p>"}
+</section>
 
-Die eigentlichen Projektdaten liegen unter:
+<section class="data-source">
+  <h2>Datenquellen</h2>
 
 \`\`\`text
 data/decks/decklists/
 data/decks/saved/
 \`\`\`
 
-Diese \`docs/\`-Dateien sind nur die lesbare Anzeige für GitHub Pages.
+  <p>Diese <code>docs/</code>-Dateien sind nur die lesbare Anzeige für GitHub Pages.</p>
+</section>
+
+</div>
 `;
 }
 
@@ -303,59 +327,109 @@ function renderDeckPage(deck: DeckDoc): string {
     const variantsBlock = renderVariantsBlock(deck);
     const versionsBlock = renderVersionsBlock(deck);
 
-    return `# ${deck.title}
+    return `${renderStylesheetLink("../assets/style.css")}
 
-> Diese Datei wurde automatisch aus \`data/\` erzeugt.  
-> Manuelle Änderungen können beim nächsten Build überschrieben werden.
+<div class="page-shell">
 
-## Kurzprofil
+<nav class="breadcrumb">
+  <a href="../index.html">← Deckübersicht</a>
+</nav>
 
-| Feld | Wert |
-|---|---|
-| Slug | \`${deck.slug}\` |
-| Commander | ${deck.commander ?? "offen"} |
-| Analyse | ${deck.analysis ? "[Ja](#analyse)" : "Nein"} |
-| Bracket | ${deck.bracket ? "[Ja](#bracket)" : "Nein"} |
-| Gameplan | ${deck.gameplan ? "[Ja](#gameplan)" : "Nein"} |
-| Deckliste | ${deck.decklist ? "[Ja](#deckliste)" : "Nein"} |
-| Varianten | ${deck.variants.length > 0 ? `[${deck.variants.length}](#varianten)` : "0"} |
-| Versionen | ${deck.versions.length > 0 ? `[${deck.versions.length}](#versionen)` : "0"} |
+<header class="deck-header">
+  <p class="eyebrow">Deck</p>
+  <h1>${deck.title}</h1>
+  <p class="subtitle">Commander: ${deck.commander ?? "offen"}</p>
+</header>
 
----
+<section class="quick-nav">
+  <a href="#analyse">Analyse</a>
+  <a href="#bracket">Bracket</a>
+  <a href="#gameplan">Gameplan</a>
+  <a href="#deckliste">Deckliste</a>
+  <a href="#varianten">Varianten</a>
+  <a href="#versionen">Versionen</a>
+</section>
 
-## Analyse
+<section class="profile-card">
+  <h2>Kurzprofil</h2>
+
+  <table>
+    <tr>
+      <th>Feld</th>
+      <th>Wert</th>
+    </tr>
+    <tr>
+      <td>Slug</td>
+      <td><code>${deck.slug}</code></td>
+    </tr>
+    <tr>
+      <td>Commander</td>
+      <td>${deck.commander ?? "offen"}</td>
+    </tr>
+    <tr>
+      <td>Analyse</td>
+      <td>${deck.analysis ? '<a href="#analyse">Ja</a>' : "Nein"}</td>
+    </tr>
+    <tr>
+      <td>Bracket</td>
+      <td>${deck.bracket ? '<a href="#bracket">Ja</a>' : "Nein"}</td>
+    </tr>
+    <tr>
+      <td>Gameplan</td>
+      <td>${deck.gameplan ? '<a href="#gameplan">Ja</a>' : "Nein"}</td>
+    </tr>
+    <tr>
+      <td>Deckliste</td>
+      <td>${deck.decklist ? '<a href="#deckliste">Ja</a>' : "Nein"}</td>
+    </tr>
+    <tr>
+      <td>Varianten</td>
+      <td>${deck.variants.length > 0 ? `<a href="#varianten">${deck.variants.length}</a>` : "0"}</td>
+    </tr>
+    <tr>
+      <td>Versionen</td>
+      <td>${deck.versions.length > 0 ? `<a href="#versionen">${deck.versions.length}</a>` : "0"}</td>
+    </tr>
+  </table>
+</section>
+
+<section id="analyse" class="content-card">
+  <h2>Analyse</h2>
 
 ${analysisBlock}
+</section>
 
----
-
-## Bracket
+<section id="bracket" class="content-card">
+  <h2>Bracket</h2>
 
 ${bracketBlock}
+</section>
 
----
-
-## Gameplan
+<section id="gameplan" class="content-card">
+  <h2>Gameplan</h2>
 
 ${gameplanBlock}
+</section>
 
----
-
-## Deckliste
+<section id="deckliste" class="content-card">
+  <h2>Deckliste</h2>
 
 ${decklistBlock}
+</section>
 
----
-
-## Versionen
-
-${versionsBlock}
-
----
-
-## Varianten
+<section id="varianten" class="content-card">
+  <h2>Varianten</h2>
 
 ${variantsBlock}
+</section>
+
+<section id="versionen" class="content-card">
+  <h2>Versionen</h2>
+
+${versionsBlock}
+</section>
+
+</div>
 `;
 }
 
