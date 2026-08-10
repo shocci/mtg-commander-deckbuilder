@@ -1,91 +1,102 @@
 // COMMANDER
-1 Galadriel, Light of Valinor (LTC) 498 F
+1 Galadriel, Light of Valinor
 
-1 Agatha's Soul Cauldron (WOE) 242
-1 Aragorn and Arwen, Wed (LTR) 287 F
-1 Arbor Elf (LTC) 232
-1 Arboreal Alliance (LTC) 497 F
-1 Arcane Signet (LTC) 273
-1 Arwen, Weaver of Hope (LTC) 35
-1 Beast Whisperer (GN3) 89
-1 Birds of Paradise (RVR) 344
-1 Botanical Sanctum (OTJ) 301
-1 Cavern of Souls (LCI) 345
-1 Chimil, the Inner Sun (LCI) 249
-1 Chord of Calling (SLD) 1595
-1 Command Tower (LTC) 301
-1 Counterspell (CMM) 81
-1 Cultivate (LTC) 236
-1 Defense of the Heart (WOT) 80
-1 Defiler of Vigor (DMU) 160
-1 Doubling Season (FDN) 216
-1 Dwynen's Elite (FDN) 218
-1 Dwynen, Gilt-Leaf Daen (FDN) 217
-1 Elesh Norn, Mother of Machines (ONE) 10
-1 Elvish Archdruid (LTC) 237
-1 Elvish Mystic (LTC) 238
-1 Elvish Piper (LTC) 239
-1 Elvish Visionary (LTC) 240
-1 Elvish Warmaster (LTC) 241
-1 Entish Restoration (LTR) 163
-1 Esper Sentinel (MH2) 12
-1 Evolution Sage (LCC) 240
-1 Evolving Wilds (LTC) 306
-1 Exotic Orchard (LTC) 307
-1 Farseek (RVR) 138
-1 Fauna Shaman (BRO) 179
-1 Felidar Retreat (FDN) 574
-6 Forest (DFT) 289
-1 Galadhrim Brigade (LTC) 502 F
-1 Galadriel's Dismissal (LTC) 500 F
-1 Galadriel, Gift-Giver (LTR) 296
-1 Harmony of Nature (P02) 128
-1 Hengegate Pathway // Mistgate Pathway (KHM) 293
-1 Heroic Intervention (LTC) 249
-1 Hinterland Harbor (LTC) 317
-1 Imaryll, Elfhame Elite (GN3) 5 F
-1 Immaculate Magistrate (GN3) 98
-1 Imperious Perfect (FDN) 719 F
-1 Intruder Alarm (WOT) 21
-4 Island (DFT) 280
-1 Llanowar Elves (GN3) 101
-1 Llanowar Tribe (GN3) 102
-1 Metallic Mimic (LCC) 308
-1 Meticulous Archive (MKM) 264 F
-1 Mists of Lórien (LTC) 501 F
-1 Moonshaker Cavalry (WOE) 21
-1 Once Upon a Time (ELD) 169
-1 Overwhelming Stampede (LTC) 254
-1 Paradise Druid (LTC) 255
-1 Path to Exile (GN3) 15
-4 Plains (DFT) 277
-1 Preordain (J22) 63
-1 Primeval Herald (J22) 42
-1 Radiant Grove (DMU) 253
-1 Raise the Palisade (LTC) 23
-1 Rally the Galadhrim (LTC) 499 F
-1 Rampant Growth (LTC) 257
-1 Razorverge Thicket (ONE) 373
-1 Realmwalker (LCC) 250
-1 Reclamation Sage (FDN) 340
-1 Rejuvenating Springs (LTC) 325
-1 Reliquary Tower (CMM) 663
-1 Ripples of Potential (LCC) 77
-1 Rivendell (LTR) 259
-1 Rogue's Passage (FDN) 264
-1 Seachrome Coast (ONE) 374 F
-1 Secluded Courtyard (LCC) 350
-1 Simic Ascendancy (LCC) 288
-1 Sol Ring (LTC) 284
-1 Swan Song (LTC) 197
-1 Swords to Plowshares (GN3) 19
-1 Tangled Islet (DMU) 258
-1 Temple of Mystery (LCC) 357
-1 The Shire (LTR) 345
-1 Thespian's Stage (SLD) 1607
-1 Three Tree City (BLB) 260
-1 Unclaimed Territory (LCC) 366
-1 Vineglimmer Snarl (LTC) 343
-1 Vivien Reid (FDN) 234
-1 Wildborn Preserver (FDN) 650
-1 Wilt-Leaf Liege (FDN) 668
+1 Adaptive Automaton
+1 Agatha's Soul Cauldron
+1 Alchemist's Refuge
+1 Aragorn and Arwen, Wed
+1 Arboreal Alliance
+1 Arcane Signet
+1 Arwen, Mortal Queen
+1 Arwen, Weaver of Hope
+1 Asceticism
+1 Beast Whisperer
+1 Birds of Paradise
+1 Botanical Sanctum
+1 Cavern of Souls
+1 Chord of Calling
+1 Command Tower
+1 Counterspell
+1 Crystalline Crawler
+1 Daze
+1 Dictate of Kruphix
+1 Doubling Season
+1 Dwynen, Gilt-Leaf Daen
+1 Echoing Deeps
+1 Elvish Archdruid
+1 Elvish Mystic
+1 Elvish Piper
+1 Elvish Warmaster
+1 Endwalker
+1 Esper Sentinel
+1 Evolution Sage
+1 Exotic Orchard
+1 Farseek
+1 Fauna Shaman
+1 Flooded Grove
+1 Forest
+1 Forest
+1 Forest
+1 Forest
+1 Galadhrim Ambush
+1 Galadhrim Brigade
+1 Galadriel, Gift-Giver
+1 Galadriel's Dismissal
+1 Gatta and Luzzu
+1 Ghostly Prison
+1 Hengegate Pathway
+1 Heroic Intervention
+1 Hinterland Harbor
+1 Immaculate Magistrate
+1 Imperious Perfect
+1 Inevitable Betrayal
+1 Intruder Alarm
+1 Island
+1 Island
+1 Island
+1 Island
+1 Karn's Bastion
+1 Lifestream's Blessing
+1 Llanowar Elves
+1 Llanowar Tribe
+1 Metallic Mimic
+1 Meticulous Archive
+1 Mists of Lórien
+1 Moonshaker Cavalry
+1 Overwhelming Stampede
+1 Paradise Druid
+1 Patchwork Banner
+1 Path to Exile
+1 Plains
+1 Plains
+1 Plains
+1 Plains
+1 Preordain
+1 Propaganda
+1 Radiant Grove
+1 Raise the Palisade
+1 Rally the Galadhrim
+1 Razorverge Thicket
+1 Realmwalker
+1 Rejuvenating Springs
+1 Reliquary Tower
+1 Ripples of Potential
+1 Rivendell
+1 Rogue's Passage
+1 Seachrome Coast
+1 Secluded Courtyard
+1 Seedborn Muse
+1 Simic Ascendancy
+1 Smothering Tithe
+1 Sol Ring
+1 Starting Town
+1 Swan Song
+1 Swords to Plowshares
+1 Tangled Islet
+1 The Shire
+1 Thespian's Stage
+1 Three Tree City
+1 Trouble in Pairs
+1 Ultima
+1 Unclaimed Territory
+1 Wilt-Leaf Liege
