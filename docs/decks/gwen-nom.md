@@ -14,6 +14,7 @@
 | Gameplan | [Ja](#gameplan) |
 | Deckliste | [Ja](#deckliste) |
 | Varianten | 0 |
+| Versionen | 0 |
 
 ---
 
@@ -498,6 +499,12 @@ Vor der Partie sollte transparent genannt werden:
 // MAYBEBOARD
 1 Ancient Cellarspawn
 ```
+
+---
+
+## Versionen
+
+_Keine archivierten Versionen vorhanden._
 
 ---
 

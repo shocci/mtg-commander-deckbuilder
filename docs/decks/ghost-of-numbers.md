@@ -14,6 +14,7 @@
 | Gameplan | [Ja](#gameplan) |
 | Deckliste | [Ja](#deckliste) |
 | Varianten | 0 |
+| Versionen | 0 |
 
 ---
 
@@ -483,6 +484,12 @@ Das Deck enthält keine geplante Endloskombination. Sein Hauptplan bleibt sichtb
 1 Withering Torment
 1 Yuriko, the Tiger's Shadow
 ```
+
+---
+
+## Versionen
+
+_Keine archivierten Versionen vorhanden._
 
 ---
 

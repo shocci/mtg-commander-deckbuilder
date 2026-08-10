@@ -14,6 +14,7 @@
 | Gameplan | [Ja](#gameplan) |
 | Deckliste | [Ja](#deckliste) |
 | Varianten | 0 |
+| Versionen | 0 |
 
 ---
 
@@ -691,6 +692,12 @@ Im Pregame-Gespräch sollte das Deck eindeutig als Bracket-5-cEDH-Liste mit 14 G
 1 Wooded Foothills
 1 Worldly Tutor
 ```
+
+---
+
+## Versionen
+
+_Keine archivierten Versionen vorhanden._
 
 ---
 

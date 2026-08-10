@@ -14,6 +14,7 @@
 | Gameplan | [Ja](#gameplan) |
 | Deckliste | [Ja](#deckliste) |
 | Varianten | 0 |
+| Versionen | 0 |
 
 ---
 
@@ -650,6 +651,12 @@ Im Pregame-Gespräch sollte das Deck eindeutig als cEDH-Liste mit frühen Kombos
 1 Wooded Foothills
 1 Worldly Tutor
 ```
+
+---
+
+## Versionen
+
+_Keine archivierten Versionen vorhanden._
 
 ---
 
