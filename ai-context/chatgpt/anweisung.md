@@ -11,6 +11,7 @@ Das Projekt ist kein reiner automatischer Deckbuilder, sondern ein modulares KI-
 - Gameplan-Erstellung
 - Deckbuilding
 - Deckvarianten
+- Deck-Versionierung
 - Collection-Nutzung
 - Vergleich bestehender Decks
 - projektbezogene MTG-Entscheidungen
@@ -35,7 +36,7 @@ Enthält allgemeine Regeln, Templates und Logiken, die von allen KI-Systemen gen
 data/
 ```
 
-Enthält konkrete Projektdaten wie Decklisten, gespeicherte Analysen, Gameplans, Varianten und Collection-Daten.
+Enthält konkrete Projektdaten wie Decklisten, gespeicherte Analysen, Gameplans, Varianten, Versionen und Collection-Daten.
 
 ```text
 imports/
@@ -98,7 +99,7 @@ Beispiel:
 
 Der Nutzer muss keine Ordnerstruktur pro Deck manuell anlegen.
 
-Gespeicherte Analysen, Brackets, Gameplans und Varianten werden nur nach Bestätigung des Nutzers abgelegt unter:
+Gespeicherte Analysen, Brackets, Gameplans, Varianten und Versionen werden nur nach Bestätigung des Nutzers abgelegt unter:
 
 ```text
 data/decks/saved/[deck-name]/
@@ -111,7 +112,15 @@ data/decks/saved/[deck-name]/
 ├─ analysis.md
 ├─ bracket.md
 ├─ gameplan.md
-└─ variants/
+├─ variants/
+└─ versions/
+```
+
+Dabei gilt:
+
+```text
+variants/ = alternative Builds oder andere strategische Varianten
+versions/ = archivierte frühere Hauptversionen desselben Decks
 ```
 
 Der Nutzer pflegt primär nur die Decklisten in:
@@ -202,7 +211,7 @@ Dieses neue Deck soll laut Auftrag in Richtung Burn gehen.
 
 ## Ergebnisse nicht ungefragt speichern
 
-Analysen, Bracket-Einschätzungen, Gameplans und Deckvarianten dürfen vorgeschlagen werden.
+Analysen, Bracket-Einschätzungen, Gameplans, Deckvarianten und Deckversionen dürfen vorgeschlagen werden.
 
 Sie gelten erst als dauerhaft, wenn der Nutzer bestätigt, z. B.:
 
@@ -211,6 +220,8 @@ passt so
 speichern
 übernehmen
 das ist die finale Version
+so übernehmen
+pushen
 ```
 
 Vorher sind es nur Arbeitsstände.
@@ -608,6 +619,271 @@ Bei Varianten immer erklären:
 - Welche neuen Karten werden vorgeschlagen?
 - Passt die Variante noch zum Ziel-Bracket?
 
+Varianten sind alternative Builds oder strategische Abzweigungen eines Decks.
+
+Varianten sind keine früheren Hauptdeckstände.
+
+Frühere Hauptdeckstände gehören in:
+
+```text
+data/decks/saved/[deck-name]/versions/
+```
+
+---
+
+# Deck-Versionierung
+
+Nutze für Versionierungsfragen:
+
+```text
+brains/deck-versioning/templates.md
+```
+
+Wenn der Nutzer eine neue Deckliste für ein bereits bestehendes Deck gibt, darf die alte Hauptdeckliste nicht einfach überschrieben werden.
+
+Stattdessen gilt:
+
+1. Die bestehende Hauptdeckliste wird gelesen.
+2. Die neue Deckliste wird analysiert.
+3. Unterschiede zwischen alter und neuer Liste werden bestimmt.
+4. Die alte Hauptversion wird als Version archiviert.
+5. Die neue Liste wird erst nach Bestätigung zur aktuellen Hauptdeckliste.
+6. Analyse, Bracket und Gameplan werden für die neue Hauptversion aktualisiert.
+
+## Speicherorte
+
+Die aktuelle Hauptdeckliste liegt unter:
+
+```text
+data/decks/decklists/[deck-name].txt
+```
+
+Aktuelle gespeicherte Auswertungen liegen unter:
+
+```text
+data/decks/saved/[deck-name]/analysis.md
+data/decks/saved/[deck-name]/bracket.md
+data/decks/saved/[deck-name]/gameplan.md
+```
+
+Archivierte frühere Hauptversionen liegen unter:
+
+```text
+data/decks/saved/[deck-name]/versions/vXXX.md
+```
+
+Alternative Builds bleiben unter:
+
+```text
+data/decks/saved/[deck-name]/variants/
+```
+
+Versionen und Varianten dürfen nicht vermischt werden.
+
+## Unterschied zwischen Version und Variante
+
+Eine Version ist eine frühere Entwicklungsstufe desselben Hauptdecks.
+
+Beispiele:
+
+- Das Hauptdeck wurde überarbeitet.
+- Die Manabase wurde verändert.
+- Win Conditions wurden angepasst.
+- Powerlevel oder Bracket haben sich verändert.
+- Das Deck bleibt dieselbe Hauptidee.
+
+Eine Variante ist ein alternativer Build mit anderem Fokus, anderem Thema oder anderer strategischer Ausrichtung.
+
+Beispiele:
+
+- Vivi Burn
+- Vivi Feuer-Artwork Budget Build
+- Vivi cEDH-Testbuild
+- Vivi Spellslinger-Alternative
+
+## Versionsnummern
+
+Versionen werden fortlaufend nummeriert:
+
+```text
+v001.md
+v002.md
+v003.md
+```
+
+Wenn noch keine Version existiert, wird die alte Hauptversion als `v001.md` archiviert.
+
+Wenn bereits Versionen existieren, wird die höchste vorhandene Versionsnummer um 1 erhöht.
+
+## Versions-Snapshot
+
+Eine archivierte Version enthält nicht einfach die vollständigen alten Dateien `analysis.md`, `bracket.md` und `gameplan.md`.
+
+Stattdessen enthält sie einen kompakten Snapshot der damaligen Hauptversion:
+
+- archivierte Deckliste
+- kompakte Analyse
+- kompakte Bracket-Einschätzung
+- kompakter Gameplan
+- Grund der Archivierung
+- wichtigste Änderungen zur neuen Version
+
+Das ist wichtig, weil sich Analyse, Bracket und Gameplan bei späteren Upgrades ändern können.
+
+## Kompaktheit für archivierte Versionen
+
+Eine archivierte Version soll nachvollziehbar bleiben, aber nicht unnötig lang werden.
+
+Richtwerte:
+
+- Kompakte Analyse: ca. 5–10 Stichpunkte
+- Kompakte Bracket-Einschätzung: ca. 3–6 Stichpunkte
+- Kompakter Gameplan: Early / Mid / Late mit je 2–4 Stichpunkten
+- Änderungen zur neuen Version: wichtigste hinzugefügte, entfernte und strategisch veränderte Karten oder Pakete
+
+## Version-Dateiformat
+
+Eine archivierte Version soll dieses Format verwenden:
+
+```md
+# [Deckname] – Version [vXXX]
+
+## Status
+
+Archivierte Hauptversion.
+
+## Archiviert am
+
+[YYYY-MM-DD]
+
+## Grund
+
+[Kurzer Grund der Archivierung]
+
+## Kurzprofil
+
+| Feld | Wert |
+|---|---|
+| Commander | [Commander] |
+| Version | [vXXX] |
+| Vorheriger Status | Hauptdeck |
+| Bracket | [Bracket] |
+| Game Changer | [Anzahl / Karten] |
+| Hauptstrategie | [Strategie] |
+| Archivierungsgrund | [Grund] |
+
+## Kompakte Analyse
+
+- Hauptplan:
+- wichtigste Engines:
+- wichtigste Payoffs:
+- wichtigste Win Conditions:
+- größte Schwächen:
+- besondere Auffälligkeiten:
+
+## Kompakte Bracket-Einschätzung
+
+- Geschätztes Bracket:
+- Begründung:
+- Game Changer:
+- Powerlevel-Faktoren:
+- Risiken für höheres/niedrigeres Bracket:
+
+## Kompakter Gameplan
+
+### Early Game
+
+- ...
+
+### Mid Game
+
+- ...
+
+### Late Game
+
+- ...
+
+## Änderungen zur neuen Version
+
+### Entfernt
+
+- ...
+
+### Hinzugefügt
+
+- ...
+
+### Strategisch verändert
+
+- ...
+
+## Archivierte Deckliste
+
+```txt
+// COMMANDER
+1 Commander Name
+
+1 Karte A
+1 Karte B
+```
+```
+
+## Ablauf bei neuer Deckliste
+
+Wenn der Nutzer eine neue Deckliste für ein bestehendes Deck einreicht, antworte zuerst mit einem Versionierungs-Vorschlag.
+
+Dieser Vorschlag soll enthalten:
+
+- erkanntes Deck
+- erkannter Commander
+- Ziel-Datei
+- nächste Versionsnummer
+- alte Hauptversion, die archiviert wird
+- neue Hauptdeckliste
+- wichtigste Änderungen
+- neue Bracket-Einschätzung
+- Game Changer Check
+- neue Analyse-Zusammenfassung
+- neuer Gameplan
+- betroffene Dateien
+- Commit-Message
+
+## Betroffene Dateien
+
+Vor dem Speichern muss klar angezeigt werden:
+
+### Wird erstellt
+
+```text
+data/decks/saved/[deck-name]/versions/vXXX.md
+```
+
+### Wird überschrieben
+
+```text
+data/decks/decklists/[deck-name].txt
+data/decks/saved/[deck-name]/analysis.md
+data/decks/saved/[deck-name]/bracket.md
+data/decks/saved/[deck-name]/gameplan.md
+```
+
+## Speicherregel
+
+Keine Versionierung darf ohne ausdrückliche Bestätigung gespeichert werden.
+
+Gültige Bestätigungen sind zum Beispiel:
+
+```text
+passt
+speichern
+übernehmen
+so übernehmen
+ja, speichern
+pushen
+```
+
+Ohne Bestätigung wird nichts überschrieben, erstellt oder nach GitHub übernommen.
+
 ---
 
 # Beispiel: Vivi Burn Variante
@@ -686,6 +962,17 @@ gameplan.md
 variants/[name].md
 ```
 
+Bei einer neuen Deckliste für ein bereits bestehendes Deck gilt zusätzlich:
+
+```text
+Nicht direkt überschreiben.
+Zuerst Deck-Versionierung verwenden.
+```
+
+Die alte Hauptversion wird unter `versions/` archiviert.
+
+Die neue Hauptversion ersetzt die aktuelle Deckliste und aktuellen Analyse-Dateien erst nach ausdrücklicher Bestätigung.
+
 ---
 
 # Wichtige Projektannahmen
@@ -698,3 +985,6 @@ variants/[name].md
 - Bracket 3 ist der Standard beim Deckbau, wenn nichts anderes angegeben wurde.
 - Bestehende Decks definieren keine festen persönlichen Vorlieben.
 - Unterschiedliche Commander, Mechaniken und Spielstile sind erwünscht.
+- Versionen und Varianten sind getrennte Konzepte.
+- Frühere Hauptdeckstände gehören in `versions/`.
+- Alternative Builds gehören in `variants/`.

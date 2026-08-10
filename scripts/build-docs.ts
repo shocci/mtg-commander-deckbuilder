@@ -15,6 +15,12 @@ type DeckVariant = {
     content: string;
 };
 
+type DeckVersion = {
+    slug: string;
+    title: string;
+    content: string;
+};
+
 type DeckDoc = {
     slug: string;
     title: string;
@@ -24,6 +30,7 @@ type DeckDoc = {
     bracket: string | null;
     gameplan: string | null;
     variants: DeckVariant[];
+    versions: DeckVersion[];
 };
 
 async function pathExists(filePath: string): Promise<boolean> {
@@ -103,6 +110,35 @@ async function readVariants(savedDeckDir: string): Promise<DeckVariant[]> {
     }
 }
 
+async function readVersions(savedDeckDir: string): Promise<DeckVersion[]> {
+    const versionsDir = path.join(savedDeckDir, "versions");
+
+    try {
+        const files = await readdir(versionsDir);
+
+        const versionFiles = files
+            .filter((file) => file.endsWith(".md"))
+            .sort((a, b) => a.localeCompare(b));
+
+        const versions: DeckVersion[] = [];
+
+        for (const file of versionFiles) {
+            const slug = file.replace(/\.md$/, "");
+            const content = await readFile(path.join(versionsDir, file), "utf8");
+
+            versions.push({
+                slug,
+                title: slug.toUpperCase(),
+                content,
+            });
+        }
+
+        return versions;
+    } catch {
+        return [];
+    }
+}
+
 async function getDeckSlugs(): Promise<string[]> {
     const slugs = new Set<string>();
 
@@ -142,6 +178,7 @@ async function loadDeck(slug: string): Promise<DeckDoc> {
     const bracket = await readIfExists(path.join(savedDeckDir, "bracket.md"));
     const gameplan = await readIfExists(path.join(savedDeckDir, "gameplan.md"));
     const variants = await readVariants(savedDeckDir);
+    const versions = await readVersions(savedDeckDir);
 
     return {
         slug,
@@ -152,6 +189,7 @@ async function loadDeck(slug: string): Promise<DeckDoc> {
         bracket,
         gameplan,
         variants,
+        versions,
     };
 }
 
@@ -163,8 +201,9 @@ function renderIndex(decks: DeckDoc[]): string {
             const bracket = deck.bracket ? "Ja" : "Nein";
             const gameplan = deck.gameplan ? "Ja" : "Nein";
             const variants = deck.variants.length;
+            const versions = deck.versions.length;
 
-            return `| [${deck.title}](decks/${deck.slug}.md) | ${commander} | ${analysis} | ${bracket} | ${gameplan} | ${variants} |`;
+            return `| [${deck.title}](decks/${deck.slug}.md) | ${commander} | ${analysis} | ${bracket} | ${gameplan} | ${variants} | ${versions} |`;
         })
         .join("\n");
 
@@ -175,9 +214,9 @@ function renderIndex(decks: DeckDoc[]): string {
 
 ## Decks
 
-| Deck | Commander | Analyse | Bracket | Gameplan | Varianten |
-|---|---|---:|---:|---:|---:|
-${rows || "| Keine Decks gefunden | - | - | - | - | - |"}
+| Deck | Commander | Analyse | Bracket | Gameplan | Varianten | Versionen |
+|---|---|---:|---:|---:|---:|---:|
+${rows || "| Keine Decks gefunden | - | - | - | - | - | - |"}
 
 ## Datenquellen
 
@@ -218,6 +257,32 @@ ${variant.content.trim()}`,
 ${variantSections}`;
 }
 
+function renderVersionsBlock(deck: DeckDoc): string {
+    if (deck.versions.length === 0) {
+        return "_Keine archivierten Versionen vorhanden._";
+    }
+
+    const versionLinks = deck.versions
+        .map((version) => `- [${version.title}](#version-${version.slug})`)
+        .join("\n");
+
+    const versionSections = deck.versions
+        .map(
+            (version) => `<a id="version-${version.slug}"></a>
+
+### ${version.title}
+
+${version.content.trim()}`,
+        )
+        .join("\n\n---\n\n");
+
+    return `${versionLinks}
+
+---
+
+${versionSections}`;
+}
+
 function renderDeckPage(deck: DeckDoc): string {
     const analysisBlock = deck.analysis
         ? deck.analysis.trim()
@@ -236,6 +301,7 @@ function renderDeckPage(deck: DeckDoc): string {
         : "_Keine Deckliste vorhanden._";
 
     const variantsBlock = renderVariantsBlock(deck);
+    const versionsBlock = renderVersionsBlock(deck);
 
     return `# ${deck.title}
 
@@ -253,6 +319,7 @@ function renderDeckPage(deck: DeckDoc): string {
 | Gameplan | ${deck.gameplan ? "[Ja](#gameplan)" : "Nein"} |
 | Deckliste | ${deck.decklist ? "[Ja](#deckliste)" : "Nein"} |
 | Varianten | ${deck.variants.length > 0 ? `[${deck.variants.length}](#varianten)` : "0"} |
+| Versionen | ${deck.versions.length > 0 ? `[${deck.versions.length}](#versionen)` : "0"} |
 
 ---
 
@@ -277,6 +344,12 @@ ${gameplanBlock}
 ## Deckliste
 
 ${decklistBlock}
+
+---
+
+## Versionen
+
+${versionsBlock}
 
 ---
 
