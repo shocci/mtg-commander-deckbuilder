@@ -398,6 +398,23 @@ oder, falls noch nicht verarbeitet:
 imports/manabox/ManaBox_Collection.csv
 ```
 
+## Basic Lands
+
+Basic Lands gelten als automatisch verfügbar, auch wenn sie nicht in der Collection eingescannt sind.
+
+Der Nutzer besitzt ausreichend Basic Lands und scannt diese nicht vollständig ein.
+
+Daher dürfen folgende Karten bei Collection-first Deckbau immer verwendet werden, sofern sie zur Farbidentität passen:
+
+```text
+Plains
+Island
+Swamp
+Mountain
+Forest
+Wastes
+```
+
 Wenn die Collection relevant ist:
 
 1. Collection vollständig berücksichtigen.

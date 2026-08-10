@@ -153,6 +153,32 @@ Auswirkung auf das Ziel-Bracket:
 
 [Falls Vorgaben nicht zusammenpassen, klar benennen.]
 
+## Basic Lands bei Collection-first Deckbau
+
+Wenn der Nutzer sagt, dass ein Deck ausschließlich oder bevorzugt aus der Collection gebaut werden soll, gelten Basic Lands als automatisch verfügbar.
+
+Der Nutzer scannt Basic Lands nicht vollständig in ManaBox ein, weil davon ausreichend viele vorhanden sind.
+
+Daher gilt:
+
+- Basic Lands müssen nicht in `data/collection.json` vorhanden sein.
+- Basic Lands zählen nicht als fehlende Karten.
+- Basic Lands zählen nicht als neue Käufe.
+- Basic Lands zählen nicht gegen ein Zusatzbudget.
+- Basic Lands dürfen immer verwendet werden, wenn sie zur Farbidentität des Commanders passen.
+- Die Manabase darf mit passenden Basic Lands aufgefüllt werden.
+
+Als Basic Lands gelten:
+
+```text
+Plains
+Island
+Swamp
+Mountain
+Forest
+Wastes
+```
+
 ## Offene Fragen
 
 - Soll diese Version als neues Deck gespeichert werden?
