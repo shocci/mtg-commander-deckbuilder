@@ -6,292 +6,310 @@
 - Farbidentität: Bant – Grün, Weiß und Blau
 - Deckgröße: 100 Karten inklusive Commander
 - Länder: 37, davon 12 Standardländer
+- Kreaturen: 37 inklusive Commander
 - Archetyp: Elfen / Go-wide / Creature-ETB / +1/+1-Counter
-- Nebenthemen: Flash, Pillowfort, Proliferate und geschützte Boardwipes
-- Geschätztes Bracket: 3 – Upgraded, oberer Rand
+- Nebenthemen: Token in gegnerischen Zügen, Mana-Dorks, Kartenziehen und Tempo-Control
+- Geschätztes Bracket: 3 – Upgraded, oberer Bereich
+- Game Changer: 0
 - Sicherheit: mittel bis hoch
 
-Die neue Hauptversion verschiebt den Schwerpunkt von Counter- und ETB-Value stärker zu Elfentribal, Schutz und Interaktion. Adaptive Automaton, Dwynen, Gilt-Leaf Daen und Elvish Warmaster verbessern den regulären Combat-Plan. Asceticism, Arwen, Mortal Queen, Ghostly Prison, Daze und Ultima geben dem Deck deutlich mehr Möglichkeiten, einen Vorsprung zu schützen oder ein verlorenes Board zurückzusetzen.
+Die neue Hauptversion behält Galadriels Elfentribal- und Intruder-Alarm-Kern, baut den fairen Spielplan aber deutlich um. Badgermole Cub, Bloom Tender, Noble Hierarch, Avacyn's Pilgrim und Enduring Vitality erhöhen die frühe Manaexplosivität. Parallel Lives, Illustrious Wanderglyph und mehrere neue Elf-Tokenquellen verbreitern das Board, während Kindred Discovery, die Enduring-Kreaturen und Rishkar's Expertise den Kartennachschub verbessern.
 
-Gleichzeitig sinkt die Länderzahl von 38 auf 37. Cultivate, Rampant Growth und Land Tax entfallen ebenfalls. Die Liste ist dadurch stärker von Mana-Dorks und Artefakten abhängig und kann nach einem Boardwipe größere Probleme beim Wiederaufbau haben.
+Der Preis dafür ist erheblich: Smothering Tithe und Seedborn Muse – die beiden bisherigen Game Changer – entfallen. Chord of Calling, Asceticism, Heroic Intervention, Daze und mehrere Phasing- beziehungsweise Schutzkarten wurden ebenfalls entfernt. Die neue Liste ist dadurch im fairen Spiel konsistenter und explosiver, aber gegen Boardwipes sowie beim geschützten Zusammensetzen der Endlosschleife verwundbarer.
 
 ## Spielplan
 
-Galadriel löst aus, wenn eine oder mehrere andere Kreaturen unter deiner Kontrolle ins Spiel kommen. Pro Zug können ihre drei Modi jeweils einmal gewählt werden:
+Galadriel löst aus, wenn eine oder mehrere andere Kreaturen unter deiner Kontrolle ins Spiel kommen. Pro Zug kann jeder ihrer drei Modi nur einmal gewählt werden:
 
+- Scry 2 und anschließend eine Karte ziehen
 - drei grüne Mana erzeugen
 - auf jede eigene Kreatur einen +1/+1-Counter legen
-- Scry 2 und anschließend eine Karte ziehen
 
 Der normale Ablauf ist:
 
-1. Mit Mana-Dorks, Sol Ring, Arcane Signet, Farseek und Patchwork Banner beschleunigen.
-2. Günstige Elfen, Lords und Kartenvorteilsquellen entwickeln.
-3. Galadriel ungefähr in Zug 3 bis 5 ausspielen und mit weiteren Kreaturen oder Token auslösen.
-4. Elvish Warmaster, Imperious Perfect und Instant-Token nutzen, um mehrere getrennte ETB-Ereignisse zu erzeugen.
-5. Seedborn Muse und Alchemist's Refuge verbinden, um Galadriel auch in gegnerischen Zügen auszulösen.
-6. Das Board durch Lords, Galadriel, Doubling Season und Proliferate vergrößern.
-7. Über Combat, Simic Ascendancy oder die Intruder-Alarm-Endlosschleife gewinnen.
+1. Mit einem günstigen Mana-Dork, Sol Ring, Arcane Signet, Farseek oder Cultivate beschleunigen.
+2. Elvish Warmaster, Beast Whisperer, Realmwalker, Enduring Innocence oder eine andere frühe Engine entwickeln.
+3. Galadriel ungefähr in Zug 3 bis 5 ausspielen und möglichst noch im selben Zug auslösen.
+4. Mit einzelnen Kreaturen-ETBs und getrennt erzeugten Token alle drei Galadriel-Modi ausnutzen.
+5. Über Parallel Lives, Doubling Season, Lords und Counter ein breites Board aufbauen.
+6. Mit Moonshaker Cavalry, Overwhelming Stampede, Overrun oder Haldir abschließen.
+7. Alternativ Intruder Alarm, Imperious Perfect und einen grünen Mana-Dork für beliebig viele Elf-Token zusammensetzen.
 
 ## Zentrale Engines
 
-### Galadriel und Elvish Warmaster
+### Galadriel und getrennte Token-ETBs
 
-- Galadriel, Light of Valinor
+Wichtige Quellen:
+
 - Elvish Warmaster
 - Imperious Perfect
+- Illustrious Wanderglyph
+- Dwynen's Elite
+- Elderleaf Mentor
+- Selesnya Evangel
+- Elven Ambush
+- Sylvan Offering
 - Galadhrim Ambush
-- Rally the Galadhrim
-- Arboreal Alliance
 - Galadhrim Brigade
-- Alchemist's Refuge
-- Seedborn Muse
+- Windswift Slice
 
-Wenn ein anderer Elf ins Spiel kommt, erzeugt Elvish Warmaster einmal pro Zug einen weiteren Elf-Token. Der ursprüngliche Elf und der anschließend erzeugte Token sind zwei getrennte ETB-Ereignisse und können zwei verschiedene Galadriel-Modi auslösen.
+Elvish Warmaster erzeugt einmal pro Zug einen Elf-Token, wenn ein anderer Elf eintritt. Der ursprüngliche Elf und der anschließend durch die ausgelöste Fähigkeit erzeugte Token sind zwei getrennte ETB-Ereignisse. Dadurch können zwei verschiedene Galadriel-Modi gewählt werden.
 
-Mit Seedborn Muse und Alchemist's Refuge kann das Deck in jedem gegnerischen Zug einen Elf spielen oder Imperious Perfect aktivieren. Elvish Warmaster darf in jedem dieser Züge erneut auslösen. Ein gespielter Elf, der Warmaster-Token und eine weitere Token-Aktivierung können so alle drei Galadriel-Modi innerhalb desselben gegnerischen Zugs freischalten.
+Illustrious Wanderglyph ist eine der wichtigsten Neuerungen. Sie erzeugt zu Beginn jedes Versorgungssegments einen Gnom-Token und kann Galadriel damit in jedem Zug der Tischrunde auslösen, ohne zusätzliche Karten aus der Hand zu benötigen. Parallel Lives und Doubling Season erhöhen dabei die Tokenmenge, erzeugen aber keinen zusätzlichen Galadriel-Auslöser, weil die verdoppelten Token gleichzeitig eintreten.
 
-### Seedborn-Muse-/Flash-Engine
+### Mana-Dork-Paket
 
-- Seedborn Muse
-- Alchemist's Refuge
-- Galadriel, Light of Valinor
-- Imperious Perfect
-- Elvish Warmaster
-- Chord of Calling
-- Karn's Bastion
-- Counterspell, Swan Song und Daze
-- Mana-Dorks
+Direkte Mana-Dorks:
 
-Seedborn Muse enttappt Länder und Kreaturen in jedem gegnerischen Enttappsegment. Alchemist's Refuge gibt den eigenen Nichtlandkarten Flash. Dadurch kann die Liste pro Tischrunde mehrfach Kreaturen spielen, Galadriel auslösen, Token erzeugen, proliferieren und Interaktion offenhalten.
-
-Die Engine benötigt mehrere Permanents und genügend Karten auf der Hand. Dictate of Kruphix, Lifestream's Blessing, Beast Whisperer, Realmwalker und Galadriels Kartenmodus sollen diesen Nachschub liefern.
-
-### Elfentribal und Combat
-
-- Adaptive Automaton
-- Dwynen, Gilt-Leaf Daen
-- Elvish Archdruid
-- Elvish Warmaster
-- Imperious Perfect
-- Patchwork Banner
-- Wilt-Leaf Liege
-- Metallic Mimic
-- Galadhrim Brigade
-- Moonshaker Cavalry
-- Overwhelming Stampede
-
-Die neue Version besitzt mehr Lords und einen stärkeren tribal-orientierten Combat-Plan. Elvish Warmaster erzeugt zusätzliche Elfen und kann im Late Game allen Elfen +2/+2 und Todesberührung geben. Diese Aktivierung ersetzt keinen der großen Finisher, macht aber auch kleinere Boards gefährlich.
-
-Adaptive Automaton wird normalerweise als Elf bestimmt. Es ist anschließend selbst ein Elf und verstärkt die übrigen Elfen. Dwynen erhöht ebenfalls deren Stärke und liefert Lebenspunkte bei Angriffen mit Elfen.
-
-### +1/+1-Counter, Crystalline Crawler und Simic Ascendancy
-
-- Galadriel, Light of Valinor
-- Aragorn and Arwen, Wed
-- Arwen, Weaver of Hope
-- Arwen, Mortal Queen
-- Crystalline Crawler
-- Gatta and Luzzu
-- Doubling Season
-- Metallic Mimic
-- Evolution Sage
-- Immaculate Magistrate
-- Karn's Bastion
-- Ripples of Potential
-- Simic Ascendancy
-
-Crystalline Crawler verbindet das Counter-Paket mit Mana. Er kommt abhängig von den zum Bezahlen verwendeten Farben mit Countern ins Spiel und kann Counter in Mana beliebiger Farbe umwandeln. Doubling Season vergrößert seinen anfänglichen Vorrat, während Galadriel und Proliferate ihn später erneut aufladen können.
-
-Das Deck verliert mit Aerith, Shelinda, Court of Garenbrig, Felidar Retreat und Wildborn Preserver mehrere Counterquellen. Simic Ascendancy bleibt eine reale Siegbedingung, ist aber weniger konsistent als in der vorherigen Hauptversion.
-
-### Schutz und Pillowfort
-
-- Asceticism
-- Arwen, Mortal Queen
-- Heroic Intervention
-- Galadriel's Dismissal
-- Ripples of Potential
-- Ghostly Prison
-- Propaganda
-- Galadhrim Ambush
-
-Asceticism schützt Kreaturen vor gegnerischen Zielzaubern und kann sie regenerieren. Arwen bringt einen Unzerstörbarkeits-Counter mit und kann eine weitere Kreatur für einen Zug unzerstörbar machen. Heroic Intervention, Galadriel's Dismissal und Ripples of Potential schützen größere Teile des Boards.
-
-Ghostly Prison und Propaganda verlangen zusammen vier Mana pro angreifender Kreatur. Galadhrim Ambush erzeugt abhängig von der Zahl angreifender Kreaturen Elf-Token und verhindert Kampfschaden von Nicht-Elfen. Diese Karten kaufen Zeit für den Aufbau und können gegnerische Alpha-Strikes bestrafen.
-
-## Kartenvorteil und Auswahl
-
-- Galadriel, Light of Valinor
-- Beast Whisperer
-- Esper Sentinel
-- Realmwalker
-- Trouble in Pairs
-- Dictate of Kruphix
-- Lifestream's Blessing
-- Endwalker
-- Preordain
-- Inevitable Betrayal als gestohlene Ressource
-
-`Endwalker` ist eine alternative Darstellung von Brainstorm und wird regeltechnisch als Brainstorm behandelt. Da keine weitere Brainstorm-Karte enthalten ist, bleibt die Liste Singleton-konform.
-
-Dictate of Kruphix sollte möglichst im gegnerischen Endsegment direkt vor dem eigenen Zug gespielt werden. Dadurch zieht das Deck zuerst eine zusätzliche Karte. Der Effekt bleibt symmetrisch und versorgt anschließend auch alle Gegner.
-
-Lifestream's Blessing kann bei einer großen Kreatur sehr viele Karten ziehen. Über Foretell kostet der spätere Einsatz weniger Mana und erzeugt zusätzlich Lebenspunkte. Ohne nennenswertes Board ist die Karte schwach.
-
-Inevitable Betrayal kann nicht normal gewirkt werden und benötigt Suspend. Wird die Karte in Zug 2 suspendiert, kommt der gestohlene Threat normalerweise frühestens in Zug 5. Ihre Qualität hängt stark von den gegnerischen Decks ab.
-
-## Ramp und Manabasis
-
-Die Liste spielt 37 Länder und 12 Standardländer.
-
-Mana-Dorks:
-
+- Avacyn's Pilgrim
+- Badgermole Cub
 - Birds of Paradise
+- Bloom Tender
 - Elvish Mystic
 - Llanowar Elves
-- Llanowar Tribe
+- Noble Hierarch
 - Paradise Druid
-- Elvish Archdruid
+- Enduring Vitality
 
 Weitere Beschleunigung:
 
 - Sol Ring
 - Arcane Signet
 - Farseek
-- Patchwork Banner
-- Crystalline Crawler
-- Smothering Tithe
-- Galadriel, Gift-Giver
+- Cultivate
+- Galadriel, Light of Valinor als Quelle für drei grüne Mana
+
+Badgermole Cub fügt immer dann ein zusätzliches grünes Mana hinzu, wenn eine Kreatur für Mana getappt wird. Mit mehreren Mana-Dorks skaliert die Karte sehr stark. Bloom Tender erzeugt bei liegender Galadriel bis zu drei farbige Mana; Badgermole Cub ergänzt dabei noch ein grünes Mana.
+
+Enduring Vitality macht jede eigene Kreatur zu einem Mana-Dork. Zusammen mit Intruder Alarm können Kreaturen-ETBs das gesamte Kreaturenboard wieder enttappen und große, auch ohne die eigentliche Endlosschleife explosive Manafolgen ermöglichen. Stirbt Enduring Vitality als Kreatur, kehrt sie als reine Verzauberung zurück und verleiht den Kreaturen weiterhin die Manafähigkeit.
+
+### Kartenvorteil
+
 - Galadriel, Light of Valinor
-- Three Tree City
-- Seedborn Muse als Mana-Multiplikator
+- Beast Whisperer
+- Kindred Discovery
+- Enduring Curiosity
+- Enduring Innocence
+- Realmwalker
+- Rumor Gatherer
+- Rishkar's Expertise
+- Descendants' Path
+- The Legend of Yangchen
+- Urianger Augurelt
 
-Starting Town verbessert die frühe Farbfixierung. Echoing Deeps kann ein Land aus einem Friedhof kopieren, ist ohne geeignetes Ziel aber nur eine farblose Quelle. Meticulous Archive, Radiant Grove und Tangled Islet besitzen passende Landtypen für Farseek.
+Kindred Discovery sollte fast immer Elf benennen. Sie zieht sowohl bei eintretenden als auch bei angreifenden Elfen Karten und kann mit Elven Ambush, Imperious Perfect oder einem großen Angriff sehr viele Karten erzeugen.
 
-Die Manabasis enthält mehrere farblose oder eingeschränkt nutzbare Länder. Das kann Counterspell mit doppeltem Blau, Ultima mit doppeltem Weiß und Moonshaker Cavalry mit dreifachem Weiß erschweren. Daze kann zwar ohne Mana gewirkt werden, setzt durch das Zurücknehmen eines Islands aber die eigene Entwicklung zurück.
+Enduring Curiosity belohnt Kampfschaden jeder eigenen Kreatur einzeln. Enduring Innocence zieht einmal pro Zug bei kleinen Kreaturen und Token. Beide kehren nach ihrem Tod als Verzauberungen zurück, wodurch ein normaler Zerstörungs-Boardwipe den Kartenvorteil nicht vollständig beendet.
 
-## Win Conditions
+Descendants' Path ist dagegen ungleichmäßiger. Die Liste besitzt zwar viele Elfen, aber auch zahlreiche Nichtkreaturen und Nicht-Elfen. Die Verzauberung erzeugt deshalb gelegentlich kostenlose Kreaturen, ist aber keine verlässliche Zieh- oder Tutorengine.
 
-### Combat Overrun
+Urianger Augurelt lagert Karten verdeckt ins Exil aus und kann sie in einem späteren Zug günstiger spielbar machen. Intruder Alarm kann Urianger nach einem Kreaturen-ETB enttappen, sodass erst eine Karte mit Draw Arcanum vorbereitet und später im selben Zug Play Arcanum aktiviert werden kann.
 
-Die primäre faire Siegbedingung ist ein breites Elf-Board mit Lords und Countern.
+### Token, Counter und Combat
 
-Wichtige Finisher:
+Token-Multiplikatoren und Quellen:
 
-- Moonshaker Cavalry
-- Overwhelming Stampede
+- Parallel Lives
+- Doubling Season
 - Elvish Warmaster
-- Galadhrim Brigade
-- Adaptive Automaton
-- Dwynen, Gilt-Leaf Daen
 - Imperious Perfect
-- Patchwork Banner
-- Wilt-Leaf Liege
+- Illustrious Wanderglyph
+- Elven Ambush
+- Sylvan Offering
+- Dwynen's Elite
+- Elderleaf Mentor
+- Selesnya Evangel
+- Windswift Slice
 
-### Intruder-Alarm-Endlosschleife
+Counterquellen und Payoffs:
+
+- Galadriel, Light of Valinor
+- Aragorn and Arwen, Wed
+- Arwen, Weaver of Hope
+- Doubling Season
+- Evolution Sage
+- Haldir, Lórien Lieutenant
+- Wildborn Preserver
+- The Ooze
+- Emil, Vastlands Roamer
+
+Doubling Season verbindet beide Hauptthemen, weil sie Token und +1/+1-Counter verdoppelt. Parallel Lives erhöht nur die Tokenmenge. Evolution Sage proliferiert über Landfall, während Emil Kreaturen mit +1/+1-Countern Trampelschaden gibt und im Late Game einen großen Fraktal-Token erzeugen kann.
+
+Haldir skaliert als flexibler Mana-Sink. Galadriels globale Counter und Doubling Season können ihn auch nach dem Ausspielen weiter vergrößern; seine Aktivierung verwandelt seine Counter anschließend in einen großen Buff für alle anderen Elfen.
+
+The Ooze erzeugt Mutagen-Token, wenn eigene Kreaturen mit +1/+1-Countern das Spielfeld verlassen. Das ersetzt verlorene Boards nicht sofort, konserviert aber einen Teil der Counter als spätere Ressourcen. Zusätzlich bietet die Karte wiederholbare Friedhofsinteraktion.
+
+## Intruder-Alarm-Endlosschleife
 
 Benötigt werden:
 
 - Intruder Alarm
 - Imperious Perfect
-- ein Mana-Dork, der grünes Mana erzeugt
+- ein ungetappter Mana-Dork, der grünes Mana erzeugen kann
 
 Ablauf:
 
-1. Den Mana-Dork für ein grünes Mana tappen.
+1. Den Mana-Dork für grünes Mana tappen.
 2. Das Mana bezahlen und Imperious Perfect tappen, um einen Elf-Token zu erzeugen.
 3. Der Token löst Intruder Alarm aus und enttappt Imperious Perfect sowie den Mana-Dork.
 4. Den Vorgang beliebig oft wiederholen.
 
-Das Ergebnis sind beliebig viele Elf-Token. Mit Elvish Archdruid oder Llanowar Tribe entsteht zusätzlich beliebig viel grünes Mana.
+Ergebnis:
 
-Mit perfekter Hand ist die Kombination ab Zug 3 möglich. Chord of Calling und Fauna Shaman finden Kreaturenteile, aber nicht Intruder Alarm. Daze gibt dem Deck nun eine bedingte kostenlose Schutzkarte für einen frühen Versuch. Asceticism schützt Kreaturenteile, jedoch nicht Intruder Alarm selbst.
+- beliebig viele Elf-Token
+- mit Badgermole Cub zusätzlich überschüssiges grünes Mana pro Schleife
 
-### Simic Ascendancy
+Mit perfekter Hand ist die Kombination ab Zug 3 möglich. Fauna Shaman kann Imperious Perfect oder einen passenden Mana-Dork finden, aber nicht Intruder Alarm. Gegenüber der Vorgängerversion fehlen Chord of Calling, Daze, Asceticism und Heroic Intervention. Die Schleife bleibt deshalb gefährlich, ist aber weniger konsistent und deutlich schlechter geschützt.
 
-Simic Ascendancy gewinnt im eigenen Versorgungssegment mit mindestens 20 Wachstumsmarken. Galadriel, Doubling Season, Crystalline Crawler, Immaculate Magistrate, Metallic Mimic und Proliferate unterstützen diesen Plan.
+Die Token besitzen keine Eile. Ein Sieg erfolgt normalerweise erst im nächsten Zug oder über bereits vorhandene Payoffs. Galadriel kann während der Schleife nur ihre drei Modi jeweils einmal wählen; sie erzeugt nicht für jeden Token erneut Mana oder Karten.
 
-Doubling Season verdoppelt zunächst die auf Kreaturen gelegten +1/+1-Counter und anschließend die durch Simic Ascendancy erzeugten Wachstumsmarken. Der Plan bleibt stark, besitzt aber weniger redundante Enabler als in der vorherigen Version.
+## Interaktion und Schutz
 
-### Geschütztes Ultima
+### Einzelinteraktion
 
-Ultima zerstört alle Artefakte und Kreaturen und beendet anschließend den Zug. Heroic Intervention, Galadriel's Dismissal, Ripples of Potential, Asceticism oder Arwen können eigene Schlüsselwesen schützen. Dadurch kann Ultima teilweise oder vollständig einseitig werden und ein Angriffsfenster für den nächsten Zug öffnen.
-
-## Interaktion
-
-Gezieltes Removal:
-
-- Path to Exile
 - Swords to Plowshares
+- Path to Exile
+- Loran of the Third Path
+- Werefox Bodyguard
+- Windswift Slice
+- The Legend of Yangchen
 
-Counterspells:
+### Gegen Zauber
 
+- An Offer You Can't Refuse
 - Counterspell
 - Swan Song
-- Daze
 
-Masseninteraktion und Tempo:
+### Breite Antworten
 
-- Ultima
-- Raise the Palisade
-- Mists of Lórien
-- Galadriel's Dismissal
+- Avatar's Wrath
+- Settle the Wreckage
 - Galadhrim Ambush
-- Ghostly Prison
-- Propaganda
+- The Legend of Yangchen
 
-Schutz:
+Avatar's Wrath ist primär ein massiver Tempozug und kein dauerhafter Boardwipe. Die Karte lässt bis zu eine Kreatur liegen und airbendet alle anderen. Eigene Kreaturen können anschließend für je zwei Mana neu gewirkt werden und Galadriel erneut auslösen. Gegner dürfen ihre Karten bis zum nächsten eigenen Zug nicht aus dem Exil wirken, können sie danach aber ebenfalls für zwei Mana erneut spielen.
 
-- Asceticism
-- Arwen, Mortal Queen
-- Heroic Intervention
-- Galadriel's Dismissal
-- Ripples of Potential
-- Daze und die regulären Counterspells
+Settle the Wreckage bestraft einen gegnerischen Alpha-Strike, gibt dem betroffenen Spieler aber Standardländer. The Legend of Yangchen entfernt im ersten Kapitel politisch ausgewählte teure Permanents, zieht im zweiten Kapitel beiden gewählten Spielern drei Karten und wird anschließend zu Avatar Yangchen. Der Effekt ist vielseitig, aber nicht vollständig kontrollierbar.
 
-Durch das Entfernen von Reclamation Sage besitzt die Liste keine zuverlässige dauerhafte Einzelantwort mehr auf gegnerische Verzauberungen. Mists of Lórien kann problematische Nichtland-Permanents nur auf die Hand zurückgeben, während Ultima Artefakte und Kreaturen, aber keine Verzauberungen zerstört.
+Der Schutz ist die größte Verschlechterung der neuen Version. Galadriel's Dismissal kann das gesamte eigene Kreaturenboard ausphasen. Arwen, Mortal Queen und Rhys, the Evermore schützen jeweils einzelne Kreaturen. Ein verlässlicher Massenschutz wie Heroic Intervention fehlt jedoch, und Intruder Alarm selbst besitzt praktisch keinen Schutz außer den drei Counterspells.
+
+## Manabasis
+
+Die Liste spielt 37 Länder und 12 Standardländer:
+
+- 6 Forest
+- 3 Island
+- 3 Plains
+
+Positiv:
+
+- Adarkar Wastes, Brushland und Yavimaya Coast liefern früh mehrere Farben.
+- Botanical Sanctum, Razorverge Thicket und Seachrome Coast unterstützen schnelle Starts.
+- Hallowed Fountain, Meticulous Archive, Spara's Headquarters und Canopy Vista besitzen relevante Landtypen für Farseek.
+- Fabled Passage, Evolving Wilds, Terramorphic Expanse und Krosan Verge stabilisieren die Farben und lösen Evolution Sage aus.
+- Cavern of Souls schützt die vielen Elfen vor Counterspells.
+
+Negativ:
+
+- Mehrere Länder kommen getappt ins Spiel oder sind in den ersten Zügen bedingt.
+- Counterspell und Kindred Discovery verlangen viel Blau, Moonshaker Cavalry viel Weiß, während die frühen Mana-Dorks überwiegend Grün benötigen.
+- Reliquary Tower und Thespian's Stage sind zunächst farblos.
+- Die sechs Forests erhöhen die grüne Stabilität, reduzieren aber die Zahl der blauen und weißen Standardländer.
+
+Insgesamt ist die Manabasis farblich besser strukturiert als in der Vorgängerversion, kann durch ihre vielen bedingt getappten Länder aber gelegentlich Tempo verlieren.
+
+## Win Conditions
+
+### Combat
+
+Die primäre Siegbedingung bleibt ein breites Board aus Elfen und anderen Token.
+
+Wichtige Abschlüsse:
+
+- Moonshaker Cavalry
+- Overwhelming Stampede
+- Overrun
+- Haldir, Lórien Lieutenant
+- Elvish Warmaster
+- Wilt-Leaf Liege
+- Aragorn and Arwen, Wed
+- große Galadriel- und Doubling-Season-Counter
+
+### Endlosschleife
+
+- Intruder Alarm
+- Imperious Perfect
+- grüner Mana-Dork
+
+### Tempo-Fenster
+
+Avatar's Wrath kann gegnerische Blocker für eine volle Runde entfernen. Eigene günstige Kreaturen lassen sich danach erneut wirken und aktivieren Galadriel sowie Kartenziehengines. Settle the Wreckage und The Legend of Yangchen können ebenfalls ein Fenster für den entscheidenden Angriff schaffen.
+
+Eine alternative Siegbedingung wie Simic Ascendancy ist nicht mehr enthalten. Die Liste muss deshalb letztlich über Combat oder die Intruder-Alarm-Token gewinnen.
 
 ## Stärken
 
-- Legale und fokussierte 100-Karten-Liste.
-- Galadriel vereint Ramp, Counter und Kartenvorteil in der Command Zone.
-- Elvish Warmaster erzeugt mit Galadriel besonders effiziente doppelte ETB-Ereignisse.
-- Seedborn Muse und Alchemist's Refuge ermöglichen starke gegnerische Züge.
-- Klarerer Elfentribal- und Combat-Plan mit mehreren Lords.
-- Asceticism, Arwen und die vorhandenen Phasing-Effekte verbessern den Schutz deutlich.
-- Ultima ergänzt einen echten Boardwipe und kann mit Schutz asymmetrisch werden.
-- Ghostly Prison und Propaganda verlangsamen Kreaturendecks erheblich.
-- Combat, Simic Ascendancy und eine Endlosschleife bilden unterschiedliche Siegpfade.
-- Daze kann frühe Engines oder einen Komboversuch ohne offenes Mana schützen.
+- Galadriel ist eine starke Value-Engine aus der Command Zone.
+- Viele günstige Mana-Dorks ermöglichen Galadriel oder Kartenziehengines früh.
+- Badgermole Cub und Enduring Vitality erzeugen sehr explosive Manazüge.
+- Illustrious Wanderglyph kann Galadriel in jedem Zug der Tischrunde auslösen.
+- Parallel Lives und Doubling Season skalieren zahlreiche Tokenquellen.
+- Das Kartenvorteilspaket ist breit und teilweise boardwipe-resistent.
+- Drei effiziente Counterspells und mehrere flexible Kreaturenantworten sind vorhanden.
+- Der faire Combat-Plan besitzt mehrere redundante Finisher.
+- Die bekannte Drei-Karten-Endlosschleife bleibt erhalten.
 
 ## Schwächen
 
-- Nur 37 Länder und weniger landbasierter Ramp als zuvor.
-- Hohe Abhängigkeit von Mana-Dorks und einem aufgebauten Kreaturenboard.
-- Ultima zerstört ohne Schutz auch die eigenen Mana-Dorks und Artefakte.
-- Intruder Alarm bleibt nicht tutorbar und schützt sich nicht selbst.
-- Wenig dauerhafte Antworten auf Verzauberungen.
-- Simic Ascendancy besitzt weniger Counter-Enabler als in der Vorgängerversion.
-- Dictate of Kruphix liefert allen Gegnern zusätzliche Karten.
-- Inevitable Betrayal ist langsam und gegnerabhängig.
-- Daze verliert im Late Game stark an Wirkung und kann die eigene Manakurve verzögern.
-- Mehrere farblose oder stammesgebundene Länder erschweren farbintensive Zauber.
+- Das Deck ist stark vom Kreaturenboard abhängig.
+- Verlässlicher Massenschutz fehlt fast vollständig.
+- Nur Fauna Shaman sucht Kreaturen; Intruder Alarm ist nicht tutorbar.
+- Die Endlosschleife ist nach dem Entfernen von Chord of Calling und Daze weniger konsistent und geschützt.
+- Es gibt keine alternative Nicht-Combat-Siegbedingung mehr.
+- Parallel Lives, Descendants' Path und einzelne Payoffs können ohne passende Engine schwach sein.
+- Sylvan Offering und The Legend of Yangchen geben Gegnern ebenfalls Ressourcen oder Entscheidungen.
+- Avatar's Wrath löst gegnerische Kreaturen nur temporär und kann ihnen später günstige Wiederholungen ermöglichen.
+- Mehrere Länder kommen getappt ins Spiel und können schnelle Kurven stören.
 - Intruder Alarm enttappt auch gegnerische Kreaturen und kann fremde Engines unterstützen.
 
-## Unsicherheiten
+## Bracket-Einschätzung
 
-- Entscheidend für das Spielerlebnis ist, ob aktiv auf die Intruder-Alarm-Kombination gespielt oder sie nur bei natürlichem Ziehen eingesetzt wird.
-- Die tatsächliche Farbstabilität hängt davon ab, wie häufig Utility-Länder gemeinsam gezogen werden.
-- Lifestream's Blessing schwankt stark mit der Größe des vorhandenen Boards.
-- Inevitable Betrayal kann je nach Gegner zwischen starkem Threat und sehr langsamer, unpassender Karte liegen.
-- Dictate of Kruphix kann in längeren Partien mehr gegnerischen als eigenen Vorteil erzeugen.
+Die Liste bleibt trotz null Game Changern im oberen Bracket 3. Entscheidend sind die potenziell ab Zug 3 mögliche Drei-Karten-Endlosschleife, starke Kartenziehengines, Tokenverdoppler und sehr explosive Mana-Dork-Sequenzen. Für Bracket 4 fehlen ein Tutor für Intruder Alarm, Fast Mana jenseits von Sol Ring, freie Interaktion und ein zuverlässig geschützter früher Sieg.
+
+Realistische Geschwindigkeit:
+
+- Aufbau: Züge 1–3
+- Galadriel oder starke Engine: ungefähr Zug 3–5
+- erster dominanter Token-/Kartenvorteilszug: ungefähr Zug 4–6
+- realistischer Combat-Sieg: ungefähr Zug 6–8
+- Intruder-Alarm-Schleife: selten Zug 3, realistischer ungefähr Zug 5–7
+
+## Änderungen gegenüber v004
+
+### Verbessert
+
+- mehr günstige Mana-Dorks und deutlich höhere Manaexplosivität
+- mehr wiederholbarer und widerstandsfähiger Kartenvorteil
+- mehr Tokenquellen und zwei Tokenverdoppler
+- Illustrious Wanderglyph als automatischer Galadriel-Auslöser in jedem Zug
+- bessere dauerhafte Kreaturen-, Artefakt- und Verzauberungsinteraktion
+- farblich modernisierte Manabasis
+
+### Verschlechtert
+
+- zwei Game Changer und große Ressourcenengines entfernt
+- Seedborn-Muse-/Alchemist's-Refuge-Engine vollständig entfernt
+- deutlich weniger Schutz gegen Boardwipes
+- weniger Tutoren und weniger Komboschutz
+- Simic Ascendancy als alternative Siegbedingung entfernt
+- keine Free Interaction mehr
 
 ## Quellenstand
 
 - `brains/deck-analysis/templates.md`
 - `brains/bracket/templates.md`
 - `brains/deck-versioning/templates.md`
-- Offizielle Commander-, Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026
-- Offizielle Ergänzungen Farewell und Biorhythm vom 9. Februar 2026 berücksichtigt
+- Offizielle Commander-Formatseite und Game-Changer-Liste, geprüft am 10. August 2026
+- Commander Brackets Beta Update vom 9. Februar 2026
+- Offizielle Release Notes zu Avatar: The Last Airbender, Lorwyn Eclipsed, Secrets of Strixhaven, Teenage Mutant Ninja Turtles und FINAL FANTASY
 - Deckliste: `data/decks/decklists/galadriel.txt`

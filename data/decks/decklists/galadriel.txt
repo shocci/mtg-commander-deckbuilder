@@ -1,102 +1,93 @@
 // COMMANDER
-1 Galadriel, Light of Valinor
+1 Galadriel, Light of Valinor (LTC) 498 *F*
 
-1 Adaptive Automaton
-1 Agatha's Soul Cauldron
-1 Alchemist's Refuge
-1 Aragorn and Arwen, Wed
-1 Arboreal Alliance
-1 Arcane Signet
-1 Arwen, Mortal Queen
-1 Arwen, Weaver of Hope
-1 Asceticism
-1 Beast Whisperer
-1 Birds of Paradise
-1 Botanical Sanctum
-1 Cavern of Souls
-1 Chord of Calling
-1 Command Tower
-1 Counterspell
-1 Crystalline Crawler
-1 Daze
-1 Dictate of Kruphix
-1 Doubling Season
-1 Dwynen, Gilt-Leaf Daen
-1 Echoing Deeps
-1 Elvish Archdruid
-1 Elvish Mystic
-1 Elvish Piper
-1 Elvish Warmaster
-1 Endwalker
-1 Esper Sentinel
-1 Evolution Sage
-1 Exotic Orchard
-1 Farseek
-1 Fauna Shaman
-1 Flooded Grove
-1 Forest
-1 Forest
-1 Forest
-1 Forest
-1 Galadhrim Ambush
-1 Galadhrim Brigade
-1 Galadriel, Gift-Giver
-1 Galadriel's Dismissal
-1 Gatta and Luzzu
-1 Ghostly Prison
-1 Hengegate Pathway
-1 Heroic Intervention
-1 Hinterland Harbor
-1 Immaculate Magistrate
-1 Imperious Perfect
-1 Inevitable Betrayal
-1 Intruder Alarm
-1 Island
-1 Island
-1 Island
-1 Island
-1 Karn's Bastion
-1 Lifestream's Blessing
-1 Llanowar Elves
-1 Llanowar Tribe
-1 Metallic Mimic
-1 Meticulous Archive
-1 Mists of Lórien
-1 Moonshaker Cavalry
-1 Overwhelming Stampede
-1 Paradise Druid
-1 Patchwork Banner
-1 Path to Exile
-1 Plains
-1 Plains
-1 Plains
-1 Plains
-1 Preordain
-1 Propaganda
-1 Radiant Grove
-1 Raise the Palisade
-1 Rally the Galadhrim
-1 Razorverge Thicket
-1 Realmwalker
-1 Rejuvenating Springs
-1 Reliquary Tower
-1 Ripples of Potential
-1 Rivendell
-1 Rogue's Passage
-1 Seachrome Coast
-1 Secluded Courtyard
-1 Seedborn Muse
-1 Simic Ascendancy
-1 Smothering Tithe
-1 Sol Ring
-1 Starting Town
-1 Swan Song
-1 Swords to Plowshares
-1 Tangled Islet
-1 The Shire
-1 Thespian's Stage
-1 Three Tree City
-1 Trouble in Pairs
-1 Ultima
-1 Unclaimed Territory
-1 Wilt-Leaf Liege
+1 Adarkar Wastes (BLC) 291
+1 An Offer You Can't Refuse (BLC) 170
+1 Aragorn and Arwen, Wed (LTR) 287 *F*
+1 Arcane Signet (SLD) 2464 *F*
+1 Arwen, Mortal Queen (LTR) 193
+1 Arwen, Weaver of Hope (LTC) 35
+1 Avacyn's Pilgrim (MIC) 132
+1 Avatar's Wrath (TLA) 12
+1 Badgermole Cub (TLA) 167
+1 Beast Whisperer (GN3) 89
+1 Birds of Paradise (RVR) 344
+1 Bloom Tender (ECL) 166
+1 Botanical Sanctum (OTJ) 301
+1 Brushland (BLC) 295
+1 Canopy Vista (WOC) 153
+1 Cavern of Souls (LCI) 269
+1 Command Tower (SLD) 806
+1 Counterspell (CMM) 81
+1 Cultivate (LTC) 236
+1 Descendants' Path (LCC) 238
+1 Doubling Season (FDN) 216
+1 Dwynen's Elite (GN3) 91
+1 Elderleaf Mentor (KHM) 165
+1 Elven Ambush (GN3) 92
+1 Elvish Mystic (LTC) 238
+1 Elvish Warmaster (LTC) 241
+1 Emil, Vastlands Roamer (SOS) 146
+1 Enduring Curiosity (DSK) 51
+1 Enduring Innocence (DSK) 6
+1 Enduring Vitality (DSK) 176
+1 Evolution Sage (LCC) 240
+1 Evolving Wilds (LTC) 306
+1 Exotic Orchard (MKC) 260
+1 Fabled Passage (TMC) 67
+1 Farseek (FCA) 45
+1 Fauna Shaman (BRO) 179
+6 Forest (SOS) 280
+1 Fortified Village (LCC) 331
+1 Galadhrim Ambush (LTC) 38
+1 Galadhrim Brigade (LTC) 502 *F*
+1 Galadriel's Dismissal (LTC) 500 *F*
+1 Haldir, Lórien Lieutenant (LTC) 39
+1 Hallowed Fountain (ECL) 265
+1 Hinterland Harbor (LTC) 317
+1 Illustrious Wanderglyph (LCC) 9
+1 Imperious Perfect (FDN) 719 *F*
+1 Intruder Alarm (WOT) 21
+3 Island (SOS) 274
+1 Kindred Discovery (LCC) 159
+1 Krosan Verge (WOC) 163
+1 Llanowar Elves (FDN) 227
+1 Loran of the Third Path (FCA) 24
+1 Meticulous Archive (MKM) 264 *F*
+1 Moonshaker Cavalry (WOE) 21
+1 Noble Hierarch (2XM) 177
+1 Overrun (FDN) 230
+1 Overwhelming Stampede (LTC) 254
+1 Paradise Druid (LTC) 255
+1 Parallel Lives (WOT) 83
+1 Path to Exile (MKC) 78
+3 Plains (SOS) 272
+1 Rain-Slicked Copse (ECC) 43
+1 Razorverge Thicket (ONE) 373
+1 Realmwalker (LCC) 250
+1 Rejuvenating Springs (LTC) 325
+1 Reliquary Tower (CMM) 663
+1 Rhys, the Evermore (ECL) 32 *F*
+1 Rishkar's Expertise (WOC) 130
+1 Rumor Gatherer (CLB) 705
+1 Seachrome Coast (ONE) 374 *F*
+1 Selesnya Evangel (RVR) 220
+1 Settle the Wreckage (SLD) 2372 *F*
+1 Sol Ring (SLD) 1604
+1 Spara's Headquarters (SNC) 257
+1 Starting Town (FIN) 289
+1 Sunpetal Grove (BLC) 335
+1 Swan Song (LTC) 197
+1 Swords to Plowshares (WOC) 78
+1 Sylvan Offering (LTC) 261
+1 Terramorphic Expanse (DSK) 269
+1 The Legend of Yangchen (TLA) 27
+1 The Ooze (TMT) 177
+1 Thespian's Stage (SLD) 1607
+1 Urianger Augurelt (FIC) 189
+1 Virulent Emissary (ECL) 202
+1 Werefox Bodyguard (WOE) 39
+1 Wildborn Preserver (FDN) 650
+1 Wilt-Leaf Liege (FDN) 668
+1 Windswift Slice (LTC) 45
+1 Yavimaya Coast (BLC) 355

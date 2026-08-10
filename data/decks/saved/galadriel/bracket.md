@@ -2,34 +2,33 @@
 
 ## Ergebnis
 
-**Geschätztes Bracket:** 3 – Upgraded, oberer Rand
+**Geschätztes Bracket:** 3 – Upgraded, oberer Bereich
 
 **Sicherheit:** mittel bis hoch
 
 ## Kurzbegründung
 
-Die Liste enthält mit Smothering Tithe und Seedborn Muse zwei Game Changer, eine potenziell ab Zug 3 verfügbare Drei-Karten-Endlosschleife und mehrere starke Ressourcen- und Schutzengines. Daze bietet bedingte kostenlose Interaktion, während Asceticism und Ultima die Widerstandsfähigkeit erhöhen. Für Bracket 4 fehlen weiterhin ein Tutor für Intruder Alarm, eine Fast-Mana-Suite, ausreichend Free Interaction und ein konsistent geschützter schneller Siegplan.
+Die neue Hauptversion enthält keine Game Changer mehr, besitzt aber weiterhin eine potenziell ab Zug 3 verfügbare Drei-Karten-Endlosschleife. Badgermole Cub, Enduring Vitality, Bloom Tender, starke Kartenziehengines und Tokenverdoppler ermöglichen explosive Züge, während mehrere Combat-Finisher einen redundanten fairen Siegplan bilden. Für Bracket 4 fehlen ein Tutor für Intruder Alarm, eine Fast-Mana-Suite, freie Interaktion und ein regelmäßig geschützter früher Sieg.
 
 ## Game Changer Check
 
-Anzahl Game Changer: 2
+Anzahl Game Changer: 0
 
 Gefundene Game Changer:
 
-- Smothering Tithe
-- Seedborn Muse
+- keine
 
 Auswirkung:
 
-- Bracket 1 und 2 sind nach der normalen Game-Changer-Regel ausgeschlossen.
-- Zwei Game Changer liegen innerhalb des Bracket-3-Limits von maximal drei.
-- Beide Karten sind zentrale Ressourcenengines.
-- Trouble in Pairs, Doubling Season, Daze und Ultima stehen nicht auf der aktuellen Game-Changer-Liste.
-- Farewell und Biorhythm aus dem Update vom Februar 2026 sind nicht enthalten.
+- Smothering Tithe und Seedborn Muse wurden gegenüber v004 entfernt.
+- Die Liste wäre anhand der Game-Changer-Zahl grundsätzlich auch in Bracket 1 oder 2 zulässig.
+- Deckabsicht, Kartenqualität, Geschwindigkeit und die geplante Intruder-Alarm-Schleife schließen eine Einstufung als Bracket 1 oder 2 dennoch aus.
+- Doubling Season, Parallel Lives, Kindred Discovery, Badgermole Cub und Intruder Alarm stehen nicht auf der aktuellen Game-Changer-Liste.
+- Farewell und Biorhythm aus dem Update vom 9. Februar 2026 sind nicht enthalten.
 
 ## Spielplan
 
-Das Deck beschleunigt mit Mana-Dorks und Ramp in Galadriel. Elfen und Token aktivieren ihre Mana-, Counter- und Kartenvorteilsmodi. Elvish Warmaster erzeugt zusätzliche ETB-Ereignisse, während Seedborn Muse und Alchemist's Refuge Spielzüge in gegnerischen Zügen ermöglichen. Gewonnen wird über Elfentribal-Combat, Moonshaker Cavalry, Overwhelming Stampede, Simic Ascendancy oder die Intruder-Alarm-Endlosschleife.
+Das Deck beschleunigt mit vielen Mana-Dorks in Galadriel und starke Kartenziehengines. Elfen und Token aktivieren Galadriels Mana-, Counter- und Kartenmodi. Illustrious Wanderglyph erzeugt in jedem Versorgungssegment einen Token, während Parallel Lives und Doubling Season breite Boards aufbauen. Gewonnen wird über Moonshaker Cavalry, Overwhelming Stampede, Overrun, Haldir oder die Intruder-Alarm-Endlosschleife.
 
 ## Geschwindigkeit
 
@@ -37,33 +36,35 @@ Erwarteter relevanter Sieg- oder Dominanzbereich:
 
 - Aufbau: Züge 1–3
 - Galadriel oder eine starke Engine: ungefähr Zug 3–5
-- Seedborn-/Refuge-Dominanz: ungefähr Zug 5–7
-- Realistischer Combat-Sieg: ungefähr Zug 6–8
+- großer Mana- oder Kartenvorteilszug: ungefähr Zug 4–6
+- realistischer Combat-Sieg: ungefähr Zug 6–8
 - Intruder-Alarm-Kombination: selten bereits Zug 3, realistischer ungefähr Zug 5–7
-- Regelmäßiger geschützter Sieg bis Zug 4: nicht zu erwarten
+- regelmäßiger geschützter Sieg bis Zug 4: nicht zu erwarten
 
 ## Konsistenz
 
-Einschätzung: mittel bis hoch für den Value- und Combat-Plan, mittel für die Endlosschleife
+Einschätzung: mittel bis hoch für den Value- und Combat-Plan, mittel bis niedrig für die Endlosschleife
 
 Positiv:
 
 - Galadriel stellt die zentrale Value-Engine aus der Command Zone bereit.
-- Elvish Warmaster und Imperious Perfect liefern wiederholbare Token-ETBs.
-- Mehrere Lords unterstützen einen redundanten Combat-Plan.
-- Chord of Calling und Fauna Shaman finden wichtige Kreaturen.
-- Beast Whisperer, Realmwalker, Esper Sentinel, Trouble in Pairs und Lifestream's Blessing liefern Kartenvorteil.
-- Asceticism, Arwen und Phasing-Effekte schützen das Board.
-- Smothering Tithe und Seedborn Muse erzeugen große Ressourcenvorteile.
+- Neun Mana-Dorks sowie Sol Ring, Arcane Signet, Farseek und Cultivate sorgen für viel Beschleunigung.
+- Badgermole Cub und Enduring Vitality vervielfachen den Nutzen der Kreaturenbasis.
+- Elvish Warmaster, Imperious Perfect und weitere Tokenquellen erzeugen viele Galadriel-Auslöser.
+- Illustrious Wanderglyph erzeugt in jedem Versorgungssegment automatisch einen Kreaturen-ETB.
+- Parallel Lives und Doubling Season machen den Go-wide-Plan explosiv.
+- Beast Whisperer, Kindred Discovery, Enduring Curiosity, Enduring Innocence, Realmwalker, Rumor Gatherer und Rishkar's Expertise liefern redundanten Kartenvorteil.
+- Moonshaker Cavalry, Overwhelming Stampede, Overrun und Haldir sind redundante Combat-Finisher.
 
 Negativ:
 
 - Intruder Alarm ist nicht tutorbar.
+- Fauna Shaman ist der einzige echte Tutor und findet nur Kreaturen.
 - Nur Imperious Perfect besitzt die direkt wiederholbare Tokenfähigkeit für die kompakte Schleife.
-- Die Länderzahl sinkt auf 37 und drei landbasierte Ressourcenquellen entfallen.
-- Viele Rampkarten sind Kreaturen und damit boardwipe-anfällig.
-- Daze ist nur bedingte Free Interaction und wird im Late Game deutlich schwächer.
-- Mehrere Utility- und Stammesländer sind für farbintensive Nichtkreaturzauber eingeschränkt.
+- Der Schutz gegen Boardwipes wurde stark reduziert.
+- Die Liste besitzt keine freie Interaktion.
+- Mehrere Kartenvorteils- und Tokenkarten benötigen bereits ein funktionierendes Board.
+- Einige Länder kommen getappt ins Spiel und können die schnellsten Kurven bremsen.
 
 ## Win Conditions und Kombopotenzial
 
@@ -74,55 +75,63 @@ Imperious Perfect erzeugt für ein grünes Mana und Tappen einen Elf-Token. Intr
 Ergebnis:
 
 - beliebig viele Elf-Token
-- mit Elvish Archdruid oder Llanowar Tribe zusätzlich beliebig viel grünes Mana
+- mit Badgermole Cub überschüssiges grünes Mana
 
-Die Kombination benötigt drei Karten und ist keine typische Zwei-Karten-Endlosschleife. Ihre mögliche Zug-3-Geschwindigkeit und Daze als bedingter kostenloser Schutz sollten im Pregame-Gespräch trotzdem genannt werden.
+Die Kombination benötigt drei Karten und ist keine typische Zwei-Karten-Endlosschleife. Mit Mana-Dork in Zug 1, Imperious Perfect in Zug 2 und Intruder Alarm in Zug 3 ist sie theoretisch ab Zug 3 möglich. Ohne Chord of Calling und Daze ist sie gegenüber v004 jedoch weniger konsistent und schlechter geschützt.
 
 ### Faire Abschlüsse
 
 - Moonshaker Cavalry
 - Overwhelming Stampede
+- Overrun
+- Haldir, Lórien Lieutenant
 - Elvish Warmaster
-- ein durch Lords und Galadriel stark vergrößertes Elf-Board
-- Simic Ascendancy
-- ein geschütztes Ultima mit anschließendem Combat-Fenster
+- ein durch Lords, Galadriel und Doubling Season stark vergrößertes Board
+- Avatar's Wrath als Vorbereitung eines offenen Combat-Fensters
+
+Eine alternative Siegbedingung außerhalb von Combat ist nicht mehr enthalten.
 
 ## Interaktion
 
-Die Liste besitzt mit Path to Exile, Swords to Plowshares, Counterspell, Swan Song und Daze effiziente Einzelinteraktion. Ultima ist ein vollständiger Artefakt- und Kreaturenwipe. Raise the Palisade, Mists of Lórien, Galadriel's Dismissal und Galadhrim Ambush können ganze Combat- oder Boardzustände verschieben.
+Die Liste besitzt mit Path to Exile, Swords to Plowshares, An Offer You Can't Refuse, Counterspell und Swan Song effiziente Einzelinteraktion. Loran of the Third Path beantwortet Artefakte und Verzauberungen dauerhaft; Werefox Bodyguard entfernt Kreaturen temporär. Windswift Slice verbindet Kreaturenremoval mit Tokenproduktion.
 
-Asceticism, Arwen, Heroic Intervention und Phasing erschweren das Unterbrechen der Kreaturenengines. Nach dem Entfernen von Reclamation Sage fehlt jedoch eine zuverlässige dauerhafte Einzelantwort auf Verzauberungen.
+Avatar's Wrath ist ein sehr starker Tempo-Reset gegen Kreaturen, aber kein dauerhafter Wipe. Settle the Wreckage beantwortet angreifende Boards. The Legend of Yangchen bietet politische Permanent-Interaktion, symmetrischen Kartenvorteil und später wiederholtes Airbend-Potenzial.
+
+Galadriel's Dismissal ist der einzige zuverlässige Schutz für das gesamte Kreaturenboard. Arwen, Mortal Queen und Rhys, the Evermore schützen einzelne Kreaturen. Gegenüber v004 fehlen Asceticism, Heroic Intervention, Ripples of Potential und Daze.
 
 ## Faktoren, die das Bracket erhöhen
 
-- Zwei zentrale Game Changer.
 - Potenziell ab Zug 3 mögliche Drei-Karten-Endlosschleife.
-- Daze als bedingte kostenlose Interaktion.
-- Seedborn Muse mit Alchemist's Refuge, Galadriel und Tokenquellen.
-- Smothering Tithe als starke Manaengine.
-- Chord of Calling und Fauna Shaman als Kreaturentutoren.
-- Asceticism und mehrere Massenschutzkarten.
-- Ultima kann zusammen mit Schutz asymmetrisch wirken.
-- Doubling Season kann Simic Ascendancy sehr schnell aufladen.
+- Sehr hohe Dichte günstiger Mana-Dorks.
+- Badgermole Cub und Enduring Vitality ermöglichen explosive Manafolgen.
+- Intruder Alarm kann auch außerhalb der Schleife wiederholt alle Mana-Dorks enttappen.
+- Illustrious Wanderglyph löst Galadriel in jedem Zug der Tischrunde aus.
+- Parallel Lives und Doubling Season vervielfachen Token; Doubling Season verdoppelt zusätzlich Counter.
+- Kindred Discovery und Enduring Curiosity können mit einem breiten Board sehr viele Karten ziehen.
+- Fauna Shaman findet Imperious Perfect oder andere zentrale Kreaturen.
+- Mehrere redundante Combat-Finisher.
+- Drei günstige Counterspells schützen wichtige Züge.
 
 ## Faktoren, die das Bracket senken
 
+- Keine Game Changer.
 - Kein Tutor für Intruder Alarm.
-- Keine breite Fast-Mana-Suite.
+- Keine breite Fast-Mana-Suite jenseits von Sol Ring.
+- Keine freie Interaktion.
 - Keine zuverlässige frühe Zwei-Karten-Kombination.
-- Wenig Schutz für Intruder Alarm selbst.
-- Daze ist konditional; reguläre Free-Counter fehlen.
-- Stark boardabhängiger fairer Plan.
-- 37 Länder und weniger Landramp als zuvor.
-- Mehrere langsame oder gegnerabhängige Karten wie Inevitable Betrayal und Dictate of Kruphix.
+- Wenig Schutz für Intruder Alarm und das breite Kreaturenboard.
+- Faire Siege sind stark boardabhängig und normalerweise erst ab Zug 6 zu erwarten.
+- Keine alternative Nicht-Combat-Siegbedingung.
+- Avatar's Wrath und Werefox Bodyguard entfernen gegnerische Karten nur temporär.
 - Kein cEDH-Metagame- oder Turnierfokus.
 
 ## Unsicherheiten
 
-- Wenn konsequent auf die Intruder-Alarm-Schleife gemulligant und tutoriert wird, nähert sich das Spielerlebnis stärker Bracket 4 an.
-- Seedborn Muse und Alchemist's Refuge können in langen Viererpartien deutlich mehr Wert erzeugen als die reine Kartenzahl vermuten lässt.
-- Ultima kann je nach verfügbarem Schutz ein symmetrischer Reset oder ein nahezu einseitiger Spielbeender sein.
-- Die reduzierte Manabasis kann die tatsächliche Geschwindigkeit stärker bremsen als die Einzelkartenanalyse zeigt.
+- Wenn konsequent auf die Intruder-Alarm-Schleife gemulligant wird, fühlt sich die Liste stärker als ein typisches Bracket-3-Deck an.
+- Illustrious Wanderglyph kann an einem Vierertisch erheblich mehr Galadriel-Wert erzeugen, als eine einzelne Fünf-Mana-Karte vermuten lässt.
+- Badgermole Cub mit mehreren Mana-Dorks kann einzelne Züge stark beschleunigen, ohne die grundsätzliche Kombokonsistenz zu erhöhen.
+- Die reduzierte Schutzdichte kann das Deck in Boardwipe-lastigen Runden deutlich schwächer erscheinen lassen.
+- Sylvan Offering und The Legend of Yangchen hängen teilweise von politischen Entscheidungen und gegnerischen Boards ab.
 
 ## Empfehlung
 
@@ -130,7 +139,7 @@ Dieses Deck sollte aktuell als oberes Bracket 3 kommuniziert werden.
 
 Empfohlener Pregame-Hinweis:
 
-> Oberes Bracket 3 mit Smothering Tithe und Seedborn Muse als zwei Game Changer. Das Deck besitzt Intruder Alarm, Imperious Perfect und Mana-Dorks als Drei-Karten-Endlosschleife für beliebig viele Elf-Token; mit perfekter Hand ist sie ab Zug 3 möglich. Daze dient als bedingte kostenlose Interaktion.
+> Oberes Bracket 3 ohne Game Changer. Das Deck besitzt Intruder Alarm, Imperious Perfect und mehrere Mana-Dorks als Drei-Karten-Endlosschleife für beliebig viele Elf-Token; mit perfekter Hand ist sie ab Zug 3 möglich. Badgermole Cub, Enduring Vitality sowie mehrere Token- und Kartenziehengines können sehr explosive Züge erzeugen.
 
 ## Quellenstand
 
