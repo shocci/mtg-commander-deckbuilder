@@ -310,12 +310,7 @@ ${versionSections}`;
 
 // language=HTML
 // noinspection HtmlUnknownAttribute
-function renderAccordionSection(
-    id: string,
-    title: string,
-    content: string,
-    open = false,
-    ): string {
+function renderAccordionSection(id: string, title: string, content: string, open = false,): string {
     return `<details id="${id}" class="accordion-card"${open ? " open" : ""} markdown="1">
 <summary>${title}</summary>
 
