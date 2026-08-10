@@ -10,38 +10,20 @@
 1 Riverpyre Verge
 1 Frostboil Snarl
 1 Starting Town
-1 Temple of Epiphany
-1 Thundering Falls
-1 Path of Ancestry
-1 Restless Spire
-1 Thriving Isle
-1 Thriving Bluff
-1 Swiftwater Cliffs
-1 Izzet Guildgate
-1 Baron, Airship Kingdom
-1 Airship Engine Room
-1 Spectacle Summit
-1 Eroded Canyon
-1 TCRI Building
-1 Valgavoth's Lair
-1 Crossroads Village
-1 Hidden Hideout
 1 Seat of the Synod
 1 Cavern of Souls
 1 Eclipsed Realms
 1 Rivendell
 1 Rockface Village
-1 Captivating Cave
 1 Promising Vein
 1 Volatile Fault
-1 Forgotten Monument
-1 Cavernous Maw
-1 Hidden Cataract
-1 Hidden Volcano
-1 Sunken Citadel
 1 Crystal Grotto
 1 Scavenger Grounds
 1 Conduit Pylons
+1 Shivan Reef
+1 Sulfur Falls
+11 Island
+9 Mountain
 
 // TURN-3 BRIDGES
 1 Thran Dynamo
@@ -53,19 +35,18 @@
 1 Sceptre of Eternal Glory
 1 Crystalline Crawler
 1 Korvold and the Noble Thief
-1 Flamekin Gildweaver
-1 Coin of Mastery
 1 Mindsplice Apparatus
 1 The Fire Crystal
-1 The Water Crystal
 1 Longshot, Rebel Bowman
 1 Summon: Esper Valigarmanda
-1 Rodeo Pyromancers
-1 Brazen Freebooter
-1 Ghirapur Orrery
-1 Involuntary Employment
-1 Trove of Temptation
-1 White Lotus Tile
+1 Big Score
+1 Pirate's Pillage
+1 Irencrag Feat
+1 Ur-Golem's Eye
+1 Sisay's Ring
+1 Stonespeaker Crystal
+1 Jace's Sanctum
+1 Firemind Vessel
 
 // SETUP AND CARD SELECTION
 1 Sol Ring
@@ -73,6 +54,7 @@
 1 Preordain
 1 Consider
 1 Gamble
+1 Mystical Tutor
 1 Lórien Revealed
 1 Jeska's Will
 
@@ -88,24 +70,24 @@
 
 // BIG SPELLS AND PAYOFFS
 1 Mizzix's Mastery
-1 Ashling's Command
 1 Mana Geyser
-1 Etali, Primal Storm
 1 Chimil, the Inner Sun
 1 Ugin, the Ineffable
 1 Sublime Epiphany
 1 Niv-Mizzet, Parun
 1 River's Rebuke
-1 Coveted Jewel
 1 Hullbreaker Horror
 1 All Is Dust
 1 Prismari, the Inspiration
 1 Hit the Mother Lode
 1 Improvisation Capstone
-1 Brass's Bounty
 1 Sunderflock
 1 Dig Through Time
 1 Darksteel Monolith
 1 Kozilek, the Great Distortion
 1 Rise of the Eldrazi
 1 Blasphemous Act
+1 Treasure Cruise
+1 Magma Opus
+1 One with the Multiverse
+1 Apex of Power

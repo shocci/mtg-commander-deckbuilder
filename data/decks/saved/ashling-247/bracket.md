@@ -1,102 +1,120 @@
-# Bracket-Einschätzung: Ashling 2-4-7
+# Bracket-Einschätzung: Ashling 2-4-7 – 20-Euro-Upgrade
 
 ## Ergebnis
 
-**Geschätztes Bracket:** 3 – Upgraded, oberer Bereich  
+**Geschätztes Bracket:** 3 – Upgraded, oberer Bereich
+
+**Grenzbereich:** niedriges Bracket 4
+
 **Sicherheit:** mittel
 
 ## Kurzbegründung
 
-Ashling 2-4-7 ist ein fokussiertes, explosives Big-Mana-Deck, das mit seiner idealen Kurve bereits in Zug 4 einen sehr einflussreichen Spruch wirken kann. Die Liste enthält zwei Game Changer, mehrere freie Interaktionskarten und starke Engines, aber keine deterministische Endlosschleife oder unmittelbare Turn-4-Siegbedingung. Die langsame reine Nonbasic-Manabase, geringe Tutordichte und mehrere bedingte Vier-Mana-Brücken verhindern eine Einstufung als konsistentes Bracket-4-Deck.
+Die Liste ist fokussiert, stark redundant und kann ihren ersten dominanten Big Spell normalerweise in Zug 4 wirken. Mystical Tutor auf Irencrag Feat eröffnet zusätzlich eine bewusst eingebaute Turn-3-Big-Spell-Linie. Drei Game Changer, Sol Ring und freie Interaktion erhöhen die Decke deutlich.
+
+Gegen eine klare Bracket-4-Einstufung sprechen das Fehlen einer deterministischen Kombo, einer kompakten Sofort-Siegbedingung und einer breiten Premium-Fast-Mana-Suite. Auch der stärkste frühe Spruch gewinnt beim Verrechnen normalerweise nicht unmittelbar. Die treffendste Einordnung ist deshalb oberes Bracket 3 mit ausdrücklicher Rule-0-Offenlegung der Turn-3-Linie.
 
 ## Game-Changer-Check
 
-Anzahl Game Changer: 2
-
-Gefundene Game Changer:
+Anzahl Game Changer: **3**
 
 - Gamble
 - Jeska's Will
+- Mystical Tutor
 
 Auswirkung:
 
-- Gamble ist der einzige echte universelle Tutor und kann insbesondere Resonating Lute, Thran Dynamo, Improvisation Capstone, Darksteel Monolith oder einen situativ benötigten Big Spell finden. Der zufällige Discard macht die Karte weniger verlässlich als blaue oder schwarze Premium-Tutoren.
-- Jeska's Will verbindet sehr große temporäre Manaerzeugung mit Impulsdraw. Mit Ashling im Spiel stehen normalerweise beide Modi zur Verfügung.
-- Zwei Game Changer sind innerhalb des Bracket-3-Maximums von drei erlaubt.
-- Die 2026 ergänzten Game Changer Farewell und Biorhythm sind nicht enthalten.
+- Gamble ist ein universeller Tutor mit zufälligem Discard-Risiko.
+- Jeska's Will erzeugt mit Ashling im Spiel normalerweise beide Modi und kann einen außergewöhnlich großen Zug ermöglichen.
+- Mystical Tutor findet Instants und Sorceries für fast jede benötigte Rolle. Besonders relevant ist die konsistente Suche nach Irencrag Feat, Big Score, Pirate's Pillage, Interaktion oder einem passenden Payoff.
 
-## Spielplan
-
-Der geplante Ablauf lautet:
-
-1. Zug 1 Land und optional Setup.
-2. Zug 2 Ashling wirken.
-3. Zug 3 Ashling transformieren, zwei Mana erzeugen und mit zwei weiteren Ländern eine Vier-Mana-Brücke wirken.
-4. Zug 4 erneut zwei Ashling-Mana erhalten, das vierte Land spielen und einen Big Spell wirken.
-5. Den dadurch gewonnenen Tempo- und Ressourcenvorteil über Combat, wiederholte kostenlose Sprüche, Stack-Kontrolle oder einen Extra Turn in einen Sieg umwandeln.
-
-Die explosivsten Brücken sind Resonating Lute, Thran Dynamo, Korvold and the Noble Thief, Crystalline Crawler, Ring of the Lucii, Hedron Archive und Summon: Esper Valigarmanda.
+Damit schöpft die Liste das Maximum von drei Game Changern für Bracket 3 vollständig aus.
 
 ## Geschwindigkeit
 
-Erwarteter relevanter Sieg- oder Dominanzbereich:
+### Normale Goldfish-Linie
 
-- Aufbau: Züge 1–3
-- erster großer Spruch bei idealer Kurve: Zug 4
-- realistischer dominanter Board- oder Enginezustand: ungefähr Zug 4–6
-- realistischer Sieg: ungefähr Zug 6–8
-- regelmäßiger geschützter Sieg bis Zug 4: nicht zu erwarten
+- Zug 1: Land und optional Setup.
+- Zug 2: Ashling.
+- Zug 3: Ashling transformieren und eine Vier-Mana-Brücke wirken.
+- Zug 4: sieben bis zehn Mana für einen Big Spell.
+- Typischer tatsächlicher Sieg: ungefähr Zug 6 bis 8, abhängig von Payoff und Gegenwehr.
 
-Ein Zug-4-Hullbreaker Horror, Sunderflock, All Is Dust, Hit the Mother Lode oder Improvisation Capstone kann die Partie stark prägen. Diese Karten gewinnen jedoch nicht automatisch beim Verrechnen. Das Deck benötigt normalerweise weitere Sprüche oder Combat-Schritte.
+### Schnellste geplante Linie
+
+- Zug 1: Mystical Tutor auf Irencrag Feat.
+- Zug 2: Ashling.
+- Zug 3: Ashling transformieren, Irencrag Feat wirken und mit sieben roten Mana genau einen weiteren roten oder farblosen Big Spell spielen.
+
+Diese Linie ist schneller als für viele typische Bracket-3-Decks erwartet. Sie gewinnt jedoch nicht automatisch und benötigt mehrere konkrete Bedingungen: frühes Mystical Tutor, passende Farben, eine überlebende Ashling und einen geeigneten Payoff.
 
 ## Konsistenz
 
-Einschätzung: mittel
+Einschätzung: **mittel bis hoch für den Aufbau, mittel für den Abschluss**
 
-Faktoren für Konsistenz:
+Konsistenzfaktoren:
 
 - Ashling stellt die zentrale Manaquelle aus der Command Zone bereit.
-- 40 Länder unterstützen vier Landdrops.
-- 22 Karten übernehmen die Rolle der Vier-Mana-Brücke.
-- Ashlings ETB-Loot, Brainstorm, Preordain und Consider verbessern frühe Hände.
-- 22 Big Spells und Payoffs machen einen fehlenden Zug-4-Folgespruch relativ unwahrscheinlich.
+- 40 Länder unterstützen die ersten vier Landdrops.
+- 20 Standardländer und günstige Dual Lands reduzieren getappte Starts erheblich.
+- Kein Land kommt grundsätzlich immer getappt ins Spiel.
+- 21 Karten erfüllen die Rolle der Turn-3-Brücke.
+- Ashlings Loot sowie Brainstorm, Preordain, Consider und Mystical Tutor verbessern frühe Hände.
+- 22 Big Spells und Payoffs liefern eine hohe Dichte an Folgezielen.
 
-Faktoren gegen Konsistenz:
+Begrenzungen:
 
-- 19 Länder kommen grundsätzlich getappt ins Spiel.
-- Die Sequenz benötigt Rot in Zug 2, Blau zu Beginn der ersten Hauptphase in Zug 3 und genügend ungetappte Quellen für die Brücke.
-- Gamble ist der einzige universelle Tutor.
-- Mehrere Brücken erzeugen nur ein Mana oder benötigen zusätzliche Bedingungen.
-- Wird Ashling vor der ersten Hauptphase in Zug 3 entfernt, fällt der gesamte schnelle Plan um mindestens einen Zug zurück.
-- Die Liste besitzt keine Standardländer, weil in der Collection keine Island- oder Mountain-Einträge vorhanden sind.
+- Wird Ashling vor der Hauptphase in Zug 3 entfernt, verzögert sich der Hauptplan.
+- Die Liste besitzt nur wenig kostenlosen Schutz für Ashling.
+- Manche Brücken sind auf Instants/Sorceries, Farben oder mehrere gleichnamige Standardländer angewiesen.
+- Ein Teil der Payoffs benötigt bestimmte Farben oder echte farblose Manaquellen.
+- Der erste Big Spell erzeugt häufig einen starken Vorteil, aber keinen garantierten Sieg.
+
+## Fast Mana und explosive Ressourcen
+
+- Sol Ring ist klassisches Fast Mana.
+- Jeska's Will und Mana Geyser können sehr große temporäre Manamengen erzeugen.
+- Irencrag Feat erzeugt sieben rote Mana und ermöglicht den gezielten Turn-3-Big-Spell.
+- Resonating Lute stellt in Zug 4 zusammen mit Ashling bis zu zehn Mana für Instants und Sorceries bereit.
+- Thran Dynamo erreicht in Zug 4 neun Mana.
+- Big Score, Pirate's Pillage sowie mehrere Vier-Mana-Steine erreichen acht Mana.
+- Darksteel Monolith kann Kozilek, All Is Dust oder Rise of the Eldrazi kostenlos wirken.
+
+Die Liste spielt trotzdem keine dichte cEDH-artige Suite aus Mana Crypt, Moxen, Mana Vault oder ähnlichen Premium-Beschleunigern.
+
+## Tutoren
+
+- Gamble findet jede Karte, ist aber durch den zufälligen Discard unzuverlässiger.
+- Mystical Tutor findet Instants und Sorceries zum Preis einer Karte und des nächsten Draws.
+
+Es gibt keine große Tutor-Suite und keine Tutor-Kette zu einer deterministischen Kombo. Mystical Tutor erhöht aber die Verlässlichkeit der stärksten frühen Linie deutlich.
 
 ## Win Conditions und Combo-Potenzial
 
-### Hauptsiegpfade
+Hauptsiegpfade:
 
-- Hullbreaker Horror plus weitere Sprüche für wiederholte Bounce- und Stack-Kontrolle.
-- Sunderflock als asymmetrischer Kreaturen-Reset und großer fliegender Angreifer.
-- Kozilek, the Great Distortion als Handauffüllung, Bedrohung und Counter-Engine.
-- Niv-Mizzet, Parun als Kartenzieh- und Schadensengine.
-- Prismari, the Inspiration für Storm auf allen Instants und Sorceries.
-- Etali, Primal Storm für wiederholte kostenlose Sprüche.
-- Improvisation Capstone und Chimil für dauerhaften kostenlosen Kartenvorteil.
+- Hullbreaker Horror plus weitere Sprüche für wiederholte Board- und Stackkontrolle.
+- Sunderflock als weitgehend asymmetrischer Kreaturen-Reset und fliegender Angreifer.
+- Kozilek, the Great Distortion als Card Draw, Combat-Bedrohung und Counter-Engine.
+- Niv-Mizzet, Parun als Karten- und Schadensengine.
+- Prismari, the Inspiration für Storm-Sequenzen.
+- Improvisation Capstone und Chimil für wiederholte kostenlose Sprüche.
 - Darksteel Monolith für kostenlose farblose Payoffs.
-- Rise of the Eldrazi für Permanent-Removal, vier Karten und einen Extra Turn.
+- Apex of Power oder One with the Multiverse als Start großer Kettenzüge.
+- Mizzix's Mastery im Overload-Modus als später Abschlusszug.
 
-### Endlosschleifen
+Endlosschleifen:
 
 - Keine bekannte deterministische Endlosschleife enthalten.
-- Keine typische frühe Zwei-Karten-Endloskombo enthalten.
-- Niv-Mizzet, Parun besitzt keine Curiosity-artige Kombokarte in der Liste.
-- Darksteel Monolith und Rise of the Eldrazi erzeugen keine Schleife, weil Rise sich beim Verrechnen ins Exil schickt.
-- Mizzix's Mastery schickt sich und die kopierten Instants beziehungsweise Sorceries anschließend ins Exil.
+- Keine typische frühe Zwei-Karten-Kombo enthalten.
+- Niv-Mizzet besitzt keine Curiosity-artige Kombokarte in der Liste.
+- Mizzix's Mastery und Rise of the Eldrazi schicken relevante Karten ins Exil und bilden keine Wiederholungsschleife.
 
-### Extra Turns
+## Extra Turns
 
 - Rise of the Eldrazi ist der einzige Extra-Turn-Spruch.
 - Die Karte schickt sich selbst ins Exil.
-- Es ist keine wiederholbare Extra-Turn-Schleife geplant oder erkennbar.
+- Es gibt keine wiederholbare Extra-Turn-Schleife.
 
 ## Interaktion
 
@@ -108,13 +126,13 @@ Günstige Antworten:
 - Chaos Warp
 - Reality Shift
 
-Freie oder bedingt freie Interaktion:
+Freie oder bedingt freie Antworten:
 
 - Deflecting Swat
 - Mindbreak Trap
 - Commandeer
 
-Breite und teure Antworten:
+Breite Antworten:
 
 - All Is Dust
 - Blasphemous Act
@@ -123,70 +141,53 @@ Breite und teure Antworten:
 - Hullbreaker Horror
 - Sublime Epiphany
 - Ugin, the Ineffable
-- Ashling's Command
 
-Die Interaktion ist qualitativ stark, aber ein Teil davon kostet sechs oder mehr Mana. Gegen frühe Kreaturen- oder Permanent-Engines stehen hauptsächlich Reality Shift, Chaos Warp und die Counterspells zur Verfügung.
-
-## Faktoren, die das Bracket erhöhen
-
-- Zwei Game Changer.
-- Sol Ring als Fast Mana.
-- Jeska's Will und Mana Geyser können sehr große Manaüberschüsse erzeugen.
-- Free Interaction durch Deflecting Swat, Mindbreak Trap und Commandeer.
-- Geplanter dominanter Big-Spell-Zug bereits ab Zug 4.
-- 22 redundante Vier-Mana-Brücken.
-- Resonating Lute kann im vierten Zug zehn Mana für Instants und Sorceries bereitstellen.
-- Improvisation Capstone kann in jeder folgenden ersten Hauptphase kostenlose Sprüche erzeugen.
-- Hit the Mother Lode kann Kozilek oder andere teure Payoffs kostenlos treffen.
-- Darksteel Monolith kann Kozilek oder Rise of the Eldrazi kostenlos wirken.
-- Mizzix's Mastery kann im Late Game mehrere Big Spells gleichzeitig erneut wirken.
-- Starke Reset- und Kontrollmöglichkeiten durch All Is Dust, Sunderflock, Hullbreaker Horror und Blasphemous Act.
-
-## Faktoren, die das Bracket senken
-
-- Keine Endlosschleife und keine kompakte Sofort-Siegbedingung.
-- Der Zug-4-Big-Spell gewinnt normalerweise nicht unmittelbar.
-- Gamble ist der einzige universelle Tutor und besitzt einen zufälligen Nachteil.
-- Keine breite Premium-Fast-Mana-Suite jenseits von Sol Ring.
-- Sehr hohe durchschnittliche Manakurve.
-- Viele getappte oder bedingte Länder.
-- Mehrere schwache beziehungsweise symmetrische Vier-Mana-Brücken.
-- Hohe Commander-Abhängigkeit für die schnellste Linie.
-- Nur begrenzter Schutz für Ashling im Zug, in dem sie ausgespielt wird.
-- Kein Mass Land Denial.
-- Keine wiederholbare Extra-Turn-Schleife.
-- Keine cEDH-Metagame- oder Turnierorientierung.
+Die Qualität ist hoch, aber mehrere Antworten kosten sechs oder mehr Mana. Gegen frühe Engines muss das Deck vor allem mit seinen günstigen Counterspells, Chaos Warp und Reality Shift arbeiten.
 
 ## Mass Land Denial und Stax
 
 - Keine Mass-Land-Denial-Strategie.
-- Volatile Fault interagiert nur mit einem einzelnen gegnerischen Nichtstandardland und gibt dem Gegner die Möglichkeit, ein Standardland zu suchen.
+- Volatile Fault betrifft nur ein einzelnes gegnerisches Nichtstandardland und ermöglicht ein Standardland als Ersatz.
 - Keine harte Stax-Engine.
-- Trove of Temptation erzeugt einen Angriffszwang gegen den eigenen Spieler, verhindert aber keine gegnerischen Spielhandlungen.
-- Hullbreaker Horror kann gegnerische Mana-Artefakte wiederholt zurückgeben, ist aber eine teure kontrollierende Engine und keine frühe statische Manasperre.
+- Hullbreaker Horror kann Mana-Artefakte wiederholt zurückgeben, ist aber eine teure aktive Engine und keine frühe statische Sperre.
 
-## Unsicherheiten
+## Faktoren, die das Bracket erhöhen
 
-- Die reale Geschwindigkeit hängt stark davon ab, ob die ersten Länder in der richtigen Reihenfolge ungetappt und farbig verfügbar sind.
-- Resonating Lute oder Thran Dynamo machen die stärksten Hände deutlich explosiver als die durchschnittliche Brücke.
-- Hit the Mother Lode und Improvisation Capstone besitzen eine hohe Varianz bei ihren kostenlosen Treffern.
-- Ghirapur Orrery kann gegnerische Decks ebenso stark beschleunigen.
-- Trove of Temptation kann in aggressiven Runden mehr Schaden anziehen, als der zusätzliche Treasure rechtfertigt.
-- An manchen Tischen wird ein regelmäßig angekündigter Zug-4-Hullbreaker oder Zug-4-Sunderflock trotz fehlender Sofortsiege bereits als niedrigeres Bracket 4 wahrgenommen.
+- Exakt drei Game Changer.
+- Mystical Tutor macht die Irencrag-Feat-Linie deutlich auffindbarer.
+- Ein dominanter Big Spell ist planmäßig in Zug 4 und in ausgewählten Händen bereits in Zug 3 möglich.
+- Sehr schnelle und stabile Manabase im Vergleich zur Ausgangsversion.
+- 21 redundante Brücken.
+- Sol Ring, Jeska's Will, Mana Geyser, Thran Dynamo und Resonating Lute erzeugen explosive Manaüberschüsse.
+- Freie Interaktion durch Deflecting Swat, Mindbreak Trap und Commandeer.
+- Starke Engines wie Improvisation Capstone, Chimil, Darksteel Monolith und One with the Multiverse.
+- Mehrere Reset-Effekte und hochwertige Stack-Interaktion.
 
-## Empfehlung
+## Faktoren, die das Bracket begrenzen
 
-Dieses Deck sollte aktuell als **oberes Bracket 3** kommuniziert werden.
+- Keine deterministische Endlosschleife.
+- Keine kompakte Sofort-Siegbedingung.
+- Der Zug-3- oder Zug-4-Big-Spell gewinnt normalerweise nicht unmittelbar.
+- Keine breite Premium-Fast-Mana-Suite jenseits von Sol Ring.
+- Hohe Commander-Abhängigkeit für die schnellste Kurve.
+- Sehr hohe durchschnittliche Manakurve.
+- Nur zwei Tutoren, davon einer mit zufälligem Discard.
+- Kein Mass Land Denial und keine wiederholbare Extra-Turn-Schleife.
+- Keine cEDH-Metagame- oder Turnierorientierung.
+
+## Empfehlung für die Tischkommunikation
+
+Die Liste sollte als **oberes Bracket 3 mit Grenzbereich zu niedrigem Bracket 4** angesagt werden.
 
 Empfohlener Pregame-Hinweis:
 
-> Oberes Bracket 3 mit zwei Game Changern: Gamble und Jeska's Will. Der Plan ist Ashling in Zug 2, eine Vier-Mana-Brücke in Zug 3 und ein großer, potenziell dominanter Spruch in Zug 4. Das Deck enthält freie Interaktion und einen einzelnen selbst-exilierenden Extra-Turn-Spruch, aber keine Endlosschleife und keinen unmittelbaren Turn-4-Sieg.
+> Oberes Bracket 3 mit drei Game Changern: Gamble, Jeska's Will und Mystical Tutor. Der Normalplan ist Ashling in Zug 2, eine Vier-Mana-Brücke in Zug 3 und ein dominanter Big Spell in Zug 4. Mystical Tutor kann Irencrag Feat suchen und dadurch schon in Zug 3 einen roten oder farblosen Big Spell ermöglichen. Das Deck spielt freie Interaktion und einen einzelnen selbst-exilierenden Extra-Turn-Spruch, aber keine Endlosschleife und keine unmittelbare Siegkombination.
 
-Sollte sich im praktischen Test zeigen, dass die Zug-4-Dominanz sehr regelmäßig und gut geschützt erreicht wird, ist für die Tischkommunikation ein Übergang zu niedrigem Bracket 4 vertretbar. Nach der vorliegenden Liste überwiegen jedoch die Konsistenzgrenzen der Manabase und der bedingten Brücken.
+Wenn die Spielgruppe bereits einzelne geplante Turn-3-Big-Spells als Bracket 4 behandelt, sollte das Deck freiwillig als niedriges Bracket 4 angesagt werden. Nach den übrigen Merkmalen bleibt die technische Kerneinstufung jedoch oberes Bracket 3.
 
 ## Quellenstand
 
 - Offizielle Commander-Formatseite und Game-Changer-Liste, geprüft am 10. August 2026
-- Commander Brackets Beta Update vom 9. Februar 2026
+- Commander Brackets Beta Update, Stand 10. August 2026
 - `brains/bracket/templates.md`
 - Deckliste: `data/decks/decklists/ashling-247.txt`

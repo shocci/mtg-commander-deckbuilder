@@ -7,7 +7,7 @@
 
 | Deck | Commander | Analyse | Bracket | Gameplan | Varianten | Versionen |
 |---|---|---:|---:|---:|---:|---:|
-| [Ashling 247](decks/ashling-247.md) | Ashling, Rekindled // Ashling, Rimebound | Ja | Ja | Ja | 0 | 0 |
+| [Ashling 247](decks/ashling-247.md) | Ashling, Rekindled // Ashling, Rimebound | Ja | Ja | Ja | 0 | 1 |
 | [Galadriel](decks/galadriel.md) | Galadriel, Light of Valinor (LTC) 498 *F* | Ja | Ja | Ja | 0 | 4 |
 | [Ghost Of Numbers](decks/ghost-of-numbers.md) | Jin Sakai, Ghost of Tsushima | Ja | Ja | Ja | 0 | 0 |
 | [Gwen Nom](decks/gwen-nom.md) | Gwenom, Remorseless | Ja | Ja | Ja | 0 | 0 |
