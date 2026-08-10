@@ -221,6 +221,7 @@ function renderIndex(decks: DeckDoc[]): string {
         })
         .join("\n\n");
 
+    // language=HTML
     return `${renderStylesheetLink("assets/style.css")}
 
 <div class="page-shell">
@@ -307,6 +308,8 @@ ${version.content.trim()}`,
 ${versionSections}`;
 }
 
+// language=HTML
+// noinspection HtmlUnknownAttribute
 function renderAccordionSection(
     id: string,
     title: string,
@@ -341,6 +344,8 @@ function renderDeckPage(deck: DeckDoc): string {
     const variantsBlock = renderVariantsBlock(deck);
     const versionsBlock = renderVersionsBlock(deck);
 
+    // language=HTML
+    // noinspection HtmlUnknownAnchorTarget,HtmlUnknownAttribute
     return `${renderStylesheetLink("../assets/style.css")}
 
 <div class="page-shell" markdown="1">
