@@ -741,6 +741,40 @@ Richtwerte:
 - Kompakter Gameplan: Early / Mid / Late mit je 2–4 Stichpunkten
 - Änderungen zur neuen Version: wichtigste hinzugefügte, entfernte und strategisch veränderte Karten oder Pakete
 
+## Übertragungslisten
+
+Wenn der Nutzer eine Formulierung verwendet wie:
+
+```text
+Versioniere vi-oh-no mit vivi-storm.
+```
+
+dann bedeutet das:
+
+- `vi-oh-no` ist das bestehende Hauptdeck.
+- `vivi-storm.txt` ist die neue temporäre Übertragungsliste.
+- Die bisherige Hauptliste `vi-oh-no.txt` wird archiviert.
+- Die Inhalte aus `vivi-storm.txt` ersetzen nach Bestätigung `vi-oh-no.txt`.
+- `vivi-storm.txt` wird nach erfolgreicher Übernahme gelöscht.
+
+Die Übertragungsliste ist kein dauerhaftes neues Deck und keine Variante, außer der Nutzer sagt das ausdrücklich.
+
+Vor dem Speichern muss angezeigt werden:
+
+```text
+Wird erstellt:
+data/decks/saved/[deck-name]/versions/vXXX.md
+
+Wird überschrieben:
+data/decks/decklists/[deck-name].txt
+data/decks/saved/[deck-name]/analysis.md
+data/decks/saved/[deck-name]/bracket.md
+data/decks/saved/[deck-name]/gameplan.md
+
+Wird gelöscht:
+data/decks/decklists/[transfer-list].txt
+```
+
 ## Version-Dateiformat
 
 Eine archivierte Version soll dieses Format verwenden:

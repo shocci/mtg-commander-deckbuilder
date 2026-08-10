@@ -33,3 +33,39 @@ Speicherort:
 
 ```text
 data/decks/saved/[deck-slug]/versions/v001.md
+```
+
+## Übertragungslisten
+
+Eine Übertragungsliste ist eine temporäre Deckliste, die als neue Hauptversion eines bestehenden Decks dienen soll.
+
+Beispiel:
+
+```text
+data/decks/decklists/vivi-storm.txt
+```
+
+wird verwendet, um das bestehende Deck
+
+```text
+data/decks/decklists/vi-oh-no.txt
+```
+
+zu aktualisieren.
+
+Nach erfolgreicher und bestätigter Versionierung gilt:
+
+1. Die alte Hauptdeckliste wird unter `versions/vXXX.md` archiviert.
+2. Die Übertragungsliste ersetzt die bisherige Hauptdeckliste.
+3. Die Analyse-, Bracket- und Gameplan-Dateien werden aktualisiert.
+4. Die Übertragungsliste wird gelöscht.
+5. `docs/` wird neu generiert.
+
+Die Übertragungsliste darf erst gelöscht werden, wenn die Versionierung bestätigt und erfolgreich übernommen wurde.
+
+Vor dem Speichern muss die KI klar anzeigen:
+
+```text
+Wird gelöscht:
+data/decks/decklists/[transfer-list].txt
+```
