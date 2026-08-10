@@ -15,6 +15,7 @@
 | [Iroh Grand Lotus Cedh](decks/iroh-grand-lotus-cedh.md) | Iroh, Grand Lotus | Ja | Ja | Ja | 0 | 0 |
 | [Noctis Cedh](decks/noctis-cedh.md) | Noctis, Prince of Lucis | Ja | Ja | Ja | 0 | 0 |
 | [Vi Oh No](decks/vi-oh-no.md) | Vivi Ornitier | Ja | Ja | Ja | 1 | 1 |
+| [Yshtola Nights Blessed](decks/yshtola-nights-blessed.md) | Y'shtola, Night's Blessed | Nein | Nein | Nein | 0 | 0 |
 
 ## Datenquellen
 
