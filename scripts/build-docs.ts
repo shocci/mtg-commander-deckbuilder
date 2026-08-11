@@ -1,5 +1,6 @@
 import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { marked } from "marked";
 
 const ROOT_DIR = process.cwd();
 
@@ -29,11 +30,16 @@ type CollectionCard = {
     "Scryfall ID"?: string;
 };
 
+type CommanderImage = {
+    url: string;
+    owned: boolean;
+};
+
 type DeckDoc = {
     slug: string;
     title: string;
     commander: string | null;
-    commanderImageUrl: string | null;
+    commanderImage: CommanderImage | null;
     decklist: string | null;
     analysis: string | null;
     bracket: string | null;
@@ -67,8 +73,19 @@ function titleFromSlug(slug: string): string {
         .join(" ");
 }
 
-function renderStylesheetLink(relativePath: string): string {
-    return `<link rel="stylesheet" href="${relativePath}">`;
+function escapeHtml(value: string): string {
+    return value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+function renderMarkdown(content: string): string {
+    return marked.parse(content, {
+        async: false,
+    }) as string;
 }
 
 function normalizeCardName(name: string): string {
@@ -77,12 +94,6 @@ function normalizeCardName(name: string): string {
         .replace(/[’']/g, "'")
         .replace(/\s+/g, " ")
         .trim();
-}
-
-function getScryfallImageUrl(scryfallId: string): string {
-    const cleanId = scryfallId.trim();
-
-    return `https://cards.scryfall.io/normal/front/${cleanId[0]}/${cleanId[1]}/${cleanId}.jpg`;
 }
 
 async function loadCollection(): Promise<CollectionCard[]> {
@@ -104,10 +115,47 @@ async function loadCollection(): Promise<CollectionCard[]> {
     }
 }
 
-function findCommanderImageUrl(
+function getScryfallImageUrl(scryfallId: string): string | null {
+    const cleanId = scryfallId.trim();
+
+    if (cleanId.length < 2) {
+        return null;
+    }
+
+    return `https://cards.scryfall.io/normal/front/${cleanId[0]}/${cleanId[1]}/${cleanId}.jpg`;
+}
+
+function getImageUrlFromScryfallCard(card: unknown): string | null {
+    const maybeCard = card as {
+        image_uris?: {
+            normal?: string;
+        };
+        card_faces?: Array<{
+            image_uris?: {
+                normal?: string;
+            };
+        }>;
+    };
+
+    if (maybeCard.image_uris?.normal) {
+        return maybeCard.image_uris.normal;
+    }
+
+    if (Array.isArray(maybeCard.card_faces)) {
+        for (const face of maybeCard.card_faces) {
+            if (face.image_uris?.normal) {
+                return face.image_uris.normal;
+            }
+        }
+    }
+
+    return null;
+}
+
+function findCommanderImageInCollection(
     commander: string | null,
     collection: CollectionCard[],
-): string | null {
+): CommanderImage | null {
     if (!commander) return null;
 
     const commanderNames = commander
@@ -135,7 +183,65 @@ function findCommanderImageUrl(
 
     if (!scryfallId) return null;
 
-    return getScryfallImageUrl(scryfallId);
+    const imageUrl = getScryfallImageUrl(scryfallId);
+
+    if (!imageUrl) return null;
+
+    return {
+        url: imageUrl,
+        owned: true,
+    };
+}
+
+async function findCommanderImageFromScryfall(
+    commander: string | null,
+): Promise<CommanderImage | null> {
+    if (!commander) return null;
+
+    const firstCommanderName = commander.split("//")[0]?.trim();
+
+    if (!firstCommanderName) return null;
+
+    const queries = [
+        `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(commander)}`,
+        `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(firstCommanderName)}`,
+        `https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(firstCommanderName)}`,
+    ];
+
+    for (const url of queries) {
+        try {
+            const response = await fetch(url);
+
+            if (!response.ok) continue;
+
+            const card = await response.json();
+            const imageUrl = getImageUrlFromScryfallCard(card);
+
+            if (!imageUrl) continue;
+
+            return {
+                url: imageUrl,
+                owned: false,
+            };
+        } catch {
+            continue;
+        }
+    }
+
+    return null;
+}
+
+async function findCommanderImage(
+    commander: string | null,
+    collection: CollectionCard[],
+): Promise<CommanderImage | null> {
+    const collectionImage = findCommanderImageInCollection(commander, collection);
+
+    if (collectionImage) {
+        return collectionImage;
+    }
+
+    return await findCommanderImageFromScryfall(commander);
 }
 
 function extractCommander(decklist: string | null): string | null {
@@ -263,13 +369,13 @@ async function loadDeck(
     const variants = await readVariants(savedDeckDir);
     const versions = await readVersions(savedDeckDir);
     const commander = extractCommander(decklist);
-    const commanderImageUrl = findCommanderImageUrl(commander, collection);
+    const commanderImage = await findCommanderImage(commander, collection);
 
     return {
         slug,
         title: titleFromSlug(slug),
         commander,
-        commanderImageUrl,
+        commanderImage,
         decklist,
         analysis,
         bracket,
@@ -296,17 +402,18 @@ function renderIndex(decks: DeckDoc[]): string {
             const variants = `${deck.variants.length} Varianten`;
             const versions = `${deck.versions.length} Versionen`;
 
-            return `<a class="deck-card" href="decks/${deck.slug}.html">
-  <div class="deck-card-title">${deck.title}</div>
+            const commanderImageHtml = deck.commanderImage
+                ? `<img src="${escapeHtml(deck.commanderImage.url)}" alt="${escapeHtml(commander)}" loading="lazy">
+${deck.commanderImage.owned ? "" : '<span class="not-owned-label">Nicht in Collection</span>'}`
+                : `<div class="deck-card-art-placeholder">
+  <span>${escapeHtml(commander)}</span>
+</div>`;
 
-  <div class="deck-card-art">
-    ${
-                deck.commanderImageUrl
-                    ? `<img src="${deck.commanderImageUrl}" alt="${commander}" loading="lazy">`
-                    : `<div class="deck-card-art-placeholder">
-        <span>${commander}</span>
-      </div>`
-            }
+            return `<a class="deck-card" href="decks/${escapeHtml(deck.slug)}.html">
+  <div class="deck-card-title">${escapeHtml(deck.title)}</div>
+
+  <div class="deck-card-art ${deck.commanderImage && !deck.commanderImage.owned ? "not-owned" : ""}">
+${commanderImageHtml}
   </div>
 
   <div class="deck-card-badges">
@@ -322,33 +429,33 @@ function renderIndex(decks: DeckDoc[]): string {
 
     // language=HTML
     return `<!doctype html>
-    <html lang="de">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>MTG Commander Brain – Deckübersicht</title>
-        <link rel="stylesheet" href="assets/style.css">
-    </head>
-    <body>
-    <header class="top-bar">
-        <div class="page-width">
-            <div class="brand">MTG Commander Brain</div>
-        </div>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MTG Commander Brain – Deckübersicht</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="page-width">
+      <div class="brand">MTG Commander Brain</div>
+    </div>
+  </header>
+
+  <main class="page-width index-content">
+    <header class="site-header">
+      <h1>Deckübersicht</h1>
+      <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
     </header>
 
-    <main class="page-width index-content">
-        <header class="site-header">
-            <h1>Deckübersicht</h1>
-            <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
-        </header>
-
-        <section class="deck-grid">
-            ${deckCards || "<p>Keine Decks gefunden.</p>"}
-        </section>
-    </main>
-    </body>
-    </html>
-    `;
+    <section class="deck-grid">
+${deckCards || "<p>Keine Decks gefunden.</p>"}
+    </section>
+  </main>
+</body>
+</html>
+`;
 }
 
 function renderVariantsBlock(deck: DeckDoc): string {
@@ -404,12 +511,18 @@ ${versionSections}`;
 }
 
 // language=HTML
-// noinspection HtmlUnknownAttribute
-function renderAccordionSection(id: string, title: string, content: string, open = false,): string {
-    return `<details id="${id}" class="accordion-card"${open ? " open" : ""} markdown="1">
-<summary>${title}</summary>
+function renderAccordionSection(
+    id: string,
+    title: string,
+    content: string,
+    open = false,
+): string {
+    return `<details id="${escapeHtml(id)}" class="accordion-card"${open ? " open" : ""}>
+<summary>${escapeHtml(title)}</summary>
 
-${content}
+<div class="accordion-content">
+${renderMarkdown(content)}
+</div>
 
 </details>`;
 }
@@ -441,7 +554,7 @@ function renderDeckPage(deck: DeckDoc): string {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${deck.title} – MTG Commander Brain</title>
+  <title>${escapeHtml(deck.title)} – MTG Commander Brain</title>
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -452,8 +565,8 @@ function renderDeckPage(deck: DeckDoc): string {
 
     <header class="deck-header">
       <p class="eyebrow">Deck</p>
-      <h1>${deck.title}</h1>
-      <p class="subtitle">Commander: ${deck.commander ?? "offen"}</p>
+      <h1>${escapeHtml(deck.title)}</h1>
+      <p class="subtitle">Commander: ${escapeHtml(deck.commander ?? "offen")}</p>
     </header>
 
     <section class="quick-nav">
@@ -471,11 +584,11 @@ function renderDeckPage(deck: DeckDoc): string {
       <div class="profile-grid">
         <div>
           <span>Slug</span>
-          <strong><code>${deck.slug}</code></strong>
+          <strong><code>${escapeHtml(deck.slug)}</code></strong>
         </div>
         <div>
           <span>Commander</span>
-          <strong>${deck.commander ?? "offen"}</strong>
+          <strong>${escapeHtml(deck.commander ?? "offen")}</strong>
         </div>
         <div>
           <span>Analyse</span>
