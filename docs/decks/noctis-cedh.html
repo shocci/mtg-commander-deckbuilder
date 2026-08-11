@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="page-shell">
+
     <nav class="breadcrumb">
       <a href="../index.html">← Deckübersicht</a>
     </nav>
@@ -15,63 +16,38 @@
     <header class="deck-header">
       <p class="eyebrow">Deck</p>
       <h1>Noctis Cedh</h1>
-      <p class="subtitle">Commander: Noctis, Prince of Lucis</p>
+      <p class="subtitle">
+        Commander: Noctis, Prince of Lucis
+      </p>
     </header>
-
-    <section class="quick-nav">
-      <a href="#analyse">Analyse</a>
-      <a href="#bracket">Bracket</a>
-      <a href="#gameplan">Gameplan</a>
-      <a href="#deckliste">Deckliste</a>
-      <a href="#varianten">Varianten</a>
-      <a href="#versionen">Versionen</a>
-    </section>
 
     <section class="profile-card">
       <h2>Kurzprofil</h2>
 
-      <div class="profile-grid">
-        <div>
-          <span>Slug</span>
-          <strong><code>noctis-cedh</code></strong>
-        </div>
-        <div>
-          <span>Commander</span>
-          <strong>Noctis, Prince of Lucis</strong>
-        </div>
-        <div>
-          <span>Analyse</span>
-          <strong><a href="#analyse">Ja</a></strong>
-        </div>
-        <div>
-          <span>Bracket</span>
-          <strong><a href="#bracket">Ja</a></strong>
-        </div>
-        <div>
-          <span>Gameplan</span>
-          <strong><a href="#gameplan">Ja</a></strong>
-        </div>
-        <div>
-          <span>Deckliste</span>
-          <strong><a href="#deckliste">Ja</a></strong>
-        </div>
-        <div>
-          <span>Varianten</span>
-          <strong>0</strong>
-        </div>
-        <div>
-          <span>Versionen</span>
-          <strong>0</strong>
-        </div>
+      <div class="profile-nav">
+        <a class="profile-nav-button" href="#analyse">Analyse</a>
+
+        <a class="profile-nav-button" href="#bracket">Bracket 5</a>
+
+        <a class="profile-nav-button" href="#gameplan">Gameplan</a>
+
+        <a class="profile-nav-button" href="#deckliste">Deckliste</a>
+
+        <span class="profile-nav-button disabled">0 Varianten</span>
+
+        <span class="profile-nav-button disabled">Version v001</span>
       </div>
     </section>
 
-<details id="analyse" class="accordion-card" open>
-<summary>Analyse</summary>
+<section id="analyse" class="accordion-card main-section">
+<div class="main-section-title">
+  Analyse
+</div>
 
 <div class="accordion-content">
-<h1>Deckanalyse: Noctis cEDH</h1>
-<h2>Überblick</h2>
+<details class="sub-accordion">
+<summary>Überblick</summary>
+<div class="sub-accordion-content">
 <ul>
 <li>Commander: Noctis, Prince of Lucis</li>
 <li>Farbidentität: Weiß-Blau-Schwarz (Esper)</li>
@@ -83,7 +59,12 @@
 <li>Sicherheit: hoch</li>
 </ul>
 <p>Die Liste ist auf frühe, geschützte Gewinnversuche und kompetitive Interaktion ausgerichtet. Sie verbindet Fast Mana, effiziente Tutoren, kostenlose Counterspells und mehrere kompakte Kombopakete. Ein realistischer Gewinnversuch liegt ungefähr in Zug 2–4; besonders explosive Hände können bereits in Zug 1 gewinnen.</p>
-<h2>Spielplan</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Spielplan</summary>
+<div class="sub-accordion-content">
 <ol>
 <li>Mit Fast Mana und einer frühen Kartenvorteil-Engine entwickeln.</li>
 <li>Über Tutoren die zur Hand und zum gegnerischen Board passende Siegachse auswählen.</li>
@@ -92,7 +73,12 @@
 <li>Nach Ressourcentausch oder einem gestoppten Versuch Noctis als Rekursions- und Combo-Engine einsetzen.</li>
 </ol>
 <p>Noctis ist nicht für jeden Sieg erforderlich. Die Oracle- und Salvagers-Linien funktionieren ohne den Commander. Dadurch bleibt das Deck auch gegen Commander Tax und Graveyard Hate handlungsfähig. Wenn Noctis im Spiel ist, können geopferte, abgeworfene oder gezielt in den Friedhof gelegte Artefakte erneut gewirkt werden.</p>
-<h2>Zentrale Engines</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Zentrale Engines</summary>
+<div class="sub-accordion-content">
 <ul>
 <li>Noctis, Prince of Lucis: Wirkt Artefakte aus dem Friedhof und eröffnet commander-spezifische Schleifen.</li>
 <li>Ad Nauseam und Necropotence: Explosiver Kartenzug für frühe Combo-Turns.</li>
@@ -106,7 +92,12 @@
 <li>Displacer Kitten: Wiederholt die ETB-Effekte von Spellseeker, Ranger-Captain, Tataru und anderen Kreaturen.</li>
 <li>Hex Parasite: Entfernt Finality Counter und macht ausgewählte Noctis-Rekursion wiederholbar.</li>
 </ul>
-<h2>Tutoren und Konsistenz</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Tutoren und Konsistenz</summary>
+<div class="sub-accordion-content">
 <p>Universelle und Instant-/Sorcery-Tutoren:</p>
 <ul>
 <li>Demonic Tutor</li>
@@ -132,7 +123,12 @@
 <li>Sensei’s Divining Top und die günstigen Baubles verbessern die Kartenauswahl.</li>
 </ul>
 <p>Die Konsistenz ist sehr hoch. Mehrere Tutoren finden direkt eine Win Condition oder ein fehlendes Komboteil. Die drei Siegachsen verwenden unterschiedliche Karten und reduzieren die Abhängigkeit von Commander und Friedhof.</p>
-<h2>Win Conditions</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Win Conditions</summary>
+<div class="sub-accordion-content">
 <h3>Thassa’s Oracle + Demonic Consultation oder Tainted Pact</h3>
 <p>Die primäre, kompakteste Siegkombination:</p>
 <ol>
@@ -174,7 +170,12 @@
 </ul>
 <h3>Vexing-Bauble-Redundanz</h3>
 <p>Mit Noctis, Aetherflux Reservoir, Vexing Bauble und einem Null-Mana-Artefakt im Friedhof entsteht eine weitere Cast-Schleife. Vexing Bauble neutralisiert den ohne Mana gewirkten Zauber, bevor er eintreten und einen Finality Counter erhalten kann. Das Artefakt landet wieder im Friedhof und kann erneut gewirkt werden. Aetherflux Reservoir bezahlt nach den ersten Wiederholungen die Lebenspunktkosten und dient als Finisher.</p>
-<h2>Interaktion</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Interaktion</summary>
+<div class="sub-accordion-content">
 <h3>Stack-Interaktion</h3>
 <ul>
 <li>An Offer You Can’t Refuse</li>
@@ -211,10 +212,20 @@
 <li>Nihil Spellbomb</li>
 </ul>
 <p>Die Liste ist stark am Stack, hat aber nur wenige Antworten auf bereits aufgelöste Nichtkreaturen-Hatepieces. Null Rod, Grafdigger’s Cage und vergleichbare Permanents müssen häufig mit einem der wenigen Bounce-Effekte beantwortet werden.</p>
-<h2>Ramp und Manabasis</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Ramp und Manabasis</summary>
+<div class="sub-accordion-content">
 <p>Die Liste spielt 26 Länder und gleicht die niedrige Zahl mit umfangreichem Fast Mana aus. Dazu gehören Ancient Tomb, Chrome Mox, Dark Ritual, Gemstone Caverns, Grim Monolith, Lion’s Eye Diamond, Lotus Petal, Mana Vault, Mox Amber, Mox Diamond, Mox Opal und Sol Ring.</p>
 <p>Arcane Signet, Fellwar Stone und die drei Talismane sichern die Farben. Fetchlands, originale Duals, Shocklands und Rainbow-Länder liefern eine hochwertige Esper-Manabasis. Die niedrige Länderzahl erhöht dennoch die Mulligan-Abhängigkeit und macht Artifact Hate besonders relevant.</p>
-<h2>Payoffs</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Payoffs</summary>
+<div class="sub-accordion-content">
 <ul>
 <li>Thassa’s Oracle: Primärer Sofortsieg nach dem Leeren der Bibliothek.</li>
 <li>Aetherflux Reservoir: Finisher der Noctis- und Cast-Schleifen.</li>
@@ -222,7 +233,12 @@
 <li>Aether Spellbomb: Wandelt unendliches Salvagers-Mana in Kartenzug um.</li>
 <li>Noctis, Prince of Lucis: Rekursion, Value und Teil einer eigenen Aetherflux-Schleife.</li>
 </ul>
-<h2>Stärken</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Stärken</summary>
+<div class="sub-accordion-content">
 <ul>
 <li>Mehrere unabhängige und kompakte Siegachsen.</li>
 <li>Gewinnversuche bereits in den ersten Zügen.</li>
@@ -234,7 +250,12 @@
 <li>Noctis rekonstruiert verbrauchte Artefakte nach Interaktion.</li>
 <li>Starke Farbqualität und niedrige Manakurve.</li>
 </ul>
-<h2>Schwächen</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Schwächen</summary>
+<div class="sub-accordion-content">
 <ul>
 <li>Null Rod, Collector Ouphe und ähnliche Effekte treffen Mana, Tutoren und mehrere Win Conditions gleichzeitig.</li>
 <li>Rest in Peace, Grafdigger’s Cage und Dauthi Voidwalker schalten Noctis und Teile des Salvagers-Plans aus.</li>
@@ -245,14 +266,24 @@
 <li>Keine Boardwipes für breite, längere Casual-Boards.</li>
 <li>Einige commanderbezogene Synergiekarten sind außerhalb ihrer Kombination situationsabhängig.</li>
 </ul>
-<h2>Unsicherheiten</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Unsicherheiten</summary>
+<div class="sub-accordion-content">
 <ul>
 <li>Ohne Goldfish-, Liga- oder Turnierdaten lässt sich die tatsächliche Turn-2/3-Quote nicht exakt bestimmen.</li>
 <li>Noctis ist kein universell etablierter cEDH-Top-Commander; seine Position hängt vom lokalen Metagame ab.</li>
 <li>Die optimale Gewichtung von Repurposing Bay, Displacer Kitten, Tataru Taru und Conqueror’s Flail muss sich in Tests zeigen.</li>
 <li>Die Stärke der Artefaktachsen schwankt mit der Häufigkeit von Artifact- und Graveyard-Hate.</li>
 </ul>
-<h2>Quellenstand</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Quellenstand</summary>
+<div class="sub-accordion-content">
 <ul>
 <li><code>brains/deck-analysis/templates.md</code></li>
 <li><code>brains/bracket/templates.md</code></li>
@@ -262,19 +293,33 @@
 </ul>
 
 </div>
-
 </details>
+</div>
+</section>
 
-<details id="bracket" class="accordion-card">
-<summary>Bracket</summary>
+<section id="bracket" class="accordion-card main-section">
+<div class="main-section-title">
+  Bracket 5
+</div>
 
 <div class="accordion-content">
-<h1>Bracket Einschätzung: Noctis cEDH</h1>
-<h2>Ergebnis</h2>
+<details class="sub-accordion">
+<summary>Ergebnis</summary>
+<div class="sub-accordion-content">
 <p><strong>Geschätztes Bracket:</strong> 5 – cEDH<br><strong>Sicherheit:</strong> hoch</p>
-<h2>Kurzbegründung</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Kurzbegründung</summary>
+<div class="sub-accordion-content">
 <p>Die Liste ist ausdrücklich für cEDH konstruiert und vereint 18 Game Changers, Fast Mana, kostenlose Interaktion, zahlreiche effiziente Tutoren und mehrere kompakte, sofort spielbeendende Kombinationen. Sie kann mit einer außergewöhnlichen Starthand bereits in Zug 1 gewinnen und realistisch zwischen Zug 2 und 4 einen geschützten Sieg versuchen. Deckabsicht, Geschwindigkeit und Aufbau entsprechen eindeutig Bracket 5 und nicht lediglich einem optimierten Bracket-4-Deck.</p>
-<h2>Game Changer Check</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Game Changer Check</summary>
+<div class="sub-accordion-content">
 <p>Anzahl Game Changers: 18</p>
 <p>Gefundene Game Changers:</p>
 <ul>
@@ -305,9 +350,19 @@
 <li>Die Menge allein grenzt Bracket 1–3 aus; cEDH-Absicht, Geschwindigkeit und Metagame-Aufbau unterscheiden das Deck zusätzlich von Bracket 4.</li>
 <li>Die Ergänzungen Farewell und Biorhythm vom 9. Februar 2026 betreffen dieses Deck nicht.</li>
 </ul>
-<h2>Spielplan</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Spielplan</summary>
+<div class="sub-accordion-content">
 <p>Das Deck entwickelt schnell Mana und Kartenvorteil, sucht eine kompakte Oracle- oder Artefaktkombination und schützt den Gewinnzug mit kostenloser Interaktion oder Silence-Effekten. Thassa’s Oracle mit Demonic Consultation beziehungsweise Tainted Pact ist die effizienteste Linie. Auriok Salvagers/Lion’s Eye Diamond und Noctis/Mox Diamond/Aetherflux Reservoir bilden unabhängige Alternativen.</p>
-<h2>Geschwindigkeit</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Geschwindigkeit</summary>
+<div class="sub-accordion-content">
 <p>Erwarteter relevanter Sieg- oder Dominanzbereich:</p>
 <ul>
 <li>Explosive Entwicklung: Zug 1</li>
@@ -315,7 +370,12 @@
 <li>Außergewöhnliche Oracle-Hand: Zug 1 möglich</li>
 <li>Im längeren Spiel: erneute Versuche über Noctis-Rekursion und permanente Card-Advantage-Engines</li>
 </ul>
-<h2>Konsistenz</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Konsistenz</summary>
+<div class="sub-accordion-content">
 <p>Einschätzung: sehr hoch</p>
 <p>Positiv:</p>
 <ul>
@@ -333,7 +393,12 @@
 <li>Die niedrige Länderzahl macht Mulligan-Entscheidungen anspruchsvoll.</li>
 <li>Bestimmte Synergiekarten sind außerhalb ihrer vorgesehenen Linie schmaler als generische cEDH-Staples.</li>
 </ul>
-<h2>Faktoren, die das Bracket erhöhen</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Faktoren, die das Bracket erhöhen</summary>
+<div class="sub-accordion-content">
 <ul>
 <li>Ausdrückliche cEDH-Absicht</li>
 <li>18 Game Changers</li>
@@ -347,7 +412,12 @@
 <li>Mehrere Silence- und Abolisher-Effekte</li>
 <li>Optimierte Esper-Manabasis</li>
 </ul>
-<h2>Faktoren, die das Bracket senken</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Faktoren, die das Bracket senken</summary>
+<div class="sub-accordion-content">
 <ul>
 <li>Noctis ist mit vier Mana relativ langsam und bietet beim Ausspielen keinen unmittelbaren Kartenvorteil.</li>
 <li>Der Commander ist kein universell etablierter cEDH-Metacommander.</li>
@@ -356,13 +426,23 @@
 <li>Die niedrige Länderzahl erhöht die Mulligan-Abhängigkeit.</li>
 </ul>
 <p>Diese Punkte betreffen die Position innerhalb des cEDH-Feldes, senken das Deck aber nicht auf Bracket 4.</p>
-<h2>Unsicherheiten</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Unsicherheiten</summary>
+<div class="sub-accordion-content">
 <ul>
 <li>Ohne Goldfish- und Turnierdaten lässt sich die tatsächliche frühe Gewinnquote nicht exakt bestimmen.</li>
 <li>Die Leistung hängt davon ab, wie häufig im lokalen Metagame Graveyard-, Artifact- und Rule-of-Law-Hate vorkommt.</li>
 <li>Die optimale Auswahl der Flex Slots muss anhand realer Spiele bewertet werden.</li>
 </ul>
-<h2>Empfehlung</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Empfehlung</summary>
+<div class="sub-accordion-content">
 <p>Dieses Deck sollte aktuell so kommuniziert werden:</p>
 <blockquote>
 <p>Bracket 5 – Esper-cEDH-Artifact-Combo mit 18 Game Changers, Turn-1-Potenzial, Oracle/Consult, Salvagers/LED und einer Noctis/Aetherflux-Schleife.</p>
@@ -382,7 +462,12 @@
 <li>Das Interaktionspaket auf das erwartete Turniermetagame abstimmen.</li>
 <li>Repurposing Bay, Displacer Kitten, Tataru Taru und Conqueror’s Flail als Flex Slots anhand ihrer Resultate bewerten.</li>
 </ul>
-<h2>Quellenstand</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Quellenstand</summary>
+<div class="sub-accordion-content">
 <ul>
 <li><code>brains/bracket/templates.md</code></li>
 <li>Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026</li>
@@ -390,18 +475,27 @@
 </ul>
 
 </div>
-
 </details>
+</div>
+</section>
 
-<details id="gameplan" class="accordion-card">
-<summary>Gameplan</summary>
+<section id="gameplan" class="accordion-card main-section">
+<div class="main-section-title">
+  Gameplan
+</div>
 
 <div class="accordion-content">
-<h1>Gameplan: Noctis cEDH</h1>
-<h2>Kernidee</h2>
+<details class="sub-accordion">
+<summary>Kernidee</summary>
+<div class="sub-accordion-content">
 <p>Das Deck ist eine schnelle Esper-cEDH-Komboliste mit drei Hauptachsen. Thassa’s Oracle mit Demonic Consultation oder Tainted Pact ist die kompakteste und unabhängigste Siegbedingung. Auriok Salvagers und Lion’s Eye Diamond erzeugen unendliches Mana und beliebig viele Artefakt-Casts. Noctis bildet zusammen mit Mox Diamond und Aetherflux Reservoir eine commander-spezifische Schleife.</p>
 <p>Noctis sollte nicht automatisch in jedem Spiel früh ausgespielt werden. Er kostet vier Mana, erzeugt beim Eintreten keinen direkten Kartenvorteil und wird vor allem dann wichtig, wenn der Friedhof bereits relevante Artefakte enthält oder eine konkrete Noctis-Linie vorbereitet ist. Die Command Zone dient als zusätzliche Combo- und Rekursionsachse, nicht als Voraussetzung für den primären Spielplan.</p>
-<h2>Early Game: Züge 1–2</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Early Game: Züge 1–2</summary>
+<div class="sub-accordion-content">
 <ul>
 <li>Eine Hand mit funktionierender Farbversorgung, Beschleunigung und einem klaren Plan priorisieren.</li>
 <li>Mystic Remora oder Esper Sentinel früh ausspielen, wenn sie mehrere Karten versprechen.</li>
@@ -411,7 +505,12 @@
 <li>Nicht jedes Fast Mana sofort ausgeben. Benötigte Farben, Schutzmana und den vollständigen Gewinnzug zuerst berechnen.</li>
 <li>Mit Gitaxian Probe, Mishra’s Bauble und Urza’s Bauble Information und Kartenauswahl gewinnen.</li>
 </ul>
-<h2>Combo Turn: ungefähr Züge 2–4</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Combo Turn: ungefähr Züge 2–4</summary>
+<div class="sub-accordion-content">
 <p>Vor dem Gewinnversuch prüfen:</p>
 <ol>
 <li>Welche Gegner haben offenes Mana oder kostenlose Interaktion?</li>
@@ -422,7 +521,12 @@
 <li>Reicht der eigene Lebenspunktestand für Noctis, Ad Nauseam oder Necropotence?</li>
 </ol>
 <p>Ein geschützter Oracle-Versuch ist gewöhnlich effizienter als eine offen sichtbare permanente Artefaktkombination. Gegen spezialisierte Oracle-Interaktion oder nach dem Verlust eines Pakets kann auf Salvagers/LED oder Noctis/Aetherflux gewechselt werden.</p>
-<h2>Oracle-Linie</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Oracle-Linie</summary>
+<div class="sub-accordion-content">
 <p>Benötigt:</p>
 <ul>
 <li>Thassa’s Oracle</li>
@@ -438,7 +542,12 @@
 <li>Den Oracle-Auslöser verrechnen lassen.</li>
 </ol>
 <p>Tainted Pact kann die Bibliothek vollständig exilieren, weil jeder Kartenname nur einmal vorkommt. Bei gegnerischer Interaktion beachten, dass ein leerer Library-Zustand ohne erfolgreichen Oracle-Auslöser beim nächsten Ziehen verliert.</p>
-<h2>Salvagers-LED-Linie</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Salvagers-LED-Linie</summary>
+<div class="sub-accordion-content">
 <p>Benötigt:</p>
 <ul>
 <li>Auriok Salvagers im Spiel</li>
@@ -460,7 +569,12 @@
 <li>Aether Spellbomb wiederholt mit Salvagers zurückholen, Karten ziehen und über Thassa’s Oracle abschließen.</li>
 </ul>
 <p>Bei Lion’s Eye Diamond beachten, dass die Hand als Teil der Aktivierungskosten abgeworfen wird. Schutzkarten müssen vorher eingesetzt oder die Linie so sequenziert werden, dass der Abschluss aus Friedhof oder Bibliothek erreichbar bleibt.</p>
-<h2>Noctis-Aetherflux-Linie</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Noctis-Aetherflux-Linie</summary>
+<div class="sub-accordion-content">
 <p>Benötigt:</p>
 <ul>
 <li>Noctis im Spiel</li>
@@ -479,10 +593,20 @@
 <li>Nach den ersten Durchläufen beliebig viel Leben erzeugen und alle Gegner mit Aetherflux Reservoir ausschalten.</li>
 </ol>
 <p>Entomb kann Mox Diamond direkt in den Friedhof legen. Artificer’s Intuition kann Mox Diamond abwerfen und zugleich ein weiteres günstiges Artefakt suchen. Hex Parasite entfernt Finality Counter von anderen über Noctis gewirkten Artefakten.</p>
-<h2>Vexing-Bauble-Linie</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Vexing-Bauble-Linie</summary>
+<div class="sub-accordion-content">
 <p>Vexing Bauble neutralisiert einen Zauber, wenn kein Mana für ihn ausgegeben wurde. Mit Noctis und einem Null-Mana-Artefakt im Friedhof kann das Artefakt deshalb wiederholt gewirkt und von Vexing Bauble neutralisiert werden. Es erreicht das Spielfeld nicht, erhält keinen Finality Counter und geht zurück in den Friedhof.</p>
 <p>Mit Aetherflux Reservoir wird daraus eine Gewinnschleife. Vor dem Versuch prüfen, ob tatsächlich kein Mana für den Artefaktzauber ausgegeben wird und ob Vexing Bauble nicht zuvor geopfert werden muss, damit ein anderer eigener Null-Mana-Zauber auflösen kann.</p>
-<h2>Tutor-Prioritäten</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Tutor-Prioritäten</summary>
+<div class="sub-accordion-content">
 <p>Für Oracle:</p>
 <ul>
 <li>Demonic Tutor und Vampiric Tutor finden jedes fehlende Teil.</li>
@@ -501,7 +625,12 @@
 <li>Enlightened Tutor, Reshape und Transmute Artifact erschließen Aetherflux Reservoir beziehungsweise passende Artefakt-Zwischenschritte.</li>
 <li>Demonic Tutor, Vampiric Tutor und Wishclaw Talisman finden jedes fehlende Teil.</li>
 </ul>
-<h2>Mulligan-Prioritäten</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Mulligan-Prioritäten</summary>
+<div class="sub-accordion-content">
 <p>Eine gute Starthand enthält:</p>
 <ul>
 <li>zuverlässigen Zugriff auf die benötigten Esper-Farben</li>
@@ -526,7 +655,12 @@
 <li>landarme Hände, deren einzige Manaquelle von einem einzelnen Artifact-Hatepiece abgeschaltet wird</li>
 <li>mehrere Pitch-Counterspells ohne passende Karten zum Pitchen</li>
 </ul>
-<h2>Prioritäten für Interaktion</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Prioritäten für Interaktion</summary>
+<div class="sub-accordion-content">
 <ol>
 <li>Einen unmittelbar spielentscheidenden gegnerischen Zauber stoppen.</li>
 <li>Rule of Law, Graveyard Hate oder Artifact Hate beantworten, wenn das Permanent die geplante Linie blockiert.</li>
@@ -536,7 +670,12 @@
 <li>Swords to Plowshares für Collector Ouphe, Drannith Magistrate oder vergleichbare Hate-Kreaturen priorisieren.</li>
 <li>Vexing Bauble rechtzeitig opfern, falls die eigene freie Interaktion oder ein Null-Mana-Artefakt auflösen muss.</li>
 </ol>
-<h2>Spielen aus einer zurückliegenden Position</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Spielen aus einer zurückliegenden Position</summary>
+<div class="sub-accordion-content">
 <ul>
 <li>Noctis erst dann ausspielen, wenn er sofort ein relevantes Artefakt zurückholt oder eine Combo vorbereitet.</li>
 <li>Mystic Remora, Rhystic Study, Faerie Mastermind und Ledger Shredder als Grind-Engines nutzen.</li>
@@ -546,7 +685,12 @@
 <li>Nach dem Verlust einer Oracle-Komponente auf Salvagers/LED oder Noctis/Aetherflux wechseln.</li>
 <li>Children of Korlis kann nach hohen Lebenspunktverlusten durch Ad Nauseam, Necropotence oder Noctis einen weiteren Ressourcenzyklus ermöglichen.</li>
 </ul>
-<h2>Siegpfade</h2>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Siegpfade</summary>
+<div class="sub-accordion-content">
 <ol>
 <li>Thassa’s Oracle + Demonic Consultation.</li>
 <li>Thassa’s Oracle + Tainted Pact.</li>
@@ -559,11 +703,14 @@
 <p>Im Pregame-Gespräch sollte das Deck eindeutig als cEDH-Liste mit 18 Game Changers, frühen Sofortsiegen, umfangreichem Fast Mana und kostenloser Interaktion kommuniziert werden.</p>
 
 </div>
-
 </details>
+</div>
+</section>
 
-<details id="deckliste" class="accordion-card">
-<summary>Deckliste</summary>
+<section id="deckliste" class="accordion-card main-section">
+<div class="main-section-title">
+  Deckliste
+</div>
 
 <div class="accordion-content">
 <pre><code class="language-txt">// COMMANDER
@@ -671,28 +818,28 @@
 </code></pre>
 
 </div>
+</section>
 
-</details>
-
-<details id="varianten" class="accordion-card">
-<summary>Varianten</summary>
-
-<div class="accordion-content">
-<p><em>Keine gespeicherten Varianten vorhanden.</em></p>
-
+<section id="varianten" class="accordion-card main-section">
+<div class="main-section-title">
+  Varianten
 </div>
 
-</details>
-
-<details id="versionen" class="accordion-card">
-<summary>Versionen</summary>
-
 <div class="accordion-content">
-<p><em>Keine archivierten Versionen vorhanden.</em></p>
+<p class="empty-content">Keine gespeicherten Varianten vorhanden.</p>
+</div>
+</section>
 
+<section id="versionen" class="accordion-card main-section">
+<div class="main-section-title">
+  Versionen · aktuell v001
 </div>
 
-</details>
+<div class="accordion-content">
+<p class="empty-content">Keine archivierten Versionen vorhanden.</p>
+</div>
+</section>
+
   </div>
 </body>
 </html>

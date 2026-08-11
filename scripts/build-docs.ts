@@ -113,6 +113,83 @@ function extractBracketNumber(bracket: string | null): number | null {
     return Number(match[1]);
 }
 
+function formatVersionNumber(version: number): string {
+    return `v${String(version).padStart(3, "0")}`;
+}
+
+function getCurrentVersion(deck: DeckDoc): string {
+    return formatVersionNumber(deck.versions.length + 1);
+}
+
+function stripFirstHeading(content: string): string {
+    return content.replace(/^#\s+.+(?:\r?\n)+/, "").trim();
+}
+
+function renderMarkdownSubsections(content: string): string {
+    const cleaned = stripFirstHeading(content);
+
+    const lines = cleaned.split(/\r?\n/);
+
+    const introLines: string[] = [];
+    const sections: Array<{
+        title: string;
+        content: string[];
+    }> = [];
+
+    let currentSection: {
+        title: string;
+        content: string[];
+    } | null = null;
+
+    for (const line of lines) {
+        const headingMatch = line.match(/^##\s+(.+)$/);
+
+        if (headingMatch?.[1]) {
+            if (currentSection) {
+                sections.push(currentSection);
+            }
+
+            currentSection = {
+                title: headingMatch[1].trim(),
+                content: [],
+            };
+
+            continue;
+        }
+
+        if (currentSection) {
+            currentSection.content.push(line);
+        } else {
+            introLines.push(line);
+        }
+    }
+
+    if (currentSection) {
+        sections.push(currentSection);
+    }
+
+    const intro = introLines.join("\n").trim();
+
+    const introHtml = intro
+        ? `<div class="section-intro">
+${renderMarkdown(intro)}
+</div>`
+        : "";
+
+    const sectionsHtml = sections
+        .map((section) => {
+            return `<details class="sub-accordion">
+<summary>${escapeHtml(section.title)}</summary>
+<div class="sub-accordion-content">
+${renderMarkdown(section.content.join("\n").trim())}
+</div>
+</details>`;
+        })
+        .join("\n");
+
+    return `${introHtml}${sectionsHtml}`;
+}
+
 async function loadCollection(): Promise<CollectionCard[]> {
     try {
         const raw = await readFile(COLLECTION_PATH, "utf8");
@@ -448,7 +525,9 @@ function renderIndex(decks: DeckDoc[]): string {
             const bracketClass = bracketNumber ? "badge-good" : "badge-missing";
             const gameplanClass = deck.gameplan ? "badge-good" : "badge-missing";
             const variantsClass = deck.variants.length > 0 ? "badge-good" : "badge-missing";
-            const versionsClass = deck.versions.length > 0 ? "badge-good" : "badge-missing";
+            const versionsClass = deck.decklist
+                ? "badge-good"
+                : "badge-missing";
 
             const analysis = deck.analysis ? "Analyse" : "Keine Analyse";
             const bracket = bracketNumber
@@ -456,7 +535,9 @@ function renderIndex(decks: DeckDoc[]): string {
                 : "Kein Bracket";
             const gameplan = deck.gameplan ? "Gameplan" : "Kein Gameplan";
             const variants = `${deck.variants.length} Varianten`;
-            const versions = `${deck.versions.length} Versionen`;
+            const versions = deck.decklist
+                ? `Version ${getCurrentVersion(deck)}`
+                : "Keine Version";
 
             const commanderImageHtml = deck.commanderImage
                 ? `<img src="${escapeHtml(deck.commanderImage.url)}" alt="${escapeHtml(commander)}" loading="lazy">
@@ -519,71 +600,77 @@ ${deckCards || "<p>Keine Decks gefunden.</p>"}
 
 function renderVariantsBlock(deck: DeckDoc): string {
     if (deck.variants.length === 0) {
-        return "_Keine gespeicherten Varianten vorhanden._";
+        return `<p class="empty-content">Keine gespeicherten Varianten vorhanden.</p>`;
     }
 
-    const variantLinks = deck.variants
-        .map((variant) => `- [${variant.title}](#variant-${variant.slug})`)
+    return deck.variants
+        .map((variant) => {
+            const originalContent = variant.content.trim();
+
+            const titleMatch = originalContent.match(/^#\s+(.+)$/m);
+
+            const title = titleMatch?.[1]
+                ? titleMatch[1].trim()
+                : variant.title;
+
+            const content = stripFirstHeading(originalContent);
+
+            return `<details class="sub-accordion variant-accordion">
+<summary>${escapeHtml(title)}</summary>
+<div class="sub-accordion-content">
+${renderMarkdown(content)}
+</div>
+</details>`;
+        })
         .join("\n");
-
-    const variantSections = deck.variants
-        .map(
-            (variant) => `<a id="variant-${variant.slug}"></a>
-
-### ${variant.title}
-
-${variant.content.trim()}`,
-        )
-        .join("\n\n---\n\n");
-
-    return `${variantLinks}
-
----
-
-${variantSections}`;
 }
 
 function renderVersionsBlock(deck: DeckDoc): string {
     if (deck.versions.length === 0) {
-        return "_Keine archivierten Versionen vorhanden._";
+        return `<p class="empty-content">Keine archivierten Versionen vorhanden.</p>`;
     }
 
-    const versionLinks = deck.versions
-        .map((version) => `- [${version.title}](#version-${version.slug})`)
+    return deck.versions
+        .map((version) => {
+            const originalContent = version.content.trim();
+
+            const titleMatch = originalContent.match(/^#\s+(.+)$/m);
+
+            const title = titleMatch?.[1]
+                ? titleMatch[1].trim()
+                : `${deck.title} – Version ${version.slug}`;
+
+            const content = stripFirstHeading(originalContent);
+
+            return `<details class="sub-accordion version-accordion">
+<summary>${escapeHtml(title)}</summary>
+<div class="sub-accordion-content">
+${renderMarkdown(content)}
+</div>
+</details>`;
+        })
         .join("\n");
-
-    const versionSections = deck.versions
-        .map(
-            (version) => `<a id="version-${version.slug}"></a>
-
-### ${version.title}
-
-${version.content.trim()}`,
-        )
-        .join("\n\n---\n\n");
-
-    return `${versionLinks}
-
----
-
-${versionSections}`;
 }
 
-// language=HTML
-function renderAccordionSection(
+function renderMainSection(
     id: string,
     title: string,
     content: string,
-    open = false,
+    useSubsections = true,
 ): string {
-    return `<details id="${escapeHtml(id)}" class="accordion-card"${open ? " open" : ""}>
-<summary>${escapeHtml(title)}</summary>
+    const renderedContent = useSubsections
+        ? renderMarkdownSubsections(content)
+        : renderMarkdown(content);
 
-<div class="accordion-content">
-${renderMarkdown(content)}
+    return `<section id="${escapeHtml(id)}" class="accordion-card main-section">
+<div class="main-section-title">
+  ${escapeHtml(title)}
 </div>
 
-</details>`;
+<div class="accordion-content">
+${renderedContent}
+</div>
+</section>`;
 }
 
 function renderDeckPage(deck: DeckDoc): string {
@@ -606,8 +693,42 @@ function renderDeckPage(deck: DeckDoc): string {
     const variantsBlock = renderVariantsBlock(deck);
     const versionsBlock = renderVersionsBlock(deck);
 
-    // language=HTML
-    // noinspection HtmlUnknownAnchorTarget
+    const bracketNumber = extractBracketNumber(deck.bracket);
+    const currentVersion = getCurrentVersion(deck);
+
+    const commanderName = deck.commander ?? "Commander offen";
+
+    const commanderImageHtml = deck.commanderImage
+        ? `<div class="profile-commander-art ${deck.commanderImage.owned ? "" : "not-owned"}">
+  <img
+    src="${escapeHtml(deck.commanderImage.url)}"
+    alt="${escapeHtml(commanderName)}"
+    loading="lazy"
+  >
+  ${
+            deck.commanderImage.owned
+                ? ""
+                : '<span class="not-owned-label">Nicht in Collection</span>'
+        }
+</div>`
+        : `<div class="profile-commander-art">
+  <div class="deck-card-art-placeholder">
+    <span>${escapeHtml(commanderName)}</span>
+  </div>
+</div>`;
+
+    const profileButton = (
+        href: string,
+        label: string,
+        available: boolean,
+    ): string => {
+        if (!available) {
+            return `<span class="profile-nav-button disabled">${escapeHtml(label)}</span>`;
+        }
+
+        return `<a class="profile-nav-button" href="${href}">${escapeHtml(label)}</a>`;
+    };
+
     return `<!doctype html>
 <html lang="de">
 <head>
@@ -618,6 +739,7 @@ function renderDeckPage(deck: DeckDoc): string {
 </head>
 <body>
   <div class="page-shell">
+
     <nav class="breadcrumb">
       <a href="../index.html">← Deckübersicht</a>
     </nav>
@@ -625,68 +747,99 @@ function renderDeckPage(deck: DeckDoc): string {
     <header class="deck-header">
       <p class="eyebrow">Deck</p>
       <h1>${escapeHtml(deck.title)}</h1>
-      <p class="subtitle">Commander: ${escapeHtml(deck.commander ?? "offen")}</p>
+      <p class="subtitle">
+        Commander: ${escapeHtml(deck.commander ?? "offen")}
+      </p>
     </header>
 
-    <section class="quick-nav">
-      <a href="#analyse">Analyse</a>
-      <a href="#bracket">Bracket</a>
-      <a href="#gameplan">Gameplan</a>
-      <a href="#deckliste">Deckliste</a>
-      <a href="#varianten">Varianten</a>
-      <a href="#versionen">Versionen</a>
-    </section>
-
     <section class="profile-card">
-      <h2>Kurzprofil</h2>
+  <h2>Kurzprofil</h2>
 
-      <div class="profile-grid">
-        <div>
-          <span>Slug</span>
-          <strong><code>${escapeHtml(deck.slug)}</code></strong>
-        </div>
-        <div>
-          <span>Commander</span>
-          <strong>${escapeHtml(deck.commander ?? "offen")}</strong>
-        </div>
-        <div>
-          <span>Analyse</span>
-          <strong>${deck.analysis ? '<a href="#analyse">Ja</a>' : "Nein"}</strong>
-        </div>
-        <div>
-          <span>Bracket</span>
-          <strong>${deck.bracket ? '<a href="#bracket">Ja</a>' : "Nein"}</strong>
-        </div>
-        <div>
-          <span>Gameplan</span>
-          <strong>${deck.gameplan ? '<a href="#gameplan">Ja</a>' : "Nein"}</strong>
-        </div>
-        <div>
-          <span>Deckliste</span>
-          <strong>${deck.decklist ? '<a href="#deckliste">Ja</a>' : "Nein"}</strong>
-        </div>
-        <div>
-          <span>Varianten</span>
-          <strong>${deck.variants.length > 0 ? `<a href="#varianten">${deck.variants.length}</a>` : "0"}</strong>
-        </div>
-        <div>
-          <span>Versionen</span>
-          <strong>${deck.versions.length > 0 ? `<a href="#versionen">${deck.versions.length}</a>` : "0"}</strong>
-        </div>
-      </div>
-    </section>
+  <div class="profile-layout">
+    ${commanderImageHtml}
 
-${renderAccordionSection("analyse", "Analyse", analysisBlock, true)}
+    <div class="profile-nav">
+      ${profileButton(
+        "#analyse",
+        "Analyse",
+        Boolean(deck.analysis),
+    )}
 
-${renderAccordionSection("bracket", "Bracket", bracketBlock)}
+      ${profileButton(
+        "#bracket",
+        bracketNumber ? `Bracket ${bracketNumber}` : "Bracket",
+        Boolean(bracketNumber),
+    )}
 
-${renderAccordionSection("gameplan", "Gameplan", gameplanBlock)}
+      ${profileButton(
+        "#gameplan",
+        "Gameplan",
+        Boolean(deck.gameplan),
+    )}
 
-${renderAccordionSection("deckliste", "Deckliste", decklistBlock)}
+      ${profileButton(
+        "#deckliste",
+        "Deckliste",
+        Boolean(deck.decklist),
+    )}
 
-${renderAccordionSection("varianten", "Varianten", variantsBlock)}
+      ${profileButton(
+        "#varianten",
+        `${deck.variants.length} ${deck.variants.length === 1 ? "Variante" : "Varianten"}`,
+        deck.variants.length > 0,
+    )}
 
-${renderAccordionSection("versionen", "Versionen", versionsBlock)}
+      ${profileButton(
+        "#versionen",
+        `Version ${currentVersion}`,
+        Boolean(deck.decklist),
+    )}
+    </div>
+  </div>
+</section>
+
+${renderMainSection(
+        "analyse",
+        "Analyse",
+        analysisBlock,
+        true,
+    )}
+
+${renderMainSection(
+        "bracket",
+        bracketNumber ? `Bracket ${bracketNumber}` : "Bracket",
+        bracketBlock,
+        true,
+    )}
+
+${renderMainSection(
+        "gameplan",
+        "Gameplan",
+        gameplanBlock,
+        true,
+    )}
+
+${renderMainSection(
+        "deckliste",
+        "Deckliste",
+        decklistBlock,
+        false,
+    )}
+
+${renderMainSection(
+        "varianten",
+        "Varianten",
+        variantsBlock,
+        false,
+    )}
+
+${renderMainSection(
+        "versionen",
+        `Versionen · aktuell ${currentVersion}`,
+        versionsBlock,
+        false,
+    )}
+
   </div>
 </body>
 </html>
