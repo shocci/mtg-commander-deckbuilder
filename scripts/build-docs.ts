@@ -104,13 +104,23 @@ function normalizeCardName(name: string): string {
 function extractBracketNumber(bracket: string | null): number | null {
     if (!bracket) return null;
 
-    const match = bracket.match(/\bbracket\s*[:#-]?\s*([1-5])\b/i);
+    const lines = bracket.split(/\r?\n/);
 
-    if (!match?.[1]) {
-        return null;
+    for (const line of lines) {
+        const plainLine = line
+            .replace(/\*\*/g, "")
+            .trim();
+
+        const match = plainLine.match(
+            /^Geschätztes\s+Bracket\s*:\s*([1-5])\b/i,
+        );
+
+        if (match?.[1]) {
+            return Number(match[1]);
+        }
     }
 
-    return Number(match[1]);
+    return null;
 }
 
 function formatVersionNumber(version: number): string {
