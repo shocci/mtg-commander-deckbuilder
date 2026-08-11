@@ -468,7 +468,10 @@ ${commanderImageHtml}
         })
         .join("\n\n");
 
-    // language=HTML
+    /**
+     * language=HTML
+     * noinspection HtmlUnknownTargetL
+     */
     return `<!doctype html>
 <html lang="de">
 <head>
