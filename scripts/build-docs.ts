@@ -667,15 +667,30 @@ ${renderMarkdown(content)}
         .join("\n");
 }
 
+type MainSectionContentType = "subsections" | "markdown" | "html";
+
 function renderMainSection(
     id: string,
     title: string,
     content: string,
-    useSubsections = true,
+    contentType: MainSectionContentType = "subsections",
 ): string {
-    const renderedContent = useSubsections
-        ? renderMarkdownSubsections(content)
-        : renderMarkdown(content);
+    let renderedContent: string;
+
+    switch (contentType) {
+        case "html":
+            renderedContent = content;
+            break;
+
+        case "markdown":
+            renderedContent = renderMarkdown(content);
+            break;
+
+        case "subsections":
+        default:
+            renderedContent = renderMarkdownSubsections(content);
+            break;
+    }
 
     return `<section id="${escapeHtml(id)}" class="accordion-card main-section">
 <div class="main-section-title">
@@ -817,42 +832,42 @@ ${renderMainSection(
         "analyse",
         "Analyse",
         analysisBlock,
-        true,
+        "subsections",
     )}
 
 ${renderMainSection(
         "bracket",
         bracketNumber ? `Bracket ${bracketNumber}` : "Bracket",
         bracketBlock,
-        true,
+        "subsections",
     )}
 
 ${renderMainSection(
         "gameplan",
         "Gameplan",
         gameplanBlock,
-        true,
+        "subsections",
     )}
 
 ${renderMainSection(
         "deckliste",
         "Deckliste",
         decklistBlock,
-        false,
+        "markdown",
     )}
 
 ${renderMainSection(
         "varianten",
         "Varianten",
         variantsBlock,
-        false,
+        "html",
     )}
 
 ${renderMainSection(
         "versionen",
         `Versionen · aktuell ${currentVersion}`,
         versionsBlock,
-        false,
+        "html",
     )}
 
   </div>
