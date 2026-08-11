@@ -1,14 +1,16 @@
 :root {
-    --bg: #0f0f14;
-    --panel: #181820;
-    --panel-soft: #20202a;
-    --panel-hover: #252532;
-    --text: #f4f4f6;
-    --muted: #b9b9c6;
-    --line: #343445;
-    --accent: #d6a84f;
-    --accent-soft: rgba(214, 168, 79, 0.14);
-    --code-bg: #0a0a0e;
+    --bg: #1c1c1c;
+    --page: #2b2b2b;
+    --panel: #202024;
+    --panel-soft: #27272d;
+    --text: #f2f2f2;
+    --muted: #c8c8c8;
+    --line: #d8d8d8;
+    --line-soft: #4a4a4a;
+    --accent: #f0f0f0;
+    --green: #0fbd22;
+    --red: #d60000;
+    --code-bg: #111114;
 }
 
 * {
@@ -21,10 +23,7 @@ html {
 
 body {
     margin: 0;
-    background:
-            radial-gradient(circle at top left, rgba(214, 168, 79, 0.12), transparent 32rem),
-            radial-gradient(circle at top right, rgba(100, 100, 180, 0.12), transparent 28rem),
-            var(--bg);
+    background: var(--bg);
     color: var(--text);
     font-family:
             system-ui,
@@ -32,16 +31,16 @@ body {
             BlinkMacSystemFont,
             "Segoe UI",
             sans-serif;
-    line-height: 1.65;
+    line-height: 1.55;
 }
 
 a {
-    color: var(--accent);
+    color: inherit;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .page-shell {
@@ -50,14 +49,163 @@ a:hover {
     padding: 40px 0 72px;
 }
 
-.site-header,
+/* Index Layout */
+
+.index-page {
+    background: var(--page);
+    margin-top: 56px;
+    padding: 0 0 48px;
+    min-height: 720px;
+}
+
+.top-bar {
+    border-bottom: 2px solid var(--line);
+    padding: 18px 96px;
+}
+
+.brand {
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.index-content {
+    padding: 18px 96px 56px;
+}
+
+.site-header {
+    margin-bottom: 14px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+.subtitle {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* Deck Grid */
+
+.deck-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 18px;
+    margin-top: 16px;
+}
+
+.deck-card {
+    display: block;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    padding: 6px;
+    color: var(--text);
+    background: #303030;
+    transition:
+            transform 0.12s ease,
+            border-color 0.12s ease,
+            background 0.12s ease;
+}
+
+.deck-card:hover {
+    transform: translateY(-2px);
+    border-color: #ffffff;
+    background: #363636;
+}
+
+.deck-card-title {
+    font-size: 1rem;
+    margin: 0 0 5px;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.deck-card-art {
+    aspect-ratio: 63 / 88;
+    border-radius: 5px;
+    border: 1px solid #111;
+    overflow: hidden;
+    background:
+            radial-gradient(circle at 35% 20%, rgba(255, 220, 120, 0.85), transparent 22%),
+            radial-gradient(circle at 70% 55%, rgba(255, 76, 24, 0.75), transparent 34%),
+            linear-gradient(135deg, #3a1111, #c35a18 45%, #191919);
+    display: flex;
+    align-items: end;
+}
+
+.deck-card-art-inner {
+    width: 100%;
+    min-height: 36%;
+    padding: 8px;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.86));
+    display: flex;
+    align-items: end;
+}
+
+.deck-card-art-inner span {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 2px black;
+}
+
+.deck-card-badges {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-top: 7px;
+}
+
+.badge {
+    border-radius: 999px;
+    padding: 3px 7px;
+    font-size: 0.64rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-align: center;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.badge-good {
+    background: var(--green);
+}
+
+.badge-red {
+    background: var(--red);
+}
+
+/* Deck Detail Pages */
+
+.breadcrumb {
+    margin-bottom: 24px;
+}
+
+.breadcrumb a {
+    color: #ffffff;
+    opacity: 0.82;
+}
+
+.breadcrumb a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
 .deck-header {
-    margin-bottom: 28px;
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 18px;
+    margin-bottom: 24px;
 }
 
 .eyebrow {
     margin: 0 0 8px;
-    color: var(--accent);
+    color: var(--muted);
     text-transform: uppercase;
     letter-spacing: 0.14em;
     font-size: 0.76rem;
@@ -66,92 +214,13 @@ a:hover {
 
 h1 {
     margin: 0;
-    font-size: clamp(2.2rem, 5vw, 4.2rem);
+    font-size: clamp(2.1rem, 5vw, 3.6rem);
     line-height: 1;
 }
 
 h2,
 h3 {
     color: var(--accent);
-}
-
-.subtitle {
-    max-width: 760px;
-    color: var(--muted);
-    font-size: 1.1rem;
-}
-
-.breadcrumb {
-    margin-bottom: 24px;
-}
-
-.info-box,
-.profile-card,
-.content-card,
-.data-source,
-.accordion-card {
-    background: linear-gradient(180deg, var(--panel), var(--panel-soft));
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    padding: 22px;
-    margin: 22px 0;
-    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.32);
-}
-
-.deck-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 18px;
-    margin: 28px 0;
-}
-
-.deck-card {
-    display: block;
-    background: linear-gradient(180deg, var(--panel), var(--panel-soft));
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    padding: 22px;
-    min-height: 210px;
-    color: var(--text);
-    transition:
-            transform 0.15s ease,
-            border-color 0.15s ease,
-            background 0.15s ease;
-}
-
-.deck-card:hover {
-    transform: translateY(-3px);
-    border-color: var(--accent);
-    text-decoration: none;
-    background: linear-gradient(180deg, var(--panel-hover), var(--panel));
-}
-
-.deck-card h2 {
-    margin-top: 0;
-    margin-bottom: 12px;
-}
-
-.deck-card p {
-    color: var(--muted);
-}
-
-.tag-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 18px;
-}
-
-.tag-row span,
-.quick-nav a {
-    display: inline-flex;
-    align-items: center;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    padding: 6px 10px;
-    background: var(--accent-soft);
-    color: var(--text);
-    font-size: 0.88rem;
 }
 
 .quick-nav {
@@ -161,9 +230,31 @@ h3 {
     margin: 24px 0;
 }
 
+.quick-nav a {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 12px;
+    background: #303030;
+    color: var(--text);
+    font-size: 0.88rem;
+}
+
 .quick-nav a:hover {
-    border-color: var(--accent);
-    text-decoration: none;
+    background: #3a3a3a;
+}
+
+.profile-card,
+.accordion-card {
+    background: #202024;
+    border: 1px solid var(--line-soft);
+    border-radius: 14px;
+    margin: 22px 0;
+}
+
+.profile-card {
+    padding: 20px;
 }
 
 .profile-card h2 {
@@ -177,16 +268,16 @@ h3 {
 }
 
 .profile-grid div {
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.03);
-    padding: 14px;
+    border: 1px solid var(--line-soft);
+    border-radius: 10px;
+    background: #2a2a30;
+    padding: 12px;
 }
 
 .profile-grid span {
     display: block;
     color: var(--muted);
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     margin-bottom: 4px;
 }
 
@@ -196,18 +287,25 @@ h3 {
     overflow-wrap: anywhere;
 }
 
+.profile-grid a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Accordion */
+
 .accordion-card {
-    padding: 0;
     overflow: hidden;
+    padding: 0;
 }
 
 .accordion-card summary {
     cursor: pointer;
     list-style: none;
-    padding: 20px 22px;
-    color: var(--accent);
-    font-size: 1.45rem;
-    font-weight: 700;
+    padding: 18px 20px;
+    color: var(--text);
+    font-size: 1.35rem;
+    font-weight: 800;
     border-bottom: 1px solid transparent;
     user-select: none;
 }
@@ -220,12 +318,12 @@ h3 {
     content: "+";
     float: right;
     color: var(--muted);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1;
 }
 
 .accordion-card[open] summary {
-    border-bottom-color: var(--line);
+    border-bottom-color: var(--line-soft);
 }
 
 .accordion-card[open] summary::after {
@@ -233,13 +331,15 @@ h3 {
 }
 
 .accordion-card > *:not(summary) {
-    margin-left: 22px;
-    margin-right: 22px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .accordion-card > :last-child {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
+
+/* Markdown Content */
 
 table {
     width: 100%;
@@ -258,7 +358,7 @@ td {
 
 th,
 td {
-    border: 1px solid var(--line) !important;
+    border: 1px solid var(--line-soft) !important;
     padding: 10px 12px;
     text-align: left;
     vertical-align: top;
@@ -266,28 +366,23 @@ td {
 }
 
 th {
-    color: var(--accent) !important;
-    font-weight: 700;
-}
-
-tr:nth-child(even),
-tr:nth-child(odd) {
-    background: transparent !important;
+    color: var(--text) !important;
+    font-weight: 800;
 }
 
 code {
     background: var(--code-bg);
-    border: 1px solid var(--line);
-    border-radius: 6px;
+    border: 1px solid var(--line-soft);
+    border-radius: 5px;
     color: var(--text);
     padding: 0.1em 0.35em;
 }
 
 pre {
     background: var(--code-bg);
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    padding: 18px;
+    border: 1px solid var(--line-soft);
+    border-radius: 10px;
+    padding: 16px;
     overflow-x: auto;
 }
 
@@ -298,8 +393,8 @@ pre code {
 
 hr {
     border: 0;
-    border-top: 1px solid var(--line);
-    margin: 28px 0;
+    border-top: 1px solid var(--line-soft);
+    margin: 24px 0;
 }
 
 ul,
@@ -311,32 +406,61 @@ li {
     margin: 0.25rem 0;
 }
 
-@media (max-width: 640px) {
-    .page-shell {
-        width: min(100% - 20px, 1120px);
-        padding-top: 24px;
+/* Responsive */
+
+@media (max-width: 860px) {
+    .index-page {
+        margin-top: 24px;
     }
 
-    .info-box,
-    .profile-card,
-    .content-card,
-    .data-source,
-    .deck-card {
-        border-radius: 14px;
-        padding: 16px;
+    .top-bar,
+    .index-content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .deck-grid {
+        grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .page-shell {
+        width: min(100% - 20px, 1120px);
+        padding-top: 20px;
+    }
+
+    .top-bar,
+    .index-content {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .deck-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .deck-card-title {
+        font-size: 0.9rem;
+    }
+
+    .badge {
+        font-size: 0.56rem;
+        padding: 3px 5px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
     }
 
     .accordion-card summary {
         padding: 16px;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
 
     .accordion-card > *:not(summary) {
         margin-left: 16px;
         margin-right: 16px;
-    }
-
-    .profile-grid {
-        grid-template-columns: 1fr;
     }
 }

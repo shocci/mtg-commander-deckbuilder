@@ -1,137 +1,181 @@
 <link rel="stylesheet" href="assets/style.css">
 
-<div class="page-shell">
+    <div class="page-shell index-page">
 
-<header class="site-header">
-  <p class="eyebrow">MTG Commander Brain</p>
-  <h1>Deckübersicht</h1>
-  <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
-</header>
+        <header class="top-bar">
+            <div class="brand">MTG Commander Brain</div>
+        </header>
 
-<section class="info-box">
-  <strong>Hinweis:</strong> Diese Seite wurde automatisch aus <code>data/</code> erzeugt.
-  Manuelle Änderungen können beim nächsten Build überschrieben werden.
-</section>
+        <main class="index-content">
+            <header class="site-header">
+                <h1>Deckübersicht</h1>
+                <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
+            </header>
 
-<section class="deck-grid">
-<a class="deck-card" href="decks/ashling-247.html">
-  <h2>Ashling 247</h2>
-  <p><strong>Commander:</strong> Ashling, Rekindled // Ashling, Rimebound</p>
-  <div class="tag-row">
-    <span>Analyse</span>
-    <span>Bracket</span>
-    <span>Gameplan</span>
-    <span>0 Varianten</span>
-    <span>1 Versionen</span>
+            <section class="deck-grid">
+                <a class="deck-card" href="decks/ashling-247.html">
+  <div class="deck-card-title">Ashling 247</div>
+
+  <div class="deck-card-art">
+    <div class="deck-card-art-inner">
+      <span>Ashling, Rekindled // Ashling, Rimebound</span>
+    </div>
+  </div>
+
+  <div class="deck-card-badges">
+    <span class="badge badge-good">Analyse</span>
+    <span class="badge badge-good">Bracket</span>
+    <span class="badge badge-good">Gameplan</span>
+    <span class="badge badge-red">0 Varianten</span>
+    <span class="badge badge-good">1 Versionen</span>
   </div>
 </a>
 
 <a class="deck-card" href="decks/galadriel.html">
-  <h2>Galadriel</h2>
-  <p><strong>Commander:</strong> Galadriel, Light of Valinor (LTC) 498 *F*</p>
-  <div class="tag-row">
-    <span>Analyse</span>
-    <span>Bracket</span>
-    <span>Gameplan</span>
-    <span>0 Varianten</span>
-    <span>4 Versionen</span>
+  <div class="deck-card-title">Galadriel</div>
+
+  <div class="deck-card-art">
+    <div class="deck-card-art-inner">
+      <span>Galadriel, Light of Valinor (LTC) 498 *F*</span>
+    </div>
+  </div>
+
+  <div class="deck-card-badges">
+    <span class="badge badge-good">Analyse</span>
+    <span class="badge badge-good">Bracket</span>
+    <span class="badge badge-good">Gameplan</span>
+    <span class="badge badge-red">0 Varianten</span>
+    <span class="badge badge-good">4 Versionen</span>
   </div>
 </a>
 
 <a class="deck-card" href="decks/ghost-of-numbers.html">
-  <h2>Ghost Of Numbers</h2>
-  <p><strong>Commander:</strong> Jin Sakai, Ghost of Tsushima</p>
-  <div class="tag-row">
-    <span>Analyse</span>
-    <span>Bracket</span>
-    <span>Gameplan</span>
-    <span>0 Varianten</span>
-    <span>0 Versionen</span>
+  <div class="deck-card-title">Ghost Of Numbers</div>
+
+  <div class="deck-card-art">
+    <div class="deck-card-art-inner">
+      <span>Jin Sakai, Ghost of Tsushima</span>
+    </div>
+  </div>
+
+  <div class="deck-card-badges">
+    <span class="badge badge-good">Analyse</span>
+    <span class="badge badge-good">Bracket</span>
+    <span class="badge badge-good">Gameplan</span>
+    <span class="badge badge-red">0 Varianten</span>
+    <span class="badge badge-good">0 Versionen</span>
   </div>
 </a>
 
 <a class="deck-card" href="decks/gwen-nom.html">
-  <h2>Gwen Nom</h2>
-  <p><strong>Commander:</strong> Gwenom, Remorseless</p>
-  <div class="tag-row">
-    <span>Analyse</span>
-    <span>Bracket</span>
-    <span>Gameplan</span>
-    <span>0 Varianten</span>
-    <span>0 Versionen</span>
+  <div class="deck-card-title">Gwen Nom</div>
+
+  <div class="deck-card-art">
+    <div class="deck-card-art-inner">
+      <span>Gwenom, Remorseless</span>
+    </div>
+  </div>
+
+  <div class="deck-card-badges">
+    <span class="badge badge-good">Analyse</span>
+    <span class="badge badge-good">Bracket</span>
+    <span class="badge badge-good">Gameplan</span>
+    <span class="badge badge-red">0 Varianten</span>
+    <span class="badge badge-good">0 Versionen</span>
   </div>
 </a>
 
 <a class="deck-card" href="decks/hulk-cedh.html">
-  <h2>Hulk Cedh</h2>
-  <p><strong>Commander:</strong> Bruce Banner // The Incredible Hulk</p>
-  <div class="tag-row">
-    <span>Analyse</span>
-    <span>Bracket</span>
-    <span>Gameplan</span>
-    <span>0 Varianten</span>
-    <span>0 Versionen</span>
+  <div class="deck-card-title">Hulk Cedh</div>
+
+  <div class="deck-card-art">
+    <div class="deck-card-art-inner">
+      <span>Bruce Banner // The Incredible Hulk</span>
+    </div>
+  </div>
+
+  <div class="deck-card-badges">
+    <span class="badge badge-good">Analyse</span>
+    <span class="badge badge-good">Bracket</span>
+    <span class="badge badge-good">Gameplan</span>
+    <span class="badge badge-red">0 Varianten</span>
+    <span class="badge badge-good">0 Versionen</span>
   </div>
 </a>
 
 <a class="deck-card" href="decks/iroh-grand-lotus-cedh.html">
-  <h2>Iroh Grand Lotus Cedh</h2>
-  <p><strong>Commander:</strong> Iroh, Grand Lotus</p>
-  <div class="tag-row">
-    <span>Analyse</span>
-    <span>Bracket</span>
-    <span>Gameplan</span>
-    <span>0 Varianten</span>
-    <span>0 Versionen</span>
+  <div class="deck-card-title">Iroh Grand Lotus Cedh</div>
+
+  <div class="deck-card-art">
+    <div class="deck-card-art-inner">
+      <span>Iroh, Grand Lotus</span>
+    </div>
+  </div>
+
+  <div class="deck-card-badges">
+    <span class="badge badge-good">Analyse</span>
+    <span class="badge badge-good">Bracket</span>
+    <span class="badge badge-good">Gameplan</span>
+    <span class="badge badge-red">0 Varianten</span>
+    <span class="badge badge-good">0 Versionen</span>
   </div>
 </a>
 
 <a class="deck-card" href="decks/noctis-cedh.html">
-  <h2>Noctis Cedh</h2>
-  <p><strong>Commander:</strong> Noctis, Prince of Lucis</p>
-  <div class="tag-row">
-    <span>Analyse</span>
-    <span>Bracket</span>
-    <span>Gameplan</span>
-    <span>0 Varianten</span>
-    <span>0 Versionen</span>
+  <div class="deck-card-title">Noctis Cedh</div>
+
+  <div class="deck-card-art">
+    <div class="deck-card-art-inner">
+      <span>Noctis, Prince of Lucis</span>
+    </div>
+  </div>
+
+  <div class="deck-card-badges">
+    <span class="badge badge-good">Analyse</span>
+    <span class="badge badge-good">Bracket</span>
+    <span class="badge badge-good">Gameplan</span>
+    <span class="badge badge-red">0 Varianten</span>
+    <span class="badge badge-good">0 Versionen</span>
   </div>
 </a>
 
 <a class="deck-card" href="decks/vi-oh-no.html">
-  <h2>Vi Oh No</h2>
-  <p><strong>Commander:</strong> Vivi Ornitier</p>
-  <div class="tag-row">
-    <span>Analyse</span>
-    <span>Bracket</span>
-    <span>Gameplan</span>
-    <span>1 Varianten</span>
-    <span>1 Versionen</span>
+  <div class="deck-card-title">Vi Oh No</div>
+
+  <div class="deck-card-art">
+    <div class="deck-card-art-inner">
+      <span>Vivi Ornitier</span>
+    </div>
+  </div>
+
+  <div class="deck-card-badges">
+    <span class="badge badge-good">Analyse</span>
+    <span class="badge badge-good">Bracket</span>
+    <span class="badge badge-good">Gameplan</span>
+    <span class="badge badge-red">1 Varianten</span>
+    <span class="badge badge-good">1 Versionen</span>
   </div>
 </a>
 
 <a class="deck-card" href="decks/yshtola-nights-blessed.html">
-  <h2>Yshtola Nights Blessed</h2>
-  <p><strong>Commander:</strong> Y'shtola, Night's Blessed</p>
-  <div class="tag-row">
-    <span>Analyse</span>
-    <span>Bracket</span>
-    <span>Gameplan</span>
-    <span>0 Varianten</span>
-    <span>0 Versionen</span>
+  <div class="deck-card-title">Yshtola Nights Blessed</div>
+
+  <div class="deck-card-art">
+    <div class="deck-card-art-inner">
+      <span>Y'shtola, Night's Blessed</span>
+    </div>
+  </div>
+
+  <div class="deck-card-badges">
+    <span class="badge badge-good">Analyse</span>
+    <span class="badge badge-good">Bracket</span>
+    <span class="badge badge-good">Gameplan</span>
+    <span class="badge badge-red">0 Varianten</span>
+    <span class="badge badge-good">0 Versionen</span>
   </div>
 </a>
-</section>
+            </section>
+        </main>
 
-<section class="data-source">
-  <h2>Datenquellen</h2>
-
-```text
-data/decks/decklists/
-data/decks/saved/
-```
-
-  <p>Diese <code>docs/</code>-Dateien sind nur die lesbare Anzeige für GitHub Pages.</p>
-</section>
-
-</div>
+    </div>
+    

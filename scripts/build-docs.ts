@@ -200,7 +200,7 @@ async function loadDeck(slug: string): Promise<DeckDoc> {
 function renderIndex(decks: DeckDoc[]): string {
     const deckCards = decks
         .map((deck) => {
-            const commander = deck.commander ?? "offen";
+            const commander = deck.commander ?? "Commander offen";
             const analysis = deck.analysis ? "Analyse" : "Keine Analyse";
             const bracket = deck.bracket ? "Bracket" : "Kein Bracket";
             const gameplan = deck.gameplan ? "Gameplan" : "Kein Gameplan";
@@ -208,14 +208,20 @@ function renderIndex(decks: DeckDoc[]): string {
             const versions = `${deck.versions.length} Versionen`;
 
             return `<a class="deck-card" href="decks/${deck.slug}.html">
-  <h2>${deck.title}</h2>
-  <p><strong>Commander:</strong> ${commander}</p>
-  <div class="tag-row">
-    <span>${analysis}</span>
-    <span>${bracket}</span>
-    <span>${gameplan}</span>
-    <span>${variants}</span>
-    <span>${versions}</span>
+  <div class="deck-card-title">${deck.title}</div>
+
+  <div class="deck-card-art">
+    <div class="deck-card-art-inner">
+      <span>${commander}</span>
+    </div>
+  </div>
+
+  <div class="deck-card-badges">
+    <span class="badge badge-good">${analysis}</span>
+    <span class="badge badge-good">${bracket}</span>
+    <span class="badge badge-good">${gameplan}</span>
+    <span class="badge badge-red">${variants}</span>
+    <span class="badge badge-good">${versions}</span>
   </div>
 </a>`;
         })
@@ -224,36 +230,25 @@ function renderIndex(decks: DeckDoc[]): string {
     // language=HTML
     return `${renderStylesheetLink("assets/style.css")}
 
-<div class="page-shell">
+    <div class="page-shell index-page">
 
-<header class="site-header">
-  <p class="eyebrow">MTG Commander Brain</p>
-  <h1>Deckübersicht</h1>
-  <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
-</header>
+        <header class="top-bar">
+            <div class="brand">MTG Commander Brain</div>
+        </header>
 
-<section class="info-box">
-  <strong>Hinweis:</strong> Diese Seite wurde automatisch aus <code>data/</code> erzeugt.
-  Manuelle Änderungen können beim nächsten Build überschrieben werden.
-</section>
+        <main class="index-content">
+            <header class="site-header">
+                <h1>Deckübersicht</h1>
+                <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
+            </header>
 
-<section class="deck-grid">
-${deckCards || "<p>Keine Decks gefunden.</p>"}
-</section>
+            <section class="deck-grid">
+                ${deckCards || "<p>Keine Decks gefunden.</p>"}
+            </section>
+        </main>
 
-<section class="data-source">
-  <h2>Datenquellen</h2>
-
-\`\`\`text
-data/decks/decklists/
-data/decks/saved/
-\`\`\`
-
-  <p>Diese <code>docs/</code>-Dateien sind nur die lesbare Anzeige für GitHub Pages.</p>
-</section>
-
-</div>
-`;
+    </div>
+    `;
 }
 
 function renderVariantsBlock(deck: DeckDoc): string {
