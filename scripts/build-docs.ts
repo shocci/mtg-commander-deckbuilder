@@ -101,6 +101,18 @@ function normalizeCardName(name: string): string {
         .trim();
 }
 
+function extractBracketNumber(bracket: string | null): number | null {
+    if (!bracket) return null;
+
+    const match = bracket.match(/\bbracket\s*[:#-]?\s*([1-5])\b/i);
+
+    if (!match?.[1]) {
+        return null;
+    }
+
+    return Number(match[1]);
+}
+
 async function loadCollection(): Promise<CollectionCard[]> {
     try {
         const raw = await readFile(COLLECTION_PATH, "utf8");
@@ -432,13 +444,16 @@ function renderIndex(decks: DeckDoc[]): string {
             const commander = deck.commander ?? "Commander offen";
 
             const analysisClass = deck.analysis ? "badge-good" : "badge-missing";
-            const bracketClass = deck.bracket ? "badge-good" : "badge-missing";
+            const bracketNumber = extractBracketNumber(deck.bracket);
+            const bracketClass = bracketNumber ? "badge-good" : "badge-missing";
             const gameplanClass = deck.gameplan ? "badge-good" : "badge-missing";
             const variantsClass = deck.variants.length > 0 ? "badge-good" : "badge-missing";
             const versionsClass = deck.versions.length > 0 ? "badge-good" : "badge-missing";
 
             const analysis = deck.analysis ? "Analyse" : "Keine Analyse";
-            const bracket = deck.bracket ? "Bracket" : "Kein Bracket";
+            const bracket = bracketNumber
+                ? `Bracket ${bracketNumber}`
+                : "Kein Bracket";
             const gameplan = deck.gameplan ? "Gameplan" : "Kein Gameplan";
             const variants = `${deck.variants.length} Varianten`;
             const versions = `${deck.versions.length} Versionen`;
