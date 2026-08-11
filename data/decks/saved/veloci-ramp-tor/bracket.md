@@ -1,16 +1,16 @@
-# Bracket Einschätzung: Veloci-Ramp-Tor
+# Bracket-Einschätzung: Veloci-Ramp-Tor
 
 ## Ergebnis
 
-**Geschätztes Bracket:** 2 – Core, oberer Bereich
+**Geschätztes Bracket:** 3 – Upgraded, unterer bis mittlerer Bereich
 
-**Sicherheit:** mittel bis hoch
+**Sicherheit:** hoch
 
 ## Kurzbegründung
 
-Das Deck besitzt einen klaren, synergistischen Spielplan, ausreichend Ramp und einige starke Finisher, ist aber weder besonders schnell noch vollständig optimiert. Seine Siege erfolgen sichtbar über ein entwickeltes Kreaturenboard und bleiben durch Removal oder Boardwipes gut störbar. Es enthält keine Endloskombo, keine Fast-Mana-Suite und keine Karten von der aktuellen Game-Changer-Liste.
+Die neue Hauptversion besitzt keine Game Changer und keine Endlosschleife, kann ihre großen Dinosaurier aber deutlich früher und konsistenter ins Spiel bringen. Hunting Velociraptor, Savage Order, Ghalta, Stampede Tyrant und Gishath erzeugen einzelne Spielzüge, die klar über dem erwarteten Tempo eines typischen Bracket-2-Decks liegen. Die langsame Manabasis, knapper Schutz und rein kreaturenbasierte Siege halten die Liste zugleich deutlich unter Bracket 4.
 
-## Game Changer Check
+## Game-Changer-Check
 
 Anzahl Game Changer: 0
 
@@ -20,22 +20,24 @@ Gefundene Game Changer:
 
 Auswirkung:
 
-- keine automatische Hochstufung in Bracket 3
-- Sol Ring gilt in der verwendeten Bracket-Regelung nicht als Game Changer
+- keine automatische Bracket-Hochstufung
+- Sol Ring ist nach der aktuellen offiziellen Liste kein Game Changer
+- Savage Order ist ein starker Tutor, steht aber nicht auf der Game-Changer-Liste
 - Farewell und Biorhythm aus dem offiziellen Update vom 9. Februar 2026 sind nicht enthalten
-- die Kartenqualität liegt teilweise über einem unveränderten Precon, erreicht aber nicht die Konsistenz eines optimierten Decks
 
 ## Spielplan
 
-Das Deck rampt in Pantlaza und große Dinosaurier, erzeugt über Discover zusätzlichen Kartenvorteil und gewinnt anschließend durch Combat Damage. Akroma's Will, Xenagos, Quartzwood Crasher, Chandra's Ignition und Wrathful Raptors ermöglichen besonders starke Abschlusszüge.
+Das Deck rampt in Pantlaza und große Dinosaurier. Pantlaza erzeugt Discover-Value, während Hunting Velociraptor, Savage Order, Ghalta, Stampede Tyrant und Gishath teure Bedrohungen günstiger oder direkt ins Spiel bringen. Gewonnen wird über sichtbaren Combat-Schaden, Akroma's Will, Huatlis vierte Saga-Stufe, Xenagos oder den schadensbasierten Nebenplan aus Chandra's Ignition und Wrathful Raptors.
 
 ## Geschwindigkeit
 
 Erwarteter relevanter Sieg- oder Dominanzbereich:
 
-- starke Boardpräsenz ungefähr ab Zug 5–6
-- realistischer Sieg meistens ungefähr ab Zug 8
-- mit sehr gutem Ramp-Start und fehlender Gegenwehr möglicherweise Zug 6–7
+- normale Entwicklung und Ramp: Züge 1–3
+- Pantlaza oder erster großer Value-Zug: ungefähr Züge 4–5
+- dominantes Board durch Hunting Velociraptor oder Savage Order: gelegentlich ab Zug 4–5
+- realistischer Sieg: meistens ungefähr Züge 6–8
+- ohne Ramp oder Cheat-Engine: eher Zug 8 oder später
 
 ## Konsistenz
 
@@ -43,88 +45,98 @@ Einschätzung: mittel
 
 Positiv:
 
-- Pantlaza stellt die wichtigste Value-Engine aus der Command Zone bereit.
-- Viele Rampkarten und 39 Länder unterstützen die hohe Manakurve.
-- Mehrere Dinosaurier dienen als unabhängige Payoffs und Finisher.
-- Combat-Siege sind über Akroma's Will, Xenagos, Quartzwood Crasher und große Einzelkreaturen redundant.
+- Pantlaza ist jederzeit als Value-Engine verfügbar.
+- 39 Länder und viele Rampkarten unterstützen die hohe Kurve.
+- Savage Order findet gezielt den besten Dinosaurier für die Spielsituation.
+- Hunting Velociraptor gibt jedem Dinosaurier denselben günstigen Prowl-Preis.
+- Ghalta, Stampede Tyrant, Gishath und Pantlaza bieten überlappende Wege zu einem großen Board.
+- Mehrere Combat-Finisher reduzieren die Abhängigkeit von einer einzelnen Karte.
 
 Negativ:
 
-- Es gibt keine effizienten Tutoren.
-- Die Manabasis enthält viele langsame oder bedingte Länder.
-- Mehrere Kartenvorteilsquellen benötigen bereits Kreaturen oder ein entwickeltes Board.
-- Schutz und billige Interaktion sind knapp.
+- Savage Order ist der einzige unmittelbare Tutor; Huatli arbeitet über mehrere Züge.
+- Die Manabasis besitzt viele getappte, bedingte oder stammesgebundene Quellen.
+- Die Liste enthält mehrere sehr teure Karten, die ohne Ramp oder Kostenumgehung langsam sind.
+- Der direkte Kartennachschub ist nach den Änderungen schmaler.
+- Schutz und günstige Interaktion sind knapp.
 
 ## Win Conditions und Kombopotenzial
 
 - primär Combat Damage mit großen Dinosauriern
 - explosiver Angriff über Akroma's Will
+- Doppelschlag und Trampelschaden über Roar of the Fifth People
+- Einzelangreifer über Xenagos und Kessig Wolf Run
 - Trample-Schaden und Token über Quartzwood Crasher
-- Schadensabschluss über Wrathful Raptors und eigene Schadenseffekte
-- sekundär Commander Damage mit Xenagos oder Kessig Wolf Run
+- Schadensabschluss über Chandra's Ignition und Wrathful Raptors
+- Board-Schneeball über Gishath oder Ghalta, Stampede Tyrant
 - keine erkennbare Endlosschleife
-- keine schnelle Zwei-Karten-Kombination
+- keine schnelle Zwei-Karten-Endloskombination
+- keine alternative Sofort-Siegbedingung
 
 ## Interaktion
 
-Path to Exile und Generous Gift sind die effizientesten flexiblen Antworten. Bronzebeak Foragers, Thrashing Brontodon, Deathgorge Scavenger, Itzquinth und Zacama ergänzen kreaturengebundene Interaktion. From the Rubble, Wakening Sun's Avatar, Chandra's Ignition, Fiery Confluence und Apex Altisaur können Boards kontrollieren oder zurücksetzen.
+Path to Exile und Generous Gift sind die effizientesten flexiblen Antworten. Bronzebeak Foragers, Savage Stomp, Itzquinth, Thrashing Brontodon, Deathgorge Scavenger, Scion of Calamity, Ravenous Tyrannosaurus, Apex Altisaur und Zacama ergänzen die kreaturengebundene Interaktion. Wakening Sun's Avatar und Chandra's Ignition sind die echten breiten Boardkontrollkarten.
 
-Die Menge ist ordentlich, die durchschnittlichen Manakosten sind jedoch hoch. Das Deck besitzt keine Counterspells oder freie Interaktion und kann gegnerische Komboversuche auf dem Stapel kaum beantworten.
+Die Dichte ist für ein Combat-Tribaldeck brauchbar, die durchschnittlichen Kosten und Voraussetzungen sind jedoch hoch. Das Deck besitzt keine Counterspells, keine freie Interaktion und nur Akroma's Will als flexiblen Schutz für das gesamte Board.
 
 ## Faktoren, die das Bracket erhöhen
 
-- starke Value-Engine in der Command Zone
-- hohe Rampdichte
-- Akroma's Will als effizienter Schutz und Finisher
-- Xenagos ermöglicht explosive Angriffe
-- mehrere teilweise einseitige Boardkontrollkarten
-- Progenitor's Icon kann Pantlaza in gegnerischen Zügen auslösen
-- hohe Dichte wirkungsvoller Dinosaurier
+- Hunting Velociraptor kann Acht- bis Zwölf-Mana-Dinosaurier für drei Mana wirken
+- Savage Order ist ein gezielter Dinosaurier-Tutor direkt ins Spiel
+- Ghalta, Stampede Tyrant kann eine ganze Kreaturenhand ins Spiel bringen
+- Gishath kann nach Kampfschaden mehrere weitere Dinosaurier erzeugen
+- Pantlaza erhält durch beide Ghaltas Discover-Auslöser mit Wert 12
+- Akroma's Will und Huatlis vierte Saga-Stufe ermöglichen tödliche Doppelschlag-Angriffe
+- Xenagos erzeugt sofortigen Druck mit einzelnen Großkreaturen
+- mehrere teilweise einseitige oder mehrfache Removal-Effekte
+- realistische Dominanzzüge vor Zug 6
 
 ## Faktoren, die das Bracket senken
 
 - keine Game Changer
-- keine Tutoren
 - keine Endlosschleifen
-- keine Fast-Mana-Suite
+- keine Fast-Mana-Suite außer Sol Ring
 - keine freie Interaktion
 - keine Mass-Land-Denial- oder Extra-Turn-Strategie
 - langsame und teilweise getappte Manabasis
-- sichtbare, kampfbasierte Win Conditions
-- hohe Manakurve
-- begrenzter Schutz gegen Boardwipes
-- mehrere thematische Karten mit vergleichsweise geringer Effizienz
+- hohe durchschnittliche Manakurve
+- sichtbare, kreaturen- und kampfbasierte Win Conditions
+- wenig günstiger Board-Schutz
+- nur ein unmittelbarer Tutor
+- anfällig gegen Boardwipes und Interaktion mit Pantlaza beziehungsweise den Cheat-Enablern
 
 ## Unsicherheiten
 
-- Progenitor's Icon und Pantlaza können bei optimaler Sequenz mehr Value erzeugen, als die reine Kartenqualität vermuten lässt.
-- Wrathful Raptors kann mit Schadenseffekten überraschend große Schadensmengen verursachen.
-- Die tatsächliche Geschwindigkeit hängt stark von Starthand, Ramp und gegnerischer Interaktion ab.
-- An einem sehr niedrig angesetzten Casual-Tisch kann sich das Deck wie Bracket 3 anfühlen; nach den formalen Vorgaben bleibt es im oberen Bereich von Bracket 2.
+- Hunting Velociraptors Leistungsniveau schwankt stark danach, ob ein Dinosaurier sicher Kampfschaden zufügen kann.
+- Savage Order benötigt bereits eine Kreatur mit Stärke 4 oder mehr und kann dadurch in schlechten Starts tot sein.
+- Gishaths Trefferquote hängt von den verbleibenden 34 Dinosauriern und dem bisherigen Spielverlauf ab.
+- Der tatsächliche Siegzug ist stark von der gegnerischen Blocker- und Removal-Dichte abhängig.
+- An langsameren Tischen können die Highrolls wie ein höheres Bracket wirken, obwohl Konsistenz und Schutz dafür nicht ausreichen.
 
 ## Empfehlung
 
-Dieses Deck sollte aktuell als **Bracket 2, oberes Leistungssegment** kommuniziert werden.
+Dieses Deck sollte als **Bracket 3 – Upgraded, unterer bis mittlerer Bereich** kommuniziert werden.
 
 Empfohlener Pregame-Hinweis:
 
-> Oberes Bracket 2 ohne Game Changer oder Kombos. Pantlaza erzeugt viel Value, und das Deck kann über große Dinosaurier, Akroma's Will oder Wrathful Raptors explosive Abschlusszüge haben. Der normale Sieg erfolgt ungefähr ab Zug 8 über Combat.
+> Unteres bis mittleres Bracket 3 ohne Game Changer oder Endloskombos. Das Deck gewinnt über große Dinosaurier und Combat, kann aber mit Hunting Velociraptor oder Savage Order schon ab Zug 4–5 ein sehr großes Board erzeugen. Der normale Sieg liegt ungefähr in Zug 6–8.
 
-Falls es eindeutiger für ein niedrigeres Bracket gebaut werden soll:
+Falls es wieder eindeutig Bracket 2 sein soll:
 
-- Akroma's Will oder Xenagos durch langsamere, thematische Karten ersetzen
-- einseitige Boardkontrolle reduzieren
-- Progenitor's Icon entfernen, um Pantlaza-Auslöser außerhalb des eigenen Zuges zu vermeiden
+- Hunting Velociraptor oder Savage Order entfernen
+- Ghalta, Stampede Tyrant oder Gishath durch langsamere thematische Dinosaurier ersetzen
+- den direkten Tutor- und Creature-Cheat-Anteil reduzieren
 
-Falls es für Bracket 3 optimiert werden soll:
+Falls es innerhalb von Bracket 3 konsistenter werden soll:
 
 - die Manabasis beschleunigen und farbsicherer gestalten
 - zusätzlichen günstigen Schutz gegen Boardwipes ergänzen
-- langsame Länder und schwächere Dinosaurier durch effizientere Ramp-, Draw- und Interaktionskarten ersetzen
+- schwächere Enrage-Reste entweder wieder verstärken oder vollständig in Ramp, Draw und Interaktion umwandeln
 
 ## Quellenstand
 
-- Offizielle Commander-Brackets- und Game-Changer-Regelung, geprüft am 11. August 2026
-- Commander Brackets Beta Update vom 9. Februar 2026
+- Offizielle Commander-Brackets- und Game-Changer-Regelung: https://magic.wizards.com/en/formats/commander
+- Commander Brackets Beta Update vom 9. Februar 2026: https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-february-9-2026
 - `brains/bracket/templates.md`
+- Kartentexte, Legalität und Game-Changer-Status über Scryfall geprüft am 12. August 2026
 - Deckliste: `data/decks/decklists/veloci-ramp-tor.txt`
