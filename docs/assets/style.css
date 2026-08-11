@@ -58,11 +58,7 @@ body {
     margin: 0;
     min-width: 280px;
     background:
-            radial-gradient(
-                    circle at 15% 0,
-                    rgba(105, 77, 120, 0.07),
-                    transparent 28rem
-            ),
+            radial-gradient(circle at 15% 0, rgba(105, 77, 120, 0.07), transparent 28rem),
             var(--bg);
     color: var(--text);
     font-family:
@@ -211,22 +207,9 @@ a:hover {
     overflow: hidden;
     aspect-ratio: 63 / 88;
     background:
-            linear-gradient(
-                    180deg,
-                    rgba(255, 255, 255, 0.30),
-                    transparent 24%
-            ),
-            radial-gradient(
-                    circle at 50% 32%,
-                    rgba(105, 77, 120, 0.18),
-                    transparent 34%
-            ),
-            linear-gradient(
-                    145deg,
-                    #ded9e2,
-                    #f4f1f5 48%,
-                    #cbc5cf
-            );
+            linear-gradient(180deg, rgba(255, 255, 255, 0.30), transparent 24%),
+            radial-gradient(circle at 50% 32%, rgba(105, 77, 120, 0.18), transparent 34%),
+            linear-gradient(145deg, #ded9e2, #f4f1f5 48%, #cbc5cf);
     border: 1px solid #bcb6c1;
     border-radius: var(--radius-md);
     box-shadow: 0 2px 8px rgba(28, 22, 32, 0.15);
@@ -241,6 +224,40 @@ a:hover {
 
 .deck-card-art.not-owned img {
     filter: grayscale(100%) brightness(0.72) contrast(0.9);
+}
+
+.deck-card-art-multi {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.commander-art-part {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.commander-art-part + .commander-art-part {
+    border-left: 2px solid var(--surface);
+}
+
+.commander-art-part img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.commander-art-part.not-owned img {
+    filter: grayscale(100%) brightness(0.72) contrast(0.9);
+}
+
+.commander-art-part .not-owned-label {
+    right: 5px;
+    bottom: 7px;
+    left: 5px;
+    padding: 5px 4px;
+    font-size: 0.58rem;
 }
 
 .not-owned-label {
@@ -267,11 +284,7 @@ a:hover {
     min-height: 100%;
     padding: 12px;
     background:
-            linear-gradient(
-                    180deg,
-                    rgba(255, 255, 255, 0.08),
-                    rgba(38, 34, 43, 0.82)
-            ),
+            linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(38, 34, 43, 0.82)),
             repeating-linear-gradient(
                     135deg,
                     rgba(255, 255, 255, 0.20) 0,
@@ -414,15 +427,20 @@ p {
 
 .profile-layout {
     display: grid;
-    grid-template-columns: 190px minmax(0, 1fr);
+    grid-template-columns: max-content minmax(0, 1fr);
     gap: 24px;
     align-items: start;
 }
 
-/* Commander image uses the same card style as the index */
+.profile-commander-images {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
 
-.profile-layout > .deck-card-art {
+.profile-commander-images > .deck-card-art {
     width: 190px;
+    flex: 0 0 190px;
     margin: 0;
 }
 
@@ -716,6 +734,17 @@ li::marker {
     }
 }
 
+@media (max-width: 760px) {
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-commander-images {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 520px) {
     .page-width,
     .page-shell {
@@ -778,9 +807,16 @@ li::marker {
         gap: 16px;
     }
 
-    .profile-layout > .deck-card-art {
-        width: min(190px, 100%);
-        margin-inline: auto;
+    .profile-commander-images {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .profile-commander-images > .deck-card-art {
+        width: calc(50% - 7px);
+        max-width: 190px;
+        flex: 0 1 calc(50% - 7px);
+        margin: 0;
     }
 
     .profile-nav {
@@ -820,6 +856,11 @@ li::marker {
 
     .profile-nav {
         grid-template-columns: 1fr;
+    }
+
+    .profile-commander-images > .deck-card-art {
+        width: min(190px, 100%);
+        flex-basis: min(190px, 100%);
     }
 }
 

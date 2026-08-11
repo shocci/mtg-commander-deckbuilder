@@ -1,4 +1,4 @@
-import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { access, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { marked } from "marked";
 
@@ -40,11 +40,15 @@ type CommanderImage = {
     owned: boolean;
 };
 
+type CommanderDoc = {
+    name: string;
+    image: CommanderImage | null;
+};
+
 type DeckDoc = {
     slug: string;
     title: string;
-    commander: string | null;
-    commanderImage: CommanderImage | null;
+    commanders: CommanderDoc[];
     decklist: string | null;
     analysis: string | null;
     bracket: string | null;
@@ -53,9 +57,11 @@ type DeckDoc = {
     versions: DeckVersion[];
 };
 
+type MainSectionContentType = "subsections" | "markdown" | "html";
+
 async function pathExists(filePath: string): Promise<boolean> {
     try {
-        await readFile(filePath, "utf8");
+        await access(filePath);
         return true;
     } catch {
         return false;
@@ -113,7 +119,7 @@ function extractBracketNumber(bracket: string | null): number | null {
 
     for (const line of lines) {
         const plainLine = line
-            .replace(/\*\*/g, "")
+            .replace(/[*_`]/g, "")
             .trim();
 
         const match = plainLine.match(
@@ -142,7 +148,6 @@ function stripFirstHeading(content: string): string {
 
 function renderMarkdownSubsections(content: string): string {
     const cleaned = stripFirstHeading(content);
-
     const lines = cleaned.split(/\r?\n/);
 
     const introLines: string[] = [];
@@ -310,15 +315,6 @@ function buildScryfallNamedUrl(mode: "exact" | "fuzzy", name: string): string {
     return `https://api.scryfall.com/cards/named?${params.toString()}`;
 }
 
-function buildScryfallSearchUrl(query: string): string {
-    const params = new URLSearchParams({
-        q: query,
-        unique: "prints",
-    });
-
-    return `https://api.scryfall.com/cards/search?${params.toString()}`;
-}
-
 async function findCommanderImageFromScryfall(
     commander: string | null,
 ): Promise<CommanderImage | null> {
@@ -335,12 +331,6 @@ async function findCommanderImageFromScryfall(
         buildScryfallNamedUrl("exact", commander),
         ...commanderNames.map((name) => buildScryfallNamedUrl("exact", name)),
         ...commanderNames.map((name) => buildScryfallNamedUrl("fuzzy", name)),
-
-        // Fallback für neue / spezielle doppelseitige Karten
-        buildScryfallSearchUrl(`!"${commanderNames[0]}" set:msh`),
-        buildScryfallSearchUrl(`!"${commanderNames[1] ?? commanderNames[0]}" set:msh`),
-        buildScryfallSearchUrl(`Bruce Banner set:msh`),
-        buildScryfallSearchUrl(`The Incredible Hulk set:msh`),
     ];
 
     for (const url of queries) {
@@ -354,12 +344,7 @@ async function findCommanderImageFromScryfall(
                 continue;
             }
 
-            const result = await response.json();
-
-            const card = Array.isArray(result?.data)
-                ? result.data[0]
-                : result;
-
+            const card = await response.json();
             const imageUrl = getImageUrlFromScryfallCard(card);
 
             if (!imageUrl) continue;
@@ -389,27 +374,48 @@ async function findCommanderImage(
     return await findCommanderImageFromScryfall(commander);
 }
 
-function extractCommander(decklist: string | null): string | null {
-    if (!decklist) return null;
+function extractCommanders(decklist: string | null): string[] {
+    if (!decklist) return [];
 
     const lines = decklist.split(/\r?\n/);
+
     const commanderIndex = lines.findIndex(
         (line) => line.trim().toLowerCase() === "// commander",
     );
 
-    if (commanderIndex === -1) return null;
-
-    for (let i = commanderIndex + 1; i < lines.length; i++) {
-        const line = lines[i]?.trim();
-
-        if (!line) continue;
-        if (line.startsWith("//")) continue;
-
-        const match = line.match(/^\d+\s+(.+)$/);
-        return match?.[1]?.trim() ?? line;
+    if (commanderIndex === -1) {
+        return [];
     }
 
-    return null;
+    const commanders: string[] = [];
+    let commanderSectionStarted = false;
+
+    for (let i = commanderIndex + 1; i < lines.length; i++) {
+        const line = lines[i]?.trim() ?? "";
+
+        if (!line && !commanderSectionStarted) {
+            continue;
+        }
+
+        if (!line && commanderSectionStarted) {
+            break;
+        }
+
+        if (line.startsWith("//")) {
+            break;
+        }
+
+        const match = line.match(/^\d+\s+(.+)$/);
+
+        if (!match?.[1]) {
+            continue;
+        }
+
+        commanderSectionStarted = true;
+        commanders.push(match[1].trim());
+    }
+
+    return commanders;
 }
 
 async function readVariants(savedDeckDir: string): Promise<DeckVariant[]> {
@@ -513,14 +519,20 @@ async function loadDeck(
     const gameplan = await readIfExists(path.join(savedDeckDir, "gameplan.md"));
     const variants = await readVariants(savedDeckDir);
     const versions = await readVersions(savedDeckDir);
-    const commander = extractCommander(decklist);
-    const commanderImage = await findCommanderImage(commander, collection);
+
+    const commanderNames = extractCommanders(decklist);
+
+    const commanders: CommanderDoc[] = await Promise.all(
+        commanderNames.map(async (name) => ({
+            name,
+            image: await findCommanderImage(name, collection),
+        })),
+    );
 
     return {
         slug,
         title: titleFromSlug(slug),
-        commander,
-        commanderImage,
+        commanders,
         decklist,
         analysis,
         bracket,
@@ -530,19 +542,73 @@ async function loadDeck(
     };
 }
 
+function getCommanderLabel(deck: DeckDoc): string {
+    if (deck.commanders.length === 0) {
+        return "Commander offen";
+    }
+
+    return deck.commanders
+        .map((commander) => commander.name)
+        .join(" + ");
+}
+
+function renderCommanderImageContent(commander: CommanderDoc): string {
+    if (commander.image) {
+        return `<img
+  src="${escapeHtml(commander.image.url)}"
+  alt="${escapeHtml(commander.name)}"
+  loading="lazy"
+>
+${
+    commander.image.owned
+        ? ""
+        : '<span class="not-owned-label">Nicht in Collection</span>'
+}`;
+    }
+
+    return `<div class="deck-card-art-placeholder">
+  <span>${escapeHtml(commander.name)}</span>
+</div>`;
+}
+
+function renderIndexCommanderArt(deck: DeckDoc): string {
+    if (deck.commanders.length === 0) {
+        return `<div class="deck-card-art">
+  <div class="deck-card-art-placeholder">
+    <span>Commander offen</span>
+  </div>
+</div>`;
+    }
+
+    if (deck.commanders.length === 1) {
+        const commander = deck.commanders[0]!;
+
+        return `<div class="deck-card-art ${commander.image && !commander.image.owned ? "not-owned" : ""}">
+${renderCommanderImageContent(commander)}
+</div>`;
+    }
+
+    return `<div class="deck-card-art deck-card-art-multi">
+${deck.commanders
+    .map(
+        (commander) => `<div class="commander-art-part ${commander.image && !commander.image.owned ? "not-owned" : ""}">
+${renderCommanderImageContent(commander)}
+</div>`,
+    )
+    .join("\n")}
+</div>`;
+}
+
 function renderIndex(decks: DeckDoc[]): string {
     const deckCards = decks
         .map((deck) => {
-            const commander = deck.commander ?? "Commander offen";
+            const bracketNumber = extractBracketNumber(deck.bracket);
 
             const analysisClass = deck.analysis ? "badge-good" : "badge-missing";
-            const bracketNumber = extractBracketNumber(deck.bracket);
             const bracketClass = bracketNumber ? "badge-good" : "badge-missing";
             const gameplanClass = deck.gameplan ? "badge-good" : "badge-missing";
             const variantsClass = deck.variants.length > 0 ? "badge-good" : "badge-missing";
-            const versionsClass = deck.decklist
-                ? "badge-good"
-                : "badge-missing";
+            const versionsClass = deck.decklist ? "badge-good" : "badge-missing";
 
             const analysis = deck.analysis ? "Analyse" : "Keine Analyse";
             const bracket = bracketNumber
@@ -554,19 +620,10 @@ function renderIndex(decks: DeckDoc[]): string {
                 ? `Version ${getCurrentVersion(deck)}`
                 : "Keine Version";
 
-            const commanderImageHtml = deck.commanderImage
-                ? `<img src="${escapeHtml(deck.commanderImage.url)}" alt="${escapeHtml(commander)}" loading="lazy">
-${deck.commanderImage.owned ? "" : '<span class="not-owned-label">Nicht in Collection</span>'}`
-                : `<div class="deck-card-art-placeholder">
-  <span>${escapeHtml(commander)}</span>
-</div>`;
-
             return `<a class="deck-card" href="decks/${escapeHtml(deck.slug)}.html">
   <div class="deck-card-title">${escapeHtml(deck.title)}</div>
 
-  <div class="deck-card-art ${deck.commanderImage && !deck.commanderImage.owned ? "not-owned" : ""}">
-${commanderImageHtml}
-  </div>
+${renderIndexCommanderArt(deck)}
 
   <div class="deck-card-badges">
     <span class="badge ${analysisClass}">${analysis}</span>
@@ -579,10 +636,8 @@ ${commanderImageHtml}
         })
         .join("\n\n");
 
-    /**
-     * language=HTML
-     * noinspection HtmlUnknownTargetL
-     */
+    // language=HTML
+    // noinspection HtmlUnknownTarget
     return `<!doctype html>
 <html lang="de">
 <head>
@@ -621,7 +676,6 @@ function renderVariantsBlock(deck: DeckDoc): string {
     return deck.variants
         .map((variant) => {
             const originalContent = variant.content.trim();
-
             const titleMatch = originalContent.match(/^#\s+(.+)$/m);
 
             const title = titleMatch?.[1]
@@ -648,7 +702,6 @@ function renderVersionsBlock(deck: DeckDoc): string {
     return deck.versions
         .map((version) => {
             const originalContent = version.content.trim();
-
             const titleMatch = originalContent.match(/^#\s+(.+)$/m);
 
             const title = titleMatch?.[1]
@@ -666,8 +719,6 @@ ${renderMarkdown(content)}
         })
         .join("\n");
 }
-
-type MainSectionContentType = "subsections" | "markdown" | "html";
 
 function renderMainSection(
     id: string,
@@ -703,6 +754,28 @@ ${renderedContent}
 </section>`;
 }
 
+function renderProfileCommanderImages(deck: DeckDoc): string {
+    if (deck.commanders.length === 0) {
+        return `<div class="profile-commander-images">
+  <div class="deck-card-art">
+    <div class="deck-card-art-placeholder">
+      <span>Commander offen</span>
+    </div>
+  </div>
+</div>`;
+    }
+
+    return `<div class="profile-commander-images">
+${deck.commanders
+    .map(
+        (commander) => `<div class="deck-card-art ${commander.image && !commander.image.owned ? "not-owned" : ""}">
+${renderCommanderImageContent(commander)}
+</div>`,
+    )
+    .join("\n")}
+</div>`;
+}
+
 function renderDeckPage(deck: DeckDoc): string {
     const analysisBlock = deck.analysis
         ? deck.analysis.trim()
@@ -725,28 +798,8 @@ function renderDeckPage(deck: DeckDoc): string {
 
     const bracketNumber = extractBracketNumber(deck.bracket);
     const currentVersion = getCurrentVersion(deck);
-
-    const commanderName = deck.commander ?? "Commander offen";
-
-    const commanderImageHtml = deck.commanderImage
-        ? `<div class="deck-card-art ${deck.commanderImage.owned ? "" : "not-owned"}">
-            <img
-                src="${escapeHtml(deck.commanderImage.url)}"
-                alt="${escapeHtml(commanderName)}"
-                loading="lazy"
-            >
-            ${
-                deck.commanderImage.owned
-                    ? ""
-                    : '<span class="not-owned-label">Nicht in Collection</span>'
-            }
-        </div>`
-
-        : `<div class="deck-card-art">
-            <div class="deck-card-art-placeholder">
-            <span>${escapeHtml(commanderName)}</span>
-            </div>
-        </div>`;
+    const commanderLabel = getCommanderLabel(deck);
+    const commanderImagesHtml = renderProfileCommanderImages(deck);
 
     const profileButton = (
         href: string,
@@ -760,6 +813,8 @@ function renderDeckPage(deck: DeckDoc): string {
         return `<a class="profile-nav-button" href="${href}">${escapeHtml(label)}</a>`;
     };
 
+    // language=HTML
+    // noinspection HtmlUnknownAnchorTarget,HtmlUnknownTarget
     return `<!doctype html>
 <html lang="de">
 <head>
@@ -779,97 +834,60 @@ function renderDeckPage(deck: DeckDoc): string {
       <p class="eyebrow">Deck</p>
       <h1>${escapeHtml(deck.title)}</h1>
       <p class="subtitle">
-        Commander: ${escapeHtml(deck.commander ?? "offen")}
+        Commander: ${escapeHtml(commanderLabel)}
       </p>
     </header>
 
     <section class="profile-card">
-  <h2>Kurzprofil</h2>
+      <h2>Kurzprofil</h2>
 
-  <div class="profile-layout">
-    ${commanderImageHtml}
+      <div class="profile-layout">
+        ${commanderImagesHtml}
 
-    <div class="profile-nav">
-      ${profileButton(
-        "#analyse",
-        "Analyse",
-        Boolean(deck.analysis),
-    )}
+        <div class="profile-nav">
+          ${profileButton("#analyse", "Analyse", Boolean(deck.analysis))}
+          ${profileButton(
+              "#bracket",
+              bracketNumber ? `Bracket ${bracketNumber}` : "Bracket",
+              Boolean(bracketNumber),
+          )}
+          ${profileButton("#gameplan", "Gameplan", Boolean(deck.gameplan))}
+          ${profileButton("#deckliste", "Deckliste", Boolean(deck.decklist))}
+          ${profileButton(
+              "#varianten",
+              `${deck.variants.length} ${deck.variants.length === 1 ? "Variante" : "Varianten"}`,
+              deck.variants.length > 0,
+          )}
+          ${profileButton(
+              "#versionen",
+              `Version ${currentVersion}`,
+              Boolean(deck.decklist),
+          )}
+        </div>
+      </div>
+    </section>
 
-      ${profileButton(
-        "#bracket",
-        bracketNumber ? `Bracket ${bracketNumber}` : "Bracket",
-        Boolean(bracketNumber),
-    )}
-
-      ${profileButton(
-        "#gameplan",
-        "Gameplan",
-        Boolean(deck.gameplan),
-    )}
-
-      ${profileButton(
-        "#deckliste",
-        "Deckliste",
-        Boolean(deck.decklist),
-    )}
-
-      ${profileButton(
-        "#varianten",
-        `${deck.variants.length} ${deck.variants.length === 1 ? "Variante" : "Varianten"}`,
-        deck.variants.length > 0,
-    )}
-
-      ${profileButton(
-        "#versionen",
-        `Version ${currentVersion}`,
-        Boolean(deck.decklist),
-    )}
-    </div>
-  </div>
-</section>
+${renderMainSection("analyse", "Analyse", analysisBlock, "subsections")}
 
 ${renderMainSection(
-        "analyse",
-        "Analyse",
-        analysisBlock,
-        "subsections",
-    )}
+    "bracket",
+    bracketNumber ? `Bracket ${bracketNumber}` : "Bracket",
+    bracketBlock,
+    "subsections",
+)}
+
+${renderMainSection("gameplan", "Gameplan", gameplanBlock, "subsections")}
+
+${renderMainSection("deckliste", "Deckliste", decklistBlock, "markdown")}
+
+${renderMainSection("varianten", "Varianten", variantsBlock, "html")}
 
 ${renderMainSection(
-        "bracket",
-        bracketNumber ? `Bracket ${bracketNumber}` : "Bracket",
-        bracketBlock,
-        "subsections",
-    )}
-
-${renderMainSection(
-        "gameplan",
-        "Gameplan",
-        gameplanBlock,
-        "subsections",
-    )}
-
-${renderMainSection(
-        "deckliste",
-        "Deckliste",
-        decklistBlock,
-        "markdown",
-    )}
-
-${renderMainSection(
-        "varianten",
-        "Varianten",
-        variantsBlock,
-        "html",
-    )}
-
-${renderMainSection(
-        "versionen",
-        `Versionen · aktuell ${currentVersion}`,
-        versionsBlock,
-        "html",
-    )}
+    "versionen",
+    `Versionen · aktuell ${currentVersion}`,
+    versionsBlock,
+    "html",
+)}
 
   </div>
 </body>
@@ -888,15 +906,28 @@ async function main(): Promise<void> {
 
     const collection = await loadCollection();
     const slugs = await getDeckSlugs();
+
     const decks = await Promise.all(
         slugs.map((slug) => loadDeck(slug, collection)),
     );
 
-    await writeFile(path.join(DOCS_DIR, "index.html"), renderIndex(decks), "utf8");
+    await writeFile(
+        path.join(DOCS_DIR, "index.html"),
+        renderIndex(decks),
+        "utf8",
+    );
 
     for (const deck of decks) {
-        const outputPath = path.join(DOCS_DECKS_DIR, `${deck.slug}.html`);
-        await writeFile(outputPath, renderDeckPage(deck), "utf8");
+        const outputPath = path.join(
+            DOCS_DECKS_DIR,
+            `${deck.slug}.html`,
+        );
+
+        await writeFile(
+            outputPath,
+            renderDeckPage(deck),
+            "utf8",
+        );
     }
 
     console.log(`Docs generated for ${decks.length} deck(s).`);
