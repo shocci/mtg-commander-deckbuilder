@@ -88,9 +88,14 @@ function escapeHtml(value: string): string {
 }
 
 function renderMarkdown(content: string): string {
-    return marked.parse(content, {
+    const html = marked.parse(content, {
         async: false,
     }) as string;
+
+    return html
+        .replace(/\s+align="left"/g, ' class="text-left"')
+        .replace(/\s+align="center"/g, ' class="text-center"')
+        .replace(/\s+align="right"/g, ' class="text-right"');
 }
 
 function normalizeCardName(name: string): string {
