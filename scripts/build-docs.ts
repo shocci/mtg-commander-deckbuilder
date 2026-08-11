@@ -119,7 +119,13 @@ function findCommanderImageUrl(
 
         const cardName = normalizeCardName(card.name);
 
-        return commanderNames.some((commanderName) => cardName === commanderName);
+        return commanderNames.some((commanderName) => {
+            return (
+                cardName === commanderName ||
+                cardName.includes(commanderName) ||
+                commanderName.includes(cardName)
+            );
+        });
     });
 
     if (!match) return null;

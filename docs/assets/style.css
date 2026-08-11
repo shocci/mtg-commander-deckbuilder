@@ -130,9 +130,9 @@ a:hover {
     border: 1px solid #111;
     overflow: hidden;
     background:
-            radial-gradient(circle at 35% 20%, rgba(255, 220, 120, 0.85), transparent 22%),
-            radial-gradient(circle at 70% 55%, rgba(255, 76, 24, 0.75), transparent 34%),
-            linear-gradient(135deg, #3a1111, #c35a18 45%, #191919);
+            linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 22%),
+            radial-gradient(circle at 50% 32%, rgba(210, 210, 210, 0.18), transparent 30%),
+            linear-gradient(145deg, #17171b, #282832 48%, #111114);
     display: flex;
 }
 
@@ -147,7 +147,15 @@ a:hover {
     width: 100%;
     min-height: 100%;
     padding: 8px;
-    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.86));
+    background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.88)),
+            repeating-linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, 0.04) 0,
+                    rgba(255, 255, 255, 0.04) 1px,
+                    transparent 1px,
+                    transparent 8px
+            );
     display: flex;
     align-items: end;
 }
