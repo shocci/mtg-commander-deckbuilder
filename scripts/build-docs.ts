@@ -227,28 +227,34 @@ function renderIndex(decks: DeckDoc[]): string {
         })
         .join("\n\n");
 
-    // language=HTML
-    return `${renderStylesheetLink("assets/style.css")}
+    return `<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MTG Commander Brain – Deckübersicht</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="page-shell index-page">
+    <header class="top-bar">
+      <div class="brand">MTG Commander Brain</div>
+    </header>
 
-    <div class="page-shell index-page">
+    <main class="index-content">
+      <header class="site-header">
+        <h1>Deckübersicht</h1>
+        <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
+      </header>
 
-        <header class="top-bar">
-            <div class="brand">MTG Commander Brain</div>
-        </header>
-
-        <main class="index-content">
-            <header class="site-header">
-                <h1>Deckübersicht</h1>
-                <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
-            </header>
-
-            <section class="deck-grid">
-                ${deckCards || "<p>Keine Decks gefunden.</p>"}
-            </section>
-        </main>
-
-    </div>
-    `;
+      <section class="deck-grid">
+${deckCards || "<p>Keine Decks gefunden.</p>"}
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+`;
 }
 
 function renderVariantsBlock(deck: DeckDoc): string {
@@ -335,68 +341,74 @@ function renderDeckPage(deck: DeckDoc): string {
     const versionsBlock = renderVersionsBlock(deck);
 
     // language=HTML
-    // noinspection HtmlUnknownAnchorTarget,HtmlUnknownAttribute
-    return `${renderStylesheetLink("../assets/style.css")}
+    // noinspection HtmlUnknownAnchorTarget
+    return `<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${deck.title} – MTG Commander Brain</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <nav class="breadcrumb">
+      <a href="../index.html">← Deckübersicht</a>
+    </nav>
 
-<div class="page-shell" markdown="1">
+    <header class="deck-header">
+      <p class="eyebrow">Deck</p>
+      <h1>${deck.title}</h1>
+      <p class="subtitle">Commander: ${deck.commander ?? "offen"}</p>
+    </header>
 
-<nav class="breadcrumb">
-  <a href="../index.html">← Deckübersicht</a>
-</nav>
+    <section class="quick-nav">
+      <a href="#analyse">Analyse</a>
+      <a href="#bracket">Bracket</a>
+      <a href="#gameplan">Gameplan</a>
+      <a href="#deckliste">Deckliste</a>
+      <a href="#varianten">Varianten</a>
+      <a href="#versionen">Versionen</a>
+    </section>
 
-<header class="deck-header">
-  <p class="eyebrow">Deck</p>
-  <h1>${deck.title}</h1>
-  <p class="subtitle">Commander: ${deck.commander ?? "offen"}</p>
-</header>
+    <section class="profile-card">
+      <h2>Kurzprofil</h2>
 
-<section class="quick-nav">
-  <a href="#analyse">Analyse</a>
-  <a href="#bracket">Bracket</a>
-  <a href="#gameplan">Gameplan</a>
-  <a href="#deckliste">Deckliste</a>
-  <a href="#varianten">Varianten</a>
-  <a href="#versionen">Versionen</a>
-</section>
-
-<section class="profile-card">
-  <h2>Kurzprofil</h2>
-
-  <div class="profile-grid">
-    <div>
-      <span>Slug</span>
-      <strong><code>${deck.slug}</code></strong>
-    </div>
-    <div>
-      <span>Commander</span>
-      <strong>${deck.commander ?? "offen"}</strong>
-    </div>
-    <div>
-      <span>Analyse</span>
-      <strong>${deck.analysis ? '<a href="#analyse">Ja</a>' : "Nein"}</strong>
-    </div>
-    <div>
-      <span>Bracket</span>
-      <strong>${deck.bracket ? '<a href="#bracket">Ja</a>' : "Nein"}</strong>
-    </div>
-    <div>
-      <span>Gameplan</span>
-      <strong>${deck.gameplan ? '<a href="#gameplan">Ja</a>' : "Nein"}</strong>
-    </div>
-    <div>
-      <span>Deckliste</span>
-      <strong>${deck.decklist ? '<a href="#deckliste">Ja</a>' : "Nein"}</strong>
-    </div>
-    <div>
-      <span>Varianten</span>
-      <strong>${deck.variants.length > 0 ? `<a href="#varianten">${deck.variants.length}</a>` : "0"}</strong>
-    </div>
-    <div>
-      <span>Versionen</span>
-      <strong>${deck.versions.length > 0 ? `<a href="#versionen">${deck.versions.length}</a>` : "0"}</strong>
-    </div>
-  </div>
-</section>
+      <div class="profile-grid">
+        <div>
+          <span>Slug</span>
+          <strong><code>${deck.slug}</code></strong>
+        </div>
+        <div>
+          <span>Commander</span>
+          <strong>${deck.commander ?? "offen"}</strong>
+        </div>
+        <div>
+          <span>Analyse</span>
+          <strong>${deck.analysis ? '<a href="#analyse">Ja</a>' : "Nein"}</strong>
+        </div>
+        <div>
+          <span>Bracket</span>
+          <strong>${deck.bracket ? '<a href="#bracket">Ja</a>' : "Nein"}</strong>
+        </div>
+        <div>
+          <span>Gameplan</span>
+          <strong>${deck.gameplan ? '<a href="#gameplan">Ja</a>' : "Nein"}</strong>
+        </div>
+        <div>
+          <span>Deckliste</span>
+          <strong>${deck.decklist ? '<a href="#deckliste">Ja</a>' : "Nein"}</strong>
+        </div>
+        <div>
+          <span>Varianten</span>
+          <strong>${deck.variants.length > 0 ? `<a href="#varianten">${deck.variants.length}</a>` : "0"}</strong>
+        </div>
+        <div>
+          <span>Versionen</span>
+          <strong>${deck.versions.length > 0 ? `<a href="#versionen">${deck.versions.length}</a>` : "0"}</strong>
+        </div>
+      </div>
+    </section>
 
 ${renderAccordionSection("analyse", "Analyse", analysisBlock, true)}
 
@@ -409,8 +421,9 @@ ${renderAccordionSection("deckliste", "Deckliste", decklistBlock)}
 ${renderAccordionSection("varianten", "Varianten", variantsBlock)}
 
 ${renderAccordionSection("versionen", "Versionen", versionsBlock)}
-
-</div>
+  </div>
+</body>
+</html>
 `;
 }
 
@@ -426,10 +439,10 @@ async function main(): Promise<void> {
     const slugs = await getDeckSlugs();
     const decks = await Promise.all(slugs.map((slug) => loadDeck(slug)));
 
-    await writeFile(path.join(DOCS_DIR, "index.md"), renderIndex(decks), "utf8");
+    await writeFile(path.join(DOCS_DIR, "index.html"), renderIndex(decks), "utf8");
 
     for (const deck of decks) {
-        const outputPath = path.join(DOCS_DECKS_DIR, `${deck.slug}.md`);
+        const outputPath = path.join(DOCS_DECKS_DIR, `${deck.slug}.html`);
         await writeFile(outputPath, renderDeckPage(deck), "utf8");
     }
 
