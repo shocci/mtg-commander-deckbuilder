@@ -5,6 +5,7 @@ const ROOT_DIR = process.cwd();
 
 const DECKLISTS_DIR = path.join(ROOT_DIR, "data", "decks", "decklists");
 const SAVED_DIR = path.join(ROOT_DIR, "data", "decks", "saved");
+const COLLECTION_PATH = path.join(ROOT_DIR, "data", "collection.json");
 
 const DOCS_DIR = path.join(ROOT_DIR, "docs");
 const DOCS_DECKS_DIR = path.join(DOCS_DIR, "decks");
@@ -21,10 +22,18 @@ type DeckVersion = {
     content: string;
 };
 
+type CollectionCard = {
+    name?: string;
+    scryfallId?: string;
+    scryfall_id?: string;
+    "Scryfall ID"?: string;
+};
+
 type DeckDoc = {
     slug: string;
     title: string;
     commander: string | null;
+    commanderImageUrl: string | null;
     decklist: string | null;
     analysis: string | null;
     bracket: string | null;
@@ -60,6 +69,67 @@ function titleFromSlug(slug: string): string {
 
 function renderStylesheetLink(relativePath: string): string {
     return `<link rel="stylesheet" href="${relativePath}">`;
+}
+
+function normalizeCardName(name: string): string {
+    return name
+        .toLowerCase()
+        .replace(/[’']/g, "'")
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
+function getScryfallImageUrl(scryfallId: string): string {
+    const cleanId = scryfallId.trim();
+
+    return `https://cards.scryfall.io/normal/front/${cleanId[0]}/${cleanId[1]}/${cleanId}.jpg`;
+}
+
+async function loadCollection(): Promise<CollectionCard[]> {
+    try {
+        const raw = await readFile(COLLECTION_PATH, "utf8");
+        const parsed = JSON.parse(raw);
+
+        if (Array.isArray(parsed)) {
+            return parsed as CollectionCard[];
+        }
+
+        if (Array.isArray(parsed.cards)) {
+            return parsed.cards as CollectionCard[];
+        }
+
+        return [];
+    } catch {
+        return [];
+    }
+}
+
+function findCommanderImageUrl(
+    commander: string | null,
+    collection: CollectionCard[],
+): string | null {
+    if (!commander) return null;
+
+    const commanderNames = commander
+        .split("//")
+        .map((part) => normalizeCardName(part));
+
+    const match = collection.find((card) => {
+        if (!card.name) return false;
+
+        const cardName = normalizeCardName(card.name);
+
+        return commanderNames.some((commanderName) => cardName === commanderName);
+    });
+
+    if (!match) return null;
+
+    const scryfallId =
+        match.scryfallId ?? match.scryfall_id ?? match["Scryfall ID"];
+
+    if (!scryfallId) return null;
+
+    return getScryfallImageUrl(scryfallId);
 }
 
 function extractCommander(decklist: string | null): string | null {
@@ -173,7 +243,10 @@ async function getDeckSlugs(): Promise<string[]> {
     return [...slugs].sort((a, b) => a.localeCompare(b));
 }
 
-async function loadDeck(slug: string): Promise<DeckDoc> {
+async function loadDeck(
+    slug: string,
+    collection: CollectionCard[],
+): Promise<DeckDoc> {
     const decklistPath = path.join(DECKLISTS_DIR, `${slug}.txt`);
     const savedDeckDir = path.join(SAVED_DIR, slug);
 
@@ -183,11 +256,14 @@ async function loadDeck(slug: string): Promise<DeckDoc> {
     const gameplan = await readIfExists(path.join(savedDeckDir, "gameplan.md"));
     const variants = await readVariants(savedDeckDir);
     const versions = await readVersions(savedDeckDir);
+    const commander = extractCommander(decklist);
+    const commanderImageUrl = findCommanderImageUrl(commander, collection);
 
     return {
         slug,
         title: titleFromSlug(slug),
-        commander: extractCommander(decklist),
+        commander,
+        commanderImageUrl,
         decklist,
         analysis,
         bracket,
@@ -201,6 +277,13 @@ function renderIndex(decks: DeckDoc[]): string {
     const deckCards = decks
         .map((deck) => {
             const commander = deck.commander ?? "Commander offen";
+
+            const analysisClass = deck.analysis ? "badge-good" : "badge-missing";
+            const bracketClass = deck.bracket ? "badge-good" : "badge-missing";
+            const gameplanClass = deck.gameplan ? "badge-good" : "badge-missing";
+            const variantsClass = deck.variants.length > 0 ? "badge-good" : "badge-missing";
+            const versionsClass = deck.versions.length > 0 ? "badge-good" : "badge-missing";
+
             const analysis = deck.analysis ? "Analyse" : "Keine Analyse";
             const bracket = deck.bracket ? "Bracket" : "Kein Bracket";
             const gameplan = deck.gameplan ? "Gameplan" : "Kein Gameplan";
@@ -211,50 +294,55 @@ function renderIndex(decks: DeckDoc[]): string {
   <div class="deck-card-title">${deck.title}</div>
 
   <div class="deck-card-art">
-    <div class="deck-card-art-inner">
-      <span>${commander}</span>
-    </div>
+    ${
+                deck.commanderImageUrl
+                    ? `<img src="${deck.commanderImageUrl}" alt="${commander}" loading="lazy">`
+                    : `<div class="deck-card-art-placeholder">
+        <span>${commander}</span>
+      </div>`
+            }
   </div>
 
   <div class="deck-card-badges">
-    <span class="badge badge-good">${analysis}</span>
-    <span class="badge badge-good">${bracket}</span>
-    <span class="badge badge-good">${gameplan}</span>
-    <span class="badge badge-red">${variants}</span>
-    <span class="badge badge-good">${versions}</span>
+    <span class="badge ${analysisClass}">${analysis}</span>
+    <span class="badge ${bracketClass}">${bracket}</span>
+    <span class="badge ${gameplanClass}">${gameplan}</span>
+    <span class="badge ${variantsClass}">${variants}</span>
+    <span class="badge ${versionsClass}">${versions}</span>
   </div>
 </a>`;
         })
         .join("\n\n");
 
+    // language=HTML
     return `<!doctype html>
-<html lang="de">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MTG Commander Brain – Deckübersicht</title>
-  <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-  <div class="page-shell index-page">
+    <html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MTG Commander Brain – Deckübersicht</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
     <header class="top-bar">
-      <div class="brand">MTG Commander Brain</div>
+        <div class="page-width">
+            <div class="brand">MTG Commander Brain</div>
+        </div>
     </header>
 
-    <main class="index-content">
-      <header class="site-header">
-        <h1>Deckübersicht</h1>
-        <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
-      </header>
+    <main class="page-width index-content">
+        <header class="site-header">
+            <h1>Deckübersicht</h1>
+            <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
+        </header>
 
-      <section class="deck-grid">
-${deckCards || "<p>Keine Decks gefunden.</p>"}
-      </section>
+        <section class="deck-grid">
+            ${deckCards || "<p>Keine Decks gefunden.</p>"}
+        </section>
     </main>
-  </div>
-</body>
-</html>
-`;
+    </body>
+    </html>
+    `;
 }
 
 function renderVariantsBlock(deck: DeckDoc): string {
@@ -436,8 +524,11 @@ async function main(): Promise<void> {
 
     await mkdir(DOCS_DECKS_DIR, { recursive: true });
 
+    const collection = await loadCollection();
     const slugs = await getDeckSlugs();
-    const decks = await Promise.all(slugs.map((slug) => loadDeck(slug)));
+    const decks = await Promise.all(
+        slugs.map((slug) => loadDeck(slug, collection)),
+    );
 
     await writeFile(path.join(DOCS_DIR, "index.html"), renderIndex(decks), "utf8");
 
