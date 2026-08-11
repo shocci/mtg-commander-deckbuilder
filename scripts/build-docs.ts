@@ -11,6 +11,11 @@ const COLLECTION_PATH = path.join(ROOT_DIR, "data", "collection.json");
 const DOCS_DIR = path.join(ROOT_DIR, "docs");
 const DOCS_DECKS_DIR = path.join(DOCS_DIR, "decks");
 
+const SCRYFALL_HEADERS = {
+    "User-Agent": "mtg-commander-deckbuilder/1.0",
+    "Accept": "application/json",
+};
+
 type DeckVariant = {
     slug: string;
     title: string;
@@ -193,28 +198,64 @@ function findCommanderImageInCollection(
     };
 }
 
+function buildScryfallNamedUrl(mode: "exact" | "fuzzy", name: string): string {
+    const params = new URLSearchParams({
+        [mode]: name,
+    });
+
+    return `https://api.scryfall.com/cards/named?${params.toString()}`;
+}
+
+function buildScryfallSearchUrl(query: string): string {
+    const params = new URLSearchParams({
+        q: query,
+        unique: "prints",
+    });
+
+    return `https://api.scryfall.com/cards/search?${params.toString()}`;
+}
+
 async function findCommanderImageFromScryfall(
     commander: string | null,
 ): Promise<CommanderImage | null> {
     if (!commander) return null;
 
-    const firstCommanderName = commander.split("//")[0]?.trim();
+    const commanderNames = commander
+        .split("//")
+        .map((part) => part.trim())
+        .filter(Boolean);
 
-    if (!firstCommanderName) return null;
+    if (commanderNames.length === 0) return null;
 
     const queries = [
-        `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(commander)}`,
-        `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(firstCommanderName)}`,
-        `https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(firstCommanderName)}`,
+        buildScryfallNamedUrl("exact", commander),
+        ...commanderNames.map((name) => buildScryfallNamedUrl("exact", name)),
+        ...commanderNames.map((name) => buildScryfallNamedUrl("fuzzy", name)),
+
+        // Fallback für neue / spezielle doppelseitige Karten
+        buildScryfallSearchUrl(`!"${commanderNames[0]}" set:msh`),
+        buildScryfallSearchUrl(`!"${commanderNames[1] ?? commanderNames[0]}" set:msh`),
+        buildScryfallSearchUrl(`Bruce Banner set:msh`),
+        buildScryfallSearchUrl(`The Incredible Hulk set:msh`),
     ];
 
     for (const url of queries) {
         try {
-            const response = await fetch(url);
+            const response = await fetch(url, {
+                headers: SCRYFALL_HEADERS,
+            });
 
-            if (!response.ok) continue;
+            if (!response.ok) {
+                console.warn("Scryfall lookup failed:", response.status, url);
+                continue;
+            }
 
-            const card = await response.json();
+            const result = await response.json();
+
+            const card = Array.isArray(result?.data)
+                ? result.data[0]
+                : result;
+
             const imageUrl = getImageUrlFromScryfallCard(card);
 
             if (!imageUrl) continue;
@@ -223,8 +264,8 @@ async function findCommanderImageFromScryfall(
                 url: imageUrl,
                 owned: false,
             };
-        } catch {
-            continue;
+        } catch (error) {
+            console.warn("Scryfall lookup error:", url, error);
         }
     }
 
