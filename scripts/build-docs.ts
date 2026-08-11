@@ -729,23 +729,24 @@ function renderDeckPage(deck: DeckDoc): string {
     const commanderName = deck.commander ?? "Commander offen";
 
     const commanderImageHtml = deck.commanderImage
-        ? `<div class="profile-commander-art ${deck.commanderImage.owned ? "" : "not-owned"}">
-  <img
-    src="${escapeHtml(deck.commanderImage.url)}"
-    alt="${escapeHtml(commanderName)}"
-    loading="lazy"
-  >
-  ${
-            deck.commanderImage.owned
-                ? ""
-                : '<span class="not-owned-label">Nicht in Collection</span>'
-        }
-</div>`
-        : `<div class="profile-commander-art">
-  <div class="deck-card-art-placeholder">
-    <span>${escapeHtml(commanderName)}</span>
-  </div>
-</div>`;
+        ? `<div class="deck-card-art ${deck.commanderImage.owned ? "" : "not-owned"}">
+            <img
+                src="${escapeHtml(deck.commanderImage.url)}"
+                alt="${escapeHtml(commanderName)}"
+                loading="lazy"
+            >
+            ${
+                deck.commanderImage.owned
+                    ? ""
+                    : '<span class="not-owned-label">Nicht in Collection</span>'
+            }
+        </div>`
+
+        : `<div class="deck-card-art">
+            <div class="deck-card-art-placeholder">
+            <span>${escapeHtml(commanderName)}</span>
+            </div>
+        </div>`;
 
     const profileButton = (
         href: string,
