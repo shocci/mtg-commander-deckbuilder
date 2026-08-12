@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "import:collection": "tsx scripts/import-manabox.ts",
-    "build:docs": "tsx scripts/build-docs.ts"
+    "build:docs": "tsx scripts/build-docs.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test scripts/**/*.test.ts"
   },
   "repository": {
     "type": "git",

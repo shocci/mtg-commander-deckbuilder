@@ -231,7 +231,10 @@ Sie können:
 
 ## Aktuelle Game-Changer-Liste
 
-Stand: Commander Brackets Beta Update vom 21. Oktober 2025.
+Stand: Commander Brackets Beta Update vom 9. Februar 2026.
+
+Diese Liste ist ein lokaler Arbeitsstand. Bei einer aktuellen Bewertung
+muss die offizielle Wizards-Seite auf spätere Änderungen geprüft werden.
 
 - Drannith Magistrate
 - Humility
@@ -239,6 +242,7 @@ Stand: Commander Brackets Beta Update vom 21. Oktober 2025.
 - Smothering Tithe
 - Enlightened Tutor
 - Teferi's Protection
+- Farewell
 - Consecrated Sphinx
 - Cyclonic Rift
 - Force of Will
@@ -263,6 +267,7 @@ Stand: Commander Brackets Beta Update vom 21. Oktober 2025.
 - Jeska's Will
 - Underworld Breach
 - Crop Rotation
+- Biorhythm
 - Gaea's Cradle
 - Natural Order
 - Seedborn Muse

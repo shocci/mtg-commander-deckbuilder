@@ -79,14 +79,6 @@ ai-context/
 
 KI-spezifische Adapter für ChatGPT, Claude und weitere Systeme.
 
-```text
-prompts/
-```
-
-Wiederverwendbare Prompts für Tests und typische Arbeitsabläufe.
-
----
-
 ## Aktueller Workflow
 
 ### 1. Collection aus ManaBox importieren
@@ -147,6 +139,7 @@ Die KI nutzt:
 ```text
 brains/deck-analysis/templates.md
 brains/bracket/templates.md
+brains/rules/magic-rules.md
 ai-context/chatgpt/anweisung.md
 ```
 
@@ -243,6 +236,7 @@ Wenn kein Ziel-Bracket genannt wird, ist Bracket 3 der Standard.
 - Bracket-Regeln kommen aus `brains/bracket/templates.md`.
 - Deckbuilding-Regeln kommen aus `brains/deckbuilding/templates.md`.
 - Deckanalyse-Regeln kommen aus `brains/deck-analysis/templates.md`.
+- Regel- und Legalitätsprüfungen kommen aus `brains/rules/magic-rules.md`.
 
 ---
 
@@ -326,4 +320,7 @@ Aktueller Projektstand:
 - Claude Skill vorhanden
 - Bracket Brain vorhanden
 - Deckanalyse Brain vorhanden
+- Rules-, Collection- und Versionierungs-Brains vorhanden
+- Partner-Commander-Parsing vorhanden
+- statische Dokumentationsseiten über `npm run build:docs`
 - erste Tests mit Beispieldecks durchgeführt

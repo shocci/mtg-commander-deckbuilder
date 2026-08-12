@@ -80,6 +80,25 @@ git push
 
 ---
 
+## Dokumentation bauen
+
+`build-docs.ts` erzeugt die statische Deckübersicht und die Detailseiten aus
+Decklisten, gespeicherten Auswertungen und Collection-Daten:
+
+```bash
+npm run build:docs
+```
+
+Ausgabe:
+
+```text
+docs/index.html
+docs/decks/*.html
+```
+
+Die HTML-Dateien sind generiert und sollen nicht manuell bearbeitet werden.
+`docs/assets/style.css` und `docs/_config.yml` werden dagegen manuell gepflegt.
+
 ## Geplante Scripts
 
 Mögliche spätere Erweiterungen:

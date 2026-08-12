@@ -18,7 +18,7 @@ Dieses Brain dient dazu, neue Deckideen zu entwickeln, bestehende Decks umzubaue
 ## Zu berücksichtigende Quellen
 
 - vorhandene Decklisten aus `data/decks/`
-- Collection-Daten aus `data/collection/`
+- Collection-Daten aus `data/collection.json`
 - Bracket-Regeln aus `brains/bracket/templates.md`
 - Projektphilosophie aus `brains/project/philosophy.md`
 - konkrete Constraints des Nutzers
