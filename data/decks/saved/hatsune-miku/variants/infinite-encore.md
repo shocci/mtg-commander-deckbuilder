@@ -209,7 +209,9 @@ Benötigt werden Heliod, eine Walking Ballista mit mindestens zwei +1/+1-Marken 
 4. Heliod legt aufgrund des Lebensgewinns eine neue +1/+1-Marke auf Walking Ballista.
 5. Die Sequenz wird wiederholt, bis alle Gegner ausgeschaltet sind.
 
-Diese Linie ist die kompakteste und direkteste Win Condition. Chord of Calling, Eladamri's Call und Finale of Devastation können die Kreaturen finden. Finale kann Walking Ballista allerdings nicht sinnvoll direkt ins Spiel bringen, weil sie dann ohne Marken eintritt; es dient hier vor allem als Suche nach Heliod oder als alternativer Finisher.
+Diese Linie ist die kompakteste und direkteste Win Condition. Eladamri's Call kann entweder Teil auf die Hand suchen. Chord of Calling und Finale of Devastation können Heliod finden, dürfen aber nicht verwendet werden, um Walking Ballista für die Combo ins Spiel zu bringen.
+
+Walking Ballista hat in der Bibliothek Mana Value 0 und ist deshalb für Chord of Calling unabhängig vom für Chord gewählten X ein legales Suchziel. Das X von Chord wird jedoch nicht auf die Ballista übertragen: Sie wird direkt ins Spiel gebracht statt gewirkt, für ihr eigenes X wurde also kein Wert gewählt. Sie tritt mit null +1/+1-Marken als 0/0 ein und wird anschließend als zustandsbasierte Aktion auf den Friedhof gelegt. Dasselbe Problem besteht bei Finale of Devastation. Für die Combo muss Walking Ballista normalerweise aus der Hand gewirkt werden; zwei Marken erfordern X=2 und damit insgesamt vier Mana. Danach werden zusätzlich zwei Mana benötigt, um ihr mit Heliod Lifelink zu geben.
 
 ### Rosie Cotton of South Lane + Scurry Oak
 
@@ -229,7 +231,7 @@ Diese Combo kann in einem normalen Spiel später als Heliod/Ballista aufgebaut w
 
 ### Chord of Calling
 
-- Walking Ballista nur dann, wenn genügend Mana für X und die Heliod-Linie vorhanden ist.
+- Walking Ballista nicht als Combo-Teil suchen: Sie kommt unabhängig vom X von Chord mit null Marken ins Spiel und stirbt als 0/0.
 - Heliod, wenn Ballista bereits verfügbar ist.
 - Rosie Cotton oder Scurry Oak zum Vervollständigen der Token-Combo.
 - Seedborn Muse für wiederholtes Populate und offenes Mana.
@@ -402,4 +404,5 @@ Geschätzte Kartensumme: ungefähr 30 € vor Versand. Damit bleibt eine Reserve
 - Collection: `data/collection.json`
 - Offizielle Commander-Seite: https://magic.wizards.com/en/formats/commander
 - Commander Brackets Beta Update vom 9. Februar 2026: https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-february-9-2026
+- Magic Comprehensive Rules vom 7. August 2026: https://media.wizards.com/2026/downloads/MagicCompRules%2020260807.pdf
 - Variantenstand: 12. August 2026
