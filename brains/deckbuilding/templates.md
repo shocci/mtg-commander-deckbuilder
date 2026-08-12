@@ -72,6 +72,20 @@ Ein Deckbau-Auftrag kann unter anderem diese Vorgaben enthalten:
 9. Konflikte klar benennen.
 10. Ausgabe als Deckvorschlag strukturieren.
 
+## Deckbau-Template
+
+Wenn der Nutzer kein anderes strukturelles Deckbau-Template vorgibt,
+verwende als Ausgangspunkt:
+
+`brains/deckbuilding/templates/standard-100.md`
+
+Das Template ist eine Faustregel und darf angepasst werden, wenn
+Commander, Strategie, Bracket, Manakurve oder Nutzeranforderungen dies
+rechtfertigen.
+
+Falls zukünftig weitere Deckbau-Templates vorhanden sind, soll das zum
+Auftrag passende Template verwendet werden.
+
 ## Ausgabeformat
 
 # Deckvorschlag: [Deckname]

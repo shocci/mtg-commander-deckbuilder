@@ -25,6 +25,20 @@ Sie gilt insbesondere für:
 - Commander-Zonenwechsel
 - Infinite Loops
 
+## Lokale Regelkopie
+
+Die automatisch aktualisierte lokale Kopie der Comprehensive Rules liegt unter:
+
+`imports/wizards/rules/comprehensive-rules.txt`
+
+Metadaten zur verwendeten Version liegen unter:
+
+`imports/wizards/rules/metadata.json`
+
+Für Regelprüfungen soll diese lokale Datei verwendet werden, sofern die
+Metadaten bestätigen, dass sie erfolgreich aus der offiziellen
+Wizards-Quelle aktualisiert wurde.
+
 ## Verbindliche Quelle
 
 Für Regelfragen ist immer die aktuell veröffentlichte Version der

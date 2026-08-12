@@ -231,64 +231,15 @@ Sie können:
 
 ## Aktuelle Game-Changer-Liste
 
-Stand: Commander Brackets Beta Update vom 9. Februar 2026.
+Die aktuelle Game-Changer-Liste liegt unter:
 
-Diese Liste ist ein lokaler Arbeitsstand. Bei einer aktuellen Bewertung
-muss die offizielle Wizards-Seite auf spätere Änderungen geprüft werden.
+`data/reference/commander/game-changers.json`
 
-- Drannith Magistrate
-- Humility
-- Serra's Sanctum
-- Smothering Tithe
-- Enlightened Tutor
-- Teferi's Protection
-- Farewell
-- Consecrated Sphinx
-- Cyclonic Rift
-- Force of Will
-- Fierce Guardianship
-- Gifts Ungiven
-- Intuition
-- Mystical Tutor
-- Narset, Parter of Veils
-- Rhystic Study
-- Thassa's Oracle
-- Ad Nauseam
-- Bolas's Citadel
-- Braids, Cabal Minion
-- Demonic Tutor
-- Imperial Seal
-- Necropotence
-- Opposition Agent
-- Orcish Bowmasters
-- Tergrid, God of Fright
-- Vampiric Tutor
-- Gamble
-- Jeska's Will
-- Underworld Breach
-- Crop Rotation
-- Biorhythm
-- Gaea's Cradle
-- Natural Order
-- Seedborn Muse
-- Survival of the Fittest
-- Worldly Tutor
-- Aura Shards
-- Coalition Victory
-- Grand Arbiter Augustin IV
-- Notion Thief
-- Ancient Tomb
-- Chrome Mox
-- Field of the Dead
-- Glacial Chasm
-- Grim Monolith
-- Lion's Eye Diamond
-- Mana Vault
-- Mishra's Workshop
-- Mox Diamond
-- Panoptic Mirror
-- The One Ring
-- The Tabernacle at Pendrell Vale
+Diese Datei wird über `npm run update:rules` aus einer offiziellen
+Wizards-Quelle aktualisiert.
+
+Die Liste darf nicht aus älteren Brain-Inhalten oder Modellwissen
+rekonstruiert werden.
 
 ---
 
