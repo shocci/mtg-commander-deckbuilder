@@ -600,6 +600,7 @@ ${renderIndexCommanderArt(deck)}
     // language=HTML
     // noinspection HtmlUnknownTarget
     return `<!doctype html>
+<!--suppress HtmlUnknownTarget -->
 <html lang="de">
 <head>
   <meta charset="utf-8">
