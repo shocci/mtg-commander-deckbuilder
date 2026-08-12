@@ -39,7 +39,38 @@ data/decks/decklists/[deck-slug].txt
 2. Commander-Legalität, Color Identity, Banlist und Deckgröße prüfen.
 3. Aktuellen Oracle-Text für entscheidende Karteninteraktionen verwenden.
 4. Ramp, Card Advantage, Interaction, Schutz und Manabase erfassen.
-5. Engines, Synergien, Combo-Linien und Win Conditions bestimmen.
+5. Engines, Synergien, Win Conditions und vollständige Combo-Linien bestimmen.
+
+   Dabei ausdrücklich prüfen:
+
+    - Zwei-Karten-Kombos
+    - Drei-Karten-Kombos
+    - mehrteilige Kombos mit vier oder mehr Karten
+    - Commander-gestützte Kombos
+    - Loops mit permanenter Wiederholung
+    - Mana-Loops
+    - Damage- oder Lifedrain-Loops
+    - Draw- oder Mill-Loops
+    - Token- oder Counter-Loops
+    - Extra-Turn-Loops
+    - deterministische Win-Lines
+
+   Eine Combo darf nicht nur deshalb übersehen werden, weil sie aus mehr
+   als zwei Karten besteht.
+
+   Für jede erkannte Combo sollen möglichst bestimmt werden:
+
+    - beteiligte Karten
+    - benötigter Boardstate
+    - benötigtes Mana
+    - Rolle des Commanders
+    - Ergebnis der Combo
+    - ob sie tatsächlich unendlich oder nur beliebig wiederholbar ist
+    - wie leicht sie unterbrochen werden kann
+    - wie zuverlässig die Combo im Deck gefunden werden kann
+
+   Regelabhängige Combo-Linien müssen gemäß
+   `brains/rules/magic-rules.md` verifiziert werden.
 6. Geschwindigkeit, Konsistenz, Resilienz und Commander-Abhängigkeit bewerten.
 7. `brains/bracket/templates.md` für Bracket und Game Changers verwenden.
 8. Fehlende Daten und nicht verifizierbare Annahmen offen ausweisen.
@@ -98,7 +129,21 @@ data/decks/decklists/[deck-slug].txt
 
 ### Win Conditions und Combos
 
+#### Win Conditions
+
 - ...
+
+#### Erkannte Combo-Linien
+
+Für jede relevante Combo:
+
+- Karten:
+- Commander beteiligt:
+- Typ:
+- Ergebnis:
+- Voraussetzungen:
+- Interaktionspunkte:
+- Regelcheck:
 
 ## Stärken
 

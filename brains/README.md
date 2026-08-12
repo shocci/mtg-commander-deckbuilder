@@ -23,6 +23,7 @@ Zusammengesetzte Aufträge verwenden die Vereinigung der benötigten Module.
 | `deck-analysis/templates.md` | Analyse bestehender Decklisten und Gameplan-Ableitung |
 | `bracket/templates.md` | Commander Brackets, Game Changers und Bracket-Bewertung |
 | `deck-versioning/templates.md` | Ersetzen einer bestehenden Hauptdeckliste und Archivierung alter Versionen |
+| `rule-zero/templates.md` | Rule-0- und Tischkommunikation für analysierte Decks |
 
 ## Immer zuerst
 
@@ -44,11 +45,8 @@ Danach über die folgende Tabelle routen.
 | Deck analysieren | `deck-analysis`, `bracket`, `rules` | betroffene Deckliste |
 | Gameplan für vorhandenes Deck | `deck-analysis`, `rules` | betroffene Deckliste |
 | Bracket bestimmen | `bracket`, `rules` | Deckliste |
+| Rule-0-/Tischkommunikation erstellen | `deck-analysis`, `rule-zero`, `bracket`, `rules` | betroffene Deckliste bzw. aktuelle Analyse |
 | bestehendes Deck überarbeiten, ohne Hauptversion zu ersetzen | `deckbuilding`, `bracket`, `rules` | bestehende Deckliste; Collection nur wenn relevant |
-| neue Hauptversion eines bestehenden Decks übernehmen | `deck-versioning`, `deck-analysis`, `bracket`, `rules` | alte und neue Deckliste |
-| Variante erstellen | `deckbuilding`, `bracket`, `rules` | Hauptdeck; Collection nur wenn relevant |
-| Karteninteraktion / Combo / Legalität | `rules` | betroffene Karten |
-| mehrere Decks vergleichen | `deck-analysis` plus `bracket` wenn Power relevant | nur die verglichenen Decklisten |
 
 `project/philosophy.md` kommt jeweils zusätzlich dazu.
 
