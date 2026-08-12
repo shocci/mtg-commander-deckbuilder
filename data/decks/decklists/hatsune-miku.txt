@@ -74,8 +74,8 @@
 1 Sol Ring
 1 Song of Freyalise
 1 Song of the Worldsoul
-1 Soul Warden
 1 Soul of Eternity
+1 Soul Warden
 1 Speaker of the Heavens
 1 Springleaf Drum
 1 Storm Herd

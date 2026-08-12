@@ -113,4 +113,4 @@ Falls es für Bracket 4 optimiert werden soll:
 
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 9. August 2026
-- Deckliste: `data/decks/decklists/GwenNom.txt`
+- Deckliste: `data/decks/decklists/gwen-nom.txt`

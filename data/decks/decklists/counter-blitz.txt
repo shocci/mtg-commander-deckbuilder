@@ -91,6 +91,6 @@
 1 Vineglimmer Snarl
 1 Wakka, Devoted Guardian
 1 Walking Ballista
+1 Yuna, Grand Summoner
 1 Yuna's Decision
 1 Yuna's Whistle
-1 Yuna, Grand Summoner

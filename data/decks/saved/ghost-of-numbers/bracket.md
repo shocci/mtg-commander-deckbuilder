@@ -114,5 +114,4 @@ Falls es für ein höheres Bracket optimiert werden soll:
 
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 9. August 2026
-- Deckliste: `data/decks/decklists/Ghost of Numbers.txt`
-
+- Deckliste: `data/decks/decklists/ghost-of-numbers.txt`

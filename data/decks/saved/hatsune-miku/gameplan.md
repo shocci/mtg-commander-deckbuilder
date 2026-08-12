@@ -16,6 +16,7 @@ Hatsune Miku entwickelt Mana, verbindet Trostani mit Token-Erzeugern und gewinnt
 ## Mid Game: Züge 4–7
 
 - Trostani mit einem unmittelbaren Kreaturen- oder Token-Eintritt verbinden.
+- Dazzling Theater für Convoke nutzen; nach dem Öffnen der Prop Room können Manadorks und Trostani in gegnerischen Zügen erneut eingesetzt werden. Die Room-Karte ist kein zusätzlicher Landdrop.
 - Hochwertige Token von Phyrexian Processor, Grove of the Guardian, Ghalta and Mavren oder Gruff Triplets bevorzugt populaten.
 - Archangel of Thune, Nykthos Paragon oder Lathiel erst dann einsetzen, wenn im selben Zug mindestens ein Lifegain-Auslöser möglich ist.
 - Idol of Oblivion, Camaraderie oder Shamanic Revelation nutzen, bevor die Hand leer wird.
@@ -28,7 +29,7 @@ Hatsune Miku entwickelt Mana, verbindet Trostani mit Token-Erzeugern und gewinnt
 - Blossoming Bogbeast mit einem großen Lifegain-Auslöser und breitem Board verbinden.
 - Storm Herd möglichst mit Schutz oder in einem Zeitfenster ohne wahrscheinlichen Boardwipe wirken.
 - Aetherflux Reservoir erst ausspielen, wenn mehrere Zauber oder große Lifegain-Ereignisse folgen können.
-- Halo Fountain nur verfolgen, wenn zehn getappte Kreaturen und zwölf Mana realistisch verfügbar sind.
+- Halo Fountain nur als Sofortsieg verfolgen, wenn fünf weiße Mana und fünfzehn getappte Kreaturen realistisch verfügbar sind.
 - Vorinclex bevorzugt in einem Zug spielen, in dem das verdoppelte Mana unmittelbar genutzt werden kann.
 
 ## Mulligan-Prioritäten
@@ -76,7 +77,7 @@ Populate kopiert nur Kreaturenspielsteine. Reguläre Kreaturen wie Soul of Etern
 - Lathiel verteilt im Endsegment Marken entsprechend des gesamten in diesem Zug gewonnenen Lebens.
 - Cleric Class verstärkt Lebensgewinn und kann später eine Kreatur zurückbringen.
 - Boon Reflection erhöht einzelne große Trostani- oder Angelic-Chorus-Auslöser besonders stark.
-- Resplendent Angel und Crested Sunmare prüfen, ob im jeweiligen Zug mindestens fünf Leben gewonnen wurden.
+- Resplendent Angel prüft im Endsegment, ob in diesem Zug mindestens fünf Leben gewonnen wurden; Crested Sunmare verlangt lediglich, dass in diesem Zug überhaupt Leben gewonnen wurde.
 
 ## Finale-of-Devastation-Ziele
 
@@ -90,7 +91,7 @@ Populate kopiert nur Kreaturenspielsteine. Reguläre Kreaturen wie Soul of Etern
 
 ## Aetherflux-Plan
 
-- Die Storm-Fähigkeit zählt nur Zauber, die in diesem Zug vor dem jeweiligen Reservoir-Auslöser gewirkt wurden.
+- Der Reservoir-Auslöser zählt alle in diesem Zug gewirkten Zauber einschließlich des Zaubers, der ihn ausgelöst hat.
 - Reservoir ist in dieser Liste primär ein Lifegain-Payoff und kein klassischer Storm-Comboabschluss.
 - Nicht auf genau 50 Leben aktivieren; die Fähigkeit verlangt das Bezahlen von 50 Leben und ein Spieler mit 0 Leben verliert.
 - Eine Aktivierung beseitigt normalerweise nur einen Gegner. Für weitere Aktivierungen muss erneut sehr viel Leben aufgebaut werden.
@@ -98,8 +99,8 @@ Populate kopiert nur Kreaturenspielsteine. Reguläre Kreaturen wie Soul of Etern
 ## Halo-Fountain-Plan
 
 - Token zunächst durch Angriffe, Springleaf Drum oder Song of Freyalise tappen.
-- Die Aktivierung mit fünf Kreaturen kann Karten ziehen und ist oft realistischer als der Sofortsieg.
-- Die Siegbedingung verlangt zehn getappte eigene Kreaturen vor dem Bezahlen sowie zwölf Mana und das Enttappen dieser zehn Kreaturen als Teil der Kosten.
+- Die zweite Aktivierung kann durch das Enttappen von zwei getappten Kreaturen für zwei weiße Mana eine Karte ziehen und ist oft realistischer als der Sofortsieg.
+- Die Siegbedingung verlangt fünfzehn getappte eigene Kreaturen sowie fünf weiße Mana und das Enttappen dieser fünfzehn Kreaturen als Teil der Kosten.
 - Der Plan ist offen sichtbar und sollte nur verfolgt werden, wenn Gegner die Fountain oder das Board nicht leicht entfernen können.
 
 ## Schutz und Interaktionsprioritäten

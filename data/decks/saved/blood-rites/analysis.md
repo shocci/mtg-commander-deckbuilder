@@ -38,7 +38,7 @@ Clavileño muss nicht selbst angreifen. Pro Angriff wird jedoch nur ein angreife
 
 ## Ramp und Manabase
 
-Das Deck spielt 36 Länder sowie Sol Ring, Arcane Signet, Orzhov Signet, Talisman of Hierarchy, Mind Stone, Wayfarer's Bauble, Commander's Sphere und Master of Dark Rites als Ramp.
+Das Deck spielt 37 Länder sowie Sol Ring, Arcane Signet, Orzhov Signet, Talisman of Hierarchy, Mind Stone, Wayfarer's Bauble, Commander's Sphere und Master of Dark Rites als Ramp.
 
 Die Landzahl ist angemessen, aber mehrere Länder kommen getappt ins Spiel. Temple of the False God ist in frühen Händen unbrauchbar; Myriad Landscape und Orzhov Basilica kosten ebenfalls Tempo.
 

@@ -49,7 +49,7 @@ Positiv:
 - Lifegain-, Token- und Marken-Payoffs sind redundant.
 - Finale of Devastation findet flexibel eine Schlüsselkreatur.
 - Mehrere voneinander unabhängige Finisher reduzieren die Abhängigkeit von einer Karte.
-- 34 reguläre Länder, eine modale Landkarte und ein breites Ramp-Paket tragen die teureren Karten.
+- 34 Länder und ein breites Ramp-Paket tragen die teureren Karten; Dazzling Theater // Prop Room unterstützt Kreaturenmana, ist selbst aber kein Land.
 
 Negativ:
 

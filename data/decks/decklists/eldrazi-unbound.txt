@@ -76,8 +76,8 @@
 1 Tomb of the Spirit Dragon
 1 Transmogrifying Wand
 1 Tyrite Sanctum
-1 Ugin's Mastery
 1 Ugin, the Ineffable
+1 Ugin's Mastery
 1 Unstable Obelisk
 1 Urza's Mine
 1 Urza's Power Plant

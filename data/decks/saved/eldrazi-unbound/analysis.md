@@ -15,7 +15,7 @@ Die Liste enthält 100 Karten, keine Nichtstandardland-Dubletten, ausschließlic
 
 ## Spielplan und Kartenpakete
 
-Zhulodok gibt farblosen Zaubern mit Mana Value 7 oder mehr zweimal Cascade. Mana Rocks, Eldrazi Temple, Shrine of the Forsaken Gods, Forsaken Monument und Darksteel Monolith beschleunigen in teure Eldrazi. Mystic Forge, War Room, Endless Atlas und Kozilek liefern Karten. All Is Dust, Perilous Vault, Steel Hellkite und flexible Artefaktantworten kontrollieren das Board.
+Zhulodok gibt farblosen Zaubern mit Mana Value 7 oder mehr, die aus der Hand gewirkt werden, zweimal Cascade. Aus anderen Zonen gewirkte Zauber erhalten diese Fähigkeiten nicht. Mana Rocks, Eldrazi Temple, Shrine of the Forsaken Gods, Forsaken Monument und Darksteel Monolith beschleunigen in teure Eldrazi. Mystic Forge, War Room, Endless Atlas und Kozilek liefern Karten. All Is Dust, Perilous Vault, Steel Hellkite und flexible Artefaktantworten kontrollieren das Board.
 
 Gewonnen wird über überwältigenden Cascade-Value, Annihilator-/Combat-Druck und einzelne riesige Permanents. Die Tron-Länder sind ohne Landsuche inkonsistent; es gibt keine erkannte Endloskombo.
 

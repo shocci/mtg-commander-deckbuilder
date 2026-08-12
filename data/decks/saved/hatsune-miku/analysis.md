@@ -5,7 +5,7 @@
 - Commander: Trostani, Selesnya's Voice
 - Farbidentität: Selesnya – Grün und Weiß
 - Deckgröße: 100 Karten inklusive Commander
-- Länder: 34 reguläre Länder plus Dazzling Theater // Prop Room als modale Landkarte
+- Länder: 34
 - Archetyp: Lifegain / Tokens / Populate
 - Geschätztes Bracket: 3 – Upgraded
 - Game Changer: 0
@@ -29,6 +29,7 @@ Die Textliste zeigt ein fokussiertes Trostani-Deck, das Token-Erzeugung mit gro�
 - **Boon Reflection und Cleric Class:** erhöhen die Lebensausbeute.
 - **Archangel of Thune, Nykthos Paragon und Lathiel, the Bounteous Dawn:** verwandeln Lifegain in +1/+1-Marken.
 - **Growing Ranks, Song of the Worldsoul, Bramble Sovereign und Trostani:** kopieren Kreaturen oder Token.
+- **Dazzling Theater // Prop Room:** gibt Kreaturenzaubern Convoke und enttappt nach dem Öffnen der Prop Room alle eigenen Kreaturen in jedem gegnerischen Enttappsegment. Die Karte ist eine Room-Verzauberung und kein Land.
 - **Phyrexian Processor, Ghalta and Mavren, Gruff Triplets und Grove of the Guardian:** erzeugen hochwertige Populate-Ziele.
 - **Resplendent Angel, Crested Sunmare und Speaker of the Heavens:** wandeln Lifegain in zusätzliche Token um.
 - **Skullclamp, Idol of Oblivion, Camaraderie und Shamanic Revelation:** liefern Kartennachschub.
@@ -73,7 +74,7 @@ Das Deck besitzt keine Interaktion auf dem Stapel. Die Removal-Dichte ist funkti
 
 ## Manabasis und Konsistenz
 
-34 reguläre Länder plus Dazzling Theater // Prop Room ergeben bis zu 35 Landzugänge. Dazu kommen Sol Ring, Selesnya Signet, Ancient Cornucopia, Springleaf Drum, mehrere Manadorks sowie Explore, Farseek, Nature's Lore und Cultivate.
+Die Liste spielt 34 Länder. Dazu kommen Sol Ring, Selesnya Signet, Ancient Cornucopia, Springleaf Drum, mehrere Manadorks sowie Explore, Farseek, Nature's Lore und Cultivate. Dazzling Theater // Prop Room ist eine Room-Verzauberung: Dazzling Theater unterstützt Kreaturenzauber über Convoke, ersetzt aber keinen Landdrop; Prop Room verbessert später die wiederholte Nutzung von Manadorks und Trostanis aktivierter Fähigkeit.
 
 Die Konsistenz ist mittel bis gut: Lifegain und Token-Erzeugung sind redundant, Finale of Devastation findet flexibel eine Schlüsselkreatur und Trostani steht stets zur Verfügung. Die Liste enthält jedoch viele teure Karten, nur einen besonders flexiblen Tutor und mehrere Kartenzieher, die bereits ein entwickeltes Board voraussetzen.
 
@@ -93,6 +94,7 @@ Die Konsistenz ist mittel bis gut: Lifegain und Token-Erzeugung sind redundant, 
 - anfällig gegen Exil-Boardwipes und wiederholte Massenentfernung
 - keine Counterspells oder freie Interaktion
 - einige langsame oder teure Karten können schwerfällige Starthände erzeugen
+- nur 34 Länder; Hände ohne frühen Ramp sind dadurch riskanter
 - Kartennachschub ist teilweise boardabhängig
 - Trostani ist für die Verbindung beider Deckachsen wichtig
 - Aetherflux Reservoir beseitigt ohne extremen Lifegain meist nur einen Gegner
