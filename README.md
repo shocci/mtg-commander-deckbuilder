@@ -260,7 +260,7 @@ Speichere noch nichts.
 ### Deckvergleich
 
 ```text
-Vergleiche `ghost-of-numbers.txt`, `gwennom.txt` und `vi-oh-no.txt`.
+Vergleiche `ghost-of-numbers.txt`, `gwen-nom.txt` und `vi-oh-no.txt`.
 
 Welche Decks wirken strategisch ähnlich?
 Welche unterscheiden sich deutlich?
@@ -321,6 +321,6 @@ Aktueller Projektstand:
 - Bracket Brain vorhanden
 - Deckanalyse Brain vorhanden
 - Rules-, Collection- und Versionierungs-Brains vorhanden
-- Partner-Commander-Parsing vorhanden
+- Partner-Commander-Parsing im Dokumentationsgenerator vorhanden
 - statische Dokumentationsseiten über `npm run build:docs`
 - erste Tests mit Beispieldecks durchgeführt

@@ -5,8 +5,6 @@ description: "Claude adapter for the MTG Commander Brain project."
 
 # EDH Deckbuilder Skill – MTG Commander Brain Adapter
 
-# EDH Deckbuilder Skill – MTG Commander Brain Adapter
-
 ## Purpose
 
 This skill connects Claude to the user's MTG Commander Brain project.
@@ -100,8 +98,9 @@ Use for:
 
 Preferred current/processed collection source:
 
-- `data/collection/collection.json`
-- or `data/collection.json` if the project still uses the earlier flat structure
+- `data/collection.json`
+
+If another processed collection file exists elsewhere in the project, do not prefer it over `data/collection.json` unless the user explicitly requests that source.
 
 Raw import source:
 
@@ -311,7 +310,7 @@ Before saving new project knowledge, ask for confirmation.
 Examples:
 
 - "Passt die Analyse so und soll ich sie speichern?"
-- "Soll diese Variante als `data/decks/<deck>/variants/<name>.md` gespeichert werden?"
+- "Soll diese Variante als `data/decks/saved/<deck-slug>/variants/<name>.md` gespeichert werden?"
 - "Soll ich den Gameplan in `gameplan.md` übernehmen?"
 
 After confirmation, save only the confirmed content. Do not silently rewrite unrelated project files.

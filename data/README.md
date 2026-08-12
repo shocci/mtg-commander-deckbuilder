@@ -25,6 +25,12 @@ data/
 └─ decks/
    ├─ decklists/
    └─ saved/
+      └─ [deck-slug]/
+         ├─ analysis.md
+         ├─ bracket.md
+         ├─ gameplan.md
+         ├─ variants/
+         └─ versions/
 ```
 
 ---
@@ -118,9 +124,11 @@ Regeln:
 
 - Decklisten dürfen einfache `.txt`-Dateien sein.
 - ManaBox-Exportformat ist der Standard.
-- Die erste Kartenzeile nach `// COMMANDER` ist der Commander.
-- Kommentarzeilen mit `//` sind keine Karten.
-- Leere Zeilen werden ignoriert.
+- `// COMMANDER` startet den Commander-Bereich.
+- Alle Kartenzeilen bis zur nächsten Leerzeile oder Sektion gehören zum Commander-Bereich.
+- Mehrere Commander sind zulässig, wenn die Commander-Regeln ihre gemeinsame Verwendung erlauben.
+- Sektions- und Kommentarzeilen mit `//` sind keine Karten. `//` innerhalb eines doppelseitigen Kartennamens bleibt jedoch Teil des Kartennamens.
+- Eine Leerzeile beendet den Commander-Bereich; sonstige Leerzeilen werden ignoriert.
 - Weitere Sektionen können vorhanden sein, sind aber nicht zwingend nötig.
 
 ---
@@ -174,6 +182,18 @@ Beispiel:
 data/decks/saved/vi-oh-no/variants/vivi-burn-fire-artwork.md
 ```
 
+```text
+versions/
+```
+
+Archivierte frühere Hauptversionen desselben Decks. Das Ersetzen einer Hauptdeckliste folgt dem Workflow aus `brains/deck-versioning/templates.md`.
+
+Beispiel:
+
+```text
+data/decks/saved/vi-oh-no/versions/v001.md
+```
+
 ---
 
 # Vergleiche
@@ -187,7 +207,7 @@ data/decks/saved/comparisons/
 Beispiel:
 
 ```text
-data/decks/saved/comparisons/ghost-gwennom-vi-oh-no.md
+data/decks/saved/comparisons/ghost-gwen-nom-vi-oh-no.md
 ```
 
 Vergleiche gehören nicht zu einem einzelnen Deck, sondern beschreiben Beziehungen zwischen mehreren Decks.
@@ -260,7 +280,7 @@ Für neue Dateien bevorzugt Slugs verwenden:
 ```text
 vi-oh-no.txt
 ghost-of-numbers.txt
-gwennom.txt
+gwen-nom.txt
 ```
 
 Nicht ideal:
@@ -327,6 +347,5 @@ Diese gehören in:
 ```text
 brains/
 ai-context/
-prompts/
 scripts/
 ```
