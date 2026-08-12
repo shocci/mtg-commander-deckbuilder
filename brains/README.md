@@ -1,474 +1,130 @@
-# Brains
-
-Dieser Ordner enthält die allgemeinen Denk-, Bewertungs- und Arbeitslogiken des MTG Commander Brain Projekts.
-
-Die Dateien in `brains/` sind **KI-übergreifend** gedacht.  
-Sie gelten also nicht nur für ChatGPT oder Claude, sondern beschreiben die gemeinsamen Projektregeln, Templates und Bewertungsgrundlagen.
-
-KI-spezifische Adapter liegen dagegen in:
-
-```text
-ai-context/
-```
-
-Konkrete Daten wie Decklisten, Collection und gespeicherte Analysen liegen in:
-
-```text
-data/
-```
-
----
+# MTG Commander Brain – Registry und Task Router
 
 ## Zweck
 
-Die Brains definieren, **wie** mit Commander/EDH-Daten gearbeitet werden soll.
+Dieser Ordner ist die gemeinsame, KI-unabhängige Quelle für Projektregeln und MTG-Workflows.
 
-Sie beantworten Fragen wie:
+KI-spezifische Dateien unter `ai-context/` dürfen auf diese Brains verweisen, aber deren Fachlogik nicht duplizieren.
 
-- Wie wird ein Deck analysiert?
-- Wie wird ein Bracket eingeschätzt?
-- Wie wird ein neues Deck gebaut?
-- Welche Regeln gelten für Collection-Nutzung?
-- Wann darf etwas gespeichert werden?
-- Welche Projektphilosophie gilt?
+## Grundregel
 
----
+Lade pro Auftrag nur die tatsächlich benötigten Module.
 
-## Struktur
+Zusammengesetzte Aufträge verwenden die Vereinigung der benötigten Module.
 
-```text
-brains/
-├─ bracket/
-├─ collection/
-├─ deck-analysis/
-├─ deckbuilding/
-└─ project/
-```
+## Brain Registry
 
----
+| Brain | Zuständigkeit |
+|---|---|
+| `project/philosophy.md` | projektweite Grundsätze, Daten- und Schreibmodell |
+| `rules/magic-rules.md` | Legalität, Color Identity, Commander-Regeln und Karteninteraktionen |
+| `collection/templates.md` | Collection-Lookups, Besitzlogik, Commander-Auswahl aus der Collection |
+| `deckbuilding/templates.md` | neues Deck, Umbau, Varianten und Deckbau-Workflow |
+| `deck-analysis/templates.md` | Analyse bestehender Decklisten und Gameplan-Ableitung |
+| `bracket/templates.md` | Commander Brackets, Game Changers und Bracket-Bewertung |
+| `deck-versioning/templates.md` | Ersetzen einer bestehenden Hauptdeckliste und Archivierung alter Versionen |
 
-# Brain-Bereiche
+## Immer zuerst
 
-## `brains/project/`
-
-Enthält die grundlegende Projektphilosophie.
-
-Wichtige Datei:
+Für projektbezogene MTG-Aufgaben zuerst lesen:
 
 ```text
 brains/project/philosophy.md
 ```
 
-Diese Datei beschreibt:
+Danach über die folgende Tabelle routen.
 
-- das Ziel des Projekts
-- die Trennung zwischen Collection und Decklisten
-- dass Analysen erst nach Bestätigung gespeichert werden
-- dass keine festen Nutzerpräferenzen aus bestehenden Decks abgeleitet werden sollen
-- dass unterschiedliche Commander, Mechaniken und Spielstile ausdrücklich erlaubt sind
+## Task Routing
 
-Diese Datei sollte bei allgemeinen Projektfragen berücksichtigt werden.
+| Nutzerauftrag | Pflicht-Brains | Zusätzliche Daten |
+|---|---|---|
+| neues Deck bauen | `deckbuilding`, `bracket`, `rules` | Commander/Kartenquellen nach Auftrag |
+| Deck aus/mit Collection bauen | `collection`, `deckbuilding`, `bracket`, `rules` | `data/collection.json` oder ManaBox-Import |
+| Commander aus Collection auswählen | `collection`, `rules` | Collection; bei Popularität ggf. aktuelle Community-Daten |
+| Deck analysieren | `deck-analysis`, `bracket`, `rules` | betroffene Deckliste |
+| Gameplan für vorhandenes Deck | `deck-analysis`, `rules` | betroffene Deckliste |
+| Bracket bestimmen | `bracket`, `rules` | Deckliste |
+| bestehendes Deck überarbeiten, ohne Hauptversion zu ersetzen | `deckbuilding`, `bracket`, `rules` | bestehende Deckliste; Collection nur wenn relevant |
+| neue Hauptversion eines bestehenden Decks übernehmen | `deck-versioning`, `deck-analysis`, `bracket`, `rules` | alte und neue Deckliste |
+| Variante erstellen | `deckbuilding`, `bracket`, `rules` | Hauptdeck; Collection nur wenn relevant |
+| Karteninteraktion / Combo / Legalität | `rules` | betroffene Karten |
+| mehrere Decks vergleichen | `deck-analysis` plus `bracket` wenn Power relevant | nur die verglichenen Decklisten |
 
----
+`project/philosophy.md` kommt jeweils zusätzlich dazu.
 
-## `brains/bracket/`
+## Routing-Regeln
 
-Enthält das Commander Bracket System.
+### Collection ist nicht automatisch Deckbau-Constraint
 
-Wichtige Datei:
+Unterscheide:
 
 ```text
-brains/bracket/templates.md
+"Commander aus meiner Collection"
 ```
 
-Diese Datei beschreibt:
-
-- Bracket 1–5
-- Game-Changer-Regeln
-- aktuelle Game-Changer-Liste
-- Analysevorgehen für Bracket-Einschätzungen
-- Konflikte zwischen Nutzerwunsch und Bracket-Ziel
-
-Dieses Brain wird genutzt bei:
-
-- Bracket-Einschätzungen
-- Deckanalysen
-- Deckbuilding mit Ziel-Powerlevel
-- cEDH- oder High-Power-Fragen
-- Game-Changer-Checks
-
-Wichtig:
-
-Beim Deckbuilding wird das Standard-Bracket nicht hier festgelegt, sondern im Deckbuilding-Brain.
-
----
-
-## `brains/deck-analysis/`
-
-Enthält das Template für Deckanalysen.
-
-Wichtige Datei:
+bedeutet: Der Commander muss vorhanden sein.
 
 ```text
-brains/deck-analysis/templates.md
+"Baue das Deck aus meiner Collection"
+"Collection-first"
+"Nutze meine Collection"
 ```
 
-Dieses Brain wird genutzt, wenn eine vorhandene Deckliste analysiert werden soll.
+bedeutet: Die gesamte Kartenwahl soll die Collection entsprechend `collection/templates.md` berücksichtigen.
 
-Typischer Input:
+Nicht aus der ersten Formulierung ungefragt die zweite ableiten.
 
-```text
-data/decks/decklists/[deck-name].txt
-```
+### Bestehende Decks nur bei Relevanz laden
 
-Typische Analysebestandteile:
+Nicht pauschal alle Decklisten lesen.
 
-- Commander
-- Farbidentität
-- erkannter Spielplan
-- Early Game
-- Mid Game
-- Late Game
-- zentrale Engines
-- Payoffs
-- Interaction
-- Win Conditions
-- Game Changer Check
-- Bracket-Einschätzung
-- Stärken
-- Schwächen
-- Unsicherheiten
-- Rückfrage zum Speichern
+Bestehende Decks laden, wenn der Auftrag:
 
----
+- ein konkretes Deck analysiert oder ändert,
+- eine Variante oder Version betrifft,
+- einen Vergleich verlangt,
+- ausdrücklich Unterschiede zu vorhandenen Decks fordert.
 
-## `brains/deckbuilding/`
+### Regeln und Aktualität
 
-Enthält das Template für das Erstellen, Umbauen oder Varianten-Bauen von Decks.
+Wenn eine Aussage von aktueller Legalität, Oracle-Text, Brackets, Game Changers oder Banlist abhängt, gelten die Aktualitätsregeln des jeweiligen Brains.
 
-Wichtige Datei:
+## Datenrouting
+
+Bevorzugte Quellen:
+
+1. strukturierte Daten unter `data/`
+2. Rohdaten unter `imports/`, wenn strukturierte Daten fehlen oder ausdrücklich neu importiert werden sollen
+3. externe Quellen nur für Informationen, die im Projekt nicht vorhanden oder dynamisch sind
+
+Collection:
 
 ```text
-brains/deckbuilding/templates.md
-```
-
-Dieses Brain wird genutzt bei Aufgaben wie:
-
-```text
-Baue mir ein neues Commander Deck.
-```
-
-```text
-Erstelle eine Burn-Variante von Vivi.
-```
-
-```text
-Baue ein Bracket-3-Deck mit maximal 5 € Zusatzbudget.
-```
-
-```text
-Mach aus diesem Deck eine cEDH-Version.
-```
-
-Wichtige Regel:
-
-Wenn der Nutzer beim Deckbuilding kein Ziel-Bracket nennt, wird standardmäßig verwendet:
-
-```text
-Bracket 3: Upgraded / Aufgewertet
-```
-
-Das bedeutet:
-
-- bis zu 3 Game Changers erlaubt
-- keine typischen frühen Zwei-Karten-Endloskombos
-- keine Mass Land Denial Strategie
-- keine wiederholbaren Extra-Turn-Schleifen
-- starke Synergien erlaubt
-- gute Kartenqualität erlaubt
-- nicht vollständig optimiert
-- nicht cEDH-orientiert
-
-Falls der Nutzer ein anderes Ziel-Bracket nennt, überschreibt diese Angabe den Standard.
-
----
-
-## `brains/collection/`
-
-Enthält Regeln für die Nutzung der Collection.
-
-Mögliche Datei:
-
-```text
-brains/collection/templates.md
-```
-
-Dieses Brain wird genutzt bei Fragen wie:
-
-- Welche Karten besitzt der Nutzer?
-- Welche Karten fehlen für ein Deck?
-- Welche Karten aus der Collection passen zu einem neuen Deck?
-- Welche Karten kommen in mehreren Decklisten vor?
-- Gibt es physische Kopien-Konflikte?
-
-Wichtige Grundregel:
-
-```text
-Collection ≠ Decklisten
-```
-
-Die Collection zeigt Besitz.
-
-Decklisten zeigen Planung, Tests oder gespielte Decks.
-
-Eine Karte darf in mehreren Decklisten vorkommen, auch wenn sie nur einmal physisch vorhanden ist.
-
-Das ist kein Fehler.
-
-Nur wenn explizit nach physischer Verfügbarkeit gefragt wird, soll Mehrfachverwendung als Hinweis ausgegeben werden.
-
----
-
-# Allgemeine Brain-Regeln
-
-## 1. Brains sind keine Rohdaten
-
-In `brains/` liegen keine Decklisten und keine Collection-Dateien.
-
-Nicht hier speichern:
-
-```text
-ManaBox_Collection.csv
-collection.json
-Decklisten
-Analysen
-Gameplans
-Varianten
-```
-
-Diese gehören nach:
-
-```text
-data/
-imports/
-```
-
----
-
-## 2. Brains sind keine KI-spezifischen Adapter
-
-Nicht hier speichern:
-
-```text
-ChatGPT Projektanweisung
-Claude Skill
-MCP-Konfiguration
-```
-
-Diese gehören nach:
-
-```text
-ai-context/
-```
-
----
-
-## 3. Brains enthalten wiederverwendbare Logik
-
-Ein Brain sollte allgemeine Regeln oder Templates enthalten, die mehrfach genutzt werden können.
-
-Beispiele:
-
-```text
-Wie analysiere ich ein Deck?
-Wie bewerte ich ein Bracket?
-Wie baue ich ein Deck mit Constraints?
-Wie gehe ich mit Collection-Daten um?
-```
-
----
-
-## 4. Keine unnötige Doppelung
-
-Wenn eine Regel bereits in einem Brain definiert ist, sollte sie nicht mehrfach an anderen Stellen hart wiederholt werden.
-
-Beispiel:
-
-```text
-Bracket-Regeln
-```
-
-gehören primär in:
-
-```text
-brains/bracket/templates.md
-```
-
-Andere Dateien sollen darauf verweisen.
-
----
-
-## 5. Aktuelle Nutzeranweisung hat Vorrang
-
-Wenn der Nutzer im Chat eine konkrete Anweisung gibt, hat diese Vorrang vor den Brain-Templates.
-
-Beispiel:
-
-```text
-Baue das Deck explizit als Bracket 2.
-```
-
-überschreibt den Standard-Bracket-3-Deckbuilding-Fall.
-
-Falls Nutzerwunsch und Brain-Regeln im Konflikt stehen, muss der Konflikt benannt werden.
-
----
-
-# Typischer KI-Ablauf
-
-## Deckanalyse
-
-Verwendete Quellen:
-
-```text
-brains/project/philosophy.md
-brains/deck-analysis/templates.md
-brains/bracket/templates.md
-data/decks/decklists/[deck].txt
-```
-
-Ablauf:
-
-1. Deckliste lesen.
-2. Commander erkennen.
-3. Spielplan ableiten.
-4. Kartenrollen kontextbezogen bestimmen.
-5. Game Changers prüfen.
-6. Bracket einschätzen.
-7. Early/Mid/Late Gameplan formulieren.
-8. Unsicherheiten nennen.
-9. Fragen, ob gespeichert werden soll.
-
----
-
-## Deckbuilding
-
-Verwendete Quellen:
-
-```text
-brains/project/philosophy.md
-brains/deckbuilding/templates.md
-brains/bracket/templates.md
-data/decks/decklists/
 data/collection.json
 ```
 
-Ablauf:
-
-1. Nutzerwunsch lesen.
-2. Constraints erkennen.
-3. Ziel-Bracket bestimmen.
-4. Falls kein Ziel-Bracket genannt wurde: Bracket 3 verwenden.
-5. Collection berücksichtigen, wenn relevant.
-6. Bestehende Decks berücksichtigen, wenn Abgrenzung gewünscht ist.
-7. Deckvorschlag erstellen.
-8. Game Changers prüfen.
-9. Budget prüfen.
-10. Fragen, ob gespeichert werden soll.
-
----
-
-## Collection-Fragen
-
-Verwendete Quellen:
+Fallback:
 
 ```text
-brains/collection/templates.md
-data/collection.json
-data/decks/decklists/
+imports/manabox/ManaBox_Collection.csv
 ```
 
-Ablauf:
-
-1. Collection prüfen.
-2. Decklisten nur hinzuziehen, wenn relevant.
-3. Besitz und Deckverwendung getrennt behandeln.
-4. Mehrfachverwendung nicht automatisch als Fehler markieren.
-5. Physische Konflikte nur ausgeben, wenn danach gefragt wird.
-
----
-
-# Speicherung
-
-Brains speichern selbst keine Ergebnisse.
-
-Gespeicherte Ergebnisse gehören unter:
+Decklisten:
 
 ```text
-data/decks/saved/
+data/decks/decklists/*.txt
 ```
 
-Beispiele:
+Gespeicherte Auswertungen:
 
 ```text
-data/decks/saved/vi-oh-no/analysis.md
-data/decks/saved/vi-oh-no/bracket.md
-data/decks/saved/vi-oh-no/gameplan.md
-data/decks/saved/vi-oh-no/variants/vivi-burn-fire-artwork.md
+data/decks/saved/[deck-slug]/
 ```
 
-Deckvergleiche:
+## Schreiben
 
-```text
-data/decks/saved/comparisons/
-```
+Das Lesen und Erstellen eines Arbeitsstands ist erlaubt.
 
----
+Persistente Dateiänderungen benötigen eine ausdrückliche Nutzeranweisung oder Bestätigung.
 
-# Namenskonvention
-
-Ordner und Dateien möglichst als Slug schreiben:
-
-```text
-deck-analysis/
-deckbuilding/
-bracket/
-collection/
-project/
-```
-
-Decknamen in gespeicherten Daten ebenfalls bevorzugt als Slug:
-
-```text
-vi-oh-no
-ghost-of-numbers
-gwennom
-```
-
-Der lesbare Deckname kann im Dateiinhalt stehen.
-
----
-
-# Pflegehinweise
-
-Wenn sich externe Systeme ändern, müssen die entsprechenden Brains aktualisiert werden.
-
-Beispiele:
-
-- Commander Bracket System ändert sich
-- Game-Changer-Liste ändert sich
-- ManaBox-Exportformat ändert sich
-- Projekt entscheidet sich für neue Speicherstruktur
-- Deckbuilding-Standard soll angepasst werden
-
-Bei Änderungen an Brains sollte ein passender Commit verwendet werden:
-
-```bash
-git commit -m "docs: Bracket Brain aktualisieren"
-```
-
-oder:
-
-```bash
-git commit -m "docs: Deckbuilding Brain erweitern"
-```
+Für das Ersetzen einer bestehenden Hauptdeckliste immer zuerst `deck-versioning/templates.md` verwenden.

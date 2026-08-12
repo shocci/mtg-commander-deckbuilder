@@ -1,5 +1,10 @@
 # Commander Bracket System
 
+## Regelbasis
+
+Regelabhängige Combo- und Interaktionsbewertungen müssen
+`brains/rules/magic-rules.md` entsprechen.
+
 ## Zweck
 
 Dieses Brain dient zwei Aufgaben:

@@ -1,5 +1,14 @@
 # Deckbuilding Template
 
+## Regelbasis
+
+Alle Deckbauentscheidungen müssen die Vorgaben aus
+`brains/rules/magic-rules.md` beachten.
+
+Insbesondere müssen Commander-Legalität, Color Identity,
+Multi-Commander-Regeln und regelabhängige Karteninteraktionen
+verifiziert werden.
+
 ## Aufgabe
 
 Erstelle oder überarbeite ein Commander Deck anhand der Nutzeranforderungen.
