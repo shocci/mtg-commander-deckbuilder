@@ -73,9 +73,26 @@ Das ist eine echte Zwei-Karten-Endlosschleife:
 
 Die Schleife beendet normalerweise die Partie. Beide Teile kosten jeweils fünf Mana, weshalb sie nicht als typische frühe Kombo erscheint. Mit Beseech the Mirror und Diabolic Intent kann das Deck beide Teile allerdings gezielt suchen.
 
-### Gwenom-/Citadel-Ketten
+### Exquisite Blood + Aetherflux Reservoir
 
-Gwenom oder Bolas’s Citadel wirken mehrere Karten für Lebenspunkte. Aetherflux Reservoir und die Drain-/Lifegain-Effekte stabilisieren dabei den Lebensstand. Sensei’s Divining Top reduziert das Risiko, sofort an einem Land oder einer unpassenden Karte stehenzubleiben.
+Ab mindestens 51 Leben kann Aetherflux Reservoir 50 Schaden auf einen Gegner schießen. Exquisite Blood gibt die verlorenen Lebenspunkte sofort zurück, sodass der Vorgang für jeden weiteren Gegner wiederholt werden kann. In einer normalen Partie ist das ein deterministischer Tisch-Kill und keine tatsächlich endlose Schleife, weil die Zahl der Gegner endlich ist und die Partie anschließend endet. Removal auf eine der beiden Verzauberungs-/Artefaktachsen oder das Verhindern des Lebensgewinns stoppt die Linie.
+
+### Sensei's Divining Top + Bolas's Citadel + Aetherflux Reservoir
+
+1. Sensei's Divining Top tappen, eine Karte ziehen und den Top auf die Bibliothek legen.
+2. Den Top über Bolas's Citadel für 1 Leben erneut vom Bibliotheksanfang wirken.
+3. Aetherflux Reservoir gewinnt mit jedem Cast zunehmend mehr Leben.
+4. Den Vorgang wiederholen, Karten ziehen, den Storm-Count erhöhen und Reservoir auf 50-Schaden-Aktivierungen vorbereiten.
+
+Die Schleife ist durch die Bibliotheksgröße begrenzt und daher nicht mathematisch unendlich. Sie zieht jedoch den Großteil des Decks und ist bei ausreichenden Karten normalerweise spielbeendend. Sie funktioniert vollständig ohne Commander.
+
+### Sensei's Divining Top + Gwenom + Aetherflux Reservoir
+
+Nach einem Angriff von Gwenom ersetzt ihr Trigger Bolas's Citadel für diesen Zug: Der Top kann vom Bibliotheksanfang für 1 Leben gewirkt, wieder auf die Bibliothek gelegt und erneut gewirkt werden. Auch diese Linie ist bibliotheksbegrenzt, erzeugt aber sehr viel Kartenzug, Leben und Casts. Sie ist commander-gestützt und wird durch Removal vor dem Angriff, das Verhindern des Angriffs oder Interaktion mit Top beziehungsweise Reservoir unterbrochen.
+
+### Gwenom-/Citadel-Ketten ohne vollständigen Loop
+
+Gwenom oder Bolas’s Citadel wirken auch ohne vollständige Top-/Reservoir-Linie mehrere Karten für Lebenspunkte. Aetherflux Reservoir und die Drain-/Lifegain-Effekte stabilisieren dabei den Lebensstand. Sensei’s Divining Top reduziert das Risiko, sofort an einem Land oder einer unpassenden Karte stehenzubleiben.
 
 ### Aristocrats
 
@@ -166,4 +183,6 @@ Mehrere Rampkarten kosten zwei oder mehr Mana, und der Commander kostet fünf Ma
 - `brains/deck-analysis/templates.md`
 - `brains/bracket/templates.md`
 - Offizielle Commander- und Bracket-Regeln, geprüft am 9. August 2026
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
+- Entscheidende Oracle-Kartentexte über Scryfall geprüft am 13. August 2026
 - Deckliste: `data/decks/decklists/gwen-nom.txt`

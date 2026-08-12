@@ -77,6 +77,24 @@ Die primäre schnelle Siegkombination:
 
 Die Linie kann mit entsprechender Fast-Mana-Hand bereits in Zug 1 funktionieren. Realistischer ist ein geschützter Versuch in Zug 2–4.
 
+### Underworld Breach + Lotus Petal + Brain Freeze
+
+Lotus Petal bildet eine LED-unabhängige Breach-Linie. Das Petal wird pro Zyklus zweimal geopfert und escaped, um {U}{U} und mindestens zwei zusätzliche Casts zu erzeugen. Brain Freeze millt mit Original und Storm-Kopien mindestens neun eigene Karten; diese ersetzen die neun Karten, die für zwei Petal-Escapes und einen Brain-Freeze-Escape exiliert werden. Die Schleife baut Storm auf und millt anschließend die Gegner.
+
+Sie benötigt einen vorbereiteten Friedhof und bleibt durch Bibliotheksgrößen begrenzt, ist aber eine wichtige Redundanz gegen Removal oder Hate auf Lion's Eye Diamond.
+
+### Underworld Breach + Lion's Eye Diamond + Wheel of Fortune
+
+LED erzeugt {R}{R}{R} und legt die Hand in den Friedhof. Wheel of Fortune wird für {2}{R} escaped, zieht sieben neue Karten und füllt nach der nächsten LED-Aktivierung den Friedhof erneut. Danach wird LED escaped und die Sequenz wiederholt. Jeder Durchlauf verbraucht sechs Escape-Karten und liefert durch Wheel sieben neue Karten; dadurch kann die Linie alle Spieler wiederholt ihre Hände wechseln lassen und gegnerische Bibliotheken leeren.
+
+Die Linie ist wegen endlicher Bibliotheken keine mathematisch unendliche Schleife. Sie gibt Gegnern außerdem wiederholt neue Interaktion und ist daher riskanter als die Brain-Freeze-Hauptlinie.
+
+### Underworld Breach + Jeska's Will + Wheel of Fortune
+
+Wenn ein Gegner mindestens sechs Handkarten besitzt, erzeugt Jeska's Will wenigstens sechs rote Mana. Damit werden Jeska's Will und Wheel of Fortune jeweils für {2}{R} escaped; Wheel liefert sieben neue Karten, während beide Escapes zusammen sechs Friedhofskarten exilieren. Die Sequenz kann sich so wiederholen und Bibliotheken leeren.
+
+Diese Drei-Karten-/Boardstate-Linie benötigt einen großen vorbereiteten Friedhof, einen Gegner mit ausreichend Handkarten und bleibt bibliotheksbegrenzt. Sie erhöht die Redundanz des Breach-Pakets, ist aber kein primärer früher Siegplan.
+
 ### Dualcaster Mage + Molten Duplication
 
 Die kompakte Zwei-Karten-Endloskombination:
@@ -212,4 +230,5 @@ Fetchlands, originale Duals, Shocklands und Rainbow-Länder liefern eine ausgeze
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026
 - Aktuelle Oracle-Kartendaten, geprüft am 10. August 2026
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
 - Deckliste: `data/decks/decklists/iroh-grand-lotus-cedh.txt`

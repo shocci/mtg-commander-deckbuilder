@@ -40,7 +40,7 @@ Auswirkung:
 
 ## Spielplan
 
-Das Deck entwickelt schnelles Mana oder Kartenvorteil, sucht eine passende Comboachse und schützt den Gewinnversuch mit effizienter Stack-Interaktion. Der primäre Abschluss erfolgt über Underworld Breach, Lion’s Eye Diamond und Brain Freeze. Alternativ erzeugen Dualcaster Mage und Molten Duplication beliebig viele Angreifer. Iroh dient im längeren Spiel als Flashback- und Storm-Engine für Lessons, Rituale, Cantrips und Interaktion.
+Das Deck entwickelt schnelles Mana oder Kartenvorteil, sucht eine passende Comboachse und schützt den Gewinnversuch mit effizienter Stack-Interaktion. Der primäre Abschluss erfolgt über Underworld Breach, Lion’s Eye Diamond und Brain Freeze; Lotus Petal ersetzt LED in einer langsameren Backup-Linie, während Wheel of Fortune mit LED oder Jeska's Will weitere Breach-Schleifen eröffnet. Alternativ erzeugen Dualcaster Mage und Molten Duplication beliebig viele Angreifer. Iroh dient im längeren Spiel als Flashback- und Storm-Engine für Lessons, Rituale, Cantrips und Interaktion.
 
 ## Geschwindigkeit
 
@@ -127,4 +127,5 @@ Falls es innerhalb von Bracket 5 weiter optimiert werden soll:
 
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
 - Deckliste: `data/decks/decklists/iroh-grand-lotus-cedh.txt`

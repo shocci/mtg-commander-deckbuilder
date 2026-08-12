@@ -130,5 +130,5 @@ Falls es innerhalb von Bracket 5 weiter optimiert werden soll:
 
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 12. August 2026
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
 - Deckliste: `data/decks/decklists/cedh-good-boy.txt`
-

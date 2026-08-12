@@ -112,7 +112,7 @@ Diese Punkte betreffen die Position innerhalb des cEDH-Feldes, senken das Deck a
 
 Dieses Deck sollte aktuell so kommuniziert werden:
 
-> Bracket 5 – Temur-cEDH-Combo mit 18 Game Changers, Turn-1-Potenzial, Underworld-Breach-Storm, Kinnan/Basalt-Infinite-Mana und Hulk/Caltrops-Infinite-Combats.
+> Bracket 5 – Temur-cEDH-Combo mit 18 Game Changers, Turn-1-Potenzial, zwei Underworld-Breach-Storm-Varianten, Kinnan/Basalt-Infinite-Mana sowie Hulk-Combat-Schleifen mit Caltrops oder Legolas's Quick Reflexes plus Unzerstörbarkeit.
 
 Falls es für ein niedrigeres Bracket gebaut werden soll:
 
@@ -134,4 +134,5 @@ Falls es innerhalb von Bracket 5 weiter optimiert werden soll:
 
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 9. August 2026
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
 - Deckliste: `data/decks/decklists/hulk-cedh.txt`

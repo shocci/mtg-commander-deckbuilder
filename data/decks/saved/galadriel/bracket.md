@@ -8,7 +8,7 @@
 
 ## Kurzbegründung
 
-Die neue Hauptversion enthält keine Game Changer mehr, besitzt aber weiterhin eine potenziell ab Zug 3 verfügbare Drei-Karten-Endlosschleife. Badgermole Cub, Enduring Vitality, Bloom Tender, starke Kartenziehengines und Tokenverdoppler ermöglichen explosive Züge, während mehrere Combat-Finisher einen redundanten fairen Siegplan bilden. Für Bracket 4 fehlen ein Tutor für Intruder Alarm, eine Fast-Mana-Suite, freie Interaktion und ein regelmäßig geschützter früher Sieg.
+Die neue Hauptversion enthält keine Game Changer mehr, besitzt aber weiterhin eine potenziell ab Zug 3 verfügbare Drei-Karten-Endlosschleife und mit Selesnya Evangel eine zweite, boardstate-intensivere Intruder-Alarm-Linie. Badgermole Cub, Enduring Vitality, Bloom Tender, starke Kartenziehengines und Tokenverdoppler ermöglichen explosive Züge, während mehrere Combat-Finisher einen redundanten fairen Siegplan bilden. Für Bracket 4 fehlen ein Tutor für Intruder Alarm, eine Fast-Mana-Suite, freie Interaktion und ein regelmäßig geschützter früher Sieg.
 
 ## Game Changer Check
 
@@ -60,7 +60,7 @@ Negativ:
 
 - Intruder Alarm ist nicht tutorbar.
 - Fauna Shaman ist der einzige echte Tutor und findet nur Kreaturen.
-- Nur Imperious Perfect besitzt die direkt wiederholbare Tokenfähigkeit für die kompakte Schleife.
+- Imperious Perfect ist der kompakteste Token-Outlet; Selesnya Evangel bildet mit einem Mana-Dork und einer weiteren Kreatur eine zweite, mehrteilige Schleife.
 - Der Schutz gegen Boardwipes wurde stark reduziert.
 - Die Liste besitzt keine freie Interaktion.
 - Mehrere Kartenvorteils- und Tokenkarten benötigen bereits ein funktionierendes Board.
@@ -78,6 +78,12 @@ Ergebnis:
 - mit Badgermole Cub überschüssiges grünes Mana
 
 Die Kombination benötigt drei Karten und ist keine typische Zwei-Karten-Endlosschleife. Mit Mana-Dork in Zug 1, Imperious Perfect in Zug 2 und Intruder Alarm in Zug 3 ist sie theoretisch ab Zug 3 möglich. Ohne Chord of Calling und Daze ist sie gegenüber v004 jedoch weniger konsistent und schlechter geschützt.
+
+### Intruder Alarm + Selesnya Evangel + Mana-Dork + weitere Kreatur
+
+Ein Mana-Dork bezahlt {1}; Selesnya Evangel und eine weitere ungetappte Kreatur werden getappt, um einen Saproling zu erzeugen. Dessen ETB enttappt durch Intruder Alarm alle Kreaturen und stellt den Ausgangszustand wieder her. Die Linie erzeugt beliebig viele Saprolinge und ETB-Auslöser, benötigt zum Start aber eine Kreatur mehr als die Imperious-Perfect-Kombination.
+
+Fauna Shaman findet beide kreaturenbasierten Token-Outlets, aber weiterhin nicht Intruder Alarm. Damit steigt die Redundanz der Schleife, nicht jedoch die Zuverlässigkeit des schwierigsten Comboteils.
 
 ### Faire Abschlüsse
 
@@ -139,11 +145,12 @@ Dieses Deck sollte aktuell als oberes Bracket 3 kommuniziert werden.
 
 Empfohlener Pregame-Hinweis:
 
-> Oberes Bracket 3 ohne Game Changer. Das Deck besitzt Intruder Alarm, Imperious Perfect und mehrere Mana-Dorks als Drei-Karten-Endlosschleife für beliebig viele Elf-Token; mit perfekter Hand ist sie ab Zug 3 möglich. Badgermole Cub, Enduring Vitality sowie mehrere Token- und Kartenziehengines können sehr explosive Züge erzeugen.
+> Oberes Bracket 3 ohne Game Changer. Das Deck besitzt mit Intruder Alarm und Imperious Perfect eine potenziell ab Zug 3 mögliche Drei-Karten-Endlosschleife für beliebig viele Elf-Token. Selesnya Evangel bildet mit einem Mana-Dork und einer weiteren Kreatur eine zweite, mehrteilige Token-Schleife. Badgermole Cub, Enduring Vitality sowie mehrere Token- und Kartenziehengines können sehr explosive Züge erzeugen.
 
 ## Quellenstand
 
-- Offizielle Commander-Formatseite und Game-Changer-Liste, geprüft am 10. August 2026
+- Offizielle Commander-Formatseite und Game-Changer-Liste, geprüft am 13. August 2026
+- Commander Spellbook, Combo-Abgleich am 13. August 2026
 - Commander Brackets Beta Update vom 9. Februar 2026
 - `brains/bracket/templates.md`
 - Deckliste: `data/decks/decklists/galadriel.txt`

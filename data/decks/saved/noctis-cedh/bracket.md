@@ -44,7 +44,7 @@ Auswirkung:
 
 ## Spielplan
 
-Das Deck entwickelt schnell Mana und Kartenvorteil, sucht eine kompakte Oracle- oder Artefaktkombination und schützt den Gewinnzug mit kostenloser Interaktion oder Silence-Effekten. Thassa’s Oracle mit Demonic Consultation beziehungsweise Tainted Pact ist die effizienteste Linie. Auriok Salvagers/Lion’s Eye Diamond und Noctis/Mox Diamond/Aetherflux Reservoir bilden unabhängige Alternativen.
+Das Deck entwickelt schnell Mana und Kartenvorteil, sucht eine kompakte Oracle- oder Artefaktkombination und schützt den Gewinnzug mit kostenloser Interaktion oder Silence-Effekten. Thassa’s Oracle mit Demonic Consultation beziehungsweise Tainted Pact ist die effizienteste Linie. Auriok Salvagers/Lion’s Eye Diamond sowie die Noctis-/Aetherflux-Schleifen mit Mox Diamond, Vexing Bauble oder Hex Parasite plus Lotus Petal bilden unabhängige Alternativen.
 
 ## Geschwindigkeit
 
@@ -109,7 +109,7 @@ Diese Punkte betreffen die Position innerhalb des cEDH-Feldes, senken das Deck a
 
 Dieses Deck sollte aktuell so kommuniziert werden:
 
-> Bracket 5 – Esper-cEDH-Artifact-Combo mit 18 Game Changers, Turn-1-Potenzial, Oracle/Consult, Salvagers/LED und einer Noctis/Aetherflux-Schleife.
+> Bracket 5 – Esper-cEDH-Artifact-Combo mit 18 Game Changers, Turn-1-Potenzial, Oracle/Consult, Salvagers/LED und drei redundanten Noctis/Aetherflux-Schleifen.
 
 Falls es für ein niedrigeres Bracket gebaut werden soll:
 
@@ -130,4 +130,5 @@ Falls es innerhalb von Bracket 5 weiter optimiert werden soll:
 
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
 - Deckliste: `data/decks/decklists/noctis-cedh.txt`

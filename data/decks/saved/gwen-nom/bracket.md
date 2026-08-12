@@ -7,7 +7,7 @@
 
 ## Kurzbegründung
 
-Die Liste besitzt zwei Game Changer, flexible Tutoren, eine geplante Zwei-Karten-Endlosschleife und mehrere explosive Ressourcen-Engines. Die Kombo ist mit zehn Gesamtmana jedoch langsam, die Commander-Engine benötigt einen Angriff, und es fehlen eine umfassende Fast-Mana-Suite sowie effizienter Komboschutz. Daher wirkt das Deck wie ein starkes oberes Bracket 3 und noch nicht wie ein konsistentes Bracket 4.
+Die Liste besitzt zwei Game Changer, flexible Tutoren, eine geplante Zwei-Karten-Endlosschleife und drei weitere Aetherflux-Linien. Exquisite Blood plus Aetherflux Reservoir ist erst ab 51 Leben ein wiederholbarer Tisch-Kill; die beiden Sensei's-Divining-Top-Linien benötigen zusätzlich Bolas's Citadel oder einen erfolgreichen Gwenom-Angriff. Die Kombinationen sind damit stark, aber mana- oder boardstate-intensiv, und es fehlen eine umfassende Fast-Mana-Suite sowie effizienter Komboschutz. Daher wirkt das Deck wie ein starkes oberes Bracket 3 und noch nicht wie ein konsistentes Bracket 4.
 
 ## Game Changer Check
 
@@ -46,6 +46,7 @@ Einschätzung: mittel bis hoch
 Positiv:
 
 - Zwei flexible Tutoren finden die Endlosschleife oder passende Engines.
+- Sensei's Divining Top, Aetherflux Reservoir und Exquisite Blood überschneiden sich in mehreren Siegpfaden.
 - Der Commander stellt die zentrale Topdeck-Engine stets bereit.
 - Bolas’s Citadel ist eine redundante Version des Commander-Effekts.
 - Zahlreiche Kartenvorteilsquellen und Reanimationseffekte unterstützen lange Partien.
@@ -54,6 +55,7 @@ Positiv:
 Negativ:
 
 - Die Endlosschleife besteht aus zwei teuren Einzelkarten.
+- Die übrigen Aetherflux-Linien verlangen mindestens 51 Leben, drei Permanents oder einen erfolgreichen Commander-Angriff.
 - Nur begrenzte Topdeck-Manipulation für Gwenom und Bolas’s Citadel.
 - Die Commander-Engine benötigt einen Angriff und ist dadurch leicht zu unterbrechen.
 - Kein umfangreiches Paket aus Fast Mana und günstigem Komboschutz.
@@ -62,6 +64,8 @@ Negativ:
 
 - Zwei zentrale Game Changer
 - Exquisite Blood + Sanguine Bond
+- Exquisite Blood + Aetherflux Reservoir ab 51 Leben
+- Sensei's Divining Top + Aetherflux Reservoir mit Bolas's Citadel oder einem Gwenom-Angriff
 - Beseech the Mirror und Diabolic Intent
 - Gwenom als wiederholt verfügbare Topdeck-Engine
 - Starke Lebenspunkt- und Kartenvorteilsengines
@@ -82,7 +86,7 @@ Negativ:
 
 ## Unsicherheiten
 
-Die wichtigste Unsicherheit ist die Deckabsicht: Wird Exquisite Blood + Sanguine Bond regelmäßig mit den Tutoren gesucht und als primärer Siegplan eingesetzt, nähert sich das Spielerlebnis Bracket 4. Wird die Kombination nur gelegentlich gezogen und der Aristocrats-/Reanimator-Plan steht im Vordergrund, passt oberes Bracket 3 besser.
+Die wichtigste Unsicherheit ist die Deckabsicht: Werden die überlappenden Exquisite-Blood-, Aetherflux- und Top-Linien regelmäßig mit den Tutoren gesucht und als primärer Siegplan eingesetzt, nähert sich das Spielerlebnis Bracket 4. Werden die Kombinationen nur gelegentlich zusammengesetzt und der Aristocrats-/Reanimator-Plan steht im Vordergrund, passt oberes Bracket 3 besser.
 
 Ancient Cellarspawn liegt nur im Maybeboard und wurde nicht mitgezählt. Die Karte würde Gwenom- und Citadel-Zauber in zusätzlichen direkten Schaden verwandeln, änderte allein aber voraussichtlich nicht das Bracket.
 
@@ -90,7 +94,7 @@ Ancient Cellarspawn liegt nur im Maybeboard und wurde nicht mitgezählt. Die Kar
 
 Dieses Deck sollte aktuell so kommuniziert werden:
 
-> Bracket 3 am oberen Rand; zwei Game Changer und eine langsame, tutorbare Zwei-Karten-Endloskombo aus Exquisite Blood und Sanguine Bond.
+> Bracket 3 am oberen Rand; zwei Game Changer, die langsame tutorbare Exquisite-Blood-/Sanguine-Bond-Endlosschleife und mehrere weitere Aetherflux-/Top-Siegpfade.
 
 Falls es für Bracket 2 gebaut werden soll:
 
@@ -113,4 +117,5 @@ Falls es für Bracket 4 optimiert werden soll:
 
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 9. August 2026
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
 - Deckliste: `data/decks/decklists/gwen-nom.txt`

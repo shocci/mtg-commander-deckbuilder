@@ -139,7 +139,9 @@ Haldir skaliert als flexibler Mana-Sink. Galadriels globale Counter und Doubling
 
 The Ooze erzeugt Mutagen-Token, wenn eigene Kreaturen mit +1/+1-Countern das Spielfeld verlassen. Das ersetzt verlorene Boards nicht sofort, konserviert aber einen Teil der Counter als spätere Ressourcen. Zusätzlich bietet die Karte wiederholbare Friedhofsinteraktion.
 
-## Intruder-Alarm-Endlosschleife
+## Intruder-Alarm-Endlosschleifen
+
+### Imperious Perfect + Mana-Dork
 
 Benötigt werden:
 
@@ -162,6 +164,17 @@ Ergebnis:
 Mit perfekter Hand ist die Kombination ab Zug 3 möglich. Fauna Shaman kann Imperious Perfect oder einen passenden Mana-Dork finden, aber nicht Intruder Alarm. Gegenüber der Vorgängerversion fehlen Chord of Calling, Daze, Asceticism und Heroic Intervention. Die Schleife bleibt deshalb gefährlich, ist aber weniger konsistent und deutlich schlechter geschützt.
 
 Die Token besitzen keine Eile. Ein Sieg erfolgt normalerweise erst im nächsten Zug oder über bereits vorhandene Payoffs. Galadriel kann während der Schleife nur ihre drei Modi jeweils einmal wählen; sie erzeugt nicht für jeden Token erneut Mana oder Karten.
+
+### Selesnya Evangel + Mana-Dork + weitere Kreatur
+
+Intruder Alarm besitzt eine zweite echte Token-Schleife in derselben Liste:
+
+1. Einen ungetappten Mana-Dork für mindestens {1} tappen.
+2. {1} bezahlen, Selesnya Evangel tappen und eine weitere ungetappte Kreatur für die Aktivierung tappen.
+3. Der erzeugte Saproling enttappt durch Intruder Alarm alle Kreaturen.
+4. Den Vorgang mit demselben Mana-Dork und einer beliebigen weiteren Kreatur wiederholen.
+
+Das Ergebnis sind beliebig viele Saprolinge, Kreaturen-ETBs und Enttapp-Auslöser. Gegenüber der Imperious-Perfect-Linie verlangt der Start eine zusätzliche Kreatur; nach der ersten Wiederholung kann jeweils ein vorhandener Token für die Zusatzkosten getappt werden. Die Schleife ist dadurch mehrteilig, erhöht aber die Redundanz der Intruder-Alarm-Achse deutlich. Fauna Shaman kann sowohl Imperious Perfect als auch Selesnya Evangel finden, weiterhin jedoch nicht Intruder Alarm.
 
 ## Interaktion und Schutz
 
@@ -310,6 +323,8 @@ Realistische Geschwindigkeit:
 - `brains/bracket/templates.md`
 - `brains/deck-versioning/templates.md`
 - Offizielle Commander-Formatseite und Game-Changer-Liste, geprüft am 10. August 2026
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
+- Entscheidende Oracle-Kartentexte über Scryfall geprüft am 13. August 2026
 - Commander Brackets Beta Update vom 9. Februar 2026
 - Offizielle Release Notes zu Avatar: The Last Airbender, Lorwyn Eclipsed, Secrets of Strixhaven, Teenage Mutant Ninja Turtles und FINAL FANTASY
 - Deckliste: `data/decks/decklists/galadriel.txt`

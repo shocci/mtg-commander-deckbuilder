@@ -114,6 +114,17 @@ Mögliche Abschlüsse:
 
 Mit Noctis, Aetherflux Reservoir, Vexing Bauble und einem Null-Mana-Artefakt im Friedhof entsteht eine weitere Cast-Schleife. Vexing Bauble neutralisiert den ohne Mana gewirkten Zauber, bevor er eintreten und einen Finality Counter erhalten kann. Das Artefakt landet wieder im Friedhof und kann erneut gewirkt werden. Aetherflux Reservoir bezahlt nach den ersten Wiederholungen die Lebenspunktkosten und dient als Finisher.
 
+### Noctis + Aetherflux Reservoir + Hex Parasite + Lotus Petal
+
+Diese Vier-Karten-Linie verwendet Lotus Petal trotz Finality Counter wiederholt:
+
+1. Lotus Petal aus dem Friedhof über Noctis wirken und 3 Leben bezahlen; Aetherflux Reservoir löst aus.
+2. Für {1}{B/P} mit Hex Parasite den Finality Counter von Lotus Petal entfernen.
+3. Lotus Petal opfern und ein Mana erzeugen. Ohne Finality Counter geht es zurück in den Friedhof; das Mana bezahlt im nächsten Durchlauf den generischen Anteil der Hex-Parasite-Aktivierung.
+4. Die Sequenz wiederholen. Der steigende Aetherflux-Trigger gleicht die Lebenspunktkosten aus und erzeugt danach beliebig viel Leben und beliebig viele Casts.
+
+Für den Start ist ein zusätzliches Mana nötig; {B/P} kann mit schwarzem Mana oder 2 Leben bezahlt werden. Sobald Reservoir netto Leben erzeugt, endet die echte Schleife über wiederholte 50-Schaden-Aktivierungen. Removal auf Noctis, Reservoir oder Hex Parasite sowie Friedhofshate unterbrechen sie.
+
 ## Interaktion
 
 ### Stack-Interaktion
@@ -203,4 +214,6 @@ Arcane Signet, Fellwar Stone und die drei Talismane sichern die Farben. Fetchlan
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026
 - Offizielle Release Notes zu Magic: The Gathering—FINAL FANTASY
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
+- Entscheidende Oracle-Kartentexte über Scryfall geprüft am 13. August 2026
 - Deckliste: `data/decks/decklists/noctis-cedh.txt`

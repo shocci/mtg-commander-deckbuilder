@@ -77,6 +77,17 @@ Die primäre schnelle Siegkombination:
 
 Gamble, Mystical Tutor, Spellseeker, Intuition und die Artefakttutoren erschließen unterschiedliche Teile des Pakets. Graveyard-Hate, Rule-of-Law-Effekte und gegnerische Endurance-Auslöser sind die wichtigsten Gegenmaßnahmen.
 
+### Underworld Breach + Lotus Petal + Brain Freeze
+
+Die LED-unabhängige Backup-Linie nutzt Lotus Petal zweimal pro Durchlauf:
+
+1. Lotus Petal opfern und über Escape erneut wirken; den Vorgang ein zweites Mal ausführen, um {U}{U} und Storm-Count aufzubauen.
+2. Brain Freeze für {1}{U} wirken beziehungsweise escapen und mindestens neun Karten der eigenen Bibliothek millen.
+3. Für zwei Petal-Escapes und einen Brain-Freeze-Escape werden neun Friedhofskarten exiliert; die drei Brain-Freeze-Instanzen millen wieder neun Karten.
+4. Den Zyklus bis zum gewünschten Storm-Count wiederholen und die übrigen Kopien auf gegnerische Bibliotheken richten.
+
+Die Linie benötigt einen vorbereiteten Friedhof und ist durch die endlichen Bibliotheken begrenzt, funktioniert aber ohne Lion's Eye Diamond. Graveyard-Hate, ein Counter auf Brain Freeze oder Rule of Law unterbrechen sie.
+
 ### Kinnan, Bonder Prodigy + Basalt Monolith
 
 Kinnan lässt Basalt Monolith vier statt drei Mana erzeugen. Das Enttappen kostet weiterhin drei Mana, wodurch jede Wiederholung ein farbloses Mana gewinnt.
@@ -104,6 +115,17 @@ Die Marke gleicht den zusätzlichen Schadenspunkt jeweils aus, sodass Caltrops H
 Hulk kann direkt über seine Rückseite gewirkt, regulär transformiert oder mit Moonmist günstig transformiert werden. Moonmist verhindert in diesem Zug Hulks Kampfschaden; die Caltrops-Schleife kann ihn trotzdem beliebig groß machen, bevor der eigentliche Kampfschadenssieg in einem späteren Zug erfolgt.
 
 Die Schleife bleibt durch Removal, Schadensverhinderung und gefährliche Blocker unterbrechbar.
+
+### The Incredible Hulk + Legolas's Quick Reflexes + Unzerstörbarkeit
+
+Mit unzerstörbarem Hulk – in dieser Liste insbesondere durch Heroic Intervention – erzeugt Legolas's Quick Reflexes eine zweite Combat-Schleife:
+
+1. Legolas's Quick Reflexes auf Hulk wirken; bis zum Ende des Zuges erhält er Hexproof und die Fähigkeit, beim Getapptwerden Schaden in Höhe seiner Stärke an eine Kreatur zuzufügen.
+2. Hulk als Angreifer deklarieren und für die ausgeliehene Fähigkeit ihn selbst als Ziel wählen.
+3. Hulk überlebt den eigenen Schaden durch Unzerstörbarkeit; Enrage legt eine +1/+1-Marke, enttappt ihn und erzeugt eine weitere Kampfphase.
+4. In jeder zusätzlichen Kampfphase erneut angreifen.
+
+Das ist eine echte Schleife für beliebig viele Kampfphasen, +1/+1-Marken und Kampfschaden. Quick Reflexes und Heroic Intervention kosten zusammen {2}{G}; Hulk muss angreifen können. Split second schützt nur das Wirken von Quick Reflexes, nicht automatisch die gesamte anschließende Sequenz.
 
 ## Interaktion
 
@@ -200,4 +222,6 @@ Carpet of Flowers, Jeska’s Will, Orcish Lumberjack, Mana-Kreaturen, Gaea’s C
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 9. August 2026
 - Offizielle Release Notes zu Magic: The Gathering | Marvel Super Heroes
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
+- Entscheidende Oracle-Kartentexte über Scryfall geprüft am 13. August 2026
 - Deckliste: `data/decks/decklists/hulk-cedh.txt`

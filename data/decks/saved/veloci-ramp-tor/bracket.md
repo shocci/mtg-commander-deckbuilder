@@ -8,7 +8,7 @@
 
 ## Kurzbegründung
 
-Die neue Hauptversion besitzt keine Game Changer und keine Endlosschleife, kann ihre großen Dinosaurier aber deutlich früher und konsistenter ins Spiel bringen. Hunting Velociraptor, Savage Order, Ghalta, Stampede Tyrant und Gishath erzeugen einzelne Spielzüge, die klar über dem erwarteten Tempo eines typischen Bracket-2-Decks liegen. Die langsame Manabasis, knapper Schutz und rein kreaturenbasierte Siege halten die Liste zugleich deutlich unter Bracket 4.
+Die neue Hauptversion besitzt keine eigenständige geplante Endlosschleife, kann ihre großen Dinosaurier aber deutlich früher und konsistenter ins Spiel bringen. Savage Order, Apex Altisaur und Wrathful Raptors bilden zudem eine tutorbare, wiederholte Fight-Linie, die gewöhnlich das gegnerische Kreaturenboard räumt und nur gegen eine gegnerische unzerstörbare Kreatur tatsächlich beliebig oft fortgesetzt werden kann. Hunting Velociraptor, Savage Order, Ghalta, Stampede Tyrant und Gishath erzeugen einzelne Spielzüge, die klar über dem erwarteten Tempo eines typischen Bracket-2-Decks liegen. Die langsame Manabasis, knapper Schutz und kreaturenbasierte Siege halten die Liste zugleich deutlich unter Bracket 4.
 
 ## Game-Changer-Check
 
@@ -68,8 +68,9 @@ Negativ:
 - Einzelangreifer über Xenagos und Kessig Wolf Run
 - Trample-Schaden und Token über Quartzwood Crasher
 - Schadensabschluss über Chandra's Ignition und Wrathful Raptors
+- wiederholte Fight-/Schadenslinie über Savage Order, Apex Altisaur und Wrathful Raptors; normalerweise endlich
 - Board-Schneeball über Gishath oder Ghalta, Stampede Tyrant
-- keine erkennbare Endlosschleife
+- keine eigenständige geplante Endlosschleife; bedingte Apex-Altisaur-Wiederholung nur mit passendem gegnerischem Board
 - keine schnelle Zwei-Karten-Endloskombination
 - keine alternative Sofort-Siegbedingung
 
@@ -83,6 +84,7 @@ Die Dichte ist für ein Combat-Tribaldeck brauchbar, die durchschnittlichen Kost
 
 - Hunting Velociraptor kann Acht- bis Zwölf-Mana-Dinosaurier für drei Mana wirken
 - Savage Order ist ein gezielter Dinosaurier-Tutor direkt ins Spiel
+- Savage Order findet Apex Altisaur und schaltet mit Wrathful Raptors eine fast immer einseitige Boardwipe-/Schadenslinie frei
 - Ghalta, Stampede Tyrant kann eine ganze Kreaturenhand ins Spiel bringen
 - Gishath kann nach Kampfschaden mehrere weitere Dinosaurier erzeugen
 - Pantlaza erhält durch beide Ghaltas Discover-Auslöser mit Wert 12
@@ -94,7 +96,7 @@ Die Dichte ist für ein Combat-Tribaldeck brauchbar, die durchschnittlichen Kost
 ## Faktoren, die das Bracket senken
 
 - keine Game Changer
-- keine Endlosschleifen
+- keine eigenständige geplante Endlosschleife; die Apex-Altisaur-Linie wird nur durch ein passendes gegnerisches unzerstörbares Ziel beliebig wiederholbar
 - keine Fast-Mana-Suite außer Sol Ring
 - keine freie Interaktion
 - keine Mass-Land-Denial- oder Extra-Turn-Strategie
@@ -119,7 +121,7 @@ Dieses Deck sollte als **Bracket 3 – Upgraded, unterer bis mittlerer Bereich**
 
 Empfohlener Pregame-Hinweis:
 
-> Unteres bis mittleres Bracket 3 ohne Game Changer oder Endloskombos. Das Deck gewinnt über große Dinosaurier und Combat, kann aber mit Hunting Velociraptor oder Savage Order schon ab Zug 4–5 ein sehr großes Board erzeugen. Der normale Sieg liegt ungefähr in Zug 6–8.
+> Unteres bis mittleres Bracket 3 ohne Game Changer oder eigenständige geplante Endloskombo. Das Deck gewinnt über große Dinosaurier und Combat; Savage Order kann mit Apex Altisaur und Wrathful Raptors eine wiederholte Boardwipe-/Schadenslinie aufbauen. Hunting Velociraptor oder Savage Order können schon ab Zug 4–5 ein sehr großes Board erzeugen. Der normale Sieg liegt ungefähr in Zug 6–8.
 
 Falls es wieder eindeutig Bracket 2 sein soll:
 
@@ -139,4 +141,5 @@ Falls es innerhalb von Bracket 3 konsistenter werden soll:
 - Commander Brackets Beta Update vom 9. Februar 2026: https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-february-9-2026
 - `brains/bracket/templates.md`
 - Kartentexte, Legalität und Game-Changer-Status über Scryfall geprüft am 12. August 2026
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
 - Deckliste: `data/decks/decklists/veloci-ramp-tor.txt`

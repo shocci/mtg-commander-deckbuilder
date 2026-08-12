@@ -101,11 +101,17 @@ Xenagos verdoppelt Stärke und Widerstandskraft eines Angreifers. Ghalta, Carnag
 
 Chandra's Ignition kann auf einer großen Kreatur gegnerische Boards räumen und allen Gegnern Schaden zufügen. Mit Wrathful Raptors wird Schaden an eigenen Dinosauriern zusätzlich weitergeleitet. Dieser Plan bleibt explosiv, ist nach den entfernten Enrage-Karten aber weniger redundant als in v001.
 
+### Savage Order + Apex Altisaur + Wrathful Raptors
+
+Mit Wrathful Raptors im Spiel und einer weiteren Kreatur mit Stärke 4 oder mehr kann Savage Order diese Kreatur opfern, Apex Altisaur direkt ins Spiel bringen und ihm bis zum nächsten eigenen Zug Unzerstörbarkeit geben. Apex kämpft nacheinander gegen gegnerische Kreaturen; jeder überlebte Kampf löst erneut Enrage aus, während Wrathful Raptors den erhaltenen Schaden an Gegner weiterleitet.
+
+Die Linie räumt normalerweise alle gegnerischen Kreaturen und verursacht dabei sehr viel, aber endlichen Schaden. Sie ist keine echte Endlosschleife, weil die Zahl gegnerischer Kreaturen begrenzt ist. Nur wenn ein Gegner eine unzerstörbare Kreatur mit positiver Stärke kontrolliert, kann derselbe Kampf freiwillig beliebig oft wiederholt werden. Savage Order macht die Linie auffindbar, doch Removal auf Wrathful Raptors oder Interaktion mit Savage Order unterbricht sie.
+
 ### Gishath-Schneeball
 
 Gishath kann nach Kampfschaden mehrere Dinosaurier direkt ins Spiel bringen. Das erzeugt weitere Pantlaza-Auslöser nur insoweit, wie Pantlazas Beschränkung „nur einmal pro Zug“ noch nicht verbraucht wurde, entwickelt das Board aber unabhängig davon stark.
 
-Es sind keine Endlosschleifen, keine Extra-Turn-Schleifen, keine alternative Sofort-Siegbedingung und keine Mass-Land-Denial-Strategie erkennbar.
+Abseits des beschriebenen Sonderfalls mit einer gegnerischen unzerstörbaren Kreatur sind keine Endlosschleifen, Extra-Turn-Schleifen, alternativen Sofort-Siegbedingungen oder Mass-Land-Denial-Strategien erkennbar.
 
 ## Interaktion
 
@@ -198,13 +204,13 @@ Die 39 Länder und das breite Ramp-Paket sind für den Plan grundsätzlich ausre
 
 ## Bracket-Einschätzung
 
-Die neue Hauptversion liegt im unteren bis mittleren Bereich von Bracket 3. Sie enthält zwar keine Game Changer, keine Endlosschleife und keine Fast-Mana-Suite, kann aber mit Hunting Velociraptor, Savage Order, Ghalta, Stampede Tyrant und Gishath deutlich früher und explosiver dominieren als ein typisches Bracket-2-Deck. Der gezielte Tutor und mehrere Manakosten-Umgehungen machen die stärksten Spielzüge zugleich reproduzierbarer.
+Die neue Hauptversion liegt im unteren bis mittleren Bereich von Bracket 3. Sie enthält zwar keine Game Changer, keine eigenständige geplante Endlosschleife und keine Fast-Mana-Suite, kann aber mit Hunting Velociraptor, Savage Order, Ghalta, Stampede Tyrant und Gishath deutlich früher und explosiver dominieren als ein typisches Bracket-2-Deck. Der gezielte Tutor und mehrere Manakosten-Umgehungen machen die stärksten Spielzüge zugleich reproduzierbarer.
 
 Gegen Bracket 4 sprechen die langsame Manabasis, fehlende freie Interaktion, nur ein unmittelbarer Tutor, knapper Schutz und die weiterhin sichtbaren, kreaturenbasierten Siegbedingungen.
 
 ## Rule-0-Hinweis
 
-> Unteres bis mittleres Bracket 3 ohne Game Changer oder Endloskombos. Das Deck gewinnt über große Dinosaurier und Combat, kann aber mit Hunting Velociraptor oder Savage Order schon ab Zug 4–5 ein sehr großes Board erzeugen. Der normale Sieg liegt ungefähr in Zug 6–8.
+> Unteres bis mittleres Bracket 3 ohne Game Changer oder eigenständige geplante Endloskombo. Das Deck gewinnt über große Dinosaurier und Combat; Savage Order, Apex Altisaur und Wrathful Raptors bilden eine wiederholte Boardwipe-/Schadenslinie. Hunting Velociraptor oder Savage Order können schon ab Zug 4–5 ein sehr großes Board erzeugen. Der normale Sieg liegt ungefähr in Zug 6–8.
 
 ## Quellenstand
 
@@ -213,4 +219,5 @@ Gegen Bracket 4 sprechen die langsame Manabasis, fehlende freie Interaktion, nur
 - Offizielle Commander-Brackets- und Game-Changer-Regelung: https://magic.wizards.com/en/formats/commander
 - Commander Brackets Beta Update vom 9. Februar 2026: https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-february-9-2026
 - Kartentexte, Legalität, Farbidentität und Manawerte über Scryfall geprüft am 12. August 2026
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
 - Deckliste: `data/decks/decklists/veloci-ramp-tor.txt`

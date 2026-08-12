@@ -81,14 +81,15 @@ Die Linie kostet nur drei Mana, benötigt aber einen nicht mehr einsatzverzöger
 
 ### Freed from the Real
 
-Direkte Linien:
+Verifizierte Linien:
 
-- Bloom Tender + Freed from the Real
-- Faeburrow Elder + Freed from the Real
+- **Bloom Tender + Freed from the Real:** Freed stellt selbst Blau bereit; Bloom Tender erzeugt mindestens {G}{U}, bezahlt {U} zum Enttappen und behält pro Wiederholung mindestens {G}.
+- **Faeburrow Elder + Freed from the Real:** funktioniert entsprechend und erzeugt beliebig viel nichtblaues Mana, sobald mindestens Grün und Blau unter den eigenen Permanents vertreten sind.
+- **Badgermole Cub + Freed from the Real + blaues Land:** Badgermole earthbendet beim ETB ein blau produzierendes Land. Das nun als Kreatur tappende Land erzeugt {U}; Badgermole fügt {G} hinzu, {U} enttappt es über Freed. Das produziert beliebig viel {G}.
+- **Kinnan + Birds of Paradise + Freed from the Real:** Kinnan verdoppelt das vom Birds erzeugte blaue Mana; eine Einheit enttappt Birds, die andere bleibt übrig. Nach Aufbau eines blauen Vorrats können auch die übrigen Farben erzeugt werden.
+- **Kinnan + Delighted Halfling + Freed from the Real:** dieselbe Struktur erzeugt beliebig viel farbiges Mana mit der Einschränkung für legendäre Sprüche.
 
-Freed stellt selbst die blaue Permanente bereit. Die Kreatur erzeugt mehr Mana als das Enttappen kostet und produziert dadurch unendlich viel nichtblaues Mana.
-
-Redundante Dreikartenlinien entstehen außerdem mit Badgermole Cub sowie Birds of Paradise, Noble Hierarch oder durch Enduring Vitality verliehenen Manafähigkeiten.
+Kinnan mit Bloom Tender oder Faeburrow Elder ist zusätzliche Redundanz, aber für deren jeweilige Zwei-Karten-Linie nicht erforderlich. Noble Hierarch und durch Enduring Vitality verliehene Manafähigkeiten unterstützen weitere boardstate-abhängige Varianten. Kreaturenremoval oder das Entfernen von Freed unterbricht jede dieser Linien.
 
 ### Emiel + Peregrine Drake
 
@@ -105,26 +106,46 @@ Wenn Gaea’s Cradle mindestens vier Mana erzeugt:
 
 Das erzeugt unendlich grünes Mana und erlaubt beliebig viele Tap-/Untap-Auslöser.
 
+Weitere Derevi-/Emiel-Varianten:
+
+- **Bloom Tender oder Faeburrow Elder:** Erzeugt die Manaquelle mindestens {G}{W}{U}, bezahlt sie Emiels Aktivierung vollständig. Derevis ETB enttappt die Kreatur; jede Wiederholung erzeugt ETB-/LTB-Auslöser und beliebig viel Mana, sobald mehr als drei Mana produziert werden.
+- **Mana Vault oder Basalt Monolith:** Drei farblose Mana bezahlen exakt einen Derevi-Blink; Derevi enttappt den Stein. Das ist eine echte permanente ETB-/LTB-Schleife, aber ohne zusätzliche Mana. Liegt Yoshimaru/Dogmeat, erzeugen Derevis wiederholte legendäre ETBs beliebig viele +1/+1-Marken und damit einen Commander-Damage-Abschluss.
+- **Badgermole Cub + Gaea’s Cradle:** Badgermole earthbendet Gaea’s Cradle. Emiel blinkt zuerst das animierte Land und danach Badgermole, das Cradle erneut earthbendet. Wenn Cradle mindestens fünf Kreaturen zählt, ist die Sequenz mana-neutral und erzeugt beliebig viele ETBs/Land-ETBs; ab sechs gezählten Kreaturen entsteht zusätzlich beliebig viel grünes Mana.
+
 ### Oboro Breezecaller + Talon Gates + Gaea’s Cradle
 
 Bei mindestens sechs Kreaturen erzeugt Gaea’s Cradle genügend Mana, um Talon Gates mit Oboro Breezecaller zurückzunehmen, Gaea’s Cradle zu enttappen und Talon Gates über seine Handfähigkeit erneut auszuspielen. Das erzeugt unendlich grünes Mana, Land-ETBs und kann gegnerische Kreaturen phasen.
 
 Die Linie benötigt drei Karten und einen entwickelten Kreaturenbestand.
 
-### Displacer Kitten + Teferi + Nullmana-Artefakt
+### Displacer Kitten + Teferi + Mana-Artefakt
 
-Mit Teferi, Time Raveler, Displacer Kitten und insbesondere Mox Amber:
+Mit Teferi, Time Raveler, Displacer Kitten und Mox Amber, Mox Opal, Sol Ring oder Basalt Monolith:
 
 1. Teferi nimmt den Mox auf die Hand und zieht eine Karte.
 2. Der Mox wird erneut gewirkt.
 3. Displacer Kitten blinkt Teferi und setzt dessen Loyalität zurück.
 4. Die Sequenz wird wiederholt.
 
-Dadurch wird nahezu die gesamte Bibliothek gezogen und mit Mox Amber zugleich viel Mana erzeugt. Teferis statische Fähigkeit schützt die Sequenz vor gewöhnlicher gegnerischer Interaktion.
+Dadurch wird die Bibliothek bis zur gewünschten Stelle gezogen. Mox Amber und Mox Opal erzeugen dabei farbiges Mana, Sol Ring farbloses Mana; Basalt Monolith ist mana-neutral. Wegen der endlichen Bibliothek sind dies keine echten unendlichen Draw-Schleifen, sondern bibliotheksbegrenzte, normalerweise spielbeendende Ketten. Teferis statische Fähigkeit schützt die Sequenz vor gewöhnlicher gegnerischer Interaktion.
+
+Mit The One Ring anstelle des günstigen Artefakts entsteht keine Endlosschleife: Für {4} pro eigenem Zug blinkt Kitten Teferi, der Ring gibt erneut Schutz vor allem und Teferi nimmt ihn wieder auf die Hand. Das ist ein wiederholbarer Schutz-Lock über mehrere Züge.
 
 ### Hullbreaker Horror
 
-Hullbreaker Horror kann mit passenden günstigen Mana-Artefakten wiederholte Cast-/Bounce-Schleifen erzeugen. Diese liefern Mana und Storm-Count und können anschließend gegnerische Nichtland-Permanents zurücknehmen. Die Linie ist teuer, stellt aber eine Ausweichroute gegen kreaturenbasierten Hate dar.
+Hullbreaker Horror kann mit zwei **verschiedenen** günstigen Permanents wiederholte Cast-/Bounce-Schleifen erzeugen:
+
+- Sol Ring plus ein anderes Permanent für höchstens {1} erzeugen beliebig viele Casts; kostet das zweite Permanent {0}, entsteht zusätzlich beliebig viel farbloses Mana.
+- Mana Vault plus ein anderes Permanent für höchstens {2} erzeugen beliebig viele Casts; bei Kosten von höchstens {1} entsteht zusätzlich Mana.
+- Mox Amber oder Mox Opal können mit einem weiteren günstigen Permanent und passendem Boardstate farbiges Mana erzeugen.
+
+Chrome Mox, Lotus Petal sowie die Ein-Mana-Kreaturen liefern in dieser Liste mehrere Partner für diese Linien. Ein einzelner Sol Ring darf dabei nicht zugleich beide benötigten Rollen erfüllen; genau deshalb ist die ähnliche Datenbankmeldung im Ashling-Deck kein funktionierender Loop. Nach dem Aufbau können Hullbreaker-Trigger gegnerische Nichtland-Permanents zurücknehmen. Die Linie ist teuer und interaktionsanfällig, stellt aber eine Ausweichroute gegen kreaturenbasierten Hate dar.
+
+### Displacer Kitten + Eternal Witness + Lotus Petal + Snap
+
+Mit einer für genau ein farbiges Mana wirkbaren Kreatur – etwa Birds of Paradise, Noble Hierarch oder Delighted Halfling – und bis zu zwei Ländern für {1}{U} entsteht eine mehrteilige Fünf-Karten-Schleife. Snap blinkt über Displacer Kitten Eternal Witness und nimmt die günstige Kreatur auf; Eternal Witness holt Lotus Petal zurück. Lotus Petal blinkt Eternal Witness erneut, die nun Snap zurückholt, und bezahlt anschließend die günstige Kreatur. Snap enttappt die Länder und startet den Zyklus neu.
+
+Die Linie erzeugt beliebig viele ETBs, LTBs, Casts und Magecraft-Auslöser; je nach gewählten Snap-Zielen zusätzlich Mana oder das Zurücknehmen gegnerischer Kreaturen. Sie ist echt wiederholbar, aber wegen der vielen Teile deutlich weniger relevant und leichter zu unterbrechen als Kinnan/Basalt oder Devoted Druid.
 
 ### Kampfsieg
 
@@ -243,5 +264,5 @@ Zwölf Basics erhöhen die Robustheit gegen Nonbasic Hate und reduzieren schmerz
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 12. August 2026
 - Offizielle Kartendaten und Release Notes, geprüft am 12. August 2026
+- Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026
 - Deckliste: `data/decks/decklists/cedh-good-boy.txt`
-
