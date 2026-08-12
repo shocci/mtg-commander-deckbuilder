@@ -166,4 +166,4 @@ Mehrere Rampkarten kosten zwei oder mehr Mana, und der Commander kostet fünf Ma
 - `brains/deck-analysis/templates.md`
 - `brains/bracket/templates.md`
 - Offizielle Commander- und Bracket-Regeln, geprüft am 9. August 2026
-- Deckliste: `data/decks/decklists/GwenNom.txt`
+- Deckliste: `data/decks/decklists/gwen-nom.txt`

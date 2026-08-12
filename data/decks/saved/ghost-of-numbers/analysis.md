@@ -156,5 +156,4 @@ Die dreifarbige Manabasis ist funktional, hat aber mehrere getappt kommende oder
 - `brains/deck-analysis/templates.md`
 - `brains/bracket/templates.md`
 - Offizielle Commander- und Bracket-Regeln, geprüft am 9. August 2026
-- Deckliste: `data/decks/decklists/Ghost of Numbers.txt`
-
+- Deckliste: `data/decks/decklists/ghost-of-numbers.txt`

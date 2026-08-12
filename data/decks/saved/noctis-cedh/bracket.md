@@ -130,5 +130,4 @@ Falls es innerhalb von Bracket 5 weiter optimiert werden soll:
 
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026
-- Deckliste: `data/decks/decklists/Noctis cEDH.txt`
-
+- Deckliste: `data/decks/decklists/noctis-cedh.txt`

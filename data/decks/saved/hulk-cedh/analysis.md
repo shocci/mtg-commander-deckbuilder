@@ -5,7 +5,7 @@
 - Commander: Bruce Banner // The Incredible Hulk
 - Farbidentität: Blau-Rot-Grün (Temur)
 - Deckgröße: 100 Karten inklusive Commander
-- Länder: 25
+- Länder: 26
 - Archetyp: cEDH Combo
 - Hauptachsen: Underworld Breach, Kinnan/Monolith und Hulk/Caltrops
 - Geschätztes Bracket: 5 – cEDH
@@ -151,7 +151,7 @@ Die Liste ist stark am Stack, besitzt aber nur wenige dauerhafte Antworten auf b
 
 ## Ramp und Manabasis
 
-Die Liste spielt nur 25 Länder, gleicht dies aber mit sehr vielen nichtlandbasierten Manaquellen aus. Dazu gehören unter anderem Ancient Tomb, Chrome Mox, Elvish Spirit Guide, Gemstone Caverns, Grim Monolith, Lion’s Eye Diamond, Lotus Petal, Mana Vault, Mox Amber, Mox Diamond, Simian Spirit Guide und Sol Ring.
+Die Liste spielt nur 26 Länder, gleicht dies aber mit sehr vielen nichtlandbasierten Manaquellen aus. Dazu gehören unter anderem Ancient Tomb, Chrome Mox, Elvish Spirit Guide, Gemstone Caverns, Grim Monolith, Lion’s Eye Diamond, Lotus Petal, Mana Vault, Mox Amber, Mox Diamond, Simian Spirit Guide und Sol Ring.
 
 Carpet of Flowers, Jeska’s Will, Orcish Lumberjack, Mana-Kreaturen, Gaea’s Cradle und Kinnan liefern zusätzliche Beschleunigung. Fetchlands, originale Duals, Shocklands und Rainbow-Länder sorgen für hohe Farbqualität. Die niedrige Länderzahl erhöht dennoch die Mulligan-Abhängigkeit und die Anfälligkeit gegenüber Mana-Hate.
 
@@ -178,7 +178,7 @@ Carpet of Flowers, Jeska’s Will, Orcish Lumberjack, Mana-Kreaturen, Gaea’s C
 
 ## Schwächen
 
-- Nur 25 Länder; anfällig für schlechte Mulligans und Mana-Hate.
+- Nur 26 Länder; anfällig für schlechte Mulligans und Mana-Hate.
 - Starke Abhängigkeit von Artefakten und aktivierten Fähigkeiten.
 - Rule of Law und Graveyard-Hate treffen die Breach-Achse.
 - Collector Ouphe und Null Rod treffen einen großen Teil der Beschleunigung.
@@ -200,4 +200,4 @@ Carpet of Flowers, Jeska’s Will, Orcish Lumberjack, Mana-Kreaturen, Gaea’s C
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 9. August 2026
 - Offizielle Release Notes zu Magic: The Gathering | Marvel Super Heroes
-- Deckliste: `data/decks/decklists/Hulk cEDH.txt`
+- Deckliste: `data/decks/decklists/hulk-cedh.txt`

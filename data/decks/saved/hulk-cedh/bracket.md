@@ -134,4 +134,4 @@ Falls es innerhalb von Bracket 5 weiter optimiert werden soll:
 
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 9. August 2026
-- Deckliste: `data/decks/decklists/Hulk cEDH.txt`
+- Deckliste: `data/decks/decklists/hulk-cedh.txt`

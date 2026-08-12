@@ -203,5 +203,4 @@ Arcane Signet, Fellwar Stone und die drei Talismane sichern die Farben. Fetchlan
 - `brains/bracket/templates.md`
 - Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 10. August 2026
 - Offizielle Release Notes zu Magic: The Gathering—FINAL FANTASY
-- Deckliste: `data/decks/decklists/Noctis cEDH.txt`
-
+- Deckliste: `data/decks/decklists/noctis-cedh.txt`

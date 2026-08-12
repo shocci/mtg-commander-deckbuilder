@@ -57,7 +57,6 @@
 1 Response // Resurgence
 1 Restoration Magic
 1 Rogue's Passage
-1 SOLDIER Military Program
 1 Sacred Foundry
 1 Scorching Shot
 1 Scourge of the Throne
@@ -67,6 +66,7 @@
 1 Skullcrack
 1 Slayers' Stronghold
 1 Sol Ring
+1 SOLDIER Military Program
 1 Solemn Simulacrum
 1 Stroke of Midnight
 1 Stromkirk Noble

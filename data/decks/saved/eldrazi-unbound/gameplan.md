@@ -14,7 +14,7 @@
 
 ## Late Game
 
-- Sieben-Mana-plus-Zauber unter Zhulodok priorisieren, um Doppel-Cascade zu erhalten.
+- Farblose Sieben-Mana-plus-Zauber aus der Hand unter Zhulodok priorisieren, um Doppel-Cascade zu erhalten; aus anderen Zonen gewirkte Zauber erhalten die Fähigkeiten nicht.
 - Flayer of Loyalties oder It That Betrays für maximale Boardverschiebung timen.
 - Kozilek stabilisiert die Hand und bietet Interaktion.
 
