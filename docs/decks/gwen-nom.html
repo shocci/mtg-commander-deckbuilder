@@ -141,8 +141,20 @@
 <li>Dadurch wird Exquisite Blood erneut ausgelöst.</li>
 </ol>
 <p>Die Schleife beendet normalerweise die Partie. Beide Teile kosten jeweils fünf Mana, weshalb sie nicht als typische frühe Kombo erscheint. Mit Beseech the Mirror und Diabolic Intent kann das Deck beide Teile allerdings gezielt suchen.</p>
-<h3>Gwenom-/Citadel-Ketten</h3>
-<p>Gwenom oder Bolas’s Citadel wirken mehrere Karten für Lebenspunkte. Aetherflux Reservoir und die Drain-/Lifegain-Effekte stabilisieren dabei den Lebensstand. Sensei’s Divining Top reduziert das Risiko, sofort an einem Land oder einer unpassenden Karte stehenzubleiben.</p>
+<h3>Exquisite Blood + Aetherflux Reservoir</h3>
+<p>Ab mindestens 51 Leben kann Aetherflux Reservoir 50 Schaden auf einen Gegner schießen. Exquisite Blood gibt die verlorenen Lebenspunkte sofort zurück, sodass der Vorgang für jeden weiteren Gegner wiederholt werden kann. In einer normalen Partie ist das ein deterministischer Tisch-Kill und keine tatsächlich endlose Schleife, weil die Zahl der Gegner endlich ist und die Partie anschließend endet. Removal auf eine der beiden Verzauberungs-/Artefaktachsen oder das Verhindern des Lebensgewinns stoppt die Linie.</p>
+<h3>Sensei&#39;s Divining Top + Bolas&#39;s Citadel + Aetherflux Reservoir</h3>
+<ol>
+<li>Sensei&#39;s Divining Top tappen, eine Karte ziehen und den Top auf die Bibliothek legen.</li>
+<li>Den Top über Bolas&#39;s Citadel für 1 Leben erneut vom Bibliotheksanfang wirken.</li>
+<li>Aetherflux Reservoir gewinnt mit jedem Cast zunehmend mehr Leben.</li>
+<li>Den Vorgang wiederholen, Karten ziehen, den Storm-Count erhöhen und Reservoir auf 50-Schaden-Aktivierungen vorbereiten.</li>
+</ol>
+<p>Die Schleife ist durch die Bibliotheksgröße begrenzt und daher nicht mathematisch unendlich. Sie zieht jedoch den Großteil des Decks und ist bei ausreichenden Karten normalerweise spielbeendend. Sie funktioniert vollständig ohne Commander.</p>
+<h3>Sensei&#39;s Divining Top + Gwenom + Aetherflux Reservoir</h3>
+<p>Nach einem Angriff von Gwenom ersetzt ihr Trigger Bolas&#39;s Citadel für diesen Zug: Der Top kann vom Bibliotheksanfang für 1 Leben gewirkt, wieder auf die Bibliothek gelegt und erneut gewirkt werden. Auch diese Linie ist bibliotheksbegrenzt, erzeugt aber sehr viel Kartenzug, Leben und Casts. Sie ist commander-gestützt und wird durch Removal vor dem Angriff, das Verhindern des Angriffs oder Interaktion mit Top beziehungsweise Reservoir unterbrochen.</p>
+<h3>Gwenom-/Citadel-Ketten ohne vollständigen Loop</h3>
+<p>Gwenom oder Bolas’s Citadel wirken auch ohne vollständige Top-/Reservoir-Linie mehrere Karten für Lebenspunkte. Aetherflux Reservoir und die Drain-/Lifegain-Effekte stabilisieren dabei den Lebensstand. Sensei’s Divining Top reduziert das Risiko, sofort an einem Land oder einer unpassenden Karte stehenzubleiben.</p>
 <h3>Aristocrats</h3>
 <p>Blood Artist, Vengeful Bloodwitch und Drivnod verwandeln Kreaturenopfer in erheblichen Schaden. Wriggling Grub, Lord Skitter, Ghoulcaller Gisa, Pitiless Plunderer und mehrere Reanimationseffekte liefern das nötige Material.</p>
 <h3>Weitere Abschlüsse</h3>
@@ -255,6 +267,8 @@
 <li><code>brains/deck-analysis/templates.md</code></li>
 <li><code>brains/bracket/templates.md</code></li>
 <li>Offizielle Commander- und Bracket-Regeln, geprüft am 9. August 2026</li>
+<li>Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026</li>
+<li>Entscheidende Oracle-Kartentexte über Scryfall geprüft am 13. August 2026</li>
 <li>Deckliste: <code>data/decks/decklists/gwen-nom.txt</code></li>
 </ul>
 
@@ -279,7 +293,7 @@
 <details class="sub-accordion">
 <summary>Kurzbegründung</summary>
 <div class="sub-accordion-content">
-<p>Die Liste besitzt zwei Game Changer, flexible Tutoren, eine geplante Zwei-Karten-Endlosschleife und mehrere explosive Ressourcen-Engines. Die Kombo ist mit zehn Gesamtmana jedoch langsam, die Commander-Engine benötigt einen Angriff, und es fehlen eine umfassende Fast-Mana-Suite sowie effizienter Komboschutz. Daher wirkt das Deck wie ein starkes oberes Bracket 3 und noch nicht wie ein konsistentes Bracket 4.</p>
+<p>Die Liste besitzt zwei Game Changer, flexible Tutoren, eine geplante Zwei-Karten-Endlosschleife und drei weitere Aetherflux-Linien. Exquisite Blood plus Aetherflux Reservoir ist erst ab 51 Leben ein wiederholbarer Tisch-Kill; die beiden Sensei&#39;s-Divining-Top-Linien benötigen zusätzlich Bolas&#39;s Citadel oder einen erfolgreichen Gwenom-Angriff. Die Kombinationen sind damit stark, aber mana- oder boardstate-intensiv, und es fehlen eine umfassende Fast-Mana-Suite sowie effizienter Komboschutz. Daher wirkt das Deck wie ein starkes oberes Bracket 3 und noch nicht wie ein konsistentes Bracket 4.</p>
 
 </div>
 </details>
@@ -330,6 +344,7 @@
 <p>Positiv:</p>
 <ul>
 <li>Zwei flexible Tutoren finden die Endlosschleife oder passende Engines.</li>
+<li>Sensei&#39;s Divining Top, Aetherflux Reservoir und Exquisite Blood überschneiden sich in mehreren Siegpfaden.</li>
 <li>Der Commander stellt die zentrale Topdeck-Engine stets bereit.</li>
 <li>Bolas’s Citadel ist eine redundante Version des Commander-Effekts.</li>
 <li>Zahlreiche Kartenvorteilsquellen und Reanimationseffekte unterstützen lange Partien.</li>
@@ -338,6 +353,7 @@
 <p>Negativ:</p>
 <ul>
 <li>Die Endlosschleife besteht aus zwei teuren Einzelkarten.</li>
+<li>Die übrigen Aetherflux-Linien verlangen mindestens 51 Leben, drei Permanents oder einen erfolgreichen Commander-Angriff.</li>
 <li>Nur begrenzte Topdeck-Manipulation für Gwenom und Bolas’s Citadel.</li>
 <li>Die Commander-Engine benötigt einen Angriff und ist dadurch leicht zu unterbrechen.</li>
 <li>Kein umfangreiches Paket aus Fast Mana und günstigem Komboschutz.</li>
@@ -351,6 +367,8 @@
 <ul>
 <li>Zwei zentrale Game Changer</li>
 <li>Exquisite Blood + Sanguine Bond</li>
+<li>Exquisite Blood + Aetherflux Reservoir ab 51 Leben</li>
+<li>Sensei&#39;s Divining Top + Aetherflux Reservoir mit Bolas&#39;s Citadel oder einem Gwenom-Angriff</li>
 <li>Beseech the Mirror und Diabolic Intent</li>
 <li>Gwenom als wiederholt verfügbare Topdeck-Engine</li>
 <li>Starke Lebenspunkt- und Kartenvorteilsengines</li>
@@ -380,7 +398,7 @@
 <details class="sub-accordion">
 <summary>Unsicherheiten</summary>
 <div class="sub-accordion-content">
-<p>Die wichtigste Unsicherheit ist die Deckabsicht: Wird Exquisite Blood + Sanguine Bond regelmäßig mit den Tutoren gesucht und als primärer Siegplan eingesetzt, nähert sich das Spielerlebnis Bracket 4. Wird die Kombination nur gelegentlich gezogen und der Aristocrats-/Reanimator-Plan steht im Vordergrund, passt oberes Bracket 3 besser.</p>
+<p>Die wichtigste Unsicherheit ist die Deckabsicht: Werden die überlappenden Exquisite-Blood-, Aetherflux- und Top-Linien regelmäßig mit den Tutoren gesucht und als primärer Siegplan eingesetzt, nähert sich das Spielerlebnis Bracket 4. Werden die Kombinationen nur gelegentlich zusammengesetzt und der Aristocrats-/Reanimator-Plan steht im Vordergrund, passt oberes Bracket 3 besser.</p>
 <p>Ancient Cellarspawn liegt nur im Maybeboard und wurde nicht mitgezählt. Die Karte würde Gwenom- und Citadel-Zauber in zusätzlichen direkten Schaden verwandeln, änderte allein aber voraussichtlich nicht das Bracket.</p>
 
 </div>
@@ -390,7 +408,7 @@
 <div class="sub-accordion-content">
 <p>Dieses Deck sollte aktuell so kommuniziert werden:</p>
 <blockquote>
-<p>Bracket 3 am oberen Rand; zwei Game Changer und eine langsame, tutorbare Zwei-Karten-Endloskombo aus Exquisite Blood und Sanguine Bond.</p>
+<p>Bracket 3 am oberen Rand; zwei Game Changer, die langsame tutorbare Exquisite-Blood-/Sanguine-Bond-Endlosschleife und mehrere weitere Aetherflux-/Top-Siegpfade.</p>
 </blockquote>
 <p>Falls es für Bracket 2 gebaut werden soll:</p>
 <ul>
@@ -418,6 +436,7 @@
 <ul>
 <li><code>brains/bracket/templates.md</code></li>
 <li>Aktuelle offizielle Commander-Bracket- und Game-Changer-Regeln, geprüft am 9. August 2026</li>
+<li>Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026</li>
 <li>Deckliste: <code>data/decks/decklists/gwen-nom.txt</code></li>
 </ul>
 

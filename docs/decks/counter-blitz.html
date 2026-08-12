@@ -78,7 +78,22 @@
 <summary>Spielplan und Kartenpakete</summary>
 <div class="sub-accordion-content">
 <p>Hardened Scales, Forgotten Ancient, Path of Discovery, Fathom Mage, Gyre Sage und Incubation Druid bauen Marken und Ressourcen auf. Tidus verschiebt Marken auf passende Ziele und proliferiert nach Kampfschaden. Resourceful Defense, Nesting Grounds und Together Forever erhöhen die Flexibilität. Summons und größere Kreaturen bilden Payoffs; Inspiring Call und Protection Magic schützen das Board.</p>
-<p>Farewell und Damning Verdict sind starke Resets. Walking Ballista dient als skalierbarer Removal-/Reach-Payoff, bildet in der vorhandenen Liste aber keine verifizierte Endloskombo.</p>
+<p>Farewell und Damning Verdict sind starke Resets. Walking Ballista dient als skalierbarer Removal-/Reach-Payoff und bildet mit Gatta and Luzzu sowie Hardened Scales eine verifizierte Drei-Karten-Endlosschleife.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Combo- und Loop-Audit</summary>
+<div class="sub-accordion-content">
+<h3>Gatta and Luzzu + Hardened Scales + Walking Ballista</h3>
+<ul>
+<li><strong>Boardstate:</strong> Hardened Scales und Walking Ballista mit mindestens zwei +1/+1-Marken liegen im Spiel. Gatta and Luzzu wird für {2}{W} gewirkt und wählt Walking Ballista für den ETB-Effekt; die Schleife muss noch in diesem Zug ausgeführt werden.</li>
+<li><strong>Ablauf:</strong> Eine Marke wird von Walking Ballista entfernt, um ihr selbst 1 Schaden zuzufügen. Gatta and Luzzu verhindert den Schaden und legt stattdessen eine +1/+1-Marke; Hardened Scales erhöht das auf zwei Marken. Anschließend wird eine Marke entfernt, um einem beliebigen Ziel 1 Schaden zuzufügen. Damit ist der Ausgangszustand wiederhergestellt.</li>
+<li><strong>Ergebnis:</strong> beliebig viel Schaden und beliebig viele +1/+1-Marken auf Walking Ballista.</li>
+<li><strong>Commander beteiligt:</strong> nein.</li>
+<li><strong>Regelcheck:</strong> echte, freiwillig wiederholbare Endlosschleife. Das Entfernen der Marken sind Kosten; Removal auf eine der drei Karten oder das Verhindern der aktivierten Fähigkeit unterbricht die Linie.</li>
+<li><strong>Auffindbarkeit:</strong> gering bis mittel. Die Liste besitzt keine dichte Tutor-Suite und benötigt drei konkrete Karten; deshalb ist die Linie ein seltener Alternativsieg und kein verlässlicher früher Hauptplan.</li>
+</ul>
 
 </div>
 </details>
@@ -107,7 +122,19 @@
 <details class="sub-accordion">
 <summary>Gesamturteil</summary>
 <div class="sub-accordion-content">
-<p>Ein aufgewertetes Marken-Precon mit einem Game Changer, guter Redundanz und solider Interaktion. Es bleibt klar unter optimierten Combo-Decks.</p>
+<p>Ein aufgewertetes Marken-Precon mit einem Game Changer, guter Redundanz, solider Interaktion und einer echten, aber wenig konsistenten Drei-Karten-Endlosschleife. Die Einstufung bleibt Bracket 3, weil die Kombination nicht früh oder zuverlässig auffindbar ist und die Liste weiterhin überwiegend über Combat gewinnt.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Quellenstand</summary>
+<div class="sub-accordion-content">
+<ul>
+<li><code>brains/deck-analysis/templates.md</code></li>
+<li>Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026</li>
+<li>Entscheidende Oracle-Kartentexte über Scryfall geprüft am 13. August 2026</li>
+<li>Deckliste: <code>data/decks/decklists/counter-blitz.txt</code></li>
+</ul>
 
 </div>
 </details>
@@ -123,14 +150,14 @@
 <details class="sub-accordion">
 <summary>Ergebnis</summary>
 <div class="sub-accordion-content">
-<p><strong>Geschätztes Bracket:</strong> 3 – Upgraded<br><strong>Sicherheit:</strong> hoch<br><strong>Prüfstand:</strong> 12. August 2026</p>
+<p><strong>Geschätztes Bracket:</strong> 3 – Upgraded<br><strong>Sicherheit:</strong> hoch<br><strong>Prüfstand:</strong> 13. August 2026</p>
 
 </div>
 </details>
 <details class="sub-accordion">
 <summary>Kurzbegründung</summary>
 <div class="sub-accordion-content">
-<p><code>Farewell</code> ist ein aktueller Game Changer und hebt die Liste mindestens in Bracket 3. Dazu kommen hohe Marken-Redundanz, Proliferate, effizienter Schutz und starke Sweeper; der sichtbare Combat-Plan gewinnt gewöhnlich erst ab Zug 7.</p>
+<p><code>Farewell</code> ist ein aktueller Game Changer und hebt die Liste mindestens in Bracket 3. Dazu kommen hohe Marken-Redundanz, Proliferate, effizienter Schutz, starke Sweeper und eine wenig konsistente Drei-Karten-Endlosschleife; der normale Combat-Plan gewinnt gewöhnlich erst ab Zug 7.</p>
 
 </div>
 </details>
@@ -141,14 +168,25 @@
 <ul>
 <li>Farewell</li>
 </ul>
-<p>Keine erkannte Zwei-Karten-Endloskombo, kein Mass Land Denial und keine Extra-Turn-Schleife.</p>
+<p>Keine erkannte Zwei-Karten-Endloskombo, kein Mass Land Denial und keine Extra-Turn-Schleife. Gatta and Luzzu, Hardened Scales und Walking Ballista bilden jedoch eine echte Drei-Karten-Schleife für beliebig viel Schaden. Ohne dichte Tutor-Suite ist sie kein verlässlicher früher Siegplan.</p>
 
 </div>
 </details>
 <details class="sub-accordion">
 <summary>Tischkommunikation</summary>
 <div class="sub-accordion-content">
-<p>Als Bracket-3-Bant-Counter-Deck mit Farewell, aber ohne Endloskombo ankündigen.</p>
+<p>Als Bracket-3-Bant-Counter-Deck mit Farewell und einer seltenen Drei-Karten-Endlosschleife ankündigen.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Quellenstand</summary>
+<div class="sub-accordion-content">
+<ul>
+<li><code>brains/bracket/templates.md</code></li>
+<li>Commander Spellbook API 6.1.1, vollständiger Combo-Abgleich am 13. August 2026</li>
+<li>Deckliste: <code>data/decks/decklists/counter-blitz.txt</code></li>
+</ul>
 
 </div>
 </details>
