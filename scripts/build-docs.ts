@@ -1,6 +1,7 @@
 import { access, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { marked } from "marked";
+import { parseManaBoxDecklist } from "./lib/decklist-parser.js";
 
 const ROOT_DIR = process.cwd();
 
@@ -375,47 +376,7 @@ async function findCommanderImage(
 }
 
 function extractCommanders(decklist: string | null): string[] {
-    if (!decklist) return [];
-
-    const lines = decklist.split(/\r?\n/);
-
-    const commanderIndex = lines.findIndex(
-        (line) => line.trim().toLowerCase() === "// commander",
-    );
-
-    if (commanderIndex === -1) {
-        return [];
-    }
-
-    const commanders: string[] = [];
-    let commanderSectionStarted = false;
-
-    for (let i = commanderIndex + 1; i < lines.length; i++) {
-        const line = lines[i]?.trim() ?? "";
-
-        if (!line && !commanderSectionStarted) {
-            continue;
-        }
-
-        if (!line && commanderSectionStarted) {
-            break;
-        }
-
-        if (line.startsWith("//")) {
-            break;
-        }
-
-        const match = line.match(/^\d+\s+(.+)$/);
-
-        if (!match?.[1]) {
-            continue;
-        }
-
-        commanderSectionStarted = true;
-        commanders.push(match[1].trim());
-    }
-
-    return commanders;
+    return parseManaBoxDecklist(decklist).commanders;
 }
 
 async function readVariants(savedDeckDir: string): Promise<DeckVariant[]> {

@@ -46,12 +46,25 @@ Bei der Prüfung einer Karteninteraktion gilt folgende Reihenfolge:
 
 1. aktueller Oracle-Text der betroffenen Karten
 2. aktuelle Magic Comprehensive Rules
-3. Commander-spezifische Regeln
-4. offizielle Karten-Rulings
-5. eigene Interpretation
+3. aktuelle Commander-Formatregeln
+4. aktuelle Commander-Banlist und Sonderbeschränkungen
+5. offizielle Karten-Rulings
+6. eigene Interpretation
 
 Eine eigene Interpretation darf den offiziellen Regeln oder dem
 aktuellen Oracle-Text nicht widersprechen.
+
+Offizielle Commander-Übersicht einschließlich aktueller Banlist:
+
+https://magic.wizards.com/en/formats/commander
+
+Formatlegalität und Sonderbeschränkungen müssen getrennt von der
+allgemeinen Kartenlegalität geprüft werden. Dazu gehören insbesondere
+Einschränkungen wie `banned as companion`.
+
+Das Commander-Bracket-System ist eine optionale Einordnung des
+erwarteten Spielerlebnisses. Es ersetzt weder Comprehensive Rules noch
+Formatregeln oder Banlist.
 
 ## Regelprüfung
 
