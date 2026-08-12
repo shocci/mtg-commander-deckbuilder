@@ -36,3 +36,5 @@ pnpm-debug.log*
 # OS files
 .DS_Store
 Thumbs.db
+
+imports/wizards/commander/*.html
