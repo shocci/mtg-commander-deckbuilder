@@ -39,6 +39,33 @@ Die tatsächliche Landanzahl kann abhängig sein von:
 
 ---
 
+# Rollen-Zielwerte
+
+Die folgenden Zahlen sind Zielwerte für die Rollenabdeckung des Decks.
+
+Sie sind nicht als voneinander getrennte Mengen einzigartiger Karten
+zu verstehen und dürfen nicht einfach addiert werden.
+
+Eine Karte kann mehrere Rollen gleichzeitig erfüllen.
+
+Beispiel:
+
+`Loran of the Third Path`
+
+kann gleichzeitig zählen als:
+
+- Card Advantage
+- Targeted Interaction
+
+Die Karte belegt trotzdem nur einen Deckslot.
+
+Dasselbe gilt für Plan Cards.
+
+Eine Karte aus Ramp, Card Advantage oder Interaction kann gleichzeitig
+eine Plan-Rolle als Enabler, Payoff oder Enhancer erfüllen.
+
+---
+
 # Pflichtkarten / Grundstruktur
 
 ## Ramp – Mana-Beschleunigung
@@ -117,7 +144,10 @@ Beispiele:
 
 # Spielplan – Plan Cards
 
-- ca. 30 Karten
+- Ziel: ca. 30 Karten bzw. Rollenbeiträge zum eigentlichen Spielplan
+- Plan Cards sind keine zusätzlichen 30 Karten nach den anderen Kategorien
+- bereits ausgewählte Karten können gleichzeitig als Plan Cards zählen
+- beim Deckbau werden die verbleibenden Deckslots gezielt mit fehlenden Enablern, Payoffs und Enhancern aufgefüllt
 
 Diese Karten machen das Deck strategisch einzigartig.
 
