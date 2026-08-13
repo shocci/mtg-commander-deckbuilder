@@ -2,11 +2,13 @@
 
 ## Zweck
 
-Dieser Workflow erstellt ein Commander-/EDH-Deck weitgehend oder vollständig automatisch.
+Dieser Workflow erstellt ein Commander-/EDH-Deck weitgehend oder
+vollständig automatisch.
 
 Er ist nicht der Standardmodus.
 
-Er wird nur verwendet, wenn der Nutzer ausdrücklich einen automatischen Deckbau ohne schrittweise Kartenbestätigung verlangt.
+Er wird nur verwendet, wenn der Nutzer ausdrücklich einen automatischen
+Deckbau ohne schrittweise Kartenbestätigung verlangt.
 
 Alle gemeinsamen Deckbuilding-Regeln werden aus
 
@@ -14,40 +16,14 @@ Alle gemeinsamen Deckbuilding-Regeln werden aus
 
 übernommen.
 
-Der Automatic-Workflow bestimmt nur, dass die Kartenauswahl ohne Bestätigungsstopps durchgeführt wird.
-
-Er definiert kein eigenes finales Ausgabeformat.
-
----
-
-# 1. Gemeinsame Regeln laden
-
-Vor Beginn müssen die gemeinsamen Deckbuilding-Regeln aus
-
-`brains/deckbuilding/templates.md`
-
-berücksichtigt werden.
-
-Insbesondere gelten daraus:
-
-- Commander- und Decklegalität
-- Standard-Bracket
-- Nutzer-Constraints
-- Template-Auswahl
-- Collection-Regeln
-- Basic-Land-Regeln
-- Multi-Role-Regeln
-- Game-Changer-Prüfung
-- Combo- und Win-Condition-Prüfung
-- gemeinsame Abschlussprüfung
-- gemeinsames finales Ausgabeformat
-- Speicherregeln
+Der Automatic-Workflow verwendet dieselben Auswahl- und Qualitätsregeln
+wie Guided Deckbuilding, aber ohne Bestätigungsstopps.
 
 ---
 
-# 2. Voraussetzungen bestimmen
+# 1. Vorbereitung
 
-Vor der Kartenauswahl müssen bestimmt werden:
+Vor der Kartenauswahl müssen bestimmt oder geladen werden:
 
 - Commander
 - gegebenenfalls mehrere Commander
@@ -57,14 +33,13 @@ Vor der Kartenauswahl müssen bestimmt werden:
 - gewünschte Strategie
 - mögliche Unterstrategien
 - passendes Deckbuilding-Template
-
-Wenn kein Ziel-Bracket genannt wurde, gilt der Standard aus:
-
-`brains/deckbuilding/templates.md`
+- Collection, wenn relevant
+- `brains/deckbuilding/reference/staples.md`
+- aktuelle EDHREC-/vergleichbare Deckdaten, soweit verfügbar
 
 ---
 
-# 3. Deckbuilding-Template auswählen
+# 2. Template auswählen
 
 Das passende strukturelle Deckbuilding-Template wird anhand der Regeln aus
 
@@ -72,237 +47,261 @@ Das passende strukturelle Deckbuilding-Template wird anhand der Regeln aus
 
 ausgewählt.
 
-Wenn kein spezialisiertes Template vorhanden oder ausdrücklich gewünscht ist, verwende:
+Wenn kein spezialisiertes Template vorhanden ist, verwende:
 
 `brains/deckbuilding/templates/standard-100.md`
 
-Das gewählte Template bestimmt die Rollen-Zielwerte und gegebenenfalls besondere strategische Anforderungen.
+---
+
+# 3. Commander-/Strategie-Research
+
+Vor dem eigentlichen Deckbau sollen aktuelle Synergie- und Deckdaten
+geprüft werden.
+
+Wenn verfügbar:
+
+- EDHREC Commander-Daten
+- Themes/Tags
+- Synergy
+- Inclusion Rates
+- High-Synergy-Karten
+- Average-Deck-/vergleichbare Deckdaten
+- vergleichbare aktuelle Decklisten
+- relevante lokale Decks mit ähnlicher Richtung
+
+Diese Daten sind Auswahlhilfe und ersetzen keine Regeln oder
+Nutzer-Constraints.
 
 ---
 
-# 4. Vorgehen
+# 4. Auswahlprinzip
 
-Der automatische Deckbau verwendet grundsätzlich dieselbe Kategorienlogik wie Guided Deckbuilding, aber ohne Stopps für Nutzerbestätigungen.
-
-Die Standardreihenfolge ist, sofern das gewählte Template nichts anderes vorgibt:
-
-1. Länder auswählen
-2. Ramp auswählen
-3. Card Advantage auswählen
-4. Targeted Interaction auswählen
-5. Mass Interaction auswählen
-6. restliche Deckslots mit Plan Cards füllen
-    - Enabler
-    - Payoffs
-    - Enhancer
-7. fertigen Entwurf an die gemeinsamen Abschlussregeln übergeben
-
-Zwischen diesen Kategorien wird nicht auf eine Nutzerbestätigung gewartet.
-
----
-
-# 5. Kartenauswahl
-
-Die Karten sollen nicht ausschließlich danach ausgewählt werden, ob sie allgemein stark sind.
-
-Zu berücksichtigen sind insbesondere:
-
-- Commander-Synergie
-- Strategie
-- gewähltes Deckbuilding-Template
-- Ziel-Bracket
-- Mana Curve
-- Color Requirements
-- Redundanz
-- Resilienz
-- Rollenabdeckung
-- Multi-Role-Funktion
-- Plan-Rollen
-- Collection
-- Budget
-- Nutzer-Constraints
-
----
-
-# 6. Rollenabdeckung
-
-Die Rollen-Zielwerte werden aus dem gewählten Deckbuilding-Template übernommen.
-
-Eine Karte kann mehrere Rollen gleichzeitig erfüllen.
-
-Beispiel:
-
-`Loran of the Third Path`
-
-kann gleichzeitig zählen als:
-
-- Card Advantage
-- Targeted Interaction
-
-Die Karte belegt trotzdem nur einen Deckslot.
-
-Bereits abgedeckte Rollen müssen bei späteren Kategorien berücksichtigt werden.
-
-Wenn beispielsweise während Ramp bereits Karten gewählt wurden, die zusätzlich Card Advantage liefern, reduziert sich entsprechend der noch offene Bedarf in der Card-Advantage-Kategorie.
-
-Rollen-Zielwerte dürfen deshalb nicht einfach addiert werden, um die Deckgröße zu bestimmen.
-
----
-
-# 7. Länder
-
-Die Länderzahl wird aus dem gewählten Template übernommen.
-
-Bei der automatischen Auswahl sollen berücksichtigt werden:
-
-- Color Identity
-- Farbverteilung
-- Farbanforderungen der Spells
-- Mana Curve
-- Utility Lands
-- Fetch-/Dual-/Tri-Land-Synergien
-- getappte Länder
-- Commander-Anforderungen
-- Deckstrategie
-- MDFCs
-- mögliche zusätzliche Rollen der Länder
-
-Basic Lands gelten gemäß den gemeinsamen Regeln aus
+Der Automatic-Workflow folgt derselben Qualitätspriorität aus
 
 `brains/deckbuilding/templates.md`
 
-als automatisch verfügbar.
+wie Guided Deckbuilding.
+
+Bei Collection-first werden zunächst passende Collection-Kandidaten
+priorisiert.
+
+Wenn externe Karten erlaubt sind, können bessere synergistische Karten
+innerhalb der Nutzer- und Budget-Constraints automatisch gewählt werden.
+
+Karten sollen im finalen Ergebnis nach Möglichkeit verlinkt und mit
+Collection-/Preisinformation versehen werden.
 
 ---
 
-# 8. Ramp
+# 5. Reihenfolge
 
-Ramp wird entsprechend dem Zielwert des gewählten Templates ausgewählt.
+Sofern das aktive Template nichts anderes verlangt:
 
-Bereits durch Länder oder andere Multi-Role-Karten abgedeckte Ramp-Rollen werden berücksichtigt.
+1. Ramp
+2. Card Advantage
+3. Targeted Interaction
+4. Mass Interaction
+5. Enabler
+6. Payoffs
+7. Enhancer
+8. Finisher / Win Conditions / Combos / Game Changers
+9. Länder
+10. finaler Template- und Qualitätscheck
 
-Die Auswahl soll zum Commander und Spielplan passen.
+Es gibt keine Nutzerstopps zwischen diesen Schritten.
 
 ---
 
-# 9. Card Advantage
+# 6. Ramp
 
-Card Advantage wird entsprechend dem Zielwert des gewählten Templates ausgewählt.
+Ramp wird entsprechend dem aktiven Template ausgewählt.
 
-Bereits gewählte Multi-Role-Karten werden angerechnet.
+Zusätzlich werden die Ramp-Kandidaten aus
+
+`brains/deckbuilding/reference/staples.md`
+
+geprüft.
+
+Staples sind keine Auto-Includes.
+
+Sie werden nur verwendet, wenn sie gegenüber synergistischeren Optionen
+sinnvoll sind.
+
+---
+
+# 7. Card Advantage
+
+Card Advantage wird entsprechend dem aktiven Template ausgewählt.
+
+Bereits vorhandene Multi-Role-Karten werden angerechnet.
 
 Cantrips zählen nicht automatisch als vollständiger Card-Advantage-Slot.
 
----
-
-# 10. Targeted Interaction
-
-Targeted Interaction wird entsprechend dem Zielwert des gewählten Templates ausgewählt.
-
-Bereits gewählte Multi-Role-Karten werden angerechnet.
-
-Flexible Karten mit mehreren relevanten Modi dürfen bevorzugt werden, wenn sie zum Deckplan passen.
+Synergistische Engines aus EDHREC-/vergleichbaren Deckdaten sollen
+gegen generische Optionen abgewogen werden.
 
 ---
 
-# 11. Mass Interaction
+# 8. Targeted Interaction
 
-Mass Interaction wird entsprechend dem Zielwert des gewählten Templates ausgewählt.
+Targeted Interaction wird entsprechend dem aktiven Template ausgewählt.
 
-Die Auswahl muss zum eigenen Board und Spielplan passen.
-
-Bereits gewählte Multi-Role-Karten werden angerechnet.
+Flexible Multi-Role-Karten sollen besonders berücksichtigt werden, wenn
+sie zur Strategie passen.
 
 ---
 
-# 12. Plan Cards
+# 9. Mass Interaction
 
-Plan Cards werden nicht automatisch als zusätzliche feste Anzahl von Karten auf die anderen Kategorien addiert.
+Mass Interaction wird entsprechend dem aktiven Template ausgewählt.
 
-Stattdessen muss geprüft werden:
+Die Auswahl soll das eigene Board und die Strategie berücksichtigen.
 
-- welche bereits ausgewählten Karten Plan-Rollen erfüllen
-- wie viele einzigartige Deckslots bereits belegt sind
-- welche Plan-Rollen noch fehlen
-- wie viele Deckslots noch verfügbar sind
+---
 
-Restliche Slots sollen gezielt mit passenden
+# 10. Plan Cards
 
-- Enablern
-- Payoffs
-- Enhancern
+Plan Cards werden nicht einfach zusätzlich auf die anderen Kategorien
+addiert.
 
-gefüllt werden.
+Bereits ausgewählte Karten können zugleich Enabler, Payoff oder Enhancer
+sein.
 
-Die konkrete Verteilung richtet sich nach:
+Restliche Slots werden anhand der fehlenden strategischen Rollen gefüllt.
+
+## Reihenfolge
+
+1. Enabler
+2. Payoffs
+3. Enhancer
+
+Die Verteilung richtet sich nach:
 
 - Commander
 - Strategie
-- gewähltem Template
-- bereits ausgewählten Karten
+- aktivem Template
+- EDHREC-/vergleichbaren Deckdaten
 - vorhandenen Engines
-- benötigter Redundanz
+- Redundanz
 - Win Conditions
-- noch freien Deckslots
-
-Wenn das gewählte Template ausdrückliche Zielwerte für diese Rollen definiert, haben diese Vorrang.
+- noch freien Slots
 
 ---
 
-# 13. Collection
+# 11. Finisher-, Wincon-, Combo- und Game-Changer-Pass
 
-Wenn Collection-Nutzung relevant ist, verwende:
+Vor der Manabase wird das bisherige Spell-Paket gezielt geprüft auf:
 
-`data/collection.json`
+- Finisher
+- primäre Win Conditions
+- sekundäre Win Conditions
+- Combat-Finisher
+- alternative Win Conditions
+- Zwei-, Drei- und mehrteilige Combos
+- Commander-gestützte Combos
+- Infinite Loops
+- deterministische Win-Lines
+- passende Game Changers innerhalb des Ziel-Brackets
 
-Bei Collection-first sollen vorhandene Karten bevorzugt werden.
+EDHREC-/vergleichbare Deckdaten werden erneut auf typische und
+synergistische Finisher geprüft.
 
-Für Basic Lands gelten die gemeinsamen Regeln aus:
+Wenn ein schwacher Slot durch eine bessere Option ersetzt werden kann,
+darf der Automatic-Workflow den Swap innerhalb der Nutzer-Constraints
+vornehmen.
+
+Relevante verworfene Alternativen können im Maybe Board festgehalten
+werden.
+
+---
+
+# 12. Länder zuletzt
+
+Die endgültige Manabase wird erst nach dem Spell-Paket und dem
+Finisher-Pass gebaut.
+
+Zu berücksichtigen sind:
+
+- tatsächliche Farbpips
+- Mana Curve
+- Commander
+- Ramp-Dichte
+- Utility Lands
+- MDFCs
+- Land-Synergien
+- erforderliche Farbquellen
+
+Die Landzahl stammt aus dem aktiven Template.
+
+---
+
+# 13. Maybe Board
+
+Auch der Automatic-Workflow kann ein Maybe Board führen.
+
+Darin können starke Alternativen festgehalten werden, die wegen Slot-,
+Budget-, Bracket- oder Rollenentscheidungen nicht in die Hauptliste
+aufgenommen wurden.
+
+Das Maybe Board zählt nicht zur Deckgröße.
+
+Beim finalen Qualitätscheck wird es zuerst als Swap-Pool geprüft.
+
+---
+
+# 14. Finaler Template- und Qualitätscheck
+
+Nach der Manabase wird das vollständige Deck anhand von
 
 `brains/deckbuilding/templates.md`
 
-Wenn externe Karten verwendet oder empfohlen werden, gelten die ausdrücklichen Budget- und Kauf-Constraints des Nutzers.
+und dem aktiven Template geprüft.
+
+Zu prüfen sind:
+
+- Deckgröße
+- Legalität
+- Color Identity
+- Singleton
+- Banlist
+- Länder
+- Farbquellen
+- Mana Curve
+- Ramp
+- Card Advantage
+- Targeted Interaction
+- Mass Interaction
+- Enabler
+- Payoffs
+- Enhancer
+- Finisher
+- Win Conditions
+- Combo-Linien
+- Game Changers
+- Ziel-Bracket
+- Nutzer-Constraints
+- schwache oder redundante Slots
+
+Wenn sinnvolle Verbesserungen erkannt werden, darf der Automatic-Workflow
+diese innerhalb der Constraints direkt anwenden.
+
+Zuerst sollen passende Maybe-Board-Kandidaten geprüft werden.
 
 ---
 
-# 14. Vollständigen Entwurf erzeugen
+# 15. Finale Ausgabe
 
-Der automatische Workflow baut ohne Zwischenstopps einen vollständigen Deckentwurf.
-
-Dabei muss insbesondere sichergestellt werden:
-
-- korrekte Anzahl einzigartiger Deckslots
-- Rollenabdeckung gemäß Template
-- sinnvolle Mana Base
-- sinnvolle Mana Curve
-- ausreichende strategische Dichte
-- erkennbare Win Conditions
-- Berücksichtigung von Multi-Role-Karten
-- Einhaltung der Nutzer-Constraints
-
-Der Automatic-Workflow darf Rollen-Zielwerte nicht als voneinander unabhängige Kartenmengen addieren.
-
----
-
-# 15. Übergabe an die gemeinsamen Abschlussregeln
-
-Nach Fertigstellung des Deckentwurfs wird dieser an die gemeinsamen Abschlussregeln aus
+Das finale Ergebnis verwendet ausschließlich das gemeinsame Ausgabeformat
+aus:
 
 `brains/deckbuilding/templates.md`
 
-übergeben.
+Karten sollen nach Möglichkeit verlinkt werden.
 
-Insbesondere müssen dort durchgeführt werden:
+Collection-Karten werden als `Collection` markiert.
 
-- gemeinsame Abschlussprüfung
-- Decklegalitätsprüfung
-- Combo- und Win-Condition-Prüfung
-- Game-Changer-Prüfung
-- Bracket-Bewertung
-- Rule-0-Ausgabe, wenn verfügbar
-- finales gemeinsames Ausgabeformat
-
-Der Automatic-Workflow definiert kein eigenes finales Ausgabeformat.
+Externe Karten erhalten einen aktuellen ungefähren Preis, wenn dieser
+verlässlich ermittelt werden konnte.
 
 ---
 
@@ -310,7 +309,8 @@ Der Automatic-Workflow definiert kein eigenes finales Ausgabeformat.
 
 Der automatisch erzeugte Deckvorschlag ist zunächst ein Arbeitsstand.
 
-Er wird erst gespeichert oder als bestehende Hauptversion ersetzt, wenn der Nutzer dies bestätigt.
+Er wird erst gespeichert oder als bestehende Hauptversion ersetzt, wenn
+der Nutzer dies bestätigt.
 
 Für Speicherung und Versionierung gelten die gemeinsamen Projektregeln aus
 

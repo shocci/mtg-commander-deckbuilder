@@ -2,7 +2,8 @@
 
 ## Zweck
 
-Dieser Workflow beschreibt den schrittweisen, geführten Deckbau eines Commander-/EDH-Decks.
+Dieser Workflow beschreibt den schrittweisen, geführten Deckbau eines
+Commander-/EDH-Decks.
 
 Guided Deckbuilding ist der Standardmodus.
 
@@ -12,17 +13,19 @@ Die gemeinsamen Deckbuilding-Regeln werden aus
 
 übernommen.
 
-Der Guided-Workflow bestimmt nur, wie die Kartenauswahl gemeinsam mit dem Nutzer Schritt für Schritt durchgeführt wird.
+Der Guided-Workflow bestimmt, wie die Kartenauswahl gemeinsam mit dem
+Nutzer Schritt für Schritt durchgeführt wird.
 
-Er definiert kein eigenes finales Ausgabeformat.
+Das finale Ausgabeformat stammt aus `brains/deckbuilding/templates.md`.
 
 ---
 
 # Grundprinzip
 
-Der Guided-Workflow arbeitet Kategorie für Kategorie.
+Der Guided-Workflow arbeitet Abschnitt für Abschnitt.
 
-Nach jeder Kategorie wird die Auswahl dem Nutzer gezeigt.
+Nach jedem Auswahlabschnitt wird gestoppt und auf die Entscheidung des
+Nutzers gewartet.
 
 Der Nutzer kann:
 
@@ -31,63 +34,16 @@ Der Nutzer kann:
 - Alternativen wählen
 - neue Alternativen verlangen
 - Karten ausschließen
+- Karten ins Maybe Board verschieben
+- Karten aus dem Maybe Board zurückholen
 
-Erst nach Bestätigung der aktuellen Kategorie wird mit der nächsten Kategorie fortgefahren.
-
-Es darf nicht automatisch bis zum vollständigen Deck weitergebaut werden, wenn der Nutzer den aktuellen Auswahlblock noch nicht bestätigt hat.
-
----
-
-# 1. Gemeinsame Regeln laden
-
-Vor Beginn müssen die gemeinsamen Deckbuilding-Regeln aus
-
-`brains/deckbuilding/templates.md`
-
-berücksichtigt werden.
-
-Insbesondere gelten daraus:
-
-- Commander- und Decklegalität
-- Standard-Bracket
-- Nutzer-Constraints
-- Template-Auswahl
-- Collection-Regeln
-- Basic-Land-Regeln
-- Multi-Role-Regeln
-- Game-Changer-Prüfung
-- Combo- und Win-Condition-Prüfung
-- gemeinsame Abschlussprüfung
-- gemeinsames finales Ausgabeformat
-- Speicherregeln
+Erst nach Bestätigung des aktuellen Abschnitts wird weitergebaut.
 
 ---
 
-# 2. Template auswählen
+# 1. Vorbereitung
 
-Vor Beginn der Kartenauswahl muss gemäß
-
-`brains/deckbuilding/templates.md`
-
-ein passendes strukturelles Deckbuilding-Template aus
-
-`brains/deckbuilding/templates/`
-
-bestimmt werden.
-
-Wenn kein spezialisiertes Template vorhanden oder ausdrücklich gewünscht ist, verwende:
-
-`brains/deckbuilding/templates/standard-100.md`
-
-Das gewählte Template wird zu Beginn genannt.
-
-Es bleibt während des laufenden Guided-Workflows aktiv, solange der Nutzer keinen Template-Wechsel verlangt.
-
----
-
-# 3. Commander und Strategie bestimmen
-
-Vor der ersten Kartenauswahl müssen bestimmt werden:
+Vor der ersten Kartenauswahl müssen bestimmt oder geladen werden:
 
 - Commander
 - gegebenenfalls mehrere Commander
@@ -95,10 +51,13 @@ Vor der ersten Kartenauswahl müssen bestimmt werden:
 - Ziel-Bracket
 - grundlegende Strategie
 - mögliche Unterstrategien
-- gewähltes Deckbuilding-Template
 - relevante Nutzer-Constraints
+- Collection, wenn relevant
+- passendes Deckbuilding-Template
+- `brains/deckbuilding/reference/staples.md`
+- aktuelle EDHREC-/vergleichbare Deckdaten, soweit verfügbar
 
-Die Legalität des Commanders und der Color Identity muss gemäß
+Die Legalität muss gemäß
 
 `brains/rules/magic-rules.md`
 
@@ -106,346 +65,258 @@ geprüft werden.
 
 ---
 
-# 4. Collection als primäre Kartenquelle
+# 2. Template auswählen
 
-Wenn die Collection für den Auftrag relevant ist, verwende:
-
-`data/collection.json`
-
-Im Guided-Workflow sollen Karten aus der Collection für die Hauptauswahl bevorzugt werden.
-
-Basic Lands gelten gemäß den gemeinsamen Regeln aus
+Die Template-Auswahl erfolgt gemäß
 
 `brains/deckbuilding/templates.md`
 
-als automatisch verfügbar.
+aus:
+
+`brains/deckbuilding/templates/`
+
+Wenn kein passendes spezialisiertes Template vorhanden ist, verwende:
+
+`brains/deckbuilding/templates/standard-100.md`
+
+Das gewählte Template wird zu Beginn genannt und bleibt aktiv, solange
+der Nutzer keinen Wechsel verlangt.
 
 ---
 
-# 5. Externe Alternativen
+# 3. Commander-/Strategie-Research
 
-Zu jeder Auswahlstufe dürfen zusätzlich Karten vorgeschlagen werden, die nicht in der Collection vorhanden sind.
+Bevor Karten vorgeschlagen werden, soll der Commander bzw. die gewählte
+Strategie anhand aktueller externer Daten eingeordnet werden.
+
+Wenn verfügbar, prüfe insbesondere:
+
+- EDHREC Commander-Seite
+- passende EDHREC Themes/Tags
+- High-Synergy-Karten
+- Inclusion Rates
+- typische Engines
+- typische Payoffs
+- typische Win Conditions
+- vergleichbare Decklisten und Average-Deck-Daten
+- lokale Decks mit ähnlicher Richtung, wenn relevant
+
+Ergebnis dieses Schritts ist eine Auswahlbasis für die folgenden
+Kategorien.
+
+Nicht automatisch die populärsten Karten übernehmen.
+
+Die Daten sollen helfen, Synergie, Redundanz und bewährte Pakete zu
+erkennen.
+
+---
+
+# 4. Hauptauswahl vs. Alternativen
+
+## Hauptauswahl
+
+Wenn Collection-first aktiv ist, soll die Hauptauswahl grundsätzlich aus
+der Collection stammen.
+
+Innerhalb der Collection-Kandidaten wird priorisiert nach:
+
+1. Rollenfit
+2. Commander-/Strategie-Synergie
+3. EDHREC-/vergleichbaren Deckdaten
+4. Multi-Role-Nutzen
+5. Mana Curve
+6. Ziel-Bracket
+
+Die Hauptauswahl enthält genau so viele neue Karten, wie zur aktuellen
+Rollenabdeckung noch benötigt werden.
+
+## Alternativen
+
+Zu jedem Auswahlabschnitt werden zusätzlich genau 5 Alternativen gezeigt.
+
+Die Alternativen sollen stärker nach Synergie als nach Collection-Besitz
+priorisiert werden.
+
+Priorität:
+
+1. Commander-/Strategie-Synergie
+2. EDHREC-/vergleichbare Deckdaten
+3. Rollenfit
+4. Multi-Role-Nutzen
+5. Mana Curve / Resilienz
+6. Collection-Status
+7. Preislimit
+
+Alternativen dürfen aus der Collection oder extern sein.
 
 Für externe Alternativen gilt standardmäßig:
 
-- maximal 5 Euro pro Einzelkarte
-- das Preislimit gilt nur für Karten, die nicht in der Collection vorhanden sind
-- Karten aus der eigenen Collection unterliegen diesem Preislimit nicht
-- der Preis soll aus einer aktuellen und geeigneten Kartenquelle stammen
-- wenn kein ausreichend verlässlicher Preis bestimmbar ist, soll die Karte nicht als externe Alternative vorgeschlagen werden
+**maximal 5 Euro pro Einzelkarte**
 
-Das Preislimit bezieht sich auf einen üblichen verfügbaren Einzelkartenpreis und nicht auf spezielle Foils, Promos oder besonders seltene Printings.
-
-Wenn der Nutzer ausdrücklich ein anderes Budget nennt, überschreibt dieses das Standardlimit.
+sofern der Nutzer kein anderes Limit nennt.
 
 ---
 
-# 6. Rollen statt exklusiver Kategorien
+# 5. Kartenanzeige
 
-Die Multi-Role-Regeln aus
+Konkrete Karten sollen möglichst direkt auf ihre Scryfall-Seite verlinkt
+werden.
 
-`brains/deckbuilding/templates.md`
+Die Besitz-/Preisanzeige erfolgt kompakt:
 
-gelten vollständig.
+```text
+1. [Karte A] — Collection
+2. [Karte B] — ca. 2,40 €
+```
 
-Eine Karte kann gleichzeitig mehrere Rollen erfüllen.
+Bei Collection-Karten wird kein Preis benötigt.
+
+Bei externen Karten muss ein aktueller verlässlicher Preis vorliegen.
+
+Wenn zusätzlich Synergie-Daten vorliegen, können sie darunter angezeigt
+werden:
+
+```text
+A1. [Karte A] — ca. 1,80 €
+    Rollen: Ramp, Enabler
+    EDHREC Synergy: +XX %
+    Grund: ...
+```
+
+Prozentwerte nur ausgeben, wenn sie tatsächlich aus einer aktuellen
+Quelle ermittelt wurden.
+
+---
+
+# 6. Maybe Board
+
+Während des gesamten Workflows wird ein Maybe Board geführt.
+
+Eine Karte kann ins Maybe Board aufgenommen werden, wenn:
+
+- sie eine starke Alternative ist, aber aktuell kein Slot frei ist
+- sie vom Nutzer nicht sofort ausgewählt wird, aber später relevant sein könnte
+- sie mehrere Rollen erfüllt und für den Abschlusscheck interessant ist
+- sie als Finisher, Wincon, Combo-Teil oder Sidegrade später erneut geprüft werden soll
 
 Beispiel:
 
-`Loran of the Third Path`
+```text
+Maybe Board
 
-kann gleichzeitig zählen als:
+- [Karte A] — Collection
+  Rollen: Ramp, Enabler
+  Grund: guter Swap, falls später Ramp fehlt
 
-- Card Advantage
-- Targeted Interaction
+- [Karte B] — ca. 1,20 €
+  Rollen: Payoff
+  Grund: hohe Commander-Synergie
+```
 
-Die Karte belegt trotzdem nur einen Deckslot.
-
-Zusätzlich kann dieselbe Karte eine Plan-Rolle erfüllen.
+Das Maybe Board zählt nicht zur Deckgröße und nicht zur Rollenabdeckung.
 
 ---
 
 # 7. Rollenabdeckung
 
-Nach jeder bestätigten Auswahl muss die aktuelle Rollenabdeckung neu berechnet werden.
+Nach jeder bestätigten Auswahl wird die Rollenabdeckung neu berechnet.
+
+Multi-Role-Karten zählen in allen passenden Rollen, aber nur einmal als
+Deckslot.
 
 Beispiel:
 
 ```text
-Deckslots: 51 / 100
+Deckslots: 43 / 100
 
-Länder:                 38 / 38
-Ramp:                     7 / 10
-Card Advantage:            5 / 12
-Targeted Interaction:      4 / 12
-Mass Interaction:          1 / 6
+Ramp:                    10 / 10
+Card Advantage:           4 / 12
+Targeted Interaction:     3 / 12
+Mass Interaction:         1 / 6
 ```
 
-Eine bereits gewählte Karte kann dazu führen, dass eine spätere Kategorie teilweise oder vollständig abgedeckt ist.
+---
+
+# 8. Standardreihenfolge
+
+Sofern das gewählte Template keine ausdrücklich andere Reihenfolge
+vorgibt, gilt:
+
+1. Ramp
+2. Card Advantage
+3. Targeted Interaction
+4. Mass Interaction
+5. Plan Cards – Enabler
+6. Plan Cards – Payoffs
+7. Plan Cards – Enhancer
+8. Finisher / Win Conditions / Combos / Game Changers
+9. Länder
+10. Finaler Template- und Qualitätscheck
+
+Das Maybe Board läuft parallel über alle Schritte.
 
 ---
 
-# 8. Auswahlreihenfolge
+# 9. Ramp
 
-Sofern das gewählte Template keine ausdrücklich andere Reihenfolge vorgibt, wird diese Reihenfolge verwendet:
+Der Ramp-Zielwert wird aus dem gewählten Template gelesen.
 
-1. Länder
-2. Ramp
-3. Card Advantage
-4. Targeted Interaction
-5. Mass Interaction
-6. Plan Cards
-    - Enabler
-    - Payoffs
-    - Enhancer
-7. gemeinsame Abschlussprüfung
+Vor der Auswahl müssen die Ramp-Kandidaten aus
 
----
+`brains/deckbuilding/reference/staples.md`
 
-# 9. Auswahlmenge pro Kategorie
+mitgeprüft werden.
 
-Für jede Kategorie wird zuerst der Zielwert aus dem gewählten Template gelesen.
+Eine Staple-Karte ist kein Auto-Include.
 
-Danach wird geprüft, wie viele Rollenpunkte bereits durch zuvor gewählte Karten erfüllt sind.
+Es muss geprüft werden, ob sie:
 
-Beispiel:
+- legal ist
+- zum Bracket passt
+- zur Strategie passt
+- gegenüber synergistischeren Optionen sinnvoll ist
 
-```text
-Ramp Ziel: 10
-Bereits abgedeckt: 3
-Neu benötigt: 7
-```
+Bereits durch Multi-Role-Karten abgedeckte Ramp-Rollen werden angerechnet.
 
-Es werden in diesem Schritt nur noch so viele Hauptkarten vorgeschlagen, wie für die Rollenabdeckung tatsächlich fehlen.
+Danach:
 
-Wenn eine Kategorie bereits vollständig durch Multi-Role-Karten abgedeckt ist, muss dort keine zusätzliche Hauptauswahl erzwungen werden.
-
-Der Workflow zeigt dann die vollständige Abdeckung und fährt nach Bestätigung mit der nächsten Kategorie fort.
+- Hauptauswahl anzeigen
+- genau 5 Alternativen anzeigen
+- Maybe-Board-Kandidaten markieren
+- auf Nutzerbestätigung warten
 
 ---
 
-# 10. Hauptauswahl
+# 10. Card Advantage
 
-Die Hauptauswahl enthält genau so viele Karten, wie für die aktuelle Kategorie noch benötigt werden.
+Der Zielwert wird aus dem aktiven Template gelesen.
 
-Die Hauptauswahl soll bevorzugt aus der Collection stammen.
+Bereits vorhandene Multi-Role-Karten werden angerechnet.
 
-Die Auswahl soll nicht nur generisch gute Karten enthalten, sondern zum Commander, zur Strategie und zum gewählten Template passen.
+Bevorzugt werden Karten, die:
+
+- echten oder wiederholbaren Kartenvorteil erzeugen
+- zur Commander-Strategie passen
+- über EDHREC oder vergleichbare Deckdaten als synergistisch auffallen
+- zusätzliche Rollen erfüllen
+
+Cantrips zählen nicht automatisch als vollständiger
+Card-Advantage-Slot.
+
+Danach:
+
+- Hauptauswahl
+- genau 5 Alternativen
+- Maybe Board aktualisieren
+- Nutzerbestätigung
+
+---
+
+# 11. Targeted Interaction
+
+Der Zielwert wird aus dem aktiven Template gelesen.
 
 Zu berücksichtigen sind insbesondere:
-
-- Synergie mit dem Commander
-- Mana Curve
-- bestehende Rollenabdeckung
-- Farbanforderungen
-- vorhandene Karten
-- Redundanz
-- Spielplan
-- mögliche Multi-Role-Funktion
-- Plan-Rollen
-- Ziel-Bracket
-- Nutzer-Constraints
-
----
-
-# 11. Genau fünf Alternativen
-
-Zu jeder Auswahlstufe werden zusätzlich genau 5 Alternativen gezeigt.
-
-Die Alternativen zählen zunächst nicht zum Deck.
-
-Sie dürfen sein:
-
-- Karten aus der Collection
-- Karten außerhalb der Collection
-
-Für externe Karten gilt das festgelegte Preislimit.
-
-Die fünf Alternativen sollen möglichst unterschiedliche Gründe für einen Tausch bieten.
-
-Beispiele:
-
-- günstigere Mana-Kosten
-- stärkere Synergie
-- mehr Flexibilität
-- zusätzlicher Card Advantage
-- zusätzliche Interaction
-- bessere Budget-Option
-- höhere Resilienz
-- zusätzlicher Plan-Card-Nutzen
-- bessere Rollenüberschneidung
-
-Es sollen nicht fünf nahezu identische Karten ohne erkennbaren Unterschied vorgeschlagen werden.
-
----
-
-# 12. Ausgabe einer Auswahlstufe
-
-Jede Kategorie soll ungefähr so dargestellt werden:
-
-```text
-Ramp
-
-Template-Ziel: 10
-Bereits abgedeckt: 2
-Neu benötigt: 8
-
-Hauptauswahl
-
-1. Karte A
-   Collection: ja
-   Rollen: Ramp
-
-2. Karte B
-   Collection: ja
-   Rollen: Ramp, Card Advantage
-
-...
-
-8. Karte H
-   Collection: ja
-   Rollen: Ramp, Enabler
-
-Alternativen
-
-A1. Karte I
-    Collection: ja
-    Rollen: Ramp, Card Advantage
-
-A2. Karte J
-    Collection: nein
-    Preis: ca. 3,50 €
-    Rollen: Ramp
-
-A3. Karte K
-    Collection: ja
-    Rollen: Ramp, Enabler
-
-A4. Karte L
-    Collection: nein
-    Preis: ca. 1,80 €
-    Rollen: Ramp, Targeted Interaction
-
-A5. Karte M
-    Collection: ja
-    Rollen: Ramp
-```
-
-Bei besonders relevanten Karten soll kurz erkennbar sein, warum sie vorgeschlagen wurden.
-
----
-
-# 13. Auf Nutzerauswahl warten
-
-Nach jeder Kategorie wird der Workflow angehalten.
-
-Beispiele für gültige Nutzerantworten:
-
-```text
-passt
-```
-
-```text
-A2 statt Nummer 4
-```
-
-```text
-Karte 3 raus, gib mir dafür 5 neue Alternativen
-```
-
-```text
-keine Karten außerhalb meiner Collection
-```
-
-Die Auswahl wird entsprechend aktualisiert.
-
-Danach wird die Rollenabdeckung neu berechnet.
-
-Erst anschließend wird die nächste Kategorie begonnen.
-
----
-
-# 14. Länder
-
-Die Länderzahl wird aus dem gewählten Template übernommen.
-
-Bei der Auswahl sollen berücksichtigt werden:
-
-- Color Identity
-- Farbverteilung
-- farbige Anforderungen in niedrigen Mana Values
-- Utility Lands
-- Fetch-/Dual-/Tri-Land-Synergien
-- getappte Länder
-- Commander-Anforderungen
-- Deckstrategie
-- Landfall oder andere Land-Synergien
-- MDFCs
-
-Basic Lands gelten als verfügbar.
-
-Länder können zusätzlich andere Rollen erfüllen.
-
-Beispiele:
-
-- Ramp
-- Card Advantage
-- Targeted Interaction
-- Enabler
-
-Nach der Länderauswahl wird auf Nutzerbestätigung gewartet.
-
----
-
-# 15. Ramp
-
-Ramp umfasst Karten, die den verfügbaren Mana-Zugriff sinnvoll erhöhen oder Manaentwicklung beschleunigen.
-
-Dazu können gehören:
-
-- Mana Rocks
-- Mana Dorks
-- Land Ramp
-- Cost Reduction
-- Rituals, wenn sie für den konkreten Spielplan relevant sind
-- andere wiederholbare Manaquellen
-
-Nicht jede Form von Manaerzeugung muss automatisch als vollständiger Ramp-Slot zählen.
-
-Die Einordnung muss zur Funktion im konkreten Deck passen.
-
-Bereits durch Länder oder andere zuvor gewählte Karten abgedeckte Ramp-Rollen werden angerechnet.
-
-Nach der Ramp-Auswahl wird auf Nutzerbestätigung gewartet.
-
----
-
-# 16. Card Advantage
-
-Card Advantage umfasst Effekte, die realen oder wiederholbaren Ressourcenvorteil erzeugen.
-
-Dazu können gehören:
-
-- Karten ziehen
-- wiederholbare Draw Engines
-- Impulse Draw
-- relevante Exile-Play-Effekte
-- zusätzliche Kartennutzung aus Graveyard oder anderen Zonen
-- Commander-basierte Draw Engines
-
-Cantrips zählen nicht automatisch als vollständiger Card-Advantage-Slot.
-
-Bereits gewählte Multi-Role-Karten werden angerechnet.
-
-Nach der Card-Advantage-Auswahl wird auf Nutzerbestätigung gewartet.
-
----
-
-# 17. Targeted Interaction
-
-Targeted Interaction umfasst gezielte Antworten auf gegnerische Bedrohungen.
-
-Dazu gehören beispielsweise:
 
 - Creature Removal
 - Artifact Removal
@@ -453,231 +324,284 @@ Dazu gehören beispielsweise:
 - Planeswalker Removal
 - Counterspells
 - Graveyard Interaction
-- flexible Removal-Spells
+- flexible Antworten
 
-Karten mit mehreren Modi sind besonders relevant, wenn sie gleichzeitig andere Rollen erfüllen.
+Multi-Role-Karten sind besonders wertvoll.
 
-Bereits gewählte Multi-Role-Karten werden angerechnet.
+Danach:
 
-Nach der Auswahl wird auf Nutzerbestätigung gewartet.
+- Hauptauswahl
+- genau 5 Alternativen
+- Maybe Board aktualisieren
+- Nutzerbestätigung
 
 ---
 
-# 18. Mass Interaction
+# 12. Mass Interaction
 
-Mass Interaction umfasst Effekte, die mehrere relevante Permanents, Spielerressourcen oder Boardstates gleichzeitig beeinflussen.
+Der Zielwert wird aus dem aktiven Template gelesen.
 
-Dazu können gehören:
+Zu berücksichtigen sind:
 
 - Boardwipes
 - Mass Bounce
 - Mass Exile
-- asymmetrische Boardwipes
+- asymmetrische Wipes
 - andere breit wirkende Reset-Effekte
 
 Die Auswahl muss zum eigenen Board und Spielplan passen.
 
-Bereits gewählte Multi-Role-Karten werden angerechnet.
+Danach:
 
-Nach der Auswahl wird auf Nutzerbestätigung gewartet.
-
----
-
-# 19. Plan Cards
-
-Plan Cards werden nicht als feste zusätzliche Kartenmenge auf die vorherigen Kategorien addiert.
-
-Stattdessen wird nach Abschluss der vorherigen Kategorien geprüft:
-
-- wie viele einzigartige Deckslots bereits belegt sind
-- wie viele Deckslots noch frei sind
-- welche bereits gewählten Karten schon Plan-Rollen erfüllen
-- welche strategischen Rollen noch fehlen
-
-Plan Cards werden hauptsächlich unterteilt in:
-
-## Enabler
-
-Karten, die den zentralen Spielplan ermöglichen oder vorbereiten.
-
-## Payoffs
-
-Karten, die für das Ausführen des Spielplans einen starken Vorteil oder eine Win Condition liefern.
-
-## Enhancer
-
-Karten, die einen bereits funktionierenden Spielplan stärker, konsistenter, schneller oder resilienter machen.
+- Hauptauswahl
+- genau 5 Alternativen
+- Maybe Board aktualisieren
+- Nutzerbestätigung
 
 ---
 
-# 20. Restliche Deckslots mit Plan Cards füllen
+# 13. Plan Cards
 
-Nach Abschluss von:
+Plan Cards werden nicht als feste zusätzliche Kartenmenge auf die
+vorherigen Kategorien addiert.
 
-- Ländern
-- Ramp
-- Card Advantage
-- Targeted Interaction
-- Mass Interaction
-
-werden die bereits belegten einzigartigen Deckslots gezählt.
-
-Die verbleibenden Slots werden mit Plan Cards gefüllt.
-
-Beispiel:
-
-```text
-Commander: 1
-Bisherige einzigartige Karten: 68
-
-Noch freie Slots:
-31
-```
-
-Dann werden genau die verbleibenden Slots über:
+Bereits ausgewählte Karten können zugleich sein:
 
 - Enabler
-- Payoffs
-- Enhancer
-
-gefüllt.
-
-Bereits vorhandene Plan-Rollen bleiben dabei vollständig angerechnet.
-
----
-
-# 21. Bereits vorhandene Plan-Rollen berücksichtigen
-
-Vor der Plan-Card-Auswahl muss geprüft werden, welche zuvor gewählten Karten bereits Plan-Rollen erfüllen.
-
-Beispiel:
-
-```text
-Bereits vorhandene Plan-Rollen
-
-Enabler: 8
-Payoffs: 5
-Enhancer: 6
-```
-
-Diese Karten bleiben gleichzeitig in ihren anderen Rollen angerechnet.
-
-Eine Karte kann zum Beispiel gleichzeitig sein:
-
-- Ramp
-- Enabler
-
-oder:
-
-- Card Advantage
 - Payoff
-
-oder:
-
-- Targeted Interaction
 - Enhancer
+
+Vor jeder Plan-Kategorie wird deshalb geprüft, wie viel Rollenabdeckung
+bereits vorhanden ist.
 
 ---
 
-# 22. Verteilung von Enabler, Payoff und Enhancer
+# 14. Enabler
 
-Die genaue Verteilung wird nicht pauschal fest vorgegeben, sofern das gewählte Deckbuilding-Template keine ausdrücklichen Zielwerte dafür definiert.
+Enabler ermöglichen oder beschleunigen den eigentlichen Spielplan.
 
-Sie richtet sich nach:
+Die Auswahl erfolgt anhand von:
 
-- Commander
-- Strategie
-- gewähltem Template
-- bereits ausgewählten Karten
-- vorhandenen Engines
-- benötigter Redundanz
-- Win Conditions
-- noch freien Deckslots
+- Commander-Synergie
+- EDHREC-/Theme-Synergie
+- bestehenden Engines
+- Redundanz
+- bereits vorhandenen Plan-Rollen
 
-Vor Beginn der Plan-Card-Auswahl soll kurz eine vorgeschlagene Verteilung der noch freien Slots gezeigt werden.
+Danach:
+
+- Hauptauswahl
+- genau 5 Alternativen
+- Maybe Board aktualisieren
+- Nutzerbestätigung
+
+---
+
+# 15. Payoffs
+
+Payoffs belohnen das Deck dafür, seinen Plan auszuführen.
+
+Bei der Auswahl sollen insbesondere geprüft werden:
+
+- hohe Commander-/Theme-Synergie
+- skalierende Effekte
+- Karten, die aus normalen Spielzügen echten Vorteil erzeugen
+- mögliche Übergänge zu Finishern oder Win Conditions
+
+Danach:
+
+- Hauptauswahl
+- genau 5 Alternativen
+- Maybe Board aktualisieren
+- Nutzerbestätigung
+
+---
+
+# 16. Enhancer
+
+Enhancer verstärken einen bereits funktionierenden Plan.
+
+Sie sollen nicht wichtiger werden als ausreichende Enabler und Payoffs.
+
+Zu prüfen sind:
+
+- Verdoppler
+- Trigger-Verdoppler
+- Multiplikatoren
+- Schutz
+- Resilienz
+- zusätzliche Kopien
+- Effizienzsteigerung
+
+Danach:
+
+- Hauptauswahl
+- genau 5 Alternativen
+- Maybe Board aktualisieren
+- Nutzerbestätigung
+
+---
+
+# 17. Finisher-, Wincon-, Combo- und Game-Changer-Pass
+
+Dieser Schritt findet statt, bevor die Länder endgültig ausgewählt werden.
+
+Das bisherige Deck wird gezielt geprüft auf:
+
+- vorhandene Finisher
+- fehlende Finisher
+- primäre Win Conditions
+- sekundäre Win Conditions
+- Combat-Finisher
+- alternative Win Conditions
+- Zwei-Karten-Combos
+- Drei-Karten-Combos
+- mehrteilige Combos
+- Commander-gestützte Combos
+- Infinite Loops
+- deterministische Win-Lines
+- passende Game Changers innerhalb des Ziel-Brackets
+
+Zusätzlich werden EDHREC-/vergleichbare Deckdaten erneut darauf geprüft,
+welche Finisher und Wincons für diese Strategie typisch oder besonders
+synergistisch sind.
+
+## Austauschvorschläge
+
+Wenn bessere oder fehlende Optionen erkannt werden, werden konkrete Swaps
+vorgeschlagen.
 
 Beispiel:
 
 ```text
-Noch freie Slots: 27
+Finisher Review
 
-Vorgeschlagene Verteilung der neuen Karten:
+Raus:
+- [Karte A] — Collection
 
-Enabler:   9
-Payoffs:  11
-Enhancer:  7
+Rein:
+- [Karte B] — ca. 3,20 €
+
+Grund:
+- klarerer Finisher
+- höhere Synergie mit Commander
+- schließt eine erkennbare Wincon-Lücke
 ```
 
-Die Summe darf die verbleibenden Deckslots nicht überschreiten.
+Vor neuen externen Vorschlägen zuerst relevante Maybe-Board-Kandidaten
+prüfen.
+
+Dieser Schritt endet mit einem Guided-Stop.
+
+Keine vorgeschlagene Änderung wird ohne Nutzerbestätigung übernommen.
 
 ---
 
-# 23. Plan-Card-Auswahl schrittweise
+# 18. Länder zuletzt
 
-Die Plan Cards werden in dieser Reihenfolge ausgewählt:
+Erst nach Abschluss des Spell-Pakets und des Finisher-Passes wird die
+endgültige Manabase gebaut.
 
-1. Enabler
-2. Payoffs
-3. Enhancer
+Die Land-Zielzahl stammt aus dem aktiven Template.
 
-Auch hier gilt für jede Stufe:
+Jetzt können tatsächlich berücksichtigt werden:
 
-- bereits vorhandene Rollen berücksichtigen
-- Hauptauswahl entsprechend benötigter neuer Karten
-- zusätzlich genau 5 Alternativen
-- Collection-Status anzeigen
-- bei externen Alternativen Preis anzeigen
-- Multi-Role-Funktion anzeigen
-- anschließend auf Nutzerbestätigung warten
+- farbige Manaanforderungen aller gewählten Spells
+- Commander-Farbanforderungen
+- Mana Curve
+- Ramp-Dichte
+- Utility Lands
+- Landfall-/Land-Synergien
+- MDFCs
+- getappte Länder
+- benötigte Farbquellen
 
----
+Die Länderauswahl wird ebenfalls als Guided-Schritt gezeigt.
 
-# 24. Deckgröße
+Wenn sinnvoll, werden Alternativen für Utility- oder Dual-Lands angeboten.
 
-Der finale Stand muss Commander-regelkonform sein.
-
-Für ein reguläres Commander-Deck bedeutet das normalerweise:
-
-```text
-100 Karten inklusive Commander
-```
-
-Bei mehreren legalen Commandern zählen alle Commander zur Deckgröße.
-
-Rollen-Zielwerte dürfen die Anzahl der einzigartigen Karten überschreiten, da Karten mehrere Rollen gleichzeitig erfüllen können.
+Danach auf Nutzerbestätigung warten.
 
 ---
 
-# 25. Übergabe an die gemeinsamen Abschlussregeln
+# 19. Finaler Template- und Qualitätscheck
 
-Nachdem alle Kategorien bestätigt wurden, wird der vollständige Deckentwurf an die gemeinsamen Abschlussregeln aus
+Nach der Länderauswahl wird das vollständige Deck noch einmal anhand von
 
 `brains/deckbuilding/templates.md`
 
-übergeben.
+und des aktiven Deckbuilding-Templates geprüft.
 
-Insbesondere müssen dort durchgeführt werden:
+Beispiel:
 
-- gemeinsame Abschlussprüfung
-- Decklegalitätsprüfung
-- Combo- und Win-Condition-Prüfung
-- Game-Changer-Prüfung
-- Bracket-Bewertung
-- Rule-0-Ausgabe, wenn verfügbar
-- finales gemeinsames Ausgabeformat
+```text
+Template Check
 
-Der Guided-Workflow definiert kein eigenes finales Ausgabeformat.
+Deckgröße:              100 / 100
+Länder:                  38 / 38
+Ramp:                    10 / 10
+Card Advantage:          12 / 12
+Targeted Interaction:    11 / 12
+Mass Interaction:         6 / 6
+
+Enabler: ausreichend
+Payoffs: ausreichend
+Enhancer: hoch
+
+Win Conditions: 2
+Combos: 1
+Game Changers: 2
+```
+
+Zu prüfen sind zusätzlich:
+
+- Mana Curve
+- Farbquellen
+- redundante Effekte
+- tote oder schwache Slots
+- fehlende Rollen
+- zu hohe oder zu niedrige Rollenabdeckung
+- Commander-Abhängigkeit
+- Resilienz
+- Ziel-Bracket
+- Wincon-Dichte
+- Combo-Linien
+
+## Letzte Verbesserungsvorschläge
+
+Wenn sinnvolle Verbesserungen erkannt werden, werden konkrete Swaps
+vorgeschlagen.
+
+Zuerst das Maybe Board prüfen.
+
+Danach bei Bedarf weitere synergistische Optionen anhand von EDHREC und
+vergleichbaren Deckdaten suchen.
+
+Dieser Schritt endet mit einem letzten Guided-Stop.
 
 ---
 
-# 26. Speichern
+# 20. Finale Ausgabe
 
-Der Guided-Workflow ist bis zur finalen Nutzerbestätigung ein Arbeitsstand.
+Nach Bestätigung des finalen Checks wird das Deck anhand des gemeinsamen
+Ausgabeformats aus
 
-Das fertige Deck wird erst gespeichert, nachdem der Nutzer die finale Deckliste bestätigt hat.
+`brains/deckbuilding/templates.md`
 
-Vorher dürfen bestehende Hauptversionen nicht überschrieben werden.
+ausgegeben.
 
-Für Speicherung und Versionierung gelten die gemeinsamen Projektregeln aus
+Das Maybe Board wird separat angezeigt, wenn es nicht leer ist.
+
+---
+
+# 21. Speichern
+
+Der Guided-Workflow ist bis zur finalen Nutzerbestätigung ein
+Arbeitsstand.
+
+Das fertige Deck wird erst gespeichert, nachdem der Nutzer die finale
+Deckliste bestätigt hat.
+
+Für Speicherung und Versionierung gelten die Regeln aus:
 
 `brains/deck-versioning/templates.md`

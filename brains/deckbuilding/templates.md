@@ -15,14 +15,15 @@ Insbesondere müssen geprüft werden:
 - Multi-Commander-Regeln
 - Deckgröße
 - Singleton-Regel
-- Banlist
+- Commander-Banlist
 - regelabhängige Karteninteraktionen
 
 ---
 
 ## Aufgabe
 
-Dieses Brain steuert das Erstellen und Überarbeiten von Commander-/EDH-Decks.
+Dieses Brain steuert das Erstellen und Überarbeiten von
+Commander-/EDH-Decks.
 
 Es dient dazu:
 
@@ -31,6 +32,7 @@ Es dient dazu:
 - Varianten vorhandener Decks zu erstellen
 - den passenden Deckbuilding-Workflow auszuwählen
 - das passende strukturelle Deckbuilding-Template auszuwählen
+- gemeinsame Qualitäts-, Daten- und Ausgaberegeln für alle Workflows bereitzustellen
 
 Die eigentliche Kartenauswahl erfolgt über einen Workflow unter:
 
@@ -49,42 +51,31 @@ Es gibt zwei Deckbuilding-Modi:
 
 Guided Deckbuilding ist der Standardmodus.
 
-Wenn der Nutzer ein neues Deck erstellen oder ein bestehendes Deck grundlegend neu aufbauen möchte und keinen anderen Modus ausdrücklich verlangt, verwende:
+Wenn der Nutzer ein neues Deck erstellen oder ein bestehendes Deck
+grundlegend neu aufbauen möchte und keinen anderen Modus ausdrücklich
+verlangt, verwende:
 
 `brains/deckbuilding/workflows/guided-selection.md`
 
-Der Guided-Workflow führt den Deckbau schrittweise gemeinsam mit dem Nutzer durch. Die Karten werden Kategorie für Kategorie vorgeschlagen und vom Nutzer bestätigt oder angepasst.
+Der Guided-Workflow führt den Deckbau schrittweise gemeinsam mit dem
+Nutzer durch.
 
-Beispiele:
-
-- "Baue mir ein Deck mit Tidus"
-- "Ich möchte ein Landfall-Deck mit Commander X bauen"
-- "Lass uns ein neues Deck bauen"
-- "Baue mir ein Commander-Deck"
-- "Ich möchte Commander X bauen"
-
-Diese Anfragen verwenden standardmäßig Guided Deckbuilding.
+Die Karten werden Kategorie für Kategorie vorgeschlagen und vom Nutzer
+bestätigt oder angepasst.
 
 ## Automatischer Deckbau
 
 Der automatische Deckbau ist ein ausdrücklich gewählter Sondermodus.
 
-Er wird nur verwendet, wenn der Nutzer klar verlangt, dass das Deck vollständig oder weitgehend automatisch erstellt werden soll.
+Er wird nur verwendet, wenn der Nutzer klar verlangt, dass das Deck
+vollständig oder weitgehend automatisch erstellt werden soll.
 
 Verwende dann:
 
 `brains/deckbuilding/workflows/automatic.md`
 
-Beispiele:
-
-- "Baue mir automatisch ein Deck mit Tidus"
-- "Erstelle direkt eine vollständige Deckliste"
-- "Mach das Deck komplett für mich"
-- "Baue das Deck ohne Zwischenschritte"
-- "Kein Guided Mode"
-- "Automatic Deckbuilding"
-
-Wenn nicht eindeutig erkennbar ist, dass der Nutzer den automatischen Modus möchte, wird Guided Deckbuilding verwendet.
+Wenn nicht eindeutig erkennbar ist, dass der Nutzer den automatischen
+Modus möchte, wird Guided Deckbuilding verwendet.
 
 ---
 
@@ -98,15 +89,120 @@ Beim Deckbau sollen abhängig vom Auftrag berücksichtigt werden:
 - Regelbasis aus `brains/rules/magic-rules.md`
 - Projektphilosophie aus `brains/project/philosophy.md`
 - passende Deckbuilding-Templates aus `brains/deckbuilding/templates/`
+- Deckbuilding-Staples aus `brains/deckbuilding/reference/staples.md`
+- aktuelle Commander-/Theme-Daten von EDHREC
+- aktuelle vergleichbare Decklisten und Deckdaten, wenn sie für den Auftrag sinnvoll sind
 - konkrete Constraints des Nutzers
 
 Weitere Brains können verwendet werden, wenn sie für den Auftrag erforderlich sind.
 
 ---
 
+# Externe Deckdaten und Synergie
+
+Die Kartenauswahl soll nicht nur aus allgemeinem Kartenwissen oder der
+Collection erfolgen.
+
+Wenn aktuelle externe Daten verfügbar sind, soll vor und während des
+Deckbaus geprüft werden, welche Karten in Decks mit demselben Commander,
+derselben Strategie oder einem vergleichbaren Thema tatsächlich gespielt
+werden.
+
+Bevorzugte Signale:
+
+- EDHREC Commander-Daten
+- EDHREC Theme-/Tag-Daten
+- EDHREC Synergy
+- EDHREC Inclusion Rate
+- EDHREC High-Synergy-Karten
+- EDHREC Average-Deck-/vergleichbare Deckdaten
+- aktuelle vergleichbare Decklisten auf geeigneten Deckplattformen
+- vorhandene lokale Decks mit ähnlicher Strategie, wenn relevant
+
+Community-Daten sind ein Auswahl- und Vergleichssignal.
+
+Sie ersetzen nicht:
+
+- Magic-Regeln
+- Color Identity
+- Banlist
+- Bracket-Regeln
+- konkrete Nutzer-Constraints
+
+EDHREC-Synergy-, Inclusion- oder ähnliche Prozentwerte dürfen nur
+ausgegeben werden, wenn sie für die konkrete Karte aus einer aktuellen
+Quelle tatsächlich ermittelt wurden.
+
+Wenn kein verlässlicher Wert vorliegt, qualitativ formulieren, z. B.:
+
+- sehr hohe Synergie
+- hohe Synergie
+- gute Synergie
+- situative Synergie
+
+Keine erfundenen Prozentwerte ausgeben.
+
+---
+
+# Auswahlpriorität
+
+Die Auswahl einer Karte soll grundsätzlich in dieser Reihenfolge bewertet
+werden:
+
+1. Legalität und Color Identity
+2. konkrete Nutzer-Constraints
+3. benötigte Rolle im Deck
+4. Synergie mit Commander und Hauptstrategie
+5. aktuelle EDHREC-/vergleichbare Deckdaten
+6. Multi-Role-Nutzen
+7. Mana Curve und Farbbedarf
+8. Ziel-Bracket und gewünschtes Spielerlebnis
+9. Collection und Budget entsprechend dem aktiven Workflow
+
+Die Collection ist ein wichtiges Constraint, aber nicht automatisch ein
+Qualitätssignal.
+
+Bei Collection-first wird zunächst auf legale und passende Karten aus der
+Collection gefiltert und innerhalb dieser Kandidaten nach Synergie,
+Rollenfit und Deckdaten priorisiert.
+
+---
+
+# Kartenlinks und Anzeige im Chat
+
+Konkrete Kartenempfehlungen sollen im Chat nach Möglichkeit direkt
+anklickbar sein.
+
+Bevorzugtes Ziel ist die konkrete Scryfall-Kartenseite.
+
+Wenn eine konkrete Karten-URI ermittelt wurde, soll diese verwendet
+werden.
+
+Kartenlinks dürfen nicht zu einer anderen Karte oder einem geratenen
+Printing führen.
+
+Bei Vorschlägen soll direkt hinter der Karte stehen:
+
+- `Collection`, wenn die Karte in `data/collection.json` vorhanden ist
+- ein aktueller ungefährer Europreis, wenn die Karte nicht vorhanden ist
+
+Beispiele:
+
+```text
+[Explore] — Collection
+[Nature's Lore] — ca. 2,50 €
+```
+
+Für Collection-Karten muss nicht zusätzlich ein Preis angezeigt werden.
+
+Für externe Karten darf kein Preis erfunden werden.
+
+---
+
 # Standard-Bracket
 
-Wenn der Nutzer beim Erstellen oder Überarbeiten eines Decks kein Ziel-Bracket angibt, wird standardmäßig verwendet:
+Wenn der Nutzer beim Erstellen oder Überarbeiten eines Decks kein
+Ziel-Bracket angibt, wird standardmäßig verwendet:
 
 **Bracket 3: Upgraded / Aufgewertet**
 
@@ -114,9 +210,8 @@ Die genaue Bewertung erfolgt anhand von:
 
 `brains/bracket/templates.md`
 
-Wenn der Nutzer später ein anderes Ziel-Bracket nennt, überschreibt diese Angabe den Standardwert.
-
-Der Deckbuilding-Workflow soll keine eigene abweichende Bracket-Definition erzeugen.
+Wenn der Nutzer später ein anderes Ziel-Bracket nennt, überschreibt diese
+Angabe den Standardwert.
 
 ---
 
@@ -144,13 +239,17 @@ Ein Deckbau-Auftrag kann unter anderem diese Vorgaben enthalten:
 - gewünschter Deckbuilding-Modus
 - ausdrücklich gewünschtes Deckbuilding-Template
 
-Explizite Nutzer-Constraints haben Vorrang vor Standardwerten, solange sie regelkonform und miteinander vereinbar sind. Konflikte müssen klar benannt werden.
+Explizite Nutzer-Constraints haben Vorrang vor Standardwerten, solange
+sie regelkonform und miteinander vereinbar sind.
+
+Konflikte müssen klar benannt werden.
 
 ---
 
 # Deckbuilding-Template auswählen
 
-Vor der eigentlichen Kartenauswahl muss ein passendes strukturelles Deckbuilding-Template aus
+Vor der eigentlichen Kartenauswahl muss ein passendes strukturelles
+Deckbuilding-Template aus
 
 `brains/deckbuilding/templates/`
 
@@ -158,41 +257,18 @@ bestimmt werden.
 
 ## Auswahlpriorität
 
-Die Priorität ist:
-
 1. vom Nutzer ausdrücklich genanntes Template
 2. vorhandenes Template für eine ausdrücklich genannte Strategie oder ein Deckthema
 3. `standard-100.md`
 
-## Standardfall
-
-Wenn kein anderes passendes Template vorhanden oder ausdrücklich gewünscht ist, verwende:
+Wenn kein passendes spezialisiertes Template vorhanden ist, verwende:
 
 `brains/deckbuilding/templates/standard-100.md`
 
-## Thematische Templates
+Ein Dateiname darf nicht allein aus einem Strategienamen erfunden werden.
 
-Wenn der Nutzer eine Strategie oder ein Deckthema nennt und dafür ein passendes Template tatsächlich vorhanden ist, wird dieses verwendet.
-
-Beispiele:
-
-- Landfall → `landfall-100.md`
-- Aristocrats → `aristocrats-100.md`
-- Spellslinger → `spellslinger-100.md`
-
-Die Beispiele bedeuten nicht, dass diese Dateien zwangsläufig vorhanden sind.
-
-Vor der Verwendung muss geprüft werden, ob das entsprechende Template wirklich existiert. Ein Dateiname darf nicht allein aus einem Strategienamen erfunden werden.
-
-Wenn kein passendes spezialisiertes Template vorhanden ist, verwende:
-
-`standard-100.md`
-
-## Aufgabe des Templates
-
-Das gewählte Deckbuilding-Template bestimmt die strukturellen Zielwerte.
-
-Dazu können insbesondere gehören:
+Das gewählte Deckbuilding-Template bestimmt die strukturellen Zielwerte,
+z. B.:
 
 - Länder
 - Ramp
@@ -202,8 +278,6 @@ Dazu können insbesondere gehören:
 - Plan Cards
 - besondere strategische Rollen
 - spezielle Anforderungen der Strategie
-
-Diese Werte werden vom jeweiligen Workflow verwendet. Der Workflow soll Zielwerte nicht selbst erfinden, wenn sie bereits durch das gewählte Template definiert sind.
 
 ---
 
@@ -226,10 +300,6 @@ Eine solche Karte:
 - belegt trotzdem nur einen Deckslot
 - darf zusätzlich eine Plan-Rolle erfüllen
 
-Die strukturellen Zielwerte eines Templates sind deshalb Rollen-Zielwerte und nicht zwangsläufig die Anzahl unterschiedlicher Karten.
-
-Die genaue Rollenverwaltung erfolgt im jeweils verwendeten Workflow.
-
 ---
 
 # Collection
@@ -238,25 +308,17 @@ Wenn die Collection für den Auftrag relevant ist, verwende:
 
 `data/collection.json`
 
-Karten aus der Collection sollen entsprechend den Nutzeranforderungen berücksichtigt werden.
-
 Bei Collection-first sollen vorhandene Karten bevorzugt werden.
 
-Der Nutzer darf ausdrücklich festlegen:
-
-- Collection-first
-- nur Collection
-- Collection nicht relevant
-- bestimmte Anzahl neuer Karten
-- eigenes Kaufbudget
+"Bevorzugt" bedeutet nicht, dass schwächere oder deutlich schlechter
+passende Karten automatisch höher bewertet werden als starke
+synergistische Optionen.
 
 ---
 
 # Basic Lands
 
 Basic Lands gelten als automatisch verfügbar.
-
-Der Nutzer scannt Basic Lands nicht vollständig in ManaBox ein, da davon ausreichend viele vorhanden sind.
 
 Daher gilt:
 
@@ -265,7 +327,6 @@ Daher gilt:
 - Basic Lands zählen nicht als neue Käufe.
 - Basic Lands zählen nicht gegen ein Zusatzbudget.
 - Basic Lands dürfen verwendet werden, wenn sie zur Color Identity passen.
-- Die Manabase darf mit passenden Basic Lands aufgefüllt werden.
 
 Als Basic Lands gelten:
 
@@ -280,6 +341,26 @@ Wastes
 
 ---
 
+# Staple-Referenz
+
+Für etablierte Basisoptionen verwende:
+
+`brains/deckbuilding/reference/staples.md`
+
+Eine Karte in dieser Referenz ist kein Auto-Include.
+
+Staples müssen weiterhin gegen folgende Punkte geprüft werden:
+
+- Color Identity
+- Bracket
+- Synergie
+- Strategie
+- Mana Curve
+- Nutzer-Constraints
+- bereits vorhandene bessere Rollenabdeckung
+
+---
+
 # Game Changers
 
 Die aktuelle Game-Changer-Liste liegt unter:
@@ -288,13 +369,8 @@ Die aktuelle Game-Changer-Liste liegt unter:
 
 Game Changers müssen gegen diese aktuelle Referenz geprüft werden.
 
-Die Liste darf nicht aus Modellwissen oder älteren Brain-Inhalten rekonstruiert werden.
-
-Nach Fertigstellung eines Decks muss geprüft werden:
-
-- welche Game Changers enthalten sind
-- wie viele enthalten sind
-- ob die Auswahl zum Ziel-Bracket passt
+Die Liste darf nicht aus Modellwissen oder älteren Brain-Inhalten
+rekonstruiert werden.
 
 Die Bracket-Bewertung erfolgt anhand von:
 
@@ -314,16 +390,15 @@ Für Decklegalitätsprüfungen soll diese lokale Referenz zusammen mit
 
 verwendet werden.
 
-Die Banlist darf nicht aus Modellwissen oder veralteten Brain-Inhalten
-rekonstruiert werden.
-
 ---
 
 # Combo- und Win-Condition-Prüfung
 
-Jedes fertig gebaute Deck muss auf relevante Win Conditions und Combo-Linien geprüft werden.
+Jedes fertig gebaute Deck muss auf relevante Win Conditions und
+Combo-Linien geprüft werden.
 
-Dabei müssen unabhängig von der Anzahl der benötigten Karten berücksichtigt werden:
+Dabei müssen unabhängig von der Anzahl der benötigten Karten
+berücksichtigt werden:
 
 - Zwei-Karten-Kombos
 - Drei-Karten-Kombos
@@ -345,27 +420,77 @@ verifiziert werden.
 
 ---
 
+# Finisher-, Wincon-, Combo- und Game-Changer-Pass
+
+Bevor die endgültige Manabase gebaut wird, muss das bisherige Spell-Paket
+gezielt darauf geprüft werden, ob das Deck tatsächlich schließen und
+gewinnen kann.
+
+Zu prüfen sind:
+
+- explizite Finisher
+- primäre und sekundäre Win Conditions
+- Combat-Finisher
+- alternative Win Conditions
+- Zwei-, Drei- und mehrteilige Combos
+- Commander-gestützte Combos
+- vorhandene oder passende Game Changers
+- Karten, die durch stärkere oder synergistischere Finisher ersetzt werden könnten
+
+Wenn eine sinnvolle Verbesserung erkennbar ist, sollen konkrete
+Austauschvorschläge gemacht werden.
+
+Im Guided-Workflow muss der Nutzer diese Änderungen bestätigen.
+
+Im Automatic-Workflow dürfen die Änderungen innerhalb der bestehenden
+Constraints automatisch in den Entwurf übernommen werden.
+
+---
+
+# Länder erst nach dem Spell-Paket
+
+Sofern ein spezialisiertes Template nicht ausdrücklich einen anderen
+Ablauf verlangt, wird die endgültige Länderauswahl erst vorgenommen,
+nachdem Ramp, Card Advantage, Interaction, Plan Cards und der
+Finisher-/Wincon-/Combo-Pass feststehen.
+
+Dadurch können berücksichtigt werden:
+
+- tatsächliche farbige Manaanforderungen
+- Mana Curve
+- Anzahl und Art der Ramp-Karten
+- Utility-Lands
+- Land-Synergien
+- MDFCs
+- Farbpips der endgültig gewählten Spells
+
+Die Zielzahl für Länder stammt weiterhin aus dem aktiven
+Deckbuilding-Template.
+
+---
+
 # Gemeinsame Abschlussprüfung
 
-Unabhängig vom verwendeten Deckbuilding-Modus muss ein fertiger Deckvorschlag abschließend geprüft werden.
+Nach der Länderauswahl muss das vollständige Deck noch einmal gegen das
+aktive Deckbuilding-Template und alle gemeinsamen Regeln geprüft werden.
 
 Zu prüfen sind insbesondere:
 
 - Commander-Legalität
-- Multi-Commander-Legalität
 - Color Identity
 - Deckgröße
 - Singleton-Regel
 - Banlist
-- Mana Base
+- Mana Base und Farbquellen
 - Mana Curve
 - Ramp-Abdeckung
 - Card-Advantage-Abdeckung
 - Targeted-Interaction-Abdeckung
 - Mass-Interaction-Abdeckung
-- Plan-Card-Abdeckung
-- Synergien
-- Engines
+- Enabler
+- Payoffs
+- Enhancer
+- Finisher
 - Win Conditions
 - Combo-Linien
 - Game Changers
@@ -373,34 +498,46 @@ Zu prüfen sind insbesondere:
 - Nutzer-Constraints
 - fehlende oder nicht vorhandene Karten
 
-Wenn eine Prüfung nicht zuverlässig durchgeführt werden kann, muss die Unsicherheit ausdrücklich genannt werden.
+Wenn Lücken, unnötige Redundanz oder schwache Slots erkannt werden,
+sollen konkrete Verbesserungen und passende Alternativen vorgeschlagen
+werden.
+
+Dabei sollen zuerst bereits vorgemerkte Karten aus dem Maybe Board
+geprüft werden.
+
+---
+
+# Maybe Board
+
+Während eines Deckbaus können Karten vorgemerkt werden, die aktuell nicht
+in die Hauptliste aufgenommen werden, aber später für Swaps,
+Finisher-Anpassungen oder den Abschlusscheck relevant sein könnten.
+
+Das Maybe Board:
+
+- zählt nicht zur Deckgröße
+- zählt nicht zur Rollenabdeckung
+- kann Karten aus der Collection und externe Karten enthalten
+- soll bei späteren Austauschvorschlägen zuerst geprüft werden
+- soll bei Abschluss des Deckbaus separat ausgegeben werden, wenn es nicht leer ist
 
 ---
 
 # Rule 0
 
-Wenn vorhanden, soll für die abschließende Tischkommunikation verwendet werden:
+Wenn vorhanden, soll für die abschließende Tischkommunikation verwendet
+werden:
 
 `brains/rule-zero/templates.md`
 
 Die Rule-0-Zusammenfassung basiert auf der fertigen Deckanalyse.
 
-Sie darf keine Eigenschaften behaupten, die nicht geprüft wurden.
-
-Insbesondere dürfen Aussagen wie:
-
-- keine Endloskombo
-- keine Tutoren
-- kein Fast Mana
-- keine Game Changers
-
-nur gemacht werden, wenn diese Punkte tatsächlich geprüft wurden.
-
 ---
 
 # Finales Ausgabeformat
 
-Unabhängig davon, ob Guided oder Automatic verwendet wurde, soll ein fertiges Deck im gleichen Abschlussformat ausgegeben werden.
+Unabhängig davon, ob Guided oder Automatic verwendet wurde, soll ein
+fertiges Deck im gleichen Abschlussformat ausgegeben werden.
 
 # Deckvorschlag: [Deckname]
 
@@ -439,8 +576,6 @@ Unabhängig davon, ob Guided oder Automatic verwendet wurde, soll ein fertiges D
 - Payoffs:
 - Enhancer:
 
-Multi-Role-Karten dürfen in mehreren Rollen gezählt werden, belegen aber nur einen Deckslot.
-
 ## Spielplan
 
 ### Early Game
@@ -458,35 +593,27 @@ Multi-Role-Karten dürfen in mehreren Rollen gezählt werden, belegen aber nur e
 ## Wichtige Kartenpakete
 
 ### Ramp
-
 - ...
 
 ### Card Advantage
-
 - ...
 
 ### Targeted Interaction
-
 - ...
 
 ### Mass Interaction
-
 - ...
 
 ### Engines und Enabler
-
 - ...
 
 ### Payoffs
-
 - ...
 
 ### Enhancer
-
 - ...
 
-### Win Conditions
-
+### Finisher und Win Conditions
 - ...
 
 ## Combo-Linien
@@ -501,39 +628,29 @@ Für jede relevante erkannte Combo:
 - Interaktionspunkte:
 - Regelcheck:
 
-Wenn keine Combo verifiziert wurde, dies entsprechend kennzeichnen.
-
 ## Game Changer Check
 
 Anzahl Game Changers:
-
 - ...
 
 Gefundene Game Changers:
-
 - ...
 
 Auswirkung auf das Ziel-Bracket:
-
 - ...
 
-## Karten aus vorhandener Collection
+## Collection und neue Karten
 
-- ...
+Kompaktes Format:
 
-## Neue Kartenvorschläge
+```text
+[Kartenname] — Collection
+[Kartenname] — ca. X,XX €
+```
 
-| Karte | Preisrahmen | Grund |
-|---|---:|---|
-| ... | ... | ... |
+## Maybe Board
 
-## Unterschiede zu bestehenden Decks
-
-[Wenn relevant erklären, wie sich das neue Deck von vorhandenen Decks unterscheidet.]
-
-## Konflikte mit Nutzerwunsch
-
-[Falls Vorgaben nicht zusammenpassen, klar benennen.]
+[Wenn vorhanden: vorgemerkte Karten mit kurzem Grund.]
 
 ## Abschlussprüfung
 
@@ -542,15 +659,21 @@ Auswirkung auf das Ziel-Bracket:
 - Color Identity:
 - Singleton:
 - Banlist:
-- Mana Base:
+- Mana Base / Farbquellen:
+- Mana Curve:
+- Template-Abdeckung:
 - Ziel-Bracket:
 - Game Changers:
 - Combo-Linien:
 - fehlende Karten:
 
+## Empfohlene letzte Änderungen
+
+[Wenn sinnvoll: konkrete Raus/Rein-Vorschläge mit Alternativen.]
+
 ## Rule 0
 
-[Kurze Rule-0-/Tischkommunikation anhand der fertigen Analyse.]
+[Kurze Rule-0-/Tischkommunikation.]
 
 ## Speichern
 
@@ -562,7 +685,8 @@ Soll diese Version gespeichert werden?
 
 Ein neu gebautes oder überarbeitetes Deck ist zunächst ein Arbeitsstand.
 
-Es wird erst gespeichert oder als bestehende Hauptversion ersetzt, wenn der Nutzer dies bestätigt.
+Es wird erst gespeichert oder als bestehende Hauptversion ersetzt, wenn
+der Nutzer dies bestätigt.
 
 Für Versionierung und Speicherung gelten die Regeln aus:
 
