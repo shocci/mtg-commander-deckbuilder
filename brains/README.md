@@ -39,7 +39,8 @@ Danach über die folgende Tabelle routen.
 
 | Nutzerauftrag | Pflicht-Brains | Zusätzliche Daten |
 |---|---|---|
-| neues Deck bauen | `deckbuilding`, `bracket`, `rules` | Commander/Kartenquellen nach Auftrag |
+| neues Deck bauen | `collection`, `deckbuilding`, `bracket`, `rules` | standardmäßig Guided Workflow, `data/collection.json`, passendes Deckbuilding-Template |
+| Deck automatisch bauen | `deckbuilding`, `bracket`, `rules` | Automatic Workflow; Collection nur wenn Auftrag dies verlangt |
 | Deck aus/mit Collection bauen | `collection`, `deckbuilding`, `bracket`, `rules` | `data/collection.json` oder ManaBox-Import |
 | Commander aus Collection auswählen | `collection`, `rules` | Collection; bei Popularität ggf. aktuelle Community-Daten |
 | Deck analysieren | `deck-analysis`, `bracket`, `rules` | betroffene Deckliste |
@@ -51,6 +52,15 @@ Danach über die folgende Tabelle routen.
 `project/philosophy.md` kommt jeweils zusätzlich dazu.
 
 ## Routing-Regeln
+
+### Deckbuilding-Modus
+
+Beim Erstellen eines neuen Decks ist Guided Deckbuilding der Standard.
+
+```text
+"Baue mir ein Deck mit Commander X"
+"Ich möchte Commander X bauen"
+```
 
 ### Collection ist nicht automatisch Deckbau-Constraint
 
