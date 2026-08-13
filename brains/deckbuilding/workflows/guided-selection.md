@@ -162,6 +162,34 @@ sofern der Nutzer kein anderes Limit nennt.
 Konkrete Karten sollen möglichst direkt auf ihre Scryfall-Seite verlinkt
 werden.
 
+## Kartenlinks sind Pflicht
+
+Jeder konkrete Kartenname in folgenden Ausgaben soll als direkter
+Scryfall-Link ausgegeben werden, sofern die Karte eindeutig auf Scryfall
+aufgelöst werden kann:
+
+- Hauptauswahl
+- Alternativen
+- Austauschvorschläge
+- Maybe Board
+- Finisher- und Wincon-Vorschläge
+- Land-Auswahl
+- finaler Template-Check
+- finale Deckliste
+
+Diese Regel gilt während des gesamten Guided-Workflows.
+
+Es reicht nicht aus, Karten nur in einem einzelnen Vorschlagsblock zu
+verlinken.
+
+Wenn eine Karte eindeutig auf Scryfall gefunden wurde, soll bei späteren
+Nennungen derselben Karte ebenfalls ein Link verwendet werden.
+
+Ein Link darf nicht geraten werden.
+
+Wenn keine eindeutige konkrete Scryfall-URI bestimmt werden kann, wird
+der Kartenname ohne falschen Link ausgegeben.
+
 Die Besitz-/Preisanzeige erfolgt kompakt:
 
 ```text
@@ -252,6 +280,30 @@ vorgibt, gilt:
 8. Finisher / Win Conditions / Combos / Game Changers
 9. Länder
 10. Finaler Template- und Qualitätscheck
+
+## Pflichtschritte
+
+Keiner der folgenden Schritte darf übersprungen werden:
+
+1. Ramp
+2. Card Advantage
+3. Targeted Interaction
+4. Mass Interaction
+5. Enabler
+6. Payoffs
+7. Enhancer
+8. Finisher / Win Conditions / Combos / Game Changers
+9. Länder
+10. finaler Template- und Qualitätscheck
+
+Insbesondere darf die Länderauswahl nicht begonnen werden, bevor
+Schritt 8 vollständig durchgeführt und vom Nutzer bestätigt wurde.
+
+Wenn ein Schritt für das konkrete Deck keine Änderungen oder neuen
+Karten ergibt, muss der Schritt trotzdem geprüft und kurz dokumentiert
+werden.
+
+Ein leerer Prüfschritt darf nicht stillschweigend übersprungen werden.
 
 Das Maybe Board läuft parallel über alle Schritte.
 
@@ -462,6 +514,50 @@ Das bisherige Deck wird gezielt geprüft auf:
 - deterministische Win-Lines
 - passende Game Changers innerhalb des Ziel-Brackets
 
+## Combo-Check ist verpflichtend
+
+Die Combo-Prüfung muss anhand der aktuell bestätigten Karten des
+Deckentwurfs durchgeführt werden.
+
+Dabei müssen ausdrücklich geprüft werden:
+
+- Zwei-Karten-Kombos
+- Drei-Karten-Kombos
+- Kombinationen mit vier oder mehr Karten
+- Commander-gestützte Kombos
+- Infinite Loops
+- beliebig oft wiederholbare Loops
+- deterministische Win-Lines
+
+Bekannte Combo-Komponenten im Deck müssen darauf geprüft werden, ob mit
+weiteren vorhandenen Karten eine vollständige Linie entsteht.
+
+Die Aussage
+
+`keine Endloskombos`
+
+oder
+
+`0 Combos`
+
+darf nur ausgegeben werden, wenn die aktuelle vollständige Kartenmenge
+tatsächlich auf bekannte Combo-Linien geprüft wurde.
+
+Die Aussage
+
+`keine geplanten Combos`
+
+ist kein Ersatz für einen Combo-Check.
+
+Wenn keine vollständige Combo verifiziert werden konnte, soll präzise
+formuliert werden:
+
+`Keine verifizierte Endloskombo im aktuellen Deckstand erkannt.`
+
+Wenn die Combo-Prüfung nicht vollständig oder nicht zuverlässig
+durchgeführt werden konnte, muss diese Unsicherheit ausdrücklich genannt
+werden.
+
 Zusätzlich werden EDHREC-/vergleichbare Deckdaten erneut darauf geprüft,
 welche Finisher und Wincons für diese Strategie typisch oder besonders
 synergistisch sind.
@@ -494,6 +590,16 @@ prüfen.
 Dieser Schritt endet mit einem Guided-Stop.
 
 Keine vorgeschlagene Änderung wird ohne Nutzerbestätigung übernommen.
+
+## Guided-Stop
+
+Dieser Schritt muss dem Nutzer als eigener Abschnitt gezeigt werden.
+
+Auch wenn keine Änderungen empfohlen werden, muss das Ergebnis des
+Finisher-, Wincon-, Combo- und Game-Changer-Checks angezeigt werden.
+
+Erst nach ausdrücklicher Nutzerbestätigung darf mit der Länderauswahl
+fortgefahren werden.
 
 ---
 
