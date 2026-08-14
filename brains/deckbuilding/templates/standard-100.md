@@ -70,17 +70,19 @@ eine Plan-Rolle als Enabler, Payoff oder Enhancer erfüllen.
 
 ## Ramp – Mana-Beschleunigung
 
-- 10 Karten
-- bis zu 12, wenn der Commander bzw. die Strategie mehr Mana benötigt
+- Standard: **10 Ramp-Karten**
+- Bei einem Commander mit **Mana Value 4 oder höher**: **bis zu 12 Ramp-Karten**
+- Bei sehr günstigen Commandern oder extrem niedriger Kurve kann weniger Ramp sinnvoll sein.
+- Ramp soll nicht automatisch auf 10 begrenzt werden, wenn Commander und Spielplan von zusätzlicher Mana-Beschleunigung profitieren.
 
 Beispiele:
 
 - Mana Rocks
-- Signets
-- Talismane
+    - Signets
+    - Talismane
 - Mana-Dorks
 - Ramp-Spells
-- Effekte, die zusätzliche Länder ins Spiel bringen
+    - z. B. Effekte, die ein Land suchen oder zusätzliche Länder ins Spiel bringen
 
 ---
 
