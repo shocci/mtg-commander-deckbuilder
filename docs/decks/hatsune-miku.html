@@ -41,7 +41,7 @@
           <a class="profile-nav-button" href="#bracket">Bracket 3</a>
           <a class="profile-nav-button" href="#gameplan">Gameplan</a>
           <a class="profile-nav-button" href="#deckliste">Deckliste</a>
-          <a class="profile-nav-button" href="#varianten">1 Variante</a>
+          <a class="profile-nav-button" href="#varianten">2 Varianten</a>
           <a class="profile-nav-button" href="#versionen">Version v001</a>
         </div>
       </div>
@@ -1155,6 +1155,443 @@
 <li>Commander Brackets Beta Update vom 9. Februar 2026: <a href="https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-february-9-2026">https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-february-9-2026</a></li>
 <li>Magic Comprehensive Rules vom 7. August 2026: <a href="https://media.wizards.com/2026/downloads/MagicCompRules%2020260807.pdf">https://media.wizards.com/2026/downloads/MagicCompRules%2020260807.pdf</a></li>
 <li>Variantenstand: 12. August 2026</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion variant-accordion">
+<summary>Hatsune Miku – Maximum Encore (Collection Guided)</summary>
+<div class="sub-accordion-content">
+<h2>Status</h2>
+<p>Final bestätigte Upgrade-Variante vom 14. August 2026.</p>
+<p>Der Guided-Deckbau ist abgeschlossen. <code>Nykthos Paragon</code> wurde als letzter Cut bestätigt; die Deckliste enthält exakt 100 Karten. Der abschließende Template-, Legalitäts-, Rollen-, Manakurven-, Combo- und Bracket-Check wurde durchgeführt.</p>
+<p>Die Hauptdeckliste unter <code>data/decks/decklists/hatsune-miku.txt</code> und die bestehende Variante <code>infinite-encore.md</code> bleiben unverändert.</p>
+<h2>Ziel der Variante</h2>
+<ul>
+<li>ausschließlich Karten aus der Collection verwenden</li>
+<li>innerhalb der Collection so stark wie möglich bauen</li>
+<li>alle legalen vorhandenen Miku-Karten beziehungsweise Miku-Prints verwenden</li>
+<li>Trostani, Selesnya&#39;s Voice als Commander behalten</li>
+<li>Tokens, Lifegain und Populate als Deckidentität erhalten</li>
+<li>Endloskombos sind erlaubt, im finalen Stand wurde jedoch keine verifizierte Endloskombo erkannt</li>
+<li>Bracket ist kein Deckbau-Constraint</li>
+<li>Guided Deckbuilding gemäß <code>brains/deckbuilding/workflows/guided-selection.md</code></li>
+<li>aktives Template: <code>brains/deckbuilding/templates/standard-100.md</code></li>
+</ul>
+<h2>Miku-Paket</h2>
+<p>Enthalten sind 18 verschiedene Kartennamen und insgesamt 30 Karten:</p>
+<ul>
+<li>Trostani, Selesnya&#39;s Voice</li>
+<li>Archangel of Thune</li>
+<li>Halo Fountain</li>
+<li>Grand Crescendo</li>
+<li>Soul Warden</li>
+<li>Break Down</li>
+<li>Cultivate</li>
+<li>Finale of Devastation</li>
+<li>Vorinclex, Voice of Hunger</li>
+<li>Shalai, Voice of Plenty</li>
+<li>Song of the Worldsoul</li>
+<li>Chord of Calling</li>
+<li>Sol Ring</li>
+<li>Bountiful Promenade</li>
+<li>Command Tower – gewünschtes Printing: SLD #806</li>
+<li>Thespian&#39;s Stage</li>
+<li>sieben Miku-Plains</li>
+<li>sieben Miku-Forests</li>
+</ul>
+<h2>Rollenabdeckung</h2>
+<h3>Ramp – 12/12</h3>
+<ul>
+<li>Sol Ring – Miku</li>
+<li>Cultivate – Miku</li>
+<li>Birds of Paradise</li>
+<li>Avacyn&#39;s Pilgrim</li>
+<li>Utopia Sprawl</li>
+<li>Nature&#39;s Lore</li>
+<li>Arcane Signet</li>
+<li>Bloom Tender</li>
+<li>Fanatic of Rhonas</li>
+<li>Badgermole Cub</li>
+<li>Enduring Vitality</li>
+<li>Smothering Tithe</li>
+</ul>
+<p><code>Badgermole Cub</code>, <code>Enduring Vitality</code> und <code>Fanatic of Rhonas</code> zählen zusätzlich als Plan-Karten.</p>
+<h3>Card Advantage – 12/12</h3>
+<ul>
+<li>Esper Sentinel</li>
+<li>Skullclamp</li>
+<li>Trouble in Pairs</li>
+<li>Welcoming Vampire</li>
+<li>Staff of the Storyteller</li>
+<li>Idol of Oblivion</li>
+<li>Rumor Gatherer</li>
+<li>Dawn of Hope</li>
+<li>Shamanic Revelation</li>
+<li>Camaraderie</li>
+<li>Halo Fountain – Miku</li>
+<li>Loran of the Third Path – zugleich Targeted Interaction</li>
+</ul>
+<h3>Targeted Interaction – 12/12</h3>
+<ul>
+<li>Swords to Plowshares</li>
+<li>Path to Exile</li>
+<li>Get Lost</li>
+<li>Generous Gift</li>
+<li>Beast Within</li>
+<li>Nature&#39;s Claim</li>
+<li>Break Down – Miku</li>
+<li>Haywire Mite</li>
+<li>Loran of the Third Path</li>
+<li>Sundering Growth</li>
+<li>Excavation Technique</li>
+<li>Scavenger Grounds – Graveyard Interaction aus der Manabase</li>
+</ul>
+<p><code>Rest in Peace</code> bleibt entfernt, damit Eternalize von <code>Fanatic of Rhonas</code> und die Rückkehr von <code>Enduring Vitality</code> nicht abgeschaltet werden.</p>
+<h3>Mass Interaction, Schutz und Politics – 7/6</h3>
+<ul>
+<li>Hour of Reckoning</li>
+<li>Rootborn Defenses</li>
+<li>Grand Crescendo – Miku</li>
+<li>Shalai, Voice of Plenty – Miku</li>
+<li>Vorinclex, Voice of Hunger – Miku</li>
+<li>Fog</li>
+<li>Myrel, Shield of Argive</li>
+</ul>
+<p>Die Überschreitung ist bewusst. <code>Fog</code> bleibt ausdrücklich als Politics-Werkzeug enthalten: Es kann den eigenen Verlust verhindern, andere Spieler schützen und dadurch politische Vorteile erzeugen. Myrel zählt zusätzlich als Protection, Stax und Token-Enabler.</p>
+<h3>Enabler</h3>
+<ul>
+<li>Trostani, Selesnya&#39;s Voice</li>
+<li>Soul Warden</li>
+<li>Song of the Worldsoul</li>
+<li>Chord of Calling</li>
+<li>Grand Crescendo</li>
+<li>Halo Fountain</li>
+<li>Enduring Vitality</li>
+<li>Badgermole Cub</li>
+<li>Dawn of Hope</li>
+<li>Myrel, Shield of Argive</li>
+<li>Adeline, Resplendent Cathar</li>
+<li>Rhys the Redeemed</li>
+<li>Felidar Retreat</li>
+<li>Ghalta and Mavren</li>
+</ul>
+<p><code>Charismatic Conqueror</code> wurde nicht verwendet, weil die Karte in einem Precon bleiben soll.</p>
+<h3>Payoffs und Finisher</h3>
+<ul>
+<li>Aetherflux Reservoir</li>
+<li>Crested Sunmare</li>
+<li>Resplendent Angel</li>
+<li>Archangel of Thune</li>
+<li>Finale of Devastation – Miku</li>
+<li>Halo Fountain – Miku</li>
+<li>Moonshaker Cavalry</li>
+<li>Ghalta and Mavren</li>
+<li>Exalted Sunborn zusammen mit Token-Verdopplern</li>
+<li>großer Combat-Schaden durch ein breites Tokenboard</li>
+</ul>
+<p><code>Nykthos Paragon</code> wurde als letzter Cut bestätigt. <code>Moonshaker Cavalry</code> ersetzte im Finisher-Pass <code>Rest in Peace</code>; die Karte ist laut Collection derzeit dem Deck „Ghost of Numbers“ zugeordnet.</p>
+<h3>Enhancer und Resilienz</h3>
+<ul>
+<li>Doubling Season</li>
+<li>Parallel Lives</li>
+<li>Seedborn Muse</li>
+<li>Elesh Norn, Mother of Machines</li>
+<li>Heroic Intervention</li>
+<li>Flawless Maneuver</li>
+<li>Exalted Sunborn</li>
+</ul>
+<p><code>Akroma&#39;s Will</code> wurde nicht verwendet, weil die Karte in einem Precon bleiben soll. <code>Flawless Maneuver</code> übernimmt diesen Schutzslot.</p>
+<h2>Finale Deckliste – 100 Karten</h2>
+<pre><code class="language-txt">// COMMANDER
+1 Trostani, Selesnya&#39;s Voice
+
+// CREATURES
+1 Adeline, Resplendent Cathar
+1 Archangel of Thune
+1 Avacyn&#39;s Pilgrim
+1 Badgermole Cub
+1 Birds of Paradise
+1 Bloom Tender
+1 Crested Sunmare
+1 Elesh Norn, Mother of Machines
+1 Enduring Vitality
+1 Esper Sentinel
+1 Exalted Sunborn
+1 Fanatic of Rhonas
+1 Ghalta and Mavren
+1 Haywire Mite
+1 Loran of the Third Path
+1 Moonshaker Cavalry
+1 Myrel, Shield of Argive
+1 Resplendent Angel
+1 Rhys the Redeemed
+1 Rumor Gatherer
+1 Seedborn Muse
+1 Shalai, Voice of Plenty
+1 Soul Warden
+1 Vorinclex, Voice of Hunger
+1 Welcoming Vampire
+
+// ARTIFACTS
+1 Aetherflux Reservoir
+1 Arcane Signet
+1 Halo Fountain
+1 Idol of Oblivion
+1 Skullclamp
+1 Sol Ring
+1 Staff of the Storyteller
+
+// ENCHANTMENTS
+1 Dawn of Hope
+1 Doubling Season
+1 Felidar Retreat
+1 Parallel Lives
+1 Smothering Tithe
+1 Song of the Worldsoul
+1 Trouble in Pairs
+1 Utopia Sprawl
+
+// INSTANTS
+1 Beast Within
+1 Break Down
+1 Chord of Calling
+1 Flawless Maneuver
+1 Fog
+1 Generous Gift
+1 Get Lost
+1 Grand Crescendo
+1 Heroic Intervention
+1 Nature&#39;s Claim
+1 Path to Exile
+1 Rootborn Defenses
+1 Sundering Growth
+1 Swords to Plowshares
+
+// SORCERIES
+1 Camaraderie
+1 Cultivate
+1 Excavation Technique
+1 Finale of Devastation
+1 Hour of Reckoning
+1 Nature&#39;s Lore
+1 Shamanic Revelation
+
+// LANDS
+9 Forest
+9 Plains
+1 Bountiful Promenade
+1 Brushland
+1 Canopy Vista
+1 Cavern of Souls
+1 City of Brass
+1 Command Tower
+1 Exotic Orchard
+1 Fabled Passage
+1 Fortified Village
+1 Hall of Heliod&#39;s Generosity
+1 Lazotep Quarry
+1 Overgrown Farmland
+1 Razorverge Thicket
+1 Restless Prairie
+1 Scattered Groves
+1 Scavenger Grounds
+1 Sunpetal Grove
+1 Temple Garden
+1 Three Tree City
+1 Thespian&#39;s Stage
+</code></pre>
+<h2>Manabase und Manakurve</h2>
+<ul>
+<li>Länder: 38</li>
+<li>Forests: 9, davon sieben Miku</li>
+<li>Plains: 9, davon sieben Miku</li>
+<li>Nichtstandardländer: 20</li>
+<li>gewünschtes Command-Tower-Printing: SLD #806</li>
+<li>die 17 gesetzten Miku-Länder sind vollständig enthalten</li>
+<li>ungefähr 22 bis 23 allgemeine weiße und grüne Quellen, zusätzlich bedingte Quellen</li>
+<li>zwölf Länder mit Forest-Typ für <code>Utopia Sprawl</code> und <code>Nature&#39;s Lore</code></li>
+<li><code>Scavenger Grounds</code> übernimmt Graveyard Interaction</li>
+<li><code>Lazotep Quarry</code> unterstützt die Exalted-Sunborn-Tokenlinie</li>
+</ul>
+<p>Manakurve einschließlich Commander:</p>
+<table>
+<thead>
+<tr>
+<th class="text-right">Manawert</th>
+<th class="text-right">Karten</th>
+</tr>
+</thead>
+<tbody><tr>
+<td class="text-right">1</td>
+<td class="text-right">13</td>
+</tr>
+<tr>
+<td class="text-right">2</td>
+<td class="text-right">13</td>
+</tr>
+<tr>
+<td class="text-right">3</td>
+<td class="text-right">14</td>
+</tr>
+<tr>
+<td class="text-right">4</td>
+<td class="text-right">9</td>
+</tr>
+<tr>
+<td class="text-right">5</td>
+<td class="text-right">7</td>
+</tr>
+<tr>
+<td class="text-right">6</td>
+<td class="text-right">2</td>
+</tr>
+<tr>
+<td class="text-right">7</td>
+<td class="text-right">2</td>
+</tr>
+<tr>
+<td class="text-right">8</td>
+<td class="text-right">2</td>
+</tr>
+</tbody></table>
+<p>Der durchschnittliche Manawert der Nichtlandkarten beträgt ungefähr 3,13. Die 13 Karten mit Manawert 5 oder höher werden durch 38 Länder, zwölf Ramp-Beiträge und Convoke unterstützt.</p>
+<h2>Combo- und Wincon-Check</h2>
+<h3>Korrektur: Keine Endlosschleife mit Halo Fountain</h3>
+<p><code>Badgermole Cub + Enduring Vitality + Halo Fountain</code> ist keine Endlosschleife.</p>
+<p>Ablauf einer Aktivierung:</p>
+<ol>
+<li>Eine Kreatur wird über die von Enduring Vitality verliehene Fähigkeit für weißes Mana getappt.</li>
+<li>Badgermole Cub erzeugt zusätzlich ein grünes Mana.</li>
+<li>Das weiße Mana wird für die erste Fähigkeit von Halo Fountain verwendet.</li>
+<li>Halo Fountain wird selbst getappt und die Kreatur als Teil der Aktivierungskosten enttappt.</li>
+<li>Es entsteht ein Citizen-Token und ein grünes Mana bleibt übrig.</li>
+</ol>
+<p>Die Kreatur ist danach wieder ungetappt, Halo Fountain jedoch nicht. Da das Deck keinen Effekt enthält, der die Fountain innerhalb dieser Sequenz wiederholt enttappt, kann der Vorgang nicht beliebig oft fortgesetzt werden.</p>
+<p>Mit <code>Seedborn Muse</code> kann Halo Fountain in den gegnerischen Zügen erneut verwendet werden. Das ist eine starke, aber endliche Engine.</p>
+<h3>Halo-Fountain-Sieg</h3>
+<p>Die alternative Siegbedingung benötigt:</p>
+<ul>
+<li>fünf weißes Mana</li>
+<li>eine ungetappte Halo Fountain</li>
+<li>fünfzehn getappte Kreaturen</li>
+</ul>
+<p>Mit <code>Enduring Vitality</code> können entsprechend lange kontrollierte Kreaturen zunächst für Mana getappt und anschließend als Teil der Fountain-Kosten enttappt werden. Das Enttappen ist Teil der Kosten; nach Beginn der Aktivierung können Gegner die ausgewählten Kreaturen nicht mehr entfernen, bevor die Kosten bezahlt sind. Die Fähigkeit selbst kann weiterhin beantwortet werden.</p>
+<h3>Exalted-Sunborn-Linien</h3>
+<ul>
+<li>Exalted Sunborn kann für Warp <code>{1}{W}</code> gespielt werden.</li>
+<li>Trostanis Populate erzeugt durch Sunborn zwei statt einen Token.</li>
+<li>Mit Parallel Lives oder Doubling Season werden daraus vier neue Token.</li>
+<li>Mit beiden weiteren Verdopplern werden daraus acht neue Token.</li>
+<li>Der gewarpte Sunborn kann vor seiner verzögerten Exilierung über Lazotep Quarry geopfert werden.</li>
+<li>In einem späteren Zug kann Quarry für <code>{5}{2}</code>, Tappen und das Opfern eines Deserts den Sunborn aus dem Friedhof ins Exil schicken und einen dauerhaften 4/4-Zombie-Token als Kopie erzeugen.</li>
+<li>Dieser Sunborn-Token kann anschließend populatet werden und weitere Token-Erzeugung vervielfachen.</li>
+</ul>
+<h3>Weitere Siegwege</h3>
+<ul>
+<li><code>Aetherflux Reservoir</code> über den hohen Lebensstand</li>
+<li><code>Moonshaker Cavalry</code> auf einem breiten Board; <code>Elesh Norn, Mother of Machines</code> verdoppelt dessen ETB-Trigger</li>
+<li><code>Finale of Devastation</code> mit X mindestens 10</li>
+<li>großer Combat-Schaden durch Token, Marken und Verdoppler</li>
+<li><code>Ghalta and Mavren</code> als Token-Ausbruch und Populate-Ziel</li>
+</ul>
+<p>Im finalen Deckstand wurde keine verifizierte Endloskombo erkannt.</p>
+<h2>Legalität und Bracket</h2>
+<ul>
+<li>Deckgröße: 100/100</li>
+<li>Commander: Trostani, Selesnya&#39;s Voice</li>
+<li>Color Identity: ausschließlich Grün, Weiß und farblos</li>
+<li>Singleton: erfüllt; nur Basic Lands liegen mehrfach vor</li>
+<li>Commander-Legalität: alle Karten legal</li>
+<li>aktuelle Banlist: keine Treffer</li>
+<li>Collection: alle Nichtstandardkarten vorhanden</li>
+<li>Game Changers: 2 – Smothering Tithe und Seedborn Muse</li>
+<li>geschätztes Bracket: oberes Bracket 3 – Upgraded</li>
+<li>realistischer relevanter Sieg- oder Dominanzbereich: ungefähr Zug 6 bis 8</li>
+</ul>
+<p>Das Deck besitzt starke Synergien, zwei Game Changer, Kreaturentutoren, freie Protection, Stax-Elemente und mehrere explosive Abschlüsse. Es besitzt jedoch keine verifizierte kompakte Endloskombo, keine breite Fast-Mana-Suite und bleibt deutlich boardabhängig.</p>
+<p>Für eine Rule-0-Beschreibung sollten insbesondere genannt werden:</p>
+<ul>
+<li>Smothering Tithe und Seedborn Muse als Game Changer</li>
+<li>Vorinclex, Voice of Hunger, Myrel und Elesh Norn als potenziell einschränkende Effekte</li>
+<li>Halo Fountain und Aetherflux Reservoir als alternative Siege</li>
+<li>keine verifizierte Endloskombo</li>
+<li><code>Fog</code> als bewusstes Politics-Werkzeug</li>
+</ul>
+<h2>Physische Deckzuordnung</h2>
+<p>Einige bestätigte Karten sind laut Collection derzeit auch anderen Decks zugeordnet, darunter <code>Moonshaker Cavalry</code>, <code>Brushland</code>, <code>City of Brass</code>, <code>Fabled Passage</code> und <code>Cavern of Souls</code>. Das Projekt erlaubt dieselbe Karte in mehreren geplanten Decklisten. Für das tatsächliche gleichzeitige Zusammenbauen kann ein physischer Kartentausch nötig sein.</p>
+<h2>Maybe Board</h2>
+<h3>Ramp</h3>
+<ul>
+<li>Llanowar Elves</li>
+<li>Elvish Mystic</li>
+<li>Wild Growth</li>
+<li>Three Visits</li>
+<li>Farseek</li>
+<li>Carpet of Flowers</li>
+</ul>
+<h3>Card Advantage und Payoffs</h3>
+<ul>
+<li>Nykthos Paragon – finaler Cut</li>
+<li>Toski, Bearer of Secrets</li>
+<li>Ohran Frostfang</li>
+<li>Mentor of the Meek</li>
+<li>Beast Whisperer</li>
+<li>Inspiring Call</li>
+<li>Rosie Cotton of South Lane</li>
+<li>Lathiel, the Bounteous Dawn</li>
+<li>Voice of the Blessed</li>
+<li>Speaker of the Heavens</li>
+<li>Beastmaster Ascension</li>
+</ul>
+<p><code>Scurry Oak</code> ist nicht in der Collection; deshalb ist die Rosie-/Scurry-Oak-Kombo nicht eingeplant.</p>
+<h3>Interaction</h3>
+<ul>
+<li>Soul-Guide Lantern</li>
+<li>Kenrith&#39;s Transformation</li>
+<li>Cathar Commando</li>
+<li>Stroke of Midnight</li>
+<li>Reclamation Sage</li>
+<li>Rest in Peace</li>
+</ul>
+<h3>Mass Interaction</h3>
+<ul>
+<li>Dusk // Dawn</li>
+<li>Austere Command</li>
+<li>Farewell</li>
+<li>Pest Infestation</li>
+<li>Elspeth, Sun&#39;s Champion</li>
+<li>Vanquish the Horde</li>
+<li>Promise of Loyalty</li>
+<li>Fell the Mighty</li>
+<li>Settle the Wreckage</li>
+<li>Cleansing Nova</li>
+</ul>
+<h3>Enabler und Enhancer</h3>
+<ul>
+<li>Prosperous Innkeeper</li>
+<li>Arasta of the Endless Web</li>
+<li>Phyrexian Processor</li>
+<li>Avenger of Zendikar</li>
+<li>Dazzling Theater // Prop Room</li>
+<li>Mirari&#39;s Wake</li>
+<li>Asceticism</li>
+<li>Primal Vigor</li>
+</ul>
+<h3>Finisher</h3>
+<ul>
+<li>Walking Ballista</li>
+<li>Beastmaster Ascension</li>
+<li>Blossoming Bogbeast</li>
+<li>Storm Herd</li>
+</ul>
+<h3>Länder</h3>
+<ul>
+<li>Gavony Township</li>
+<li>War Room</li>
+<li>Krosan Verge</li>
+<li>Temple of Plenty</li>
+<li>Mosswort Bridge</li>
 </ul>
 
 </div>
