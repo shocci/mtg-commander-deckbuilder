@@ -1,0 +1,1034 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thranduil Cedh – MTG Commander Brain</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="page-shell">
+
+    <nav class="breadcrumb">
+      <a href="../index.html">← Deckübersicht</a>
+    </nav>
+
+    <header class="deck-header">
+      <p class="eyebrow">Deck</p>
+      <h1>Thranduil Cedh</h1>
+      <p class="subtitle">
+        Commander: Thranduil, the Elvenking
+      </p>
+    </header>
+
+    <section class="profile-card">
+      <h2>Kurzprofil</h2>
+
+      <div class="profile-layout">
+        <div class="profile-commander-images">
+<div class="deck-card-art ">
+<img
+  src="https://cards.scryfall.io/normal/front/f/e/fe2fe8fa-3b99-44c1-bab9-922e5c864952.jpg"
+  alt="Thranduil, the Elvenking"
+  loading="lazy"
+>
+
+</div>
+</div>
+
+        <div class="profile-nav">
+          <a class="profile-nav-button" href="#analyse">Analyse</a>
+          <a class="profile-nav-button" href="#bracket">Bracket 5</a>
+          <a class="profile-nav-button" href="#gameplan">Gameplan</a>
+          <a class="profile-nav-button" href="#deckliste">Deckliste</a>
+          <a class="profile-nav-button" href="#varianten">1 Variante</a>
+          <a class="profile-nav-button" href="#versionen">Version v001</a>
+        </div>
+      </div>
+    </section>
+
+<section id="analyse" class="accordion-card main-section">
+<div class="main-section-title">
+  Analyse
+</div>
+
+<div class="accordion-content">
+<details class="sub-accordion">
+<summary>Kurzprofil</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Commander: Thranduil, the Elvenking</li>
+<li>Farbidentität: Sultai – Schwarz, Grün und Blau</li>
+<li>Hauptstrategie: Sultai Midrange / Friedhofscombo / Turbo-Combo</li>
+<li>Geschätztes Bracket: 5 – cEDH</li>
+<li>Deckgröße: 100 Karten inklusive Commander</li>
+<li>Länder: 27, keine Standardländer</li>
+<li>Durchschnittlicher Mana Value ohne Länder: 2,07</li>
+<li>Game Changer: 17</li>
+<li>Erwarteter Siegzug: grundsätzlich ab Zug 2–4 möglich; interaktive Partien dauern häufig länger</li>
+<li>Collection: 25 Karten vorhanden, 75 Karten fehlen oder benötigen Proxies</li>
+</ul>
+<p>Die Liste verwendet Thranduil als Necrotic-Ooze-artige Combo-Engine aus der Command Zone. Buried Alive legt Devoted Druid, Incubation Druid und Zameck Guildmage in den Friedhof. Thranduil kombiniert deren aktivierte Fähigkeiten zu beliebig viel Mana und zieht anschließend das Deck. Daneben spielt die Liste Hermit Druid, Thassa&#39;s Oracle mit Demonic Consultation oder Tainted Pact und eine dichte Suite aus Tutoren, Fast Mana und freier Interaktion.</p>
+<p>Die Hauptliste basiert auf der am 28. Juli 2026 veröffentlichten Thranduil-cEDH-Liste von Harvey McGuinness und wurde am 14. August 2026 erneut gegen Scryfall, die Commander-Banlist und die aktuelle Game-Changer-Referenz geprüft.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Legalitäts- und Regelcheck</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Commander-Legalität: legal</li>
+<li>Farbidentität: alle 100 Karten sind Sultai-legal</li>
+<li>Singleton: erfüllt</li>
+<li>Banlist: keine verbotene Karte enthalten</li>
+<li>Standardländer: keine; wichtig für Hermit Druid</li>
+<li>Tainted Pact: jeder Kartenname außerhalb des Commanders kommt nur einmal vor</li>
+</ul>
+<p>Relevante Regeln:</p>
+<ul>
+<li>Thranduil erhält die aktivierten Fähigkeiten aller Elf-Karten im eigenen Friedhof nach CR 113.10.</li>
+<li>Tappfähigkeiten unterliegen CR 107.5 und 302.6. Tyvar, Shang-Chi und Thousand-Year Elixir erlauben sofortige Aktivierungen.</li>
+<li>+1/+1- und -1/-1-Counter werden nach CR 122.3 paarweise entfernt.</li>
+<li>Adapt funktioniert nach CR 701.46 nur ohne vorhandene +1/+1-Counter.</li>
+<li>Dread Return kann aus dem Friedhof über Flashback gewirkt werden, wenn drei Kreaturen geopfert werden können.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Game Changer</summary>
+<div class="sub-accordion-content">
+<p>Enthalten sind 17 aktuelle Game Changer:</p>
+<ul>
+<li>Orcish Bowmasters</li>
+<li>Thassa&#39;s Oracle</li>
+<li>Demonic Tutor</li>
+<li>Imperial Seal</li>
+<li>Crop Rotation</li>
+<li>Fierce Guardianship</li>
+<li>Force of Will</li>
+<li>Mystical Tutor</li>
+<li>Vampiric Tutor</li>
+<li>Chrome Mox</li>
+<li>Lion&#39;s Eye Diamond</li>
+<li>Mana Vault</li>
+<li>Mox Diamond</li>
+<li>Rhystic Study</li>
+<li>Survival of the Fittest</li>
+<li>Ancient Tomb</li>
+<li>Gaea&#39;s Cradle</li>
+</ul>
+<p>In Bracket 5 ist ihre Anzahl nicht beschränkt.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Hauptcombo: Buried Alive</summary>
+<div class="sub-accordion-content">
+<p>Benötigt werden:</p>
+<ul>
+<li>Thranduil im Spiel und fähig zu tappen</li>
+<li>Buried Alive</li>
+<li>fünf grüne Mana nach dem Friedhofs-Setup</li>
+<li>Zugriff auf Blau für die Zameck-Guildmage-Aktivierung</li>
+</ul>
+<p>Buried Alive legt diese Karten in den Friedhof:</p>
+<ol>
+<li>Devoted Druid</li>
+<li>Incubation Druid</li>
+<li>Zameck Guildmage</li>
+</ol>
+<p>Ablauf:</p>
+<ol>
+<li>Thranduil aktiviert Incubation Druids Adapt 3 für {3}{G}{G}.</li>
+<li>Mit den drei +1/+1-Countern tappt er für drei Mana.</li>
+<li>Devoted Druids Fähigkeit legt einen -1/-1-Counter auf Thranduil und enttappt ihn.</li>
+<li>Dieser Vorgang wird dreimal ausgeführt. Die Gegen-Counter entfernen sich, Thranduil ist wieder ohne Counter und neun Mana wurden erzeugt.</li>
+<li>Adapt kostet fünf Mana; jeder vollständige Durchlauf erzeugt deshalb netto vier Mana.</li>
+<li>Mit beliebig viel Mana wird wiederholt adaptiert. Zameck Guildmage entfernt die Counter, um das Deck zu ziehen.</li>
+<li>Thassa&#39;s Oracle oder Finale of Devastation beendet die Partie.</li>
+</ol>
+<p>Tyvar, Shang-Chi und Thousand-Year Elixir umgehen die Einsatzverzögerung. Die wichtigsten gegnerischen Interaktionsfenster sind Buried Alive, Friedhofshate, Removal auf Thranduil, das erste Adapt und der finale Wincon-Spell.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Hermit-Druid-Linie</summary>
+<div class="sub-accordion-content">
+<p>Die Manabasis enthält keine Standardländer. Eine erfolgreiche Aktivierung von Hermit Druid millt deshalb die gesamte Bibliothek.</p>
+<p>Primärer Abschluss:</p>
+<ol>
+<li>Hermit Druid aktivieren und das Deck millen.</li>
+<li>Dread Return aus dem Friedhof flashbacken und drei Kreaturen opfern.</li>
+<li>Thassa&#39;s Oracle ins Spiel zurückbringen.</li>
+<li>Mit leerer Bibliothek den Oracle-Trigger gewinnen lassen.</li>
+</ol>
+<p>Alternativ kann Thranduil die Fähigkeiten von Devoted Druid und Incubation Druid mit Deathrite Shaman verbinden. Wiederholte Deathrite-Aktivierungen exilieren Instant- und Sorcery-Karten aus Friedhöfen und drainen alle Gegner; diese Linie benötigt ausreichend legale Ziele.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Tainted-Fish-Linie</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Thassa&#39;s Oracle plus Demonic Consultation</li>
+<li>Thassa&#39;s Oracle plus Tainted Pact</li>
+</ul>
+<p>Thassa&#39;s Oracle wird gewirkt und sein ETB-Trigger auf den Stapel gelegt. In Reaktion entfernt Demonic Consultation oder Tainted Pact die Bibliothek. Die Liste spielt keine doppelten Kartennamen und ist deshalb vollständig Tainted-Pact-kompatibel.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Praetor&#039;s-Grasp-Linie</summary>
+<div class="sub-accordion-content">
+<p>Praetor&#39;s Grasp kann eine gegnerische Underworld Breach ins Exil legen. Brain Freeze und Lion&#39;s Eye Diamond sind bereits im eigenen Deck enthalten. Mit der gestohlenen Breach kann die bekannte Breach-/LED-/Brain-Freeze-Schleife aufgebaut werden, sofern Friedhof, Storm Count und Mana dies zulassen.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Beschleunigung</summary>
+<div class="sub-accordion-content">
+<p>Fast Mana und Rituale:</p>
+<ul>
+<li>Chrome Mox</li>
+<li>Lion&#39;s Eye Diamond</li>
+<li>Lotus Petal</li>
+<li>Mana Vault</li>
+<li>Mox Diamond</li>
+<li>Ancient Tomb</li>
+<li>Gemstone Caverns</li>
+<li>Elvish Spirit Guide</li>
+<li>Dark Ritual</li>
+<li>Cabal Ritual</li>
+<li>Culling the Weak</li>
+<li>Culling Ritual</li>
+</ul>
+<p>Permanente Beschleunigung:</p>
+<ul>
+<li>Birds of Paradise</li>
+<li>Deathrite Shaman</li>
+<li>Delighted Halfling</li>
+<li>Elves of Deep Shadow</li>
+<li>Priest of Titania</li>
+<li>Badgermole Cub</li>
+<li>Kinnan, Bonder Prodigy</li>
+<li>Carpet of Flowers</li>
+<li>Wild Growth</li>
+<li>Talisman of Dominance</li>
+<li>Talisman of Resilience</li>
+</ul>
+<p>Badgermole Cub erzeugt bei jedem Tappen einer Kreatur für Mana zusätzlich ein grünes Mana. Shang-Chi erzeugt zwei Mana, das nur für aktivierte Fähigkeiten von Kreaturenquellen verwendet werden darf, und erlaubt wie Tyvar sofortige Tappaktivierungen.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Tutoren und Auswahl</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Demonic Tutor</li>
+<li>Vampiric Tutor</li>
+<li>Imperial Seal</li>
+<li>Mystical Tutor</li>
+<li>Grim Tutor</li>
+<li>Wishclaw Talisman</li>
+<li>Survival of the Fittest</li>
+<li>Chord of Calling</li>
+<li>Crop Rotation</li>
+<li>Lim-Dûl&#39;s Vault</li>
+<li>Tainted Pact</li>
+<li>Demonic Consultation</li>
+<li>Praetor&#39;s Grasp</li>
+</ul>
+<p>Primäres Ziel ist Buried Alive oder ein sofortiger Tainted-Fish-Abschluss. Survival of the Fittest kann die benötigten Elfen nacheinander suchen und gleichzeitig in den Friedhof abwerfen. Crop Rotation findet je nach Situation Gaea&#39;s Cradle, Ancient Tomb, Emergence Zone, Boseiju oder Mistrise Village.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Kartenvorteil und Engines</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Mystic Remora</li>
+<li>Rhystic Study</li>
+<li>Faerie Mastermind</li>
+<li>Wan Shi Tong, Librarian</li>
+<li>The Cabbage Merchant</li>
+<li>Orcish Bowmasters</li>
+<li>Chains of Mephistopheles</li>
+<li>Yawgmoth&#39;s Will</li>
+<li>Copy Enchantment</li>
+<li>Mirrormade</li>
+</ul>
+<p>Wan Shi Tong reagiert auf gegnerische Bibliothekssuchen mit einer Karte und einem +1/+1-Counter. The Cabbage Merchant erzeugt Food für gegnerische Nichtkreaturenzauber und kann je zwei Foods in Mana umwandeln. Copy Enchantment und Mirrormade kopieren die beste verfügbare Enchantment-Engine oder ein relevantes gegnerisches Ziel.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Interaktion und Schutz</summary>
+<div class="sub-accordion-content">
+<p>Kostenlose oder stark vergünstigte Interaktion:</p>
+<ul>
+<li>Fierce Guardianship</li>
+<li>Force of Will</li>
+<li>Force of Negation</li>
+<li>Pact of Negation</li>
+<li>Mental Misstep</li>
+<li>Mindbreak Trap</li>
+<li>Commandeer</li>
+<li>Misdirection</li>
+</ul>
+<p>Weitere Stack-Interaktion:</p>
+<ul>
+<li>Flusterstorm</li>
+<li>Swan Song</li>
+<li>Autumn&#39;s Veil</li>
+<li>Veil of Summer</li>
+<li>Boseiju, Who Endures</li>
+<li>Otawara, Soaring City</li>
+</ul>
+<p>Borne Upon a Wind und Emergence Zone erlauben es, eine Win-Line im gegnerischen Zug oder nach einem gegnerischen Commit durchzuführen. Mistrise Village kann den nächsten eigenen Zauber unkounterbar machen.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Manabasis</summary>
+<div class="sub-accordion-content">
+<p>Die Liste spielt 27 Länder ohne Standardländer. Zehn Fetchlands beziehungsweise fetchbare Duals und Shocklands stabilisieren die Sultai-Farben. Ancient Tomb, Gaea&#39;s Cradle, Gemstone Caverns und Starting Town erhöhen die Geschwindigkeit. Boseiju und Otawara sind zugleich Länder und Interaktion. Emergence Zone erzeugt Flash-Fenster; Mistrise Village schützt einen entscheidenden Zauber.</p>
+<p>Die niedrige Landzahl wird durch Fast Mana, Rituale und zahlreiche Kreaturen-Manaquellen getragen. Hände ohne frühe Manaquelle oder Kartenauswahl müssen aggressiv gemulligant werden.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Collection-Status</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>In der Collection vorhanden: 25 Karten</li>
+<li>Nicht in der Collection gefunden: 75 Karten</li>
+<li>Standardländer: keine</li>
+<li>Budget: kein Budgetlimit für diese cEDH-Fassung festgelegt</li>
+</ul>
+<p>Die Liste enthält Reserved-List- und andere hochpreisige Karten wie Underground Sea, Tropical Island, Bayou, Gaea&#39;s Cradle, Lion&#39;s Eye Diamond, Mox Diamond, Chains of Mephistopheles und Survival of the Fittest. Sie ist deshalb als uneingeschränkte beziehungsweise proxy-taugliche cEDH-Liste gespeichert. Für einen realen Kaufplan wäre ein separates Budget oder eine ausdrückliche Proxy-Regel erforderlich.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Stärken</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Buried Alive ist mit liegendem Commander ein kompakter Ein-Karten-Setup-Spell.</li>
+<li>Mehrere unabhängige Win-Lines erschweren gezieltes Hate.</li>
+<li>Sehr hohe Tutor- und Fast-Mana-Dichte.</li>
+<li>Umfangreiche freie Interaktion schützt eigene Versuche und stoppt Gegner.</li>
+<li>Thranduil kann aus der Command Zone eine Win-Engine bereitstellen.</li>
+<li>Sultai bietet starke Kartenvorteils-, Tutor- und Friedhofswerkzeuge.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Schwächen</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Thranduil kostet fünf Mana und ist langsamer als typische cEDH-Commander.</li>
+<li>Die Hauptcombo ist stark von Friedhof und Commander abhängig.</li>
+<li>Grafdigger&#39;s Cage, Rest in Peace, Dauthi Voidwalker und instant-speed Friedhofshate sind problematisch.</li>
+<li>Null Rod- und Collector-Ouphe-Effekte treffen einen relevanten Teil des Fast Mana und Lion&#39;s Eye Diamond.</li>
+<li>Die Manabasis ist mit 27 Ländern mulligan-anfällig.</li>
+<li>Hermit Druid benötigt eine Tappaktivierung und kann offen telegraphiert werden.</li>
+<li>Ohne Proxies ist die Liste außerordentlich teuer.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Quellenstand</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Harvey McGuinness: <code>Thranduil, the Elvenking | A cEDH One-Card Combo</code>, veröffentlicht am 28. Juli 2026</li>
+<li>EDHREC und verlinkte Archidekt-Liste, geprüft am 14. August 2026</li>
+<li>Scryfall Oracle, Color Identity und Commander-Legalität, geprüft am 14. August 2026</li>
+<li>Comprehensive Rules, effektives Datum 7. August 2026</li>
+<li>lokale Commander-Banlist und Game-Changer-Referenz, aktualisiert im August 2026</li>
+<li>Deckliste: <code>data/decks/decklists/thranduil-cedh.txt</code></li>
+</ul>
+
+</div>
+</details>
+</div>
+</section>
+
+<section id="bracket" class="accordion-card main-section">
+<div class="main-section-title">
+  Bracket 5
+</div>
+
+<div class="accordion-content">
+<details class="sub-accordion">
+<summary>Ergebnis</summary>
+<div class="sub-accordion-content">
+<p><strong>Geschätztes Bracket:</strong> 5 – cEDH</p>
+<p><strong>Sicherheit:</strong> hoch</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Kurzbegründung</summary>
+<div class="sub-accordion-content">
+<p>Die Liste ist ausdrücklich für cEDH gebaut. Sie kombiniert Fast Mana, freie Interaktion, effiziente Tutoren, mehrere sofortige Win-Lines und 17 Game Changer. Buried Alive stellt mit liegendem Thranduil die komplette Friedhofscombo zusammen; Thassa&#39;s Oracle plus Demonic Consultation oder Tainted Pact und Hermit Druid bilden unabhängige schnelle Siege.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Game Changer Check</summary>
+<div class="sub-accordion-content">
+<p>Anzahl Game Changer: 17</p>
+<p>Gefundene Game Changer:</p>
+<ul>
+<li>Orcish Bowmasters</li>
+<li>Thassa&#39;s Oracle</li>
+<li>Demonic Tutor</li>
+<li>Imperial Seal</li>
+<li>Crop Rotation</li>
+<li>Fierce Guardianship</li>
+<li>Force of Will</li>
+<li>Mystical Tutor</li>
+<li>Vampiric Tutor</li>
+<li>Chrome Mox</li>
+<li>Lion&#39;s Eye Diamond</li>
+<li>Mana Vault</li>
+<li>Mox Diamond</li>
+<li>Rhystic Study</li>
+<li>Survival of the Fittest</li>
+<li>Ancient Tomb</li>
+<li>Gaea&#39;s Cradle</li>
+</ul>
+<p>Auswirkung:</p>
+<ul>
+<li>Für Bracket 5 ist die Zahl nicht beschränkt.</li>
+<li>Die Game Changer sind zentrale Mana-, Tutor-, Schutz-, Value- und Wincon-Bausteine.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Spielplan</summary>
+<div class="sub-accordion-content">
+<p>Das Deck entwickelt früh Mana und Kartenvorteil, hält freie Interaktion offen und sucht das beste Siegfenster. Primär wird Buried Alive mit Thranduil verbunden. Sekundär gewinnen Thassa&#39;s Oracle und Demonic Consultation beziehungsweise Tainted Pact oder Hermit Druid mit Dread Return. Praetor&#39;s Grasp kann gegnerische Underworld-Breach-Linien verwenden.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Geschwindigkeit</summary>
+<div class="sub-accordion-content">
+<p>Erwarteter Sieg- oder Dominanzbereich:</p>
+<ul>
+<li>Turn-2-Siege: mit außergewöhnlich starker Fast-Mana-/Tutor-Hand möglich</li>
+<li>erste realistische geschützte Versuche: ungefähr Zug 3–4</li>
+<li>Midrange-Partien: häufig länger durch Stack-Kämpfe und Stax</li>
+<li>Spiele können entsprechend Bracket 5 in jedem Zug enden</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Win Conditions</summary>
+<div class="sub-accordion-content">
+<h3>Buried Alive</h3>
+<ul>
+<li>Thranduil</li>
+<li>Devoted Druid</li>
+<li>Incubation Druid</li>
+<li>Zameck Guildmage</li>
+<li>Abschluss über Thassa&#39;s Oracle oder Finale of Devastation</li>
+</ul>
+<h3>Tainted Fish</h3>
+<ul>
+<li>Thassa&#39;s Oracle</li>
+<li>Demonic Consultation oder Tainted Pact</li>
+</ul>
+<h3>Hermit Druid</h3>
+<ul>
+<li>Hermit Druid millt wegen der basiclosen Manabasis die Bibliothek.</li>
+<li>Dread Return bringt Thassa&#39;s Oracle zurück.</li>
+</ul>
+<h3>Gestohlene Breach-Line</h3>
+<ul>
+<li>Praetor&#39;s Grasp auf gegnerische Underworld Breach</li>
+<li>Lion&#39;s Eye Diamond</li>
+<li>Brain Freeze</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Faktoren für Bracket 5</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>ausdrückliche cEDH-Deckabsicht</li>
+<li>mehrere kompakte und tutorbare Win-Lines</li>
+<li>17 Game Changer</li>
+<li>Chrome Mox, Mox Diamond, Mana Vault, Lion&#39;s Eye Diamond, Lotus Petal und Rituale</li>
+<li>Demonic Tutor, Vampiric Tutor, Imperial Seal, Mystical Tutor und weitere Tutoren</li>
+<li>Force of Will, Fierce Guardianship, Force of Negation, Pact of Negation und weitere freie Interaktion</li>
+<li>Thassa&#39;s Oracle plus Demonic Consultation oder Tainted Pact</li>
+<li>Hermit-Druid-One-Card-Setup in einer basiclosen Manabasis</li>
+<li>cEDH-orientierte 27-Land-Manabasis mit Reserved-List-Duals</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Unsicherheiten</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Thranduil ist als fünf Mana teurer Commander langsamer und weniger etabliert als die führenden Sultai-cEDH-Commander.</li>
+<li>Der neue Commander und mehrere Hobbit-Karten besitzen noch eine kleine Turnierdatenbasis.</li>
+<li>Die veröffentlichte Liste ist ein früher cEDH-Build und wird sich mit dem entstehenden Metagame wahrscheinlich weiterentwickeln.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Empfehlung</summary>
+<div class="sub-accordion-content">
+<p>Dieses Deck ausschließlich als Bracket 5 beziehungsweise cEDH kommunizieren. Eine niedrigere Einstufung wäre wegen Deckabsicht, Geschwindigkeit, Game-Changer-Dichte und Win Conditions nicht vertretbar.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Rule 0</summary>
+<div class="sub-accordion-content">
+<blockquote>
+<p>Bracket 5 cEDH: Sultai Midrange-Combo mit 17 Game Changern, Fast Mana, freier Interaktion und mehreren kompakten Siegen. Buried Alive ist mit Thranduil ein Ein-Karten-Setup für unendlich Mana und Kartenziehen; zusätzlich spielt die Liste Tainted Fish und Hermit Druid.</p>
+</blockquote>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Quellenstand</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Commander Brackets Beta Update vom 9. Februar 2026</li>
+<li>EDHREC-/Archidekt-cEDH-Liste vom 28. Juli 2026</li>
+<li>Deckliste: <code>data/decks/decklists/thranduil-cedh.txt</code></li>
+</ul>
+
+</div>
+</details>
+</div>
+</section>
+
+<section id="gameplan" class="accordion-card main-section">
+<div class="main-section-title">
+  Gameplan
+</div>
+
+<div class="accordion-content">
+<details class="sub-accordion">
+<summary>Kernidee</summary>
+<div class="sub-accordion-content">
+<p>Die Liste spielt Sultai Midrange mit der Fähigkeit, in einem offenen Fenster explosiv zu gewinnen. Thranduil verwandelt Buried Alive in ein vollständiges Combo-Setup. Tainted Fish und Hermit Druid verhindern, dass das Deck ausschließlich vom Commander abhängt. Fast Mana beschleunigt die teure Command-Zone-Engine; freie Interaktion schützt eigene Versuche und stoppt gegnerische Siege.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Mulligan</summary>
+<div class="sub-accordion-content">
+<p>Priorisieren:</p>
+<ul>
+<li>zwei bis drei Manaquellen oder eine funktionierende Fast-Mana-Sequenz</li>
+<li>mindestens zwei Farben, idealerweise Grün plus Blau oder Schwarz</li>
+<li>frühe Kartenvorteilsengine wie Mystic Remora, Rhystic Study oder Faerie Mastermind</li>
+<li>Tutor plus realistische Manaentwicklung</li>
+<li>freie Interaktion gegen schnellere Pods</li>
+<li>Delighted Halfling, Shang-Chi, Tyvar oder Thousand-Year Elixir in commander-zentrierten Händen</li>
+</ul>
+<p>Besonders starke Hände:</p>
+<ul>
+<li>Mana Vault oder Ancient Tomb plus farbiges Mana und Tutor</li>
+<li>Mystic Remora plus Fast Mana und freie Interaktion</li>
+<li>Demonic Tutor, Vampiric Tutor oder Imperial Seal mit klarer Buried-Alive- oder Tainted-Fish-Linie</li>
+<li>Hermit Druid plus Haste-Enabler und Schutz</li>
+<li>Rhystic Study oder The Cabbage Merchant gegen spelllastige Pods</li>
+</ul>
+<p>Zurücklegen:</p>
+<ul>
+<li>Ein-Land-Hände ohne zusätzliche funktionierende Manaquelle</li>
+<li>Hände mit mehreren fünf Mana teuren beziehungsweise situativen Karten</li>
+<li>Commander-Combo-Teile ohne Discard-, Tutor- oder Friedhofszugang</li>
+<li>reine Value-Hände ohne Interaktion gegen bekannte Turbo-Pods</li>
+<li>Fast Mana ohne farbigen Anschluss</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Early Game</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Mystic Remora, Rhystic Study, Faerie Mastermind oder Wan Shi Tong früh etablieren, wenn kein direkter Sieg verfügbar ist.</li>
+<li>Delighted Halfling, Birds of Paradise, Deathrite Shaman und Elves of Deep Shadow entwickeln.</li>
+<li>Fast Mana nicht unnötig offenlegen, wenn es keinen starken Folgespielzug ermöglicht.</li>
+<li>Carpet of Flowers gegen blaue Pods früh legen und für Mainphase-Mana einplanen.</li>
+<li>Mit Vampiric Tutor oder Imperial Seal nur dann Buried Alive suchen, wenn Thranduil zeitnah gewirkt und aktiviert werden kann.</li>
+<li>Gegen schnellere Gegner freie Interaktion vor eigener Value-Entwicklung priorisieren.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Mid Game</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Thranduil mit Delighted Halfling möglichst unkounterbar wirken.</li>
+<li>Tyvar, Shang-Chi oder Thousand-Year Elixir vor dem Commander etablieren, wenn ein sofortiger Comboversuch geplant ist.</li>
+<li>Survival of the Fittest kann Devoted Druid, Incubation Druid und Zameck Guildmage nacheinander suchen und abwerfen.</li>
+<li>Buried Alive möglichst in einem Zug wirken, in dem die Combo abgeschlossen oder ausreichend geschützt werden kann.</li>
+<li>Mistrise Village für Buried Alive, Thassa&#39;s Oracle oder einen entscheidenden Tutor aufheben.</li>
+<li>Emergence Zone oder Borne Upon a Wind erzeugt ein Siegfenster im gegnerischen Zug.</li>
+<li>Culling Ritual kann Stax- und Tokenboards räumen und gleichzeitig den eigenen Sieg finanzieren.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Hauptcombo</summary>
+<div class="sub-accordion-content">
+<p>Buried-Alive-Ziele:</p>
+<ol>
+<li>Devoted Druid</li>
+<li>Incubation Druid</li>
+<li>Zameck Guildmage</li>
+</ol>
+<p>Voraussetzungen:</p>
+<ul>
+<li>Thranduil kann tappen.</li>
+<li>Nach Buried Alive stehen fünf grüne Mana für Adapt bereit.</li>
+<li>Blau ist für Zameck Guildmage erreichbar.</li>
+<li>Kein aktiver Friedhofsersatzeffekt verhindert das Ablegen der Karten.</li>
+</ul>
+<p>Ablauf:</p>
+<ol>
+<li>Adapt 3 auf Thranduil aktivieren.</li>
+<li>Thranduil für drei Mana tappen.</li>
+<li>Mit Devoted Druids Fähigkeit enttappen und einen -1/-1-Counter hinzufügen.</li>
+<li>Dreimal Mana erzeugen und enttappen, bis die drei +1/+1-Counter neutralisiert wurden.</li>
+<li>Mit neun erzeugten Mana erneut adaptieren. Jeder Zyklus erzeugt netto vier Mana.</li>
+<li>Zameck Guildmage entfernt Adapt-Counter und zieht Karten.</li>
+<li>Das Deck ziehen und mit Thassa&#39;s Oracle gewinnen; Finale of Devastation ist der alternative Abschluss.</li>
+</ol>
+<p>Schutzpriorität:</p>
+<ol>
+<li>Friedhofsersatzeffekte oder aktivierbaren Friedhofshate beantworten.</li>
+<li>Removal auf Thranduil verhindern.</li>
+<li>Stifle-artige Effekte auf Adapt oder Zameck beachten.</li>
+<li>Für den finalen Oracle-Trigger beziehungsweise Finale einen Counterwar einplanen.</li>
+</ol>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Tainted Fish</summary>
+<div class="sub-accordion-content">
+<p>Standardlinie:</p>
+<ol>
+<li>Thassa&#39;s Oracle wirken.</li>
+<li>Den ETB-Trigger auf den Stapel legen.</li>
+<li>In Reaktion Demonic Consultation wirken und einen nicht im Deck vorhandenen Kartennamen nennen oder Tainted Pact bis zum Ende der Bibliothek fortsetzen.</li>
+<li>Oracle-Trigger mit leerer Bibliothek verrechnen lassen.</li>
+</ol>
+<p>Wenn gegnerische Interaktion wahrscheinlich ist, Pact of Negation, Fierce Guardianship, Force of Will oder Veil of Summer bereithalten. Gegen Stifle-Effekte kann es besser sein, zuerst ein anderes Siegfenster zu suchen.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Hermit Druid</summary>
+<div class="sub-accordion-content">
+<ol>
+<li>Hermit Druid mit Tyvar, Shang-Chi oder einer bereits überstandenen Runde aktivieren.</li>
+<li>Wegen der basiclosen Manabasis die gesamte Bibliothek millen.</li>
+<li>Dread Return für seine Flashback-Kosten wirken und drei Kreaturen opfern.</li>
+<li>Thassa&#39;s Oracle zurückbringen und gewinnen.</li>
+</ol>
+<p>Vor der Aktivierung prüfen:</p>
+<ul>
+<li>Dread Return und Thassa&#39;s Oracle sind noch in der Bibliothek beziehungsweise werden mitgemillt.</li>
+<li>Mindestens drei opferbare Kreaturen sind verfügbar.</li>
+<li>Kein Grafdigger&#39;s Cage- oder Rest-in-Peace-Effekt verhindert die Linie.</li>
+<li>Der Oracle-Trigger kann gegen gegnerische Interaktion geschützt werden.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Praetor&#039;s Grasp</summary>
+<div class="sub-accordion-content">
+<p>Praetor&#39;s Grasp ist Tutor, Disruption und situative Wincon. Gegen Decks mit Underworld Breach kann Breach genommen werden. Lion&#39;s Eye Diamond und Brain Freeze sind bereits vorhanden. Alternativ wird ein gegnerisches Oracle-, Tutor- oder Interaktionsteil exiliert, wenn die Breach-Line nicht sicher ist.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Interaktionsprioritäten</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Mental Misstep für gegnerische Ein-Mana-Tutoren, Silence-Effekte, Sol Ring oder relevante Hate-Permanents verwenden.</li>
+<li>Flusterstorm bevorzugt in großen Counterwars einsetzen.</li>
+<li>Force of Negation stoppt gegnerische Siege im fremden Zug, schützt aber den eigenen Kreaturen- oder Sorcery-Win nicht immer.</li>
+<li>Fierce Guardianship ist erst mit kontrolliertem Commander kostenlos; bei frühen gegnerischen Versuchen nicht darauf verlassen.</li>
+<li>Veil of Summer und Autumn&#39;s Veil schützen gegen Blau und Schwarz und können einen Win-Turn effizient absichern.</li>
+<li>Mindbreak Trap ist besonders gegen Storm- und mehrfach geschützte Versuche relevant.</li>
+<li>Commandeer und Misdirection können Tutoren, Draw-Spells oder zielende Interaktion umleiten.</li>
+<li>Boseiju beantwortet problematische Artefakte und Verzauberungen; Otawara entfernt Kreaturen oder andere Nichtland-Permanents temporär.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Rolle der neuen Karten</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Badgermole Cub verstärkt jede für Mana getappte Kreatur und macht Mana-Dork-Sequenzen explosiv.</li>
+<li>Shang-Chi erlaubt sofortige Tappaktivierungen und erzeugt zwei Mana für Kreaturenfähigkeiten.</li>
+<li>The Cabbage Merchant bestraft gegnerische Nichtkreaturenzauber mit Food und wandelt Foods paarweise in Mana um.</li>
+<li>Wan Shi Tong zieht Karten, wenn Gegner ihre Bibliothek durchsuchen.</li>
+<li>Flash Photography kopiert ein Permanent und kann durch Flashback erneut verwendet werden.</li>
+<li>Mockingbird kopiert flexibel die beste ausreichend günstige Kreatur auf dem Tisch.</li>
+<li>Mistrise Village macht den nächsten eigenen Zauber unkounterbar.</li>
+<li>Starting Town liefert in den ersten drei Zügen ungetappt beliebige Farben.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Rule 0</summary>
+<div class="sub-accordion-content">
+<blockquote>
+<p>Bracket 5 cEDH: Sultai Midrange-Combo mit 17 Game Changern, Fast Mana, freier Interaktion und mehreren kompakten Siegen. Buried Alive ist mit Thranduil ein Ein-Karten-Setup für unendlich Mana und Kartenziehen; zusätzlich spielt die Liste Tainted Fish und Hermit Druid.</p>
+</blockquote>
+
+</div>
+</details>
+</div>
+</section>
+
+<section id="deckliste" class="accordion-card main-section">
+<div class="main-section-title">
+  Deckliste
+</div>
+
+<div class="accordion-content">
+<pre><code class="language-txt">// COMMANDER
+1 Thranduil, the Elvenking
+
+// CREATURES
+1 Badgermole Cub
+1 Birds of Paradise
+1 Deathrite Shaman
+1 Delighted Halfling
+1 Devoted Druid
+1 Elves of Deep Shadow
+1 Elvish Spirit Guide
+1 Faerie Mastermind
+1 Hermit Druid
+1 Incubation Druid
+1 Kinnan, Bonder Prodigy
+1 Mockingbird
+1 Orcish Bowmasters
+1 Priest of Titania
+1 Shang-Chi, Master of Kung Fu
+1 Thassa&#39;s Oracle
+1 The Cabbage Merchant
+1 Wan Shi Tong, Librarian
+1 Zameck Guildmage
+
+// PLANESWALKERS
+1 Tyvar, Jubilant Brawler
+
+// SORCERIES
+1 Buried Alive
+1 Culling Ritual
+1 Demonic Tutor
+1 Dread Return
+1 Finale of Devastation
+1 Flash Photography
+1 Grim Tutor
+1 Imperial Seal
+1 Praetor&#39;s Grasp
+1 Yawgmoth&#39;s Will
+
+// INSTANTS
+1 Autumn&#39;s Veil
+1 Borne Upon a Wind
+1 Brain Freeze
+1 Cabal Ritual
+1 Chord of Calling
+1 Commandeer
+1 Crop Rotation
+1 Culling the Weak
+1 Dark Ritual
+1 Demonic Consultation
+1 Dramatic Reversal
+1 Fierce Guardianship
+1 Flusterstorm
+1 Force of Negation
+1 Force of Will
+1 Lim-Dûl&#39;s Vault
+1 Mental Misstep
+1 Mindbreak Trap
+1 Misdirection
+1 Mystical Tutor
+1 Pact of Negation
+1 Swan Song
+1 Tainted Pact
+1 Vampiric Tutor
+1 Veil of Summer
+
+// ARTIFACTS
+1 Chrome Mox
+1 Lion&#39;s Eye Diamond
+1 Lotus Petal
+1 Mana Vault
+1 Mox Diamond
+1 Talisman of Dominance
+1 Talisman of Resilience
+1 Thousand-Year Elixir
+1 Wishclaw Talisman
+
+// ENCHANTMENTS
+1 Carpet of Flowers
+1 Chains of Mephistopheles
+1 Copy Enchantment
+1 Mirrormade
+1 Mystic Remora
+1 Rhystic Study
+1 Survival of the Fittest
+1 Wild Growth
+
+// LANDS
+1 Ancient Tomb
+1 Bayou
+1 Bloodstained Mire
+1 Boseiju, Who Endures
+1 Breeding Pool
+1 City of Brass
+1 Command Tower
+1 Emergence Zone
+1 Flooded Strand
+1 Gaea&#39;s Cradle
+1 Gemstone Caverns
+1 Mana Confluence
+1 Marsh Flats
+1 Mistrise Village
+1 Misty Rainforest
+1 Otawara, Soaring City
+1 Overgrown Tomb
+1 Polluted Delta
+1 Scalding Tarn
+1 Starting Town
+1 Tropical Island
+1 Undercity Sewers
+1 Underground Sea
+1 Verdant Catacombs
+1 Watery Grave
+1 Windswept Heath
+1 Wooded Foothills
+</code></pre>
+
+</div>
+</section>
+
+<section id="varianten" class="accordion-card main-section">
+<div class="main-section-title">
+  Varianten
+</div>
+
+<div class="accordion-content">
+<details class="sub-accordion variant-accordion">
+<summary>Thranduil-Variante: Grabkronen-Engine Bracket 3</summary>
+<div class="sub-accordion-content">
+<h2>Status</h2>
+<ul>
+<li>Vom Nutzer bestätigt und ursprünglich am 14. August 2026 gespeichert</li>
+<li>Als Variante des cEDH-Hauptprofils archiviert</li>
+<li>Commander: Thranduil, the Elvenking</li>
+<li>Farbidentität: Sultai</li>
+<li>Ziel-Bracket: 3 – Upgraded, oberer Bereich</li>
+<li>Deckgröße: 100 Karten inklusive Commander</li>
+<li>Länder: 37</li>
+<li>Game Changer: 0</li>
+<li>Zusatzbudget: ca. 12,37 €</li>
+<li>Collection-first: ja</li>
+</ul>
+<h2>Konzept</h2>
+<p>Diese Variante ist die ursprüngliche Collection-first-Fassung. Sie verwendet Thranduil ebenfalls als Friedhofs-Combo-Engine, verzichtet aber auf cEDH-Fast-Mana, Reserved-List-Länder, freie Interaktion, Tainted Fish und die hohe Tutor-Dichte der Hauptliste. Die Hauptcombo aus Devoted Druid, Incubation Druid und Zameck Guildmage bleibt erhalten und wird über Walking Ballista abgeschlossen.</p>
+<h2>Vollständige Deckliste</h2>
+<pre><code class="language-txt">// COMMANDER
+1 Thranduil, the Elvenking
+
+1 Devoted Druid
+1 Zameck Guildmage
+1 Timberwatch Elf
+1 Marwyn, the Nurturer
+1 Shaman of the Pack
+1 Llanowar Elves
+1 Elvish Mystic
+1 Arbor Elf
+1 Deathrite Shaman
+1 Incubation Druid
+1 Bloom Tender
+1 Lys Alana Dignitary
+1 Woodland Weavemaster
+1 Elvish Archdruid
+1 Walking Ballista
+1 Elvish Visionary
+1 Coiling Oracle
+1 Fauna Shaman
+1 Aftermath Analyst
+1 Glowspore Shaman
+1 Lluwen, Imperfect Naturalist
+1 Lys Alana Informant
+1 Beast Whisperer
+1 Immaculate Magistrate
+1 Rishkar, Peema Renegade
+1 Tromell, Seymour&#39;s Butler
+1 High Perfect Morcant
+1 Legolas Greenleaf
+1 Galadriel, Elven-Queen
+1 Maralen, Fae Ascendant
+1 Elvish Warmaster
+1 Morcant&#39;s Loyalist
+1 Reclamation Sage
+1 Buried Alive
+1 Jarad&#39;s Orders
+1 Tyvar, Jubilant Brawler
+1 Sol Ring
+1 Arcane Signet
+1 Nature&#39;s Lore
+1 Three Visits
+1 Otherworldly Gaze
+1 Frantic Search
+1 Fact or Fiction
+1 Skullclamp
+1 Kindred Discovery
+1 Dread Return
+1 Living Death
+1 Finale of Devastation
+1 Heroic Intervention
+1 Lightning Greaves
+1 Assassin&#39;s Trophy
+1 Beast Within
+1 Reality Shift
+1 Feed the Swarm
+1 Arcane Denial
+1 Raise the Palisade
+1 Kindred Dominance
+1 An Offer You Can&#39;t Refuse
+1 Rapid Hybridization
+1 Putrefy
+1 Counterspell
+1 Aetherize
+1 Command Tower
+1 Path of Ancestry
+1 Secluded Courtyard
+1 Unclaimed Territory
+1 Exotic Orchard
+1 Undergrowth Stadium
+1 Rejuvenating Springs
+1 Yavimaya Coast
+1 Llanowar Wastes
+1 Underground River
+1 Temple of Mystery
+1 Temple of Malady
+1 Temple of Deceit
+1 Bojuka Bog
+1 Ash Barrens
+1 Terramorphic Expanse
+1 Evolving Wilds
+1 Reliquary Tower
+1 Karn&#39;s Bastion
+1 Myriad Landscape
+8 Forest
+5 Island
+4 Swamp
+</code></pre>
+<h2>Hauptcombo</h2>
+<p>Buried Alive legt Devoted Druid, Incubation Druid und Zameck Guildmage in den Friedhof. Thranduil verbindet Adapt 3, dreifache Manaerzeugung, Enttappen über -1/-1-Counter und das Entfernen von +1/+1-Countern zum Kartenziehen. Das Ergebnis sind beliebig viel Mana und das gesamte Deck auf der Hand. Walking Ballista beendet die Partie.</p>
+<p>Eine redundante Mana-Schleife verwendet Devoted Druid, Immaculate Magistrate und Llanowar Elves oder Elvish Mystic im Friedhof. Timberwatch Elf stellt eine stärker boardabhängige Backup-Line bereit.</p>
+<h2>Spielplan</h2>
+<h3>Early Game</h3>
+<ul>
+<li>Mana-Elfen und günstigen Land-Ramp entwickeln.</li>
+<li>Mit Lluwen, Glowspore Shaman, Aftermath Analyst, Otherworldly Gaze und Fact or Fiction den Friedhof vorbereiten.</li>
+<li>Fauna Shaman verwendet Combo-Elfen als Discard-Kosten und sucht weitere Kreaturen.</li>
+</ul>
+<h3>Mid Game</h3>
+<ul>
+<li>Thranduil ungefähr in Zug 4–5 mit Counterspell-, Greaves- oder Heroic-Intervention-Schutz spielen.</li>
+<li>Legendäre Elfen erzeugen über Thranduil Kartenvorteil und laden den Friedhof.</li>
+<li>Buried Alive und Jarad&#39;s Orders stellen die Combo zusammen.</li>
+</ul>
+<h3>Late Game</h3>
+<ul>
+<li>Die Hauptcombo erzeugt beliebig viel Mana, zieht das Deck und gewinnt über Walking Ballista.</li>
+<li>Ohne Combo gewinnt die Variante über ein breites Elf-Board, Finale of Devastation, Kindred Discovery oder Shaman of the Pack.</li>
+</ul>
+<h2>Bracket-Check</h2>
+<p><strong>Geschätztes Bracket:</strong> 3 – Upgraded, oberer Bereich</p>
+<ul>
+<li>0 Game Changer</li>
+<li>kein Mass Land Denial</li>
+<li>keine Extra Turns</li>
+<li>kein Fast Mana jenseits von Sol Ring</li>
+<li>keine freie Interaktion</li>
+<li>geplante commander-gestützte Infinite-Combo</li>
+<li>Buried Alive als kompakter Setup-Spell</li>
+<li>realistischer Comboversuch ungefähr ab Zug 6–8</li>
+</ul>
+<p>Die Variante muss als oberes Bracket 3 kommuniziert werden. In Pods, die Buried Alive als zuverlässige Ein-Karten-Combo werten, kann sie sich wie Bracket 4 anfühlen.</p>
+<h2>Budget- und Collection-Check</h2>
+<p>Ursprünglich fehlende Karten:</p>
+<ul>
+<li>Devoted Druid – ca. 0,82 €</li>
+<li>Zameck Guildmage – ca. 0,31 €</li>
+<li>Buried Alive – ca. 1,20 €</li>
+<li>Timberwatch Elf – ca. 2,72 €</li>
+<li>Marwyn, the Nurturer – ca. 4,04 €</li>
+<li>Jarad&#39;s Orders – ca. 1,14 €</li>
+<li>Tyvar, Jubilant Brawler – ca. 1,47 €</li>
+<li>Shaman of the Pack – ca. 0,67 €</li>
+</ul>
+<p>Gesamt zum Prüfzeitpunkt: ca. 12,37 € ohne Versand. Alle übrigen Nichtstandardländer und Zauber waren in der Collection vorhanden; Basics galten als automatisch verfügbar.</p>
+<h2>Abgrenzung zur cEDH-Hauptliste</h2>
+<ul>
+<li>37 statt 27 Länder</li>
+<li>keine Tainted-Fish-Linie</li>
+<li>keine Hermit-Druid-Komplettmill-Linie</li>
+<li>Walking Ballista statt Thassa&#39;s Oracle als primärer Abschluss</li>
+<li>keine Reserved-List-Duals und deutlich weniger Fetchlands</li>
+<li>keine breite Fast-Mana-Suite</li>
+<li>keine freie Countermagic</li>
+<li>0 statt 17 Game Changer</li>
+<li>Collection-first und Zusatzbudget statt uneingeschränkter beziehungsweise proxy-tauglicher Bauweise</li>
+</ul>
+<h2>Rule 0</h2>
+<blockquote>
+<p>Oberes Bracket 3 ohne Game Changer und ohne cEDH-Fast-Mana. Die Variante besitzt eine commander-gestützte Friedhofscombo: Buried Alive legt drei Elfen in den Friedhof, Thranduil erzeugt daraus ab ungefähr Zug 6 unendlich Mana, zieht das Deck und gewinnt über Walking Ballista.</p>
+</blockquote>
+
+</div>
+</details>
+</div>
+</section>
+
+<section id="versionen" class="accordion-card main-section">
+<div class="main-section-title">
+  Versionen · aktuell v001
+</div>
+
+<div class="accordion-content">
+<p class="empty-content">Keine archivierten Versionen vorhanden.</p>
+</div>
+</section>
+
+  </div>
+</body>
+</html>
