@@ -1,137 +1,158 @@
-# Bracket Einschätzung: Vi oh no
+# Bracket-Einschätzung: Vi oh no – Hauptversion v003
 
 ## Ergebnis
 
-**Geschätztes Bracket:** 3 – Upgraded, oberer Bereich bis Grenzbereich zu Bracket 4
-**Sicherheit:** mittel bis hoch
+**Geschätztes Bracket:** 3 – Upgraded, oberer Bereich mit Grenzbereich zu Bracket 4  
+**Sicherheit:** hoch
 
 ## Kurzbegründung
 
-Die neue Hauptversion besitzt einen klaren Storm-Plan, zwei Game Changers, kostenlose Interaktion, einen universellen Tutor und mehrere mana-positive Verkettungen. Grapeshot, Resonating Lute und Mizzix's Mastery ermöglichen große spielentscheidende Züge; Niv-Mizzet, Parun mit Curiosity bleibt als langsame Kombolinie erhalten. Ohne Fast-Mana-Suite, Tutorendichte oder regelmäßige Siege bis Zug 4 wirkt die Liste dennoch wie ein oberes Bracket-3-Deck und nicht wie ein konsequent optimiertes Bracket-4-Deck.
+Die Liste besitzt starke Commander-Synergie, zwei Game Changer, fünf kostenlose oder bedingt kostenlose Interaktionsspells, einen universellen Tutor und mehrere mana-positive Zauberketten. Curiosity und Wizard's Staff können einen einzelnen günstigen Spell in bis zu sechs Karten, zwei Schadenspunkte pro Gegner und vier zusätzliche Stärke für Vivis Manafähigkeit verwandeln. Aetherflux Reservoir, Chandra's Ignition, Mizzix's Mastery und die Niv-Mizzet-Linien geben dem Deck klare Abschlüsse.
 
-## Game Changer Check
+Trotz dieser oberen Leistungsgrenze fehlen eine Fast-Mana-Suite, hohe Tutorendichte und ein regelmäßig verfügbarer Sieg bis Zug 4. Die beiden Niv-Mizzet-Linien sind teuer und keine mathematisch unendlichen Schleifen. Das erwartete Spielerlebnis bleibt deshalb oberes Bracket 3, kann sich bei einer frühen Curiosity-/Staff-Engine aber wie niedriges Bracket 4 anfühlen.
 
-Anzahl Game Changers: 2
+## Game-Changer-Check
 
-Gefundene Game Changers:
+Anzahl Game Changer: 2
+
+Gefundene Game Changer:
 
 - Gamble
 - Jeska's Will
 
 Auswirkung:
 
-- Gamble kann Grapeshot, Mizzix's Mastery, Resonating Lute, Curiosity, Niv-Mizzet oder benötigten Schutz finden und erhöht damit die Konsistenz deutlich.
-- Jeska's Will ermöglicht besonders mit Vivi explosive Verkettungszüge.
-- Zwei Game Changers sind innerhalb der Grenze von maximal drei für Bracket 3.
-- Deflecting Swat zählt nach seiner offiziellen Entfernung von der Liste nicht als Game Changer.
-- Die Ergänzungen Farewell und Biorhythm vom 9. Februar 2026 betreffen dieses Deck nicht.
-
-## Spielplan
-
-Das Deck lässt Vivi mit Nichtkreaturzaubern wachsen, fügt dabei allen Gegnern Schaden zu und wandelt Vivis Stärke in weiteres Mana um. Resonating Lute, Tablet of Discovery, Rituale, Frantic Search und Snap verlängern diese Ketten. Der Abschluss erfolgt über Grapeshot, gestapelte Burn-Trigger, Mizzix's Mastery, große X-Zauber oder Niv-Mizzet, Parun mit Curiosity; Commander Damage und der transformierte Emperor bilden Nebenpläne.
+- Gamble findet Aetherflux Reservoir, Curiosity, Wizard's Staff, Mizzix's Mastery, Chandra's Ignition oder benötigte Interaktion, enthält aber das Risiko eines zufälligen Abwurfs.
+- Jeska's Will erzeugt besonders mit Vivi einen explosiven Verkettungszug.
+- Zwei Game Changer liegen innerhalb des Bracket-3-Maximums von drei.
+- Deflecting Swat, Commandeer, Mindbreak Trap und Mental Misstep stehen nicht auf der aktuellen lokalen Game-Changer-Liste.
 
 ## Geschwindigkeit
 
-Erwarteter relevanter Sieg- oder Dominanzbereich:
-
-- Aufbau: Züge 1–3
-- Starke Engine: ungefähr Züge 4–6
-- Realistischer Sieg: ungefähr Züge 6–8
+- Aufbau und Kartenauswahl: Züge 1–3
+- Starke Curiosity-, Staff- oder Mana-Engine: ungefähr Züge 3–5
+- Realistischer relevanter Sieg: ungefähr Züge 6–8
 - Außergewöhnliche Hand: möglicherweise Zug 5
-- Regelmäßiger Sieg bis Zug 4: unwahrscheinlich
+- Regelmäßiger geschützter Sieg bis Zug 4: nicht zu erwarten
+
+Die Reduktion auf 34 Länder und die höhere Dichte günstiger Zauber steigern die Explosivität. Gleichzeitig machen die fehlende Fast-Mana-Suite und die Abhängigkeit von Vivi, einer Draw-Engine oder einem Finisher sehr frühe Siege unzuverlässig.
 
 ## Win Conditions und Combo-Potenzial
 
-- Storm/Burn über Vivi, Guttersnipe, Coruscation Mage und Grapeshot
-- überladenes Mizzix's Mastery als großer Finisher-Turn
-- Niv-Mizzet, Parun + Curiosity als optionale, durch die Bibliotheksgröße begrenzte Kartenzieh-Schadensschleife
-- Blaze oder Electrodominance als große Mana-Sinks
-- Commander Damage mit Commander's Plate und Rogue's Passage
-- Starfall-Angriffe des transformierten Emperors, situativ mit Relentless Assault
+### Direkte Abschlüsse
 
-Es ist keine Endlosschleife mit Resonating Lute, Frantic Search oder Snap erkennbar. Diese Karten erzeugen einmalig beziehungsweise pro gewirkter Karte Mana-Vorteil, benötigen für eine Wiederholung aber zusätzliche Rekursion.
+- Aetherflux Reservoir nach einer langen Spell-Kette
+- Chandra's Ignition auf einen stark gewachsenen Vivi
+- wiederholter Tischschaden durch Vivi, Guttersnipe und Coruscation Mage
+- überladenes Mizzix's Mastery
+- Prismari, the Inspiration mit einem vorbereiteten Storm-Zug
 
-## Konsistenz
+### Deterministische, endliche Linien
 
-Einschätzung: mittel bis gut
+- Niv-Mizzet, Parun + Curiosity
+- Niv-Mizzet, Parun + Niv-Mizzet, Visionary
 
-Positiv:
+Beide Linien können den Tisch ausschalten, sind aber durch Bibliotheksgröße, verfügbare Ziele und gegnerische Lebenspunkte begrenzt. Sie können kontrolliert beendet werden und sind keine mathematisch unendlichen Loops.
 
-- Der Commander ist stets verfügbar und unterstützt jeden Nichtkreaturzauber.
-- 41 Instants und Sorceries bilden eine hohe Synergiedichte.
-- Mehrere redundante Burn- und Mana-Payoffs.
-- Gamble kann jede benötigte Karte suchen.
-- 37 Länder und mehrere permanente Rampquellen verbessern die Entwicklung.
-- Mehrere unabhängige Finisher reduzieren die Abhängigkeit von einer einzelnen Kombination.
+### Commander-gestützte Ketten
 
-Negativ:
+- Vivi + Curiosity + weitere Nichtkreaturzauber
+- Vivi + Curiosity + Wizard's Staff + weitere Nichtkreaturzauber
 
-- Gamble ist der einzige universelle Tutor und enthält ein relevantes Zufallsrisiko.
-- Mehrere Engines kosten drei oder vier Mana und müssen zunächst etabliert werden.
-- Die Niv-Curiosity-Linie ist weiterhin farbintensiv und nicht zuverlässig früh verfügbar.
-- Einige Pump-, Combat- und Flavor-Karten sind ohne Vivi oder Emperor situativ.
+Diese Engines benötigen für jeden Schritt einen weiteren gewirkten Spell. Sie erzeugen keinen selbsttragenden Endlosloop.
 
 ## Interaktion
 
-- Counterspells: Counterspell, Daze, Essence Capture und Mana Sculpt
-- kostenlose Interaktion: Deflecting Swat und bedingt Daze
-- Schutz: Dive Down, Magic Damper, Swiftfoot Boots, Commander's Plate und Cavern of Souls
-- Boardkontrolle: Blasphemous Act, Consuming Tide und Disrupt Decorum
-- punktuelle Antworten: Chaos Warp, Lightning Bolt, Rabid Gnaw und Snap
-- Friedhofskontrolle: Scavenger Grounds
-- Mass Land Denial: nicht vorhanden
-- Stax: nicht vorhanden
-- Extra-Turn-Schleifen: nicht vorhanden
+Kostenlos oder bedingt kostenlos:
+
+- Commandeer
+- Daze
+- Deflecting Swat
+- Mental Misstep
+- Mindbreak Trap
+
+Weitere günstige Stack-Interaktion:
+
+- An Offer You Can't Refuse
+- Swan Song
+- Counterspell
+- Mana Sculpt
+
+Board- und Permanent-Interaktion:
+
+- Chaos Warp
+- Into the Flood Maw
+- Lightning Bolt
+- Snap
+- Fire Magic
+- Blasphemous Act
+- Chandra's Ignition
+- Scavenger Grounds
+
+Mass Land Denial, Stax und Extra-Turn-Schleifen sind nicht vorhanden.
+
+## Konsistenz
+
+Einschätzung: gut, aber nicht vollständig optimiert
+
+Positiv:
+
+- Der Commander ist stets verfügbar und macht jeden Nichtkreaturzauber relevant.
+- 42 Instants und Sorceries sorgen für hohe Spell-Dichte.
+- Zahlreiche Ein- und Zwei-Mana-Cantrips glätten Starthände.
+- Curiosity, Niv-Mizzet, Visionary, Archmage Emeritus und Niv-Mizzet, Parun bilden redundante Draw-Engines.
+- Aetherflux Reservoir und Chandra's Ignition sind klare, voneinander unabhängige Finisher.
+- Gamble findet jede fehlende Engine oder Win Condition.
+
+Negativ:
+
+- Gamble ist der einzige universelle Tutor.
+- Curiosity und Wizard's Staff werden nicht zuverlässig in jeder Partie gefunden.
+- Die stärksten Linien bleiben commander- oder permanentabhängig.
+- 34 Länder erhöhen die Mulligan-Anforderungen.
+- Niv-Mizzet und Prismari sind teure Top-End-Karten.
 
 ## Faktoren, die das Bracket erhöhen
 
-- Zwei Game Changers: Gamble und Jeska's Will
-- Dedizierter Storm-Finisher mit Grapeshot
-- Resonating Lute mit Frantic Search und Snap als starke Mana-Engine
-- Niv-Mizzet, Parun + Curiosity
-- Deflecting Swat und Daze als kostenlose Interaktion
-- Mizzix's Mastery als explosiver Finisher
-- Starke Commander-Engine mit skalierender Manaerzeugung
-- Mehrere tutorbare oder redundante Siegpfade
+- Zwei Game Changer
+- Gamble als universeller Tutor
+- fünf kostenlose oder bedingt kostenlose Interaktionsspells
+- sehr günstige Cantrip-, Schutz- und Counterspell-Suite
+- Wizard's Staff als Trigger- und Prowess-Verdoppler
+- Curiosity kann in einer Viererrunde drei beziehungsweise mit Staff sechs Karten pro Spell ziehen
+- Aetherflux Reservoir als unmittelbare Storm-Wincon
+- zwei deterministische Niv-Mizzet-Linien
+- mana-positive Sequenzen über Vivi, Electro, Resonating Lute, Frantic Search und Snap
+- Mizzix's Mastery und Prismari als explosive Rekursions- beziehungsweise Storm-Finisher
 
-## Faktoren, die das Bracket senken
+## Faktoren, die das Bracket begrenzen
 
-- Keine Fast-Mana-Suite außerhalb von Sol Ring und temporären Ritualen
-- Nur ein universeller Tutor mit zufälligem Abwurf
-- Keine typische frühe Zwei-Karten-Endloskombination
-- Mehrere vier- bis sechsmana-teure Engines und Finisher
-- Nur begrenzte Antworten auf Artefakte und Verzauberungen
-- Weiterhin hohe Commander-Abhängigkeit
-- Keine erkennbare cEDH-Ausrichtung oder Metagame-Optimierung
-- Kein konsistenter Sieg in den ersten vier Zügen
+- Nur zwei Game Changer
+- Keine Fast-Mana-Suite außerhalb von Sol Ring
+- Nur ein universeller Tutor mit Zufallsrisiko
+- Keine verifizierte Endlosschleife
+- Keine typische frühe Zwei-Karten-Infinite-Combo
+- Keine regelmäßigen geschützten Siege bis Zug 4
+- Mehrere sechs- bis siebenmana-teure Payoffs
+- deutliche Abhängigkeit von Vivi und permanenten Engines
+- keine cEDH-Metagame-Ausrichtung
+- begrenzte Antworten auf problematische Verzauberungen
 
 ## Unsicherheiten
 
-Die größte Unsicherheit ist, wie aggressiv Gamble zur Vorbereitung eines Grapeshot-, Mizzix's-Mastery- oder Niv-Curiosity-Siegs eingesetzt wird. Werden die Kombolinien regelmäßig gesucht und stark geschützt, kann sich das Spielerlebnis Bracket 4 annähern. Ohne Resonating Lute oder Vivi entwickelt sich das Deck deutlich fairer und langsamer.
+Eine frühe Kombination aus Vivi, Curiosity und Wizard's Staff kann deutlich stärker spielen als der Durchschnitt der Liste. Mit ausreichend günstigen Spells zieht sie extrem viele Karten und erzeugt gleichzeitig Tischschaden und Mana. Werden Gamble und die kostenlose Interaktion konsequent für einen geschützten Aetherflux- oder Niv-Mizzet-Abschluss verwendet, nähert sich das Spielerlebnis niedrigem Bracket 4.
 
-## Empfehlung
+Ohne Vivi oder eine Draw-Engine spielt die Liste wesentlich fairer. Die tatsächliche Siegquote hängt deshalb stark davon ab, wie oft die permanentbasierten Engines früh liegen und geschützt werden können.
 
-Dieses Deck sollte aktuell so kommuniziert werden:
+## Empfehlung und Rule 0
 
-> Oberes Bracket 3 mit zwei Game Changers, einem fokussierten Storm-Plan und einer langsamen Niv-Mizzet-/Curiosity-Kombination.
+Das Deck sollte als oberes Bracket 3 angekündigt werden:
 
-Falls es eindeutiger für Bracket 3 gebaut werden soll:
-
-- Gamble oder die Niv-Curiosity-Linie entfernen beziehungsweise nicht als geplanten Hauptsieg einsetzen.
-- Resonating Lute durch eine normale Ramp- oder Value-Karte ersetzen.
-- Mehr interaktive, inkrementelle Payoffs statt zusätzlicher Storm-Konsistenz spielen.
-
-Falls es für Bracket 4 optimiert werden soll:
-
-- Mehr Fast Mana und effiziente Tutoren ergänzen.
-- Zusätzliche günstige Cantrips und kostenlose beziehungsweise einmana-teure Interaktion spielen.
-- Situative Pump- und Combat-Karten durch redundante Combo-, Storm- oder Schutzkarten ersetzen.
-- Die Manabasis für Niv-Mizzet und frühe Doppel-Farbkosten weiter optimieren.
+> Oberes Bracket-3-Vivi-Curiosity-Storm mit Gamble und Jeska's Will als zwei Game Changern, viel kostenloser Interaktion, Aetherflux Reservoir und zwei späten Niv-Mizzet-Ziehschleifen. Keine verifizierte Endloskombo, aber einzelne sehr explosive Züge können wie niedriges Bracket 4 wirken.
 
 ## Quellenstand
 
 - `brains/bracket/templates.md`
-- https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-february-9-2026
-- https://magic.wizards.com/en/news/announcements/commander-banned-and-restricted-february-9-2026
-- Offizielle Commander-Bracket- und Game-Changer-Regeln, zuletzt geprüft am 10. August 2026
+- `data/reference/commander/game-changers.json`, aktualisiert am 12. August 2026
+- Offizielle Commander-Bracket- und Formatseite, geprüft am 15. August 2026
 - Deckliste: `data/decks/decklists/vi-oh-no.txt`

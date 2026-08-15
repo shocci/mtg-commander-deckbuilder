@@ -42,7 +42,7 @@
           <a class="profile-nav-button" href="#gameplan">Gameplan</a>
           <a class="profile-nav-button" href="#deckliste">Deckliste</a>
           <a class="profile-nav-button" href="#varianten">1 Variante</a>
-          <a class="profile-nav-button" href="#versionen">Version v002</a>
+          <a class="profile-nav-button" href="#versionen">Version v003</a>
         </div>
       </div>
     </section>
@@ -54,119 +54,197 @@
 
 <div class="accordion-content">
 <details class="sub-accordion">
-<summary>Überblick</summary>
+<summary>Kurzprofil</summary>
 <div class="sub-accordion-content">
 <ul>
 <li>Commander: Vivi Ornitier</li>
 <li>Farbidentität: Blau-Rot (Izzet)</li>
 <li>Deckgröße: 100 Karten inklusive Commander</li>
-<li>Länder: 37</li>
-<li>Kreaturen: 9</li>
-<li>Instants/Sorceries: 41</li>
-<li>Archetyp: Spellslinger / Storm / Burn</li>
-<li>Nebenthemen: Big Mana, Commander Damage und Card-Draw-Synergien</li>
-<li>Geschätztes Bracket: 3 – Upgraded, oberer Bereich bis Grenzbereich zu Bracket 4</li>
-<li>Sicherheit: mittel bis hoch</li>
+<li>Länder: 34</li>
+<li>Kreaturen: 10 inklusive Commander</li>
+<li>Instants und Sorceries: 42</li>
+<li>Sonstige Nichtland-Permanents: 14</li>
+<li>Archetyp: Curiosity Storm / Spellslinger / Burn</li>
+<li>Hauptachsen: kleine Zauber, Kartenziehen, mana-positive Verkettungen und gestapelte Tischschäden</li>
+<li>Geschätztes Bracket: 3 – Upgraded, oberer Bereich mit einzelnen Bracket-4-artigen Explosivzügen</li>
+<li>Game Changer: 2</li>
+<li>Collection: vollständig aus <code>data/collection.json</code> und automatisch verfügbaren Basic Lands</li>
+<li>Sicherheit: hoch</li>
 </ul>
-<p>Die neue Hauptversion ist fokussierter und explosiver als ihre Vorgängerin. Vivi Ornitier verwandelt günstige Nichtkreaturzauber gleichzeitig in Tischschaden, +1/+1-Marken und Mana; Grapeshot liefert nun einen echten Storm-Abschluss. Resonating Lute, Tablet of Discovery, Pyretic Ritual und Gamble erhöhen Geschwindigkeit und Konsistenz, ohne die Liste bereits zu einem regelmäßig bis Zug 4 gewinnenden optimierten Deck zu machen.</p>
+<p>Die Hauptversion v003 konzentriert das Deck stärker auf Vivis eigentliche Stärken. Günstige Nichtkreaturzauber erhöhen Vivis Stärke, schädigen den gesamten Tisch und werden über Curiosity, Niv-Mizzet, Visionary oder Archmage Emeritus in neue Karten umgewandelt. Wizard&#39;s Staff verdoppelt Vivis ausgelöste Fähigkeit und die verliehene Prowess-Fähigkeit. Vivi, Electro, Resonating Lute, Rituale und Land-Enttapper verwandeln diese Karten anschließend in weitere Zauber.</p>
+<p>Grapeshot wurde entfernt, weil die Karte nicht in der aktuellen Collection verzeichnet ist. Aetherflux Reservoir, Chandra&#39;s Ignition, die beiden Niv-Mizzet-Linien und ein großer Mizzix&#39;s-Mastery-Zug geben der Liste stattdessen mehrere klare Abschlüsse.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Commander und zentrale Regelinteraktion</summary>
+<div class="sub-accordion-content">
+<p>Vivi Ornitier erhält für jeden gewirkten Nichtkreaturzauber eine +1/+1-Marke und fügt jedem Gegner 1 Schaden zu. Einmal in jedem eigenen Zug kann Vivi für <code>{0}</code> Mana in Höhe seiner aktuellen Stärke in einer beliebigen Kombination aus Blau und Rot erzeugen.</p>
+<h3>Vivi, Wizard&#39;s Staff und Curiosity</h3>
+<p>Wizard&#39;s Staff gibt der ausgerüsteten Kreatur Prowess und lässt jede ausgelöste Fähigkeit dieser Kreatur ein zusätzliches Mal auslösen. Ist Vivi ausgerüstet, bewirkt jeder Nichtkreaturzauber daher:</p>
+<ul>
+<li>zwei Vivi-Auslöser und damit zwei permanente +1/+1-Marken;</li>
+<li>zwei getrennte Schadensereignisse von jeweils 1 Schaden an jedem Gegner;</li>
+<li>zwei Prowess-Auslöser und damit insgesamt +2/+2 bis zum Ende des Zuges;</li>
+<li>vor Vivis Manaaktivierung insgesamt vier zusätzliche Stärke pro Nichtkreaturzauber.</li>
+</ul>
+<p>Curiosity liegt als Aura auf Vivi und wird nicht selbst durch Wizard&#39;s Staff verdoppelt. Da die beiden Vivi-Auslöser getrennt verrechnet werden und Vivi bei jedem davon jedem Gegner Schaden zufügt, löst Curiosity dennoch für jeden geschädigten Gegner und jedes Schadensereignis aus. In einer Viererrunde sind deshalb bis zu drei Karten pro normalem Vivi-Auslöser beziehungsweise bis zu sechs Karten pro Nichtkreaturzauber mit ausgerüstetem Staff möglich.</p>
+<p>Wird Curiosity selbst gewirkt, lösen Vivi und Wizard&#39;s Staff bereits beim Wirken aus. Curiosity befindet sich zu diesem Zeitpunkt noch auf dem Stapel und zieht für diese ersten Schadensereignisse noch keine Karten.</p>
 
 </div>
 </details>
 <details class="sub-accordion">
 <summary>Spielplan</summary>
 <div class="sub-accordion-content">
-<p>Vivi Ornitier erhält für jeden gewirkten Nichtkreaturzauber eine +1/+1-Marke und fügt jedem Gegner 1 Schaden zu. Einmal im eigenen Zug kann Vivi Mana in Höhe seiner aktuellen Stärke erzeugen.</p>
+<h3>Early Game</h3>
 <ol>
-<li>Beide Farben und frühe Manaquellen entwickeln.</li>
-<li>Vivi ausspielen und mit günstiger Interaktion, Swiftfoot Boots, Commander&#39;s Plate oder Cavern of Souls absichern.</li>
-<li>Permanente Mana-, Draw- und Burn-Engines etablieren.</li>
-<li>Günstige Zauber, Rituale und Land-Enttapper zu einem großen Zug verketten.</li>
-<li>Über Grapeshot, wiederholte Burn-Trigger, Mizzix&#39;s Mastery oder einen alternativen Finisher gewinnen.</li>
+<li>Mit günstiger Kartenauswahl eine Hand mit beiden Farben und zwei bis drei Manaquellen stabilisieren.</li>
+<li>Sol Ring, Arcane Signet, Thought Vessel, Goblin Electromancer oder Diary of Dreams entwickeln.</li>
+<li>Vivi möglichst mit offenem Schutz, Cavern of Souls oder sofortigem Folgewert ausspielen.</li>
+<li>Curiosity und Wizard&#39;s Staff nicht unnötig in offenes Removal investieren.</li>
 </ol>
-<p>Der Commander bleibt die effizienteste Engine des Decks, doch Resonating Lute, Tablet of Discovery und mehrere unabhängige Payoffs geben der Liste mehr Spielraum, falls Vivi entfernt wird.</p>
+<h3>Mid Game</h3>
+<ol>
+<li>Vivi mit Curiosity, Wizard&#39;s Staff, Swiftfoot Boots oder Commander&#39;s Plate ausstatten.</li>
+<li>Günstige Cantrips, Pumpzauber und Interaktion verketten.</li>
+<li>Vivis Manafähigkeit erst nach den relevanten Marken- und Pump-Effekten aktivieren.</li>
+<li>Electro, Resonating Lute, Frantic Search, Snap, Pyretic Ritual oder Jeska&#39;s Will nutzen, um den Zug zu verlängern.</li>
+<li>Mindbreak Trap, Commandeer, Deflecting Swat, Daze oder günstige Counter für den Schutz des Abschlusses zurückhalten.</li>
+</ol>
+<h3>Late Game</h3>
+<ol>
+<li>Über Curiosity, Niv-Mizzet, Visionary, Archmage Emeritus oder Finale of Revelation einen großen Kartenvorrat aufbauen.</li>
+<li>Aetherflux Reservoir vor einer ausreichend langen Zauberkette ausspielen.</li>
+<li>Alternativ einen stark gewachsenen Vivi mit Chandra&#39;s Ignition in Tischschaden umwandeln.</li>
+<li>Niv-Mizzet, Parun mit Curiosity oder Niv-Mizzet, Visionary verbinden.</li>
+<li>Mizzix&#39;s Mastery überladen oder Prismari, the Inspiration für einen großen Storm-Zug einsetzen.</li>
+</ol>
 
 </div>
 </details>
 <details class="sub-accordion">
 <summary>Zentrale Engines</summary>
 <div class="sub-accordion-content">
+<h3>Kartennachschub</h3>
 <ul>
-<li>Vivi Ornitier: Kernengine, Manaquelle, Burn-Payoff und möglicher Commander-Damage-Finisher.</li>
-<li>Resonating Lute: Verdoppelt die Manaausbeute der Länder für Instants und Sorceries; Frantic Search und Snap werden damit mana-positiv.</li>
-<li>Tablet of Discovery: Permanente Ramp für Instants und Sorceries mit zusätzlicher Kartenverwertung beim Ausspielen.</li>
-<li>Goblin Electromancer: Reduziert die Kosten von 41 Instants und Sorceries.</li>
-<li>Alania, Divergent Storm: Kopiert den ersten Instant und die erste Sorcery eines Zuges gegen eine Karte für einen Gegner.</li>
-<li>Diary of Dreams: Wird durch Instants und Sorceries aufgeladen und entwickelt sich zu wiederholbarem Kartenziehen.</li>
-<li>Pensive Professor: Erzeugt über Increment und andere +1/+1-Marken zusätzlichen Kartenvorteil.</li>
-<li>Brass&#39;s Tunnel-Grinder: Tauscht situative Handkarten gegen neue Karten; die Rückseite bietet im längeren Spiel zusätzliches Mana und Discover-Potenzial.</li>
-<li>As Foretold: Langsame, dauerhafte Mana-Engine.</li>
-<li>Ral, Crackling Wit: Erzeugt Boardpräsenz, filtert Karten und kann Instants und Sorceries dauerhaft Storm geben.</li>
+<li>Curiosity: zentrale commander-gestützte Draw-Engine; in einer Viererrunde bis zu drei Karten pro Vivi-Auslöser.</li>
+<li>Niv-Mizzet, Visionary: zieht für jedes Schadensereignis von genau 1 an einem Gegner und funktioniert dadurch ähnlich wie Curiosity.</li>
+<li>Archmage Emeritus: zieht bei jedem gewirkten oder kopierten Instant und jeder Sorcery eine Karte.</li>
+<li>Niv-Mizzet, Parun: zieht bei jedem gewirkten Instant oder jeder Sorcery und wandelt Kartenziehen in Schaden um.</li>
+<li>Combat Tutorial, Stock Up und Finale of Revelation: echter Kartenvorteil.</li>
+<li>Brainstorm, Consider, Opt, Preordain, Sleight of Hand und Crash Through: günstige Auswahl beziehungsweise Cantrips.</li>
+<li>Haste Magic und Light Up the Stage: Impuls-Kartenvorteil, der den explosiven Zug verlängert.</li>
+<li>Fists of Flame und Sazacap&#39;s Brew: verbinden Kartennachschub mit zusätzlicher Stärke für Vivi.</li>
+</ul>
+<h3>Mana und Kostenreduktion</h3>
+<ul>
+<li>Vivi Ornitier: wichtigste skalierende Manaquelle.</li>
+<li>Electro, Assaulting Battery: erstattet für jeden Instant und jede Sorcery rotes Mana und speichert ungenutztes rotes Mana über Schritte und Züge hinweg.</li>
+<li>Resonating Lute: erhöht die Manaausbeute der Länder für Instants und Sorceries; Frantic Search und Snap werden damit mana-positiv.</li>
+<li>Goblin Electromancer: reduziert 42 Instants und Sorceries.</li>
+<li>Pyretic Ritual, Jeska&#39;s Will und Mana Geyser: direkte Rituale.</li>
+<li>Frantic Search und Snap: enttappen Länder und können mit Resonating Lute mehr Mana erzeugen, als sie kosten.</li>
+<li>Mana Sculpt: Counterspell, der nach einem teuren gegnerischen Zauber den folgenden eigenen Hauptzug finanzieren kann.</li>
+<li>As Foretold und Tablet of Discovery: dauerhafte Manaunterstützung für die hohe Spell-Dichte.</li>
+</ul>
+<h3>Pump und Skalierung</h3>
+<ul>
+<li>Wizard&#39;s Staff: zwei Prowess-Auslöser und zwei permanente Vivi-Marken pro Nichtkreaturzauber.</li>
+<li>Commander&#39;s Plate: +3 Stärke und Schutz vor Weiß, Schwarz und Grün; die zusätzliche Stärke wird unmittelbar in Vivis Mana umgewandelt.</li>
+<li>Monstrous Rage, Haste Magic, Fists of Flame, Ancestors&#39; Aid, Felonious Rage und Sazacap&#39;s Brew: günstige temporäre Stärkegewinne.</li>
+<li>Magic Damper und Dive Down: Schutz, der zugleich Vivis Stärke erhöht.</li>
+<li>Combat Tutorial: zwei Karten plus eine permanente Marke.</li>
 </ul>
 
 </div>
 </details>
 <details class="sub-accordion">
-<summary>Payoffs und Win Conditions</summary>
+<summary>Win Conditions</summary>
 <div class="sub-accordion-content">
-<h3>Storm und Spellslinger-Burn</h3>
-<p>Vivi Ornitier, Guttersnipe, Coruscation Mage und Kindlespark Duo bestrafen jede längere Zauberkette. Grapeshot gibt dem Deck einen dedizierten Storm-Finisher, der nach vorherigem Tischschaden einzelne Gegner oder den gesamten Tisch abschließen kann.</p>
-<h3>Vivi-Explosivzug</h3>
-<p>Ancestors&#39; Aid, Felonious Rage, Haste Magic, Monstrous Rage, Combat Tutorial und Commander&#39;s Plate erhöhen Vivis Stärke und damit die einmalige Manaausbeute. Das Mana finanziert weitere Zauber, Electrodominance, Blaze oder Finale of Revelation. Rogue&#39;s Passage und Relentless Assault unterstützen einen Commander-Damage-Nebenplan.</p>
-<h3>Resonating Lute</h3>
-<p>Mit Resonating Lute erzeugt jedes Land zwei Mana für Instants und Sorceries. Frantic Search kann dadurch nach Bezahlung seiner Kosten mehrere Mana netto erzeugen; Snap kann Interaktion mit einem ähnlichen Mana-Vorteil verbinden. Diese Karten sind keine Endlosschleife, ermöglichen aber besonders explosive Storm-Züge.</p>
-<h3>Niv-Mizzet, Parun + Curiosity</h3>
-<p>Curiosity auf Niv-Mizzet, Parun erzeugt eine optionale Kartenzieh-Schadensschleife: Jeder gezogene Karte folgt ein Schadenspunkt, der wiederum Curiosity auslösen kann. Die Schleife ist durch die Bibliotheksgröße begrenzt und kann freiwillig beendet werden. Nach dem vorherigen Tischschaden des Decks ist sie häufig spielbeendend; ohne den entfernten Laboratory Maniac ist Bibliotheksleerung jedoch keine eigene alternative Win Condition mehr.</p>
-<h3>Mizzix&#39;s Mastery</h3>
-<p>Ein überladenes Mizzix&#39;s Mastery wirkt die relevanten Instants und Sorceries aus dem Friedhof erneut. Mit Vivi oder mehreren Burn-Payoffs kann dieser Zug den Tisch ausschalten; Grapeshot profitiert dabei von allen zuvor gewirkten Zaubern.</p>
-<h3>The Emperor of Palamecia</h3>
-<p>Der Emperor beschleunigt Nichtkreaturzauber und wächst durch teurere Spells. Nach der Transformation verursacht jeder Angriff Schaden entsprechend der Zahl der Nichtkreatur-Nichtlandkarten im Friedhof. Relentless Assault kann einen zweiten Angriff und damit einen weiteren Starfall-Trigger ermöglichen.</p>
+<h3>Aetherflux Reservoir</h3>
+<p>Aetherflux Reservoir erzeugt den benötigten Lifegain selbst. Jeder danach gewirkte Zauber gibt Leben entsprechend der Anzahl aller in diesem Zug gewirkten Zauber. Wird das Reservoir als erster Zauber gewirkt, geben die nächsten vier Zauber 2, 3, 4 und 5 Leben, insgesamt 14.</p>
+<p>Curiosity und die übrigen Draw-Engines liefern die Karten, während Vivi, Electro und die Rituale das Mana bereitstellen. Für die Aktivierung sollte der eigene Lebensstand über 50 liegen: Bei genau 50 Leben würde das Bezahlen der Kosten den Spieler auf 0 Leben setzen und durch zustandsbasierte Aktionen verlieren lassen, bevor die Fähigkeit verrechnet wird.</p>
+<p>Eine Aktivierung verursacht 50 Schaden an einem Gegner. Um mehrere Gegner auszuschalten, muss zwischen den Aktivierungen genügend weiteres Leben erzeugt oder ein entsprechend hoher Lebensstand aufgebaut werden.</p>
+<h3>Chandra&#39;s Ignition</h3>
+<p>Chandra&#39;s Ignition lässt einen stark gewachsenen Vivi Schaden in Höhe seiner Stärke an jedem Gegner und jeder anderen Kreatur verursachen. Wizard&#39;s Staff, permanente Marken, Prowess und Pumpzauber können Vivi in einem einzigen Zug auf spielentscheidende Stärke bringen. Die Karte ist gleichzeitig Boardwipe und Tischfinisher.</p>
+<h3>Vivi-/Curiosity-Storm</h3>
+<p>Vivi plus Curiosity verwandelt jeden weiteren Nichtkreaturzauber in Tischschaden, zusätzliche Stärke, Mana und bis zu drei neue Karten. Wizard&#39;s Staff verdoppelt den Vivi-Auslöser und erhöht den Nachschub in einer Viererrunde auf bis zu sechs Karten pro Spell. Die Kette ist nicht automatisch unendlich, kann den Tisch aber über wiederholte Vivi-, Coruscation-Mage- und Guttersnipe-Auslöser ausschalten.</p>
+<h3>Niv-Mizzet, Parun plus Curiosity</h3>
+<p>Ein Kartenziehereignis lässt Niv-Mizzet 1 Schaden an einem Gegner verursachen. Curiosity darf daraufhin eine weitere Karte ziehen, die Niv-Mizzet erneut auslöst. Die Sequenz ist durch die Bibliotheksgröße begrenzt, kann durch das optionale Ziehen beendet werden und ist nach vorherigem Tischschaden meist spielentscheidend.</p>
+<h3>Niv-Mizzet, Parun plus Niv-Mizzet, Visionary</h3>
+<p>Wenn Parun einem Gegner genau 1 Schaden zufügt, lässt Visionary eine Karte ziehen. Dieser Draw löst Parun erneut aus. Die Sequenz kann beendet werden, indem ein Parun-Schadensauslöser auf den eigenen Spieler oder ein anderes legales Nichtgegner-Ziel gelegt wird. Beide Kreaturen kosten zusammen zwölf Mana und bilden deshalb eine späte, sichtbare und störbare Zwei-Karten-Linie.</p>
+<h3>Mizzix&#39;s Mastery und Prismari</h3>
+<p>Ein überladenes Mizzix&#39;s Mastery lässt die relevanten Instants und Sorceries aus dem Friedhof erneut wirken. Diese gewirkten Karten lösen Vivi, Aetherflux Reservoir, Electro und Archmage Emeritus aus.</p>
+<p>Prismari, the Inspiration gibt Instants und Sorceries Storm. Die Storm-Kopien werden nicht gewirkt und lösen daher Vivi, Electro oder Aetherflux Reservoir nicht zusätzlich aus; sie vervielfachen aber Draw-, Pump-, Interaktions- und Schadenseffekte.</p>
 
 </div>
 </details>
 <details class="sub-accordion">
-<summary>Interaktion</summary>
+<summary>Combo- und Loop-Prüfung</summary>
 <div class="sub-accordion-content">
-<h3>Counterspells</h3>
+<p>Erkannte deterministische, aber nicht mathematisch unendliche Linien:</p>
+<ol>
+<li>Niv-Mizzet, Parun + Curiosity</li>
+<li>Niv-Mizzet, Parun + Niv-Mizzet, Visionary</li>
+</ol>
+<p>Commander-gestützte Value-Ketten:</p>
+<ol>
+<li>Vivi + Curiosity + weitere Nichtkreaturzauber</li>
+<li>Vivi + Curiosity + Wizard&#39;s Staff + weitere Nichtkreaturzauber</li>
+</ol>
+<p>Keine verifizierte Endlosschleife wurde erkannt. Resonating Lute mit Frantic Search oder Snap erzeugt Mana-Vorteil, enthält aber ohne wiederholbare Rekursion keinen Loop. Mizzix&#39;s Mastery ist ebenfalls ein einmaliger, durch die vorhandenen Friedhofskarten begrenzter Zug.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Interaktion und Schutz</summary>
+<div class="sub-accordion-content">
+<h3>Kostenlose oder bedingt kostenlose Interaktion</h3>
 <ul>
-<li>Counterspell</li>
+<li>Commandeer</li>
 <li>Daze</li>
-<li>Essence Capture</li>
-<li>Mana Sculpt</li>
-<li>situativ Deflecting Swat als Umleitung</li>
+<li>Deflecting Swat</li>
+<li>Mental Misstep über Phyrexian Mana</li>
+<li>Mindbreak Trap bei erfüllter Bedingung</li>
 </ul>
-<p>Mana Sculpt kann mit einem Wizard im Spiel nach einem teuren gegnerischen Zauber einen großen eigenen Hauptzug finanzieren.</p>
-<h3>Entfernung und Störung</h3>
+<h3>Günstige Stack-Interaktion</h3>
+<ul>
+<li>An Offer You Can&#39;t Refuse</li>
+<li>Swan Song</li>
+<li>Counterspell</li>
+<li>Mana Sculpt</li>
+</ul>
+<h3>Permanents und Board</h3>
 <ul>
 <li>Chaos Warp</li>
+<li>Into the Flood Maw</li>
 <li>Lightning Bolt</li>
-<li>Rabid Gnaw</li>
 <li>Snap</li>
-<li>Consuming Tide</li>
+<li>Fire Magic</li>
 <li>Blasphemous Act</li>
-<li>Disrupt Decorum</li>
-<li>Demolition Field</li>
-<li>Fire Magic gegen kleine Kreaturen</li>
-<li>Scavenger Grounds gegen Friedhöfe</li>
+<li>Chandra&#39;s Ignition</li>
+<li>Scavenger Grounds</li>
 </ul>
-<h3>Schutz</h3>
+<h3>Commander-Schutz</h3>
 <ul>
-<li>Deflecting Swat</li>
-<li>Dive Down</li>
-<li>Magic Damper</li>
 <li>Swiftfoot Boots</li>
 <li>Commander&#39;s Plate</li>
-<li>Cavern of Souls für den Kreaturentyp Wizard</li>
-<li>Counterspells</li>
+<li>Dive Down</li>
+<li>Magic Damper</li>
+<li>Deflecting Swat</li>
+<li>Cavern of Souls auf Wizard</li>
+<li>die Counterspell-Suite</li>
 </ul>
-<p>Deflecting Swat ist starke kostenlose Interaktion, steht aber nicht auf der aktuellen Game-Changer-Liste.</p>
+<p>Die Interaktion ist für ein Bracket-3-Deck ungewöhnlich effizient. Die größte Lücke bleiben bereits liegende problematische Verzauberungen; Chaos Warp ist die einzige dauerhafte universelle Antwort.</p>
 
 </div>
 </details>
 <details class="sub-accordion">
-<summary>Ramp und Manabasis</summary>
+<summary>Manabasis</summary>
 <div class="sub-accordion-content">
-<p>Das Deck spielt 37 Länder. Sol Ring, Arcane Signet, Thought Vessel und Tablet of Discovery liefern permanente Beschleunigung. Vivi, Resonating Lute, Jeska&#39;s Will, Mana Geyser, Pyretic Ritual, Frantic Search, Snap und mehrere Treasure-Effekte erzeugen zusätzlich explosives Mana.</p>
-<p>Cavern of Souls, Exotic Orchard und Riverpyre Verge verbessern die Farbversorgung; Reliquary Tower unterstützt große Draw-Züge und Scavenger Grounds ergänzt Friedhofskontrolle. Mehrere farblose oder bedingte Länder bleiben ein Risiko für Niv-Mizzet, Parun. Temple of the False God kann frühe Hände weiterhin verschlechtern.</p>
+<p>Die Liste spielt 34 Länder. Gegenüber v002 wurden Temple of the False God, Rogue&#39;s Passage und Demolition Field entfernt und Spirebluff Canal ergänzt. Dreizehn Islands, zehn Mountains und die zweifarbigen Länder unterstützen die hohe blaue Spell-Dichte und die anspruchsvollen Kosten von Niv-Mizzet, Parun.</p>
+<p>Reliquary Tower unterstützt große Curiosity-Züge, Scavenger Grounds liefert Friedhofskontrolle und Cavern of Souls schützt die wichtigsten Wizards. Diese drei farblosen beziehungsweise bedingten Quellen können Niv-Mizzets sechs farbige Symbole dennoch erschweren.</p>
+<p>34 Länder sind wegen der günstigen Kurve, zahlreichen Cantrips, drei Mana-Artefakte, Vivi, Electro und der Ritual-/Enttapp-Suite vertretbar. Hände mit nur einem Land oder ohne beide Farben müssen konsequent zurückgenommen werden.</p>
 
 </div>
 </details>
@@ -174,43 +252,47 @@
 <summary>Stärken</summary>
 <div class="sub-accordion-content">
 <ul>
-<li>Vivi vereint Mana, Schaden, Skalierung und Commander Damage in der Command Zone.</li>
-<li>41 Instants und Sorceries unterstützen den fokussierten Storm-Plan.</li>
-<li>Grapeshot ist ein klarer, tutorbarer Storm-Finisher.</li>
-<li>Mehrere redundante Burn-Payoffs treffen alle Gegner gleichzeitig.</li>
-<li>Resonating Lute, Tablet of Discovery und Rituale erhöhen die Explosivität deutlich.</li>
-<li>Gamble kann den jeweils benötigten Finisher, eine Engine oder Schutz finden.</li>
-<li>Verbesserte Farbversorgung, Commander-Schutz und Friedhofskontrolle.</li>
-<li>Mehrere voneinander verschiedene Siegpfade erschweren die vollständige Verteidigung gegen das Deck.</li>
+<li>Sehr hohe Dichte günstiger, funktionaler Nichtkreaturzauber.</li>
+<li>Curiosity und Niv-Mizzet, Visionary erzeugen außergewöhnlich starken commander-gestützten Kartennachschub.</li>
+<li>Wizard&#39;s Staff vervielfacht gleichzeitig Schaden, Marken, Prowess, Draw und Vivis Manaausbeute.</li>
+<li>Fünf kostenlose oder bedingt kostenlose Interaktionsspells.</li>
+<li>Mehrere voneinander verschiedene, klar erkennbare Win Conditions.</li>
+<li>Zwei Game Changer statt des erlaubten Maximums von drei.</li>
+<li>Kein Zukauf erforderlich.</li>
 </ul>
 
 </div>
 </details>
 <details class="sub-accordion">
-<summary>Schwächen</summary>
+<summary>Schwächen und Risiken</summary>
 <div class="sub-accordion-content">
 <ul>
-<li>Weiterhin hohe Commander-Abhängigkeit; ohne Vivi fehlen gleichzeitig Mana und wiederholter Tischschaden.</li>
-<li>Gamble ist der einzige universelle Tutor und kann die gesuchte oder eine andere wichtige Karte zufällig abwerfen.</li>
-<li>Außer Chaos Warp kaum dauerhafte Antworten auf problematische Artefakte oder Verzauberungen.</li>
-<li>Nur neun Kreaturen; Combat-Pläne und manche Wizard-Synergien sind nicht immer verfügbar.</li>
-<li>Resonating Lute kostet vier Mana und muss eine Runde beziehungsweise weitere Ressourcen überleben, um maximalen Wert zu liefern.</li>
-<li>Niv-Mizzet, Parun verlangt sechs farbintensive Mana, während mehrere Länder nur farbloses Mana erzeugen.</li>
-<li>Einige neue Engines sind langsamer als die entfernten günstigen Cantrips.</li>
-<li>Friedhofsabhängige Abschlüsse wie Mizzix&#39;s Mastery und der transformierte Emperor verlieren gegen Graveyard-Hate an Wirkung.</li>
-<li>Temple of the False God bleibt eine mögliche Schwachstelle in frühen Starthänden.</li>
+<li>Vivi bleibt die stärkste Draw-, Mana- und Burn-Engine; wiederholtes Commander-Removal verlangsamt das Deck deutlich.</li>
+<li>Curiosity kann gegen Removal als Aura Kartennachteil erzeugen.</li>
+<li>34 Länder verlangen disziplinierte Mulligans.</li>
+<li>Niv-Mizzet, Parun und Prismari sind farb- beziehungsweise manaintensiv.</li>
+<li>Aetherflux Reservoir schaltet normalerweise zunächst nur einen Gegner aus und kann selbst entfernt werden.</li>
+<li>Nur Chaos Warp beantwortet problematische Verzauberungen dauerhaft.</li>
+<li>Graveyard-Hate schwächt Mizzix&#39;s Mastery.</li>
+<li>Commandeer benötigt zwei weitere blaue Karten und kann ohne aktive Draw-Engine großen Kartennachteil erzeugen.</li>
+<li>Die hohe Dichte effizienter Interaktion und starke Curiosity-Züge können das Deck am Tisch wie Bracket 4 wirken lassen.</li>
 </ul>
 
 </div>
 </details>
 <details class="sub-accordion">
-<summary>Unsicherheiten</summary>
+<summary>Legalitäts- und Collection-Check</summary>
 <div class="sub-accordion-content">
 <ul>
-<li>Die tatsächliche Geschwindigkeit hängt stark davon ab, wie konsequent Grapeshot oder Mizzix&#39;s Mastery mit Gamble gesucht werden.</li>
-<li>Resonating Lute kann mit Frantic Search und Snap sehr große Mana-Vorteile erzeugen; wie oft diese Karten gemeinsam auftreten, entscheidet über die obere Leistungsgrenze.</li>
-<li>Niv-Mizzet, Parun + Curiosity sollte als bewusste Kombolinie im Pregame-Gespräch genannt werden, auch wenn sie durch Bibliotheksgröße und hohe Manakosten begrenzt ist.</li>
-<li>Relentless Assault ist ohne einen großen Vivi oder transformierten Emperor deutlich schwächer und erhöht die Varianz der Liste.</li>
+<li>Deckgröße: 100 Karten inklusive Commander</li>
+<li>Singleton: erfüllt</li>
+<li>Color Identity: Blau-Rot eingehalten</li>
+<li>Commander-Banlist: keine Treffer</li>
+<li>Game Changer: <code>Gamble</code>, <code>Jeska&#39;s Will</code></li>
+<li>Game-Changer-Anzahl: 2 von maximal 3 für Bracket 3</li>
+<li>Nicht-Basic-Karten: vollständig in der Collection gefunden</li>
+<li>Basics: nach Projektregel automatisch verfügbar</li>
+<li>Physische Parallelbelegung mit anderen Decklisten: nicht als Ausschluss behandelt</li>
 </ul>
 
 </div>
@@ -219,10 +301,12 @@
 <summary>Quellenstand</summary>
 <div class="sub-accordion-content">
 <ul>
-<li><code>brains/deck-analysis/templates.md</code></li>
-<li><code>brains/bracket/templates.md</code></li>
-<li>Offizielle Commander-Bracket- und Game-Changer-Regeln, zuletzt geprüft am 10. August 2026</li>
 <li>Deckliste: <code>data/decks/decklists/vi-oh-no.txt</code></li>
+<li>Collection-Import: 14. August 2026</li>
+<li>Lokale Commander-Banlist und Game-Changer-Referenz: 12. August 2026</li>
+<li>EDHREC Vivi Ornitier, Storm und Upgraded: geprüft am 15. August 2026</li>
+<li>Offizielle The-Hobbit-Release-Notes zu Wizard&#39;s Staff: geprüft am 15. August 2026</li>
+<li>Offizielle Commander-Bracket- und Formatseite: geprüft am 15. August 2026</li>
 </ul>
 
 </div>
@@ -239,110 +323,130 @@
 <details class="sub-accordion">
 <summary>Ergebnis</summary>
 <div class="sub-accordion-content">
-<p><strong>Geschätztes Bracket:</strong> 3 – Upgraded, oberer Bereich bis Grenzbereich zu Bracket 4
-<strong>Sicherheit:</strong> mittel bis hoch</p>
+<p><strong>Geschätztes Bracket:</strong> 3 – Upgraded, oberer Bereich mit Grenzbereich zu Bracket 4<br><strong>Sicherheit:</strong> hoch</p>
 
 </div>
 </details>
 <details class="sub-accordion">
 <summary>Kurzbegründung</summary>
 <div class="sub-accordion-content">
-<p>Die neue Hauptversion besitzt einen klaren Storm-Plan, zwei Game Changers, kostenlose Interaktion, einen universellen Tutor und mehrere mana-positive Verkettungen. Grapeshot, Resonating Lute und Mizzix&#39;s Mastery ermöglichen große spielentscheidende Züge; Niv-Mizzet, Parun mit Curiosity bleibt als langsame Kombolinie erhalten. Ohne Fast-Mana-Suite, Tutorendichte oder regelmäßige Siege bis Zug 4 wirkt die Liste dennoch wie ein oberes Bracket-3-Deck und nicht wie ein konsequent optimiertes Bracket-4-Deck.</p>
+<p>Die Liste besitzt starke Commander-Synergie, zwei Game Changer, fünf kostenlose oder bedingt kostenlose Interaktionsspells, einen universellen Tutor und mehrere mana-positive Zauberketten. Curiosity und Wizard&#39;s Staff können einen einzelnen günstigen Spell in bis zu sechs Karten, zwei Schadenspunkte pro Gegner und vier zusätzliche Stärke für Vivis Manafähigkeit verwandeln. Aetherflux Reservoir, Chandra&#39;s Ignition, Mizzix&#39;s Mastery und die Niv-Mizzet-Linien geben dem Deck klare Abschlüsse.</p>
+<p>Trotz dieser oberen Leistungsgrenze fehlen eine Fast-Mana-Suite, hohe Tutorendichte und ein regelmäßig verfügbarer Sieg bis Zug 4. Die beiden Niv-Mizzet-Linien sind teuer und keine mathematisch unendlichen Schleifen. Das erwartete Spielerlebnis bleibt deshalb oberes Bracket 3, kann sich bei einer frühen Curiosity-/Staff-Engine aber wie niedriges Bracket 4 anfühlen.</p>
 
 </div>
 </details>
 <details class="sub-accordion">
-<summary>Game Changer Check</summary>
+<summary>Game-Changer-Check</summary>
 <div class="sub-accordion-content">
-<p>Anzahl Game Changers: 2</p>
-<p>Gefundene Game Changers:</p>
+<p>Anzahl Game Changer: 2</p>
+<p>Gefundene Game Changer:</p>
 <ul>
 <li>Gamble</li>
 <li>Jeska&#39;s Will</li>
 </ul>
 <p>Auswirkung:</p>
 <ul>
-<li>Gamble kann Grapeshot, Mizzix&#39;s Mastery, Resonating Lute, Curiosity, Niv-Mizzet oder benötigten Schutz finden und erhöht damit die Konsistenz deutlich.</li>
-<li>Jeska&#39;s Will ermöglicht besonders mit Vivi explosive Verkettungszüge.</li>
-<li>Zwei Game Changers sind innerhalb der Grenze von maximal drei für Bracket 3.</li>
-<li>Deflecting Swat zählt nach seiner offiziellen Entfernung von der Liste nicht als Game Changer.</li>
-<li>Die Ergänzungen Farewell und Biorhythm vom 9. Februar 2026 betreffen dieses Deck nicht.</li>
+<li>Gamble findet Aetherflux Reservoir, Curiosity, Wizard&#39;s Staff, Mizzix&#39;s Mastery, Chandra&#39;s Ignition oder benötigte Interaktion, enthält aber das Risiko eines zufälligen Abwurfs.</li>
+<li>Jeska&#39;s Will erzeugt besonders mit Vivi einen explosiven Verkettungszug.</li>
+<li>Zwei Game Changer liegen innerhalb des Bracket-3-Maximums von drei.</li>
+<li>Deflecting Swat, Commandeer, Mindbreak Trap und Mental Misstep stehen nicht auf der aktuellen lokalen Game-Changer-Liste.</li>
 </ul>
-
-</div>
-</details>
-<details class="sub-accordion">
-<summary>Spielplan</summary>
-<div class="sub-accordion-content">
-<p>Das Deck lässt Vivi mit Nichtkreaturzaubern wachsen, fügt dabei allen Gegnern Schaden zu und wandelt Vivis Stärke in weiteres Mana um. Resonating Lute, Tablet of Discovery, Rituale, Frantic Search und Snap verlängern diese Ketten. Der Abschluss erfolgt über Grapeshot, gestapelte Burn-Trigger, Mizzix&#39;s Mastery, große X-Zauber oder Niv-Mizzet, Parun mit Curiosity; Commander Damage und der transformierte Emperor bilden Nebenpläne.</p>
 
 </div>
 </details>
 <details class="sub-accordion">
 <summary>Geschwindigkeit</summary>
 <div class="sub-accordion-content">
-<p>Erwarteter relevanter Sieg- oder Dominanzbereich:</p>
 <ul>
-<li>Aufbau: Züge 1–3</li>
-<li>Starke Engine: ungefähr Züge 4–6</li>
-<li>Realistischer Sieg: ungefähr Züge 6–8</li>
+<li>Aufbau und Kartenauswahl: Züge 1–3</li>
+<li>Starke Curiosity-, Staff- oder Mana-Engine: ungefähr Züge 3–5</li>
+<li>Realistischer relevanter Sieg: ungefähr Züge 6–8</li>
 <li>Außergewöhnliche Hand: möglicherweise Zug 5</li>
-<li>Regelmäßiger Sieg bis Zug 4: unwahrscheinlich</li>
+<li>Regelmäßiger geschützter Sieg bis Zug 4: nicht zu erwarten</li>
 </ul>
+<p>Die Reduktion auf 34 Länder und die höhere Dichte günstiger Zauber steigern die Explosivität. Gleichzeitig machen die fehlende Fast-Mana-Suite und die Abhängigkeit von Vivi, einer Draw-Engine oder einem Finisher sehr frühe Siege unzuverlässig.</p>
 
 </div>
 </details>
 <details class="sub-accordion">
 <summary>Win Conditions und Combo-Potenzial</summary>
 <div class="sub-accordion-content">
+<h3>Direkte Abschlüsse</h3>
 <ul>
-<li>Storm/Burn über Vivi, Guttersnipe, Coruscation Mage und Grapeshot</li>
-<li>überladenes Mizzix&#39;s Mastery als großer Finisher-Turn</li>
-<li>Niv-Mizzet, Parun + Curiosity als optionale, durch die Bibliotheksgröße begrenzte Kartenzieh-Schadensschleife</li>
-<li>Blaze oder Electrodominance als große Mana-Sinks</li>
-<li>Commander Damage mit Commander&#39;s Plate und Rogue&#39;s Passage</li>
-<li>Starfall-Angriffe des transformierten Emperors, situativ mit Relentless Assault</li>
+<li>Aetherflux Reservoir nach einer langen Spell-Kette</li>
+<li>Chandra&#39;s Ignition auf einen stark gewachsenen Vivi</li>
+<li>wiederholter Tischschaden durch Vivi, Guttersnipe und Coruscation Mage</li>
+<li>überladenes Mizzix&#39;s Mastery</li>
+<li>Prismari, the Inspiration mit einem vorbereiteten Storm-Zug</li>
 </ul>
-<p>Es ist keine Endlosschleife mit Resonating Lute, Frantic Search oder Snap erkennbar. Diese Karten erzeugen einmalig beziehungsweise pro gewirkter Karte Mana-Vorteil, benötigen für eine Wiederholung aber zusätzliche Rekursion.</p>
-
-</div>
-</details>
-<details class="sub-accordion">
-<summary>Konsistenz</summary>
-<div class="sub-accordion-content">
-<p>Einschätzung: mittel bis gut</p>
-<p>Positiv:</p>
+<h3>Deterministische, endliche Linien</h3>
 <ul>
-<li>Der Commander ist stets verfügbar und unterstützt jeden Nichtkreaturzauber.</li>
-<li>41 Instants und Sorceries bilden eine hohe Synergiedichte.</li>
-<li>Mehrere redundante Burn- und Mana-Payoffs.</li>
-<li>Gamble kann jede benötigte Karte suchen.</li>
-<li>37 Länder und mehrere permanente Rampquellen verbessern die Entwicklung.</li>
-<li>Mehrere unabhängige Finisher reduzieren die Abhängigkeit von einer einzelnen Kombination.</li>
+<li>Niv-Mizzet, Parun + Curiosity</li>
+<li>Niv-Mizzet, Parun + Niv-Mizzet, Visionary</li>
 </ul>
-<p>Negativ:</p>
+<p>Beide Linien können den Tisch ausschalten, sind aber durch Bibliotheksgröße, verfügbare Ziele und gegnerische Lebenspunkte begrenzt. Sie können kontrolliert beendet werden und sind keine mathematisch unendlichen Loops.</p>
+<h3>Commander-gestützte Ketten</h3>
 <ul>
-<li>Gamble ist der einzige universelle Tutor und enthält ein relevantes Zufallsrisiko.</li>
-<li>Mehrere Engines kosten drei oder vier Mana und müssen zunächst etabliert werden.</li>
-<li>Die Niv-Curiosity-Linie ist weiterhin farbintensiv und nicht zuverlässig früh verfügbar.</li>
-<li>Einige Pump-, Combat- und Flavor-Karten sind ohne Vivi oder Emperor situativ.</li>
+<li>Vivi + Curiosity + weitere Nichtkreaturzauber</li>
+<li>Vivi + Curiosity + Wizard&#39;s Staff + weitere Nichtkreaturzauber</li>
 </ul>
+<p>Diese Engines benötigen für jeden Schritt einen weiteren gewirkten Spell. Sie erzeugen keinen selbsttragenden Endlosloop.</p>
 
 </div>
 </details>
 <details class="sub-accordion">
 <summary>Interaktion</summary>
 <div class="sub-accordion-content">
+<p>Kostenlos oder bedingt kostenlos:</p>
 <ul>
-<li>Counterspells: Counterspell, Daze, Essence Capture und Mana Sculpt</li>
-<li>kostenlose Interaktion: Deflecting Swat und bedingt Daze</li>
-<li>Schutz: Dive Down, Magic Damper, Swiftfoot Boots, Commander&#39;s Plate und Cavern of Souls</li>
-<li>Boardkontrolle: Blasphemous Act, Consuming Tide und Disrupt Decorum</li>
-<li>punktuelle Antworten: Chaos Warp, Lightning Bolt, Rabid Gnaw und Snap</li>
-<li>Friedhofskontrolle: Scavenger Grounds</li>
-<li>Mass Land Denial: nicht vorhanden</li>
-<li>Stax: nicht vorhanden</li>
-<li>Extra-Turn-Schleifen: nicht vorhanden</li>
+<li>Commandeer</li>
+<li>Daze</li>
+<li>Deflecting Swat</li>
+<li>Mental Misstep</li>
+<li>Mindbreak Trap</li>
+</ul>
+<p>Weitere günstige Stack-Interaktion:</p>
+<ul>
+<li>An Offer You Can&#39;t Refuse</li>
+<li>Swan Song</li>
+<li>Counterspell</li>
+<li>Mana Sculpt</li>
+</ul>
+<p>Board- und Permanent-Interaktion:</p>
+<ul>
+<li>Chaos Warp</li>
+<li>Into the Flood Maw</li>
+<li>Lightning Bolt</li>
+<li>Snap</li>
+<li>Fire Magic</li>
+<li>Blasphemous Act</li>
+<li>Chandra&#39;s Ignition</li>
+<li>Scavenger Grounds</li>
+</ul>
+<p>Mass Land Denial, Stax und Extra-Turn-Schleifen sind nicht vorhanden.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Konsistenz</summary>
+<div class="sub-accordion-content">
+<p>Einschätzung: gut, aber nicht vollständig optimiert</p>
+<p>Positiv:</p>
+<ul>
+<li>Der Commander ist stets verfügbar und macht jeden Nichtkreaturzauber relevant.</li>
+<li>42 Instants und Sorceries sorgen für hohe Spell-Dichte.</li>
+<li>Zahlreiche Ein- und Zwei-Mana-Cantrips glätten Starthände.</li>
+<li>Curiosity, Niv-Mizzet, Visionary, Archmage Emeritus und Niv-Mizzet, Parun bilden redundante Draw-Engines.</li>
+<li>Aetherflux Reservoir und Chandra&#39;s Ignition sind klare, voneinander unabhängige Finisher.</li>
+<li>Gamble findet jede fehlende Engine oder Win Condition.</li>
+</ul>
+<p>Negativ:</p>
+<ul>
+<li>Gamble ist der einzige universelle Tutor.</li>
+<li>Curiosity und Wizard&#39;s Staff werden nicht zuverlässig in jeder Partie gefunden.</li>
+<li>Die stärksten Linien bleiben commander- oder permanentabhängig.</li>
+<li>34 Länder erhöhen die Mulligan-Anforderungen.</li>
+<li>Niv-Mizzet und Prismari sind teure Top-End-Karten.</li>
 </ul>
 
 </div>
@@ -351,30 +455,34 @@
 <summary>Faktoren, die das Bracket erhöhen</summary>
 <div class="sub-accordion-content">
 <ul>
-<li>Zwei Game Changers: Gamble und Jeska&#39;s Will</li>
-<li>Dedizierter Storm-Finisher mit Grapeshot</li>
-<li>Resonating Lute mit Frantic Search und Snap als starke Mana-Engine</li>
-<li>Niv-Mizzet, Parun + Curiosity</li>
-<li>Deflecting Swat und Daze als kostenlose Interaktion</li>
-<li>Mizzix&#39;s Mastery als explosiver Finisher</li>
-<li>Starke Commander-Engine mit skalierender Manaerzeugung</li>
-<li>Mehrere tutorbare oder redundante Siegpfade</li>
+<li>Zwei Game Changer</li>
+<li>Gamble als universeller Tutor</li>
+<li>fünf kostenlose oder bedingt kostenlose Interaktionsspells</li>
+<li>sehr günstige Cantrip-, Schutz- und Counterspell-Suite</li>
+<li>Wizard&#39;s Staff als Trigger- und Prowess-Verdoppler</li>
+<li>Curiosity kann in einer Viererrunde drei beziehungsweise mit Staff sechs Karten pro Spell ziehen</li>
+<li>Aetherflux Reservoir als unmittelbare Storm-Wincon</li>
+<li>zwei deterministische Niv-Mizzet-Linien</li>
+<li>mana-positive Sequenzen über Vivi, Electro, Resonating Lute, Frantic Search und Snap</li>
+<li>Mizzix&#39;s Mastery und Prismari als explosive Rekursions- beziehungsweise Storm-Finisher</li>
 </ul>
 
 </div>
 </details>
 <details class="sub-accordion">
-<summary>Faktoren, die das Bracket senken</summary>
+<summary>Faktoren, die das Bracket begrenzen</summary>
 <div class="sub-accordion-content">
 <ul>
-<li>Keine Fast-Mana-Suite außerhalb von Sol Ring und temporären Ritualen</li>
-<li>Nur ein universeller Tutor mit zufälligem Abwurf</li>
-<li>Keine typische frühe Zwei-Karten-Endloskombination</li>
-<li>Mehrere vier- bis sechsmana-teure Engines und Finisher</li>
-<li>Nur begrenzte Antworten auf Artefakte und Verzauberungen</li>
-<li>Weiterhin hohe Commander-Abhängigkeit</li>
-<li>Keine erkennbare cEDH-Ausrichtung oder Metagame-Optimierung</li>
-<li>Kein konsistenter Sieg in den ersten vier Zügen</li>
+<li>Nur zwei Game Changer</li>
+<li>Keine Fast-Mana-Suite außerhalb von Sol Ring</li>
+<li>Nur ein universeller Tutor mit Zufallsrisiko</li>
+<li>Keine verifizierte Endlosschleife</li>
+<li>Keine typische frühe Zwei-Karten-Infinite-Combo</li>
+<li>Keine regelmäßigen geschützten Siege bis Zug 4</li>
+<li>Mehrere sechs- bis siebenmana-teure Payoffs</li>
+<li>deutliche Abhängigkeit von Vivi und permanenten Engines</li>
+<li>keine cEDH-Metagame-Ausrichtung</li>
+<li>begrenzte Antworten auf problematische Verzauberungen</li>
 </ul>
 
 </div>
@@ -382,30 +490,18 @@
 <details class="sub-accordion">
 <summary>Unsicherheiten</summary>
 <div class="sub-accordion-content">
-<p>Die größte Unsicherheit ist, wie aggressiv Gamble zur Vorbereitung eines Grapeshot-, Mizzix&#39;s-Mastery- oder Niv-Curiosity-Siegs eingesetzt wird. Werden die Kombolinien regelmäßig gesucht und stark geschützt, kann sich das Spielerlebnis Bracket 4 annähern. Ohne Resonating Lute oder Vivi entwickelt sich das Deck deutlich fairer und langsamer.</p>
+<p>Eine frühe Kombination aus Vivi, Curiosity und Wizard&#39;s Staff kann deutlich stärker spielen als der Durchschnitt der Liste. Mit ausreichend günstigen Spells zieht sie extrem viele Karten und erzeugt gleichzeitig Tischschaden und Mana. Werden Gamble und die kostenlose Interaktion konsequent für einen geschützten Aetherflux- oder Niv-Mizzet-Abschluss verwendet, nähert sich das Spielerlebnis niedrigem Bracket 4.</p>
+<p>Ohne Vivi oder eine Draw-Engine spielt die Liste wesentlich fairer. Die tatsächliche Siegquote hängt deshalb stark davon ab, wie oft die permanentbasierten Engines früh liegen und geschützt werden können.</p>
 
 </div>
 </details>
 <details class="sub-accordion">
-<summary>Empfehlung</summary>
+<summary>Empfehlung und Rule 0</summary>
 <div class="sub-accordion-content">
-<p>Dieses Deck sollte aktuell so kommuniziert werden:</p>
+<p>Das Deck sollte als oberes Bracket 3 angekündigt werden:</p>
 <blockquote>
-<p>Oberes Bracket 3 mit zwei Game Changers, einem fokussierten Storm-Plan und einer langsamen Niv-Mizzet-/Curiosity-Kombination.</p>
+<p>Oberes Bracket-3-Vivi-Curiosity-Storm mit Gamble und Jeska&#39;s Will als zwei Game Changern, viel kostenloser Interaktion, Aetherflux Reservoir und zwei späten Niv-Mizzet-Ziehschleifen. Keine verifizierte Endloskombo, aber einzelne sehr explosive Züge können wie niedriges Bracket 4 wirken.</p>
 </blockquote>
-<p>Falls es eindeutiger für Bracket 3 gebaut werden soll:</p>
-<ul>
-<li>Gamble oder die Niv-Curiosity-Linie entfernen beziehungsweise nicht als geplanten Hauptsieg einsetzen.</li>
-<li>Resonating Lute durch eine normale Ramp- oder Value-Karte ersetzen.</li>
-<li>Mehr interaktive, inkrementelle Payoffs statt zusätzlicher Storm-Konsistenz spielen.</li>
-</ul>
-<p>Falls es für Bracket 4 optimiert werden soll:</p>
-<ul>
-<li>Mehr Fast Mana und effiziente Tutoren ergänzen.</li>
-<li>Zusätzliche günstige Cantrips und kostenlose beziehungsweise einmana-teure Interaktion spielen.</li>
-<li>Situative Pump- und Combat-Karten durch redundante Combo-, Storm- oder Schutzkarten ersetzen.</li>
-<li>Die Manabasis für Niv-Mizzet und frühe Doppel-Farbkosten weiter optimieren.</li>
-</ul>
 
 </div>
 </details>
@@ -414,9 +510,8 @@
 <div class="sub-accordion-content">
 <ul>
 <li><code>brains/bracket/templates.md</code></li>
-<li><a href="https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-february-9-2026">https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-february-9-2026</a></li>
-<li><a href="https://magic.wizards.com/en/news/announcements/commander-banned-and-restricted-february-9-2026">https://magic.wizards.com/en/news/announcements/commander-banned-and-restricted-february-9-2026</a></li>
-<li>Offizielle Commander-Bracket- und Game-Changer-Regeln, zuletzt geprüft am 10. August 2026</li>
+<li><code>data/reference/commander/game-changers.json</code>, aktualisiert am 12. August 2026</li>
+<li>Offizielle Commander-Bracket- und Formatseite, geprüft am 15. August 2026</li>
 <li>Deckliste: <code>data/decks/decklists/vi-oh-no.txt</code></li>
 </ul>
 
@@ -434,155 +529,245 @@
 <details class="sub-accordion">
 <summary>Kernidee</summary>
 <div class="sub-accordion-content">
-<p>Vivi wächst mit jedem Nichtkreaturzauber, fügt dabei allen Gegnern Schaden zu und wandelt seine Stärke einmal im eigenen Zug in blaues und rotes Mana um. Die neue Hauptversion versucht, günstige Zauber, Rituale und Land-Enttapper zu einem echten Storm-Zug zu verketten. Grapeshot, mehrere Burn-Payoffs oder Mizzix&#39;s Mastery schließen die Partie ab.</p>
+<p>Vivi verwandelt jeden Nichtkreaturzauber gleichzeitig in Tischschaden, eine permanente +1/+1-Marke und späteres Mana. Curiosity und Niv-Mizzet, Visionary machen aus Vivis Schadensereignissen neuen Kartennachschub. Wizard&#39;s Staff verdoppelt Vivis ausgelöste Fähigkeit sowie die verliehene Prowess-Fähigkeit und lässt die Stärke vor Vivis Manaaktivierung um vier Punkte pro Spell wachsen.</p>
+<p>Das Deck gewinnt nicht durch blindes Ausspielen aller Karten. Es entwickelt zuerst eine Draw- oder Mana-Engine, schützt Vivi und startet dann einen Zug, in dem Cantrips, Pumpzauber, Rituale und kostenlose Interaktion ineinandergreifen. Aetherflux Reservoir, Chandra&#39;s Ignition, Mizzix&#39;s Mastery oder eine Niv-Mizzet-Linie schließen die Partie ab.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Mulligan</summary>
+<div class="sub-accordion-content">
+<p>Eine gute Starthand enthält:</p>
+<ul>
+<li>zwei bis drei nutzbare Manaquellen;</li>
+<li>Zugriff auf Blau und Rot;</li>
+<li>einen günstigen Cantrip oder Card-Selection-Spell;</li>
+<li>mindestens eine frühe Entwicklungskarte oder Schutz;</li>
+<li>keine Ansammlung teurer Finisher.</li>
+</ul>
+<p>Besonders gute frühe Karten:</p>
+<ul>
+<li>Sol Ring</li>
+<li>Arcane Signet</li>
+<li>Brainstorm</li>
+<li>Consider</li>
+<li>Opt</li>
+<li>Preordain</li>
+<li>Sleight of Hand</li>
+<li>Goblin Electromancer</li>
+<li>Diary of Dreams</li>
+<li>Curiosity mit Schutz</li>
+<li>Wizard&#39;s Staff mit einer realistischen Vivi-Sequenz</li>
+</ul>
+<p>Zurücklegen:</p>
+<ul>
+<li>Ein-Land-Hände ohne mehrere günstige Auswahlzauber;</li>
+<li>Hände ohne Zugriff auf beide Farben;</li>
+<li>mehrere farblose Utility-Länder als einzige Manaquellen;</li>
+<li>Niv-Mizzet, Parun, Niv-Mizzet, Visionary und Prismari ohne frühe Entwicklung;</li>
+<li>Aetherflux Reservoir ohne Draw, Mana oder mehrere günstige Spells;</li>
+<li>mehrere Pumpzauber ohne Vivi, Draw-Engine oder Schutz.</li>
+</ul>
 
 </div>
 </details>
 <details class="sub-accordion">
 <summary>Early Game: Züge 1–3</summary>
 <div class="sub-accordion-content">
-<ul>
-<li>Eine Hand mit zuverlässigem Zugriff auf Blau und Rot priorisieren.</li>
-<li>Drei nutzbare Länder oder zwei Länder plus Sol Ring, Arcane Signet, Thought Vessel beziehungsweise Tablet of Discovery anstreben.</li>
-<li>Brainstorm, Opt und Preordain zur Zugvorbereitung nutzen.</li>
-<li>Diary of Dreams, Goblin Electromancer oder eine frühe Manaquelle entwickeln, wenn dadurch Vivi nicht ungeschützt in ein offenes Removal läuft.</li>
-<li>Vivi möglichst in Zug 3 ausspielen, wenn Schutz verfügbar ist oder unmittelbar Wert erzeugt werden kann.</li>
-<li>Cavern of Souls gewöhnlich auf Wizard benennen, um Vivi, Niv-Mizzet, den Emperor, Pensive Professor oder Goblin Electromancer zu unterstützen.</li>
-<li>Grapeshot und Mizzix&#39;s Mastery nicht für kleinen Zwischenwert verbrauchen.</li>
-</ul>
+<ol>
+<li>Beide Farben sichern und mit Cantrips die nächsten Landdrops vorbereiten.</li>
+<li>Sol Ring, Arcane Signet, Thought Vessel, Goblin Electromancer oder Diary of Dreams entwickeln.</li>
+<li>Cavern of Souls gewöhnlich auf Wizard benennen. Das unterstützt Vivi, Archmage Emeritus, Goblin Electromancer und Niv-Mizzet, Parun.</li>
+<li>Vivi nur ungeschützt ausspielen, wenn mindestens ein günstiger Folgespell sofort Wert erzeugt oder die Gegner wenig Mana offen haben.</li>
+<li>Curiosity nicht vorzeitig anlegen. Idealerweise folgt im selben Zug noch ein Nichtkreaturzauber oder Schutz bleibt offen.</li>
+<li>Wizard&#39;s Staff kann vor Vivi vorbereitet werden, sollte aber erst ausgerüstet werden, wenn Vivi den folgenden Zug voraussichtlich überlebt oder sofort eine Kette beginnt.</li>
+</ol>
 
 </div>
 </details>
 <details class="sub-accordion">
 <summary>Mid Game: Züge 4–6</summary>
 <div class="sub-accordion-content">
+<h3>Engine aufbauen</h3>
+<p>Priorität:</p>
+<ol>
+<li>Vivi schützen.</li>
+<li>Curiosity, Niv-Mizzet, Visionary oder Archmage Emeritus als Kartennachschub etablieren.</li>
+<li>Wizard&#39;s Staff, Electro oder Resonating Lute als Mana- und Trigger-Verstärker einsetzen.</li>
+<li>Einen Finisher erst ausspielen, wenn anschließend genug Ressourcen für Wert oder Schutz bleiben.</li>
+</ol>
+<h3>Vivis Manafähigkeit richtig nutzen</h3>
+<p>Vivis Manafähigkeit nur einmal pro eigenem Zug aktivieren. Vorher möglichst:</p>
+<ol>
+<li>Nichtkreaturzauber für permanente Marken wirken.</li>
+<li>Wizard&#39;s-Staff-Prowess aufbauen.</li>
+<li>Monstrous Rage, Haste Magic, Fists of Flame, Ancestors&#39; Aid, Felonious Rage, Sazacap&#39;s Brew oder Magic Damper einsetzen.</li>
+<li>Erst danach Vivis Stärke in blaues und rotes Mana umwandeln.</li>
+</ol>
+<p>Mit Wizard&#39;s Staff erhöht jeder Nichtkreaturzauber Vivis aktuelle Stärke vor der Aktivierung um vier: zwei permanente Marken und zwei temporäre Prowess-Punkte.</p>
+<h3>Curiosity-Sequenz</h3>
+<p>Mit Vivi und Curiosity:</p>
+<ol>
+<li>Einen günstigen Nichtkreaturzauber wirken.</li>
+<li>Vivi fügt jedem Gegner 1 Schaden zu.</li>
+<li>Curiosity zieht in einer Viererrunde bis zu drei Karten.</li>
+<li>Den nächsten Spell anhand von Mana, Schutz und Handgröße auswählen.</li>
+<li>Vivis Manafähigkeit erst aktivieren, wenn ausreichend Stärke aufgebaut wurde.</li>
+</ol>
+<p>Mit zusätzlichem Wizard&#39;s Staff entstehen zwei Vivi-Schadensereignisse und damit bis zu sechs Karten pro Spell. Nicht automatisch alle Curiosity-Auslöser nutzen, wenn Bibliotheksgröße, Handhabung der Karten oder gegnerische Draw-Bestrafung relevant werden.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Mana-positive Sequenzen</summary>
+<div class="sub-accordion-content">
+<h3>Electro, Assaulting Battery</h3>
+<p>Electro erst vor einer längeren Instant-/Sorcery-Kette ausspielen. Jeder passende Spell erstattet <code>{R}</code>. Nicht verbrauchtes rotes Mana bleibt erhalten, solange Electro im Spiel bleibt.</p>
+<h3>Resonating Lute</h3>
+<p>Mit Resonating Lute:</p>
+<ol>
+<li>Länder für Instants oder Sorceries tappen.</li>
+<li>Frantic Search wirken und drei Länder enttappen.</li>
+<li>Dieselben Länder erneut für Instants oder Sorceries verwenden.</li>
+</ol>
+<p>Snap erfüllt eine ähnliche Funktion und entfernt gleichzeitig eine Kreatur. Ohne wiederholbare Rekursion sind diese Sequenzen mana-positiv, aber nicht unendlich.</p>
+<h3>Rituale</h3>
 <ul>
-<li>Vivi mit Swiftfoot Boots, Commander&#39;s Plate, Dive Down, Magic Damper, Deflecting Swat oder einem Counterspell absichern.</li>
-<li>Permanente Engines wie Resonating Lute, Tablet of Discovery, Alania oder Ral etablieren.</li>
-<li>Vor Vivis Manafähigkeit günstige Nichtkreaturzauber und Pump-Effekte wirken, damit seine Stärke und die Manaausbeute steigen.</li>
-<li>Commander&#39;s Plate gibt Vivi unmittelbar +3 Stärke und kann dadurch drei zusätzlich erzeugte Mana bedeuten.</li>
-<li>Frantic Search und Snap nach Möglichkeit mit Resonating Lute einsetzen: Die enttappten Länder können erneut jeweils zwei Mana für Instants und Sorceries erzeugen.</li>
-<li>Pyretic Ritual, Jeska&#39;s Will und Mana Geyser für einen Zug aufheben, der mehrere Spells oder einen Finisher ermöglicht.</li>
-<li>Diary of Dreams möglichst mehrfach aufladen, bevor die Ziehfähigkeit aktiviert wird.</li>
-<li>Alania so einsetzen, dass der erste Instant und die erste Sorcery desselben Zuges kopiert werden können.</li>
+<li>Pyretic Ritual früh nur verwenden, wenn es Vivi beschleunigt oder die Kette tatsächlich verlängert.</li>
+<li>Jeska&#39;s Will möglichst mit Vivi im Spiel und ausreichend Handkarten beim Gegner wirken.</li>
+<li>Mana Geyser für einen Tischzustand mit vielen getappten Ländern aufheben.</li>
+<li>Mana Sculpt bevorzugt gegen einen teuren gegnerischen Spell einsetzen, wenn das verzögerte farblose Mana im folgenden eigenen Hauptzug verwertet werden kann.</li>
 </ul>
 
 </div>
 </details>
 <details class="sub-accordion">
-<summary>Storm-Zug vorbereiten</summary>
+<summary>Aetherflux-Reservoir-Zug</summary>
 <div class="sub-accordion-content">
-<p>Vor dem Start prüfen:</p>
+<p>Vor dem Reservoir prüfen:</p>
+<ul>
+<li>Reichen Handkarten und Draw-Auslöser für mindestens vier weitere Spells?</li>
+<li>Kann Vivi oder Electro das benötigte Mana erzeugen?</li>
+<li>Ist Schutz für das Reservoir oder die Kette verfügbar?</li>
+<li>Liegt der Lebensstand nach den erwarteten Auslösern sicher über 50?</li>
+</ul>
+<p>Wenn Aetherflux Reservoir der erste Spell des Zuges ist, geben vier weitere Spells 2, 3, 4 und 5 Leben, insgesamt 14. Von 40 Leben aus steigt der Lebensstand dadurch auf 54. Anschließend können 50 Leben bezahlt werden, um einen Gegner auszuschalten.</p>
+<p>Bei mehreren Gegnern die Kette nach der ersten Aktivierung möglichst fortsetzen, um erneut Leben aufzubauen. Nicht bei genau 50 Leben aktivieren: Das Bezahlen auf 0 Leben führt zum Verlust, bevor die 50-Schaden-Fähigkeit verrechnet wird.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Chandra&#039;s-Ignition-Zug</summary>
+<div class="sub-accordion-content">
 <ol>
-<li>Liegt mindestens ein Burn- oder Storm-Payoff?</li>
-<li>Ist Vivi geschützt oder kann die Kette auch ohne ihn fortgesetzt werden?</li>
-<li>Welche Manaquellen können durch Frantic Search oder Snap erneut genutzt werden?</li>
-<li>Muss Interaktion für einen gegnerischen Counterspell oder Removal offen bleiben?</li>
-<li>Reichen Handkarten, Friedhof und Exilimpulse für eine längere Kette?</li>
-<li>Ist Grapeshot bereits auf der Hand oder kann Gamble den passenden Abschluss finden?</li>
+<li>Prüfen, ob Vivi beim Wirken und Verrechnen im Spiel bleiben kann.</li>
+<li>Vorher Marken und Pump-Effekte aufbauen.</li>
+<li>Vivis Mana bei Bedarf vor Chandra&#39;s Ignition erzeugen.</li>
+<li>Chandra&#39;s Ignition erst wirken, wenn Vivis Stärke den Tisch relevant trifft oder das gegnerische Board vollständig räumt.</li>
+<li>Schutz für gegnerisches Removal oder einen Counterspell einplanen.</li>
+</ol>
+<p>Wird Vivi als Ziel vor der Verrechnung entfernt, wird Chandra&#39;s Ignition nicht verrechnet. Diese Linie deshalb nicht ohne Schutz in offenes Mana spielen.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Niv-Mizzet-Linien</summary>
+<div class="sub-accordion-content">
+<h3>Niv-Mizzet, Parun plus Curiosity</h3>
+<ol>
+<li>Curiosity an Parun anlegen.</li>
+<li>Einen Draw oder Instant-/Sorcery-Cast auslösen.</li>
+<li>Paruns Schaden auf einen Gegner legen.</li>
+<li>Curiosity ziehen lassen und die Sequenz wiederholen.</li>
+<li>Rechtzeitig durch Ablehnen des optionalen Curiosity-Draws stoppen.</li>
+</ol>
+<h3>Niv-Mizzet, Parun plus Niv-Mizzet, Visionary</h3>
+<ol>
+<li>Beide Niv-Mizzets ins Spiel bringen.</li>
+<li>Parun 1 Schaden an einen Gegner zufügen lassen.</li>
+<li>Visionary zieht eine Karte; dieser Draw löst Parun erneut aus.</li>
+<li>Schaden zwischen den Gegnern verteilen.</li>
+<li>Zum Stoppen einen Parun-Schadensauslöser auf den eigenen Spieler oder ein anderes legales Nichtgegner-Ziel legen.</li>
+</ol>
+<p>Diese Linien sind teuer und sichtbar. Sie nur beginnen, wenn Schutz verfügbar ist oder Gegner weitgehend ausgetappt sind.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Mizzix&#039;s Mastery und Prismari</summary>
+<div class="sub-accordion-content">
+<h3>Mizzix&#39;s Mastery</h3>
+<p>Das überladene Mastery erst bei ausreichend gefülltem Friedhof einsetzen. Günstige Cantrips, Rituale, Pump und Interaktion werden erneut gewirkt und lösen dadurch Vivi, Electro, Archmage Emeritus und Aetherflux Reservoir aus. Die Reihenfolge der auf den Stapel gelegten Zauber sorgfältig wählen.</p>
+<h3>Prismari, the Inspiration</h3>
+<p>Prismari möglichst nicht ohne Folgespell ausspielen. Die Storm-Kopien werden nicht gewirkt und erhöhen Vivis Marken, Aetherflux-Leben und Electros Mana nicht zusätzlich. Sie vervielfachen jedoch die eigentlichen Effekte der Instants und Sorceries.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Interaktionsprioritäten</summary>
+<div class="sub-accordion-content">
+<ol>
+<li>Einen unmittelbar spielentscheidenden gegnerischen Spell stoppen.</li>
+<li>Vivi schützen, wenn Curiosity, Staff oder die Manafähigkeit unmittelbar großen Wert erzeugen.</li>
+<li>Aetherflux Reservoir oder Chandra&#39;s Ignition während eines Abschlusszugs schützen.</li>
+<li>Rule-of-Law- und vergleichbare Anti-Storm-Permanents möglichst bereits auf dem Stapel beantworten.</li>
+<li>Chaos Warp für problematische Verzauberungen, Artefakte oder uncounterbare Permanents zurückhalten.</li>
+<li>Into the Flood Maw und Snap für Hate-Kreaturen oder Tempo während des eigenen Abschlusszugs verwenden.</li>
+<li>Scavenger Grounds nur aktivieren, wenn gegnerische Friedhöfe gefährlicher sind als das eigene Mizzix&#39;s Mastery.</li>
 </ol>
 
 </div>
 </details>
 <details class="sub-accordion">
-<summary>Reihenfolge eines explosiven Zugs</summary>
-<div class="sub-accordion-content">
-<ol>
-<li>Permanente Kostenreduktion, Mana- und Burn-Payoffs zuerst etablieren.</li>
-<li>Mit günstigen Cantrips und Pumpzaubern Vivis Stärke sowie den Storm Count aufbauen.</li>
-<li>Resonating-Lute-Länder vor Frantic Search oder Snap für Instants und Sorceries tappen.</li>
-<li>Vivis Manafähigkeit erst aktivieren, wenn seine Stärke sinnvoll aufgebaut ist.</li>
-<li>Pyretic Ritual, Jeska&#39;s Will, Mana Geyser und Treasure-Mana einsetzen, um die Kette zu verlängern.</li>
-<li>Kopiermöglichkeiten von Alania auf die wertvollsten Instants und Sorceries legen.</li>
-<li>Grapeshot möglichst zuletzt wirken oder Mizzix&#39;s Mastery überladen, wenn der Friedhof genügend Material enthält.</li>
-<li>Schutzmana einplanen, wenn ein einzelner gegnerischer Spell den Abschluss verhindern könnte.</li>
-</ol>
-
-</div>
-</details>
-<details class="sub-accordion">
-<summary>Late Game: Zug 7+</summary>
+<summary>Einsatz der kostenlosen Interaktion</summary>
 <div class="sub-accordion-content">
 <ul>
-<li>Große Mengen Mana über Vivi, Resonating Lute, Jeska&#39;s Will oder Mana Geyser erzeugen.</li>
-<li>Blaze, Electrodominance oder Finale of Revelation als Mana-Sinks nutzen.</li>
-<li>Ein überladenes Mizzix&#39;s Mastery als spielentscheidenden Storm-Zug vorbereiten.</li>
-<li>Niv-Mizzet, Parun nur bei passender Farbversorgung und möglichst mit Schutz ausspielen.</li>
-<li>Niv-Mizzet mit Curiosity verbinden; die Schleife rechtzeitig beenden, bevor die eigene Bibliothek leer ist.</li>
-<li>Den transformierten Emperor angreifen lassen, wenn der Friedhof ausreichend viele Nichtkreatur-Nichtlandkarten enthält.</li>
-<li>Relentless Assault für einen zweiten relevanten Angriff mit Vivi oder dem transformierten Emperor einsetzen, nicht nur für zusätzlichen Kleinschaden.</li>
-<li>Einen stark gewachsenen Vivi über Rogue&#39;s Passage oder Commander&#39;s Plate als Commander-Damage-Finisher nutzen.</li>
+<li>Deflecting Swat: schützt Vivi oder lenkt entscheidende Interaktion um.</li>
+<li>Daze: besonders wirksam, wenn Gegner sich für Removal oder Counter vollständig austappen.</li>
+<li>Mental Misstep: stoppt günstige Counterspells, Removal, Tutoren oder gegnerische Engine-Karten.</li>
+<li>Mindbreak Trap: gegen gegnerische Storm-Züge oder große Stack-Sequenzen aufheben.</li>
+<li>Commandeer: nur pitchen, wenn der übernommene Nichtkreaturzauber den Kartennachteil rechtfertigt oder die Partie entscheidet.</li>
 </ul>
-
-</div>
-</details>
-<details class="sub-accordion">
-<summary>Mulligan-Prioritäten</summary>
-<div class="sub-accordion-content">
-<p>Eine gute Starthand enthält:</p>
-<ul>
-<li>drei nutzbare Manaquellen oder zwei Länder plus verlässliche Ramp</li>
-<li>Zugriff auf Blau und Rot</li>
-<li>mindestens einen günstigen Cantrip oder Setup-Zauber</li>
-<li>idealerweise Schutz für Vivi</li>
-<li>eine Engine wie Goblin Electromancer, Diary of Dreams, Tablet of Discovery oder Resonating Lute</li>
-</ul>
-<p>Zurücklegen sollte man insbesondere:</p>
-<ul>
-<li>Hände ohne Zugriff auf beide Farben</li>
-<li>Temple of the False God als vermeintliche frühe Manaquelle</li>
-<li>mehrere farblose Utility-Länder ohne sichere Farbversorgung</li>
-<li>mehrere teure Karten wie Niv-Mizzet, Mana Geyser und Mizzix&#39;s Mastery ohne Setup</li>
-<li>Grapeshot ohne Kartennachschub, Mana-Engine oder andere Storm-Vorbereitung</li>
-<li>mehrere Pump- oder Combat-Karten ohne Vivi, Card Selection oder Schutz</li>
-<li>Relentless Assault ohne realistischen Angreifer</li>
-</ul>
-
-</div>
-</details>
-<details class="sub-accordion">
-<summary>Prioritäten für Schutz und Interaktion</summary>
-<div class="sub-accordion-content">
-<ol>
-<li>Eine unmittelbar spielentscheidende gegnerische Aktion stoppen.</li>
-<li>Vivi schützen, wenn seine Manafähigkeit oder eine längere Zauberkette unmittelbar Wert erzeugt.</li>
-<li>Resonating Lute schützen, wenn sie im folgenden Zug einen großen Mana-Vorteil ermöglicht.</li>
-<li>Niv-Mizzet oder Curiosity schützen, wenn dadurch sofort eine spielentscheidende Schleife entsteht.</li>
-<li>Chaos Warp für Permanenttypen zurückhalten, die das Deck sonst kaum dauerhaft beantworten kann.</li>
-<li>Scavenger Grounds erst einsetzen, wenn gegnerische Friedhöfe gefährlicher sind als der eigene Mizzix&#39;s-Mastery- oder Emperor-Plan.</li>
-<li>Mana Sculpt bevorzugt gegen einen teuren Spell einsetzen, wenn der verzögerte Mana-Vorteil im eigenen Hauptzug genutzt werden kann.</li>
-</ol>
 
 </div>
 </details>
 <details class="sub-accordion">
 <summary>Einsatz von Gamble</summary>
 <div class="sub-accordion-content">
-<p>Gamble sucht abhängig von der Spielsituation:</p>
+<p>Gamble sucht abhängig von der Situation:</p>
 <ol>
-<li>einen sofort benötigten Schutz- oder Interaktionsspell</li>
-<li>Grapeshot bei bereits vorbereitetem Storm-Zug</li>
-<li>Mizzix&#39;s Mastery bei gefülltem Friedhof</li>
-<li>Resonating Lute oder eine andere Mana-Engine für den nächsten Zug</li>
-<li>Niv-Mizzet beziehungsweise Curiosity, wenn die zweite Karte bereits vorhanden ist</li>
+<li>unmittelbaren Schutz oder eine notwendige Antwort;</li>
+<li>Aetherflux Reservoir bei vorbereiteter Spell-Kette;</li>
+<li>Curiosity oder Wizard&#39;s Staff, wenn Vivi bereits geschützt liegt;</li>
+<li>Chandra&#39;s Ignition bei ausreichend großer Vivi-Stärke;</li>
+<li>Mizzix&#39;s Mastery bei gefülltem Friedhof;</li>
+<li>eine fehlende Niv-Mizzet-Komponente im späten Spiel.</li>
 </ol>
-<p>Je kleiner die Hand, desto größer ist das Risiko, die gesuchte Karte direkt wieder abzuwerfen. Gamble möglichst dann wirken, wenn der zufällige Abwurf verkraftbar ist oder eine abgeworfene Instant-/Sorcery-Karte später mit Mizzix&#39;s Mastery genutzt werden kann.</p>
+<p>Das Abwurfrisiko wird kleiner, je mehr Karten auf der Hand liegen. Ein abgeworfener Instant oder eine Sorcery kann später mit Mizzix&#39;s Mastery noch Wert erzeugen.</p>
 
 </div>
 </details>
 <details class="sub-accordion">
-<summary>Siegpfade</summary>
+<summary>Siegpfad-Priorität</summary>
 <div class="sub-accordion-content">
 <ol>
-<li>Storm-Kette mit Vivi und Grapeshot.</li>
-<li>Wiederholter Spellslinger-Burn durch Vivi, Guttersnipe, Coruscation Mage und weitere Payoffs.</li>
-<li>Überladenes Mizzix&#39;s Mastery als großer Friedhofsabschluss.</li>
-<li>Niv-Mizzet, Parun + Curiosity als begrenzte, meist spielbeendende Kartenzieh-Schadensschleife.</li>
-<li>Blaze oder Electrodominance nach einem großen Manazug.</li>
-<li>Commander Damage durch Vivi mit Commander&#39;s Plate oder Rogue&#39;s Passage.</li>
-<li>Starfall-Schaden des transformierten Emperors, situativ mit Relentless Assault.</li>
+<li>Vivi + Curiosity/Staff und wiederholter Tischschaden</li>
+<li>Aetherflux Reservoir nach einer langen Kette</li>
+<li>Chandra&#39;s Ignition auf einen stark gewachsenen Vivi</li>
+<li>überladenes Mizzix&#39;s Mastery</li>
+<li>Niv-Mizzet, Parun + Curiosity</li>
+<li>Niv-Mizzet, Parun + Niv-Mizzet, Visionary</li>
+<li>Prismari-Storm oder normaler Spellslinger-Burn</li>
 </ol>
-<p>Der fokussierte Storm-Plan, die zwei Game Changers und die Niv-Curiosity-Linie sollten im Pregame-Gespräch genannt werden.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Rule 0</summary>
+<div class="sub-accordion-content">
+<blockquote>
+<p>Oberes Bracket-3-Vivi-Curiosity-Storm mit Gamble und Jeska&#39;s Will als zwei Game Changern, viel kostenloser Interaktion, Aetherflux Reservoir und zwei späten Niv-Mizzet-Ziehschleifen. Keine verifizierte Endloskombo, aber einzelne sehr explosive Züge können wie niedriges Bracket 4 wirken.</p>
+</blockquote>
 
 </div>
 </details>
@@ -598,83 +783,84 @@
 <pre><code class="language-txt">// COMMANDER
 1 Vivi Ornitier
 
+1 Aetherflux Reservoir
 1 Alania, Divergent Storm
+1 An Offer You Can&#39;t Refuse
 1 Ancestors&#39; Aid
 1 Arcane Signet
+1 Archmage Emeritus
 1 As Foretold
 1 Blasphemous Act
-1 Blaze
 1 Brainstorm
 1 Brass&#39;s Tunnel-Grinder
 1 Cavern of Souls
+1 Chandra&#39;s Ignition
 1 Chaos Warp
 1 Combat Tutorial
 1 Command Tower
+1 Commandeer
 1 Commander&#39;s Plate
-1 Consuming Tide
+1 Consider
 1 Coruscation Mage
 1 Counterspell
 1 Crash Through
 1 Curiosity
 1 Daze
 1 Deflecting Swat
-1 Demolition Field
 1 Diary of Dreams
-1 Disrupt Decorum
 1 Dive Down
+1 Electro, Assaulting Battery
 1 Electrodominance
-1 Essence Capture
 1 Exotic Orchard
 1 Felonious Rage
 1 Finale of Revelation
 1 Fire Magic
+1 Fists of Flame
 1 Frantic Search
 1 Gamble
 1 Goblin Electromancer
-1 Grapeshot
 1 Guttersnipe
 1 Haste Magic
 1 Inspiration from Beyond
-12 Island
+1 Into the Flood Maw
+13 Island
 1 Jeska&#39;s Will
-1 Kindlespark Duo
+1 Light Up the Stage
 1 Lightning Bolt
 1 Lindblum, Industrial Regency
 1 Magic Damper
 1 Mana Geyser
 1 Mana Sculpt
-1 Mental Modulation
+1 Mental Misstep
+1 Mindbreak Trap
 1 Mizzix&#39;s Mastery
 1 Monstrous Rage
-12 Mountain
+10 Mountain
 1 Niv-Mizzet, Parun
-1 Opera Love Song
+1 Niv-Mizzet, Visionary
 1 Opt
-1 Pensive Professor
 1 Preordain
-1 Propaganda
+1 Prismari, the Inspiration
 1 Pyretic Ritual
-1 Rabid Gnaw
 1 Ral, Crackling Wit
-1 Relentless Assault
 1 Reliquary Tower
 1 Resonating Lute
 1 Riverpyre Verge
-1 Rogue&#39;s Passage
 1 Sazacap&#39;s Brew
 1 Scavenger Grounds
-1 Seize the Spoils
+1 Sleight of Hand
 1 Snap
 1 Sol Ring
+1 Spirebluff Canal
 1 Starting Town
 1 Steam Vents
+1 Stock Up
+1 Swan Song
 1 Swiftfoot Boots
 1 Tablet of Discovery
-1 Temple of the False God
-1 The Emperor of Palamecia
 1 Thought Vessel
 1 Thundering Falls
-1 Witch&#39;s Mark
+1 Wizard&#39;s Staff
 </code></pre>
 
 </div>
@@ -904,7 +1090,7 @@
 
 <section id="versionen" class="accordion-card main-section">
 <div class="main-section-title">
-  Versionen · aktuell v002
+  Versionen · aktuell v003
 </div>
 
 <div class="accordion-content">
@@ -1084,6 +1270,119 @@
 <li>Teach by Example</li>
 <li>Think Twice</li>
 </ul>
+
+</div>
+</details>
+<details class="sub-accordion version-accordion">
+<summary>Vi oh no – Version v002</summary>
+<div class="sub-accordion-content">
+<h2>Versionsdaten</h2>
+<ul>
+<li>Commander: Vivi Ornitier</li>
+<li>Farbidentität: Blau-Rot (Izzet)</li>
+<li>Archiviert am: 15. August 2026</li>
+<li>Status: Ehemalige Hauptversion</li>
+<li>Vorgänger: <code>data/decks/saved/vi-oh-no/versions/v001.md</code></li>
+<li>Nachfolger: aktuelle Hauptversion v003 unter <code>data/decks/decklists/vi-oh-no.txt</code></li>
+</ul>
+<h2>Archivierte Deckliste</h2>
+<pre><code class="language-text">// COMMANDER
+1 Vivi Ornitier
+
+1 Alania, Divergent Storm
+1 Ancestors&#39; Aid
+1 Arcane Signet
+1 As Foretold
+1 Blasphemous Act
+1 Blaze
+1 Brainstorm
+1 Brass&#39;s Tunnel-Grinder
+1 Cavern of Souls
+1 Chaos Warp
+1 Combat Tutorial
+1 Command Tower
+1 Commander&#39;s Plate
+1 Consuming Tide
+1 Coruscation Mage
+1 Counterspell
+1 Crash Through
+1 Curiosity
+1 Daze
+1 Deflecting Swat
+1 Demolition Field
+1 Diary of Dreams
+1 Disrupt Decorum
+1 Dive Down
+1 Electrodominance
+1 Essence Capture
+1 Exotic Orchard
+1 Felonious Rage
+1 Finale of Revelation
+1 Fire Magic
+1 Frantic Search
+1 Gamble
+1 Goblin Electromancer
+1 Grapeshot
+1 Guttersnipe
+1 Haste Magic
+1 Inspiration from Beyond
+12 Island
+1 Jeska&#39;s Will
+1 Kindlespark Duo
+1 Lightning Bolt
+1 Lindblum, Industrial Regency
+1 Magic Damper
+1 Mana Geyser
+1 Mana Sculpt
+1 Mental Modulation
+1 Mizzix&#39;s Mastery
+1 Monstrous Rage
+12 Mountain
+1 Niv-Mizzet, Parun
+1 Opera Love Song
+1 Opt
+1 Pensive Professor
+1 Preordain
+1 Propaganda
+1 Pyretic Ritual
+1 Rabid Gnaw
+1 Ral, Crackling Wit
+1 Relentless Assault
+1 Reliquary Tower
+1 Resonating Lute
+1 Riverpyre Verge
+1 Rogue&#39;s Passage
+1 Sazacap&#39;s Brew
+1 Scavenger Grounds
+1 Seize the Spoils
+1 Snap
+1 Sol Ring
+1 Starting Town
+1 Steam Vents
+1 Swiftfoot Boots
+1 Tablet of Discovery
+1 Temple of the False God
+1 The Emperor of Palamecia
+1 Thought Vessel
+1 Thundering Falls
+1 Witch&#39;s Mark
+</code></pre>
+<h2>Kompakte Analyse</h2>
+<p>Die archivierte Hauptversion war ein fokussiertes Izzet-Spellslinger-/Storm-Deck mit 37 Ländern, 41 Instants und Sorceries sowie zwei Game Changern. Vivi, Resonating Lute, Tablet of Discovery, Pyretic Ritual, Jeska&#39;s Will, Mana Geyser, Frantic Search und Snap ermöglichten große mana-positive Zauberketten.</p>
+<p>Die wichtigsten Abschlüsse waren Grapeshot, ein überladenes Mizzix&#39;s Mastery, wiederholte Burn-Auslöser und Niv-Mizzet, Parun mit Curiosity. Commander Damage und The Emperor of Palamecia bildeten langsamere Nebenpläne.</p>
+<p>Die Version erreichte den oberen Bereich von Bracket 3, litt jedoch unter mehreren situativen Combat- und Flavor-Slots, einer für Niv-Mizzet teilweise farblosen Manabasis sowie zu wenig günstiger Stack-Interaktion. Grapeshot war außerdem nicht mehr in der am 14. August 2026 importierten Collection verzeichnet.</p>
+<h2>Kompakte Bracket-Einschätzung</h2>
+<ul>
+<li>Geschätztes Bracket: 3 – Upgraded, oberer Bereich</li>
+<li>Game Changer: 2 (<code>Gamble</code>, <code>Jeska&#39;s Will</code>)</li>
+<li>Realistischer Sieg: ungefähr Züge 6–8</li>
+<li>Keine verifizierte Endlosschleife</li>
+<li>Bracket-erhöhend: Grapeshot, Gamble, kostenlose Interaktion, Resonating Lute und die Niv-Mizzet-/Curiosity-Linie</li>
+<li>Bracket-senkend: keine Fast-Mana-Suite, nur ein Tutor, mehrere langsame oder situative Karten</li>
+</ul>
+<h2>Wichtigste Änderungen zur Hauptversion v003</h2>
+<p>Die neue Hauptversion ersetzt den nicht mehr in der Collection geführten Grapeshot-Plan durch Aetherflux Reservoir und Chandra&#39;s Ignition. Wizard&#39;s Staff, Niv-Mizzet, Visionary und Archmage Emeritus verstärken den Kartennachschub; Electro und mehr günstige Spells erhöhen die Mana- und Zauberdichte. Commandeer, Mindbreak Trap, Mental Misstep, An Offer You Can&#39;t Refuse und Swan Song machen die Interaktion erheblich effizienter.</p>
+<p>Gleichzeitig sinkt die Landzahl von 37 auf 34. Temple of the False God, Rogue&#39;s Passage und Demolition Field entfallen, während Spirebluff Canal und eine stärker blaue Basic-Verteilung die Farbqualität verbessern.</p>
 
 </div>
 </details>
