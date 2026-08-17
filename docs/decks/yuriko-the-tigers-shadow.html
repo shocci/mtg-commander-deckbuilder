@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yuriko The Tigers Shadow – MTG Commander Brain</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="page-shell">
+
+    <nav class="breadcrumb">
+      <a href="../index.html">← Deckübersicht</a>
+    </nav>
+
+    <header class="deck-header">
+      <p class="eyebrow">Deck</p>
+      <h1>Yuriko The Tigers Shadow</h1>
+      <p class="subtitle">
+        Commander: Commander offen
+      </p>
+    </header>
+
+    <section class="profile-card">
+      <h2>Kurzprofil</h2>
+
+      <div class="profile-layout">
+        <div class="profile-commander-images">
+  <div class="deck-card-art">
+    <div class="deck-card-art-placeholder">
+      <span>Commander offen</span>
+    </div>
+  </div>
+</div>
+
+        <div class="profile-nav">
+          <a class="profile-nav-button" href="#analyse">Analyse</a>
+          <a class="profile-nav-button" href="#bracket">Bracket 3</a>
+          <a class="profile-nav-button" href="#gameplan">Gameplan</a>
+          <span class="profile-nav-button disabled">Deckliste</span>
+          <span class="profile-nav-button disabled">0 Varianten</span>
+          <span class="profile-nav-button disabled">Version v001</span>
+        </div>
+      </div>
+    </section>
+
+<section id="analyse" class="accordion-card main-section">
+<div class="main-section-title">
+  Analyse
+</div>
+
+<div class="accordion-content">
+<details class="sub-accordion">
+<summary>Metadaten</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Deckliste: <code>data/decks/decklists/yuriko-the-tigers-shadow.txt</code></li>
+<li>Analysestand: 13. August 2026</li>
+<li>Status: vom Nutzer bestätigt</li>
+<li>Commander: Yuriko, the Tiger&#39;s Shadow</li>
+<li>Color Identity: Blau-Schwarz</li>
+<li>Geschätztes Bracket: 3 – Upgraded, obere Hälfte</li>
+<li>Erwarteter relevanter Sieg-/Dominanzbereich: ungefähr Zug 6–8</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Kurzprofil</summary>
+<div class="sub-accordion-content">
+<p>Das Deck nutzt günstige evasive Kreaturen, um Yuriko bereits ab Zug 2 per Commander-Ninjutsu ins Spiel zu bringen. Anschließend erzeugen Ninja-Treffer gleichzeitig Kartenvorteil und Lebensverlust bei allen Gegnern. Hohe Manawerte auf der Bibliothek dienen als Schadensverstärker, während Delve, Miracle, Ninjutsu und Satoru Umezawa mehrere dieser Karten trotz ihrer nominell hohen Kosten spielbar machen.</p>
+<p>Die Liste ist ein starkes High-Casual-Deck im oberen Bracket 3. Sie besitzt effiziente und teilweise kostenlose Interaktion, drei Game Changers und eine harte Notion-Thief-/Memory-Linie, aber keine Endloskombo, keine Tutor-Suite und keine cEDH-orientierte kompakte Siegbedingung.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Legalitäts- und Regelcheck</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Deckgröße: legal, genau 100 Karten einschließlich Commander</li>
+<li>Singleton: eingehalten; nur Island und Swamp kommen mehrfach vor</li>
+<li>Commander: Yuriko, the Tiger&#39;s Shadow ist ein legaler einzelner Commander</li>
+<li>Color Identity: alle Karten entsprechen Blau-Schwarz oder sind farblos</li>
+<li>Banlist: keine aktuell gebannte Commander-Karte enthalten</li>
+<li>Sonderbeschränkungen: keine einschlägige Einschränkung verletzt</li>
+</ul>
+<h3>Relevante Regelinteraktionen</h3>
+<ul>
+<li>Commander-Ninjutsu ist eine aktivierte Fähigkeit und kein Wirken. Die Commander Tax nach Regel 903.8 wird deshalb nicht angewendet.</li>
+<li>Commander-Ninjutsu benötigt einen unblocked attacking creature und bringt Yuriko getappt und angreifend ins Spiel; siehe Regeln 702.49 und 508.4d.</li>
+<li>Jeder Ninja, der einem Spieler Kampfschaden zufügt, erzeugt einen eigenen Yuriko-Trigger. Jeder Trigger lässt alle Gegner Leben verlieren.</li>
+<li>Der Lebensverlust durch Yuriko ist kein Kampfschaden und zählt nicht als Commander Damage.</li>
+<li>Changeling Outcast und Mothdust Changeling besitzen alle Kreaturentypen und sind damit auch Ninjas.</li>
+<li>Commit // Memory hat außerhalb des Stacks den kombinierten Manawert 10; siehe Regeln 202.3d und 709.4b.</li>
+<li>Temporal Trespass erzeugt keinen wiederholbaren Extra-Turn-Loop und exiliert sich bei der Verrechnung.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Deckstruktur</summary>
+<div class="sub-accordion-content">
+<h3>Manabase und Ramp</h3>
+<p>Die Liste enthält 35 Länder. Die permanenten oder temporären Manaquellen sind:</p>
+<ul>
+<li>Arcane Signet</li>
+<li>Dark Ritual</li>
+<li>Fellwar Stone</li>
+<li>Ornithopter of Paradise</li>
+<li>Sol Ring</li>
+<li>Springleaf Drum</li>
+<li>Talisman of Dominance</li>
+<li>Prosperous Thief als bedingte Treasure-Engine</li>
+</ul>
+<p>Die Gesamtmenge ist solide. Das wichtigste Risiko ist nicht die reine Länderzahl, sondern die Geschwindigkeit der Farbentwicklung: Mehrere Länder kommen getappt oder nur bedingt ungetappt, während der ideale Zug-2-Start sowohl blaues als auch schwarzes Mana benötigt. Rogue&#39;s Passage ist zudem eine langsame farblose Quelle.</p>
+<h3>Evasive Enabler und Ninjas</h3>
+<p>Das Deck enthält ungefähr neun sehr günstige potenzielle Evasions-Enabler:</p>
+<ul>
+<li>Changeling Outcast</li>
+<li>Faerie Seer</li>
+<li>Gingerbrute</li>
+<li>Mothdust Changeling</li>
+<li>Ornithopter</li>
+<li>Slither Blade</li>
+<li>Thousand-Faced Shadow</li>
+<li>Tormented Soul</li>
+<li>Triton Shorestalker</li>
+</ul>
+<p>Insgesamt sind 16 Ninjas beziehungsweise Changeling-Ninjas einschließlich Yuriko enthalten. Damit ist ein Zug-2-Yuriko-Start regelmäßig möglich, aber ohne gezielte Mulligans nicht garantiert.</p>
+<h3>Kartenvorteil und Kartenauswahl</h3>
+<p>Yuriko ist die zentrale Draw-Engine. Weitere wichtige Quellen sind:</p>
+<ul>
+<li>Grazilaxx, Illithid Scholar</li>
+<li>Ingenious Infiltrator</li>
+<li>Kindred Discovery</li>
+<li>Nashi, Moon Sage&#39;s Scion</li>
+<li>Ninja of the Deep Hours</li>
+<li>Reconnaissance Mission</li>
+<li>Rhystic Study</li>
+<li>Satoru, the Infiltrator</li>
+<li>Dig Through Time</li>
+<li>Treasure Cruise</li>
+</ul>
+<p>Die wichtigsten Topdeck-Werkzeuge sind Brainstorm, Ponder, Preordain, Faerie Seer, Gossip&#39;s Talent, Halimar Depths, Mystic Sanctuary, Rivendell und Soothsaying.</p>
+<p>Gossip&#39;s Talent ist besonders synergistisch: Jeder durch Ninjutsu erzeugte Kreatureneintritt lässt vor dem Kampfschaden surveillen. Soothsaying kann mehrere aufeinanderfolgende Yuriko-Trigger vorbereiten, während Brainstorm bereits gezogene Karten mit hohem Manawert wieder auf die Bibliothek legt.</p>
+<h3>Interaktion und Schutz</h3>
+<p>Die Liste besitzt eine hohe Interaktionsdichte:</p>
+<ul>
+<li>Stack-Interaktion: An Offer You Can&#39;t Refuse, Arcane Denial, Commandeer, Commit, Counterspell und Familiar&#39;s Ruse</li>
+<li>Einzelremoval: Deadly Rollick, Feed the Swarm, Rapid Hybridization, Reality Shift und Snuff Out</li>
+<li>Board- und Tempoeffekte: Crippling Fear, Devastation Tide, Kindred Dominance, Raise the Palisade und River&#39;s Rebuke</li>
+<li>Weitere Absicherung: Darkness, Soul-Guide Lantern und Whispersilk Cloak</li>
+</ul>
+<p>Commandeer, Deadly Rollick und Snuff Out erlauben Interaktion ohne normalen Manazahlungsaufwand. Der eigentliche Schutz des Boards beruht jedoch hauptsächlich auf Counterspells; nach mehreren Boardwipes fehlt Massenrekursion.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Spielplan</summary>
+<div class="sub-accordion-content">
+<h3>Early Game</h3>
+<ol>
+<li>Einen günstigen evasiven Angreifer entwickeln.</li>
+<li>Ab Zug 2 angreifen und Yuriko für <code>{U}{B}</code> per Commander-Ninjutsu einsetzen.</li>
+<li>Den ersten Yuriko-Trigger erzeugen und dabei möglichst Brainstorm, Faerie Seer oder Gossip&#39;s Talent zur Vorbereitung nutzen.</li>
+<li>Mana für günstige Interaktion offenhalten, statt unnötig viele Kreaturen in einen Boardwipe zu spielen.</li>
+</ol>
+<h3>Mid Game</h3>
+<ol>
+<li>Zwei oder mehr Ninjas durch unterschiedliche Gegner bringen.</li>
+<li>Mit Satoru, the Infiltrator, Ingenious Infiltrator, Kindred Discovery oder Reconnaissance Mission den Kartenvorteil vervielfachen.</li>
+<li>Mit Soothsaying oder Brainstorm mehrere starke Reveals vorbereiten.</li>
+<li>Blocker durch Mistblade Shinobi, Crippling Fear oder einen Bounce-Effekt entfernen.</li>
+<li>Kostenlose Interaktion für Boardwipes oder gegnerische Siegversuche zurückhalten.</li>
+</ol>
+<h3>Late Game</h3>
+<ol>
+<li>Mit Kindred Dominance, Raise the Palisade oder River&#39;s Rebuke einen entscheidenden Angriff öffnen.</li>
+<li>Mehrere Yuriko-Trigger auf vorbereitete Karten mit hohem Manawert richten.</li>
+<li>Alternativ Bolas&#39;s Citadel als Kartenengine und möglichen 10-Leben-Finisher verwenden.</li>
+<li>Temporal Trespass für einen zusätzlichen Angriffs- und Yuriko-Zyklus einsetzen.</li>
+<li>Über Satoru Umezawa Shadow of Mortality oder andere teure Kreaturen günstig einschleusen.</li>
+</ol>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Engines und Synergien</summary>
+<div class="sub-accordion-content">
+<h3>Yuriko plus Topdeck-Manipulation</h3>
+<p>Brainstorm, Soothsaying, Gossip&#39;s Talent und die übrige Kartenauswahl setzen Karten mit hohem Manawert auf die Bibliothek. Jeder erfolgreiche Ninja kann anschließend einen getrennten Yuriko-Trigger erzeugen.</p>
+<p>Besonders hohe Treffer sind:</p>
+<ul>
+<li>Shadow of Mortality: 15</li>
+<li>Temporal Trespass: 11</li>
+<li>Commit // Memory: 10</li>
+<li>Dig Through Time: 8</li>
+<li>Treasure Cruise: 8</li>
+<li>Commandeer: 7</li>
+<li>Kindred Dominance: 7</li>
+<li>Silent-Blade Oni: 7</li>
+<li>Bolas&#39;s Citadel: 6</li>
+<li>Ink-Eyes, Servant of Oni: 6</li>
+<li>River&#39;s Rebuke: 6</li>
+</ul>
+<p>Die Liste enthält insgesamt 14 Karten mit Manawert 5 oder höher. Ohne Manipulation bleiben die 35 Länder jedoch wirkungslose Yuriko-Reveals.</p>
+<h3>Satoru Umezawa plus teure Kreaturen</h3>
+<p>Satoru gibt Kreaturenkarten auf der Hand Ninjutsu für <code>{2}{U}{B}</code>. Dadurch können insbesondere Shadow of Mortality und andere teure Kreaturen wesentlich günstiger ins Spiel gelangen. Seine Trigger liefern zusätzlich Kartenauswahl bei jeder Ninjutsu-Aktivierung.</p>
+<p>Diese Linie ist stark, aber nicht unendlich und benötigt einen unblocked attacker.</p>
+<h3>Notion Thief plus Memory</h3>
+<ul>
+<li>Karten: Notion Thief und die Memory-Hälfte von Commit // Memory</li>
+<li>Commander beteiligt: nein</li>
+<li>Typ: Zweikarten-Ressourcenlock, nicht unendlich</li>
+<li>Voraussetzungen: Notion Thief im Spiel, Commit // Memory im Friedhof, sechs Mana und Sorcery-Timing</li>
+<li>Ergebnis: Die Gegner mischen ihre Hände ein und ziehen anschließend keine Karten. In einer normalen Viererrunde zieht der Yuriko-Spieler insgesamt 28 Karten: sieben eigene und 21 ersetzte gegnerische Kartenziehungen.</li>
+<li>Interaktionspunkte: Notion Thief vor der Verrechnung entfernen, Memory neutralisieren oder vorher aus dem Friedhof entfernen</li>
+<li>Zuverlässigkeit: niedrig bis mittel, da keine Tutoren vorhanden sind und beide Karten nur einmal gespielt werden</li>
+</ul>
+<p>Diese Linie ist das stärkste einschränkende Spielmuster des Decks und sollte im Rule-0-Gespräch genannt werden.</p>
+<h3>Bolas&#39;s Citadel</h3>
+<p>Bolas&#39;s Citadel verwandelt die Bibliotheksoberseite in eine zusätzliche Hand und kann durch das Opfern von zehn Nichtland-Permanents allen Gegnern 10 Leben abziehen. Die Karte konkurriert teilweise mit Yuriko um die kontrollierte Bibliotheksoberseite: Yuriko möchte einen hohen Manawert aufdecken, während die Citadel bevorzugt günstige spielbare Karten sehen möchte.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Win Conditions und Komboprüfung</summary>
+<div class="sub-accordion-content">
+<h3>Win Conditions</h3>
+<ol>
+<li>Kumulativer Lebensverlust durch mehrere Yuriko-Trigger</li>
+<li>Ninja-Kampfschaden und größere Ninjutsu-Kreaturen</li>
+<li>Ein entscheidender zusätzlicher Angriff durch Temporal Trespass</li>
+<li>Bolas&#39;s Citadel und ihre aktivierte Fähigkeit</li>
+<li>Notion Thief plus Memory als überwältigender Ressourcenvorteil</li>
+</ol>
+<h3>Erkannte Combo-Linien</h3>
+<ul>
+<li>Keine Endloskombo gefunden</li>
+<li>Kein Mana-, Mill-, Damage-, Lifedrain-, Token- oder Counter-Loop gefunden</li>
+<li>Keine wiederholbare Extra-Turn-Schleife gefunden</li>
+<li>Keine Thassa&#39;s-Oracle-/Lab-Maniac-artige Siegbedingung vorhanden</li>
+<li>Keine deterministische Sofortsieg-Linie vorhanden</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Stärken</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Druck und Kartenvorteil können bereits ab Zug 2 beginnen.</li>
+<li>Yuriko ist durch Commander-Ninjutsu schwer dauerhaft auszuschalten.</li>
+<li>Hohe Redundanz bei Ninja- und Draw-Engines.</li>
+<li>Alle Gegner werden gleichzeitig unter Druck gesetzt.</li>
+<li>Starke Mischung aus günstiger, kostenloser und massenhafter Interaktion.</li>
+<li>Hohe Manawerte werden durch Delve, Miracle oder Ninjutsu teilweise spielbar gehalten.</li>
+<li>Das Deck kann sowohl über Tempo als auch über längeren Kartenvorteil gewinnen.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Schwächen und Risiken</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Hohe Abhängigkeit von Yuriko für den schnellen globalen Lebensverlust.</li>
+<li>Die Zahl der frühen Enabler reicht nicht in jeder Starthand für den Zug-2-Plan.</li>
+<li>35 Länder erzeugen ohne Topdeck-Manipulation viele Nulltreffer.</li>
+<li>Mehrere Karten mit hohem Manawert können die Hand verstopfen.</li>
+<li>Getappte Länder und Rogue&#39;s Passage verlangsamen einzelne Starts.</li>
+<li>Mehrere Boardwipes hintereinander sind schwer zu kompensieren.</li>
+<li>Silver-Fur Master kann einzelne Tetsuko-Umezawa-Linien abschalten, weil Kreaturen ihre Stärke beziehungsweise Widerstandskraft von 1 verlieren.</li>
+<li>Whispersilk Cloak und Rogue&#39;s Passage sind verlässliche, aber mana-intensivere Evasionswerkzeuge.</li>
+<li>Bolas&#39;s Citadel und Yuriko stellen unterschiedliche Anforderungen an die Bibliotheksoberseite.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Gesamturteil</summary>
+<div class="sub-accordion-content">
+<p>Die Liste ist ein kohärentes, interaktionsstarkes Yuriko-Deck im oberen Bracket 3. Sie kann früh dominieren und besitzt einzelne sehr starke Sequenzen, gewinnt aber nicht konsistent schnell genug und verwendet keine kompakte Combo- oder Tutorstruktur für Bracket 4 oder cEDH.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Quellenstand</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Commander-Format und Banlist: offizielle Wizards-Seiten, geprüft am 13. August 2026</li>
+<li>Game Changers: lokale offizielle Referenzkopie, aktualisiert am 12. August 2026</li>
+<li>Comprehensive Rules: offizielle lokale Regelkopie mit Effective Date 7. August 2026</li>
+</ul>
+
+</div>
+</details>
+</div>
+</section>
+
+<section id="bracket" class="accordion-card main-section">
+<div class="main-section-title">
+  Bracket 3
+</div>
+
+<div class="accordion-content">
+<details class="sub-accordion">
+<summary>Metadaten</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Analysestand: 13. August 2026</li>
+<li>Status: vom Nutzer bestätigt</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Ergebnis</summary>
+<div class="sub-accordion-content">
+<p><strong>Geschätztes Bracket:</strong> 3 – Upgraded, obere Hälfte<br><strong>Sicherheit:</strong> mittel</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Kurzbegründung</summary>
+<div class="sub-accordion-content">
+<p>Das Deck kann Yuriko regelmäßig früh einsetzen, erzeugt viel Kartenvorteil und spielt effiziente sowie teilweise kostenlose Interaktion. Es enthält genau drei Game Changers und eine starke Notion-Thief-/Memory-Linie, aber keine Endloskombo, keine Tutor-Suite, kein Mass Land Denial und keinen wiederholbaren Extra-Turn-Plan. Der realistische Sieg- oder Dominanzbereich von ungefähr Zug 6–8 entspricht einem starken Bracket-3-Deck.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Game-Changer-Check</summary>
+<div class="sub-accordion-content">
+<p>Anzahl Game Changers: <strong>3</strong></p>
+<p>Gefundene Game Changers:</p>
+<ul>
+<li>Bolas&#39;s Citadel</li>
+<li>Notion Thief</li>
+<li>Rhystic Study</li>
+</ul>
+<p>Yuriko, the Tiger&#39;s Shadow selbst ist nicht mehr auf der aktuellen Game-Changer-Liste. Sie wurde bei der offiziellen Aktualisierung vom 21. Oktober 2025 entfernt und blieb bei der Aktualisierung vom 9. Februar 2026 außerhalb der Liste.</p>
+<p>Auswirkung:</p>
+<ul>
+<li>Die Liste verwendet exakt das reguläre Maximum von drei Game Changers für Bracket 3.</li>
+<li>Bolas&#39;s Citadel und Rhystic Study erzeugen starken, potenziell spielentscheidenden Kartenvorteil.</li>
+<li>Notion Thief ist sowohl allein ein störender Draw-Hate-Effekt als auch Teil der Memory-Linie.</li>
+<li>Bracket 1 und 2 sind ohne Rule Zero ausgeschlossen.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Spielplan</summary>
+<div class="sub-accordion-content">
+<p>Das Deck setzt früh einen evasiven Angreifer ein und tauscht ihn per Commander-Ninjutsu gegen Yuriko. Anschließend sollen mehrere Ninjas Kampfschaden zufügen, um Karten zu ziehen und alle Gegner gleichzeitig Lebenspunkte verlieren zu lassen. Topdeck-Manipulation legt Karten mit hohem Manawert für große Yuriko-Treffer bereit; Bounce, Sweeper und Counterspells schützen den Angriff oder öffnen den Weg.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Geschwindigkeit</summary>
+<div class="sub-accordion-content">
+<p>Erwarteter relevanter Sieg-/Dominanzbereich:</p>
+<ul>
+<li>erster Yuriko-Trigger häufig ab Zug 2</li>
+<li>spürbare Dominanz häufig ab Zug 4–6</li>
+<li>realistischer Sieg ungefähr Zug 6–8</li>
+<li>besonders gute, ungestörte Starts können schneller eskalieren</li>
+</ul>
+<p>Das Deck kann ab Zug 2 Ressourcen erzeugen, besitzt aber keinen konsistenten Sofortsieg in den ersten Zügen.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Win Conditions</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>kumulativer Lebensverlust durch Yuriko-Trigger</li>
+<li>Ninja-Kampfschaden</li>
+<li>große vorbereitete Reveals wie Shadow of Mortality, Temporal Trespass und Commit // Memory</li>
+<li>zusätzlicher Angriff durch Temporal Trespass</li>
+<li>Bolas&#39;s Citadel einschließlich ihrer 10-Leben-Fähigkeit</li>
+<li>Notion Thief plus Memory als überwältigender Ressourcenlock</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Kombos und einschränkende Spielmuster</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Keine Endloskombo gefunden</li>
+<li>Keine geplante frühe Zwei-Karten-Endloskombo</li>
+<li>Keine wiederholbare Extra-Turn-Schleife</li>
+<li>Kein Mass Land Denial</li>
+<li>Kein Stax-Plan</li>
+<li>Notion Thief plus Memory kann alle gegnerischen Hände leeren und ist das wichtigste offenzulegende einschränkende Spielmuster</li>
+<li>Temporal Trespass erzeugt nur einen einzelnen zusätzlichen Zug und exiliert sich selbst</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Konsistenz</summary>
+<div class="sub-accordion-content">
+<p>Faktoren für hohe Konsistenz:</p>
+<ul>
+<li>Yuriko ist immer aus der Command Zone verfügbar.</li>
+<li>Commander-Ninjutsu umgeht Commander Tax.</li>
+<li>16 Ninjas beziehungsweise Changeling-Ninjas bilden eine solide Stammesdichte.</li>
+<li>Mehrere redundante Draw-Engines sind vorhanden.</li>
+<li>Brainstorm, Ponder, Preordain, Gossip&#39;s Talent und Soothsaying kontrollieren die Bibliotheksoberseite.</li>
+</ul>
+<p>Faktoren gegen maximale Konsistenz:</p>
+<ul>
+<li>nur ungefähr neun sehr günstige Evasions-Enabler</li>
+<li>keine effiziente Tutor-Suite</li>
+<li>35 Länder sind blinde Nulltreffer für Yuriko</li>
+<li>mehrere getappte oder bedingt ungetappte Länder</li>
+<li>teure Karten können ohne passende Engine die Hand verstopfen</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Interaktion</summary>
+<div class="sub-accordion-content">
+<p>Das Deck besitzt eine für Bracket 3 überdurchschnittliche Interaktionsdichte:</p>
+<ul>
+<li>mehrere Counterspells</li>
+<li>günstiges Einzelremoval</li>
+<li>kostenlose Interaktion durch Commandeer, Deadly Rollick und Snuff Out</li>
+<li>mehrere asymmetrische oder tempoorientierte Boardeffekte</li>
+<li>graveyard hate durch Soul-Guide Lantern</li>
+</ul>
+<p>Diese Dichte schiebt das Deck an die obere Grenze von Bracket 3, reicht ohne schnellere und konsistentere Siegstruktur aber nicht allein für Bracket 4.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Faktoren, die das Bracket erhöhen</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Yuriko kann bereits ab Zug 2 Karten und globalen Lebensverlust erzeugen.</li>
+<li>Genau drei Game Changers.</li>
+<li>Kostenlose Interaktion.</li>
+<li>Sehr hohe Kartenvorteilsdichte.</li>
+<li>Mehrere starke Topdeck-Reveals bis Manawert 15.</li>
+<li>Notion Thief plus Memory kann eine Partie faktisch entscheiden.</li>
+<li>Asymmetrische Boardkontrolle durch Kindred Dominance und Raise the Palisade.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Faktoren, die das Bracket senken</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Keine Endloskombo oder deterministische Sofortsieg-Linie.</li>
+<li>Keine Tutor-Suite.</li>
+<li>Kein Mana Crypt, Mana Vault, Chrome Mox oder vergleichbares dichtes Fast-Mana-Paket.</li>
+<li>Keine cEDH-typische Thassa&#39;s-Oracle-Linie.</li>
+<li>Keine wiederholbaren Extra Turns.</li>
+<li>Keine Mass-Land-Denial-Strategie.</li>
+<li>Manabase und Enabler-Dichte sind nicht vollständig auf maximale Geschwindigkeit optimiert.</li>
+<li>Hohe Karten können ohne Topdeck-Kontrolle unhandlich sein.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Abgrenzung</summary>
+<div class="sub-accordion-content">
+<h3>Warum nicht Bracket 2?</h3>
+<p>Die drei Game Changers schließen Bracket 2 regulär aus. Zusätzlich sind der frühe Commander-Druck, kostenlose Interaktion und Notion Thief plus Memory deutlich stärker und einschränkender als für ein typisches Core-Spiel vorgesehen.</p>
+<h3>Warum nicht Bracket 4?</h3>
+<p>Das Deck besitzt keine kompakte, tutorbare Siegkombination und kein dichtes Fast-Mana-Paket. Seine Siege entstehen überwiegend über mehrere Kampfschritte und schwankende Bibliotheksoberseiten. Es kann wie ein Bracket-4-Deck starten, erreicht diese Geschwindigkeit aber nicht zuverlässig genug.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Empfehlung für die Tischkommunikation</summary>
+<div class="sub-accordion-content">
+<p>Das Deck sollte als <strong>oberes Bracket 3</strong> kommuniziert werden. Zusätzlich sollten folgende Punkte genannt werden:</p>
+<ul>
+<li>Yuriko kann ab Zug 2 aktiv sein.</li>
+<li>Das Deck spielt drei Game Changers.</li>
+<li>Es enthält kostenlose Interaktion.</li>
+<li>Notion Thief plus Memory kann gegnerische Hände vollständig leeren.</li>
+<li>Temporal Trespass ist ein einzelner Extra-Turn-Effekt ohne Schleife.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Quellenstand</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Aktuelle offizielle Commander- und Game-Changer-Seite, geprüft am 13. August 2026</li>
+<li>Offizielle Commander-Bracket-Aktualisierung vom 9. Februar 2026</li>
+<li>Lokale Referenz <code>data/reference/commander/game-changers.json</code>, aktualisiert am 12. August 2026</li>
+</ul>
+
+</div>
+</details>
+</div>
+</section>
+
+<section id="gameplan" class="accordion-card main-section">
+<div class="main-section-title">
+  Gameplan
+</div>
+
+<div class="accordion-content">
+<details class="sub-accordion">
+<summary>Metadaten</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Analysestand: 13. August 2026</li>
+<li>Status: vom Nutzer bestätigt</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Ziel des Decks</summary>
+<div class="sub-accordion-content">
+<p>Mit einem günstigen evasiven Angreifer Yuriko früh per Commander-Ninjutsu einsetzen, anschließend mehrere Ninja-Treffer erzeugen und die Bibliotheksoberseite so kontrollieren, dass jeder Yuriko-Trigger möglichst viel globalen Lebensverlust verursacht.</p>
+<p>Der primäre Sieg entsteht durch kumulativen Yuriko-Lebensverlust. Kampfschaden, Temporal Trespass, größere Ninjutsu-Kreaturen und Bolas&#39;s Citadel bilden sekundäre Wege.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Mulligan</summary>
+<div class="sub-accordion-content">
+<p>Eine gute Starthand benötigt normalerweise:</p>
+<ul>
+<li>zwei bis drei Länder mit frühem Zugriff auf Blau und Schwarz</li>
+<li>einen günstigen evasiven Angreifer</li>
+<li>idealerweise Brainstorm, Ponder, Preordain, Faerie Seer oder Gossip&#39;s Talent</li>
+<li>optional günstige Interaktion</li>
+</ul>
+<p>Besonders gute Starts enthalten Ornithopter oder einen Ein-Mana-Enabler und ermöglichen Yuriko in Zug 2.</p>
+<p>Zurücklegen sollte man gewöhnlich:</p>
+<ul>
+<li>Hände ohne frühen Angreifer</li>
+<li>Hände ohne beide Commander-Farben bis Zug 2 oder 3</li>
+<li>mehrere teure Karten ohne Brainstorm, Satoru Umezawa oder ausreichendes Mana</li>
+<li>rein reaktive Hände, die den eigenen Yuriko-Plan nicht beginnen können</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Early Game</summary>
+<div class="sub-accordion-content">
+<h3>Priorität 1: Yuriko aktivieren</h3>
+<p>Der Standardstart lautet:</p>
+<ol>
+<li>Einen günstigen Angreifer spielen.</li>
+<li>Im nächsten Zug angreifen.</li>
+<li>Nach dem Deklarieren der Blocker den unblocked attacker für Commander-Ninjutsu zurücknehmen.</li>
+<li>Yuriko getappt und angreifend ins Spiel bringen.</li>
+<li>Den ersten Treffer und Trigger erzeugen.</li>
+</ol>
+<p>Commander-Ninjutsu wird nicht durch Commander Tax verteuert. Man sollte Yuriko deshalb nur dann normal aus der Command Zone wirken, wenn kein realistischer Ninjutsu-Weg verfügbar ist.</p>
+<h3>Priorität 2: Die Bibliotheksoberseite vorbereiten</h3>
+<ul>
+<li>Faerie Seer und Halimar Depths vor dem ersten Angriff einsetzen.</li>
+<li>Brainstorm möglichst kurz vor dem Kampfschaden spielen, wenn eine hohe Karte aus der Hand oben abgelegt werden kann.</li>
+<li>Mit Gossip&#39;s Talent den Ninjutsu-Eintritt zum Surveillen nutzen.</li>
+<li>Länder und schwache Treffer mit Surveil nach Möglichkeit in den Friedhof legen.</li>
+</ul>
+<h3>Priorität 3: Nicht überentwickeln</h3>
+<p>Das Deck benötigt nicht sofort ein großes Board. Ein Enabler, Yuriko und offene Interaktion reichen häufig. Weitere Kreaturen sollten gestaffelt werden, wenn ein gegnerischer Boardwipe wahrscheinlich ist.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Mid Game</summary>
+<div class="sub-accordion-content">
+<h3>Mehrere Trigger erzeugen</h3>
+<p>Ab dem zweiten Angriff soll nicht nur Yuriko, sondern mindestens ein weiterer Ninja durchkommen. Jede Ninja-Kreatur erzeugt einen eigenen Yuriko-Trigger.</p>
+<p>Hilfreiche Karten sind:</p>
+<ul>
+<li>Gossip&#39;s Talent für Unblockbarkeit und Surveil</li>
+<li>Tetsuko Umezawa, Fugitive für Kreaturen mit Stärke oder Widerstandskraft 1</li>
+<li>Silver-Fur Master für Ninjutsu-Rabatt und zusätzlichen Kampfdruck</li>
+<li>Grazilaxx, Illithid Scholar zum Zurücknehmen blockierter Kreaturen</li>
+<li>Whispersilk Cloak für einen zentralen Angreifer</li>
+<li>Rogue&#39;s Passage als langsame Absicherung im Late Game</li>
+</ul>
+<h3>Draw-Engines priorisieren</h3>
+<p>Die stärksten mittleren Spielzüge sind Engines, die jeden Ninja-Treffer oder Eintritt zusätzlich belohnen:</p>
+<ul>
+<li>Ingenious Infiltrator</li>
+<li>Kindred Discovery</li>
+<li>Reconnaissance Mission</li>
+<li>Satoru, the Infiltrator</li>
+<li>Ninja of the Deep Hours</li>
+<li>Rhystic Study</li>
+</ul>
+<p>Kindred Discovery sollte normalerweise Ninja benennen. Ninjutsu-Kreaturen werden ins Spiel gebracht und lösen dadurch den Eintrittseffekt aus, auch wenn sie nicht als Angreifer deklariert wurden.</p>
+<h3>Interaktion zurückhalten</h3>
+<p>Counterspells sollten hauptsächlich schützen vor:</p>
+<ul>
+<li>Boardwipes</li>
+<li>Effekten, die Yuriko oder die gesamte Engine dauerhaft neutralisieren</li>
+<li>gegnerischen Siegversuchen</li>
+<li>graveyard hate, wenn Memory die geplante Linie ist</li>
+</ul>
+<p>Commandeer, Deadly Rollick und Snuff Out erlauben es, sich auszutappen und trotzdem zu reagieren. Der Kartennachteil von Commandeer sollte jedoch nur für wirklich entscheidende Ziele akzeptiert werden.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Topdeck-Planung</summary>
+<div class="sub-accordion-content">
+<h3>Einzelner Yuriko-Trigger</h3>
+<p>Für einen einzelnen sicheren Trigger genügt Brainstorm, Faerie Seer, Gossip&#39;s Talent oder eine andere Scry-/Surveil-Quelle. Gute Ziele für die oberste Position sind:</p>
+<ul>
+<li>Shadow of Mortality</li>
+<li>Temporal Trespass</li>
+<li>Commit // Memory</li>
+<li>Dig Through Time</li>
+<li>Treasure Cruise</li>
+<li>Commandeer</li>
+<li>Kindred Dominance</li>
+<li>Silent-Blade Oni</li>
+</ul>
+<h3>Mehrere Yuriko-Trigger</h3>
+<p>Soothsaying ist das stärkste Werkzeug, um mehrere Karten in der gewünschten Reihenfolge zu legen. Dabei sollte die Zahl der erwarteten unblocked Ninjas vor der Aktivierung realistisch eingeschätzt werden.</p>
+<p>Jeder Yuriko-Trigger wird einzeln verrechnet. Nach dem ersten Reveal wird die Karte gezogen und der nächste Trigger sieht die neue Bibliotheksoberseite.</p>
+<h3>Mystic Sanctuary</h3>
+<p>Mystic Sanctuary kann einen Instant oder eine Sorcery mit hohem Manawert aus dem Friedhof oben auf die Bibliothek legen. Das bietet einen sicheren Yuriko-Treffer und gleichzeitig späteren Zugriff auf die Karte.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Boardkontrolle</summary>
+<div class="sub-accordion-content">
+<h3>Crippling Fear</h3>
+<p>Meist Ninja wählen. Der Effekt lässt die eigenen Ninjas überleben, kann aber nicht-Ninja-Enabler wie Slither Blade oder Tormented Soul treffen.</p>
+<h3>Kindred Dominance</h3>
+<p>Ninja wählen und den Weg für einen entscheidenden Angriff öffnen. Wegen des Manawerts 7 ist die Karte gleichzeitig ein starker Yuriko-Reveal.</p>
+<h3>Raise the Palisade</h3>
+<p>Ninja wählen, um gegnerische Kreaturen zurückzuschicken. Eigene nicht-Ninja-Enabler werden ebenfalls auf die Hand genommen und können anschließend erneut ausgespielt werden.</p>
+<h3>Devastation Tide</h3>
+<p>Ein Notfallreset, der auch das eigene Board betrifft. Die zurückgenommenen günstigen Enabler können erneut gespielt werden, und Yuriko kann später wieder für <code>{U}{B}</code> per Commander-Ninjutsu eingesetzt werden.</p>
+<h3>River&#39;s Rebuke</h3>
+<p>Gegen den Spieler einsetzen, dessen Board den entscheidenden Angriff am stärksten verhindert oder der unmittelbar gewinnen würde.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Besondere Linien</summary>
+<div class="sub-accordion-content">
+<h3>Notion Thief plus Memory</h3>
+<ol>
+<li>Notion Thief kontrollieren.</li>
+<li>Commit // Memory muss im Friedhof liegen.</li>
+<li>Memory für sechs Mana als Sorcery wirken.</li>
+<li>Notion Thief ersetzt die gegnerischen Kartenziehungen.</li>
+</ol>
+<p>In einer Viererrunde mischen die Gegner ihre Hände ein und ziehen keine neuen Karten. Der Yuriko-Spieler zieht sieben eigene und 21 ersetzte gegnerische Karten. Vor der Ausführung sollte geprüft werden, ob die eigene Bibliothek genügend Karten enthält.</p>
+<p>Die Linie ist durch Removal auf Notion Thief, Counterspells und graveyard hate unterbrechbar. Sie ist nicht unendlich, entscheidet eine Partie aber häufig faktisch.</p>
+<h3>Satoru Umezawa</h3>
+<p>Satoru gibt Kreaturenkarten auf der Hand Ninjutsu für <code>{2}{U}{B}</code>. Bevorzugte Ziele sind teure Kreaturen, die sonst schwer zu wirken wären. Jede Ninjutsu-Aktivierung liefert zusätzlich Kartenauswahl über die obersten drei Karten.</p>
+<p>Peregrine Drake erstattet nach einem solchen Ninjutsu-Einsatz bis zu fünf Länder, erzeugt mit den vorhandenen Karten aber keinen unendlichen Mana-Loop.</p>
+<h3>Familiar&#39;s Ruse</h3>
+<p>Das Zurücknehmen einer Kreatur ist Teil der zusätzlichen Kosten. Gute Rücknahmeziele sind günstige Enabler mit erneut nutzbarem Eintrittseffekt oder Yuriko selbst. Yuriko kann anschließend wieder ohne Commander Tax per Commander-Ninjutsu eingesetzt werden.</p>
+<h3>Bolas&#39;s Citadel</h3>
+<p>Die Citadel ist sowohl Kartenengine als auch Finisher. Soothsaying und Surveil helfen, spielbare Karten auf der Bibliothek zu finden. Bei zehn entbehrlichen Nichtland-Permanents kann die aktivierte Fähigkeit allen Gegnern 10 Leben abziehen und einen Yuriko-Finishing-Turn vorbereiten.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Late Game und Abschluss</summary>
+<div class="sub-accordion-content">
+<p>Ein typischer Abschluss besteht aus:</p>
+<ol>
+<li>Blocker durch Kindred Dominance, Raise the Palisade oder River&#39;s Rebuke entfernen.</li>
+<li>Mehrere Ninjas auf unterschiedliche Gegner verteilen.</li>
+<li>Die Bibliotheksoberseite mit Soothsaying oder Brainstorm vorbereiten.</li>
+<li>Mehrere Yuriko-Trigger verrechnen.</li>
+<li>Falls nötig Temporal Trespass für einen weiteren Angriff wirken.</li>
+</ol>
+<p>Alternative Abschlusslinien sind Bolas&#39;s Citadel, große durch Satoru eingeschleuste Kreaturen oder Notion Thief plus Memory.</p>
+<p>Commander Damage ist kein primärer Plan. Yurikos Fähigkeit verursacht Lebensverlust und keinen Commander-Kampfschaden; ihre geringe Grundstärke macht einen 21-Schaden-Sieg normalerweise zu langsam.</p>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Häufige Fehler</summary>
+<div class="sub-accordion-content">
+<ul>
+<li>Yuriko normal wirken, obwohl in derselben oder nächsten Runde Commander-Ninjutsu möglich wäre.</li>
+<li>Brainstorm zu früh spielen und den vorbereiteten Topdeck vor dem Kampf wieder wegziehen.</li>
+<li>Für einen einzigen erwarteten Trigger mehrere hohe Karten oben stapeln.</li>
+<li>Zu viele Kreaturen in einen offensichtlichen Boardwipe entwickeln.</li>
+<li>Crippling Fear oder Raise the Palisade einsetzen, ohne die eigenen nicht-Ninja-Enabler mitzuberechnen.</li>
+<li>Silver-Fur Master zusammen mit Tetsuko übersehen: Der Bonus kann Kreaturen aus Tetsukos Bedingung herausheben.</li>
+<li>Notion Thief plus Memory beginnen, obwohl die eigene Bibliothek die zusätzlichen Kartenziehungen nicht verkraftet.</li>
+<li>Commandeer für einen mittelmäßigen Spruch einsetzen und dadurch wichtigen Kartenvorteil verlieren.</li>
+</ul>
+
+</div>
+</details>
+<details class="sub-accordion">
+<summary>Tischkommunikation</summary>
+<div class="sub-accordion-content">
+<p>Vor dem Spiel sollte das Deck als oberes Bracket 3 beschrieben werden:</p>
+<ul>
+<li>Yuriko kann ab Zug 2 aktiv sein.</li>
+<li>Drei Game Changers sind enthalten: Bolas&#39;s Citadel, Notion Thief und Rhystic Study.</li>
+<li>Das Deck besitzt kostenlose Interaktion.</li>
+<li>Notion Thief plus Memory kann gegnerische Hände vollständig leeren.</li>
+<li>Temporal Trespass ist ein einzelner Extra-Turn-Effekt ohne Schleife.</li>
+</ul>
+
+</div>
+</details>
+</div>
+</section>
+
+<section id="deckliste" class="accordion-card main-section">
+<div class="main-section-title">
+  Deckliste
+</div>
+
+<div class="accordion-content">
+<p><em>Keine Deckliste vorhanden.</em></p>
+
+</div>
+</section>
+
+<section id="varianten" class="accordion-card main-section">
+<div class="main-section-title">
+  Varianten
+</div>
+
+<div class="accordion-content">
+<p class="empty-content">Keine gespeicherten Varianten vorhanden.</p>
+</div>
+</section>
+
+<section id="versionen" class="accordion-card main-section">
+<div class="main-section-title">
+  Versionen · aktuell v001
+</div>
+
+<div class="accordion-content">
+<p class="empty-content">Keine archivierten Versionen vorhanden.</p>
+</div>
+</section>
+
+  </div>
+</body>
+</html>
