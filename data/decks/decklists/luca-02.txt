@@ -1,0 +1,72 @@
+// COMMANDER
+1 Thranduil the Strategist
+
+1 Allosaurus Shepherd (2X2) 132
+1 An Offer You Can't Refuse (SNC) 51
+1 Arcane Signet (CMR) 689
+1 Avatar Kyoshi, Earthbender (TLE) 130
+1 Ba Sing Se (TLA) 266
+1 Badgermole Cub (TLA) 167
+1 Bender's Waterskin (TLA) 255
+1 Bilbo's Ring (HOC) 41
+1 Cantankerous Keepers (HOB) 122
+1 Coiling Oracle (CMR) 443
+1 Command Tower (CC1) 8
+1 Confusticate and Bebother (HOB) 35
+1 Counterspell (CMM) 630
+1 Crashing Wave (TLA) 47
+1 Dancing from Dark to Dawn (HOB) 123
+1 Displacer Kitten (MB2) 27
+1 Dwynen, Gilt-Leaf Daen (KHC) 56
+1 Earthbender Ascension (TLA) 175
+1 Elemental Teachings (TLA) 178
+1 Elrond, Moon-Reader (HOB) 36
+1 Elven Ambush (KHM) 391
+1 Elven Chorus (LTR) 160
+1 Elvenking's Halls (HOB) 182
+1 Elvish Archdruid (M11) 171
+1 Elvish Mystic (LTC) 238
+1 Elvish Promenade (LRW) 208
+1 Elvish Warmaster (KHM) 167
+1 Essence Warden (CMA) 106
+1 Ezuri, Claw of Progress (C15) 44
+16 Forest (2XM) 381
+1 Fyndhorn Elves (CMR) 228
+1 Gandalf, Wandering Wizard (HOB) 41
+1 Glamdring, Foe-hammer / Gleam of Death (HOB) 174
+1 Guardian of the Halls (HOB) 127
+1 Harrow (INV) 189
+1 Hermitic Herbalist (TLA) 226
+1 Hobbit Hole (HOB) 184
+16 Island (2XM) 375
+1 Jumbo Cactuar (FIN) 191
+1 Llanowar Elves (DOM) 168
+1 Llanowar Tribe (KHC) 66
+1 Lys Alana Huntmaster (KHC) 67
+1 Meditation Pools (TLA) 272
+1 Mirkwood Nurturer (HOB) 160
+1 Mirkwood Pathmaker (HOB) 129
+1 Origin of Metalbending (TLA) 187
+1 Raucous Audience (TLA) 190
+1 Reclamation Sage (CMR) 248
+1 Regal Force (EVE) 74
+1 Rhystic Study (PCY) 45
+1 Secret Tunnel (TLA) 278
+1 Simic Growth Chamber (CLU) 247
+1 Sol Ring (CMR) 700
+1 Sound the Trumpets (HOB) 55
+1 Spirit Water Revival (TLA) 73
+1 Stern Scolding (LTR) 71
+1 The Earth King (TLA) 172
+1 The Legend of Kuruk / Avatar Kuruk (TLA) 61
+1 The Lion-Turtle (TLA) 232
+1 The Walls of Ba Sing Se (TLA) 261
+1 Thranduil, Sindarin Liege / Silvan Rally (HOB) 166
+1 Thranduil's Company (HOB) 168
+1 Through the Forest Gate (HOB) 137
+1 Ty Lee, Chi Blocker (TLA) 76
+1 Wan Shi Tong, All-Knowing (TLE) 98
+1 White Lotus Tile (TLA) 262
+1 Wizard's Staff (HOB) 59
+1 Wood Elves (HOB) 142
+1 Woodland Weavemaster (HOB) 143

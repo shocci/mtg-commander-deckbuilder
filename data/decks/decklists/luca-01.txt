@@ -1,0 +1,75 @@
+// COMMANDER
+1 The Great Goblin
+
+1 Aberrant Return (ECC) 27
+1 Azog, Moria's Ruin (HOB) 61
+1 Barad-dûr (LTR) 253
+1 Battle Hymn (AVR) 128
+1 Beetleback Chief (C14) 171
+1 Black Sun's Zenith (ECC) 71
+1 Blasphemous Act (ECC) 89
+1 Boggart Cursecrafter (ECL) 206
+1 Boggart Mischief (ECL) 92
+1 Boggart Shenanigans (PLST) DD1-54
+1 Boggart Trawler / Boggart Bog (MH3) 243
+1 Bojuka Bog (CMD) 267
+1 Bolg's Company (HOB) 149
+1 Brightstone Ritual (ONS) 191
+1 Broadside Bombardiers (LCC) 86
+1 Champion of the Weird (ECL) 95
+1 Collective Inferno (ECL) 363
+1 Command Tower (DRC) 60
+1 Dawn-Blessed Pennant (ECL) 254
+1 Den of the Bugbear (PLST) AFR-254
+1 Dragon Fodder (DTK) 135
+1 Dragonskull Summit (TDC) 357
+1 Eclipsed Realms (ECL) 263
+1 Everlasting Torment (ECC) 121
+1 Exotic Orchard (EOC) 159
+1 Frogtosser Banneret (ZNC) 43
+1 Gempalm Incinerator (DMR) 322
+1 General Kreat, the Boltbringer (PLST) J25-48
+1 Goblin Bombardment (SCH) 45
+1 Goblin Chirurgeon (FEM) 54b
+1 Goblin Cratermaker (PLST) GRN-103
+1 Goblin Rabblemaster (J25) 558
+1 Goblin Sledder (ONS) 209
+1 Gorbag of Minas Morgul (LTR) 86
+1 Graven Cairns (FIC) 401
+1 Gristle Glutton (ECL) 144
+1 Grub, Storied Matriarch / Grub, Notorious Auntie (ECL) 105
+1 Grub's Command (ECL) 228
+1 Haunted One (CLB) 654 F
+1 High Market (SOC) 380
+1 Howlsquad Heavy (PLST) DFT-134
+1 Impulsive Pilferer (CMM) 234
+1 Knucklebone Witch (LRW) 120
+1 Krenko, Mob Boss (DDN) 15
+1 Krenko, Tin Street Kingpin (J25) 572
+1 Krenko's Command (RVR) 336
+1 Legion Warboss (TDC) 220
+1 Lethal Scheme (FIC) 277
+1 Merciless Executioner (PLST) FRF-76
+1 Metallic Mimic (MSC) 203
+1 Mogg Raider (PLST) TMP-191
+1 Mogg War Marshal (TSP) 170
+1 Moria Marauder (LTR) 138
+18 Mountain (PLST) WOE-273
+1 Munitions Expert (MH1) 209
+1 Pashalik Mons (DMR) 328
+1 Path of Ancestry (PLST) NCC-419
+1 Persist (ECC) 83
+1 Redcap Gutter-Dweller (PWOE) 146p
+1 Siege-Gang Lieutenant (PLST) M3C-113
+1 Skullclamp (MSC) 210
+1 Smoldering Marsh (FIC) 425
+1 Sol Ring (MSC) 213
+1 Sourbread Auntie (ECL) 158
+1 Spymaster's Vault (MH3) 230
+1 Sundering Eruption / Volcanic Fissure (MH3) 248
+11 Swamp (TLA) 284
+1 Taurean Mauler (PLST) NEC-111
+1 The Emperor, Hell Tyrant (FCA) 11
+1 Village Pillagers (ECC) 14
+1 Warren Soultrader (PMH3) 110p
+1 Zoyowa Lava-Tongue (LCI) 245

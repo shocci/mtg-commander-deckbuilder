@@ -1,21 +1,19 @@
-# Rule 0: Thorin, King of Durin's Folk
+# Rule 0: Thorin, King of Durin's Folk – v003
 
 ## Tisch-Hinweis
 
-Dieses Deck spielt auf **Bracket 4 – Optimized**.
-
-Es ist ein Zwergen-, Treasure- und Artefakt-Combo-Deck. Es nutzt Fast Mana und mehrere Tutoren, kann aber weiterhin fair über Thorins Treasure-Pump und Zwergen-Combat gewinnen.
+Dieses Deck ist als **Bracket 4 – Optimized** eingeschätzt, weil es eine frühe Zwei-Karten-Infinite-Combo und eine weitere mehrteilige Treasure-Combo spielt. Es ist ein Collection-first-Budgetdeck und kein cEDH-Deck.
 
 Enthalten sind:
 
-- Game Changers: 10
-- Early 2-Card Infinite Combos: 1
-- weitere verifizierte Infinite-/Loop-Combos: 3
+- Game Changers: 2 – Farewell und The One Ring
+- Infinite-Combos: 2
+- Dualcaster Mage + Twinflame als kompakte Linie
+- Magda + Clock of Omens + zwei Artifact Dwarves + Xorn als Treasure-/Mana-Linie
 - Mass Land Denial: nein
 - wiederholbare Extra-Turn-Loops: nein
-
-Dualcaster Mage mit Twinflame erzeugt früh beliebig viele Angreifer. Thorin/Cloudstone Curio und Magda/Clock of Omens bilden mehrteilige ETB-/Treasure-Schleifen; Aggravated Assault mit Sword of Feast and Famine erzeugt beliebig viele Kampfphasen.
+- Zukaufsbudget: ca. 67,72 €
 
 ## So kann ich es am Tisch sagen
 
-„Ich spiele ein Bracket-4-Thorin-Deck mit 10 Game Changers, Fast Mana und mehreren Tutoren. Es enthält eine frühe Zwei-Karten-Endloskombo sowie drei weitere mehrteilige Dwarf-, Treasure- und Combat-Loops. Kein Mass Land Denial und keine Extra-Turn-Schleifen.“
+„Ich spiele Thorin als Collection-first Bracket 4. Das Deck hat zwei Game Changers und zwei Infinite-Combos: Dualcaster plus Twinflame sowie eine mehrteilige Magda-/Clock-Treasure-Linie. Es kann ansonsten fair über Zwerge und Equipment gewinnen. Kein Mass Land Denial, keine Extra-Turn-Loops; die Zukäufe liegen bei ungefähr 68 Euro.“

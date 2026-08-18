@@ -1,102 +1,102 @@
 // COMMANDER
 1 Sauron, the Dark Lord
 
-1 An Offer You Can't Refuse
-1 Ancient Tomb
-1 Animate Dead
-1 Archon of Cruelty
 1 Arcane Signet
-1 Badlands
-1 Barad-dûr
-1 Blood Crypt
-1 Bloodstained Mire
-1 Brain Freeze
-1 Brainstorm
+1 An Offer You Can't Refuse
+1 Ash Barrens
+1 Baral, Chief of Compliance
+1 Blasphemous Act
+1 Bloodchief Ascension
 1 Call of the Ring
-1 Chain of Vapor
-1 Chaos Warp
-1 Chrome Mox
-1 City of Brass
+1 Chasm Skulker
+1 Chromatic Lantern
 1 Command Tower
-1 Cyclonic Rift
-1 Dance of the Dead
-1 Dark Ritual
-1 Darkslick Shores
-1 Dauthi Voidwalker
-1 Deadly Rollick
-1 Deflecting Swat
-1 Demonic Consultation
-1 Demonic Tutor
-1 Diabolic Intent
+1 Counterspell
+1 Curiosity
+1 Diabolic Tutor
+1 Disdainful Stroke
+1 Distant Melody
 1 Dualcaster Mage
-1 Entomb
+1 Everflowing Chalice
+1 Evolving Wilds
 1 Exotic Orchard
 1 Faithless Looting
+1 Fatal Push
+1 Feed the Swarm
 1 Fellwar Stone
-1 Fierce Guardianship
-1 Force of Negation
-1 Force of Will
-1 Gamble
-1 Gemstone Caverns
-1 Glint-Horn Buccaneer
-1 Hullbreaker Horror
-1 Imperial Seal
+1 Foray of Orcs
+1 Gothmog, Morgul Lieutenant
+1 Guttersnipe
+1 Haunting Voyage
 1 Island
-1 Jeska's Will
-1 Ledger Shredder
-1 Lion's Eye Diamond
-1 Living Death
+1 Island
+1 Island
+1 Island
+1 Island
+1 Island
+1 Island
+1 Island
+1 Kefka, Court Mage // Kefka, Ruler of Ruin
 1 Lord of the Nazgûl
-1 Lotus Petal
-1 Luxury Suite
-1 Mana Confluence
-1 Mana Drain
-1 Mana Vault
-1 Marsh Flats
-1 Misty Rainforest
-1 Mount Doom
+1 Laughing Mad
+1 March from the Black Gate
+1 M.O.D.O.K.
+1 Mordor Muster
 1 Mountain
-1 Mox Diamond
-1 Mystic Remora
-1 Mystical Tutor
-1 Necromancy
-1 Necropotence
-1 Notion Thief
-1 Opposition Agent
-1 Orcish Bowmasters
-1 Otawara, Soaring City
-1 Pact of Negation
-1 Polluted Delta
-1 Ponder
-1 Prismatic Vista
-1 Reanimate
-1 Reflecting Pool
-1 Rhystic Study
+1 Mountain
+1 Mountain
+1 Mountain
+1 Mountain
+1 Mountain
+1 Mountain
+1 Mulldrifter
+1 Nasty End
+1 Negate
+1 Niv-Mizzet, Parun
+1 Oath of the Grey Host
+1 Ophidian Eye
+1 Opal Palace
+1 Orcish Siegemaster
+1 Path of Ancestry
+1 Pull from Tomorrow
+1 Reality Shift
+1 Return the Favor
+1 Rite of Flame
 1 Saruman, the White Hand
 1 Sauron, Lord of the Rings
-1 Scalding Tarn
-1 Shivan Reef
+1 Seize the Spoils
+1 Secluded Courtyard
+1 Shriekmaw
+1 Slithermuse
 1 Sol Ring
-1 Spirebluff Canal
-1 Steam Vents
-1 Swan Song
+1 Solve the Equation
+1 Spirit Water Revival
+1 Stargaze
+1 Submerged Boneyard
+1 Surrounded by Orcs
 1 Swamp
-1 Tainted Pact
-1 Takenuma, Abandoned Mire
+1 Swamp
+1 Swamp
+1 Swamp
+1 Swamp
+1 Swamp
+1 Swamp
+1 Swamp
+1 Syncopate
 1 Talisman of Creativity
 1 Talisman of Dominance
 1 Talisman of Indulgence
-1 Thassa's Oracle
+1 Tandem Lookout
+1 Temple of Epiphany
+1 Terminate
+1 Terramorphic Expanse
 1 The One Ring
-1 Toxic Deluge
-1 Training Center
+1 Thirst for Knowledge
+1 Tragic Slip
+1 Thriving Bluff
+1 Thriving Isle
+1 Thriving Moor
 1 Twinflame
-1 Underground River
-1 Underground Sea
-1 Underworld Breach
-1 Vampiric Tutor
-1 Verdant Catacombs
-1 Watery Grave
-1 Wheel of Fortune
+1 Wayfarer's Bauble
+1 Walking Ballista
 1 Windfall
-1 Xander's Lounge

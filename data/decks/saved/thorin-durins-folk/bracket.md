@@ -1,4 +1,4 @@
-# Bracket: Thorin, King of Durin's Folk
+# Bracket: Thorin, King of Durin's Folk – v003
 
 ## Ergebnis
 
@@ -8,46 +8,34 @@
 
 | Requirement | Anzahl / Wert | Grenze | Status |
 |---|---:|---:|---|
-| Game Changers | 10 | unbegrenzt | ✅ |
+| Game Changers | 2 | unbegrenzt | ✅ |
 | Early 2-Card Infinite Combos | 1 | erlaubt | ✅ |
-| Late 2-Card Infinite Combos | 1 | erlaubt | ✅ |
+| Weitere Infinite-/Loop-Combos | 1 | erlaubt | ✅ |
 | Mass Land Denial | 0 | erlaubt | ✅ |
 | Repeatable Extra-Turn Loops | 0 | erlaubt | ✅ |
 
 ## Game Changers
 
-**Anzahl:** 10
+**Anzahl:** 2
 
-- Ancient Tomb
-- Chrome Mox
-- Enlightened Tutor
-- Gamble
-- Jeska's Will
-- Mana Vault
-- Mox Diamond
-- Smothering Tithe
-- Teferi's Protection
+- Farewell
 - The One Ring
 
-## Early 2-Card Infinite Combos
+## Infinite-Combos
 
-**Anzahl:** 1
-
-- Dualcaster Mage + Twinflame; benötigt eine weitere eigene Kreatur als anfängliches Ziel und erzeugt beliebig viele Angreifer mit Eile.
-
-## Late 2-Card Infinite Combos
-
-**Anzahl:** 1
-
-- Aggravated Assault + Sword of Feast and Famine; benötigt fünf Länder, darunter zwei rote Quellen, sowie wiederholbaren Kampfschaden und erzeugt beliebig viele Kampfphasen.
+- Dualcaster Mage + Twinflame erzeugt mit einer weiteren eigenen Kreatur als anfänglichem Ziel beliebig viele Angreifer mit Eile.
+- Magda, Brazen Outlaw + Clock of Omens + Universal Automaton + Adaptive Automaton + Xorn erzeugt beliebig viele Treasure und Mana. Reckless Fireweaver gewinnt über die Treasure-ETBs; alternativ findet Magda Walking Ballista als Mana-Finisher.
 
 ## Weitere bracketrelevante Punkte
 
-- Thorin + Cloudstone Curio + Duergar Assailant + Staunch Shieldmate erzeugt beliebig viele ETB-, LTB- und Cast-Ereignisse; ein vorhandener ETB-Payoff beendet die Partie.
-- Magda, Brazen Outlaw + Clock of Omens + ein Artifact Dwarf erzeugt beliebig viele getappte Treasure und ETB-Trigger. Xorn erzeugt dabei zusätzlich beliebig viele nutzbare Treasure; Reckless Fireweaver oder Altar of the Brood gewinnen direkt.
-- Fast Mana, mehrere effiziente Tutoren und Schutz erlauben realistische Siegversuche ungefähr ab Zug 4–6.
-- Die Liste ist stark optimiert, bleibt aber durch den fünf Mana teuren Commander und mehrere mehrteilige, boardabhängige Linien außerhalb einer konsequenten cEDH-Ausrichtung.
+- Dwarven Recruiter und Steelshaper's Gift erhöhen die funktionale Konsistenz, sind aber keine universellen Premium-Tutoren.
+- Das Deck spielt kein extremes Fast Mana und keine kostenlose Premium-Interaktion.
+- Die Magda-Linie ist stark, aber mehrteilig und boardabhängig.
+- Die frühe Zwei-Karten-Infinite-Combo setzt die Liste in Bracket 4.
 
-## Bracket-Grenze
+## Budget
 
-Alle relevanten Grenzen für Bracket 4 – Optimized werden eingehalten.
+- Fehlende Karten: 21
+- Geschätzte Zukaufssumme: 67,72 €
+- Karten ohne EUR-Preis: 0
+- Preisstand: 2026-08-18
