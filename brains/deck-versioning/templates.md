@@ -57,7 +57,7 @@ Nach erfolgreicher und bestätigter Versionierung gilt:
 
 1. Die alte Hauptdeckliste wird unter `versions/vXXX.md` archiviert.
 2. Die Übertragungsliste ersetzt die bisherige Hauptdeckliste.
-3. Die Analyse-, Bracket- und Gameplan-Dateien werden aktualisiert.
+3. Die Analyse-, Bracket-, Gameplan- und Rule-0-Dateien werden aktualisiert.
 4. Die Übertragungsliste wird gelöscht.
 5. `docs/` wird neu generiert.
 

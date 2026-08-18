@@ -1,102 +1,102 @@
 // COMMANDER
 1 Sauron, the Dark Lord
 
-1 Anger
+1 An Offer You Can't Refuse
+1 Ancient Tomb
 1 Animate Dead
-1 Arcane Denial
+1 Archon of Cruelty
 1 Arcane Signet
+1 Badlands
 1 Barad-dûr
-1 Blasphemous Act
+1 Blood Crypt
+1 Bloodstained Mire
+1 Brain Freeze
+1 Brainstorm
 1 Call of the Ring
+1 Chain of Vapor
 1 Chaos Warp
-1 Choked Estuary
-1 Claim the Precious
+1 Chrome Mox
+1 City of Brass
 1 Command Tower
-1 Commence the Endgame
-1 Counterspell
-1 Crumbling Necropolis
-1 Crux of Fate
-1 Dimir Signet
-1 Dread Return
-1 Dreadhorde Invasion
-1 Dreadhorde Twins
-1 Dismal Backwater
-1 Enter the God-Eternals
-1 Eternal Skylord
-1 Evolving Wilds
+1 Cyclonic Rift
+1 Dance of the Dead
+1 Dark Ritual
+1 Darkslick Shores
+1 Dauthi Voidwalker
+1 Deadly Rollick
+1 Deflecting Swat
+1 Demonic Consultation
+1 Demonic Tutor
+1 Diabolic Intent
+1 Dualcaster Mage
+1 Entomb
 1 Exotic Orchard
-1 Fact or Fiction
 1 Faithless Looting
-1 Feed the Swarm
 1 Fellwar Stone
-1 Foray of Orcs
-1 Foreboding Ruins
-1 Frantic Search
-1 Frostboil Snarl
-1 Gleaming Overseer
-1 Go for the Throat
-1 In the Darkness Bind Them
-1 Invading Manticore
+1 Fierce Guardianship
+1 Force of Negation
+1 Force of Will
+1 Gamble
+1 Gemstone Caverns
+1 Glint-Horn Buccaneer
+1 Hullbreaker Horror
+1 Imperial Seal
 1 Island
-1 Island
-1 Island
-1 Island
-1 Island
-1 Island
-1 Island
-1 Island
-1 Izzet Signet
-1 Lazotep Plating
-1 Lazotep Reaver
+1 Jeska's Will
+1 Ledger Shredder
+1 Lion's Eye Diamond
 1 Living Death
 1 Lord of the Nazgûl
-1 Lórien Revealed
-1 March from the Black Gate
-1 Mauhúr, Uruk-hai Captain
-1 Mordor Muster
-1 Moria Marauder
+1 Lotus Petal
+1 Luxury Suite
+1 Mana Confluence
+1 Mana Drain
+1 Mana Vault
+1 Marsh Flats
+1 Misty Rainforest
+1 Mount Doom
 1 Mountain
-1 Mountain
-1 Mountain
-1 Mountain
-1 Mountain
-1 Mountain
-1 Night's Whisper
-1 Orcish Siegemaster
-1 Path of Ancestry
-1 Rakdos Signet
-1 Read the Bones
-1 Reality Shift
-1 Oath of the Grey Host
-1 Relentless Advance
-1 Ringsight
-1 Saruman's Trickery
+1 Mox Diamond
+1 Mystic Remora
+1 Mystical Tutor
+1 Necromancy
+1 Necropotence
+1 Notion Thief
+1 Opposition Agent
+1 Orcish Bowmasters
+1 Otawara, Soaring City
+1 Pact of Negation
+1 Polluted Delta
+1 Ponder
+1 Prismatic Vista
+1 Reanimate
+1 Reflecting Pool
+1 Rhystic Study
 1 Saruman, the White Hand
 1 Sauron, Lord of the Rings
-1 Sauron, the Necromancer
-1 Smoldering Marsh
+1 Scalding Tarn
+1 Shivan Reef
 1 Sol Ring
-1 Sunken Hollow
-1 Surrounded by Orcs
-1 Swarming of Moria
+1 Spirebluff Canal
+1 Steam Vents
+1 Swan Song
 1 Swamp
-1 Swamp
-1 Swamp
-1 Swamp
-1 Swamp
-1 Swamp
-1 Swamp
+1 Tainted Pact
+1 Takenuma, Abandoned Mire
 1 Talisman of Creativity
 1 Talisman of Dominance
 1 Talisman of Indulgence
-1 Temple of Deceit
-1 Temple of Epiphany
-1 Temple of Malice
-1 Terminate
-1 Terramorphic Expanse
+1 Thassa's Oracle
 1 The One Ring
-1 Treasure Cruise
-1 Victimize
-1 Wayfarer's Bauble
-1 Widespread Brutality
-1 Wonder
+1 Toxic Deluge
+1 Training Center
+1 Twinflame
+1 Underground River
+1 Underground Sea
+1 Underworld Breach
+1 Vampiric Tutor
+1 Verdant Catacombs
+1 Watery Grave
+1 Wheel of Fortune
+1 Windfall
+1 Xander's Lounge

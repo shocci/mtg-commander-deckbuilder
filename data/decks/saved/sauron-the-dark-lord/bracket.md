@@ -1,33 +1,66 @@
-# Bracket Einschätzung: Sauron, the Dark Lord – Amass und Reanimator
+# Bracket: Sauron, the Dark Lord
 
 ## Ergebnis
 
-**Geschätztes Bracket:** 3 – Upgraded
+**Geschätztes Bracket: 4 – Optimized**
 
-**Sicherheit:** hoch
+## Requirement Tracker
 
-## Kurzbegründung
+| Requirement | Anzahl / Wert | Grenze | Status |
+|---|---:|---:|---|
+| Game Changers | 22 | unbegrenzt | ✅ |
+| Early 2-Card Infinite Combos | 1 | erlaubt | ✅ |
+| Late 2-Card Infinite Combos | 0 | erlaubt | ✅ |
+| Mass Land Denial | 0 | erlaubt | ✅ |
+| Repeatable Extra-Turn Loops | 0 | erlaubt | ✅ |
 
-Das Deck besitzt einen klaren Amass-/Army-Plan, zehn Ramp-Karten, gute Interaktion und ein kleines Reanimator-Paket. The One Ring ist der einzige Game Changer. Es fehlen schnelle Endloskombos, kostenlose Interaktion, Mass Land Denial und effiziente cEDH-Tutorketten.
+## Game Changers
 
-## Game Changer Check
+**Anzahl:** 22
 
-Anzahl Game Changer: 1
-
+- Ancient Tomb
+- Chrome Mox
+- Cyclonic Rift
+- Demonic Tutor
+- Fierce Guardianship
+- Force of Will
+- Gamble
+- Imperial Seal
+- Jeska's Will
+- Lion's Eye Diamond
+- Mana Vault
+- Mox Diamond
+- Mystical Tutor
+- Necropotence
+- Notion Thief
+- Opposition Agent
+- Orcish Bowmasters
+- Rhystic Study
+- Thassa's Oracle
 - The One Ring
+- Underworld Breach
+- Vampiric Tutor
 
-## Geschwindigkeit und Win Conditions
+## Early 2-Card Infinite Combos
 
-- Fixing und Vorbereitung: Züge 1–3
-- Amass-Engine und erste Army: Züge 3–6
-- Sauron und wiederholte Ring-Versuchungen: Züge 6–8
-- realistischer spielentscheidender Angriff oder Living-Death-Zug: ungefähr Züge 8–10
+**Anzahl:** 1
 
-Die Liste gewinnt über Combat, wiederaufgebaute Boards und sichtbare Value-Engines. Eine Endloskombo wurde nicht erkannt.
+- Dualcaster Mage + Twinflame; benötigt eine weitere eigene Kreatur als anfängliches Ziel und erzeugt beliebig viele Dualcaster-Mage-Token mit Eile.
 
-## Empfehlung
+## Late 2-Card Infinite Combos
 
-Empfohlener Pregame-Hinweis:
+**Anzahl:** 0
 
-> Bracket-3-Sauron-Deck mit The One Ring als einzigem Game Changer. Es spielt Amass, Ring-Versuchung und ein kleines Reanimator-Paket, aber keine verifizierte Endloskombo.
+Keine späten Zwei-Karten-Endloskombos im aktuellen Deckstand erkannt.
 
+## Weitere bracketrelevante Punkte
+
+- Thassa's Oracle + Demonic Consultation ist eine frühe deterministische Zwei-Karten-Sieglinie.
+- Thassa's Oracle + Tainted Pact ist durch die vollständig unterschiedlichen Kartennamen ebenfalls eine frühe deterministische Zwei-Karten-Sieglinie.
+- Underworld Breach + Lion's Eye Diamond + Brain Freeze ist eine Drei-Karten-Loop-Combo für Selbstmill, Storm und gegnerischen Mill.
+- Fast Mana, zahlreiche effiziente Tutoren und kostenlose Interaktion ermöglichen realistische Siegversuche ungefähr ab Zug 2–4.
+- Trotz cEDH-naher Combo-Pakete bleiben mehrere teure Reanimations- und Themenkarten sowie der sechs Mana teure Commander erhalten; die Liste ist nicht konsequent auf ein cEDH-Metagame zugeschnitten.
+
+## Bracket-Grenze
+
+Alle relevanten Grenzen für Bracket 4 – Optimized werden eingehalten.

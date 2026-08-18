@@ -1,118 +1,146 @@
 # Gameplan: Frodo & Sam – Hobbit-Fest
 
-## Kernidee
+## Kurz erklärt
 
-Sam erzeugt zuverlässig Food und verbilligt dessen Aktivierung. Frodo verwandelt den dadurch ausgelösten Lebensgewinn in Ring-Versuchungen und Kartenvorteil. Weitere Hobbits und Food-Engines bauen ein breites Board auf, das über Combat oder Token-Drain gewinnt.
+Sam erzeugt im eigenen Kampf Food und verbilligt dessen Aktivierung. Der dadurch leicht erreichbare Lebensgewinn schaltet Frodos Angriffstrigger frei, sodass der Ring versucht und später zusätzliche Karten gezogen werden. Danach gewinnt das Deck über ein breites Hobbit-Board, Food-basierte Pumps oder Token-Drain.
 
-## Early Game: Züge 1–3
+## Starthand und Mulligan
 
-- Zwei bis drei Länder und mindestens eine grüne Quelle priorisieren.
-- Mit Sol Ring, Arcane Signet, Fellwar Stone, Farseek, Three Visits oder Wayfarer's Bauble beschleunigen.
-- Sam möglichst vor dem eigenen Kampf ausspielen, damit er sofort ein Food erzeugt.
-- Nach Sams Beginn-des-Kampfes-Trigger das neue Food für nur ein Mana opfern und 3 Leben erhalten.
-- Danach mit Frodo angreifen, den Ring versuchen lassen und Frodo möglichst zum Ringträger machen.
-- Trail of Crumbs, Call of the Ring oder Peregrin Took früh entwickeln, wenn die Commander noch nicht sicher ausgespielt werden können.
-- Viele Partings und die Fetchlands zuerst zur Farbkorrektur nutzen; Schwarz ist die knappste Farbe.
+**Bevorzugt behalten:**
 
-## Mid Game: Züge 4–7
+- zwei bis drei Länder mit Grün und mindestens einer weiteren benötigten Farbe
+- günstiges Ramp oder Fixing
+- Sam, eine frühe Food-Engine oder ein günstiger Token-Erzeuger
+- Kartenvorteil oder eine flexible Antwort
 
-- Samwise Gamgee vor weiteren Nichttoken-Kreaturen spielen, damit jede davon ein Food erzeugt.
-- Peregrin Took vor einer größeren Tokenquelle ausspielen, um bei jedem Ereignis zusätzliches Food zu erhalten.
-- Belladonna Took belohnt getrennte Tokenereignisse besonders stark: erster Trigger Lebensgewinn, zweiter Trigger Karte, dritter Trigger Counter für das Team.
-- Rosie Cotton verteilt die durch Food-, Treasure- und Kreaturentoken entstehenden Counter bevorzugt auf Frodo, Banquet Guests oder einen schwer blockbaren Angreifer.
-- Farmer Cotton erst mit möglichst viel verfügbarem Mana wirken.
-- Of Herbs and Stewed Rabbit möglichst schützen, bis Kapitel III die vorhandenen Foods in ein Hobbit-Board umwandelt.
-- Mirkwood Bats vor einer Runde mit mehreren Food-Erzeugern oder Food-Aktivierungen legen.
-- The One Ring verwenden, wenn die Hand leer wird; der wiederholte Lebensgewinn durch Foods gleicht die Belastungsmarker teilweise aus.
-- Samwise Gamgees drei-Food-Aktivierung für The One Ring, Sagas oder wichtige legendäre Kreaturen im Friedhof reservieren.
+**Eher Mulligan bei:**
 
-## Late Game: Zug 8+
+- einer Ein-Land-Hand ohne Sol Ring und verlässliches Fixing
+- mehreren Payoffs ohne Food- oder Tokenquelle
+- fehlendem Zugriff auf Grün oder einer Hand mit zu vielen teuren Karten
 
-- Pippin, Warden of Isengard mit vier Foods aktivieren und anschließend ein breites Board mit +3/+3 und Eile angreifen lassen.
-- Motivated Pony nach einer Food-Erzeugung einsetzen, um das angreifende Board insgesamt +3/+3 zu geben und zu enttappen.
-- Night of the Sweets' Revenge erst opfern, wenn die Foodzahl einen spielentscheidenden Angriff ermöglicht.
-- Mirkwood Bats kann Gegner auch ohne erfolgreichen Combat durch mehrere Token-Erzeugungen und Food-Opfer ausdrainen.
-- Frodo, Sauron's Bane nach vier Ring-Versuchungen mithilfe des Ring-Bearer-Skulk-Effekts oder durch das Entfernen von Blockern zu einem Gegner durchbringen.
-- Bilbo, Birthday Celebrant nur dann auf 111 Leben ausrichten, wenn das Spiel bereits stark in die Länge geht; seine Aktivierung ist ein Bonusplan, nicht das primäre Ziel.
+## Early Game
 
-## Commander-Sequenz
+**Ziel:**
 
-Die Standardsequenz lautet:
+Farben sichern, Food aufbauen und die Commander-Engine gefahrlos starten.
 
-1. Sam kontrollieren.
-2. Zu Beginn des Kampfes Sams Food-Trigger auflösen.
-3. Vor dem Angreiferdeklarieren das Food für `{1}`, Tappen und Opfern aktivieren.
-4. 3 Leben erhalten.
-5. Frodo als Angreifer deklarieren.
-6. Frodos Bedingung ist erfüllt und der Ring versucht dich.
-7. Sobald Frodo Ringträger ist und der Ring mindestens zweimal versucht hat, zusätzlich eine Karte ziehen.
+**Prioritäten:**
 
-Wenn ein gegnerischer Blocker Frodo sicher tauschen würde, den Angriff auslassen oder zuerst mit Swords to Plowshares, Path to Exile, Claim the Precious oder Hobbit's Sting interagieren.
+1. Ramp und Farbfixing entwickeln; Schwarz bei Bedarf früh absichern.
+2. Sam vor dem eigenen Kampf spielen, damit sofort ein Food entsteht.
+3. Das Food nach Sams Trigger für nur ein Mana opfern, dann mit Frodo angreifen und den Ring versuchen lassen.
 
-## Food-Prioritäten
+## Mid Game
 
-Foods nicht automatisch sofort für Leben opfern. Ihre wichtigsten Verwendungen sind:
+**Ziel:**
 
-1. vier Foods für Pippins Finisher
-2. drei Foods für Peregrin Tooks Kartenziehen
-3. drei Foods für Samwise Gamgees Recursion
-4. Food-Opfer mit Mirkwood Bats oder Rapacious Guest im Spiel
-5. Frodos Lebensgewinnbedingung erfüllen
-6. überschüssige Foods über normale Aktivierung in Lebenspunkte umwandeln
+Mehrere Token-Ereignisse in Karten, Marken und Druck umwandeln.
 
-Bag End Banquet und Night of the Sweets' Revenge machen vorhandene Foods zu Manaquellen. In diesen Situationen Foods nur dann opfern, wenn der Lebensgewinn, ein Drain-Trigger oder eine andere Aktivierung wichtiger ist als das zusätzliche Mana.
+**Prioritäten:**
 
-## Interaktionsprioritäten
+1. Peregrin Took, Belladonna Took, Rosie Cotton oder Trail of Crumbs vor größeren Token-Quellen ausspielen.
+2. Mirkwood Bats vor einem Zug mit mehreren Food-Erzeugungen oder -Opfern legen.
+3. Food nicht automatisch opfern: Vorräte für Pippin, Peregrin Took, Samwise Gamgee oder Night of the Sweets' Revenge einplanen.
 
-- Swords to Plowshares und Path to Exile für gegnerische Combo-Kreaturen oder direkte Spielbeender reservieren.
-- Generous Gift und Beast Within beantworten problematische Permanents jeder Art.
-- Tainted Treats bevorzugt auf Ziele mit Mana Value 4 oder weniger wirken, damit zusätzlich ein Food entsteht.
-- Pawpatch Formation bei fehlendem Ziel als Karte plus Food einsetzen.
-- Spider Food gegen Artefakte, Verzauberungen oder fliegende Blocker nutzen.
-- Gollum the Abandoned früh spielen, wenn ein gegnerischer Friedhofsplan erkennbar ist.
-- Shatter the Sky und Taste of Death einsetzen, wenn Gegner deutlich mehr Board besitzen.
-- Farewell nur als Notfallknopf verwenden, da die Karte auch das eigene Food-, Saga- und Friedhofspaket trifft.
-- One Ring to Rule Them All lässt legendäre Kreaturen stehen und ist deshalb häufig der asymmetrischste Kreaturenreset der Liste.
-- The Eagles Are Coming! kann mehrere eigene Kreaturen vor einem gegnerischen Boardwipe retten.
+## Late Game
 
-## Mulligan-Prioritäten
+**Ziel:**
 
-Eine gute Starthand enthält:
+Das aufgebaute Food- und Tokenboard in einen entscheidenden Zug umwandeln.
 
-- zwei bis drei Länder
-- eine grüne Quelle
-- einen Ramp-Effekt
-- Sam oder eine günstige Food-Engine
-- eine spielbare Karte mit Mana Value 2
+**Prioritäten:**
 
-Besonders starke Hände enthalten:
+1. Mit Pippin, Motivated Pony oder Night of the Sweets' Revenge einen tödlichen Angriff vorbereiten.
+2. Bei festgefahrenem Combat über Mirkwood Bats und weitere Opfer-Payoffs ausdrainen.
+3. Nach einem Reset mit Samwise Gamgee, Revive the Shire oder The Eagles Are Coming! neu aufbauen.
 
-- Sam plus Frodo und drei passende Länder
-- Farseek oder Three Visits plus Sam
-- Peregrin Took plus eine Tokenquelle
-- Samwise Gamgee plus zwei günstige Kreaturen
-- Trail of Crumbs plus einen Food-Erzeuger
-- Call of the Ring plus Frodo
+## Wichtige Engines
 
-Zurücklegen sollte man:
+### Frodo und Sam
 
-- Hände ohne grüne Quelle
-- Ein-Land-Hände ohne Sol Ring und weiteren Fixer
-- mehrere Sechs-Mana-Karten ohne Ramp
-- reine Payoff-Hände ohne Food- oder Tokenquelle
-- schwarze Karten ohne realistische schwarze Manaquelle
-- mehrere Boardwipes in der Starthand
+**Kernkarten:**
 
-## Siegpfade
+- Frodo, Adventurous Hobbit
+- Sam, Loyal Attendant
 
-1. Hobbit-/Tokenboard plus Pippin, Warden of Isengard.
-2. Foodboard plus Night of the Sweets' Revenge.
-3. Breiter Angriff mit Motivated Pony.
-4. Wiederholte Tokenproduktion und Food-Opfer mit Mirkwood Bats.
-5. Großer Rapacious Guest, der im Kampf drückt und beim Verlassen Schaden verursacht.
-6. Frodo, Sauron's Bane nach vier Ring-Versuchungen.
-7. Bilbo, Birthday Celebrant bei 111 oder mehr Leben als seltener Late-Game-Plan.
+**Funktion:**
 
-## Rule-0-Hinweis
+- Sam liefert Food und den nötigen Lebensgewinn; Frodo erzeugt Ring-Versuchungen und später Kartenvorteil.
 
-> Bracket-3-Hobbit- und Food-Deck mit The One Ring und Farewell als zwei Game Changers. Es gewinnt über Token-Combat, Food-Drain oder Frodo. Es wurde keine Endloskombo erkannt.
+**Wichtig beim Spielen:**
+
+- Das Food kann nach Sams Beginn-des-Kampfes-Trigger noch vor dem Angreiferdeklarieren geopfert werden.
+
+### Token-Wertschöpfung
+
+**Kernkarten:**
+
+- Peregrin Took
+- Belladonna Took
+- Rosie Cotton of South Lane
+- Mirkwood Bats
+
+**Funktion:**
+
+- Zusätzliche Foods, Karten, Marken und Drain skalieren jedes Token-Ereignis.
+
+**Wichtig beim Spielen:**
+
+- Mehrere getrennte Token-Ereignisse sind für Belladonna oft besser als ein einziges großes Ereignis.
+
+## Win Conditions
+
+### Breiter Hobbit-Angriff
+
+**Benötigt:**
+
+- mehrere Kreaturen oder Token
+- Pippin, Motivated Pony oder Night of the Sweets' Revenge
+
+**Ablauf:**
+
+- Food ansammeln, das Team verstärken und in einem vorbereiteten Kampf angreifen.
+
+**Worauf achten:**
+
+- Schutz und Removal möglichst bis zum entscheidenden Zug offenhalten.
+
+### Token- und Food-Drain
+
+**Benötigt:**
+
+- Mirkwood Bats oder einen anderen Opfer-Payoff
+- mehrere Token-Erzeugungen oder Food-Opfer
+
+**Ablauf:**
+
+- Endliche Token-Sequenzen erzeugen Schaden, auch wenn Combat blockiert ist.
+
+**Worauf achten:**
+
+- Mirkwood Bats möglichst erst unmittelbar vor dem großen Token-Zug zeigen.
+
+### Frodo, Sauron's Bane
+
+**Benötigt:**
+
+- vier Ring-Versuchungen und erfolgreichen Kampfschaden
+
+**Ablauf:**
+
+- Frodo vollständig aufwerten und mithilfe der Ring-Fähigkeiten oder Removal durchbringen.
+
+**Worauf achten:**
+
+- Die Linie ist offen sichtbar und anfällig für Instant-Removal.
+
+## Combos
+
+Keine verifizierte Combo im aktuellen Deckstand erkannt.
+
+## Wichtige Spielhinweise
+
+- Farewell nur als Notfall-Reset nutzen, weil es auch eigene Foods, Kreaturen und Friedhofsressourcen treffen kann.
+- The One Ring nicht zu früh auslegen; der Food-Lebensgewinn kann die Belastungsmarker abfedern, ersetzt aber kein geplantes Spielende.
+- Samwise Gamgees Recursion bevorzugt für The One Ring, Sagas oder zentrale legendäre Kreaturen reservieren.

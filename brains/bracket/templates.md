@@ -318,68 +318,103 @@ Ein Deck kann technisch starke Karten enthalten, aber thematisch oder experiment
 
 # Ausgabeformat für Analysen
 
-# Bracket Einschätzung: [Deckname]
+# Bracket: [Deckname]
 
 ## Ergebnis
 
-**Geschätztes Bracket:** [1–5]  
-**Sicherheit:** [niedrig / mittel / hoch]
+**Geschätztes Bracket: [1–5] – [Name]**
 
-## Kurzbegründung
+Erlaubte Bezeichnungen:
 
-[2–4 Sätze]
+- 1 – Exhibition
+- 2 – Core
+- 3 – Upgraded
+- 4 – Optimized
+- 5 – cEDH
 
-## Game Changer Check
+Zusätze wie `Upper`, `Lower`, `3+`, `oberes` oder `unteres` dürfen im Feld
+`Geschätztes Bracket` nicht verwendet werden.
 
-Anzahl Game Changers: [X]
+## Requirement Tracker
 
-Gefundene Game Changers:
+| Requirement | Anzahl / Wert | Grenze | Status |
+|---|---:|---:|---|
+| Game Changers | [X] | [Grenze] | ✅ / ❌ |
+| Early 2-Card Infinite Combos | [X] | [Grenze] | ✅ / ❌ |
+| Late 2-Card Infinite Combos | [X] | [Grenze] | ✅ / ❌ |
+| Mass Land Denial | [X] | [Grenze] | ✅ / ❌ |
+| Repeatable Extra-Turn Loops | [X] | [Grenze] | ✅ / ❌ |
 
+## Game Changers
+
+**Anzahl:** [X]
+
+- [Karte]
+- [Karte]
 - ...
 
-Auswirkung:
+Wenn keine vorhanden sind:
 
+`Keine Game Changers im aktuellen Deckstand erkannt.`
+
+## Early 2-Card Infinite Combos
+
+**Anzahl:** [X]
+
+- [Karte A] + [Karte B]
 - ...
 
-## Spielplan
+Wenn keine vorhanden sind:
 
-[Kurze Beschreibung, wie das Deck vermutlich gewinnen möchte.]
+`Keine frühen Zwei-Karten-Endloskombos im aktuellen Deckstand erkannt.`
 
-## Geschwindigkeit
+## Late 2-Card Infinite Combos
 
-Erwarteter relevanter Sieg-/Dominanzbereich:
+**Anzahl:** [X]
 
-- ca. Zug [X]
-
-## Faktoren, die das Bracket erhöhen
-
+- [Karte A] + [Karte B]
 - ...
 
-## Faktoren, die das Bracket senken
+Wenn keine vorhanden sind:
 
-- ...
+`Keine späten Zwei-Karten-Endloskombos im aktuellen Deckstand erkannt.`
 
-## Unsicherheiten
+## Weitere bracketrelevante Punkte
 
-- ...
+Nur Punkte ausgeben, die für die Bracket-Grenze tatsächlich relevant sind.
 
-## Empfehlung
+Beispiele:
 
-Dieses Deck sollte aktuell als Bracket [X] kommuniziert werden.
+- Drei- oder Mehrkarten-Endloskombos
+- Mass Land Denial
+- wiederholbare Extra-Turn-Loops
+- cEDH-Orientierung
+- ungewöhnlich hohe Geschwindigkeit oder Konsistenz
 
-Falls es für ein niedrigeres Bracket gebaut werden soll:
+Wenn keine weiteren bracketrelevanten Punkte vorhanden sind:
 
-- ...
-- ...
+`Keine weiteren bracketrelevanten Grenzpunkte erkannt.`
 
-Falls es für ein höheres Bracket optimiert werden soll:
+## Bracket-Grenze
 
-- ...
-- ...
+Wenn die Grenzen des geschätzten Brackets eingehalten werden:
 
-## Rückfrage
+`Alle relevanten Grenzen für Bracket [X] – [Name] werden eingehalten.`
 
-Passt diese Einschätzung für dich und soll sie gespeichert werden?
+Wenn eine Grenze verletzt wird:
+
+`Bracket [X] – [Name] wird nicht eingehalten.`
+
+Danach nur die verletzten Anforderungen nennen:
+
+- [Requirement]: [Wert] / [Grenze]
+
+Anschließend das daraus resultierende Mindest-Bracket nennen:
+
+`Daraus ergibt sich mindestens Bracket [X] – [Name].`
+
+Die Bracket-Ausgabe enthält keine Optimierungsempfehlung und keinen
+Vorschlag für ein niedrigeres oder höheres Bracket.
 
 ---
 

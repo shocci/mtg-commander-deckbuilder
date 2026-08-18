@@ -1,35 +1,53 @@
-# Bracket Einschätzung: Thorin – Durins Volk
+# Bracket: Thorin, King of Durin's Folk
 
 ## Ergebnis
 
-**Geschätztes Bracket:** 3 – Upgraded
+**Geschätztes Bracket: 4 – Optimized**
 
-**Sicherheit:** hoch
+## Requirement Tracker
 
-## Kurzbegründung
+| Requirement | Anzahl / Wert | Grenze | Status |
+|---|---:|---:|---|
+| Game Changers | 10 | unbegrenzt | ✅ |
+| Early 2-Card Infinite Combos | 1 | erlaubt | ✅ |
+| Late 2-Card Infinite Combos | 1 | erlaubt | ✅ |
+| Mass Land Denial | 0 | erlaubt | ✅ |
+| Repeatable Extra-Turn Loops | 0 | erlaubt | ✅ |
 
-Das Deck hat einen klaren Zwergen- und Treasure-Plan, solides Ramp, Kartenvorteil und flexible Interaktion. Farewell und The One Ring sind zwei Game Changer. Siege entstehen über ein entwickeltes, gut sichtbares Board; schnelle Endloskombos, Mass Land Denial, Extra-Turn-Schleifen und cEDH-Tutoren fehlen.
+## Game Changers
 
-## Game Changer Check
+**Anzahl:** 10
 
-Anzahl Game Changer: 2
-
-- Farewell
+- Ancient Tomb
+- Chrome Mox
+- Enlightened Tutor
+- Gamble
+- Jeska's Will
+- Mana Vault
+- Mox Diamond
+- Smothering Tithe
+- Teferi's Protection
 - The One Ring
 
-Bracket 3 erlaubt bis zu drei Game Changer. Farewell ist ein Notfall-Reset, The One Ring eine starke Value-Engine.
+## Early 2-Card Infinite Combos
 
-## Geschwindigkeit und Win Conditions
+**Anzahl:** 1
 
-- Aufbau und Ramp: Züge 1–3
-- Thorin plus mehrere Zwerg-ETBs: Züge 3–6
-- realistischer spielentscheidender Angriff: ungefähr Züge 7–9
+- Dualcaster Mage + Twinflame; benötigt eine weitere eigene Kreatur als anfängliches Ziel und erzeugt beliebig viele Angreifer mit Eile.
 
-Primäre Siegbedingungen sind Thorins Treasure-basierter Team-Bonus, Equipment-Schaden und Smaugs Angriffstrigger. Es wurde keine Endloskombo, deterministische Tutorkette oder beliebig wiederholbare Mana-, Token-, Draw- oder Damage-Schleife erkannt.
+## Late 2-Card Infinite Combos
 
-## Empfehlung
+**Anzahl:** 1
 
-Empfohlener Pregame-Hinweis:
+- Aggravated Assault + Sword of Feast and Famine; benötigt fünf Länder, darunter zwei rote Quellen, sowie wiederholbaren Kampfschaden und erzeugt beliebig viele Kampfphasen.
 
-> Bracket-3-Zwergen- und Treasure-Deck mit Farewell und The One Ring als zwei Game Changers. Es gewinnt über Combat oder Smaugs Treasure-Schaden und enthält keine verifizierte Endloskombo.
+## Weitere bracketrelevante Punkte
 
+- Thorin + Cloudstone Curio + Duergar Assailant + Staunch Shieldmate erzeugt beliebig viele ETB-, LTB- und Cast-Ereignisse; ein vorhandener ETB-Payoff beendet die Partie.
+- Magda, Brazen Outlaw + Clock of Omens + ein Artifact Dwarf erzeugt beliebig viele getappte Treasure und ETB-Trigger. Xorn erzeugt dabei zusätzlich beliebig viele nutzbare Treasure; Reckless Fireweaver oder Altar of the Brood gewinnen direkt.
+- Fast Mana, mehrere effiziente Tutoren und Schutz erlauben realistische Siegversuche ungefähr ab Zug 4–6.
+- Die Liste ist stark optimiert, bleibt aber durch den fünf Mana teuren Commander und mehrere mehrteilige, boardabhängige Linien außerhalb einer konsequenten cEDH-Ausrichtung.
+
+## Bracket-Grenze
+
+Alle relevanten Grenzen für Bracket 4 – Optimized werden eingehalten.

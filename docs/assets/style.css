@@ -720,6 +720,187 @@ li::marker {
     color: var(--accent);
 }
 
+/* Deck view */
+
+#deckansicht .accordion-content {
+    display: block;
+    padding: 20px 18px 28px;
+}
+
+#deckansicht .deck-view-category {
+    min-width: 0;
+    margin: 0 0 30px;
+}
+
+#deckansicht .deck-view-category:last-child {
+    margin-bottom: 0;
+}
+
+#deckansicht .deck-view-category h3 {
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    color: var(--text-strong);
+    font-size: 1rem;
+    font-weight: 850;
+    line-height: 1.3;
+    border-bottom: 2px solid var(--accent-soft);
+}
+
+.deck-view-category-count {
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.deck-view-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    gap: 16px;
+    align-items: start;
+}
+
+.deck-view-card {
+    position: relative;
+    min-width: 0;
+    margin: 0;
+}
+
+.deck-view-card + .deck-view-card {
+    margin-top: 0;
+}
+
+.deck-view-card-visual {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 63 / 88;
+    background: var(--surface-subtle);
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(28, 22, 32, 0.18);
+}
+
+.deck-view-card-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.deck-view-card-link:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: -3px;
+}
+
+.deck-view-card-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.deck-view-card-placeholder {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: var(--on-dark);
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1.25;
+    background:
+            linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(38, 34, 43, 0.85)),
+            repeating-linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, 0.15) 0,
+                    rgba(255, 255, 255, 0.15) 1px,
+                    transparent 1px,
+                    transparent 8px
+            ),
+            #6f6874;
+}
+
+.deck-view-card-info {
+    position: static;
+    margin-top: 7px;
+    padding: 0 2px;
+    color: var(--text);
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+    backdrop-filter: none;
+}
+
+.deck-view-card-name {
+    overflow: hidden;
+    color: var(--text-strong);
+    font-size: 0.78rem;
+    font-weight: 850;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.deck-view-status {
+    display: block;
+    margin-top: 3px;
+    font-size: 0.66rem;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.deck-view-status-owned {
+    color: var(--green);
+}
+
+.deck-view-status-missing {
+    color: var(--red);
+}
+
+.deck-view-quantity {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 5;
+    min-width: 28px;
+    padding: 3px 7px;
+    color: var(--on-dark);
+    font-size: 0.68rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: center;
+    background: rgba(38, 34, 43, 0.90);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 999px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+}
+
+.deck-view-card[data-availability="collection"] .deck-view-card-visual,
+.deck-view-card[data-availability="basic-land"] .deck-view-card-visual {
+    border-color: var(--green-line);
+}
+
+.deck-view-card[data-availability="partial"] .deck-view-card-visual,
+.deck-view-card[data-availability="missing"] .deck-view-card-visual {
+    border-color: var(--red);
+    box-shadow:
+            0 0 0 2px var(--red-soft),
+            0 3px 10px rgba(28, 22, 32, 0.18);
+}
+
+.deck-view-card[data-availability="missing"] .deck-view-card-image {
+    filter: grayscale(82%) brightness(0.72);
+}
+
+.deck-view-card[data-availability="partial"] .deck-view-card-image {
+    filter: saturate(0.72) brightness(0.86);
+}
+
 /* Responsive */
 
 @media (max-width: 860px) {
@@ -731,6 +912,16 @@ li::marker {
     .deck-grid {
         grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
         gap: 18px;
+    }
+
+    #deckansicht .accordion-content {
+        grid-template-columns: repeat(auto-fit, 130px);
+        gap: 20px 12px;
+        justify-content: center;
+    }
+
+    .deck-view-card + .deck-view-card {
+        margin-top: -142px;
     }
 }
 
@@ -847,6 +1038,35 @@ li::marker {
     td {
         padding: 9px 10px;
     }
+
+    #deckansicht .accordion-content {
+        grid-template-columns: repeat(auto-fit, 122px);
+        gap: 18px 10px;
+        padding: 16px 10px 22px;
+    }
+
+    #deckansicht .deck-view-category h3 {
+        font-size: 0.78rem;
+    }
+
+    .deck-view-card + .deck-view-card {
+        margin-top: -130px;
+    }
+
+    .deck-view-card-info {
+        right: 4px;
+        bottom: 4px;
+        left: 4px;
+        padding: 5px 6px;
+    }
+
+    .deck-view-card-name {
+        font-size: 0.62rem;
+    }
+
+    .deck-view-status {
+        font-size: 0.54rem;
+    }
 }
 
 @media (max-width: 340px) {
@@ -861,6 +1081,15 @@ li::marker {
     .profile-commander-images > .deck-card-art {
         width: min(190px, 100%);
         flex-basis: min(190px, 100%);
+    }
+
+    #deckansicht .accordion-content {
+        grid-template-columns: repeat(auto-fit, 118px);
+        gap: 16px 8px;
+    }
+
+    .deck-view-card + .deck-view-card {
+        margin-top: -125px;
     }
 }
 
@@ -899,5 +1128,37 @@ li::marker {
     .deck-header {
         box-shadow: none;
         break-inside: avoid;
+    }
+
+    #deckansicht .accordion-content {
+        grid-template-columns: repeat(5, 120px);
+        justify-content: start;
+    }
+
+    .deck-view-card + .deck-view-card {
+        margin-top: 8px;
+    }
+
+    .deck-view-card-info {
+        position: static;
+        margin-top: 4px;
+        color: var(--text);
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .deck-view-card-name {
+        color: var(--text);
+    }
+
+    .deck-view-status-owned {
+        color: var(--green);
+    }
+
+    .deck-view-status-missing {
+        color: var(--red);
     }
 }

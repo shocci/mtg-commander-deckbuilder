@@ -1,76 +1,56 @@
-# Deckanalyse: Sauron, the Dark Lord – Amass und Reanimator
+# Deckanalyse: Sauron, the Dark Lord
 
-## Überblick
+## Kurzprofil
 
-- Commander: Sauron, the Dark Lord
-- Farbidentität: Grixis – Blau, Schwarz und Rot
-- Deckgröße: 100 Karten inklusive Commander
-- Länder: 37, davon 21 Standardländer
-- Hauptstrategie: Amass Orcs / Army-Counter / Ring-Versuchung
-- Nebenthemen: Reanimator und Spellslinger
-- Deckbuilding-Modus: automatisch, Collection-first
-- Zusatzbudget: maximal 80,00 €
-- kalkulierter Kartenpreis der 58 Ergänzungen: ca. 69,74 €
-- Geschätztes Bracket: 3 – Upgraded
-- Game Changer: 1
-- Sicherheit: hoch
+- Color Identity: Grixis – Blau, Schwarz und Rot
+- Hauptstrategie: Combo-Control mit effizienter Kartenauswahl und Tutoren
+- Unterstrategien: Reanimator, Wheels sowie Amass Orcs als druckvoller Zweitplan
+- Geschätztes Bracket: 4 – Optimized
 
-Die Liste verwendet 21 Karten aus der Collection sowie 21 automatisch verfügbare Standardländer. Die Preiskalkulation basiert auf Scryfall-Europreisen vom 17. August 2026 und enthält keinen Versand. Teure Flavor-Karten wie The Black Gate, Witch-king of Angmar und Reanimate wurden zugunsten günstigerer Amass- und Recursion-Karten ausgelassen.
+## Kartenpakete
 
-## Commander-Engine
+### Ramp
 
-Sauron besitzt Ward, solange ein Artefakt oder eine legendäre Kreatur geopfert werden kann. Wirkt ein Gegner einen Zauber, wird Orcs 1 amassed; bestehende Army-Token wachsen dadurch weiter. Verursacht eine eigene Army einem Spieler Kampfschaden, versucht der Ring. Wenn der Ring versucht, kann die Hand abgeworfen werden, um vier Karten zu ziehen. Diese Fähigkeiten verbinden Boardaufbau, Schutz und Handerneuerung.
+Sol Ring, Mana Vault, Chrome Mox, Mox Diamond, Lion's Eye Diamond, Lotus Petal, Arcane Signet, Fellwar Stone und drei Talismane beschleunigen das Deck deutlich. Dark Ritual und Jeska's Will ermöglichen explosive Combo- oder Commander-Züge. Die 33-Länder-Manabasis ist durch die hohe Dichte günstiger Manaquellen und Auswahlzauber tragfähig.
 
-## Ramp und Manabasis
+### Card Advantage
 
-Sol Ring, Arcane Signet, Fellwar Stone, Wayfarer's Bauble, drei Signets und drei Talismane ergeben zehn direkte Ramp- und Fixing-Karten. Die 37-Länder-Manabasis enthält 16 Nichtstandardländer und 21 Basics. Command Tower, Exotic Orchard, Crumbling Necropolis und die Signets stabilisieren die anspruchsvolle Grixis-Farbverteilung.
+Rhystic Study, Mystic Remora, Necropotence und The One Ring sind die stärksten unabhängigen Engines. Wheel of Fortune, Windfall, Brainstorm, Ponder und Ledger Shredder finden Combo-Teile oder füllen den Friedhof. Sauron selbst kann nach einer Ring-Versuchung eine schwache Hand gegen vier neue Karten tauschen.
 
-Barad-dûr ist der stärkste thematische Utility-Land-Slot und kann im späteren Spiel erneut Orcs amassen. Path of Ancestry unterstützt viele Orcs und Wraiths; Dismal Backwater sowie die Tempel glätten die frühen Züge.
+### Targeted Interaction
 
-## Kartenvorteil und Auswahl
+Force of Will, Fierce Guardianship, Force of Negation, Pact of Negation, Mana Drain, Swan Song und An Offer You Can't Refuse bilden ein effizientes Counter-Paket. Deadly Rollick, Chaos Warp, Chain of Vapor, Cyclonic Rift sowie Dauthi Voidwalker beantworten Permanents oder Friedhofspläne. Opposition Agent und Notion Thief bestrafen gegnerische Tutoren beziehungsweise Kartenziehen.
 
-- Sauron kann bei einer Ring-Versuchung eine schwache oder leere Hand gegen vier Karten austauschen.
-- The One Ring ist die stärkste unabhängige Draw-Engine.
-- Call of the Ring erzeugt langfristig Ring-Versuchungen und Karten.
-- Ringsight sucht nach erreichter Ringträger-Farbidentität passende Karten.
-- Fact or Fiction, Night's Whisper, Read the Bones und Treasure Cruise liefern direkten Kartenvorteil.
-- Faithless Looting und Frantic Search legen große Reanimator-Ziele in den Friedhof.
-- Lórien Revealed kann früh ein Island suchen oder später drei Karten ziehen.
+### Mass Interaction
 
-## Amass- und Army-Paket
+Toxic Deluge ist der günstige Kreaturen-Wipe. Cyclonic Rift kann gegnerische Boards asymmetrisch zurücksetzen. Living Death ist zugleich Masseninteraktion und Reanimations-Finisher, muss aber gegen gegnerische Friedhöfe sorgfältig getimt werden.
 
-Saruman, the White Hand belohnt Nichtkreaturenzauber mit einer wachsenden Army. Mauhúr verstärkt Markenereignisse. March from the Black Gate, Dreadhorde Invasion, Foray of Orcs, Surrounded by Orcs, Mordor Muster, Swarming of Moria, Relentless Advance und Commence the Endgame bauen die Army auf. Gleaming Overseer, Eternal Skylord und Lazotep Plating geben Evasion oder Schutz.
+### Schutz und Resilienz
 
-## Reanimator-Paket
+Kostenlose Counterspells und Deflecting Swat schützen Combo-Züge. Reanimate, Animate Dead, Dance of the Dead und Necromancy stellen zentrale Kreaturen wieder her. Underworld Breach nutzt einen gefüllten Friedhof als zweite Hand, während Saurons Ward gezieltes Removal erschwert.
 
-Animate Dead, Victimize, Dread Return, Oath of the Grey Host und Living Death holen wichtige Kreaturen zurück oder belohnen Opfer. Anger und Wonder werden bevorzugt in den Friedhof gelegt, damit die Army Eile beziehungsweise Flugfähigkeit erhält. Sauron, Lord of the Rings und Sauron, the Necromancer sind große thematische Ziele.
+### Engines
 
-## Interaktion
+Mystic Remora, Rhystic Study, Necropotence und The One Ring halten Karten und Interaktion verfügbar. Underworld Breach verbindet Friedhof, Fast Mana und Brain Freeze zu einer Siegengine. Sauron und Saruman, the White Hand verwandeln gegnerische beziehungsweise eigene Zauber weiterhin in eine wachsende Army.
 
-Claim the Precious, Go for the Throat, Terminate, Feed the Swarm, Reality Shift und Chaos Warp beantworten Einzelziele. Arcane Denial, Counterspell und Saruman's Trickery stoppen kritische Zauber. Crux of Fate und Blasphemous Act sind die großen Boardresets. Lazotep Plating schützt das eigene Board und amasset gleichzeitig.
+### Enabler
 
-## Siegbedingungen
+Demonic Tutor, Vampiric Tutor, Mystical Tutor, Imperial Seal, Gamble, Diabolic Intent und Entomb finden Combo-Teile oder Reanimationsziele. Faithless Looting, Wheels und Ledger Shredder legen Archon of Cruelty, Hullbreaker Horror oder Sauron, Lord of the Rings in den Friedhof.
 
-1. Eine große, evasive Army greift wiederholt an, löst Ring-Versuchungen aus und verursacht Commander-unabhängigen Combat-Schaden.
-2. Saruman, Mauhúr und mehrere Nichtkreaturenzauber bauen die Army in einem Zug stark auf.
-3. Living Death oder Victimize stellt nach Removal mehrere wichtige Kreaturen wieder her.
-4. Sauron, Lord of the Rings und Lord of the Nazgûl erzeugen einen sekundären Wraith-/Combat-Plan.
-5. In the Darkness Bind Them übernimmt nach mehreren Kapiteln gegnerische Kreaturen und kann ein langes Spiel drehen.
+### Payoffs
 
-## Schwächen
+Thassa's Oracle ist der primäre deterministische Finisher. Dualcaster Mage mit Twinflame erzeugt beliebig viele Kreaturen mit Eile. Brain Freeze beendet die Underworld-Breach-Schleife über Mill. Archon of Cruelty, Hullbreaker Horror, Sauron, Lord of the Rings und die Orc Army bilden interaktive Backup-Winconditions.
 
-- Sauron kostet sechs Mana; trotz Ward ist mehrfaches Commander-Removal teuer.
-- Exile-Removal und Friedhofshate schwächen den Reanimator-Nebenplan.
-- Eine einzelne Army ist anfällig für Bounce, Exile und Token-Removal, wenn kein Schutz offen ist.
-- Die dreifarbige Manabasis ist budgetorientiert und spielt mehrere getappte Länder.
+## Stärken
 
-## Combo-Check
+- mehrere kompakte und redundante Siegkombinationen
+- hohe Tutor- und Card-Selection-Dichte
+- starke kostenlose Interaktion zum Schutz eigener Combo-Züge
+- belastbarer Zweitplan über Reanimation, Sauron und Army-Combat
 
-Es wurde keine Endloskombo, keine deterministische Tutorkette und keine beliebig wiederholbare Amass-, Draw-, Reanimation- oder Damage-Schleife erkannt.
+## Schwächen und Risiken
 
-## Quellenstand
-
-- EDHREC-Commanderprofil für Sauron, the Dark Lord, geprüft am 17. August 2026
-- Scryfall-Kartendaten und Europreise, geprüft am 17. August 2026
-- lokale Commander-Regel- und Game-Changer-Daten
-
+- viele Schlüsselzüge verlieren gegen Graveyard-Hate, Stifle-Effekte oder gut getimte Stack-Interaktion
+- 33 Länder verlangen diszipliniertes Mulligan und korrektes Sequencing der Fast-Mana-Karten
+- Sauron ist mit sechs Mana kein notwendiger Teil der primären Combo-Linien und kann in schnellen Partien zu langsam sein
+- die Liste ist deutlich teurer und sozial wesentlich schärfer als die archivierte Version

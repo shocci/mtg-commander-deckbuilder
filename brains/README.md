@@ -14,16 +14,17 @@ Zusammengesetzte Aufträge verwenden die Vereinigung der benötigten Module.
 
 ## Brain Registry
 
-| Brain | Zuständigkeit |
-|---|---|
-| `project/philosophy.md` | projektweite Grundsätze, Daten- und Schreibmodell |
-| `rules/magic-rules.md` | Legalität, Color Identity, Commander-Regeln und Karteninteraktionen |
-| `collection/templates.md` | Collection-Lookups, Besitzlogik, Commander-Auswahl aus der Collection |
-| `deckbuilding/templates.md` | neues Deck, Umbau, Varianten und Deckbau-Workflow |
-| `deck-analysis/templates.md` | Analyse bestehender Decklisten und Gameplan-Ableitung |
-| `bracket/templates.md` | Commander Brackets, Game Changers und Bracket-Bewertung |
+| Brain                          | Zuständigkeit                                                              |
+| ------------------------------ | -------------------------------------------------------------------------- |
+| `project/philosophy.md`        | projektweite Grundsätze, Daten- und Schreibmodell                          |
+| `rules/magic-rules.md`         | Legalität, Color Identity, Commander-Regeln und Karteninteraktionen        |
+| `collection/templates.md`      | Collection-Lookups, Besitzlogik, Commander-Auswahl aus der Collection      |
+| `deckbuilding/templates.md`    | neues Deck, Umbau, Varianten und Deckbau-Workflow                          |
+| `deck-analysis/templates.md`   | Analyse bestehender Decklisten: Struktur, Rollen, Stärken und Schwächen    |
+| `gameplan/templates.md`        | praktische Spielanleitung, Engines, Win Conditions und Combo-Linien        |
+| `bracket/templates.md`         | Commander Brackets, Game Changers und Bracket-Bewertung                    |
 | `deck-versioning/templates.md` | Ersetzen einer bestehenden Hauptdeckliste und Archivierung alter Versionen |
-| `rule-zero/templates.md` | Rule-0- und Tischkommunikation für analysierte Decks |
+| `rule-zero/templates.md`       | Rule-0- und Tischkommunikation für analysierte Decks                       |
 
 ## Immer zuerst
 
@@ -37,17 +38,18 @@ Danach über die folgende Tabelle routen.
 
 ## Task Routing
 
-| Nutzerauftrag | Pflicht-Brains | Zusätzliche Daten |
-|---|---|---|
-| neues Deck bauen | `collection`, `deckbuilding`, `bracket`, `rules` | standardmäßig Guided Workflow, `data/collection.json`, passendes Deckbuilding-Template |
-| Deck automatisch bauen | `deckbuilding`, `bracket`, `rules` | Automatic Workflow; Collection nur wenn Auftrag dies verlangt |
-| Deck aus/mit Collection bauen | `collection`, `deckbuilding`, `bracket`, `rules` | `data/collection.json` oder ManaBox-Import |
-| Commander aus Collection auswählen | `collection`, `rules` | Collection; bei Popularität ggf. aktuelle Community-Daten |
-| Deck analysieren | `deck-analysis`, `bracket`, `rules` | betroffene Deckliste |
-| Gameplan für vorhandenes Deck | `deck-analysis`, `rules` | betroffene Deckliste |
-| Bracket bestimmen | `bracket`, `rules` | Deckliste |
-| Rule-0-/Tischkommunikation erstellen | `deck-analysis`, `rule-zero`, `bracket`, `rules` | betroffene Deckliste bzw. aktuelle Analyse |
-| bestehendes Deck überarbeiten, ohne Hauptversion zu ersetzen | `deckbuilding`, `bracket`, `rules` | bestehende Deckliste; Collection nur wenn relevant |
+| Nutzerauftrag                                                | Pflicht-Brains                                                     | Zusätzliche Daten                                                                      |
+| ------------------------------------------------------------ | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| neues Deck bauen                                             | `collection`, `deckbuilding`, `bracket`, `rules`                   | standardmäßig Guided Workflow, `data/collection.json`, passendes Deckbuilding-Template |
+| Deck automatisch bauen                                       | `deckbuilding`, `bracket`, `rules`                                 | Automatic Workflow; Collection nur wenn Auftrag dies verlangt                          |
+| Deck aus/mit Collection bauen                                | `collection`, `deckbuilding`, `bracket`, `rules`                   | `data/collection.json` oder ManaBox-Import                                             |
+| Commander aus Collection auswählen                           | `collection`, `rules`                                              | Collection; bei Popularität ggf. aktuelle Community-Daten                              |
+| Deck vollständig analysieren                                 | `deck-analysis`, `gameplan`, `bracket`, `rule-zero`, `rules`       | betroffene Deckliste; erzeugt getrennte Arbeitsstände                                  |
+| nur Deckanalyse erstellen                                    | `deck-analysis`, `bracket`, `rules`                                | betroffene Deckliste                                                                   |
+| Gameplan für vorhandenes Deck                                | `gameplan`, `rules`                                                | betroffene Deckliste; vorhandene Analyse verwenden, wenn verfügbar                     |
+| Bracket bestimmen                                            | `bracket`, `rules`                                                 | Deckliste; erkannte Combo-Linien berücksichtigen                                       |
+| Rule-0-/Tischkommunikation erstellen                         | `rule-zero`, `bracket`, `rules`                                    | betroffene Deckliste sowie vorhandene Analyse und Gameplan, wenn verfügbar             |
+| bestehendes Deck überarbeiten, ohne Hauptversion zu ersetzen | `deckbuilding`, `bracket`, `rules`                                 | bestehende Deckliste; Collection nur wenn relevant                                     |
 
 `project/philosophy.md` kommt jeweils zusätzlich dazu.
 
@@ -61,6 +63,30 @@ Beim Erstellen eines neuen Decks ist Guided Deckbuilding der Standard.
 "Baue mir ein Deck mit Commander X"
 "Ich möchte Commander X bauen"
 ```
+
+### Vollständige Deckanalyse
+
+Wenn der Nutzer ein vorhandenes Deck allgemein oder vollständig analysieren lässt,
+werden die Ergebnisse fachlich getrennt erzeugt:
+
+```text
+analysis.md
+bracket.md
+gameplan.md
+rule-zero.md
+```
+
+Die Inhalte dürfen sich nicht unnötig wiederholen.
+
+Dabei gilt:
+
+- `analysis.md` beschreibt Deckstruktur, Rollen, Stärken und Schwächen.
+- `bracket.md` enthält Bracket und Requirement Tracker.
+- `gameplan.md` erklärt, wie das Deck gespielt wird, einschließlich Win Conditions und Combos.
+- `rule-zero.md` enthält die kurze Tischkommunikation.
+
+Wenn der Nutzer ausdrücklich nur einen dieser Teile verlangt, werden nur die dafür
+benötigten Brains geladen.
 
 ### Collection ist nicht automatisch Deckbau-Constraint
 

@@ -1,89 +1,42 @@
-# Bracket Einschätzung: Frodo & Sam – Hobbit-Fest
+# Bracket: Frodo & Sam – Hobbit-Fest
 
 ## Ergebnis
 
-**Geschätztes Bracket:** 3 – Upgraded
+**Geschätztes Bracket: 3 – Upgraded**
 
-**Sicherheit:** hoch
+## Requirement Tracker
 
-## Kurzbegründung
+| Requirement | Anzahl / Wert | Grenze | Status |
+|---|---:|---:|---|
+| Game Changers | 2 | 3 | ✅ |
+| Early 2-Card Infinite Combos | 0 | 0 | ✅ |
+| Late 2-Card Infinite Combos | 0 | keine feste Grenze | ✅ |
+| Mass Land Denial | 0 | 0 | ✅ |
+| Repeatable Extra-Turn Loops | 0 | 0 | ✅ |
 
-Das Deck besitzt eine klare Food-, Token- und Hobbit-Synergie, zwölf Ramp-Beiträge, wiederholbaren Kartenvorteil und effektive Interaktion. The One Ring und Farewell sind zwei Game Changer und schließen damit Bracket 1 und 2 aus. Die Siegbedingungen sind boardabhängig, sichtbar und störbar; schnelle Endloskombos, Mass Land Denial, Extra-Turn-Schleifen und cEDH-Tutorpakete fehlen.
+## Game Changers
 
-## Game Changer Check
+**Anzahl:** 2
 
-Anzahl Game Changer: 2
-
-Gefundene Game Changer:
-
-- The One Ring
 - Farewell
+- The One Ring
 
-Auswirkung:
+## Early 2-Card Infinite Combos
 
-- Bracket 3 erlaubt bis zu drei Game Changer.
-- The One Ring dient als starke Value-Engine und ist zugleich eine zentrale Flavor-Karte.
-- Farewell ist ein flexibler Notfall-Reset, kann aber auch die eigenen Foods und Engines entfernen.
+**Anzahl:** 0
 
-## Geschwindigkeit
+Keine frühen Zwei-Karten-Endloskombos im aktuellen Deckstand erkannt.
 
-Erwarteter relevanter Sieg- oder Dominanzbereich:
+## Late 2-Card Infinite Combos
 
-- Aufbau und erste Foods: Züge 1–3
-- Commander- und Token-Engine: Züge 3–5
-- dominanter Food-/Counter-Turn: Züge 5–7
-- realistischer Combat- oder Drain-Sieg: ungefähr Züge 7–9
+**Anzahl:** 0
 
-Ein früherer Sieg über Frodo, Sauron's Bane ist theoretisch möglich, benötigt aber vier Ring-Versuchungen, die passende Manaentwicklung und erfolgreichen Kampfschaden. Die Liste kann diese Linie nicht zuverlässig in den ersten sechs Zügen erzwingen.
+Keine späten Zwei-Karten-Endloskombos im aktuellen Deckstand erkannt.
 
-## Win Conditions und Kombopotenzial
+## Weitere bracketrelevante Punkte
 
-Primäre Siegbedingungen:
+Das Deck verfügt über starke Food- und Token-Engines, gewinnt aber über ein sichtbares Board, endlichen Drain oder mehrstufige Ring-Linien. Ein realistischer spielentscheidender Zug liegt ungefähr in den Zügen 7–9. Fast Mana jenseits von Sol Ring, effiziente Tutorketten, Mass Land Denial und Extra-Turn-Schleifen fehlen.
 
-- breites Hobbit-/Tokenboard mit Pippin, Warden of Isengard
-- Night of the Sweets' Revenge als Food-basierter Overrun
-- Motivated Pony als Combat-Finisher
-- Mirkwood Bats als Token- und Food-Drain
-- Frodo, Sauron's Bane als alternative Ring-Siegbedingung
+## Bracket-Grenze
 
-Combo-Prüfung:
-
-- keine verifizierte Endloskombo
-- keine typische frühe Zwei-Karten-Endloskombination
-- keine deterministische Tutorkette
-- keine beliebig wiederholbare Mana-, Token-, Draw-, Drain- oder Extra-Turn-Schleife
-
-## Faktoren, die das Bracket erhöhen
-
-- zwei Game Changer
-- The One Ring als wiederholbare starke Draw-Engine
-- hohe Dichte synergistischer Food- und Tokenkarten
-- Mirkwood Bats bestraft Tokenproduktion und Food-Aktivierungen gleichzeitig
-- Peregrin Took, Belladonna Took und Rosie Cotton skalieren mehrere Tokenereignisse stark
-- zwölf Ramp-Beiträge und niedrige Manakurve
-- flexible Einzelinteraktion und vier Boardwipes
-
-## Faktoren, die das Bracket senken
-
-- keine Endloskombo
-- keine effizienten universellen Tutoren
-- kein Fast-Mana-Paket jenseits von Sol Ring
-- keine freie Interaktion
-- keine Mass-Land-Denial-Strategie
-- keine Extra Turns
-- Win Conditions benötigen ein entwickeltes Board oder mehrere Ring-Versuchungen
-- Kreaturen- und Artefaktremoval kann die zentralen Engines gut unterbrechen
-
-## Empfehlung
-
-Das Deck sollte als normales Bracket-3-Deck kommuniziert werden.
-
-Empfohlener Pregame-Hinweis:
-
-> Bracket-3-Hobbit- und Food-Deck mit The One Ring und Farewell als zwei Game Changers. Es gewinnt über Token-Combat, Food-Drain oder Frodo, enthält aber keine verifizierte Endloskombo.
-
-## Quellenstand
-
-- Offizielle Commander-Formatseite und Game-Changer-Liste, geprüft am 17. August 2026
-- `brains/bracket/templates.md`
-- Deckliste: `data/decks/decklists/frodo-sam-hobbit-fest.txt`
+Alle relevanten Grenzen für Bracket 3 – Upgraded werden eingehalten.

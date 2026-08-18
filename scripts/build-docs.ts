@@ -17,6 +17,19 @@ const SCRYFALL_HEADERS = {
     "Accept": "application/json",
 };
 
+const DECK_VIEW_CATEGORY_ORDER = [
+    "Commander",
+    "Creatures",
+    "Artifacts",
+    "Instants",
+    "Sorceries",
+    "Enchantments",
+    "Lands",
+    "Other",
+] as const;
+
+type DeckViewCategory = typeof DECK_VIEW_CATEGORY_ORDER[number];
+
 type DeckVariant = {
     slug: string;
     title: string;
@@ -46,14 +59,37 @@ type CommanderDoc = {
     image: CommanderImage | null;
 };
 
+type DeckViewCard = {
+    name: string;
+    quantity: number;
+    ownedQuantity: number;
+    missingQuantity: number;
+    availability: "collection" | "basic-land" | "partial" | "missing";
+    scryfallId: string | null;
+    scryfallUri: string | null;
+    imageUri: string | null;
+    backImageUri: string | null;
+    priceEur: number | null;
+    missingTotalEur: number | null;
+};
+
+type DeckView = {
+    deckSlug: string;
+    sourceDecklist: string;
+    generatedAt?: string;
+    cards: Partial<Record<DeckViewCategory, DeckViewCard[]>>;
+};
+
 type DeckDoc = {
     slug: string;
     title: string;
     commanders: CommanderDoc[];
     decklist: string | null;
+    deckView: DeckView | null;
     analysis: string | null;
     bracket: string | null;
     gameplan: string | null;
+    ruleZero: string | null;
     variants: DeckVariant[];
     versions: DeckVersion[];
 };
@@ -73,6 +109,35 @@ async function readIfExists(filePath: string): Promise<string | null> {
     try {
         return await readFile(filePath, "utf8");
     } catch {
+        return null;
+    }
+}
+
+async function readDeckView(savedDeckDir: string): Promise<DeckView | null> {
+    const raw = await readIfExists(path.join(savedDeckDir, "deck-view.json"));
+
+    if (!raw) {
+        return null;
+    }
+
+    try {
+        const parsed = JSON.parse(raw) as DeckView;
+
+        if (
+            !parsed ||
+            typeof parsed !== "object" ||
+            !parsed.cards ||
+            typeof parsed.cards !== "object"
+        ) {
+            return null;
+        }
+
+        return parsed;
+    } catch (error) {
+        console.warn(
+            `deck-view.json konnte nicht gelesen werden: ${savedDeckDir}`,
+            error,
+        );
         return null;
     }
 }
@@ -475,9 +540,11 @@ async function loadDeck(
     const savedDeckDir = path.join(SAVED_DIR, slug);
 
     const decklist = await readIfExists(decklistPath);
+    const deckView = await readDeckView(savedDeckDir);
     const analysis = await readIfExists(path.join(savedDeckDir, "analysis.md"));
     const bracket = await readIfExists(path.join(savedDeckDir, "bracket.md"));
     const gameplan = await readIfExists(path.join(savedDeckDir, "gameplan.md"));
+    const ruleZero = await readIfExists(path.join(savedDeckDir, "rule-zero.md"));
     const variants = await readVariants(savedDeckDir);
     const versions = await readVersions(savedDeckDir);
 
@@ -495,9 +562,11 @@ async function loadDeck(
         title: titleFromSlug(slug),
         commanders,
         decklist,
+        deckView,
         analysis,
         bracket,
         gameplan,
+        ruleZero,
         variants,
         versions,
     };
@@ -521,10 +590,10 @@ function renderCommanderImageContent(commander: CommanderDoc): string {
   loading="lazy"
 >
 ${
-    commander.image.owned
-        ? ""
-        : '<span class="not-owned-label">Nicht in Collection</span>'
-}`;
+            commander.image.owned
+                ? ""
+                : '<span class="not-owned-label">Nicht in Collection</span>'
+        }`;
     }
 
     return `<div class="deck-card-art-placeholder">
@@ -551,12 +620,12 @@ ${renderCommanderImageContent(commander)}
 
     return `<div class="deck-card-art deck-card-art-multi">
 ${deck.commanders
-    .map(
-        (commander) => `<div class="commander-art-part ${commander.image && !commander.image.owned ? "not-owned" : ""}">
+        .map(
+            (commander) => `<div class="commander-art-part ${commander.image && !commander.image.owned ? "not-owned" : ""}">
 ${renderCommanderImageContent(commander)}
 </div>`,
-    )
-    .join("\n")}
+        )
+        .join("\n")}
 </div>`;
 }
 
@@ -565,12 +634,14 @@ function renderIndex(decks: DeckDoc[]): string {
         .map((deck) => {
             const bracketNumber = extractBracketNumber(deck.bracket);
 
+            const ruleZeroClass = deck.ruleZero ? "badge-good" : "badge-missing";
             const analysisClass = deck.analysis ? "badge-good" : "badge-missing";
             const bracketClass = bracketNumber ? "badge-good" : "badge-missing";
             const gameplanClass = deck.gameplan ? "badge-good" : "badge-missing";
             const variantsClass = deck.variants.length > 0 ? "badge-good" : "badge-missing";
             const versionsClass = deck.decklist ? "badge-good" : "badge-missing";
 
+            const ruleZero = deck.ruleZero ? "Rule 0" : "Kein Rule 0";
             const analysis = deck.analysis ? "Analyse" : "Keine Analyse";
             const bracket = bracketNumber
                 ? `Bracket ${bracketNumber}`
@@ -587,6 +658,7 @@ function renderIndex(decks: DeckDoc[]): string {
 ${renderIndexCommanderArt(deck)}
 
   <div class="deck-card-badges">
+    <span class="badge ${ruleZeroClass}">${ruleZero}</span>
     <span class="badge ${analysisClass}">${analysis}</span>
     <span class="badge ${bracketClass}">${bracket}</span>
     <span class="badge ${gameplanClass}">${gameplan}</span>
@@ -618,7 +690,7 @@ ${renderIndexCommanderArt(deck)}
   <main class="page-width index-content">
     <header class="site-header">
       <h1>Deckübersicht</h1>
-      <p class="subtitle">Gespeicherte Decks, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
+      <p class="subtitle">Gespeicherte Decks, Rule-0-Hinweise, Analysen, Brackets, Gameplans, Varianten und Versionen.</p>
     </header>
 
     <section class="deck-grid">
@@ -682,6 +754,128 @@ ${renderMarkdown(content)}
         .join("\n");
 }
 
+function formatEur(value: number): string {
+    return `${value.toFixed(2).replace(".", ",")} €`;
+}
+
+function renderDeckViewStatus(card: DeckViewCard): string {
+    if (card.availability === "basic-land") {
+        return `<span class="deck-view-status deck-view-status-owned">Owned · Basic Land</span>`;
+    }
+
+    if (card.missingQuantity === 0) {
+        return `<span class="deck-view-status deck-view-status-owned">Owned · ${card.ownedQuantity} vorhanden</span>`;
+    }
+
+    const priceParts: string[] = [];
+
+    if (card.priceEur !== null) {
+        priceParts.push(`${formatEur(card.priceEur)} / Karte`);
+    }
+
+    if (card.missingTotalEur !== null && card.missingQuantity > 1) {
+        priceParts.push(`${formatEur(card.missingTotalEur)} gesamt`);
+    }
+
+    const priceText = priceParts.length > 0
+        ? priceParts.join(" · ")
+        : "Preis unbekannt";
+
+    const ownedText = card.ownedQuantity > 0
+        ? ` · ${card.ownedQuantity} vorhanden`
+        : "";
+
+    return `<span class="deck-view-status deck-view-status-missing">Fehlt ${card.missingQuantity}${ownedText} · ${escapeHtml(priceText)}</span>`;
+}
+
+function renderDeckViewCard(card: DeckViewCard): string {
+    const quantityLabel = card.quantity > 1
+        ? `<span class="deck-view-quantity">${card.quantity}×</span>`
+        : "";
+
+    const image = card.imageUri
+        ? `<img
+  class="deck-view-card-image"
+  src="${escapeHtml(card.imageUri)}"
+  alt="${escapeHtml(card.name)}"
+  loading="lazy"
+  width="180"
+>`
+        : `<div class="deck-view-card-placeholder">${escapeHtml(card.name)}</div>`;
+
+    const visual = card.scryfallUri
+        ? `<a
+  class="deck-view-card-link"
+  href="${escapeHtml(card.scryfallUri)}"
+  target="_blank"
+  rel="noopener noreferrer"
+>${image}</a>`
+        : image;
+
+    return `<article class="deck-view-card" data-availability="${escapeHtml(card.availability)}">
+  <div class="deck-view-card-visual">
+    ${quantityLabel}
+    ${visual}
+  </div>
+  <div class="deck-view-card-info">
+    <div class="deck-view-card-name">${escapeHtml(card.name)}</div>
+    ${renderDeckViewStatus(card)}
+  </div>
+</article>`;
+}
+
+function renderDeckViewBlock(deck: DeckDoc): string {
+    if (!deck.deckView) {
+        return `<p class="empty-content">Keine generierte Deckansicht vorhanden.</p>`;
+    }
+
+    const categories = DECK_VIEW_CATEGORY_ORDER
+        .map((category) => {
+            const cards = deck.deckView?.cards[category] ?? [];
+
+            if (cards.length === 0) {
+                return "";
+            }
+
+            const totalQuantity = cards.reduce(
+                (sum, card) => sum + card.quantity,
+                0,
+            );
+
+            return `<section class="deck-view-category">
+  <h3>${escapeHtml(category)} <span class="deck-view-category-count">(${totalQuantity})</span></h3>
+  <div class="deck-view-card-grid">
+${cards.map(renderDeckViewCard).join("\n")}
+  </div>
+</section>`;
+        })
+        .filter(Boolean)
+        .join("\n");
+
+    return categories || `<p class="empty-content">Keine Karten in der Deckansicht vorhanden.</p>`;
+}
+
+
+function renderDeckBlock(
+    decklistBlock: string,
+    deckViewBlock: string,
+): string {
+    return `<details id="deckliste" class="sub-accordion deck-sub-accordion">
+<summary>Liste</summary>
+<div class="sub-accordion-content">
+${renderMarkdown(decklistBlock)}
+</div>
+</details>
+
+<details id="deckansicht" class="sub-accordion deck-sub-accordion">
+<summary>Ansicht</summary>
+<div class="accordion-content deck-view-accordion-content">
+${deckViewBlock}
+</div>
+</details>`;
+}
+
+
 function renderMainSection(
     id: string,
     title: string,
@@ -729,16 +923,20 @@ function renderProfileCommanderImages(deck: DeckDoc): string {
 
     return `<div class="profile-commander-images">
 ${deck.commanders
-    .map(
-        (commander) => `<div class="deck-card-art ${commander.image && !commander.image.owned ? "not-owned" : ""}">
+        .map(
+            (commander) => `<div class="deck-card-art ${commander.image && !commander.image.owned ? "not-owned" : ""}">
 ${renderCommanderImageContent(commander)}
 </div>`,
-    )
-    .join("\n")}
+        )
+        .join("\n")}
 </div>`;
 }
 
 function renderDeckPage(deck: DeckDoc): string {
+    const ruleZeroBlock = deck.ruleZero
+        ? deck.ruleZero.trim()
+        : "_Kein gespeicherter Rule-0-Hinweis vorhanden._";
+
     const analysisBlock = deck.analysis
         ? deck.analysis.trim()
         : "_Keine gespeicherte Analyse vorhanden._";
@@ -751,9 +949,13 @@ function renderDeckPage(deck: DeckDoc): string {
         ? deck.gameplan.trim()
         : "_Kein gespeicherter Gameplan vorhanden._";
 
+    const deckViewBlock = renderDeckViewBlock(deck);
+
     const decklistBlock = deck.decklist
         ? `\`\`\`txt\n${deck.decklist.trim()}\n\`\`\``
         : "_Keine Deckliste vorhanden._";
+
+    const deckBlock = renderDeckBlock(decklistBlock, deckViewBlock);
 
     const variantsBlock = renderVariantsBlock(deck);
     const versionsBlock = renderVersionsBlock(deck);
@@ -807,49 +1009,52 @@ function renderDeckPage(deck: DeckDoc): string {
         ${commanderImagesHtml}
 
         <div class="profile-nav">
+          ${profileButton("#rule-zero", "Rule 0", Boolean(deck.ruleZero))}
           ${profileButton("#analyse", "Analyse", Boolean(deck.analysis))}
           ${profileButton(
-              "#bracket",
-              bracketNumber ? `Bracket ${bracketNumber}` : "Bracket",
-              Boolean(bracketNumber),
-          )}
+        "#bracket",
+        bracketNumber ? `Bracket ${bracketNumber}` : "Bracket",
+        Boolean(bracketNumber),
+    )}
           ${profileButton("#gameplan", "Gameplan", Boolean(deck.gameplan))}
-          ${profileButton("#deckliste", "Deckliste", Boolean(deck.decklist))}
+          ${profileButton("#deck", "Deck", Boolean(deck.decklist || deck.deckView))}
           ${profileButton(
-              "#varianten",
-              `${deck.variants.length} ${deck.variants.length === 1 ? "Variante" : "Varianten"}`,
-              deck.variants.length > 0,
-          )}
+        "#varianten",
+        `${deck.variants.length} ${deck.variants.length === 1 ? "Variante" : "Varianten"}`,
+        deck.variants.length > 0,
+    )}
           ${profileButton(
-              "#versionen",
-              `Version ${currentVersion}`,
-              Boolean(deck.decklist),
-          )}
+        "#versionen",
+        `Version ${currentVersion}`,
+        Boolean(deck.decklist),
+    )}
         </div>
       </div>
     </section>
 
+${renderMainSection("rule-zero", "Rule 0", ruleZeroBlock, "subsections")}
+
 ${renderMainSection("analyse", "Analyse", analysisBlock, "subsections")}
 
 ${renderMainSection(
-    "bracket",
-    bracketNumber ? `Bracket ${bracketNumber}` : "Bracket",
-    bracketBlock,
-    "subsections",
-)}
+        "bracket",
+        bracketNumber ? `Bracket ${bracketNumber}` : "Bracket",
+        bracketBlock,
+        "subsections",
+    )}
 
 ${renderMainSection("gameplan", "Gameplan", gameplanBlock, "subsections")}
 
-${renderMainSection("deckliste", "Deckliste", decklistBlock, "markdown")}
+${renderMainSection("deck", "Deck", deckBlock, "html")}
 
 ${renderMainSection("varianten", "Varianten", variantsBlock, "html")}
 
 ${renderMainSection(
-    "versionen",
-    `Versionen · aktuell ${currentVersion}`,
-    versionsBlock,
-    "html",
-)}
+        "versionen",
+        `Versionen · aktuell ${currentVersion}`,
+        versionsBlock,
+        "html",
+    )}
 
   </div>
 </body>

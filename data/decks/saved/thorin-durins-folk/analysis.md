@@ -1,67 +1,56 @@
-# Deckanalyse: Thorin – Durins Volk
+# Deckanalyse: Thorin, King of Durin's Folk
 
-## Überblick
+## Kurzprofil
 
-- Commander: Thorin, King of Durin's Folk
-- Farbidentität: Boros – Rot und Weiß
-- Deckgröße: 100 Karten inklusive Commander
-- Länder: 37, davon 21 Standardländer
-- Hauptstrategie: Zwerge / Treasure / Artefakt-Token
-- Nebenthemen: Equipment und go-wide Combat
-- Deckbuilding-Modus: automatisch, Collection-first
-- Zusatzbudget: maximal 80,00 €
-- kalkulierter Kartenpreis der 43 Ergänzungen: ca. 65,12 €
-- Geschätztes Bracket: 3 – Upgraded
-- Game Changer: 2
-- Sicherheit: hoch
+- Color Identity: Boros – Rot und Weiß
+- Hauptstrategie: Zwergen- und Treasure-Combo
+- Unterstrategien: Artefakt-Engines, Equipment und explosiver Combat
+- Geschätztes Bracket: 4 – Optimized
 
-Die Liste verwendet 36 Karten aus der Collection sowie 21 automatisch verfügbare Standardländer. Die Preiskalkulation basiert auf den am 17. August 2026 abgerufenen Scryfall-Europreisen, enthält keinen Versand und behandelt nicht bepreiste Karten konservativ über den verbleibenden Budgetpuffer.
+## Kartenpakete
 
-## Commander-Engine
+### Ramp
 
-Thorin erzeugt für jeden anderen Zwerg, der unter der eigenen Kontrolle ins Spiel kommt, einen Treasure. Gleichzeitig erhalten die anderen Zwerge für jeden kontrollierten Artefakt-Token +1/+0. Dadurch sind Treasure in diesem Deck zugleich Ramp und Combat-Verstärker. Kleine Zwerge bleiben im späteren Spiel relevant, weil sie einen Treasure erzeugen und das gesamte Team vergrößern.
+Sol Ring, Mana Vault, Chrome Mox, Mox Diamond, Mox Amber, Arcane Signet, Boros Signet, Fellwar Stone und Talisman of Conviction beschleunigen den fünf Mana teuren Commander. Ancient Tomb und Gemstone Caverns erhöhen das frühe Tempo. Thorin, Magda, Professional Face-Breaker, Xorn und Treasure-Trigger übernehmen anschließend die weitere Manaentwicklung.
 
-## Ramp und Manabasis
+### Card Advantage
 
-Zehn direkte Ramp- oder Mana-Beiträge sind Sol Ring, Arcane Signet, Fellwar Stone, Wayfarer's Bauble, Boros Signet, Talisman of Conviction, Mind Stone, Liquimetal Torque, Big Score und Unexpected Windfall. Thorin, Magda, Dwarven Provisioner und Smaug ergänzen das Paket mit weiteren Treasures.
+Esper Sentinel, Archivist of Oghma, Trouble in Pairs, The One Ring, Skullclamp, Wheel of Fortune und Birgis Rückseite Harnfel liefern unabhängigen Kartennachschub. Kíli the Resourceful und Professional Face-Breaker verbinden den Zwergen-/Treasure-Plan mit zusätzlicher Auswahl.
 
-Die 37-Länder-Manabasis besitzt genügend rote und weiße Quellen. Path of Ancestry unterstützt den Stamm, Rogue's Passage hilft einem großen Angreifer und The Lonely Mountain ist ein thematischer später Mana-Payoff.
+### Targeted Interaction
 
-## Kartenvorteil
+Swords to Plowshares, Path to Exile und Wear // Tear beantworten zentrale Permanents. Pyroblast, Red Elemental Blast und Silence sichern Combo-Züge gegen blaue beziehungsweise allgemeine Stack-Interaktion ab. Deflecting Swat, Boros Charm, Flawless Maneuver und Teferi's Protection schützen Commander, Combo-Teile oder Board.
 
-- Kíli the Resourceful zieht durch Zwerge oder Equipment einmal pro Zug.
-- Ori, Plate Stacker belohnt das Artefaktspiel.
-- Mask of Memory und The Reaver Cleaver belohnen erfolgreichen Combat.
-- Skullclamp verwertet kleine Kreaturen nach einem Boardwipe oder Block.
-- Professional Face-Breaker erzeugt Treasure und wandelt sie in Karten um.
-- The One Ring ist die stärkste unabhängige Draw-Engine.
-- Big Score und Unexpected Windfall filtern schwache Handkarten und erzeugen Treasures.
+### Mass Interaction
 
-## Interaktion
+Blasphemous Act räumt Kreaturenboards günstig. Vandalblast entfernt gegnerische Artefakte asymmetrisch und lässt Thorins eigenes Treasure-/Artefaktpaket bestehen.
 
-Swords to Plowshares, Path to Exile, Dispatch, Generous Gift und Chaos Warp beantworten einzelne Schlüssel-Permanents. Vandalblast bekämpft Artefakte; Bilbo's Gambit und Boros Charm schützen das eigene Board. Blasphemous Act und Farewell sind die Notfall-Resets. The Eagles Are Coming! kann wichtige eigene Kreaturen vor Removal retten.
+### Schutz und Resilienz
 
-## Siegbedingungen
+Lightning Greaves schützt Thorin oder Magda und ermöglicht sofortige Tap-/Combat-Linien. Boros Charm, Flawless Maneuver und Teferi's Protection schützen das Board. Sevinne's Reclamation bringt günstige Combo-Teile wie Clock of Omens, Cloudstone Curio, Impact Tremors oder Altar of the Brood zurück.
 
-1. Mehrere Zwerge ausspielen, Treasure sammeln und mit Thorins statischem Bonus breit angreifen.
-2. Einen einzelnen Zwerg mit The Reaver Cleaver, Orcrist oder anderem Equipment zum großen Angreifer ausbauen.
-3. Smaug the Magnificent erzeugt dauerhaft Treasure und wandelt eine große Treasure-Zahl beim Angriff in direkten Schaden um.
-4. Xorn, Magda und Professional Face-Breaker beschleunigen den Treasure-Plan und sorgen nach einem gestoppten Angriff für Folgekarten.
+### Engines
 
-## Schwächen
+Thorin wandelt jeden eigenen Zwerg-ETB in Treasure um und verstärkt andere Zwerge anhand der Artefakt-Token. Magda verbindet das Tappen von Zwergen mit Treasure und einem eingebauten Tutor. Cloudstone Curio recycelt günstige Zwerge; Clock of Omens verwandelt Artifact Dwarves in eine Loop-Engine.
 
-- Thorin ist für den explosivsten Aufbau wichtig und wird nach mehrmaligem Entfernen teuer.
-- Boardwipes treffen den Zwergenplan deutlich.
-- Treasure-Hate und Artefakt-Boardwipes reduzieren gleichzeitig Mana und Angriffsstärke.
-- Die Liste besitzt keine frühe deterministische Combo und muss ihre Siege über ein sichtbares Board vorbereiten.
+### Enabler
 
-## Preisstand
+Enlightened Tutor, Gamble, Imperial Recruiter, Recruiter of the Guard, Dwarven Recruiter und Steelshaper's Gift finden Combo- oder Schutzteile. Universal Automaton, Adaptive Automaton und Metallic Mimic sind Artifact Dwarves für Magda und Clock of Omens. Duergar Assailant und Staunch Shieldmate bilden das günstige Curio-Paar.
 
-Teuerste geplante Ergänzungen sind Thorin, King of Durin's Folk, Xorn, Skullclamp, Magda, Brazen Outlaw, Fíli and Kíli, Joyous und Professional Face-Breaker. Sehr teure Optionen wie Dáin, of the Ancient Halls und Thorin, the Company's Leader wurden bewusst nicht aufgenommen, damit die Liste unter 80 € bleibt.
+### Payoffs
 
-## Quellenstand
+Impact Tremors, Reckless Fireweaver und Altar of the Brood wandeln wiederholte Kreaturen- beziehungsweise Treasure-ETBs direkt in Siege um. Dualcaster Mage mit Twinflame erzeugt beliebig viele Angreifer. Aggravated Assault mit Sword of Feast and Famine erzeugt wiederholte Kampfphasen. Shared Animosity bleibt der faire Combat-Finisher.
 
-- EDHREC-Commanderprofil für Thorin, geprüft am 17. August 2026
-- Scryfall-Kartendaten und Europreise, geprüft am 17. August 2026
-- lokale Commander-Regel- und Game-Changer-Daten
+## Stärken
 
+- mehrere überlappende Combo-Pakete mit tutorbaren Einzelteilen
+- Commander, Magda und Artifact Dwarves teilen zahlreiche Synergie-Slots
+- starke Schutzdichte für entscheidende Board- und Combo-Züge
+- kann auch ohne Combo über Treasure-verstärkte Zwerge gewinnen
+
+## Schwächen und Risiken
+
+- Artefakt-Hate trifft Mana, Combo-Teile und Thorins Team-Bonus gleichzeitig
+- mehrere commanderbasierte Linien benötigen drei oder mehr Karten und sichtbaren Boardstate
+- Boros hat weniger Stack-Interaktion als Grixis und muss Silence-/Schutzfenster präzise nutzen
+- der stärkste faire Spielplan bleibt abhängig vom fünf Mana teuren Commander

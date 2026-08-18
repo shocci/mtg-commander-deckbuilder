@@ -1,0 +1,102 @@
+// COMMANDER
+1 Terra, Magical Adept // Esper Terra
+
+1 An Offer You Can't Refuse
+1 Arcane Denial
+1 Arcane Signet
+1 Battlefield Forge
+1 Beseech the Mirror
+1 Binding the Old Gods
+1 Birds of Paradise
+1 Blasphemous Act
+1 Blood Crypt
+1 Bloom Tender
+1 Boros Charm
+1 Bountiful Promenade
+1 Brushland
+1 Canopy Vista
+1 Chord of Calling
+1 Chromatic Lantern
+1 Cinder Glade
+1 City of Brass
+1 Clash of the Eikons
+1 Command Tower
+1 Copy Enchantment
+1 Court of Vantress
+1 Damn
+1 Diabolic Intent
+1 Doppelgang
+1 Dovin's Veto
+1 Eidolon of Blossoms
+1 Enchantress's Presence
+1 Exotic Orchard
+1 Extinguish All Hope
+1 Fabled Passage
+1 Farewell
+1 Farseek
+1 Fertile Ground
+1 Finale of Devastation
+1 Flawless Maneuver
+1 Flooded Grove
+1 Forest
+1 Forest
+1 Forest
+1 Gamble
+1 Garnet, Princess of Alexandria
+1 Grasp of Fate
+1 Hall of Heliod's Generosity
+1 Hallowed Fountain
+1 Heroic Intervention
+1 Island
+1 Jukai Naturalist
+1 Karn's Bastion
+1 Ketria Triome
+1 Llanowar Wastes
+1 Mountain
+1 Nature's Claim
+1 Nature's Lore
+1 Nesting Grounds
+1 O'aka, Traveling Merchant
+1 Overgrown Tomb
+1 Path of Ancestry
+1 Path to Exile
+1 Plains
+1 Prairie Stream
+1 Resourceful Defense
+1 Rejuvenating Springs
+1 Rite of Replication
+1 Rydia, Summoner of Mist
+1 Sacred Foundry
+1 Sanctum Weaver
+1 Second Harvest
+1 Setessan Champion
+1 Smothering Tithe
+1 Sol Ring
+1 Starting Town
+1 Steam Vents
+1 Stomping Ground
+1 Stroke of Midnight
+1 Summon: Bahamut
+1 Summon: Esper Valigarmanda
+1 Summon: Fenrir
+1 Summon: Primal Odin
+1 Summon: Titan
+1 Summon: Valefor
+1 Summon: Yojimbo
+1 Summoner's Grimoire
+1 Swamp
+1 Swan Song
+1 Swords to Plowshares
+1 Temple Garden
+1 The Apprentice's Folly
+1 Three Blind Mice
+1 Three Visits
+1 Tidus, Yuna's Guardian
+1 Underground River
+1 Undergrowth Stadium
+1 Utopia Sprawl
+1 Weaver of Harmony
+1 Wild Growth
+1 Yavimaya Coast
+1 Yenna, Redtooth Regent
+1 Yuna, Hope of Spira

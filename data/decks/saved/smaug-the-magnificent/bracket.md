@@ -1,32 +1,41 @@
-# Bracket Einschätzung: Smaug the Magnificent – Treasure-Drache
+# Bracket: Smaug the Magnificent
 
 ## Ergebnis
 
-**Geschätztes Bracket:** 3 – Upgraded
+**Geschätztes Bracket: 3 – Upgraded**
 
-**Sicherheit:** hoch
+## Requirement Tracker
 
-## Kurzbegründung
+| Requirement | Anzahl / Wert | Grenze | Status |
+|---|---:|---:|---|
+| Game Changers | 1 | 3 | ✅ |
+| Early 2-Card Infinite Combos | 0 | 0 | ✅ |
+| Late 2-Card Infinite Combos | 0 | keine feste Grenze | ✅ |
+| Mass Land Denial | 0 | 0 | ✅ |
+| Repeatable Extra-Turn Loops | 0 | 0 | ✅ |
 
-Die Liste ist ein fokussiertes Treasure-Deck mit mehreren skalierenden Burn-Engines, solider Beschleunigung und einem klaren Commander-Finish. The One Ring ist der einzige Game Changer. Schnelle Endloskombos, Mass Land Denial, Extra-Turn-Schleifen und effiziente Tutorketten fehlen.
+## Game Changers
 
-## Game Changer Check
-
-Anzahl Game Changer: 1
+**Anzahl:** 1
 
 - The One Ring
 
-## Geschwindigkeit und Win Conditions
+## Early 2-Card Infinite Combos
 
-- Mana und erste Treasure: Züge 1–3
-- Smaug oder zentrale Treasure-Engine: Züge 4–6
-- realistischer spielentscheidender Smaug-/Burn-Zug: ungefähr Züge 7–9
+**Anzahl:** 0
 
-Hellkite Tyrants alternative Siegbedingung ist offen sichtbar und verlangt 20 Artefakte bis zum eigenen Upkeep. Die Liste enthält keine verifizierte Endlosschleife.
+Keine frühen Zwei-Karten-Endloskombos im aktuellen Deckstand erkannt.
 
-## Empfehlung
+## Late 2-Card Infinite Combos
 
-Empfohlener Pregame-Hinweis:
+**Anzahl:** 0
 
-> Bracket-3-Treasure-Deck mit The One Ring als einzigem Game Changer. Es gewinnt über Smaugs Angriffsschaden, Artefakt-Burn oder Hellkite Tyrant und enthält keine verifizierte Endloskombo.
+Keine späten Zwei-Karten-Endloskombos im aktuellen Deckstand erkannt.
 
+## Weitere bracketrelevante Punkte
+
+Treasure-Engines und mehrere Burn-Payoffs können explosive, aber endliche Züge erzeugen. Ein realistischer spielentscheidender Smaug-, Brass's-Bounty- oder Hellkite-Tyrant-Zug liegt ungefähr in den Zügen 7–9. Die Liste enthält kein Tutorpaket, keine kompakte Endloskombo, kein Mass Land Denial und keine wiederholbaren Extra Turns.
+
+## Bracket-Grenze
+
+Alle relevanten Grenzen für Bracket 3 – Upgraded werden eingehalten.

@@ -1,4 +1,4 @@
-# Bracket: The Great Goblin
+# Bracket: Terra, Magical Adept – Esper Encore
 
 ## Ergebnis
 
@@ -8,7 +8,7 @@
 
 | Requirement | Anzahl / Wert | Grenze | Status |
 |---|---:|---:|---|
-| Game Changers | 0 | 3 | ✅ |
+| Game Changers | 3 | 3 | ✅ |
 | Early 2-Card Infinite Combos | 0 | 0 | ✅ |
 | Late 2-Card Infinite Combos | 0 | keine feste Grenze | ✅ |
 | Mass Land Denial | 0 | 0 | ✅ |
@@ -16,9 +16,11 @@
 
 ## Game Changers
 
-**Anzahl:** 0
+**Anzahl:** 3
 
-Keine Game Changers im aktuellen Deckstand erkannt.
+- Farewell
+- Gamble
+- Smothering Tithe
 
 ## Early 2-Card Infinite Combos
 
@@ -34,7 +36,7 @@ Keine späten Zwei-Karten-Endloskombos im aktuellen Deckstand erkannt.
 
 ## Weitere bracketrelevante Punkte
 
-Krenko, Skullclamp, Goblin Matron, Goblin Bombardment und die Opfer-Payoffs machen das Deck fokussierter und explosiver als ein Core-Deck. Die Siege bleiben jedoch boardabhängig und sichtbar; ein spielentscheidender Combat- oder Opferzug ist ungefähr in den Zügen 7–9 realistisch. Fast Mana jenseits von Sol Ring, kompakte Endloskombos, Mass Land Denial und Extra-Turn-Schleifen fehlen.
+Die Liste steht mit drei Game Changers genau an der Obergrenze von Bracket 3. Beseech the Mirror, Diabolic Intent, Chord of Calling und Finale of Devastation erhöhen zusammen mit Gamble die Konsistenz; Flawless Maneuver und die günstigen Counterspells liefern effizienten Schutz. Terra plus Summon: Primal Odin ist eine endliche Zwei-Karten-Finisher-Linie gegen einen Spieler, aber weder eine Endloskombo noch ein garantierter Tischsieg. Ohne Fast-Mana-Paket und kompakte Combo liegt der realistische spielentscheidende Bereich ungefähr in den Zügen 6–8.
 
 ## Bracket-Grenze
 
