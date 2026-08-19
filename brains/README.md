@@ -44,7 +44,7 @@ Danach über die folgende Tabelle routen.
 | Deck automatisch bauen                                       | `deckbuilding`, `bracket`, `rules`                                 | Automatic Workflow; Collection nur wenn Auftrag dies verlangt                          |
 | Deck aus/mit Collection bauen                                | `collection`, `deckbuilding`, `bracket`, `rules`                   | `data/collection.json` oder ManaBox-Import                                             |
 | Commander aus Collection auswählen                           | `collection`, `rules`                                              | Collection; bei Popularität ggf. aktuelle Community-Daten                              |
-| Deck vollständig analysieren                                 | `deck-analysis`, `gameplan`, `bracket`, `rule-zero`, `rules`       | betroffene Deckliste; erzeugt getrennte Arbeitsstände                                  |
+| Deck vollständig analysieren                                 | `deck-analysis`, `gameplan`, `bracket`, `rule-zero`, `collection`, `rules` | betroffene Deckliste; `data/collection.json`; erzeugt getrennte Arbeitsstände sowie Deck View und Einkaufsliste |
 | nur Deckanalyse erstellen                                    | `deck-analysis`, `bracket`, `rules`                                | betroffene Deckliste                                                                   |
 | Gameplan für vorhandenes Deck                                | `gameplan`, `rules`                                                | betroffene Deckliste; vorhandene Analyse verwenden, wenn verfügbar                     |
 | Bracket bestimmen                                            | `bracket`, `rules`                                                 | Deckliste; erkannte Combo-Linien berücksichtigen                                       |
@@ -74,6 +74,8 @@ analysis.md
 bracket.md
 gameplan.md
 rule-zero.md
+deck-view.json
+shopping-list.md
 ```
 
 Die Inhalte dürfen sich nicht unnötig wiederholen.
@@ -84,6 +86,19 @@ Dabei gilt:
 - `bracket.md` enthält Bracket und Requirement Tracker.
 - `gameplan.md` erklärt, wie das Deck gespielt wird, einschließlich Win Conditions und Combos.
 - `rule-zero.md` enthält die kurze Tischkommunikation.
+- `deck-view.json` enthält die aus Deckliste, Collection und aktuellen Kartendaten abgeleiteten Darstellungsdaten.
+- `shopping-list.md` enthält alle tatsächlich fehlenden Karten mit benötigter Menge, vorhandenem Bestand, Kaufmenge und – wenn verlässlich verfügbar – aktuellen EUR-Preisen.
+
+Bei einer vollständigen Deckanalyse ist `collection/templates.md` verpflichtend mit auszuführen.
+
+Beim ausdrücklichen Speichern einer vollständigen Deckanalyse werden daher immer auch
+`deck-view.json` und `shopping-list.md` erzeugt.
+
+`shopping-list.md` wird auch dann erzeugt, wenn keine Karten fehlen. In diesem Fall
+wird festgehalten, dass aktuell keine Karten gekauft werden müssen.
+
+Wenn für eine fehlende Karte kein verlässlicher aktueller EUR-Preis verfügbar ist,
+wird `Preis unbekannt` verwendet. Preise dürfen nicht geschätzt werden.
 
 Wenn der Nutzer ausdrücklich nur einen dieser Teile verlangt, werden nur die dafür
 benötigten Brains geladen.

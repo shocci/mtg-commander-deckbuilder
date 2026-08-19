@@ -1,4 +1,4 @@
-# Bracket: Sauron, the Dark Lord – v003
+# Bracket: Sauron, the Dark Lord
 
 ## Ergebnis
 
@@ -10,7 +10,7 @@
 |---|---:|---:|---|
 | Game Changers | 1 | unbegrenzt | ✅ |
 | Early 2-Card Infinite Combos | 1 | erlaubt | ✅ |
-| Weitere Infinite-/Loop-Combos | 0 | erlaubt | ✅ |
+| Late 2-Card Infinite Combos | 4 | erlaubt | ✅ |
 | Mass Land Denial | 0 | erlaubt | ✅ |
 | Repeatable Extra-Turn Loops | 0 | erlaubt | ✅ |
 
@@ -20,20 +20,36 @@
 
 - The One Ring
 
-## Infinite-Combo
+## Early 2-Card Infinite Combos
 
-- Dualcaster Mage + Twinflame erzeugt mit einer weiteren eigenen Kreatur als anfänglichem Ziel beliebig viele Dualcaster-Mage-Token mit Eile.
+**Anzahl:** 1
+
+- Dualcaster Mage + Twinflame
+
+Die Linie benötigt fünf Mana und eine weitere eigene Kreatur als ursprüngliches Ziel für Twinflame. Sie erzeugt beliebig viele Dualcaster-Mage-Token mit Haste und kann deshalb unmittelbar über Kampf gewinnen.
+
+## Late 2-Card Infinite Combos
+
+**Anzahl:** 4
+
+- Niv-Mizzet, Parun + Curiosity
+- Niv-Mizzet, Parun + Ophidian Eye
+- Niv-Mizzet, Parun + Tandem Lookout
+- Niv-Mizzet, Parun + transformierter Kefka, Ruler of Ruin
+
+Diese Linien sind durch Niv-Mizzets sechs farbintensive Manasymbole, weitere Setup-Kosten und einen benötigten Starttrigger deutlich langsamer als Dualcaster Mage plus Twinflame. Die Draw-/Damage-Loops sind durch die verbleibende Bibliothek begrenzt, im normalen Spielzustand aber regelmäßig spielbeendend.
 
 ## Weitere bracketrelevante Punkte
 
-- Niv-Mizzet, Parun mit Curiosity oder Ophidian Eye erzeugt wiederholtes Kartenziehen und Schaden, ist aber durch die Bibliotheksgröße begrenzt und wird nicht als echte Infinite-Combo gezählt.
-- Das Deck spielt keine extremen Fast-Mana-Karten, keine kostenlose Premium-Interaktion und nur wenige Tutoren.
-- Der faire Zweitplan über Sauron, Amass und Combat ist deutlich langsamer als die Combo.
-- Die frühe Zwei-Karten-Infinite-Combo setzt die Liste trotz Budgetbau in Bracket 4.
+- Keine Mass-Land-Denial-Strategie erkannt.
+- Keine wiederholbare Extra-Turn-Schleife erkannt.
+- Keine cEDH-Orientierung erkannt.
+- Die Tutor-Dichte ist mit Diabolic Tutor und Solve the Equation niedrig.
+- Die Liste kann mit Dualcaster Mage und Twinflame ab fünf verfügbarem Mana gewinnen, stellt diese Linie aber nicht konsistent früh zusammen.
+- Bracket 3 – Upgraded wird wegen der geplanten frühen Zwei-Karten-Combo nicht eingehalten.
 
-## Budget
+## Bracket-Grenze
 
-- Fehlende Karten: 20
-- Geschätzte Zukaufssumme: 58,72 €
-- Karten ohne EUR-Preis: 0
-- Preisstand: 2026-08-18
+Alle relevanten Grenzen für Bracket 4 – Optimized werden eingehalten.
+
+Die frühe Zwei-Karten-Combo überschreitet die Grenze von Bracket 3 – Upgraded. Daraus ergibt sich mindestens Bracket 4 – Optimized.

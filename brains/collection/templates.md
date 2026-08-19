@@ -134,8 +134,8 @@ Mindestens ausgeben:
 
 # Decklisten-Abgleich
 
-Für gespeicherte oder darzustellende Decks kann aus der unveränderten
-ManaBox-Deckliste eine angereicherte Deckansicht erzeugt werden.
+Beim Analysieren und Speichern eines Decks erzeugt die KI aus der
+unveränderten ManaBox-Deckliste eine angereicherte Deckansicht.
 
 Die originale Deckliste unter
 
@@ -146,30 +146,54 @@ data/decks/decklists/[deck-slug].txt
 bleibt dabei unverändert und ist weiterhin die Quelle für den
 Deckinhalt.
 
-Die angereicherte Ansicht wird unter
+Die KI legt die angereicherte Ansicht unter
 
 ```text
 data/decks/saved/[deck-slug]/deck-view.json
 ```
 
-abgelegt.
+ab.
 
 `deck-view.json` ist abgeleitete Darstellungsinformation und keine
 zweite Deckliste.
 
+Die Erzeugung ist Teil des KI-gesteuerten Deckanalyse-/Speicherprozesses.
+Sie darf nicht voraussetzen, dass `build-deck-view.ts` oder ein anderes
+separates Generierungsskript ausgeführt wird. Ebenso besteht keine
+Abhängigkeit von einer separaten Scryfall-API-, Bulk-Data- oder
+Cache-Pipeline. Benötigte aktuelle Kartendaten ermittelt und prüft die KI
+unmittelbar während dieses Prozesses. Dafür werden keine vollständigen
+Scryfall-Datensätze im Projekt zwischengespeichert.
+
 ## Abgleich
 
-Für jede Karte der Deckliste wird geprüft:
+Die KI verarbeitet jede Karte der Deckliste einzeln und:
+
+1. löst Kartenname und Kartenidentität eindeutig auf,
+2. liest die benötigte Anzahl aus der Deckliste,
+3. prüft die vorhandene Anzahl direkt gegen `data/collection.json`,
+4. behandelt Basic Lands gemäß der Basic-Land-Regel automatisch als
+   vollständig vorhanden,
+5. berechnet die tatsächlich fehlende und zu kaufende Anzahl,
+6. ermittelt die für die Kartendarstellung benötigten Daten,
+7. ordnet die Karte einer Kategorie der grafischen Deckansicht zu,
+8. schreibt das Ergebnis in
+   `data/decks/saved/[deck-slug]/deck-view.json`.
+
+Zu den benötigten Kartendarstellungsdaten gehören mindestens:
 
 - Kartenname und Kartenidentität
-- benötigte Anzahl
-- vorhandene Anzahl in `data/collection.json`
-- fehlende Anzahl
-- automatische Verfügbarkeit als Basic Land
-- Scryfall-Kartenseite
-- Kartenbild
-- aktueller EUR-Preis für fehlende Karten, wenn zuverlässig verfügbar
+- benötigte, vorhandene und fehlende Anzahl
+- Besitzstatus
+- direkter Scryfall-Link
+- geeignetes Kartenbild und, falls eindeutig verfügbar, Rückseitenbild
+- aktueller EUR-Preis pro fehlendem Exemplar, wenn zuverlässig verfügbar
+- Gesamtpreis der fehlenden Exemplare, wenn der Einzelpreis bekannt ist
 - Kartenkategorie für die grafische Ansicht
+
+Wenn Kartendaten nicht eindeutig oder zuverlässig bestimmt werden können,
+darf die KI sie nicht raten. Sie setzt die betroffenen optionalen Werte auf
+`null` und erhält die Unsicherheit für die weitere Verarbeitung.
 
 Die Collection wird für jedes Deck unabhängig geprüft.
 
@@ -200,19 +224,85 @@ Bei `partial` und `missing` muss die fehlende Anzahl angegeben werden.
 
 Preise werden nur für fehlende Karten bzw. fehlende Exemplare benötigt.
 
-Wenn ein aktueller EUR-Preis zuverlässig verfügbar ist, können angegeben
-werden:
+Die KI verwendet ausschließlich verlässliche, zum Zeitpunkt des
+Deckanalyse-/Speicherprozesses aktuelle EUR-Preise. Preise dürfen weder
+geschätzt noch aus einer anderen Währung pauschal umgerechnet werden.
+
+Wenn ein aktueller EUR-Preis zuverlässig verfügbar ist, werden angegeben:
 
 - Preis pro fehlendem Exemplar
 - Gesamtpreis der fehlenden Exemplare
 
 Wenn kein verlässlicher aktueller EUR-Preis verfügbar ist, darf kein Preis
-geraten werden.
+geraten werden. Dann werden `priceEur` und `missingTotalEur` in
+`deck-view.json` als `null` gespeichert und in der Einkaufsliste
+`Preis unbekannt` ausgegeben.
 
-Dann wird der Preis als `null` gespeichert.
+Preise sind nur eine Momentaufnahme des Analyse-/Speicherzeitpunkts und
+keine persistente Preisquelle des Projekts.
 
-Preise sind nur eine Momentaufnahme und keine persistente Preisquelle des
-Projekts.
+---
+
+# Einkaufsliste
+
+Beim selben Deckanalyse-/Speicherprozess erzeugt die KI zusätzlich:
+
+```text
+data/decks/saved/[deck-slug]/shopping-list.md
+```
+
+Die Datei enthält ausschließlich Karten, die nach dem Abgleich mit
+`data/collection.json` tatsächlich gekauft werden müssen. Eine Karte wird
+aufgenommen, wenn ihre fehlende Anzahl größer als null ist. Automatisch
+verfügbare Basic Lands und vollständig vorhandene Karten werden nicht
+aufgeführt.
+
+Für jede zu kaufende Karte enthält die Tabelle:
+
+- Karte
+- benötigt
+- vorhanden
+- kaufen
+- Preis pro Stück
+- Gesamtpreis
+
+`kaufen` entspricht immer der fehlenden Anzahl. Der Kartenname wird mit der
+eindeutig ermittelten direkten Scryfall-Kartenseite verlinkt. Kann kein
+eindeutiger Scryfall-Link bestimmt werden, bleibt der Kartenname unverlinkt
+und die Unsicherheit wird kenntlich gemacht; ein Link darf niemals geraten
+werden.
+
+Die Einkaufsliste verwendet dieses Format:
+
+```md
+# Einkaufsliste: [Deckname]
+
+Stand: [YYYY-MM-DD]
+
+| Karte | Benötigt | Vorhanden | Kaufen | Preis/Stk. | Gesamt |
+|---|---:|---:|---:|---:|---:|
+| [Rhystic Study](https://scryfall.com/...) | 1 | 0 | 1 | 39,50 € | 39,50 € |
+| [Beispielkarte](https://scryfall.com/...) | 2 | 1 | 1 | Preis unbekannt | Preis unbekannt |
+
+## Geschätzte Gesamtkosten
+
+**Bekannte Zwischensumme: 39,50 €**
+
+Für 1 zu kaufendes Exemplar fehlt ein verlässlicher aktueller EUR-Preis.
+Die tatsächlichen Gesamtkosten sind daher nicht vollständig bekannt.
+```
+
+Für die Summierung gelten zwingend folgende Regeln:
+
+- Die bekannte Zwischensumme enthält nur Positionen mit verlässlichem
+  aktuellem EUR-Preis.
+- Positionen mit `Preis unbekannt` werden nicht mit `0,00 €` angesetzt.
+- Sobald mindestens ein Preis fehlt, wird die Summe als
+  `Bekannte Zwischensumme` bezeichnet und ausdrücklich darauf hingewiesen,
+  dass die tatsächlichen Gesamtkosten nicht vollständig bekannt sind.
+- Nur wenn alle Preise bekannt sind, darf die Summe als
+  `Geschätzte Gesamtkosten` ohne Einschränkung ausgewiesen werden.
+- Preise und Summen werden niemals geschätzt.
 
 ## Scryfall-Links
 

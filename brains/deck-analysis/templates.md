@@ -88,6 +88,8 @@ Vor Erstellung der Analyse müssen folgende Punkte geprüft werden:
 4. Kartenrollen und Kartenpakete bestimmen:
    - Ramp
    - Card Advantage
+   - Card Draw & Selection
+   - Tutors
    - Targeted Interaction
    - Mass Interaction
    - Schutz und Resilienz
@@ -251,7 +253,33 @@ jede Karte ausschließlich einer einzigen Kategorie zuzuordnen.
 
 ### Card Advantage
 
-[Kurze Bewertung von Draw, Card Advantage und relevanten Engines.]
+[Kurze Bewertung allgemeiner Card-Advantage-Strukturen und relevanter Engines.]
+
+### Card Draw & Selection
+
+[Kurze Bewertung der konkreten Karten für Kartennachschub und Kartenauswahl.]
+
+Dabei berücksichtigen:
+
+- permanenter Draw
+- einmaliger Draw
+- Looting / Filtering / Selection
+- Impulse Draw
+- sonstige Card-Advantage-Engines
+
+### Tutors
+
+[Kurze Bewertung der Tutor-Struktur.]
+
+Dabei berücksichtigen:
+
+- Anzahl der Tutoren
+- Suchbereich der einzelnen Tutoren
+- Flexibilität der Tutoren
+- grob, welche Kartentypen oder Funktionsbereiche sie suchen können
+
+Konkrete Tutor-Ziele und die Frage „Was suche ich wann?“ gehören nicht
+in `analysis.md`, sondern in den Gameplan.
 
 ### Targeted Interaction
 

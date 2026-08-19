@@ -21,6 +21,8 @@ Für die Erstellung des Gameplans werden verwendet:
 - die aktuelle Deckliste unter `data/decks/decklists/[deck-slug].txt`
 - die Ergebnisse der Deckanalyse
 - erkannte Engines und Synergien
+- erkannte Draw-, Selection- und Card-Advantage-Strukturen
+- erkannte Tutoren und deren tatsächliche Suchbereiche
 - verifizierte Win Conditions und Combo-Linien
 - `brains/rules/magic-rules.md` für regelabhängige Interaktionen
 
@@ -42,10 +44,12 @@ Vor Erstellung des Gameplans müssen folgende Punkte bestimmt werden:
 4. Was sind die wichtigsten Ziele im Early Game?
 5. Was sind die wichtigsten Ziele im Mid Game?
 6. Was sind die wichtigsten Ziele im Late Game?
-7. Welche Engines treiben den Spielplan dauerhaft an?
-8. Welche Win Conditions besitzt das Deck?
-9. Welche Combo-Linien sind im aktuellen Deck tatsächlich vorhanden?
-10. Welche typischen Fehler oder wichtigen Entscheidungen sollte ein Spieler kennen?
+7. Welche Draw-, Selection- oder Card-Advantage-Effekte halten den Ressourcenfluss aufrecht?
+8. Welche Engines treiben den Spielplan dauerhaft an?
+9. Welche Tutoren besitzt das Deck, was können sie tatsächlich suchen und welche Ziele sind je nach Spielsituation sinnvoll?
+10. Welche Win Conditions besitzt das Deck?
+11. Welche Combo-Linien sind im aktuellen Deck tatsächlich vorhanden?
+12. Welche typischen Fehler oder wichtigen Entscheidungen sollte ein Spieler kennen?
 
 ---
 
@@ -113,6 +117,25 @@ Er soll beantworten:
 
 ---
 
+## Kartenziehen und Ressourcenfluss
+
+Dieser Abschnitt beschreibt praktisch, wie das Deck über mehrere Züge genügend
+Karten und Auswahl behält.
+
+Er soll keine erneute Analyse aller Draw-Karten enthalten, sondern beantworten:
+
+- Welche permanenten Draw- oder Card-Advantage-Engines sollten möglichst früh aufgebaut werden?
+- Welche einmaligen Draw-Effekte sollten eher früh, im Mid Game oder erst bei knapper Hand genutzt werden?
+- Welche Looting-, Filtering-, Selection- oder Impulse-Draw-Effekte helfen beim Finden bestimmter Karten?
+- Welche Ressourcen sollten nicht unnötig in einen Zug investiert werden, wenn dadurch die Hand leerläuft?
+- Welche Draw- oder Selection-Effekte sind besonders wichtig nach einem Rückschlag?
+- Wie verändert sich der Ressourcenplan zwischen Early, Mid und Late Game?
+
+Wenn ein Effekt mehrere Rollen erfüllt, soll seine praktische Nutzung im Deckkontext
+beschrieben werden.
+
+---
+
 ## Wichtige Engines
 
 Nur zentrale Engines sollen hier aufgeführt werden.
@@ -134,6 +157,57 @@ Für jede relevante Engine:
 - ...
 
 Keine vollständige Kartenanalyse wiederholen.
+
+---
+
+## Tutoren und Tutor-Ziele
+
+Dieser Abschnitt beschreibt nicht nur, welche Tutoren vorhanden sind,
+sondern vor allem:
+
+**Was suche ich wann?**
+
+Für jeden relevanten Tutor soll geprüft werden:
+
+- was der Tutor laut aktuellem Kartentext tatsächlich suchen kann
+- wie flexibel oder eingeschränkt der Suchbereich ist
+- ob die gesuchte Karte auf die Hand, oben auf die Bibliothek, ins Spiel,
+  in den Friedhof oder an einen anderen Ort gelegt wird
+- welche typischen Ziele im aktuellen Deck für verschiedene Spielsituationen sinnvoll sind
+
+Typische Zielgruppen können sein:
+
+- Mana oder Fixing
+- frühe Engine
+- Card Advantage
+- Enabler
+- Interaktion
+- Schutz
+- Recovery
+- Combo-Piece
+- Finisher oder Win Condition
+
+Die Empfehlungen müssen situationsabhängig formuliert werden.
+
+Beispiele:
+
+- **Wenn Mana oder Farben fehlen:** [passendes Ziel]
+- **Wenn der Spielplan aufgebaut werden soll:** [Engine / Enabler]
+- **Wenn ein Gegner unmittelbar droht zu gewinnen:** [Interaktion]
+- **Wenn die eigene Engine geschützt werden muss:** [Schutz]
+- **Wenn eine Combo oder Win Condition vorbereitet werden kann:** [Combo-Piece / Wincon]
+- **Nach einem Boardwipe oder Rückschlag:** [Recovery / Card Advantage]
+
+Nicht automatisch immer die stärkste oder gleiche Karte empfehlen.
+
+Ein Tutor-Ziel muss zum aktuellen Boardstate, zur Hand, zum verfügbaren Mana
+und zum Spielplan passen.
+
+Wenn ein Tutor mehrere wichtige Zielgruppen besitzt, sollen die wichtigsten
+praktischen Optionen genannt werden.
+
+Wenn das Deck keine relevanten Tutoren besitzt, soll der Abschnitt nicht künstlich
+mit allgemeinen Tutor-Empfehlungen gefüllt werden.
 
 ---
 
@@ -200,11 +274,7 @@ Regelabhängige Combo-Linien müssen gemäß
 
 `brains/rules/magic-rules.md`
 
-verifiziert sein.
-
-Wenn keine verifizierte Combo im aktuellen Deck erkannt wurde, soll stattdessen stehen:
-
-`Keine verifizierte Combo im aktuellen Deckstand erkannt.`
+verifiziert werden.
 
 ---
 
@@ -282,6 +352,20 @@ Der Abschnitt soll kurz bleiben.
 2. ...
 3. ...
 
+## Kartenziehen und Ressourcenfluss
+
+**Früh aufbauen:**
+
+- ...
+
+**Im laufenden Spiel beachten:**
+
+- ...
+
+**Nach einem Rückschlag:**
+
+- ...
+
 ## Wichtige Engines
 
 ### [Engine-Name]
@@ -295,6 +379,26 @@ Der Abschnitt soll kurz bleiben.
 - ...
 
 **Wichtig beim Spielen:**
+
+- ...
+
+## Tutoren und Tutor-Ziele
+
+### [Tutor-Name]
+
+**Kann suchen:**
+
+- ...
+
+**Typische Ziele:**
+
+- **Setup / Engine:** ...
+- **Interaktion:** ...
+- **Schutz:** ...
+- **Combo / Win Condition:** ...
+- **Recovery / Ressourcen:** ...
+
+**Wann welches Ziel?**
 
 - ...
 
@@ -355,8 +459,11 @@ Der Gameplan soll:
 - praktisch statt analytisch formuliert sein
 - auch für einen neuen Spieler verständlich sein
 - möglichst konkrete Prioritäten nennen
+- bei Tutoren situationsabhängig erklären, was gesucht werden soll
+- den Ressourcenfluss über Draw und Selection praktisch erklären
 - kompakt bleiben
 - keine vollständige Deckanalyse wiederholen
+- keine bloße Tutor-Anzahl aus `analysis.md` wiederholen
 - keine ausführliche Bracket-Einschätzung enthalten
 - keinen Rule-0-Hinweis duplizieren
 

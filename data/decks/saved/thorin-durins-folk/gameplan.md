@@ -1,86 +1,315 @@
-# Gameplan: Thorin, King of Durin's Folk – v003
+# Gameplan: Thorin – Durins Folk
 
 ## Kurz erklärt
 
-Das Deck entwickelt Mana und günstige Dwarves, zieht über The One Ring oder Skullclamp nach und zwingt den Tisch zwischen Combat und Combo zu wählen. Dualcaster/Twinflame ist die kompakte Siegkombination. Magda/Clock/Xorn nutzt die vorhandene Zwergen- und Treasure-Synergie für einen zweiten Infinite-Plan.
+Das Deck entwickelt günstige Zwerge und Mana-Artefakte, bevor Thorin weitere Dwarf-ETBs in Treasures und zusätzlichen Kampfschaden umwandelt. Magda, Bifur und die Equipment-Engine erhöhen den Ressourcenfluss. Gewonnen wird meist durch einen breiten Angriff, durch ETB-/Artefaktschaden oder durch eine der beiden Combo-Linien.
 
 ## Starthand und Mulligan
 
-Bevorzugt behalten:
+**Bevorzugt behalten:**
 
-- drei Manaquellen oder zwei Länder plus Ramp
-- mindestens einen günstigen Dwarf
-- The One Ring, Skullclamp, Dwarven Recruiter oder ein sinnvoll ergänztes Combo-Teil
-- Schutz oder Interaktion, wenn die Hand bereits eine schnelle Linie zeigt
+- zwei bis vier Länder mit Zugriff auf Rot und Weiß
+- einen Mana-Stein oder einen günstigen Zwerg
+- eine Engine wie Kíli, Magda oder Skullclamp
+- idealerweise Schutz oder günstige Interaktion
 
-Eher zurückgeben:
+**Eher Mulligan bei:**
 
-- mehrere Fünf-Mana-Karten ohne Ramp
-- Hände ohne roten oder weißen Zugriff
-- einzelne Magda-Teile ohne Draw, Recruiter oder zweiten Spielplan
+- nur einem Land oder fehlendem Zugriff auf eine Farbe
+- ausschließlich Tribal-Ländern, die wichtige Nichtkreaturensprüche nicht bezahlen
+- mehreren Karten ab vier Mana ohne frühe Entwicklung
+- einer reinen Combo-Hand ohne ausreichendes Mana oder Setup
 
 ## Early Game
 
-1. Ramp entwickeln und Tribal-Fixer korrekt für Dwarves einsetzen.
-2. Skullclamp oder The One Ring priorisieren, wenn die Hand sonst schnell leer wird.
-3. Universal Automaton und Adaptive Automaton nicht unnötig in Removal laufen lassen, wenn die Magda-Linie realistisch ist.
+**Ziel:**
+
+Mana entwickeln, günstige Zwerge etablieren und Storied vorbereiten.
+
+**Prioritäten:**
+
+1. Farbquellen und Mana-Artefakte ausspielen.
+2. Kíli oder Magda vor weniger wichtigen Zweidrops priorisieren.
+3. Mit Artefakten und legendären Permanents eine enduring story aktivieren.
+4. Thorin nicht ungeschützt in offenes Removal spielen.
+5. Twinflame und Dualcaster Mage nicht leichtfertig als Value-Karten verbrauchen, wenn die Combo relevant ist.
 
 ## Mid Game
 
-1. Thorin möglichst so ausspielen, dass im selben Zug noch ein weiterer Dwarf folgen kann.
-2. Dwarven Recruiter nach Handlage auf Magda, Universal Automaton, Adaptive Automaton oder Value-Dwarves ausrichten.
-3. Clock of Omens erst offenlegen, wenn mehrere Artefakte und ein unmittelbarer Nutzen vorhanden sind.
-4. Boros Charm, Mithril Coat oder Return the Favor für den entscheidenden Zug bereithalten.
+**Ziel:**
+
+Thorin oder eine alternative Engine aktivieren und Treasures in Druck umwandeln.
+
+**Prioritäten:**
+
+1. Thorin möglichst in einem Zug spielen, in dem noch ein weiterer Zwerg folgen kann.
+2. Dwarven Bloodboiler mit Magda verbinden, um Zwerge ohne Angriff zu tappen.
+3. Kílis einmaligen Draw-Trigger in jedem Zug gezielt nutzen.
+4. Equipment auf Double-Strike- oder schwer blockbare Angreifer legen.
+5. Bifur erst dann investieren, wenn mehrere relevante Dwarf-Trigger vorhanden sind.
+6. Schutz gegen Boardwipes oder den entscheidenden Removal-Spruch zurückhalten.
 
 ## Late Game
 
-1. Treasure als Mana, Magda-Tutorfutter und Thorin-Pump gegeneinander abwägen.
-2. Shared Animosity oder The Reaver Cleaver für einen tödlichen Combat-Schritt nutzen.
-3. Farewell nur einsetzen, wenn der eigene Artefaktverlust durch den Reset gerechtfertigt ist.
+**Ziel:**
 
-## Combo 1: Dualcaster Mage + Twinflame
+Einen großen Combat-Turn oder eine deterministische Combo vorbereiten.
 
-Voraussetzungen:
+**Prioritäten:**
 
-- Dualcaster Mage und Twinflame
-- eine weitere eigene Kreatur
-- fünf Mana, davon mindestens zwei rote
+1. Thorins Artefakt-Token-Bonus mit Shared Animosity kombinieren.
+2. Orcrist oder The Reaver Cleaver auf Gimli beziehungsweise einen anderen zuverlässigen Angreifer legen.
+3. Rogue's Passage für einen entscheidenden Equipment-Angriff verwenden.
+4. Impact Tremors, Reckless Fireweaver und Goblin Bombardment gegen festgefahrene Boards nutzen.
+5. Farewell nur einsetzen, wenn der gegnerische Vorteil den Verlust der eigenen Engines rechtfertigt.
 
-Ablauf:
+## Kartenziehen und Ressourcenfluss
 
-1. Twinflame auf die andere eigene Kreatur wirken.
-2. Mit Dualcaster Mage reagieren und Twinflame kopieren.
-3. Die Kopie auf Dualcaster richten; jeder neue Token kopiert erneut das ursprüngliche Twinflame.
-4. Genügend Token erzeugen und die letzte Kopie auf die ursprüngliche Kreatur richten.
-5. Mit beliebig vielen Dualcaster-Token mit Eile angreifen.
+**Früh aufbauen:**
 
-Unterbrechbar durch Removal auf Dualcaster vor Auflösung seines ETB-Triggers, Counterspells oder das Entfernen aller legalen Ziele.
+- Kíli the Resourceful
+- Skullclamp mit einem geeigneten kleinen Token
+- Dáin's Company als früher Zwerg plus Kartenauswahl
 
-## Combo 2: Magda + Clock + Artifact Dwarves + Xorn
+**Im laufenden Spiel beachten:**
 
-Benötigt:
+- The One Ring ist die stärkste Draw-Engine, aber zusätzliche Clock-of-Omens-Aktivierungen erhöhen auch den späteren Lebensverlust.
+- Óin filtert überschüssige Länder oder situativ tote Karten, erzeugt aber keinen unmittelbaren Kartenvorteil.
+- Dwarven Recruiter sollte nur so viele Karten stapeln, wie tatsächlich sinnvoll gezogen werden können.
+- Seize the Spoils ist besonders gut, wenn eine überschüssige Karte in ein Treasure und neue Auswahl umgewandelt wird.
+
+**Nach einem Rückschlag:**
+
+- The One Ring, Kíli oder Skullclamp priorisieren.
+- Dwarven Recruiter kann eine Folge günstiger Zwerge vorbereiten.
+- Magda kann The One Ring direkt ins Spiel bringen; dabei wird der Schutztrigger des Rings nicht ausgelöst, weil er nicht gewirkt wurde.
+
+## Wichtige Engines
+
+### Thorin + Dwarf-ETBs
+
+**Kernkarten:**
+
+- Thorin, King of Durin's Folk
+- günstige Zwerge und Changelings
+- Bifur, Melodic Rider
+- Xorn
+
+**Funktion:**
+
+Jeder Zwerg erzeugt mindestens ein Treasure. Xorn erhöht die Tokenzahl; Bifur verdoppelt bei aktiver enduring story Thorins Trigger. Mit beiden Effekten erzeugt ein einzelner Thorin-Trigger insgesamt zwei Treasures, und ein durch Bifur zusätzlich ausgelöster Trigger ebenfalls zwei.
+
+**Wichtig beim Spielen:**
+
+- Thorin selbst erzeugt beim Eintritt ein Treasure.
+- Der Powerbonus zählt nur Artefakt-Token, nicht gewöhnliche Artefakte.
+- Thorin verstärkt nur andere Zwerge.
+
+### Magda + Tap-Outlets
+
+**Kernkarten:**
+
+- Magda, Brazen Outlaw
+- Dwarven Bloodboiler
+- Clock of Omens
+- Artefakt-Zwerge
+
+**Funktion:**
+
+Dwarven Bloodboiler und Clock tappen Zwerge außerhalb des Kampfes und lösen Magda aus. Fünf Treasures werden anschließend zu einem Artefakt direkt im Spiel.
+
+**Wichtig beim Spielen:**
+
+- Das Tappen eines summoning-sick Artefakt-Zwergs als Kosten von Clock of Omens ist möglich, weil die Kreatur nicht ihre eigene Tap-Symbol-Fähigkeit aktiviert.
+- Walking Ballista sollte nicht mit Magda gesucht werden, wenn sie ohne Marken ins Spiel käme.
+
+### The One Ring + Clock of Omens
+
+**Kernkarten:**
+
+- The One Ring
+- Clock of Omens
+- mindestens zwei weitere untappbare Artefakte
+
+**Funktion:**
+
+Clock kann den Ring enttappen und zusätzliche Ring-Aktivierungen ermöglichen.
+
+**Wichtig beim Spielen:**
+
+- Jede Aktivierung legt einen weiteren Burden-Counter auf den Ring.
+- Der Lebensverlust im nächsten Upkeep wächst dadurch schnell.
+- Ein mit Magda ins Spiel gebrachter Ring gibt keinen Schutz vor allem.
+
+## Tutoren und Tutor-Ziele
+
+### Dwarven Recruiter
+
+**Kann suchen:**
+
+- beliebig viele Dwarf-Karten, die anschließend in gewählter Reihenfolge oben auf die Bibliothek gelegt werden
+- Universal Automaton und Changeling Wayfinder wegen Changeling
+- nicht Adaptive Automaton, solange diese Karte in der Bibliothek liegt
+
+**Typische Ziele:**
+
+- **Setup / Engine:** Kíli, Magda, Dwarven Bloodboiler
+- **Schutz:** Bofur, Reliable Guardian
+- **Combo:** Universal Automaton oder ein fehlender Magda-Engine-Zwerg
+- **Payoff:** Bifur oder Gimli
+- **Ressourcen:** Dáin's Company
+
+**Wann welches Ziel?**
+
+Nur so viele Zwerge stapeln, wie in den nächsten Zügen sinnvoll gezogen werden können. Mit The One Ring darf die Folge länger sein; ohne Draw-Engine kann ein zu großer Stapel die Auswahl für viele Züge einschränken.
+
+### Steelshaper's Gift
+
+**Kann suchen:**
+
+- ein Equipment auf die Hand
+
+**Typische Ziele:**
+
+- **Schutz:** Mithril Coat
+- **Draw:** Skullclamp
+- **Combat / Treasures:** Orcrist oder The Reaver Cleaver
+- **Typ-Enabler:** Stalactite Dagger
+
+### Magda, Brazen Outlaw
+
+**Kann suchen:**
+
+- ein Artefakt oder einen Drachen direkt ins Spiel
+
+**Typische Ziele:**
+
+- **Ressourcen:** The One Ring
+- **Combo / Engine:** Clock of Omens, Universal Automaton oder Adaptive Automaton
+- **Schutz:** Mithril Coat
+- **Finisher:** Orcrist oder The Reaver Cleaver
+- **Draw:** Skullclamp
+
+## Win Conditions
+
+### Breiter Zwergenangriff
+
+**Benötigt:**
+
+- Thorin
+- mehrere Zwerge
+- mehrere Artefakt-Token
+- optional Shared Animosity oder Rising of the Day
+
+**Ablauf:**
+
+Weitere Zwerge erzeugen Treasures und erhöhen gleichzeitig Thorins Bonus. Shared Animosity verstärkt den gesamten Angriff zusätzlich.
+
+**Worauf achten:**
+
+- Thorin selbst erhält seinen eigenen Bonus nicht.
+- Treasures erst nach dem Angriff opfern, wenn ihre Zahl für den Powerbonus wichtiger ist als das Mana.
+
+### Equipment-Angriff
+
+**Benötigt:**
+
+- Gimli oder einen anderen zuverlässigen Angreifer
+- Orcrist oder The Reaver Cleaver
+- optional Rogue's Passage
+
+**Ablauf:**
+
+Combat Damage erzeugt große Mengen Treasures, die Thorins Anthem beziehungsweise weitere Engine-Züge speisen.
+
+### Direkter Trigger-Schaden
+
+**Benötigt:**
+
+- Impact Tremors für Kreaturen-ETBs
+- Reckless Fireweaver für Artefakt-ETBs
+- Goblin Bombardment für opferbare Kreaturen
+
+**Ablauf:**
+
+Token- und Combo-Schleifen werden in Schaden an allen Gegnern oder frei verteilbaren Einzelschaden umgewandelt.
+
+## Combos
+
+### Dualcaster Mage + Twinflame
+
+**Karten:**
+
+- Dualcaster Mage
+- Twinflame
+
+**Voraussetzungen:**
+
+- fünf Mana
+- eine andere eigene Kreatur als anfängliches Ziel
+- Twinflame wird in der ersten Hauptphase gewirkt
+
+**Ablauf:**
+
+1. Twinflame auf eine eigene Kreatur wirken.
+2. Solange Twinflame auf dem Stack liegt, Dualcaster Mage wirken.
+3. Dualcaster kopiert Twinflame; die Kopie zielt auf Dualcaster.
+4. Die Kopie erzeugt einen Dualcaster-Token mit Haste.
+5. Der ETB-Trigger des Tokens kopiert das ursprüngliche Twinflame erneut und zielt auf den neuesten Dualcaster.
+6. Beliebig oft wiederholen.
+
+**Ergebnis:**
+
+- beliebig viele Dualcaster-Mage-Token mit Haste
+- Sieg über Combat, Impact Tremors oder Goblin Bombardment
+
+**Unterbrechbar durch:**
+
+- Countermagic
+- Removal auf Dualcaster vor Auflösung seines ETB-Triggers
+- Entfernen aller legalen Twinflame-Ziele
+- Effekte, die Token oder ETB-Trigger verhindern
+
+### Magda–Clock-Schatzschleife
+
+**Karten:**
 
 - Magda, Brazen Outlaw
 - Clock of Omens
-- Universal Automaton
-- Adaptive Automaton mit gewähltem Typ Dwarf
-- Xorn
+- Universal Automaton oder Adaptive Automaton mit gewähltem Typ Zwerg
+- Xorn oder Bifur, Melodic Rider mit aktiver enduring story
 
-Ablauf:
+**Voraussetzungen:**
 
-1. Beide Artifact Dwarves für Clock of Omens tappen und einen davon enttappen.
-2. Magda löst zweimal aus; Xorn lässt jeden Trigger zwei Treasure erzeugen.
-3. Den enttappten Artifact Dwarf und einen Treasure tappen, um den anderen Dwarf zu enttappen.
-4. Magda mit Xorn erzeugt dabei zwei neue Treasure, während nur einer getappt wird.
-5. Zwischen den beiden Dwarves wechseln. Dadurch entstehen beliebig viele Treasure, darunter beliebig viele ungetappte.
-6. Mit Reckless Fireweaver über die ETBs gewinnen oder fünf Treasure an Magda opfern, Walking Ballista suchen, mit beliebig großem X wirken und den Tisch abschießen.
+- Clock und der Artefakt-Zwerg sind zunächst ungetappt
+- Xorn erzeugt pro Magda-Ereignis ein zusätzliches Treasure oder Bifur lässt Magdas Trigger zusätzlich auslösen
 
-Unterbrechbar durch Removal auf Magda, Clock, Xorn oder einen der Artifact Dwarves sowie durch Stifle-Effekte und Artefakt-Hate.
+**Ablauf:**
 
-## Spielhinweise
+1. Clock und den Artefakt-Zwerg tappen, um den Zwerg zu enttappen.
+2. Magda erzeugt durch Xorn oder Bifur zwei ungetappte Treasures.
+3. Den Zwerg und ein Treasure tappen, um Clock zu enttappen; Magda erzeugt zwei weitere Treasures.
+4. Clock und ein weiteres Treasure tappen, um den Zwerg zu enttappen.
+5. Der Ausgangszustand ist mit mindestens zwei neuen ungetappten Treasures wiederhergestellt.
+6. Beliebig oft wiederholen.
 
-- Adaptive Automaton muss beim Eintritt Dwarf wählen.
-- Clock of Omens darf getappte Treasure nicht als Kosten nutzen; für seine Aktivierung werden zwei ungetappte Artefakte benötigt.
-- Magda darf dagegen auch bereits getappte Treasure für ihren Tutor opfern.
-- Twinflame braucht vor Dualcaster bereits ein legales eigenes Kreaturenziel.
-- Loops werden mit einer festgelegten endlichen Wiederholungszahl abgekürzt.
+**Ergebnis:**
+
+- beliebig viele getappte Treasure-Token
+- mit Reckless Fireweaver beliebig viel Schaden an jedem Gegner
+- mit Thorin beliebig große andere Zwerge für einen Angriff
+
+**Unterbrechbar durch:**
+
+- Removal auf Magda, Clock, den Artefakt-Zwerg, Xorn oder Bifur
+- Artefakt-Hate
+- Trigger- oder aktivierte-Fähigkeiten-Interaktion
+
+## Wichtige Spielhinweise
+
+- United Front erzeugt Allies und The Eagles Are Coming! erzeugt Birds; diese Tokens sind ohne zusätzlichen Typ-Effekt keine Zwerge.
+- Kílis Fähigkeit triggert nur einmal pro Zug und wird deshalb nicht durch Bifur ein zweites Mal ausgelöst.
+- Thorins Anthem zählt Treasure-, Axe- und andere Artefakt-Token, aber keine gewöhnlichen Artefakte.
+- Treasures sind auch getappt gültige Opfer für Magdas Tutor-Fähigkeit.
+- Farewell sollte wegen des eigenen hohen Artefakt- und Kreaturenanteils nur als echter Reset eingesetzt werden.
+

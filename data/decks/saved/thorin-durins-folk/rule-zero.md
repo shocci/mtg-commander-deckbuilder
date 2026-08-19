@@ -1,19 +1,22 @@
-# Rule 0: Thorin, King of Durin's Folk – v003
+# Rule 0: Thorin – Durins Folk
 
 ## Tisch-Hinweis
 
-Dieses Deck ist als **Bracket 4 – Optimized** eingeschätzt, weil es eine frühe Zwei-Karten-Infinite-Combo und eine weitere mehrteilige Treasure-Combo spielt. Es ist ein Collection-first-Budgetdeck und kein cEDH-Deck.
+Dieses Deck spielt auf **Bracket 4 – Optimized**.
+
+Es ist ein Zwergen-Tribal-Deck mit Treasure- und Equipment-Synergien und versucht hauptsächlich über einen großen Combat-Turn, direkten ETB-/Artefaktschaden oder eine Combo zu gewinnen.
 
 Enthalten sind:
 
-- Game Changers: 2 – Farewell und The One Ring
-- Infinite-Combos: 2
-- Dualcaster Mage + Twinflame als kompakte Linie
-- Magda + Clock of Omens + zwei Artifact Dwarves + Xorn als Treasure-/Mana-Linie
+- Game Changers: 2
+- Early 2-Card Infinite Combos: 1
+- weitere verifizierte Infinite-/Loop-Combos: 1
 - Mass Land Denial: nein
 - wiederholbare Extra-Turn-Loops: nein
-- Zukaufsbudget: ca. 67,72 €
+
+Die Game Changers sind Farewell und The One Ring. Dualcaster Mage + Twinflame erzeugt beliebig viele Kreaturen-Token mit Haste. Eine langsamere Vier-Karten-Magda/Clock-Schleife erzeugt beliebig viele Treasure-Token und gewinnt mit Reckless Fireweaver unmittelbar. Das Deck enthält mit Sol Ring ein Fast-Mana-Piece und mehrere eingeschränkte Tutoren für Zwerge, Equipment oder Artefakte.
 
 ## So kann ich es am Tisch sagen
 
-„Ich spiele Thorin als Collection-first Bracket 4. Das Deck hat zwei Game Changers und zwei Infinite-Combos: Dualcaster plus Twinflame sowie eine mehrteilige Magda-/Clock-Treasure-Linie. Es kann ansonsten fair über Zwerge und Equipment gewinnen. Kein Mass Land Denial, keine Extra-Turn-Loops; die Zukäufe liegen bei ungefähr 68 Euro.“
+„Ich spiele ein Bracket-4-Zwergen-Tribal mit Treasures, Equipment und überwiegend sichtbaren Combat-Winconditions. Das Deck enthält Farewell und The One Ring als Game Changers. Dualcaster Mage und Twinflame bilden eine frühe Zwei-Karten-Endloskombo für beliebig viele Kreaturen; zusätzlich gibt es eine langsamere Magda-Clock-Schatzschleife. Ich spiele kein Mass Land Denial und keine Extra-Turn-Loops.“
+

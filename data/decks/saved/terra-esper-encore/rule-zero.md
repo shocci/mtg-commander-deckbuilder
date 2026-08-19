@@ -1,10 +1,14 @@
-# Rule 0: Terra, Magical Adept – Esper Encore
+# Rule 0: Terra Esper Encore
+
+Stand: 2026-08-19
 
 ## Tisch-Hinweis
 
 Dieses Deck spielt auf **Bracket 3 – Upgraded**.
 
-Es ist ein fünffarbiges Enchantment- und Saga-Copy-Deck und versucht hauptsächlich über beschleunigte Summon-Kapitel, große Kopierzüge oder Finale of Devastation zu gewinnen.
+Es ist ein fünffarbiges Saga-Enchantress-Deck und versucht hauptsächlich über
+kopierte Summons, Bahamut-Schaden, Primal Odins Kampfschaden oder einen großen
+Combat-Turn zu gewinnen.
 
 Enthalten sind:
 
@@ -13,9 +17,14 @@ Enthalten sind:
 - weitere verifizierte Infinite-/Loop-Combos: 0
 - Mass Land Denial: nein
 - wiederholbare Extra-Turn-Loops: nein
+- Fast Mana: Sol Ring
 
-Die Game Changers sind Farewell, Gamble und Smothering Tithe. Terra plus Summon: Primal Odin ist eine commander-gestützte, endliche Zwei-Karten-Linie, die einen Spieler über Kampfschaden verlieren lassen kann; mehrere effiziente Tutoren können die passenden Teile finden.
+Das Deck besitzt mehrere flexible Tutoren, aber keine kompakte Combo-Suche.
 
 ## So kann ich es am Tisch sagen
 
-„Ich spiele ein Bracket-3-Saga-Copy-Deck mit drei Game Changers und mehreren effizienten Tutoren. Terra kann Summon: Primal Odin kopieren und damit einen Spieler über Kampfschaden ausschalten, aber das Deck enthält keine verifizierte Endloskombo, kein Mass Land Denial und keine Extra-Turn-Schleife.“
+„Ich spiele ein Bracket-3-Saga-Enchantress-Deck mit Terra. Es enthält drei Game
+Changers und mehrere Tutoren, aber keine verifizierte Endloskombo. Die stärksten
+Linien kopieren Bahamut für Schaden an allen Gegnern oder geben einer
+Primal-Odin-Kopie Haste für einen möglichen Spieler-Kill. Ich spiele weder Mass
+Land Denial noch Extra-Turn-Loops.“

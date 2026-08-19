@@ -1,8 +1,16 @@
-# Bracket: Terra, Magical Adept – Esper Encore
+# Bracket: Terra Esper Encore
+
+Stand: 2026-08-19
 
 ## Ergebnis
 
 **Geschätztes Bracket: 3 – Upgraded**
+
+Das Deck kann ungefähr ab Zug 6 ernsthaft gewinnen oder einen Spieler
+ausschalten. Es besitzt starke Tutoren und Interaktion, aber nur Sol Ring als
+klassisches Fast Mana und keine kompakte Endloskombo. Damit ist es deutlich
+stärker als Core, erreicht jedoch nicht die Geschwindigkeit und Effizienz eines
+Optimized-Decks.
 
 ## Requirement Tracker
 
@@ -16,7 +24,7 @@
 
 ## Game Changers
 
-**Anzahl:** 3
+**Anzahl: 3**
 
 - Farewell
 - Gamble
@@ -24,19 +32,21 @@
 
 ## Early 2-Card Infinite Combos
 
-**Anzahl:** 0
+**Anzahl: 0**
 
 Keine frühen Zwei-Karten-Endloskombos im aktuellen Deckstand erkannt.
 
 ## Late 2-Card Infinite Combos
 
-**Anzahl:** 0
+**Anzahl: 0**
 
 Keine späten Zwei-Karten-Endloskombos im aktuellen Deckstand erkannt.
 
 ## Weitere bracketrelevante Punkte
 
-Die Liste steht mit drei Game Changers genau an der Obergrenze von Bracket 3. Beseech the Mirror, Diabolic Intent, Chord of Calling und Finale of Devastation erhöhen zusammen mit Gamble die Konsistenz; Flawless Maneuver und die günstigen Counterspells liefern effizienten Schutz. Terra plus Summon: Primal Odin ist eine endliche Zwei-Karten-Finisher-Linie gegen einen Spieler, aber weder eine Endloskombo noch ein garantierter Tischsieg. Ohne Fast-Mana-Paket und kompakte Combo liegt der realistische spielentscheidende Bereich ungefähr in den Zügen 6–8.
+Keine weiteren bracketrelevanten Grenzpunkte erkannt. Insbesondere enthält das
+Deck keine weiteren verifizierten Infinite-Loops, kein Mass Land Denial und
+keine wiederholbare Extra-Turn-Schleife.
 
 ## Bracket-Grenze
 

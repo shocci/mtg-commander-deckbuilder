@@ -1,18 +1,21 @@
-# Rule 0: Sauron, the Dark Lord – v003
+# Rule 0: Sauron, the Dark Lord
 
 ## Tisch-Hinweis
 
-Dieses Deck ist als **Bracket 4 – Optimized** eingeschätzt, weil es eine frühe Zwei-Karten-Infinite-Combo spielt. Es ist aber ein Collection-first-Budgetdeck und kein cEDH-Deck.
+Dieses Deck spielt auf **Bracket 4 – Optimized**.
+
+Es ist ein Grixis-Sauron-Deck mit Orc-Army-, Spellslinger- und Combo-Plan. Es versucht über eine große Army, einen Wraith-Schwarm oder kompakte Zwei-Karten-Combos zu gewinnen.
 
 Enthalten sind:
 
-- Game Changers: 1 – The One Ring
-- echte Infinite-Combos: 1 – Dualcaster Mage + Twinflame
-- zusätzliche bibliotheksbegrenzte Niv-Mizzet-Draw-/Damage-Combo
+- Game Changers: 1
+- Early 2-Card Infinite Combos: 1
+- weitere verifizierte Infinite-/Loop-Combos: 4
 - Mass Land Denial: nein
 - wiederholbare Extra-Turn-Loops: nein
-- Zukaufsbudget: ca. 58,72 €
+
+Der Game Changer ist The One Ring. Die frühe Combo besteht aus Dualcaster Mage und Twinflame; zusätzlich spielt das Deck vier langsamere, von Niv-Mizzet unterstützte Draw-/Damage-Loops. Die Tutor-Dichte ist niedrig und das Deck ist nicht cEDH-orientiert.
 
 ## So kann ich es am Tisch sagen
 
-„Ich spiele Sauron als Collection-first Bracket 4. Das Deck hat The One Ring als einzigen Game Changer und eine echte Zwei-Karten-Infinite-Combo mit Dualcaster und Twinflame. Niv-Mizzet kann zusätzlich mit Curiosity oder Ophidian Eye viele Karten ziehen und Schaden machen. Kein Mass Land Denial, keine Extra-Turn-Loops; die Zukäufe liegen bei ungefähr 59 Euro.“
+„Ich spiele ein Bracket-4-Sauron-Deck mit Orc-Army-, Spellslinger- und Combo-Plan. Es enthält The One Ring, eine Fünf-Mana-Zwei-Karten-Combo mit Dualcaster Mage und Twinflame sowie vier langsamere Niv-Mizzet-Draw-/Damage-Loops. Es spielt kein Mass Land Denial und keine Extra-Turn-Schleifen; die Combos werden wegen nur zweier Tutoren nicht besonders konstant gefunden.“

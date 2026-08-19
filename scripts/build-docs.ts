@@ -86,6 +86,7 @@ type DeckDoc = {
     commanders: CommanderDoc[];
     decklist: string | null;
     deckView: DeckView | null;
+    shoppingList: string | null;
     analysis: string | null;
     bracket: string | null;
     gameplan: string | null;
@@ -541,6 +542,7 @@ async function loadDeck(
 
     const decklist = await readIfExists(decklistPath);
     const deckView = await readDeckView(savedDeckDir);
+    const shoppingList = await readIfExists(path.join(savedDeckDir, "shopping-list.md"));
     const analysis = await readIfExists(path.join(savedDeckDir, "analysis.md"));
     const bracket = await readIfExists(path.join(savedDeckDir, "bracket.md"));
     const gameplan = await readIfExists(path.join(savedDeckDir, "gameplan.md"));
@@ -563,6 +565,7 @@ async function loadDeck(
         commanders,
         decklist,
         deckView,
+        shoppingList,
         analysis,
         bracket,
         gameplan,
@@ -859,6 +862,7 @@ ${cards.map(renderDeckViewCard).join("\n")}
 function renderDeckBlock(
     decklistBlock: string,
     deckViewBlock: string,
+    shoppingListBlock: string,
 ): string {
     return `<details id="deckliste" class="sub-accordion deck-sub-accordion">
 <summary>Liste</summary>
@@ -871,6 +875,13 @@ ${renderMarkdown(decklistBlock)}
 <summary>Ansicht</summary>
 <div class="accordion-content deck-view-accordion-content">
 ${deckViewBlock}
+</div>
+</details>
+
+<details id="einkaufsliste" class="sub-accordion deck-sub-accordion">
+<summary>Einkaufsliste</summary>
+<div class="sub-accordion-content">
+${renderMarkdown(shoppingListBlock)}
 </div>
 </details>`;
 }
@@ -955,7 +966,15 @@ function renderDeckPage(deck: DeckDoc): string {
         ? `\`\`\`txt\n${deck.decklist.trim()}\n\`\`\``
         : "_Keine Deckliste vorhanden._";
 
-    const deckBlock = renderDeckBlock(decklistBlock, deckViewBlock);
+    const shoppingListBlock = deck.shoppingList
+        ? deck.shoppingList.trim()
+        : "_Keine Einkaufsliste vorhanden._";
+
+    const deckBlock = renderDeckBlock(
+        decklistBlock,
+        deckViewBlock,
+        shoppingListBlock,
+    );
 
     const variantsBlock = renderVariantsBlock(deck);
     const versionsBlock = renderVersionsBlock(deck);
@@ -1017,7 +1036,11 @@ function renderDeckPage(deck: DeckDoc): string {
         Boolean(bracketNumber),
     )}
           ${profileButton("#gameplan", "Gameplan", Boolean(deck.gameplan))}
-          ${profileButton("#deck", "Deck", Boolean(deck.decklist || deck.deckView))}
+          ${profileButton(
+        "#deck",
+        "Deck",
+        Boolean(deck.decklist || deck.deckView || deck.shoppingList),
+    )}
           ${profileButton(
         "#varianten",
         `${deck.variants.length} ${deck.variants.length === 1 ? "Variante" : "Varianten"}`,
