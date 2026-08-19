@@ -4,147 +4,129 @@ Stand: 2026-08-19
 
 ## Kurzprofil
 
+- Commander: Terra, Magical Adept // Esper Terra
 - Color Identity: WUBRG
-- Hauptstrategie: Saga-Enchantress mit temporären Kopien starker Summons
-- Unterstrategien: Lore-Counter-Manipulation, Enchantment-Token, Recursion, Combat und Bahamut-Burn
-- Geschätztes Bracket: 3 – Upgraded
+- Hauptstrategie: Saga-Enchantress mit kopierten Enchantments und Summons
+- Unterstrategien: Lore-Counter, Enchantment-Tokens, Recursion und Final Fantasy
+- Geschätztes Bracket: 3 – Upgraded, am oberen Rand
+- Deckgröße: 100 Karten, davon 36 Länder
+- Collection-Status: vollständig vorhanden; die 27 als precongebunden gemeldeten Karten wurden ersetzt
 
-Die Liste umfasst 100 Karten und ist Commander-legal. Sie enthält 36 Länder,
-24 Enchantments und 11 Sagas einschließlich Esper Terra. Der durchschnittliche
-Mana Value der Nichtländer liegt bei ungefähr 2,95.
+## Änderungen
 
-## Kartenpakete
+Die elf gebundenen Länder wurden rollengetreu durch verfügbare zwei- oder
+mehrfarbige Länder ersetzt. Chord of Calling und Finale of Devastation wurden
+durch Fauna Shaman und Wishclaw Talisman ersetzt, sodass das Deck weiterhin fünf
+Tutoren besitzt. Farewell entfällt als Game Changer; Ruinous Ultimatum übernimmt
+die Funktion als starker später Reset.
 
-### Ramp
+Sigurd, Jarl of Ravensthorpe und Evolution Sage ersetzen einen Teil der
+entfallenen Lore-Counter-Manipulation. Parallel Lives verdoppelt Terras
+Token-Kopien. Summon: Knights of Round, Summon: Shiva und Summon: Anima halten
+das Final-Fantasy- und Saga-Thema trotz der entfernten Summons deutlich präsent.
 
-Das Ramp-Paket ist für ein fünffarbiges Deck stark und breit aufgestellt.
-Sol Ring, Birds of Paradise und Arcane Signet ermöglichen frühe Beschleunigung.
-Wild Growth, Utopia Sprawl und Fertile Ground verbinden Ramp mit den
-Enchantress-Synergien. Farseek, Nature's Lore und Three Visits fixen die Farben,
-während Bloom Tender, Sanctum Weaver und Smothering Tithe stark skalieren.
+## Ramp und Manabasis
 
-Binding the Old Gods und Summon: Fenrir liefern verzögerten Land-Ramp.
-Summon: Esper Valigarmanda sowie Esper Terras viertes Kapitel erzeugen später
-große Manaimpulse. 36 Länder und diese Ramp-Dichte tragen die teuren Summons
-zuverlässig. Das anspruchsvollste Farberfordernis ist Beseech the Mirror mit
-drei schwarzen Manasymbolen.
+Sol Ring, Arcane Signet, Chromatic Lantern, Birds of Paradise, Bloom Tender,
+Sanctum Weaver, Utopia Sprawl, Wild Growth, Fertile Ground, Farseek, Nature's
+Lore, Three Visits und Smothering Tithe bilden weiterhin ein starkes Ramp- und
+Fixing-Paket.
 
-### Card Advantage
+Die neue Manabasis enthält mehr Länder, die getappt ins Spiel kommen, behält
+aber alle fünf Farben und eine grünzentrierte frühe Entwicklung. Hengegate
+Pathway ist immer ungetappt; Blooming Marsh und Hinterland Harbor sind häufig
+früh ungetappt. Die Restless-Länder sind im Late Game zusätzliche Angreifer.
 
-Die wichtigste Ressourcenachse ist das Enchantress-Paket aus Enchantress's
-Presence, Eidolon of Blossoms und Setessan Champion. Court of Vantress erzeugt
-über Monarch wiederholten Kartenvorteil. O'aka, Traveling Merchant wandelt
-überflüssige Lore-, Stun- oder Finality-Counter in Karten um. Tidus, Yuna's
-Guardian verbindet Kampfschaden mit Kartenziehen und Proliferate.
+## Card Advantage
 
-Mehrere Summons ersetzen sich später selbst: Summon: Bahamut und Summon:
-Primal Odin ziehen jeweils zwei Karten, Summon: Fenrir zieht situativ.
+Enchantress's Presence, Eidolon of Blossoms, Setessan Champion und Court of
+Vantress sind die primären Engines. Terra, Rydia, Yuna, Summoner's Grimoire und
+die späteren Kapitel von Fenrir, Bahamut, Primal Odin und Anima liefern weitere
+Karten oder Recursion. Summon: Anima zieht über die ersten drei Kapitel jeweils
+eine Karte und ist ein starkes Ziel für Terras Kopierfähigkeit.
 
-### Card Draw & Selection
+## Tutoren
 
-Terra millt beim Eintritt fünf Karten und nimmt bis zu ein dabei gemilltes
-Enchantment auf die Hand. Das verbessert die Auswahl und füllt zugleich den
-Friedhof für Rydia, Yuna, Hall of Heliod's Generosity und Finale of Devastation.
+- Beseech the Mirror, Diabolic Intent und Gamble suchen beliebige Karten.
+- Wishclaw Talisman sucht ebenfalls beliebige Karten, muss aber so eingesetzt
+  werden, dass der Gegner die Kontrolle nicht profitabel nutzen kann.
+- Fauna Shaman findet Yenna sowie wichtige Enchantment Creatures und Summons.
 
-Rydia, Summoner of Mist bietet wiederholbares Landfall-Looting. Es erzeugt
-keinen reinen Kartenvorteil, verbessert aber die Handqualität und legt Sagas
-gezielt in den Friedhof.
+## Interaktion und Schutz
 
-### Tutors
+Counterspell, Dovin's Veto, Negate und Spell Pierce schützen den entscheidenden
+Zug. Swords to Plowshares, Path to Exile, Stroke of Midnight, Nature's Claim,
+Grasp of Fate und Elspeth Conquers Death beantworten Schlüssel-Permanents.
 
-Fünf strategische Tutoren geben dem Deck gute, aber noch nicht kompetitive
-Konsistenz:
+Blasphemous Act, Austere Command, Extinguish All Hope und Ruinous Ultimatum sind
+die vier Massenantworten. Heroic Intervention, Restoration Magic und Snakeskin
+Veil schützen Terra oder das gesamte Board. Restoration Magic kann für fünf
+Mana allen eigenen Permanents Hexproof und Indestructible geben.
 
-- Beseech the Mirror sucht eine beliebige Karte; mit Bargain kann ein Ziel bis
-  Mana Value 4 direkt gewirkt werden.
-- Diabolic Intent sucht eine beliebige Karte gegen ein Kreaturenopfer.
-- Gamble sucht eine beliebige Karte mit zufälligem Discard-Risiko.
-- Chord of Calling bringt eine Kreatur mit Mana Value X oder weniger direkt ins
-  Spiel.
-- Finale of Devastation bringt eine Kreatur aus Bibliothek oder Friedhof direkt
-  ins Spiel und ist bei X mindestens 10 zugleich ein Finisher.
+## Saga- und Kopier-Engine
 
-Da die Summons Enchantment Creatures sind, können Chord of Calling und Finale
-of Devastation auch Bahamut, Primal Odin oder andere Summons finden.
+- Esper Terra kopiert nichtlegendäre Enchantments und beschleunigt kopierte
+  Sagas um bis zu drei Lore-Counter.
+- Sigurd kann nach einem Angriff einen Lore-Counter hinzufügen oder entfernen.
+- Evolution Sage und Karn's Bastion proliferieren Lore-Counter.
+- Garnet und Clash of the Eikons verändern den Kapitelzeitpunkt gezielt.
+- Parallel Lives verdoppelt die von Terra, Yenna, Three Blind Mice, Rite of
+  Replication und Doppelgang erzeugten Tokens.
+- Weaver of Harmony kopiert ausgelöste Fähigkeiten von Enchantment-Quellen.
 
-### Targeted Interaction
+## Win Conditions und Combos
 
-Mit Swan Song, Dovin's Veto, Arcane Denial und An Offer You Can't Refuse besitzt
-das Deck vier Counterspells. Swords to Plowshares und Path to Exile beantworten
-Kreaturen effizient. Stroke of Midnight, Binding the Old Gods und Grasp of Fate
-sind flexible Antworten, Nature's Claim deckt Artifacts und Enchantments ab.
+### Faire Finisher
 
-Weitere Interaktion entsteht aus den Kapiteln von Summon: Bahamut, Summon:
-Primal Odin, Summon: Valefor und Summon: Yojimbo.
+- Kopierte Summon: Bahamut erzeugen Removal, Karten und massiven Schaden.
+- Summon: Primal Odin kann einen Spieler über Kampfschaden verlieren lassen.
+- Summon: Knights of Round erzeugt ein breites, widerstandsfähiges Board.
+- Summon: Anima erzeugt Karten und zwingt Gegner später zu Opfern und Life Loss.
 
-### Mass Interaction
+### Terra + The Apprentice's Folly
 
-Blasphemous Act, Damn, Extinguish All Hope und Farewell bilden ein breites
-Wipe-Paket. Extinguish All Hope ist häufig asymmetrisch, weil die wichtigsten
-Summons Enchantment Creatures sind. Farewell trifft dagegen auch die eigene
-Engine schwer und ist primär eine Notbremse.
+Esper Terra kopiert The Apprentice's Folly. Die Folly-Kopie erzeugt eine
+nichtlegendäre Reflection-Kopie von Esper Terra, die wiederum Folly kopieren
+kann. Durch passende Reihenfolge der Kapitel entsteht eine beliebig
+wiederholbare Token-, Kapitel- und Mana-Schleife. Die Linie benötigt Terras
+teure Transformation und ist daher eine späte Zwei-Karten-Combo.
 
-### Schutz und Resilienz
+### Terra + Yenna, Redtooth Regent
 
-Heroic Intervention und Boros Charm schützen fast das gesamte Board. Flawless
-Maneuver schützt die Kreaturenseite; die Counterspells können Schlüssel-Engines
-absichern. Yuna, Rydia, Hall of Heliod's Generosity und Finale of Devastation
-liefern Recursion.
+Yenna erstellt eine nichtlegendäre Kopie von Esper Terra. Diese kann sich über
+Terras eigene Kapitel weiterkopieren und Kapitel IV wiederholt für Mana nutzen.
+Ein anderes nichtlegendäres Enchantment dient als Ausstiegsziel. Ohne ein
+solches Ziel oder mögliche Unterbrechung kann die zwingende Schleife zu einem
+Unentschieden führen.
 
-Finality-Counter können mit O'aka, Nesting Grounds, Tidus oder Resourceful
-Defense entfernt oder verschoben werden, bevor eine Karte erneut sterben soll.
-Exil-Removal bleibt die größte Lücke, weil Indestructible weder gegen Farewell
-noch gegen gezieltes Exil hilft.
+### Terra + Summon: Esper Valigarmanda + Clash of the Eikons
 
-### Engines
-
-- Terra und nichtlegendäre Sagas: Esper Terra kopiert sie und kann die Kopie
-  sofort um bis zu drei Kapitel beschleunigen.
-- Enchantress-Paket: Weitere Enchantments und Sagas halten die Hand gefüllt.
-- Lore-Counter-Manipulation: Clash of the Eikons, Garnet, O'aka, Tidus, Nesting
-  Grounds und Resourceful Defense beschleunigen oder wiederholen Kapitel.
-- Recursion: Rydia und Yuna bringen Sagas beziehungsweise Enchantments direkt
-  zurück.
-- Token-Kopien: Yenna, Court of Vantress, Three Blind Mice, Second Harvest und
-  Doppelgang vervielfachen Engines und Payoffs.
-
-### Enabler
-
-Jukai Naturalist vergünstigt Enchantments, Sanctum Weaver ermöglicht große
-Manasprünge und Garnet sowie O'aka setzen Sagas zurück. Rydia befüllt und nutzt
-den Friedhof. Summoner's Grimoire kann teure Enchantment Creatures aus der Hand
-ins Spiel bringen. Die verschiedenen Kopiereffekte verstetigen Terras
-temporäre Tokens.
-
-### Payoffs
-
-Die stärksten Payoffs sind Summon: Bahamut als Schaden gegen alle Gegner,
-Summon: Primal Odin als Ein-Spieler-Kill über Kampfschaden und Finale of
-Devastation als Overrun. Doppelgang und Second Harvest multiplizieren den
-Boardstate. Yuna liefert Trample, Lifelink und wiederholte Recursion; Summon:
-Titan ermöglicht einen großen Combat-Buff.
+Clash löst erneut ein Terra-Kapitel aus. Die erzeugte Valigarmanda-Kopie
+exiliert Clash mit Kapitel I und lässt es mit Kapitel II erneut wirken. Die
+Drei-Karten-Linie erzeugt beliebig viel rotes Mana, beliebig viele hasty
+Valigarmanda-Kopien und wiederholte Spell- sowie ETB-Trigger.
 
 ## Stärken
 
-- Sehr gute Verzahnung von Sagas, Enchantress-Effekten, Kopien und
-  Counter-Manipulation.
-- Hohe Ramp-Dichte und solide fünffarbige Manabasis.
-- Mehrere voneinander unabhängige Win Conditions.
-- Überdurchschnittlich flexible Interaktion.
-- Kann auch ohne Terra als Enchantress-Value-Deck funktionieren.
-- Gute Wiederaufbaumöglichkeiten nach gewöhnlichen Destroy-Wipes.
+- Klarer und redundanter Enchantment-/Saga-Plan
+- Fünf Tutoren und drei unterschiedliche späte Combo-Linien
+- Hohe Final-Fantasy-Dichte
+- Solides Ramp-Paket und flexible Interaktion
+- Nur zwei Game Changer trotz hoher Deckstärke
 
 ## Schwächen und Risiken
 
-- Terras Trance kostet sechs Mana, benötigt Tap und ist ohne Haste einen Zug
-  lang offen für Removal.
-- Kopierkarten und Counter-Manipulation sind ohne passende Sagas teilweise
-  schwache Einzelkarten.
-- Beseech the Mirror ist mit drei schwarzen Manasymbolen deutlich
-  anspruchsvoller als der Rest der Manakurve.
-- Enchantment-Exil und Graveyard-Hate treffen mehrere Ressourcenachsen
-  gleichzeitig.
-- Viele Sequenzen sind timing-sensitiv; falsche Lore-Counter können einen
-  Summon vorzeitig opfern.
-- Die stärksten Spielzüge benötigen bereits ein geeignetes Enchantment auf dem
-  Feld.
+- Mehr getappt eintretende Länder machen die ersten Züge etwas langsamer.
+- Die Entfernung von O'aka, Resourceful Defense, Nesting Grounds und Tidus
+  reduziert die flexible Counter-Manipulation.
+- Terra benötigt sechs Mana, Tap und einen weiteren Zug ohne Haste für Trance.
+- Das Deck ist anfällig gegen Enchantment-Exil und Graveyard-Hate.
+- Die Yenna-Schleife muss mit einem legalen Ausstiegsziel sauber gespielt
+  werden.
+
+## Fazit
+
+Die neue Version bleibt ein starkes Upper-Bracket-3-Deck. Sie ist etwas
+langsamer in der Manabasis und besitzt weniger flexible Lore-Counter-Steuerung,
+behält aber fünf Tutoren, alle gewünschten Combo-Linien und das zentrale
+Final-Fantasy-Saga-Thema.

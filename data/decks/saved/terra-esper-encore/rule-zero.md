@@ -4,27 +4,23 @@ Stand: 2026-08-19
 
 ## Tisch-Hinweis
 
-Dieses Deck spielt auf **Bracket 3 – Upgraded**.
-
-Es ist ein fünffarbiges Saga-Enchantress-Deck und versucht hauptsächlich über
-kopierte Summons, Bahamut-Schaden, Primal Odins Kampfschaden oder einen großen
-Combat-Turn zu gewinnen.
+Dieses Deck spielt auf **Bracket 3 – Upgraded** und liegt am oberen Rand des
+Brackets.
 
 Enthalten sind:
 
-- Game Changers: 3
-- Early 2-Card Infinite Combos: 0
-- weitere verifizierte Infinite-/Loop-Combos: 0
+- Game Changers: 2 – Gamble und Smothering Tithe
+- Tutoren: 5
+- frühe Zwei-Karten-Endloskombos: 0
+- späte Zwei-Karten-Combos mit Terra: 2
+- eine weitere Drei-Karten-Schleife
 - Mass Land Denial: nein
 - wiederholbare Extra-Turn-Loops: nein
 - Fast Mana: Sol Ring
 
-Das Deck besitzt mehrere flexible Tutoren, aber keine kompakte Combo-Suche.
-
 ## So kann ich es am Tisch sagen
 
-„Ich spiele ein Bracket-3-Saga-Enchantress-Deck mit Terra. Es enthält drei Game
-Changers und mehrere Tutoren, aber keine verifizierte Endloskombo. Die stärksten
-Linien kopieren Bahamut für Schaden an allen Gegnern oder geben einer
-Primal-Odin-Kopie Haste für einen möglichen Spieler-Kill. Ich spiele weder Mass
-Land Denial noch Extra-Turn-Loops.“
+„Ich spiele ein starkes Bracket-3-Saga-Enchantress-Deck mit fünf Tutoren und
+zwei Game Changern. Terra kombiniert nach ihrer teuren Transformation mit The
+Apprentice's Folly oder Yenna; außerdem gibt es eine Valigarmanda/Clash-Linie.
+Das Deck spielt kein Mass Land Denial und keine Extra-Turn-Schleifen.“
