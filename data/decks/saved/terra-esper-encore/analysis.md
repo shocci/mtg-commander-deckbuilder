@@ -32,10 +32,12 @@ Sanctum Weaver, Utopia Sprawl, Wild Growth, Fertile Ground, Farseek, Nature's
 Lore, Three Visits und Smothering Tithe bilden weiterhin ein starkes Ramp- und
 Fixing-Paket.
 
-Die neue Manabasis enthält mehr Länder, die getappt ins Spiel kommen, behält
-aber alle fünf Farben und eine grünzentrierte frühe Entwicklung. Hengegate
-Pathway ist immer ungetappt; Blooming Marsh und Hinterland Harbor sind häufig
-früh ungetappt. Die Restless-Länder sind im Late Game zusätzliche Angreifer.
+Die Manabasis enthält sechs Surveil-Länder: Commercial District, Elegant Parlor,
+Meticulous Archive, Shadowy Backstreet, Thundering Falls und Underground
+Mortuary. Sie halten die Farbverteilung stabil, verbessern die Kartenauswahl und
+legen bei Bedarf Enchantments oder Sagas für die Recursion in den Friedhof.
+Farseek kann alle sechs finden; Nature's Lore und Three Visits finden zusätzlich
+Commercial District und Underground Mortuary über deren Forest-Landtyp.
 
 ## Card Advantage
 
@@ -116,7 +118,8 @@ Valigarmanda-Kopien und wiederholte Spell- sowie ETB-Trigger.
 
 ## Schwächen und Risiken
 
-- Mehr getappt eintretende Länder machen die ersten Züge etwas langsamer.
+- Die sechs Surveil-Länder kommen immer getappt ins Spiel und machen die ersten
+  Züge etwas langsamer.
 - Die Entfernung von O'aka, Resourceful Defense, Nesting Grounds und Tidus
   reduziert die flexible Counter-Manipulation.
 - Terra benötigt sechs Mana, Tap und einen weiteren Zug ohne Haste für Trance.
@@ -126,7 +129,7 @@ Valigarmanda-Kopien und wiederholte Spell- sowie ETB-Trigger.
 
 ## Fazit
 
-Die neue Version bleibt ein starkes Upper-Bracket-3-Deck. Sie ist etwas
-langsamer in der Manabasis und besitzt weniger flexible Lore-Counter-Steuerung,
-behält aber fünf Tutoren, alle gewünschten Combo-Linien und das zentrale
-Final-Fantasy-Saga-Thema.
+Die neue Version bleibt ein starkes Upper-Bracket-3-Deck. Die sechs
+Surveil-Länder verlangsamen einzelne Sequenzen, unterstützen dafür Setup,
+Graveyard und Recursion. Das Deck behält fünf Tutoren, alle gewünschten
+Combo-Linien und das zentrale Final-Fantasy-Saga-Thema.

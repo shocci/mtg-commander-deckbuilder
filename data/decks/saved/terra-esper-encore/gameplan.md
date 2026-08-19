@@ -22,7 +22,9 @@ Hände mit mehreren teuren Summons, aber ohne Ramp und Fixing, gehen zurück.
 ## Early Game: Züge 1–3
 
 - Birds of Paradise, Wild Growth, Utopia Sprawl oder Sol Ring früh entwickeln.
-- Farseek, Nature's Lore und Three Visits fixen die benötigten Farben.
+- Farseek kann jedes der sechs Surveil-Länder suchen. Nature's Lore und Three
+  Visits finden Commercial District oder Underground Mortuary. Surveil dabei
+  gezielt für Enchantment-/Saga-Recursion und bessere Draws nutzen.
 - Enchantress's Presence oder Setessan Champion ausspielen, wenn die
   Manaentwicklung dadurch nicht ausfällt.
 - Spell Pierce, Snakeskin Veil oder Nature's Claim für kritische frühe
