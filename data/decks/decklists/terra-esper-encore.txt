@@ -3,7 +3,7 @@
 
 1 Austere Command
 1 Arcane Signet
-1 Battlefield Forge
+1 Commercial District
 1 Beseech the Mirror
 1 Blooming Marsh
 1 Birds of Paradise
@@ -30,18 +30,18 @@
 1 Fauna Shaman
 1 Farseek
 1 Fertile Ground
-1 Frostboil Snarl
+1 Elegant Parlor
 1 Flooded Grove
 1 Forest
 1 Forest
 1 Forest
-1 Game Trail
 1 Gamble
 1 Garnet, Princess of Alexandria
 1 Grasp of Fate
 1 Hengegate Pathway // Mistgate Pathway
 1 Hallowed Fountain
 1 Heroic Intervention
+1 Meticulous Archive
 1 Island
 1 Jukai Naturalist
 1 Karn's Bastion
@@ -58,9 +58,6 @@
 1 Parallel Lives
 1 Rejuvenating Springs
 1 Restoration Magic
-1 Restless Anchorage
-1 Restless Cottage
-1 Restless Fortress
 1 Restless Reef
 1 Restless Vinestalk
 1 Rite of Replication
@@ -69,6 +66,7 @@
 1 Sacred Foundry
 1 Sanctum Weaver
 1 Setessan Champion
+1 Shadowy Backstreet
 1 Sigurd, Jarl of Ravensthorpe
 1 Smothering Tithe
 1 Sol Ring
@@ -91,10 +89,12 @@
 1 Swords to Plowshares
 1 Temple Garden
 1 Temple of Malice
+1 Thundering Falls
 1 The Apprentice's Folly
 1 Three Blind Mice
 1 Three Visits
 1 Utopia Sprawl
+1 Underground Mortuary
 1 Weaver of Harmony
 1 Wild Growth
 1 Wishclaw Talisman

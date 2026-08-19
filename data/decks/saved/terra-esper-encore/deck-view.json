@@ -1,7 +1,7 @@
 {
   "deckSlug": "terra-esper-encore",
   "sourceDecklist": "data/decks/decklists/terra-esper-encore.txt",
-  "generatedAt": "2026-08-19T18:15:28.8586485Z",
+  "generatedAt": "2026-08-19T18:50:27.2271610Z",
   "cards": {
     "Commander": [
       {
@@ -849,14 +849,14 @@
     ],
     "Lands": [
       {
-        "name": "Battlefield Forge",
+        "name": "Commercial District",
         "quantity": 1,
         "ownedQuantity": 1,
         "missingQuantity": 0,
         "availability": "collection",
-        "scryfallId": "642584bb-7586-4796-9b94-f01ec5bd9e9f",
-        "scryfallUri": "https://scryfall.com/card/bro/257/battlefield-forge?utm_source=api",
-        "imageUri": "https://cards.scryfall.io/normal/front/6/4/642584bb-7586-4796-9b94-f01ec5bd9e9f.jpg?1783920008",
+        "scryfallId": "bf220c06-3cce-4bdd-aa58-83940c223e9c",
+        "scryfallUri": "https://scryfall.com/card/mkm/259",
+        "imageUri": "https://cards.scryfall.io/normal/front/b/f/bf220c06-3cce-4bdd-aa58-83940c223e9c.jpg",
         "backImageUri": null,
         "priceEur": null,
         "missingTotalEur": null
@@ -940,14 +940,14 @@
         "missingTotalEur": null
       },
       {
-        "name": "Frostboil Snarl",
+        "name": "Elegant Parlor",
         "quantity": 1,
         "ownedQuantity": 1,
         "missingQuantity": 0,
         "availability": "collection",
-        "scryfallId": "c22ba565-da08-4957-93bb-8d266fe0b0d8",
-        "scryfallUri": "https://scryfall.com/card/stx/265",
-        "imageUri": "https://cards.scryfall.io/normal/front/c/2/c22ba565-da08-4957-93bb-8d266fe0b0d8.jpg",
+        "scryfallId": "72c6d541-e2cb-4d6e-acac-90a8f53b7006",
+        "scryfallUri": "https://scryfall.com/card/mkm/260",
+        "imageUri": "https://cards.scryfall.io/normal/front/7/2/72c6d541-e2cb-4d6e-acac-90a8f53b7006.jpg",
         "backImageUri": null,
         "priceEur": null,
         "missingTotalEur": null
@@ -979,14 +979,14 @@
         "missingTotalEur": null
       },
       {
-        "name": "Game Trail",
+        "name": "Thundering Falls",
         "quantity": 1,
         "ownedQuantity": 1,
         "missingQuantity": 0,
         "availability": "collection",
-        "scryfallId": "2a84a604-7b05-4716-bcd8-40d2acdb76e8",
-        "scryfallUri": "https://scryfall.com/card/mkc/264",
-        "imageUri": "https://cards.scryfall.io/normal/front/2/a/2a84a604-7b05-4716-bcd8-40d2acdb76e8.jpg",
+        "scryfallId": "17260fff-b239-4af4-9306-3236ae3fa5a5",
+        "scryfallUri": "https://scryfall.com/card/mkm/269",
+        "imageUri": "https://cards.scryfall.io/normal/front/1/7/17260fff-b239-4af4-9306-3236ae3fa5a5.jpg",
         "backImageUri": null,
         "priceEur": null,
         "missingTotalEur": null
@@ -1135,40 +1135,40 @@
         "missingTotalEur": null
       },
       {
-        "name": "Restless Anchorage",
+        "name": "Meticulous Archive",
         "quantity": 1,
         "ownedQuantity": 1,
         "missingQuantity": 0,
         "availability": "collection",
-        "scryfallId": "e3cab352-734e-454b-8b58-733165f4b3b3",
-        "scryfallUri": "https://scryfall.com/card/lci/280",
-        "imageUri": "https://cards.scryfall.io/normal/front/e/3/e3cab352-734e-454b-8b58-733165f4b3b3.jpg",
+        "scryfallId": "652236c2-84ef-45e4-b5fc-ed6170bc3d6c",
+        "scryfallUri": "https://scryfall.com/card/mkm/264",
+        "imageUri": "https://cards.scryfall.io/normal/front/6/5/652236c2-84ef-45e4-b5fc-ed6170bc3d6c.jpg",
         "backImageUri": null,
         "priceEur": null,
         "missingTotalEur": null
       },
       {
-        "name": "Restless Cottage",
+        "name": "Underground Mortuary",
         "quantity": 1,
         "ownedQuantity": 1,
         "missingQuantity": 0,
         "availability": "collection",
-        "scryfallId": "787eadf3-5005-4ae5-820f-4012a4d4e1a5",
-        "scryfallUri": "https://scryfall.com/card/woe/258",
-        "imageUri": "https://cards.scryfall.io/normal/front/7/8/787eadf3-5005-4ae5-820f-4012a4d4e1a5.jpg",
+        "scryfallId": "f6ca59cd-8779-4a84-a54b-e863b79c61f0",
+        "scryfallUri": "https://scryfall.com/card/mkm/271",
+        "imageUri": "https://cards.scryfall.io/normal/front/f/6/f6ca59cd-8779-4a84-a54b-e863b79c61f0.jpg",
         "backImageUri": null,
         "priceEur": null,
         "missingTotalEur": null
       },
       {
-        "name": "Restless Fortress",
+        "name": "Shadowy Backstreet",
         "quantity": 1,
         "ownedQuantity": 1,
         "missingQuantity": 0,
         "availability": "collection",
-        "scryfallId": "675213bb-28d7-460c-a4f3-950f5b9090af",
-        "scryfallUri": "https://scryfall.com/card/woe/259",
-        "imageUri": "https://cards.scryfall.io/normal/front/6/7/675213bb-28d7-460c-a4f3-950f5b9090af.jpg",
+        "scryfallId": "69c1b656-1d67-499c-bf0f-417682a86c7d",
+        "scryfallUri": "https://scryfall.com/card/mkm/268",
+        "imageUri": "https://cards.scryfall.io/normal/front/6/9/69c1b656-1d67-499c-bf0f-417682a86c7d.jpg",
         "backImageUri": null,
         "priceEur": null,
         "missingTotalEur": null
