@@ -62,6 +62,7 @@ type CommanderDoc = {
 type DeckViewCard = {
     name: string;
     quantity: number;
+    manaValue?: number | null;
     ownedQuantity: number;
     missingQuantity: number;
     availability: "collection" | "basic-land" | "partial" | "missing";
@@ -71,6 +72,12 @@ type DeckViewCard = {
     backImageUri: string | null;
     priceEur: number | null;
     missingTotalEur: number | null;
+    printing?: {
+        setCode: string;
+        collectorNumber: string;
+        foil: boolean;
+        flavorName?: string | null;
+    } | null;
 };
 
 type DeckView = {
@@ -815,13 +822,34 @@ function renderDeckViewCard(card: DeckViewCard): string {
 >${image}</a>`
         : image;
 
+    const metaParts: string[] = [];
+
+    if (card.manaValue !== null && card.manaValue !== undefined) {
+        metaParts.push(`MV ${card.manaValue}`);
+    }
+
+    if (card.printing) {
+        const flavorName = card.printing.flavorName
+            ? `${card.printing.flavorName} · `
+            : "";
+        const foil = card.printing.foil ? " · Foil" : "";
+        metaParts.push(
+            `${flavorName}${card.printing.setCode.toUpperCase()} #${card.printing.collectorNumber}${foil}`,
+        );
+    }
+
+    const meta = metaParts.length > 0
+        ? `<div class="deck-view-card-meta">${escapeHtml(metaParts.join(" · "))}</div>`
+        : "";
+    const quantityLine = quantityLabel ? `\n    ${quantityLabel}` : "";
+    const metaLine = meta ? `\n    ${meta}` : "";
+
     return `<article class="deck-view-card" data-availability="${escapeHtml(card.availability)}">
-  <div class="deck-view-card-visual">
-    ${quantityLabel}
+  <div class="deck-view-card-visual">${quantityLine}
     ${visual}
   </div>
   <div class="deck-view-card-info">
-    <div class="deck-view-card-name">${escapeHtml(card.name)}</div>
+    <div class="deck-view-card-name">${escapeHtml(card.name)}</div>${metaLine}
     ${renderDeckViewStatus(card)}
   </div>
 </article>`;
@@ -834,7 +862,17 @@ function renderDeckViewBlock(deck: DeckDoc): string {
 
     const categories = DECK_VIEW_CATEGORY_ORDER
         .map((category) => {
-            const cards = deck.deckView?.cards[category] ?? [];
+            const cards = [...(deck.deckView?.cards[category] ?? [])]
+                .sort((a, b) => {
+                    const manaA = a.manaValue ?? Number.POSITIVE_INFINITY;
+                    const manaB = b.manaValue ?? Number.POSITIVE_INFINITY;
+
+                    if (manaA !== manaB) {
+                        return manaA - manaB;
+                    }
+
+                    return a.name.localeCompare(b.name);
+                });
 
             if (cards.length === 0) {
                 return "";

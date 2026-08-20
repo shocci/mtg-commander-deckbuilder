@@ -38,6 +38,7 @@ type ManaBoxRow = {
 
 type CollectionCard = {
     name: string;
+    flavorName?: string;
     setCode: string;
     setName: string;
     collectorNumber: string;
@@ -51,6 +52,12 @@ type CollectionCard = {
     binderName: string;
     binderType: string;
     added: string;
+    source?: "manual";
+    note?: string;
+};
+
+type ExistingCollection = {
+    cards?: CollectionCard[];
 };
 
 function parseBoolean(value: string): boolean {
@@ -67,6 +74,18 @@ function parseQuantity(value: string): number {
     return quantity;
 }
 
+function readManualEntries(): CollectionCard[] {
+    if (!fs.existsSync(outputPath)) {
+        return [];
+    }
+
+    const existing = JSON.parse(
+        fs.readFileSync(outputPath, "utf8")
+    ) as ExistingCollection;
+
+    return (existing.cards ?? []).filter((card) => card.source === "manual");
+}
+
 function main(): void {
     if (!fs.existsSync(inputPath)) {
         throw new Error(`ManaBox CSV nicht gefunden: ${inputPath}`);
@@ -80,7 +99,7 @@ function main(): void {
         trim: true,
     }) as ManaBoxRow[];
 
-    const cards: CollectionCard[] = rows.map((row) => ({
+    const importedCards: CollectionCard[] = rows.map((row) => ({
         name: row.Name,
         setCode: row["Set code"],
         setName: row["Set name"],
@@ -97,6 +116,16 @@ function main(): void {
         added: row.Added,
     }));
 
+    const importedScryfallIds = new Set(
+        importedCards
+            .map((card) => card.scryfallId)
+            .filter(Boolean)
+    );
+    const manualCards = readManualEntries().filter(
+        (card) => !card.scryfallId || !importedScryfallIds.has(card.scryfallId)
+    );
+    const cards = [...importedCards, ...manualCards];
+
     const collection = {
         source: "ManaBox",
         sourceFile: "imports/manabox/ManaBox_Collection.csv",
@@ -104,6 +133,7 @@ function main(): void {
         totalRows: rows.length,
         totalCards: cards.reduce((sum, card) => sum + card.quantity, 0),
         uniqueCards: cards.length,
+        manualEntries: manualCards.length,
         cards,
     };
 
