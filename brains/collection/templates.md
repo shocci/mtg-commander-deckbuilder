@@ -183,8 +183,11 @@ Die KI verarbeitet jede Karte der Deckliste einzeln und:
 Zu den benötigten Kartendarstellungsdaten gehören mindestens:
 
 - Kartenname und Kartenidentität
+- Mana Value für die Sortierung innerhalb der Kartenkategorie
 - benötigte, vorhandene und fehlende Anzahl
 - Besitzstatus
+- konkrete Collection-Ausgabe des Decks mit Setcode, Collector Number,
+  Foil-Status und gegebenenfalls Flavor-Name
 - direkter Scryfall-Link
 - geeignetes Kartenbild und, falls eindeutig verfügbar, Rückseitenbild
 - aktueller EUR-Preis pro fehlendem Exemplar, wenn zuverlässig verfügbar
@@ -344,6 +347,10 @@ Lands
 
 Jede Karte wird genau einer Kategorie zugeordnet.
 
+Innerhalb jeder Kategorie werden die Karten zuerst aufsteigend nach Mana
+Value und bei gleichem Mana Value alphabetisch nach Kartenname sortiert.
+Länder haben dabei Mana Value 0.
+
 Priorität:
 
 1. Commander
@@ -391,6 +398,7 @@ Ein Karteneintrag soll mindestens enthalten:
 {
   "name": "Rhystic Study",
   "quantity": 1,
+  "manaValue": 3,
   "ownedQuantity": 0,
   "missingQuantity": 1,
   "availability": "missing",
@@ -398,7 +406,13 @@ Ein Karteneintrag soll mindestens enthalten:
   "imageUri": "https://...",
   "backImageUri": null,
   "priceEur": 39.5,
-  "missingTotalEur": 39.5
+  "missingTotalEur": 39.5,
+  "printing": {
+    "setCode": "WOT",
+    "collectorNumber": "25",
+    "foil": false,
+    "flavorName": null
+  }
 }
 ```
 
@@ -408,6 +422,7 @@ Für eine vollständig vorhandene Karte:
 {
   "name": "Arcane Signet",
   "quantity": 1,
+  "manaValue": 2,
   "ownedQuantity": 1,
   "missingQuantity": 0,
   "availability": "collection",
@@ -425,6 +440,7 @@ Für automatisch verfügbare Basic Lands:
 {
   "name": "Island",
   "quantity": 8,
+  "manaValue": 0,
   "ownedQuantity": 8,
   "missingQuantity": 0,
   "availability": "basic-land",
@@ -451,6 +467,8 @@ Docs-Build erzeugt.
 Dabei sollen:
 
 - Karten nach Kategorie gruppiert werden,
+- Karten innerhalb jeder Kategorie nach Mana Value und anschließend nach
+  Kartenname sortiert werden,
 - Karten innerhalb einer Kategorie überlappend dargestellt werden,
 - Kartenbilder anklickbar sein,
 - der Klick zur Scryfall-Kartenseite führen,

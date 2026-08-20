@@ -1,0 +1,1783 @@
+{
+  "deckSlug": "hatsune-miku",
+  "sourceDecklist": "data/decks/decklists/hatsune-miku.txt",
+  "generatedAt": "2026-08-21",
+  "cards": {
+    "Commander": [
+      {
+        "name": "Trostani, Selesnya's Voice",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "6ab6e6c9-fe20-40d3-997e-fe3480081f03",
+        "scryfallUri": "https://scryfall.com/card/sld/2429/trostani-selesnyas-voice?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/6/a/6ab6e6c9-fe20-40d3-997e-fe3480081f03.jpg?1786456571",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 4,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2429",
+          "foil": false,
+          "flavorName": "Miku, Song of the People"
+        }
+      }
+    ],
+    "Creatures": [
+      {
+        "name": "Avacyn's Pilgrim",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "a390a7df-b8da-41aa-93e5-2c0db938a27e",
+        "scryfallUri": "https://scryfall.com/card/mic/132/avacyns-pilgrim?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/a/3/a390a7df-b8da-41aa-93e5-2c0db938a27e.jpg?1783925334",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 1,
+        "printing": {
+          "setCode": "MIC",
+          "collectorNumber": "132",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Esper Sentinel",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "9415defa-ea35-454e-993b-3afd5776b7db",
+        "scryfallUri": "https://scryfall.com/card/plst/MH2-12/esper-sentinel?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/9/4/9415defa-ea35-454e-993b-3afd5776b7db.jpg?1783913651",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 1,
+        "printing": {
+          "setCode": "PLST",
+          "collectorNumber": "MH2-12",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Llanowar Elves",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "6a0b230b-d391-4998-a3f7-7b158a0ec2cd",
+        "scryfallUri": "https://scryfall.com/card/fdn/227/llanowar-elves?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/6/a/6a0b230b-d391-4998-a3f7-7b158a0ec2cd.jpg?1783909057",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 1,
+        "printing": {
+          "setCode": "FDN",
+          "collectorNumber": "227",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Soul Warden",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "53b54485-37e2-4ae0-be91-c77ec02c5fe0",
+        "scryfallUri": "https://scryfall.com/card/sld/2435/soul-warden?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/5/3/53b54485-37e2-4ae0-be91-c77ec02c5fe0.jpg?1786456647",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 1,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2435",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Speaker of the Heavens",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "1f44b96a-8498-414a-a4ac-54c80dfa9f23",
+        "scryfallUri": "https://scryfall.com/card/m21/38/speaker-of-the-heavens?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/1/f/1f44b96a-8498-414a-a4ac-54c80dfa9f23.jpg?1783930732",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 1,
+        "printing": {
+          "setCode": "M21",
+          "collectorNumber": "38",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Ajani's Pridemate",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "222c1a68-e34c-4103-b1be-17d4ceaef6ce",
+        "scryfallUri": "https://scryfall.com/card/fdn/135/ajanis-pridemate?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/2/2/222c1a68-e34c-4103-b1be-17d4ceaef6ce.jpg?1783909088",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "FDN",
+          "collectorNumber": "135",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Badgermole Cub",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "340c5799-4964-44dd-8c48-8f3f3aba5211",
+        "scryfallUri": "https://scryfall.com/card/tla/167/badgermole-cub?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/3/4/340c5799-4964-44dd-8c48-8f3f3aba5211.jpg?1786399172",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "TLA",
+          "collectorNumber": "167",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Fanatic of Rhonas",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "1f9fb33a-3b39-4aff-93b8-aedafe0ea694",
+        "scryfallUri": "https://scryfall.com/card/mh3/152/fanatic-of-rhonas?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/1/f/1f9fb33a-3b39-4aff-93b8-aedafe0ea694.jpg?1783911261",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "MH3",
+          "collectorNumber": "152",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Prosperous Innkeeper",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "eed76e15-6456-4ddc-addf-f0e6eff8bb6a",
+        "scryfallUri": "https://scryfall.com/card/blc/121/prosperous-innkeeper?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/e/e/eed76e15-6456-4ddc-addf-f0e6eff8bb6a.jpg?1783910699",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "BLC",
+          "collectorNumber": "121",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Suture Priest",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "430b96aa-7bb0-4d2b-b265-9c4987db28a2",
+        "scryfallUri": "https://scryfall.com/card/moc/210/suture-priest?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/4/3/430b96aa-7bb0-4d2b-b265-9c4987db28a2.jpg?1783917176",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "MOC",
+          "collectorNumber": "210",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Voice of Resurgence",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "99d1e843-71c9-4a65-bc36-d23858ef5ead",
+        "scryfallUri": "https://scryfall.com/card/2xm/227/voice-of-resurgence?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/9/9/99d1e843-71c9-4a65-bc36-d23858ef5ead.jpg?1783930123",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "2XM",
+          "collectorNumber": "227",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Voice of the Blessed",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "62534128-2a85-4a36-bc7b-e4f4c51fa1f6",
+        "scryfallUri": "https://scryfall.com/card/inr/50/voice-of-the-blessed?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/6/2/62534128-2a85-4a36-bc7b-e4f4c51fa1f6.jpg?1783908172",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "INR",
+          "collectorNumber": "50",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Elenda's Hierophant",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "d12f728a-1bbb-4bee-96d4-d721292997ba",
+        "scryfallUri": "https://scryfall.com/card/lcc/71/elendas-hierophant?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/d/1/d12f728a-1bbb-4bee-96d4-d721292997ba.jpg?1783913913",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "LCC",
+          "collectorNumber": "71",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Enduring Innocence",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "08f79439-b8f8-418f-9772-26d81844749e",
+        "scryfallUri": "https://scryfall.com/card/dsk/6/enduring-innocence?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/0/8/08f79439-b8f8-418f-9772-26d81844749e.jpg?1783909512",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "DSK",
+          "collectorNumber": "6",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Enduring Vitality",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "9d76a30c-0431-4334-892a-9822dda9671a",
+        "scryfallUri": "https://scryfall.com/card/dsk/176/enduring-vitality?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/9/d/9d76a30c-0431-4334-892a-9822dda9671a.jpg?1783909457",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "DSK",
+          "collectorNumber": "176",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Resplendent Angel",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "59adbd35-9959-4a0f-babf-46ea3c15f018",
+        "scryfallUri": "https://scryfall.com/card/lci/32/resplendent-angel?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/5/9/59adbd35-9959-4a0f-babf-46ea3c15f018.jpg?1783913805",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "LCI",
+          "collectorNumber": "32",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Rumor Gatherer",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "f8b87807-cac5-4e33-a8ed-a9ced0cd83a1",
+        "scryfallUri": "https://scryfall.com/card/snc/29/rumor-gatherer?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/f/8/f8b87807-cac5-4e33-a8ed-a9ced0cd83a1.jpg?1783923152",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "SNC",
+          "collectorNumber": "29",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Bramble Sovereign",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "0fae6a19-6a16-443e-adae-78a7380ee012",
+        "scryfallUri": "https://scryfall.com/card/clb/218/bramble-sovereign?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/0/f/0fae6a19-6a16-443e-adae-78a7380ee012.jpg?1783922719",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 4,
+        "printing": {
+          "setCode": "CLB",
+          "collectorNumber": "218",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Myrel, Shield of Argive",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "e632ed57-bb00-4493-adef-7b4805edd7ea",
+        "scryfallUri": "https://scryfall.com/card/bro/18/myrel-shield-of-argive?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/e/6/e632ed57-bb00-4493-adef-7b4805edd7ea.jpg?1783920129",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 4,
+        "printing": {
+          "setCode": "BRO",
+          "collectorNumber": "18",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Shalai, Voice of Plenty",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "b459b25c-647b-4353-932e-f590f26ab973",
+        "scryfallUri": "https://scryfall.com/card/sld/2433/shalai-voice-of-plenty?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/b/4/b459b25c-647b-4353-932e-f590f26ab973.jpg?1786456631",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 4,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2433",
+          "foil": false,
+          "flavorName": "Miku, Voice Over All"
+        }
+      },
+      {
+        "name": "Archangel of Thune",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "4ce95099-9032-4c44-af25-ab02e60af168",
+        "scryfallUri": "https://scryfall.com/card/sld/2430/archangel-of-thune?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/4/c/4ce95099-9032-4c44-af25-ab02e60af168.jpg?1786456579",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 5,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2430",
+          "foil": false,
+          "flavorName": "Archangel of Tunes"
+        }
+      },
+      {
+        "name": "Blossoming Bogbeast",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "764054f1-e848-4cee-b623-4861ce15c370",
+        "scryfallUri": "https://scryfall.com/card/soc/264/blossoming-bogbeast?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/7/6/764054f1-e848-4cee-b623-4861ce15c370.jpg?1783903768",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 5,
+        "printing": {
+          "setCode": "SOC",
+          "collectorNumber": "264",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Exalted Sunborn",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "7e1fe101-f634-41e5-9aa4-e8d7474535dc",
+        "scryfallUri": "https://scryfall.com/card/eoe/15/exalted-sunborn?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/7/e/7e1fe101-f634-41e5-9aa4-e8d7474535dc.jpg?1783905997",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 5,
+        "printing": {
+          "setCode": "EOE",
+          "collectorNumber": "15",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Seedborn Muse",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "f4a9cb46-d4e0-46f2-973f-09275ba0d99c",
+        "scryfallUri": "https://scryfall.com/card/mkc/186/seedborn-muse?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/f/4/f4a9cb46-d4e0-46f2-973f-09275ba0d99c.jpg?1783912987",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 5,
+        "printing": {
+          "setCode": "MKC",
+          "collectorNumber": "186",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Silverquill Lecturer",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "507e34d0-cdc5-4226-9664-b725b702044d",
+        "scryfallUri": "https://scryfall.com/card/m3c/96/silverquill-lecturer?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/5/0/507e34d0-cdc5-4226-9664-b725b702044d.jpg?1783911411",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 5,
+        "printing": {
+          "setCode": "M3C",
+          "collectorNumber": "96",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Angel of Indemnity",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "41163f43-7357-4bbc-a1e7-9c8070135c93",
+        "scryfallUri": "https://scryfall.com/card/soc/133/angel-of-indemnity?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/4/1/41163f43-7357-4bbc-a1e7-9c8070135c93.jpg?1783903816",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 6,
+        "printing": {
+          "setCode": "SOC",
+          "collectorNumber": "133",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Nykthos Paragon",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "2963205e-b181-44d1-809f-6577e29fa812",
+        "scryfallUri": "https://scryfall.com/card/mh2/22/nykthos-paragon?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/2/9/2963205e-b181-44d1-809f-6577e29fa812.jpg?1783926889",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 6,
+        "printing": {
+          "setCode": "MH2",
+          "collectorNumber": "22",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Ghalta and Mavren",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "a9ec900f-1e31-4440-a75a-20b256734d5b",
+        "scryfallUri": "https://scryfall.com/card/mom/225/ghalta-and-mavren?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/a/9/a9ec900f-1e31-4440-a75a-20b256734d5b.jpg?1783916955",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 7,
+        "printing": {
+          "setCode": "MOM",
+          "collectorNumber": "225",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Vorinclex, Voice of Hunger",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "6aebcc3b-504e-40fc-b232-a2aa21a0521b",
+        "scryfallUri": "https://scryfall.com/card/sld/2439/vorinclex-voice-of-hunger?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/6/a/6aebcc3b-504e-40fc-b232-a2aa21a0521b.jpg?1786456461",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 8,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2439",
+          "foil": false,
+          "flavorName": "Miku, the Complete Performer"
+        }
+      }
+    ],
+    "Artifacts": [
+      {
+        "name": "Skullclamp",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "b5bb89dd-9d31-49d9-ba54-4a04798e515e",
+        "scryfallUri": "https://scryfall.com/card/tdc/103/skullclamp?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/b/5/b5bb89dd-9d31-49d9-ba54-4a04798e515e.jpg?1783907135",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 1,
+        "printing": {
+          "setCode": "TDC",
+          "collectorNumber": "103",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Sol Ring",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "65b145dd-8529-4bff-b381-b4be53f24b54",
+        "scryfallUri": "https://scryfall.com/card/sld/1604/sol-ring?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/6/5/65b145dd-8529-4bff-b381-b4be53f24b54.jpg?1783911043",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 1,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "1604",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Halo Fountain",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "af542837-77a1-462e-8dd6-b4fa8b21bb33",
+        "scryfallUri": "https://scryfall.com/card/sld/2431/halo-fountain?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/a/f/af542837-77a1-462e-8dd6-b4fa8b21bb33.jpg?1786456585",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2431",
+          "foil": false,
+          "flavorName": "Cascade of Song"
+        }
+      },
+      {
+        "name": "Tigereye Cameo",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "ef9da696-dd92-4fe8-937b-a660f0d91839",
+        "scryfallUri": "https://scryfall.com/card/sld/7093/tigereye-cameo?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/e/f/ef9da696-dd92-4fe8-937b-a660f0d91839.jpg?1786804715",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "7093",
+          "foil": true,
+          "flavorName": "Backstage Monitor"
+        }
+      },
+      {
+        "name": "Aetherflux Reservoir",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "96b6b2e1-c3e6-464c-8a13-b15deb34e862",
+        "scryfallUri": "https://scryfall.com/card/kld/192/aetherflux-reservoir?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/9/6/96b6b2e1-c3e6-464c-8a13-b15deb34e862.jpg?1783937164",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 4,
+        "printing": {
+          "setCode": "KLD",
+          "collectorNumber": "192",
+          "foil": false,
+          "flavorName": null
+        }
+      }
+    ],
+    "Instants": [
+      {
+        "name": "Path to Exile",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "90b690f4-9647-4e67-b7cb-b2692ea149b1",
+        "scryfallUri": "https://scryfall.com/card/soc/159/path-to-exile?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/9/0/90b690f4-9647-4e67-b7cb-b2692ea149b1.jpg?1783903805",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 1,
+        "printing": {
+          "setCode": "SOC",
+          "collectorNumber": "159",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Swords to Plowshares",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "68ec2aed-7662-48ae-ab25-04f74ece1e41",
+        "scryfallUri": "https://scryfall.com/card/soc/179/swords-to-plowshares?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/6/8/68ec2aed-7662-48ae-ab25-04f74ece1e41.jpg?1783903796",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 1,
+        "printing": {
+          "setCode": "SOC",
+          "collectorNumber": "179",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Get Lost",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "7d60e0bc-1ce1-4b91-9952-16b394b5a348",
+        "scryfallUri": "https://scryfall.com/card/lci/333/get-lost?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/7/d/7d60e0bc-1ce1-4b91-9952-16b394b5a348.jpg?1783913696",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "LCI",
+          "collectorNumber": "333",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Grand Crescendo",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "59e34237-1ef5-4376-b671-11692693fc61",
+        "scryfallUri": "https://scryfall.com/card/sld/2432/grand-crescendo?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/5/9/59e34237-1ef5-4376-b671-11692693fc61.jpg?1786456593",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2432",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Sundering Growth",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "96feebe2-0a6b-4df8-8e7d-ee0bb82ac0c1",
+        "scryfallUri": "https://scryfall.com/card/c19/203/sundering-growth?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/9/6/96feebe2-0a6b-4df8-8e7d-ee0bb82ac0c1.jpg?1783932733",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "C19",
+          "collectorNumber": "203",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Beast Within",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "2baf505b-ea99-470b-ac87-fd4fb8f5f322",
+        "scryfallUri": "https://scryfall.com/card/ltc/234/beast-within?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/2/b/2baf505b-ea99-470b-ac87-fd4fb8f5f322.jpg?1783915927",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "LTC",
+          "collectorNumber": "234",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Break Down",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "acfe026f-75a7-45b9-b7e8-e1a76855ea94",
+        "scryfallUri": "https://scryfall.com/card/sld/2436/break-down?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/a/c/acfe026f-75a7-45b9-b7e8-e1a76855ea94.jpg?1786456486",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2436",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Chord of Calling",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "4f009d4a-3b50-40ae-b52e-0b9535049265",
+        "scryfallUri": "https://scryfall.com/card/sld/1595/chord-of-calling?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/4/f/4f009d4a-3b50-40ae-b52e-0b9535049265.jpg?1783911042",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "1595",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Rootborn Defenses",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "eb3ef4da-27c0-4364-a198-f70bea869d9b",
+        "scryfallUri": "https://scryfall.com/card/clu/71/rootborn-defenses?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/e/b/eb3ef4da-27c0-4364-a198-f70bea869d9b.jpg?1783912561",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "CLU",
+          "collectorNumber": "71",
+          "foil": false,
+          "flavorName": null
+        }
+      }
+    ],
+    "Sorceries": [
+      {
+        "name": "Pest Infestation",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "c9b8626d-d3d8-4460-9adf-112f48f173f6",
+        "scryfallUri": "https://scryfall.com/card/soc/282/pest-infestation?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/c/9/c9b8626d-d3d8-4460-9adf-112f48f173f6.jpg?1783903762",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 1,
+        "printing": {
+          "setCode": "SOC",
+          "collectorNumber": "282",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Farseek",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "95e0760a-d285-493b-88cd-7556d9b10007",
+        "scryfallUri": "https://scryfall.com/card/eoc/50/farseek?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/9/5/95e0760a-d285-493b-88cd-7556d9b10007.jpg?1783906051",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "EOC",
+          "collectorNumber": "50",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Finale of Devastation",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "721ea98f-4150-4fde-a0af-4f454695e927",
+        "scryfallUri": "https://scryfall.com/card/sld/2438/finale-of-devastation?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/7/2/721ea98f-4150-4fde-a0af-4f454695e927.jpg?1786456468",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2438",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Nature's Lore",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "7caedde3-8a02-4384-b8f5-5529b0ed27a5",
+        "scryfallUri": "https://scryfall.com/card/soc/278/natures-lore?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/7/c/7caedde3-8a02-4384-b8f5-5529b0ed27a5.jpg?1783903763",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "SOC",
+          "collectorNumber": "278",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Cultivate",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "ff0d8624-1f83-4150-8ef4-ce8345f8067f",
+        "scryfallUri": "https://scryfall.com/card/sld/2437/cultivate?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/f/f/ff0d8624-1f83-4150-8ef4-ce8345f8067f.jpg?1786456478",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2437",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Shamanic Revelation",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "b4e193e8-1127-475b-9af6-d0d0c44adf49",
+        "scryfallUri": "https://scryfall.com/card/blc/237/shamanic-revelation?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/b/4/b4e193e8-1127-475b-9af6-d0d0c44adf49.jpg?1783910661",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 5,
+        "printing": {
+          "setCode": "BLC",
+          "collectorNumber": "237",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Hour of Reckoning",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "14d60131-8715-477d-8a67-5f1f99a906a8",
+        "scryfallUri": "https://scryfall.com/card/tdc/120/hour-of-reckoning?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/1/4/14d60131-8715-477d-8a67-5f1f99a906a8.jpg?1783907128",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 7,
+        "printing": {
+          "setCode": "TDC",
+          "collectorNumber": "120",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Storm Herd",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "2345331c-a14f-4b4b-a9a4-88c5beb48242",
+        "scryfallUri": "https://scryfall.com/card/khc/33/storm-herd?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/2/3/2345331c-a14f-4b4b-a9a4-88c5beb48242.jpg?1783928328",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 10,
+        "printing": {
+          "setCode": "KHC",
+          "collectorNumber": "33",
+          "foil": false,
+          "flavorName": null
+        }
+      }
+    ],
+    "Enchantments": [
+      {
+        "name": "Cleric Class",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "47ce8b7e-d8e1-489a-a69e-99089eeb8739",
+        "scryfallUri": "https://scryfall.com/card/afr/6/cleric-class?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/4/7/47ce8b7e-d8e1-489a-a69e-99089eeb8739.jpg?1783926538",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 1,
+        "printing": {
+          "setCode": "AFR",
+          "collectorNumber": "6",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Gleaming Splendor",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "3b087bd4-bbb7-4963-bdb6-0a700ff19a04",
+        "scryfallUri": "https://scryfall.com/card/hob/15/gleaming-splendor?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/3/b/3b087bd4-bbb7-4963-bdb6-0a700ff19a04.jpg?1785496942",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "HOB",
+          "collectorNumber": "15",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Song of Freyalise",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "a45b534b-8442-4074-a8d2-f38e83f24868",
+        "scryfallUri": "https://scryfall.com/card/dom/179/song-of-freyalise?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/a/4/a45b534b-8442-4074-a8d2-f38e83f24868.jpg?1783934974",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 2,
+        "printing": {
+          "setCode": "DOM",
+          "collectorNumber": "179",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Ghostly Prison",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "eea3623d-1d39-4045-acdb-f0fb184ccbc8",
+        "scryfallUri": "https://scryfall.com/card/mkc/67/ghostly-prison?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/e/e/eea3623d-1d39-4045-acdb-f0fb184ccbc8.jpg?1783913031",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 3,
+        "printing": {
+          "setCode": "MKC",
+          "collectorNumber": "67",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Court of Grace",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "e4e3e867-95e7-47bc-95c4-77c686ddf82a",
+        "scryfallUri": "https://scryfall.com/card/onc/62/court-of-grace?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/e/4/e4e3e867-95e7-47bc-95c4-77c686ddf82a.jpg?1783918138",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 4,
+        "printing": {
+          "setCode": "ONC",
+          "collectorNumber": "62",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Growing Ranks",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "6ea45414-4047-4921-b77d-dfcba2fe7694",
+        "scryfallUri": "https://scryfall.com/card/c19/193/growing-ranks?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/6/e/6ea45414-4047-4921-b77d-dfcba2fe7694.jpg?1783932736",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 4,
+        "printing": {
+          "setCode": "C19",
+          "collectorNumber": "193",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Parallel Lives",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "93ee144f-3c76-444f-8a9a-318ee6407526",
+        "scryfallUri": "https://scryfall.com/card/wot/83/parallel-lives?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/9/3/93ee144f-3c76-444f-8a9a-318ee6407526.jpg?1783914908",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 4,
+        "printing": {
+          "setCode": "WOT",
+          "collectorNumber": "83",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Smothering Tithe",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "f6c69c2f-729b-49ed-909d-57190a728e11",
+        "scryfallUri": "https://scryfall.com/card/wot/13/smothering-tithe?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/f/6/f6c69c2f-729b-49ed-909d-57190a728e11.jpg?1783914931",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 4,
+        "printing": {
+          "setCode": "WOT",
+          "collectorNumber": "13",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Song of the Worldsoul",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "ea9d7b34-7c68-470e-88e1-6d3216fea368",
+        "scryfallUri": "https://scryfall.com/card/sld/2434/song-of-the-worldsoul?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/e/a/ea9d7b34-7c68-470e-88e1-6d3216fea368.jpg?1786456640",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 6,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2434",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Dazzling Theater // Prop Room",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "8e2fae80-60af-44cf-95b4-177837435d1a",
+        "scryfallUri": "https://scryfall.com/card/dsk/3/dazzling-theater-prop-room?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/8/e/8e2fae80-60af-44cf-95b4-177837435d1a.jpg?1783909514",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 7,
+        "printing": {
+          "setCode": "DSK",
+          "collectorNumber": "3",
+          "foil": false,
+          "flavorName": null
+        }
+      }
+    ],
+    "Lands": [
+      {
+        "name": "Blossoming Sands",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "0a9df994-e0f4-4919-af99-4f643eb9199c",
+        "scryfallUri": "https://scryfall.com/card/tdm/251/blossoming-sands?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/0/a/0a9df994-e0f4-4919-af99-4f643eb9199c.jpg?1783907282",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "TDM",
+          "collectorNumber": "251",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Bountiful Promenade",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "91ede26e-8784-4631-b9e7-f8f97b2904ac",
+        "scryfallUri": "https://scryfall.com/card/sld/2440/bountiful-promenade?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/9/1/91ede26e-8784-4631-b9e7-f8f97b2904ac.jpg?1786456430",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2440",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Brokers Hideout",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "989b299b-daa9-4bda-94e2-9a2f0e8f2bce",
+        "scryfallUri": "https://scryfall.com/card/snc/248/brokers-hideout?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/9/8/989b299b-daa9-4bda-94e2-9a2f0e8f2bce.jpg?1783923058",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "SNC",
+          "collectorNumber": "248",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Canopy Vista",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "c2a85a8e-28bb-4899-a922-13a03dec844c",
+        "scryfallUri": "https://scryfall.com/card/tdc/343/canopy-vista?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/c/2/c2a85a8e-28bb-4899-a922-13a03dec844c.jpg?1783906999",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "TDC",
+          "collectorNumber": "343",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Command Tower",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "7fe98f7c-e6c0-4632-96da-a4c2e1a1c094",
+        "scryfallUri": "https://scryfall.com/card/sld/806/command-tower?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/7/f/7fe98f7c-e6c0-4632-96da-a4c2e1a1c094.jpg?1783911047",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "806",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Forest",
+        "quantity": 7,
+        "ownedQuantity": 7,
+        "missingQuantity": 0,
+        "availability": "basic-land",
+        "scryfallId": "8dd6cfef-6eac-4fa2-b9f3-808bd5502f27",
+        "scryfallUri": "https://scryfall.com/card/sld/2442/forest?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/8/d/8dd6cfef-6eac-4fa2-b9f3-808bd5502f27.jpg?1787156246",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2442",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Gavony Township",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "ce46c4e2-a515-41d7-8d70-d20cf4925996",
+        "scryfallUri": "https://scryfall.com/card/moc/406/gavony-township?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/c/e/ce46c4e2-a515-41d7-8d70-d20cf4925996.jpg?1783917097",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "MOC",
+          "collectorNumber": "406",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Graypelt Refuge",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "0849b6dd-0330-4b7e-b7da-98e767adb4a0",
+        "scryfallUri": "https://scryfall.com/card/c19/249/graypelt-refuge?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/0/8/0849b6dd-0330-4b7e-b7da-98e767adb4a0.jpg?1783932713",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "C19",
+          "collectorNumber": "249",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Grove of the Guardian",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "0079326b-ef87-49b8-9772-9134fb5deb3e",
+        "scryfallUri": "https://scryfall.com/card/gk1/124/grove-of-the-guardian?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/0/0/0079326b-ef87-49b8-9772-9134fb5deb3e.jpg?1783934007",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "GK1",
+          "collectorNumber": "124",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Krosan Verge",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "19fc5bec-f877-430c-8e83-e6c5fe97f3c4",
+        "scryfallUri": "https://scryfall.com/card/otc/304/krosan-verge?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/1/9/19fc5bec-f877-430c-8e83-e6c5fe97f3c4.jpg?1783911875",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "OTC",
+          "collectorNumber": "304",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Lazotep Quarry",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "656ddd43-c70c-4927-9a02-fef5732708da",
+        "scryfallUri": "https://scryfall.com/card/m3c/131/lazotep-quarry?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/6/5/656ddd43-c70c-4927-9a02-fef5732708da.jpg?1783911402",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "M3C",
+          "collectorNumber": "131",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Overgrown Farmland",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "644fb0ed-f434-4cc4-b7e9-a60db5ece2b7",
+        "scryfallUri": "https://scryfall.com/card/tdc/381/overgrown-farmland?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/6/4/644fb0ed-f434-4cc4-b7e9-a60db5ece2b7.jpg?1783906975",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "TDC",
+          "collectorNumber": "381",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Plains",
+        "quantity": 7,
+        "ownedQuantity": 7,
+        "missingQuantity": 0,
+        "availability": "basic-land",
+        "scryfallId": "e2289fd7-19bb-4034-a6dd-267c4914975b",
+        "scryfallUri": "https://scryfall.com/card/sld/2441/plains?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/e/2/e2289fd7-19bb-4034-a6dd-267c4914975b.jpg?1787156241",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "2441",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Radiant Fountain",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "7ee5e77f-ca43-480d-ac37-48336d3bf044",
+        "scryfallUri": "https://scryfall.com/card/c21/310/radiant-fountain?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/7/e/7ee5e77f-ca43-480d-ac37-48336d3bf044.jpg?1783927486",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "C21",
+          "collectorNumber": "310",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Restless Prairie",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "f94ef116-6aff-4f53-a7f9-be5e21c7afa4",
+        "scryfallUri": "https://scryfall.com/card/lci/281/restless-prairie?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/f/9/f94ef116-6aff-4f53-a7f9-be5e21c7afa4.jpg?1783913715",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "LCI",
+          "collectorNumber": "281",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Rogue's Passage",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "335444f0-0848-4c17-b056-56d4fc876a58",
+        "scryfallUri": "https://scryfall.com/card/soc/400/rogues-passage?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/3/3/335444f0-0848-4c17-b056-56d4fc876a58.jpg?1783903721",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "SOC",
+          "collectorNumber": "400",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Sapseep Forest",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "81d3099d-4f22-425c-8955-903b6cfb88d3",
+        "scryfallUri": "https://scryfall.com/card/c21/313/sapseep-forest?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/8/1/81d3099d-4f22-425c-8955-903b6cfb88d3.jpg?1783927485",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "C21",
+          "collectorNumber": "313",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Selesnya Sanctuary",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "fdc53c6a-8e28-4314-9bcf-b31b6c6f56d7",
+        "scryfallUri": "https://scryfall.com/card/clu/246/selesnya-sanctuary?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/f/d/fdc53c6a-8e28-4314-9bcf-b31b6c6f56d7.jpg?1783912503",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "CLU",
+          "collectorNumber": "246",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Seraph Sanctuary",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "e1c1fa29-362f-40b4-b67f-513f6592fb3b",
+        "scryfallUri": "https://scryfall.com/card/ddq/33/seraph-sanctuary?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/e/1/e1c1fa29-362f-40b4-b67f-513f6592fb3b.jpg?1783937848",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "DDQ",
+          "collectorNumber": "33",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Starting Town",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "fc7d1912-7e27-49ef-bd98-375d975a42b0",
+        "scryfallUri": "https://scryfall.com/card/fin/289/starting-town?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/f/c/fc7d1912-7e27-49ef-bd98-375d975a42b0.jpg?1783906546",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "FIN",
+          "collectorNumber": "289",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Sungrass Prairie",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "8005828b-807a-43fc-98aa-20f76c47662c",
+        "scryfallUri": "https://scryfall.com/card/tdc/397/sungrass-prairie?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/8/0/8005828b-807a-43fc-98aa-20f76c47662c.jpg?1783906966",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "TDC",
+          "collectorNumber": "397",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Sunpetal Grove",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "565b4aaa-1990-4cb2-b519-2c0b1c9d5d18",
+        "scryfallUri": "https://scryfall.com/card/tdc/399/sunpetal-grove?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/5/6/565b4aaa-1990-4cb2-b519-2c0b1c9d5d18.jpg?1783906964",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "TDC",
+          "collectorNumber": "399",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Temple Garden",
+        "quantity": 1,
+        "manaValue": 0,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "ec75b840-420d-4512-a74a-d70f19be0085",
+        "scryfallUri": "https://scryfall.com/card/ecl/351/temple-garden-temple-garden?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/e/c/ec75b840-420d-4512-a74a-d70f19be0085.jpg?1783904368",
+        "backImageUri": "https://cards.scryfall.io/normal/back/e/c/ec75b840-420d-4512-a74a-d70f19be0085.jpg?1783904368",
+        "priceEur": null,
+        "missingTotalEur": null,
+        "printing": {
+          "setCode": "ECL",
+          "collectorNumber": "351",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Temple of Plenty",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "de1f7e5e-a503-4f99-91a1-2fdabb7d5e89",
+        "scryfallUri": "https://scryfall.com/card/tdc/405/temple-of-plenty?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/d/e/de1f7e5e-a503-4f99-91a1-2fdabb7d5e89.jpg?1783906962",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "TDC",
+          "collectorNumber": "405",
+          "foil": false,
+          "flavorName": null
+        }
+      },
+      {
+        "name": "Thespian's Stage",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "d618c6b2-6ca2-4584-9926-b1d184c144bd",
+        "scryfallUri": "https://scryfall.com/card/sld/1607/thespians-stage?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/d/6/d618c6b2-6ca2-4584-9926-b1d184c144bd.jpg?1783911042",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 0,
+        "printing": {
+          "setCode": "SLD",
+          "collectorNumber": "1607",
+          "foil": false,
+          "flavorName": null
+        }
+      }
+    ],
+    "Other": [
+      {
+        "name": "Elspeth, Sun's Champion",
+        "quantity": 1,
+        "ownedQuantity": 1,
+        "missingQuantity": 0,
+        "availability": "collection",
+        "scryfallId": "46dc2519-2729-4bbd-8892-fab6186bf116",
+        "scryfallUri": "https://scryfall.com/card/mkc/62/elspeth-suns-champion?utm_source=api",
+        "imageUri": "https://cards.scryfall.io/normal/front/4/6/46dc2519-2729-4bbd-8892-fab6186bf116.jpg?1783913033",
+        "backImageUri": null,
+        "priceEur": null,
+        "missingTotalEur": null,
+        "manaValue": 6,
+        "printing": {
+          "setCode": "MKC",
+          "collectorNumber": "62",
+          "foil": false,
+          "flavorName": null
+        }
+      }
+    ]
+  }
+}

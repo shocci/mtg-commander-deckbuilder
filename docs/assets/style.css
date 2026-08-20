@@ -845,6 +845,17 @@ li::marker {
     white-space: nowrap;
 }
 
+.deck-view-card-meta {
+    overflow: hidden;
+    margin-top: 2px;
+    color: var(--text-muted);
+    font-size: 0.66rem;
+    font-weight: 750;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .deck-view-status {
     display: block;
     margin-top: 3px;
